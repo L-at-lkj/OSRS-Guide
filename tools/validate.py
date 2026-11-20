@@ -195,7 +195,7 @@ PART_FILES = {"updates": "research/updates.json", "methods": "research/claims-me
               "logistics": "research/claims-logistics.json"}
 
 
-def g_facts(job, r, part=None):
+def g_facts(job, r, part=None, claim_range=None):
     rel = f"facts-parts/{part}.json" if part else "facts.json"
     fx = _load(job, rel, r, "facts")
     if not fx:
@@ -204,8 +204,12 @@ def g_facts(job, r, part=None):
     check_provenance(job, rel, fx, r, "fact-verifier")
     claims = all_claims(job, Report())
     if part:
-        src = PART_FILES.get(part)
+        src = PART_FILES.get(part.split("-")[0])
         claims = {k: v for k, v in claims.items() if (v["_file"] == src if src else v["_file"].startswith("research/claims-rfi-"))}
+    if claim_range:
+        lo, hi = claim_range.split(":")
+        key = lambda c: (c.rsplit("-", 1)[0], int(c.rsplit("-", 1)[1]))
+        claims = {k: v for k, v in claims.items() if key(lo) <= key(k) <= key(hi)}
     entries = ledger.read_entries(job)
     seal_time = {}
     for e in entries:
@@ -523,11 +527,12 @@ def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("job")
     p.add_argument("stage", choices=list(STAGES))
-    p.add_argument("--part", help="facts stage only: check facts-parts/<desk>.json against that desk's claims")
+    p.add_argument("--part", help="facts stage only: check facts-parts/<desk>[-x].json against that desk's claims")
+    p.add_argument("--claims", help="facts stage only: restrict to a claim-id range, e.g. C-QST-001:C-QST-134")
     a = p.parse_args()
     r = Report()
     if a.stage == "facts" and a.part:
-        g_facts(a.job, r, a.part)
+        g_facts(a.job, r, a.part, a.claims)
     else:
         STAGES[a.stage](a.job, r)
     r.print()

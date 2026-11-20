@@ -16,7 +16,7 @@
 
 ## The 12 months before 2026-11-19 (high-level leads)
 - **19 Nov 2025: Sailing** released, the first new skill in over a decade. Quests include Pandemonium (unlocks the skill), Prying Times, Current Affairs, Troubled Tortugans and others. ⚠ Snippets disagree on quest XP totals.
-- **30 Jun 2026: Sins of the Father**, the Myreque finale (per press release).
+- **30 Jun 2026: The Blood Moon Rises** (correction 2026-11-20: an earlier note said Sins of the Father; the methods desk's pinned wiki read shows The Blood Moon Rises released that day; Sins of the Father is a separate, earlier quest required for the Hallowed Sepulchre).
 - **Jul 2026: Wyrmscraig** island, with a new quest and The Mad Angel boss.
 - **14 Oct 2026: More Gathering Efficiencies** (QoL: tackle-box storage, runite golem changes). Further gathering QoL on 11 Nov (coconuts, drift net banking, law altar). No XP-rate changes reported, which needs confirming.
 - **Fractured Archive** (new content; loot scaling changed 11 Nov; practice mode and duo changes 18 Nov).
@@ -30,7 +30,7 @@
 | 11 Nov | **A Shell of a Friend** (members, Intermediate) | Priest in Peril, Herblore 16, Construction 15 | 2,500 Herblore + 2,500 Construction; aggressive feral vampyres (danger for low levels); QP 2 (one source says 1) | — |
 | 18 Nov | **Rag and Bone Man III** | Slayer 58, Attack+Strength 130 (or 99 in either), RaBM II, Dragon Slayer I… | 10,000 Slayer + 10,000 Prayer (lamps; sources differ); fights: Ancient Banshee lvl 113, **Skeletal Horror lvl 220** | — |
 | 18 Nov | **A New Leaf** | Priest in Peril, Farming 45, Cooking 35, Herblore 32, one farming contract | 10,000 Farming, 2,000 Cooking, 2,000 Herblore, a 2,500 XP combat lamp; QP 2 (one source says 1) | — |
-| Pending (late Nov?) | **The Graveyard** (Master, Fremennik) | Sailing 65, Agility 65, Woodcutting 56, Fletching 54, plus many quests | announced: **35,000 Agility**, 35,000 Sailing, 15,000 Runecraft, 10,000 Fletching, 2 × 75,000 combat/Prayer lamps; **new Agility 65 course** (best marks of grace) | unreleased: never put in a route; list under "upcoming" |
+| 25 Nov 2026 (scheduled) | **The Graveyard** (Master, Fremennik) | Sailing 65, Agility 65, Woodcutting 56, Fletching 54, plus many quests | announced: **35,000 Agility**, 35,000 Sailing, 15,000 Runecraft, 10,000 Fletching, 2 × 75,000 combat/Prayer lamps; **new Agility 65 course** (best marks of grace) | unreleased: never put in a route; list under "upcoming" |
 
 Leads: OSRS Wiki pages for each quest, `Quest Month`, `Update:Quest Month: Week Two & TFA Changes`, MassivelyOP (3 and 12 Nov 2026), news-summary blogs (T4).
 

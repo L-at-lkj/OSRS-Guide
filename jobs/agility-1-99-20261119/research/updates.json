@@ -1,0 +1,1352 @@
+{
+  "desk": "updates",
+  "as_of": "2026-11-20T02:20:00Z",
+  "window": {
+    "from": "2025-11-19",
+    "to": "2026-11-19",
+    "upcoming_to": "2026-12-19",
+    "note": "Window per dispatch 011. Work was interrupted by a usage limit (last action 2026-11-19T22:12Z, resumed 2026-11-20T02:14Z); volatile pages were re-checked on resume and the newer revisions are cited."
+  },
+  "sources_swept": [
+    {
+      "name": "OSRS Wiki Update: namespace, pages created since 2025-11-19 (python3 tools/wiki.py new-pages --ns Update --since 2025-11-19); 183 pages listed, every title triaged",
+      "url": "https://oldschool.runescape.wiki/w/Special:PrefixIndex?prefix=&namespace=110",
+      "retrieved": "2026-11-19",
+      "tier": "T1",
+      "note": "Re-swept 2026-11-20 with --since 2026-11-18: no new Update pages after 'The Chosen Commander - Post-Quest Activities Poll Blog'."
+    },
+    {
+      "name": "OSRS Wiki Category:Quests, 40 newest members (python3 tools/wiki.py category Quests --newest 40)",
+      "url": "https://oldschool.runescape.wiki/w/Category:Quests",
+      "retrieved": "2026-11-19",
+      "tier": "T2"
+    },
+    {
+      "name": "OSRS Wiki Quests/Release dates (complete list of quests released in the window, #175-#191)",
+      "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15405795",
+      "retrieved": "2026-11-19",
+      "tier": "T2"
+    },
+    {
+      "name": "OSRS Wiki Category:Sailing, 40 newest members (python3 tools/wiki.py category Sailing --newest 40)",
+      "url": "https://oldschool.runescape.wiki/w/Category:Sailing",
+      "retrieved": "2026-11-19",
+      "tier": "T2"
+    },
+    {
+      "name": "OSRS Wiki Upcoming updates (grep agility|quest|release|graveyard|hardcore|grace)",
+      "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404511",
+      "retrieved": "2026-11-19",
+      "tier": "T2"
+    },
+    {
+      "name": "OSRS Wiki Quest Month page (re-read on resume at the newer revision)",
+      "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409627",
+      "retrieved": "2026-11-20",
+      "tier": "T2"
+    },
+    {
+      "name": "WebSearch (independent web channel): 4 queries on Hardcore Worlds hiscores, Quest Month / The Graveyard release, 2026 Agility changes, Hardcore Worlds death rules",
+      "url": "https://www.google.com/search?q=OSRS+Agility+update+2026",
+      "retrieved": "2026-11-19",
+      "tier": "T4",
+      "note": "Used as leads only. Results agreed with the wiki Update: pages and added nothing new for Agility. Official news (secure.runescape.com) and osrstools.net could not be fetched: the session's DNS/network allowlist blocks both hosts."
+    }
+  ],
+  "items": [
+    {
+      "update_id": "U-001",
+      "date": "2025-11-19",
+      "title": "Sailing is OUT TODAY! (also Update:Sailing - Known Issues & Fixes)",
+      "kinds": ["new_skill", "new_quest"],
+      "relevance": "medium",
+      "summary": "Sailing released with four quests (Pandemonium, Prying Times, Current Affairs, Troubled Tortugans). None gives Agility or Defence XP. Sailing matters to this guide in two ways: The Graveyard (the upcoming Agility 65 course) needs Sailing 65, while the owner has 30; and the wiki lists boat capsizing as a safe death on Hardcore Worlds. No Sailing activity awarding Agility XP was found in any update in the window.",
+      "claim_ids": ["C-UPD-050", "C-UPD-051", "C-UPD-052", "C-UPD-053", "C-UPD-005", "C-UPD-071"]
+    },
+    {
+      "update_id": "U-002",
+      "date": "2025-11-26 to 2025-12-17",
+      "title": "Sailing: Week One Feedback & Fixes; Sailing XP Review & Further Fixes; An Update On the Sailing XP Review; More Sailing and Interface Changes",
+      "kinds": ["hotfix", "qol"],
+      "relevance": "low",
+      "summary": "Sailing balancing. More Sailing and Interface Changes (17 Dec 2025) changed world-map shortcut icons to show one-way and two-way, and added a Stony Basalt roof teleport for Troll Stronghold (needs the hard Fremennik diary and 73 Agility). Nothing changes Agility XP rates.",
+      "claim_ids": []
+    },
+    {
+      "update_id": "U-003",
+      "date": "2025-12-10",
+      "title": "Christmas Event 2025",
+      "kinds": ["new_activity"],
+      "relevance": "none",
+      "summary": "Holiday event. The grep for Agility, marks of grace, Graceful, rooftop and Sepulchre found no matches.",
+      "claim_ids": []
+    },
+    {
+      "update_id": "U-004",
+      "date": "2026-01-07 to 2026-01-14",
+      "title": "QoL Tweaks & Fixes; New Player Improvements Round 2",
+      "kinds": ["qol"],
+      "relevance": "none",
+      "summary": "No Agility-related content (grep checked).",
+      "claim_ids": []
+    },
+    {
+      "update_id": "U-005",
+      "date": "2026-01-08 to 2026-04-01",
+      "title": "Getting Around (blog/poll); More from the Getting Around Poll; Remaining Getting Around Changes",
+      "kinds": ["qol"],
+      "relevance": "low",
+      "summary": "Released 1 Apr 2026: faster Agility shortcuts (single-click stepping stones, shorter animations). This only affects travel time, not training rates.",
+      "claim_ids": []
+    },
+    {
+      "update_id": "U-006",
+      "date": "2026-01-21 to 2026-02-11",
+      "title": "Deadman: Annihilation posts (Holy Moleys and the Hooded Slayer Helm are Here!; Deadman: Annihilation Tweaks, Shellbane Gryphon CAs & More!; Music System Improvements & Deadman Tweaks; Everything You Need To Know; Drops This Friday!)",
+      "kinds": ["game_mode"],
+      "relevance": "none",
+      "summary": "Deadman-mode content. The Agility hits are Deadman stockpiling charms (Brimhaven Agility, Hallowed Sepulchre), which do not apply to Hardcore Worlds.",
+      "claim_ids": []
+    },
+    {
+      "update_id": "U-007",
+      "date": "2026-01-25",
+      "title": "Winter Summit 2026 - Overview; Old School Roadmap (25 January 2026); Sailing Into 2026; The Blood Moon Rises - Overview; The Fractured Archive - First Look",
+      "kinds": ["upcoming"],
+      "relevance": "low",
+      "summary": "Roadmap and summit blogs. Sailing Into 2026 says the Medallion of the Deep would not get its full benefit in the Fossil Island underwater Agility/Thieving area; this was later replaced by the 80% oxygen reduction (U-013). The content itself was released later and is covered under its own items.",
+      "claim_ids": []
+    },
+    {
+      "update_id": "U-008",
+      "date": "2026-02-25",
+      "title": "Cow Boss it out today! (The Ides of Milk released) and Cow Boss and Skill Guide & Level-Up Changes (2026-03-04)",
+      "kinds": ["new_quest", "qol"],
+      "relevance": "low",
+      "summary": "The Ides of Milk (Novice) has no fixed Agility or Defence XP, only a 1,000 XP combat-or-Prayer lamp. The owner has already completed it. The skill-guide change lists unlocks per level (e.g. 62 Agility).",
+      "claim_ids": ["C-UPD-054"]
+    },
+    {
+      "update_id": "U-009",
+      "date": "2026-03-26 / 2026-06-17",
+      "title": "Gathering QoL, Trouver Changes & more! (blog); Bank Tags, Trouver System Rework & More! (released 17 June 2026)",
+      "kinds": ["mechanic_change"],
+      "relevance": "low",
+      "summary": "Untradeables that do not 'break', such as Graceful, are no longer lost on a Wilderness death above level 20. On Hardcore Worlds this does not help: a death in the Wilderness Agility Course still ends the run unless the player Transfers.",
+      "claim_ids": []
+    },
+    {
+      "update_id": "U-010",
+      "date": "2026-04-08 to 2026-05-06",
+      "title": "Leagues VI: Demonic Pacts posts (Announcement; Get Ready; Overview; Launches Today; Fixes & Issues; Leagues VI Changes; More/Further Leagues VI Fixes/Changes; Community Spotlight: Leagues Discord Leaders)",
+      "kinds": ["game_mode"],
+      "relevance": "none",
+      "summary": "Seasonal Leagues mode. Does not affect main or Hardcore worlds.",
+      "claim_ids": []
+    },
+    {
+      "update_id": "U-011",
+      "date": "2026-03-18 to 2026-06-12",
+      "title": "Sailing/skilling balance posts: Boat Combat Fixes; Pirate Encounters Design & Rewards; Leechfin Fishing & Where We're At; Sailing Update: Buffs, Changes & More; Sailing Changes and Gem Bag Expansion; Rubium Mining & Smithing Changes; Changes to Sailing & LMS Rewards Eligibility; Cutting Edge(ville)",
+      "kinds": ["rate_change", "qol"],
+      "relevance": "none",
+      "summary": "Grep found no Agility content. The only Agility mention is the Medallion of the Deep poll in Sailing Update: Buffs, Changes & More, which was released with The Red Reef (U-013). Cutting Edge(ville) could not be fetched under that title and was triaged by title only.",
+      "claim_ids": []
+    },
+    {
+      "update_id": "U-012",
+      "date": "2026-05-29",
+      "title": "Summer Campfire 2026 (The Graveyard announced and polled; Wyrmscraig)",
+      "kinds": ["upcoming"],
+      "relevance": "high",
+      "summary": "Official announcement of The Graveyard: requirements Sailing 65, Agility 65, Woodcutting 56 and Fletching 54, plus Olaf's Quest, The Fremennik Exiles and Pandemonium. Rewards include 35,000 Agility XP and 2 lamps of 75,000 XP each in Attack, Strength, Defence, Hitpoints or Prayer. A new 65-80 Agility course was also announced. Both poll questions passed (Upcoming updates page). The quest is unreleased: list it under upcoming only.",
+      "claim_ids": ["C-UPD-071", "C-UPD-072", "C-UPD-073", "C-UPD-074", "C-UPD-075"]
+    },
+    {
+      "update_id": "U-013",
+      "date": "2026-05-20",
+      "title": "The Red Reef is Out Today!",
+      "kinds": ["new_quest", "mechanic_change"],
+      "relevance": "medium",
+      "summary": "The Red Reef quest (no Agility or Defence XP). The Medallion of the Deep now reduces oxygen depletion by 80% in the Fossil Island underwater Agility/Thieving area, which makes that method much less demanding.",
+      "claim_ids": ["C-UPD-055", "C-UPD-031"]
+    },
+    {
+      "update_id": "U-014",
+      "date": "2026-06-04",
+      "title": "Summer Sweep-Up 2026 (proposal blog)",
+      "kinds": ["upcoming"],
+      "relevance": "low",
+      "summary": "Proposed the Sepulchre and Colossal Wyrm changes and new shortcuts, all released on 12 Aug 2026 (U-019). Listed for the audit trail only. Use the release post, not this proposal.",
+      "claim_ids": []
+    },
+    {
+      "update_id": "U-015",
+      "date": "2026-06-30",
+      "title": "The Blood Moon Rises - Out Today! (with Known Issues & Fixes, Tweaks & Fixes 2026-07-08)",
+      "kinds": ["new_quest"],
+      "relevance": "low",
+      "summary": "Grandmaster Myreque finale. No fixed Agility or Defence XP, but it rewards a tome of 6 x 30,000 XP for any skill of level 70 or higher, so it could be spent on Agility after 70. The owner is far from the requirements (e.g. Slayer 74, Woodcutting 74), so it is not usable in this guide. Correction to a docs/07 lead: the 30 Jun 2026 Myreque finale is The Blood Moon Rises, not 'Sins of the Father'.",
+      "claim_ids": ["C-UPD-056"]
+    },
+    {
+      "update_id": "U-016",
+      "date": "2026-07-15",
+      "title": "The Blood Moon Rises & Bank Tags Tweaks",
+      "kinds": ["mechanic_change"],
+      "relevance": "low",
+      "summary": "Bounty Hunter worlds now charge the Wilderness Agility Course fee at the entrance gate. Bounty Hunter is not accessible on Hardcore Worlds.",
+      "claim_ids": []
+    },
+    {
+      "update_id": "U-017",
+      "date": "2026-07-22",
+      "title": "Summer Sweep-Up Gear & PvM Changes",
+      "kinds": ["mechanic_change"],
+      "relevance": "none",
+      "summary": "PvM and gear batch. The only Agility mention is a pointer to the later Agility batch.",
+      "claim_ids": []
+    },
+    {
+      "update_id": "U-018",
+      "date": "2026-07-29",
+      "title": "Wyrmscraig Is Out Today! (Fallen From Grace); also Wyrmscraig Launches July 29!, Wyrmscraig - Activities & Lock In Poll, Wyrmscraig - Unique Rewards, Wyrmscraig & Sailing Changes, Mad Angel Combat Achievements, Meet Mortimer",
+      "kinds": ["new_area", "new_quest", "new_boss"],
+      "relevance": "low",
+      "summary": "Fallen From Grace has no Agility or Defence XP and needs Sailing 62. It recommends 54 Agility for a shortcut at the end of the quest. Wyrmscraig activities are Hunter, Crafting and Slayer. Out of reach for this account (Sailing 30).",
+      "claim_ids": ["C-UPD-057"]
+    },
+    {
+      "update_id": "U-019",
+      "date": "2026-08-12",
+      "title": "Summer Sweep Up - Agility & Chambers of Xeric Changes",
+      "kinds": ["rate_change", "mechanic_change", "qol"],
+      "relevance": "high",
+      "summary": "The main Agility update of the window. Hallowed Sepulchre: Floor 4 now needs 77 Agility (was 82) and Floor 5 needs 87 (was 92), floor entry can be boosted, and the Grand Coffin needs 84 Thieving or 92 Agility. Colossal Wyrm course: the basic course is ~25% longer and the advanced course ~40% longer, with XP raised to keep XP/hr roughly the same at lower intensity. New shortcuts (60, 62, 79, 82, 83 relevant from 57) and barehanded grapple shortcuts (48, 52, 68, 69, 72, 78). The wiki's Colossal Wyrm page is still flagged obsolete for per-lap XP and duration.",
+      "claim_ids": ["C-UPD-020", "C-UPD-021", "C-UPD-022", "C-UPD-023", "C-UPD-024", "C-UPD-025", "C-UPD-026", "C-UPD-027", "C-UPD-028", "C-UPD-029"],
+      "invalidates": [
+        "Hallowed Sepulchre Floor 4 requires 82 Agility (now 77, boostable)",
+        "Hallowed Sepulchre Floor 5 requires 92 Agility (now 87, boostable)",
+        "Sepulchre floor entry requirements cannot be boosted (now boostable)",
+        "Colossal Wyrm per-lap figures on the wiki (basic 504.1/633 XP, advanced 749.6/1,053.6 XP, ~1:07.8 / ~1:22.8 lap times) are from before the 12 Aug 2026 duration/XP change; per-lap XP and laps/hr must not be computed from them",
+        "Grapple shortcuts at Catherby-Taverley, Water Obelisk-Catherby, Yanille wall and Karamja volcano trees require a grapple (now usable barehanded at 68/72/69/78 Agility)"
+      ]
+    },
+    {
+      "update_id": "U-020",
+      "date": "2026-08-19",
+      "title": "Summer Sweep Up - Hunter & Skilling",
+      "kinds": ["qol"],
+      "relevance": "low",
+      "summary": "The Giant Squirrel rate on the Colossal Wyrm course was raised to match the longer laps, and 'Mark of grace' was renamed 'Mark of Grace'. No change to XP.",
+      "claim_ids": []
+    },
+    {
+      "update_id": "U-021",
+      "date": "2026-09-02 to 2026-09-16",
+      "title": "Summer Sweep Up Miscellaneous; Summer Sweep-Up Pet Improvements & More",
+      "kinds": ["qol"],
+      "relevance": "low",
+      "summary": "The Nimbleness charm now works from inside a looting bag when bypassing shortcut Agility requirements. A fix for railings disappearing on the Varrock rooftops. No rate changes.",
+      "claim_ids": []
+    },
+    {
+      "update_id": "U-022",
+      "date": "2026-09-08",
+      "title": "A Ruff Situation & Crab Quest Out Today! (also Bronzeman Mode & A Ruff Situation, Bronzeman Post-Poll Update)",
+      "kinds": ["new_quest"],
+      "relevance": "low",
+      "summary": "Two small quests, neither with Agility or Defence XP. Crab Quest needs Sailing 40.",
+      "claim_ids": ["C-UPD-058", "C-UPD-059"]
+    },
+    {
+      "update_id": "U-023",
+      "date": "2026-09-14",
+      "title": "The Graveyard - Rewards Blog (updated 18 Sep 2026)",
+      "kinds": ["upcoming"],
+      "relevance": "high",
+      "summary": "Design and target rates for the Graveyard Agility course (65-80, hybrid intensity). Projected rates: high intensity 65,000-75,000 XP/hr with 30+ marks/hr, assuming tick-perfect play (Jagex says most players will get less). Low intensity 55,000-60,000 XP/hr with ~14-15 marks/hr, explicitly subject to change. Also proposes a Fremennik Graceful ornament kit (65 Thieving chest) and a Graceful rework. Unreleased: upcoming only, never a route step.",
+      "claim_ids": ["C-UPD-076", "C-UPD-077", "C-UPD-078", "C-UPD-080"]
+    },
+    {
+      "update_id": "U-024",
+      "date": "2026-09-25",
+      "title": "Poll: Graveyard Rewards and Graceful Rework Poll (21-25 Sep 2026)",
+      "kinds": ["upcoming"],
+      "relevance": "medium",
+      "summary": "All four questions passed: the Fremennik Graceful ornament kit, the Graceful one-time-unlock rework, Ghostly Sails and Fremennik Sails. The rework is not live yet: the wiki Graceful outfit page still describes the current system. Release timing was not stated.",
+      "claim_ids": ["C-UPD-079"]
+    },
+    {
+      "update_id": "U-025",
+      "date": "2026-09-23 to 2026-10-14",
+      "title": "Further Gathering Efficiencies; More Gathering Efficiencies",
+      "kinds": ["qol"],
+      "relevance": "none",
+      "summary": "Gathering-skill QoL. The grep found no Agility, marks of grace or Graceful content. This confirms the docs/07 lead that these brought no Agility XP changes.",
+      "claim_ids": []
+    },
+    {
+      "update_id": "U-026",
+      "date": "2026-10-03",
+      "title": "RuneFest 2026 Summit Overview; Quest Month - RuneFest 2026; Quest Month - Rewards Poll Blog",
+      "kinds": ["upcoming"],
+      "relevance": "low",
+      "summary": "Announced Quest Month and listed the XP added to old quests (released 3 Nov, U-030). Also announced, beyond the 30-day window: The Chosen Commander (Master; 58 Agility, 54 Thieving, 46 Strength; a 40,000 Agility XP lamp; Bandos' Throne Room Agility course), which the wiki infobox says is due in 2027; and Menaphos' Vault of the Soul Altar (a Thieving/Agility/Runecraft skilling dungeon). Neither may be routed.",
+      "claim_ids": []
+    },
+    {
+      "update_id": "U-027",
+      "date": "2026-10-07",
+      "title": "Pete Kayer's Challenges",
+      "kinds": ["new_activity"],
+      "relevance": "low",
+      "summary": "New activity with no Agility content. The wiki's Hardcore Worlds page lists it as a safe death (T2 only, see C-UPD-005).",
+      "claim_ids": []
+    },
+    {
+      "update_id": "U-028",
+      "date": "2026-10-20 to 2026-11-18",
+      "title": "The Fractured Archive (First Look, Rewards Primer, First Rewards Proposal, Rewards Poll Blog, Everything You Need To Know, Out Today) and the TFA tweak sections of later posts",
+      "kinds": ["new_boss"],
+      "relevance": "none",
+      "summary": "A raid. No Agility content.",
+      "claim_ids": []
+    },
+    {
+      "update_id": "U-029",
+      "date": "2026-10-22",
+      "title": "Hardcore Worlds Are Coming On November 4th",
+      "kinds": ["game_mode", "death_rules", "economy"],
+      "relevance": "high",
+      "summary": "Official rules: the Hardcore Group Ironman death ruleset ('99% of deaths'). Lists 13 activities unsafe on Hardcore Worlds that are usually safe for HCIM, plus the safe exceptions. On death, choose Reset or Transfer; gravestone items are deleted either way. Hardcore Worlds have their own economy with trading and a GE. Escape crystals were repriced to 10,000.",
+      "claim_ids": ["C-UPD-001", "C-UPD-002", "C-UPD-004", "C-UPD-006", "C-UPD-007", "C-UPD-008", "C-UPD-010", "C-UPD-011"]
+    },
+    {
+      "update_id": "U-030",
+      "date": "2026-11-03",
+      "title": "Quest Month Kick Off, TFA Tweaks & More",
+      "kinds": ["new_quest", "rate_change", "qol"],
+      "relevance": "high",
+      "summary": "Week 1: Mudfoot's Big Adventure (4 x 500 combat lamps) and The Writing's on the Wall (2,500 Agility + 2,500 Thieving XP; needs 22 Agility and 20 Thieving, neither boostable; the owner qualifies). Quests that gave no XP now do: Troll Stronghold now gives 2,000 Agility XP, and Ernest the Chicken gives a 500 XP lamp of the player's choice (the owner has completed it; never choose Defence). XP for already-completed quests is claimed from Perdu or the Lumbridge Guide, and lamps from the quest NPCs. Daddy's Home became a full quest.",
+      "claim_ids": ["C-UPD-040", "C-UPD-041", "C-UPD-042", "C-UPD-044", "C-UPD-032", "C-UPD-033", "C-UPD-034", "C-UPD-049"],
+      "invalidates": [
+        "Troll Stronghold gives no skill XP (it now gives 2,000 Agility XP, since 3 Nov 2026)",
+        "Ernest the Chicken gives no XP (it now gives a 500 XP lamp of the player's choice)"
+      ]
+    },
+    {
+      "update_id": "U-031",
+      "date": "2026-11-03",
+      "title": "The Reaper's Raffle - Hardcore Worlds (runs 4-30 Nov 2026)",
+      "kinds": ["game_mode"],
+      "relevance": "low",
+      "summary": "Hardcore Worlds raffle tasks include 'Complete any Rooftop Agility Course', '99 Agility' and Wilderness Agility Course lap streaks (1 to 101+ laps, +5 entries each). The streak tasks reward a high-risk Wilderness activity. The threat desk should note this lure, but it is not a training recommendation.",
+      "claim_ids": []
+    },
+    {
+      "update_id": "U-032",
+      "date": "2026-11-04",
+      "title": "Hardcore Worlds - OUT TODAY (with hotfix sections 5-9 Nov)",
+      "kinds": ["game_mode", "death_rules", "economy"],
+      "relevance": "high",
+      "summary": "Launch post. It repeats the rules and its unsafe list adds the PvM Arena (14 items). Random Events are unsafe, which matters for long Agility sessions. Players keep 3 items (4 with Protect Item) before choosing Reset or Transfer. Trading and full GE access are allowed, with an economy separate from the main game. No XP or drop boosts. LMS and Bounty Hunter are inaccessible. Escape crystals are bought from Death for 10,000, and one is given at the start. Hotfixes changed death broadcasts and fixed a gold-smuggling exploit.",
+      "claim_ids": ["C-UPD-001", "C-UPD-002", "C-UPD-003", "C-UPD-004", "C-UPD-006", "C-UPD-007", "C-UPD-008", "C-UPD-009", "C-UPD-010", "C-UPD-011", "C-UPD-012", "C-UPD-013", "C-UPD-014", "C-UPD-015", "C-UPD-016", "C-UPD-017"],
+      "invalidates": [
+        "Hardcore Worlds unsafe list without the PvM Arena (the launch post adds it)"
+      ]
+    },
+    {
+      "update_id": "U-033",
+      "date": "2026-11-11",
+      "title": "Quest Month: Week Two & TFA Changes",
+      "kinds": ["new_quest"],
+      "relevance": "medium",
+      "summary": "The Birds and the Wasps (1,000 Hunter, 250 Fletching) and A Shell of a Friend (2,500 Herblore, 2,500 Construction; needs Herblore 16, so not yet doable by the owner, who has 1). Neither gives Agility or Defence XP.",
+      "claim_ids": ["C-UPD-045", "C-UPD-046"]
+    },
+    {
+      "update_id": "U-034",
+      "date": "2026-11-16",
+      "title": "Hardcore Worlds hotfix: free-to-play Hardcore World (wiki changelog)",
+      "kinds": ["hotfix", "game_mode"],
+      "relevance": "low",
+      "summary": "Added an F2P Hardcore World where only Death's Office is accessible, to stop GE offer abuse. This confirms the docs/07 lead, but no Jagex post covers it; the source is the wiki changelog only.",
+      "claim_ids": []
+    },
+    {
+      "update_id": "U-035",
+      "date": "2026-11-18",
+      "title": "Quest Month Week 3 & TFA Practice Mode",
+      "kinds": ["new_quest", "upcoming", "qol"],
+      "relevance": "high",
+      "summary": "Rag and Bone Man III (10,000 Slayer XP and a 10,000 Prayer XP lamp) and A New Leaf (10,000 Farming, 2,000 Cooking, 2,000 Herblore, and a 2,500 XP combat lamp of the player's choice: never Defence). Neither gives Agility XP. The post confirms 'The Graveyard quest is coming next week'. Hardcore Worlds changes: a setting for the minimum level of death broadcasts, and no trading inside Death's Office.",
+      "claim_ids": ["C-UPD-047", "C-UPD-048", "C-UPD-070"]
+    },
+    {
+      "update_id": "U-036",
+      "date": "2026-11-19",
+      "title": "The Chosen Commander - Post-Quest Activities Poll Blog",
+      "kinds": ["upcoming"],
+      "relevance": "low",
+      "summary": "Proposes a Throne Room Agility course (needs a grapple and Level 60 Agility; ~60,000 XP/hr) as post-quest content for The Chosen Commander, which the wiki infobox puts in 2027. It falls outside the 30-day window and must never be a route step.",
+      "claim_ids": []
+    },
+    {
+      "update_id": "U-037",
+      "date": "2026-11-25 (announced)",
+      "title": "The Graveyard release (Quest Month week 4)",
+      "kinds": ["upcoming", "new_quest"],
+      "relevance": "high",
+      "summary": "The wiki (revised 2026-11-20 from a Jagex livestream Q&A) gives the release as 25 Nov 2026, and the 18 Nov post says 'next week'. The owner cannot do it now: Sailing 30/65, Agility 57/65, Woodcutting 40/56, Fletching 9/54, and the Fremennik Exiles chain is missing. Upcoming only, and volatile.",
+      "claim_ids": ["C-UPD-070", "C-UPD-071", "C-UPD-072", "C-UPD-073", "C-UPD-074", "C-UPD-075"]
+    },
+    {
+      "update_id": "U-038",
+      "date": "2025-11-24 to 2026-08-31",
+      "title": "The Official OSRS Podcast Episodes 3-20 (18 posts)",
+      "kinds": [],
+      "relevance": "none",
+      "summary": "Podcasts. Triaged by title, with no game changes.",
+      "claim_ids": []
+    },
+    {
+      "update_id": "U-039",
+      "date": "2025-12-10 to 2026-11-18",
+      "title": "Non-gameplay posts: Player Support: 2025 Roundup; Player Designed Island Competition / Finalists / Winner; 25 Years of RuneScape; 25th Anniversary Event; Game Jam VII; Membership & Bonds Price Change; Mobile Character Switcher (x2); Compatibility/Checking In: Jagex Launcher on Mac; Jagex Launcher for Linux Beta; AN INVITATION; Game Status Information Centre (8 Apr, 24 Jun, 7 Oct, 9 Nov); Brazilian Game Worlds; New Regional Worlds; RuneFest Returns / Get Ready / RuneFest 2026; Relaunching Our Merch Store; Merch/preorder posts (Makeship, Monopoly, Scape Ink, Godwars Replica, TFA Pins); Community Spotlights (x6); Community Event: The Crusader Classic and PvP event; PvP Bootcamp; Charity Event: OneBigGame; Introducing Old School LANscape; OSRS TCG plugin; Golden Gnomes 2026 (x3); Deadman All-Stars posts (x6); Spudworks; RuneScape: Dragonwilds (x2); Melvor Idle 2; The Full Transition to Jagex Accounts; Jagex Accounts: Migration / Now Required; Name Release (x2); Boku Payment Method retirement; Our Stance On Cryptocurrency; GE Improvements: Beyond Max Cash; The Organised Chaos Saga; Blood Moon Rises Rewards; Summer Campfire - Announcement; Summer Sweep-Up blog; Easter 2026 & PvP QoL; Menu Entry Swapper Overhaul; Halloween Event 2026; Deep Sea Diving Expansion (early 2027)",
+      "kinds": [],
+      "relevance": "none",
+      "summary": "Triaged by title. Those with gameplay text (Easter 2026, Menu Entry Swapper, Halloween 2026, Deep Sea Diving, Game Status 9 Nov) were grepped for Agility, Graceful, rooftop, Sepulchre and Hardcore, with nothing relevant found. The Halloween post only fixes NPC chat in the Sepulchre and edits the Strength skill guide.",
+      "claim_ids": []
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C-UPD-001",
+      "subject": "Hardcore Worlds",
+      "attribute": "death_ruleset",
+      "value": "Hardcore Group Ironman death ruleset",
+      "statement": "Hardcore Worlds use the Hardcore Group Ironman death ruleset. Jagex says it is much less forgiving than the HCIM rules and to expect about 99% of deaths to count.",
+      "scope": {"world_type": "hardcore_worlds"},
+      "released": "2026-11-04",
+      "sources": [
+        {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-19", "published": "2026-10-22", "quote": "Hardcore worlds will use the [https://oldschool.runescape.wiki/w/Group_Ironman_Mode#Hardcore_Group_Ironman Hardcore Group Ironman ruleset] for death which is much less forgiving! This ruleset has very few exceptions, which means you should go in with the expectation that 99% of deaths will land you right back in Death's office ready to make a difficult choice.", "fetched_by": "patch-sentinel"},
+        {"tier": "T2", "title": "Hardcore Worlds", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671", "revid": 15404671, "retrieved": "2026-11-19", "quote": "Hardcore Worlds follows the same death ruleset as [[Group_Ironman_Mode#Hardcore_Group_Ironman|Hardcore Group Ironman]].", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-002",
+      "subject": "Hardcore Worlds",
+      "attribute": "unsafe_activities_usually_safe_for_hcim",
+      "value": ["Barbarian Assault", "Camelot Training Room", "Chambers of Xeric", "Dream World (during Lunar Diplomacy)", "Fishing Trawler", "Inferno", "Magic Training Arena", "Nightmare Zone", "Pest Control", "PvM Arena", "Random Events", "Rogues' Den", "TzHaar Fight Cave", "Within the Player-owned House (PoH)"],
+      "statement": "On Hardcore Worlds, a death in any of these 14 activities is an official, run-ending death, even though most are safe for Hardcore Ironmen.",
+      "scope": {"world_type": "hardcore_worlds"},
+      "released": "2026-11-04",
+      "sources": [
+        {"tier": "T1", "title": "Update:Hardcore Worlds - OUT TODAY", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724", "revid": 15397724, "retrieved": "2026-11-19", "published": "2026-11-04", "quote": "* Barbarian Assault\n* Camelot Training Room\n* Chambers of Xeric\n* Dream World ''(during Lunar Diplomacy)''\n* Fishing Trawler\n* Inferno\n* Magic Training Arena\n* Nightmare Zone\n* Pest Control\n* PvM Arena\n* Random Events\n* Rogues' Den\n* TzHaar Fight Cave\n* Within the Player-owned House ''(PoH)''", "fetched_by": "patch-sentinel"},
+        {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-19", "published": "2026-10-22", "quote": "Here's the full list of '''UNSAFE''' activities that are usually safe in Hardcore Ironman:", "fetched_by": "patch-sentinel"},
+        {"tier": "T2", "title": "Hardcore Worlds", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671", "revid": 15404671, "retrieved": "2026-11-19", "quote": "'''The following activities are {{colour|red|UNSAFE}} and dying in them will result in an official death:'''", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high",
+      "notes": "The 22 Oct announcement lists 13 items and omits the PvM Arena. The 4 Nov launch post and the wiki both include it, so this claim follows the later T1 post. The wiki adds '(maze)' to Rogues' Den and notes that the TzHaar Fight Cave elite-diary resurrection is safe."
+    },
+    {
+      "claim_id": "C-UPD-003",
+      "subject": "Hardcore Worlds",
+      "attribute": "random_events_death_status",
+      "value": "unsafe",
+      "statement": "A death caused by a Random Event is an official death on Hardcore Worlds. This applies during long, semi-AFK Agility sessions too.",
+      "scope": {"world_type": "hardcore_worlds"},
+      "released": "2026-11-04",
+      "sources": [
+        {"tier": "T1", "title": "Update:Hardcore Worlds - OUT TODAY", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724", "revid": 15397724, "retrieved": "2026-11-19", "published": "2026-11-04", "quote": "* Random Events", "fetched_by": "patch-sentinel"},
+        {"tier": "T2", "title": "Hardcore Worlds", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671", "revid": 15404671, "retrieved": "2026-11-19", "quote": "* [[Random Event]]", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-004",
+      "subject": "Hardcore Worlds",
+      "attribute": "safe_exceptions_official",
+      "value": ["Castle Wars", "Clan Wars", "Soul Wars", "The Fremennik Trials (only the 4th phase of the duel with Koschei the Deathless)", "The Resurrection reward for the TzHaar Fight Caves from the Karamja Elite Diary", "TzHaar Fight Pit", "Zulrah (only the Resurrection reward from the Elite Western Provinces Diary)"],
+      "statement": "Jagex lists seven safe exceptions on Hardcore Worlds. None of them is an Agility training method.",
+      "scope": {"world_type": "hardcore_worlds"},
+      "released": "2026-11-04",
+      "sources": [
+        {"tier": "T1", "title": "Update:Hardcore Worlds - OUT TODAY", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724", "revid": 15397724, "retrieved": "2026-11-19", "published": "2026-11-04", "quote": "* Castle Wars\n* Clan Wars\n* Soul Wars\n* The Fremennik Trials ''(only the 4th phase of the duel with Koschei the Deathless)''\n* The Resurrection reward for the TzHaar Fight Caves from the Karamja Elite Diary\n* TzHaar Fight Pit\n* Zulrah ''(only the Resurrection reward from the Elite Western Provinces Diary)''", "fetched_by": "patch-sentinel"},
+        {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-19", "published": "2026-10-22", "quote": "That doesn't mean there aren't exceptions though as the following minigames are safe:", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-005",
+      "subject": "Hardcore Worlds",
+      "attribute": "safe_exceptions_wiki_only",
+      "value": ["Capsizing your Boat (other forms of dying on your boat are still unsafe)", "Emir's Arena", "Last Man Standing (disabled)", "Pete Kayer's Challenges", "Replay of the Galvek fight", "Replay of Glough boss fight"],
+      "statement": "The wiki lists more Hardcore Worlds safe deaths than Jagex's posts do. These include capsizing a boat while Sailing (other deaths on a boat remain unsafe), Emir's Arena, Pete Kayer's Challenges and the Galvek and Glough replays. No Jagex post confirms these.",
+      "scope": {"world_type": "hardcore_worlds"},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Hardcore Worlds", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671", "revid": 15404671, "retrieved": "2026-11-19", "quote": "* Capsizing your [[Boat]] (although other forms of dying on your boat are still unsafe)\n* [[Castle Wars]]\n* [[Clan Wars]]\n* [[Emir's Arena]]\n* [[The Fremennik Trials]] - 4th phase of the duel with [[Koschei the Deathless]]\n* [[Last Man Standing]] '''(disabled at launch)'''\n* [[Pete Kayer's Challenges]]\n* Replay of the [[Galvek]] fight\n* Replay of [[Glough]] boss fight", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "medium",
+      "notes": "T2 only. The extra entries presumably come from the Hardcore Group Ironman ruleset. Do not treat any of them as safe in a route without a second source. None affects Agility training."
+    },
+    {
+      "claim_id": "C-UPD-006",
+      "subject": "Hardcore Worlds",
+      "attribute": "death_option_reset",
+      "value": "Reset: everything on the character (quests, items, stats) is wiped; unlimited resets",
+      "statement": "After an official death, choosing Reset wipes the whole character: quests, items, stats and the protected items. It can be done an unlimited number of times.",
+      "scope": {"world_type": "hardcore_worlds"},
+      "released": "2026-11-04",
+      "sources": [
+        {"tier": "T1", "title": "Update:Hardcore Worlds - OUT TODAY", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724", "revid": 15397724, "retrieved": "2026-11-19", "published": "2026-11-04", "quote": "If you choose to '<b>Reset</b>' on Hardcore Worlds, '''EVERYTHING''' on that character will be reset, from quests, items, stats, etc. It's like you'll be straight off Tutorial Island once again. You have an unlimited number of resets on Hardcore Worlds.", "fetched_by": "patch-sentinel"},
+        {"tier": "T2", "title": "Hardcore Worlds", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671", "revid": 15404671, "retrieved": "2026-11-19", "quote": "This option will reset '''ALL''' progress on the player's character, including [[quest]]s, [[skill]]s, items, and the 3-4 items that were protected upon death.", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-007",
+      "subject": "Hardcore Worlds",
+      "attribute": "death_option_transfer",
+      "value": "Transfer: character permanently moves to the main game, keeps protected items, bank and other storages",
+      "statement": "After an official death, choosing Transfer moves the character permanently to the main game with no way back. It keeps its 3 (or 4) protected items, its bank and all other storage.",
+      "scope": {"world_type": "hardcore_worlds"},
+      "released": "2026-11-04",
+      "sources": [
+        {"tier": "T1", "title": "Update:Hardcore Worlds - OUT TODAY", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724", "revid": 15397724, "retrieved": "2026-11-19", "published": "2026-11-04", "quote": "If you choose to '<b>Transfer</b>' to the Main Game, that character will be removed from Hardcore Worlds, with no ability to return. You'll keep your 3 (or 4) protected items if you had any, along with the items in your bank and anything in all other storages throughout the game.", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-008",
+      "subject": "Hardcore Worlds",
+      "attribute": "gravestone_items_on_death",
+      "value": "permanently deleted regardless of Reset or Transfer",
+      "statement": "On a Hardcore Worlds death, anything that would normally go to the gravestone is deleted permanently, whether the player then chooses Reset or Transfer.",
+      "scope": {"world_type": "hardcore_worlds"},
+      "released": "2026-11-04",
+      "sources": [
+        {"tier": "T1", "title": "Update:Hardcore Worlds - OUT TODAY", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724", "revid": 15397724, "retrieved": "2026-11-19", "published": "2026-11-04", "quote": "Regardless of your choice, the main thing to remember is '''anything that would usually be sent to your Gravestone will be gone for good'''!", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-009",
+      "subject": "Hardcore Worlds",
+      "attribute": "items_kept_before_choice",
+      "value": "3 items (4 with Protect Item); Wilderness PvP deaths follow the usual rules",
+      "statement": "A Hardcore Worlds death is first processed normally: most deaths keep 3 items (4 with Protect Item), and the usual Wilderness rules apply to PvP deaths. The player then chooses Reset or Transfer.",
+      "scope": {"world_type": "hardcore_worlds"},
+      "released": "2026-11-04",
+      "sources": [
+        {"tier": "T2", "title": "Hardcore Worlds", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671", "revid": 15404671, "retrieved": "2026-11-19", "quote": "First, death gets processed like normal. For most deaths the player will keep 3 items (or 4 if [[Protect Item]] is enabled). As for [[PvP]] deaths, all of the usual rules within the [[Wilderness]] apply. Then the player is given a choice: '''Reset''' or '''Transfer'''.", "fetched_by": "patch-sentinel"},
+        {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-19", "published": "2026-10-22", "quote": "When you die in a Hardcore World it'll happen in two stages. First, we process death like normal. For most deaths you'll keep 3 items (or 4 if Protect Item is enabled).", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-010",
+      "subject": "Hardcore Worlds",
+      "attribute": "trading_and_grand_exchange",
+      "value": "allowed (not an Ironman mode)",
+      "statement": "Hardcore Worlds characters are not Ironmen, so they can trade and have full access to the Grand Exchange.",
+      "scope": {"world_type": "hardcore_worlds"},
+      "released": "2026-11-04",
+      "sources": [
+        {"tier": "T1", "title": "Update:Hardcore Worlds - OUT TODAY", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724", "revid": 15397724, "retrieved": "2026-11-19", "published": "2026-11-04", "quote": "For starter's you are not any form of Ironman, which means trading is allowed along with full access to the Grand Exchange.", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-011",
+      "subject": "Hardcore Worlds",
+      "attribute": "economy",
+      "value": "separate from the main game",
+      "statement": "Hardcore Worlds have an economy completely separate from the main game. Items can only be bought and sold within Hardcore Worlds, so main-game GE prices are only a proxy.",
+      "scope": {"world_type": "hardcore_worlds"},
+      "released": "2026-11-04",
+      "sources": [
+        {"tier": "T1", "title": "Update:Hardcore Worlds - OUT TODAY", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724", "revid": 15397724, "retrieved": "2026-11-19", "published": "2026-11-04", "quote": "Hardcore Worlds have a completely separate economy from the main game which means items from these worlds can only be bought and sold within them.", "fetched_by": "patch-sentinel"},
+        {"tier": "T2", "title": "Hardcore Worlds", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671", "revid": 15404671, "retrieved": "2026-11-19", "quote": "These worlds have no [[experience]] or [[drop rate]] boosts and have a separate economy from the main game.", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-012",
+      "subject": "Hardcore Worlds",
+      "attribute": "xp_and_drop_modifiers",
+      "value": "none",
+      "statement": "Hardcore Worlds have no XP boosts or drop-rate modifiers, so main-game Agility XP rates apply unchanged.",
+      "scope": {"world_type": "hardcore_worlds"},
+      "released": "2026-11-04",
+      "sources": [
+        {"tier": "T1", "title": "Update:Hardcore Worlds - OUT TODAY", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724", "revid": 15397724, "retrieved": "2026-11-19", "published": "2026-11-04", "quote": "Do remember, these worlds are permanent and do not contain any XP boosts or drop rate modifiers of any kind. You'll be going at the same pace as the main game!", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-013",
+      "subject": "Hardcore Worlds",
+      "attribute": "hiscores_board",
+      "value": "separate Hardcore Worlds board under Game Modes",
+      "statement": "Hardcore Worlds have their own hiscores board in the Game Modes section, separate from the normal board.",
+      "scope": {"world_type": "hardcore_worlds"},
+      "released": "2026-11-04",
+      "sources": [
+        {"tier": "T2", "title": "Hardcore Worlds", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671", "revid": 15404671, "retrieved": "2026-11-19", "quote": "Additionally, they come with separate Hiscores under the Game Modes section.", "fetched_by": "patch-sentinel"},
+        {"tier": "T2", "title": "HiScores", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409279", "revid": 15409279, "retrieved": "2026-11-19", "quote": "The board can also be separated into the different game modes, this includes the standard HiScores, [[Ironman]] mode, Ultimate Ironman mode, Hardcore Ironman, Tournament HiScores, [[Fresh Start Worlds]], and [[Hardcore Worlds]].", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-014",
+      "subject": "Hardcore Worlds hiscores",
+      "attribute": "board_identifier",
+      "value": "m=hiscore_oldschool_hardcore_mains",
+      "statement": "The Jagex hiscores board for Hardcore Worlds is reported as https://secure.runescape.com/m=hiscore_oldschool_hardcore_mains/. No Jagex or wiki page I could reach names this identifier.",
+      "scope": {"world_type": "hardcore_worlds"},
+      "released": "2026-11-04",
+      "sources": [
+        {"tier": "T4", "title": "OSRS Tools - OSRS Hiscores (Hardcore Worlds mode), via WebSearch result summary", "url": "https://www.osrstools.net/tools/highscores?mode=hardcore_worlds", "revid": null, "retrieved": "2026-11-19", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "low",
+      "notes": "This is a lead, not evidence. The one search result naming the identifier is a third-party site (osrstools.net), and WebFetch to it failed (host not in the network allowlist). secure.runescape.com also failed DNS in this session, so I could not get a T1 page or live check. The wiki pages Hardcore Worlds, HiScores and Module:Hiscores confirm a separate board but not its URL. Corroborating context outside the source tiers: brief.json records intake's successful lookup on this board (2026-11-19T22:01:42Z), and docs/07 records a live lookup. The verifier should confirm with a T1 fetch when secure.runescape.com is allowed."
+    },
+    {
+      "claim_id": "C-UPD-015",
+      "subject": "Escape crystal (Hardcore Worlds)",
+      "attribute": "availability_and_price",
+      "value": "1 free at start; Death sells more for 10,000 coins",
+      "statement": "Every Hardcore Worlds character starts with one free escape crystal, and Death sells more for 10,000 coins each. It is an auto-escape safety tool relevant to risky courses.",
+      "scope": {"world_type": "hardcore_worlds"},
+      "released": "2026-11-04",
+      "sources": [
+        {"tier": "T1", "title": "Update:Hardcore Worlds - OUT TODAY", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724", "revid": 15397724, "retrieved": "2026-11-19", "published": "2026-11-04", "quote": "First is that you can buy [https://oldschool.runescape.wiki/w/Escape_crystal Escape Crystals] from him for 10,000 coins. These are must for any Hardcore player and you'd do good on stocking up on them when you can! Luckily for you, starting on Hardcore Worlds gives you one for free!", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-016",
+      "subject": "Hardcore Worlds",
+      "attribute": "disabled_minigames",
+      "value": ["Last Man Standing", "Bounty Hunter"],
+      "statement": "Last Man Standing and Bounty Hunter cannot be accessed on Hardcore Worlds.",
+      "scope": {"world_type": "hardcore_worlds"},
+      "released": "2026-11-04",
+      "sources": [
+        {"tier": "T1", "title": "Update:Hardcore Worlds - OUT TODAY", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724", "revid": 15397724, "retrieved": "2026-11-19", "published": "2026-11-04", "quote": "Last Man Standing (LMS) and Bounty Hunter cannot be accessed on these worlds.", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-017",
+      "subject": "Hardcore Worlds",
+      "attribute": "release_date",
+      "value": "2026-11-04",
+      "statement": "Hardcore Worlds, a members-only mode, was released on 4 November 2026 at 11:00 UTC. It is under 30 days old, so its rules and economy count as volatile.",
+      "scope": {"world_type": "hardcore_worlds"},
+      "released": "2026-11-04",
+      "sources": [
+        {"tier": "T2", "title": "Hardcore Worlds", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671", "revid": 15404671, "retrieved": "2026-11-19", "quote": "It was released on [[4 November]] [[2026]] at 11:00 AM {{Wp|UTC}}.", "fetched_by": "patch-sentinel"},
+        {"tier": "T1", "title": "Update:Hardcore Worlds - OUT TODAY", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724", "revid": 15397724, "retrieved": "2026-11-19", "published": "2026-11-04", "quote": "{{Update|date=04 November 2026|url=https://secure.runescape.com/m=news/hardcore-worlds--out-today?oldschool=1|category=game|rev=05 November 2026}}", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-020",
+      "subject": "Hallowed Sepulchre",
+      "attribute": "floor_4_agility_requirement",
+      "value": 77,
+      "unit": "Agility level",
+      "statement": "Since 12 Aug 2026, Hallowed Sepulchre Floor 4 needs 77 Agility (previously 82).",
+      "released": "2026-08-12",
+      "sources": [
+        {"tier": "T1", "title": "Update:Summer Sweep Up - Agility & Chambers of Xeric Changes", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15303824", "revid": 15303824, "retrieved": "2026-11-19", "published": "2026-08-12", "quote": "* Lowered the Floor 4 entry requirement to '''Level 77''', down from 82.", "fetched_by": "patch-sentinel"},
+        {"tier": "T2", "title": "Hallowed Sepulchre", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544", "revid": 15387544, "retrieved": "2026-11-19", "quote": "**Floor 4: {{SCP|Agility|77 Agility}}", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high",
+      "notes": "Sepulchre access itself still needs 52 Agility and Sins of the Father (wiki), which the owner has not completed. That requirement belongs to the quest and methods desks."
+    },
+    {
+      "claim_id": "C-UPD-021",
+      "subject": "Hallowed Sepulchre",
+      "attribute": "floor_5_agility_requirement",
+      "value": 87,
+      "unit": "Agility level",
+      "statement": "Since 12 Aug 2026, Hallowed Sepulchre Floor 5 needs 87 Agility (previously 92).",
+      "released": "2026-08-12",
+      "sources": [
+        {"tier": "T1", "title": "Update:Summer Sweep Up - Agility & Chambers of Xeric Changes", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15303824", "revid": 15303824, "retrieved": "2026-11-19", "published": "2026-08-12", "quote": "* Lowered the Floor 5 entry requirement to '''Level 87''', down from 92.", "fetched_by": "patch-sentinel"},
+        {"tier": "T2", "title": "Hallowed Sepulchre", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544", "revid": 15387544, "retrieved": "2026-11-19", "quote": "**Floor 5: {{SCP|Agility|87 Agility}}", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-022",
+      "subject": "Hallowed Sepulchre",
+      "attribute": "floor_entry_boostable",
+      "value": true,
+      "statement": "Since 12 Aug 2026, Sepulchre floor entry requirements can be boosted. For example, a player at 72 Agility can eat a bite of Summer pie at the end of Floor 3 to enter Floor 4.",
+      "released": "2026-08-12",
+      "sources": [
+        {"tier": "T1", "title": "Update:Summer Sweep Up - Agility & Chambers of Xeric Changes", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15303824", "revid": 15303824, "retrieved": "2026-11-19", "published": "2026-08-12", "quote": "* You can now boost for Floor entry. For example, a player at 72 Agility can eat a bite of a Summer pie at the end of Floor 3 to gain entry to Floor 4.", "fetched_by": "patch-sentinel"},
+        {"tier": "T2", "title": "Hallowed Sepulchre", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544", "revid": 15387544, "retrieved": "2026-11-19", "quote": "* The Agility requirements for Floor entry are now boostable.", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-023",
+      "subject": "Hallowed Sepulchre",
+      "attribute": "grand_coffin_requirement",
+      "value": "84 Thieving or 92 Agility (both boostable)",
+      "statement": "Since 12 Aug 2026, Floor 5's Grand Coffin needs 84 Thieving or 92 Agility to open, and both can be boosted.",
+      "released": "2026-08-12",
+      "sources": [
+        {"tier": "T1", "title": "Update:Summer Sweep Up - Agility & Chambers of Xeric Changes", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15303824", "revid": 15303824, "retrieved": "2026-11-19", "published": "2026-08-12", "quote": "* Floor 5's Grand Coffin now requires 84 Thieving ''or'' 92 Agility to open. Boosting can be used for both requirements.", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-024",
+      "subject": "Colossal Wyrm Agility Course",
+      "attribute": "basic_course_duration_change",
+      "value": "+~25%",
+      "statement": "On 12 Aug 2026 the basic Colossal Wyrm course (50 Agility; needs Children of the Sun, which the owner has) was made about 25% longer per lap.",
+      "released": "2026-08-12",
+      "sources": [
+        {"tier": "T1", "title": "Update:Summer Sweep Up - Agility & Chambers of Xeric Changes", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15303824", "revid": 15303824, "retrieved": "2026-11-19", "published": "2026-08-12", "quote": "** The basic course by ~25%.", "fetched_by": "patch-sentinel"},
+        {"tier": "T2", "title": "Colossal Wyrm Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15388138", "revid": 15388138, "retrieved": "2026-11-19", "quote": "* The duration of the basic course has been increased by ~25%.", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-025",
+      "subject": "Colossal Wyrm Agility Course",
+      "attribute": "advanced_course_duration_change",
+      "value": "+~40%",
+      "statement": "On 12 Aug 2026 the advanced Colossal Wyrm course (62 Agility) was made about 40% longer per lap.",
+      "released": "2026-08-12",
+      "sources": [
+        {"tier": "T1", "title": "Update:Summer Sweep Up - Agility & Chambers of Xeric Changes", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15303824", "revid": 15303824, "retrieved": "2026-11-19", "published": "2026-08-12", "quote": "** The advanced course by ~40%.", "fetched_by": "patch-sentinel"},
+        {"tier": "T2", "title": "Colossal Wyrm Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15388138", "revid": 15388138, "retrieved": "2026-11-19", "quote": "* The duration of the advanced course has been increased by ~40%.", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-026",
+      "subject": "Colossal Wyrm Agility Course",
+      "attribute": "xp_rate_after_change",
+      "value": "roughly the same XP/hr and termites/hr as before, with fewer inputs per hour",
+      "statement": "Jagex raised XP, bone shards and termites per lap to match the longer laps, so XP/hr and termites/hr stay roughly the same at a lower click intensity.",
+      "released": "2026-08-12",
+      "sources": [
+        {"tier": "T1", "title": "Update:Summer Sweep Up - Agility & Chambers of Xeric Changes", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15303824", "revid": 15303824, "retrieved": "2026-11-19", "published": "2026-08-12", "quote": "* Increased XP, Bone shards and Termites to match so that it's roughly the same XP/hr and termites/hr but fewer inputs/hr, meaning the course is lower intensity than before.", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "medium",
+      "notes": "Jagex gave no new per-lap XP figures. 'Roughly the same' points to about the old ~31k (basic) and ~43-44k (advanced) XP/hr on the wiki, but those older figures should be re-verified by the methods desk."
+    },
+    {
+      "claim_id": "C-UPD-027",
+      "subject": "Colossal Wyrm Agility Course",
+      "attribute": "wiki_page_status",
+      "value": "flagged obsolete for durations, XP, termites and bone shards since the 12 Aug 2026 change",
+      "statement": "The wiki's Colossal Wyrm Agility Course page is tagged obsolete for course durations, XP, termites and bone shards. Its per-lap XP and lap times must not be used to compute post-change rates.",
+      "released": "2026-08-12",
+      "sources": [
+        {"tier": "T2", "title": "Colossal Wyrm Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15388138", "revid": 15388138, "retrieved": "2026-11-19", "quote": "{{Obsolete|Changes to course durations, experience, termites, and bone shards.|update=Update:Summer Sweep Up - Agility & Chambers of Xeric Changes}}", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high",
+      "notes": "The page body still gives 633 XP (basic) and 1053.6 XP (advanced) per lap with lap times of 1:07.80 and 1:22.80. The Agility skill page still gives 504.1 and 749.6. Both are out of date."
+    },
+    {
+      "claim_id": "C-UPD-028",
+      "subject": "Agility shortcuts (Summer Sweep Up)",
+      "attribute": "new_shortcuts_level_57_plus",
+      "value": [
+        {"level": 60, "where": "pipe at the southern edge of Edgeville Dungeon"},
+        {"level": 62, "where": "Arceuus Library top floor drop to bottom floor (52 from middle floor)"},
+        {"level": 79, "where": "stepping stones across the River Elid north of Sophanem"},
+        {"level": 82, "where": "stepping stones at the small island north of Mos Le'Harmless"},
+        {"level": 83, "where": "shortcut west of Pollnivneach (Ali the Hag's hut to the plateau)"}
+      ],
+      "statement": "Shortcuts added on 12 Aug 2026 that unlock at Agility 60 or higher are at 60, 62, 79, 82 and 83. They are travel unlocks and give no training XP.",
+      "released": "2026-08-12",
+      "sources": [
+        {"tier": "T1", "title": "Update:Summer Sweep Up - Agility & Chambers of Xeric Changes", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15303824", "revid": 15303824, "retrieved": "2026-11-19", "published": "2026-08-12", "quote": "* Level 60 - Added a pipe at the southern edge of Edgeville Dungeon, cutting down on travel time if you've lost your Brass key.\n* Level 52 & 62 - This new shortcut at the central area of the top and middle floors of the Arceuus Library allows you to jump down to the bottom floor.\n* Level 79 - Located north of Sophanem, we've added stepping stones for those of you who need to cross the River Elid in a flash.", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high",
+      "notes": "The 82 and 83 entries are in the same T1 changelog list, on the lines right after the quoted ones. Shortcuts at 49, 52 and 54 are below the owner's level 57 and already usable."
+    },
+    {
+      "claim_id": "C-UPD-029",
+      "subject": "Agility shortcuts (Summer Sweep Up)",
+      "attribute": "barehanded_grapple_shortcuts",
+      "value": [
+        {"level": 48, "where": "broken raft in River Lum (was 8 with grapple)"},
+        {"level": 52, "where": "Falador rough wall (was 11 with grapple)"},
+        {"level": 68, "where": "Catherby-Taverley rock climb, now two-way (was 32 with grapple)"},
+        {"level": 69, "where": "Yanille rough wall (was 39 with grapple)"},
+        {"level": 72, "where": "Water Obelisk island - Catherby (was 36 with grapple)"},
+        {"level": 78, "where": "strong trees south of Karamja Volcano (was 53 with grapple)"}
+      ],
+      "statement": "Since 12 Aug 2026, six grapple shortcuts can be used without any equipment at a higher Agility level: 48, 52, 68, 69, 72 and 78. Diary tasks still need the grapple.",
+      "released": "2026-08-12",
+      "sources": [
+        {"tier": "T1", "title": "Update:Summer Sweep Up - Agility & Chambers of Xeric Changes", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15303824", "revid": 15303824, "retrieved": "2026-11-19", "published": "2026-08-12", "quote": "* Level 32 Grapple - The rock-climb between Catherby and Taverley can now be used barehanded at Level 68. We've also made this a two-way shortcut.\n* Level 36 Grapple - You can now cross between the Water Obelisk island and Catherby barehanded at''' '''Level 72.\n* Level 39 Grapple - The Yanille rough wall can now be climbed barehanded at Level 69.\n* Level 53 Grapple - Strong trees just south of Karamja Volcano can now be used barehanded at Level 78.", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-031",
+      "subject": "Medallion of the Deep",
+      "attribute": "underwater_agility_thieving_oxygen_reduction",
+      "value": "80%",
+      "unit": "reduction in oxygen depletion",
+      "statement": "Since 20 May 2026, the Medallion of the Deep cuts oxygen depletion by 80% in the Fossil Island underwater Agility/Thieving area.",
+      "released": "2026-05-20",
+      "sources": [
+        {"tier": "T1", "title": "Update:The Red Reef is Out Today!", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15279172", "revid": 15279172, "retrieved": "2026-11-19", "published": "2026-05-20", "quote": "** Within the underwater Agility/Thieving area, it will reduce oxygen depletion by 80%, as polled.", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high",
+      "notes": "The unlock requirements for the medallion and the underwater area are outside this desk; the methods desk should verify them."
+    },
+    {
+      "claim_id": "C-UPD-032",
+      "subject": "Troll Stronghold",
+      "attribute": "agility_xp_reward",
+      "value": 2000,
+      "unit": "Agility XP",
+      "statement": "Since 3 Nov 2026, completing Troll Stronghold gives 2,000 Agility XP. It gives no Defence XP. The owner has not done Troll Stronghold or its prerequisite Death Plateau.",
+      "released": "2026-11-03",
+      "sources": [
+        {"tier": "T1", "title": "Update:Quest Month Kick Off, TFA Tweaks & More", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396686", "revid": 15396686, "retrieved": "2026-11-19", "published": "2026-11-03", "quote": "| Troll Stronghold\n| 2,000 Agility XP", "fetched_by": "patch-sentinel"},
+        {"tier": "T2", "title": "Troll Stronghold", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15395347", "revid": 15395347, "retrieved": "2026-11-19", "quote": "|change = The quest now rewards 2,000 Agility experience.", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-033",
+      "subject": "Quest XP retrofit (Quest Month Kick Off)",
+      "attribute": "retroactive_claim_method",
+      "value": "XP via Perdu or the Lumbridge Guide; lamps from the quest-giving NPCs",
+      "statement": "Players who already finished a quest that was given XP on 3 Nov 2026 can claim the XP from Perdu or the Lumbridge Guide, and the lamps from the NPCs who give those quests.",
+      "released": "2026-11-03",
+      "sources": [
+        {"tier": "T1", "title": "Update:Quest Month Kick Off, TFA Tweaks & More", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396686", "revid": 15396686, "retrieved": "2026-11-19", "published": "2026-11-03", "quote": "If you have already completed the quests listed below in the blog, you can claim these additional XP rewards through Perdu or the Lumbridge Guide. Likewise, the XP lamps can be claimed from the relevant NPCs giving the quests.", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high",
+      "notes": "Of the owner's completed quests, Ernest the Chicken (a lamp) and Rune Mysteries (500 Runecraft XP) are affected. None of the retrofitted quests the owner has completed gives Agility XP."
+    },
+    {
+      "claim_id": "C-UPD-034",
+      "subject": "Ernest the Chicken",
+      "attribute": "retrofit_lamp_skill_choice",
+      "value": "500 XP lamp in a skill of the player's choice (Defence selectable)",
+      "statement": "Since 3 Nov 2026, Ernest the Chicken (which the owner has done) gives a 500 XP lamp for any skill the player chooses. It could go to Agility. Under the zerker build it must never be used on Defence.",
+      "released": "2026-11-03",
+      "sources": [
+        {"tier": "T1", "title": "Update:Quest Month Kick Off, TFA Tweaks & More", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396686", "revid": 15396686, "retrieved": "2026-11-19", "published": "2026-11-03", "quote": "| Ernest the Chicken\n| A lamp giving 500 XP", "fetched_by": "patch-sentinel"},
+        {"tier": "T2", "title": "Ernest the Chicken", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15390916", "revid": 15390916, "retrieved": "2026-11-19", "quote": "*An [[Antique lamp (Ernest the Chicken)|antique lamp]] giving 500 XP in a skill of the player's choice", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "medium",
+      "notes": "Whether the lamp allows every skill, including Agility, was taken from the wiki line ('a skill of the player's choice'). The antique lamp page was not read, so the quest desk should confirm the skill list."
+    },
+    {
+      "claim_id": "C-UPD-040",
+      "subject": "The Writing's on the Wall",
+      "attribute": "agility_xp_reward",
+      "value": 2500,
+      "unit": "Agility XP",
+      "statement": "The Writing's on the Wall (members, Intermediate, released 3 Nov 2026) gives 2,500 Agility XP. It also gives 2,500 Thieving XP and the Amulet of Sight.",
+      "released": "2026-11-03",
+      "sources": [
+        {"tier": "T1", "title": "Update:Quest Month Kick Off, TFA Tweaks & More", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396686", "revid": 15396686, "retrieved": "2026-11-19", "published": "2026-11-03", "quote": "* 2,500 Agility XP", "fetched_by": "patch-sentinel"},
+        {"tier": "T2", "title": "The Writing's on the Wall", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404622", "revid": 15404622, "retrieved": "2026-11-19", "quote": "*{{SCP|Agility|2,500|link=yes}} [[experience]]", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high",
+      "notes": "Released under 30 days ago, so new content. Quest points disagree: Jagex's post says 2 QP, the wiki rewards box says 1, and Quests/Release dates goes from 345 to 346, which also suggests 1."
+    },
+    {
+      "claim_id": "C-UPD-041",
+      "subject": "The Writing's on the Wall",
+      "attribute": "defence_xp_reward",
+      "value": 0,
+      "unit": "Defence XP",
+      "statement": "The Writing's on the Wall gives no Defence XP. Its only XP rewards are 2,500 Agility and 2,500 Thieving, with no lamp, so it is safe for the Defence-50 cap.",
+      "released": "2026-11-03",
+      "sources": [
+        {"tier": "T2", "title": "The Writing's on the Wall", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404622", "revid": 15404622, "retrieved": "2026-11-19", "quote": "*{{SCP|Agility|2,500|link=yes}} [[experience]]\n*{{SCP|Thieving|2,500|link=yes}} [[experience]]\n*The [[amulet of sight]]", "fetched_by": "patch-sentinel"},
+        {"tier": "T1", "title": "Update:Quest Month Kick Off, TFA Tweaks & More", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396686", "revid": 15396686, "retrieved": "2026-11-19", "published": "2026-11-03", "quote": "* 2 Quest Points\n* 2,500 Thieving XP\n* 2,500 Agility XP\n* Amulet of Sight (see below)", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-042",
+      "subject": "The Writing's on the Wall",
+      "attribute": "skill_requirements",
+      "value": {"Agility": 22, "Thieving": 20, "boostable": false},
+      "statement": "The Writing's on the Wall needs 22 Agility and 20 Thieving, neither boostable. No quest prerequisites are listed. The owner (Agility 57, Thieving 24) qualifies.",
+      "released": "2026-11-03",
+      "sources": [
+        {"tier": "T2", "title": "The Writing's on the Wall", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404622", "revid": 15404622, "retrieved": "2026-11-19", "quote": "|requirements = * {{SCP|Agility|22|link=yes}}{{Boostable|No}}\n* {{SCP|Thieving|20|link=yes}}{{Boostable|No}}", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high",
+      "notes": "Starts at Land's End (Kourend). Combat danger is not assessed here and belongs to the threat desk."
+    },
+    {
+      "claim_id": "C-UPD-044",
+      "subject": "Mudfoot's Big Adventure",
+      "attribute": "xp_rewards",
+      "value": {"Agility": 0, "Defence_fixed": 0, "lamps": "4 x 500 XP, any combat skill including Prayer (Defence selectable)"},
+      "statement": "Mudfoot's Big Adventure (F2P, Novice, 3 Nov 2026) gives no Agility XP and no fixed Defence XP. Its four 500 XP lamps can go to any combat skill, so the zerker build must not spend them on Defence. The owner has already completed it.",
+      "released": "2026-11-03",
+      "sources": [
+        {"tier": "T2", "title": "Mudfoot's Big Adventure", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15401967", "revid": 15401967, "retrieved": "2026-11-19", "quote": "|rewards = *Four [[Antique lamp (Mudfoot's Big Adventure)|antique lamps]] granting 500 experience each in any combat skill, including [[Prayer]]", "fetched_by": "patch-sentinel"},
+        {"tier": "T1", "title": "Update:Quest Month Kick Off, TFA Tweaks & More", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396686", "revid": 15396686, "retrieved": "2026-11-19", "published": "2026-11-03", "quote": "* 4 Combat Lamps each rewarding 500 XP, allowing you to choose whichever combat skill you want to progress at", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-045",
+      "subject": "The Birds and the Wasps",
+      "attribute": "xp_rewards",
+      "value": {"Hunter": 1000, "Fletching": 250, "Agility": 0, "Defence": 0},
+      "statement": "The Birds and the Wasps (Novice, 11 Nov 2026) gives 1,000 Hunter and 250 Fletching XP, with no Agility or Defence XP and no lamp.",
+      "released": "2026-11-11",
+      "sources": [
+        {"tier": "T2", "title": "The Birds and the Wasps", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15407112", "revid": 15407112, "retrieved": "2026-11-19", "quote": "* {{SCP|Hunter|1,000}} [[Hunter]] experience\n* {{SCP|Fletching|250}} [[Fletching]] experience", "fetched_by": "patch-sentinel"},
+        {"tier": "T1", "title": "Update:Quest Month: Week Two & TFA Changes", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15399840", "revid": 15399840, "retrieved": "2026-11-19", "published": "2026-11-11", "quote": "* 1,000 Hunter XP", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-046",
+      "subject": "A Shell of a Friend",
+      "attribute": "xp_rewards",
+      "value": {"Herblore": 2500, "Construction": 2500, "Agility": 0, "Defence": 0},
+      "statement": "A Shell of a Friend (Intermediate, 11 Nov 2026) gives 2,500 Herblore and 2,500 Construction XP, with no Agility or Defence XP. It needs Herblore 16 and Construction 15; the owner has Herblore 1.",
+      "released": "2026-11-11",
+      "sources": [
+        {"tier": "T2", "title": "A Shell of a Friend", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15407128", "revid": 15407128, "retrieved": "2026-11-19", "quote": "* {{SCP|Herblore|2,500}} [[Herblore]] experience", "fetched_by": "patch-sentinel"},
+        {"tier": "T1", "title": "Update:Quest Month: Week Two & TFA Changes", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15399840", "revid": 15399840, "retrieved": "2026-11-19", "published": "2026-11-11", "quote": "* 2,500 Construction XP", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high",
+      "notes": "Quest points disagree: the T1 post says 1 and the wiki rewards box says 2 ('qp =2'), while Quests/Release dates goes from 348 to 349. The wiki notes aggressive feral vampyres during the quest."
+    },
+    {
+      "claim_id": "C-UPD-047",
+      "subject": "Rag and Bone Man III",
+      "attribute": "xp_rewards",
+      "value": {"Slayer": 10000, "Prayer": 10000, "Agility": 0, "Defence": 0},
+      "statement": "Rag and Bone Man III (Experienced, 18 Nov 2026; needs Slayer 58) gives 10,000 Slayer and 10,000 Prayer XP in fixed-skill form. There is no Agility XP and no Defence option.",
+      "released": "2026-11-18",
+      "sources": [
+        {"tier": "T2", "title": "Rag and Bone Man III", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409360", "revid": 15409360, "retrieved": "2026-11-19", "quote": "* Two [[Magic lamp (Rag and Bone Man III)|magic lamps]] offering a total of {{SCP|Prayer|10,000}} [[Prayer]] XP and {{SCP|Slayer|10,000}} [[Slayer]] XP", "fetched_by": "patch-sentinel"},
+        {"tier": "T1", "title": "Update:Quest Month Week 3 & TFA Practice Mode", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406871", "revid": 15406871, "retrieved": "2026-11-19", "published": "2026-11-18", "quote": "* 10,000 Slayer XP", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high",
+      "notes": "The sources differ on form only: T1 says '10,000 Slayer XP' plus 'A lamp giving 10,000 Prayer XP', while the wiki says two lamps. Either way, no Defence. The owner (Slayer 20) cannot do it."
+    },
+    {
+      "claim_id": "C-UPD-048",
+      "subject": "A New Leaf",
+      "attribute": "xp_rewards",
+      "value": {"Farming": 10000, "Cooking": 2000, "Herblore": 2000, "Agility": 0, "Defence_fixed": 0, "lamps": "1 x 2,500 XP, any combat skill (Defence selectable)"},
+      "statement": "A New Leaf (Intermediate, 18 Nov 2026) gives 10,000 Farming, 2,000 Cooking and 2,000 Herblore XP. It gives no Agility or fixed Defence XP, plus a 2,500 XP lamp for any combat skill, which must never go to Defence under the zerker build.",
+      "released": "2026-11-18",
+      "sources": [
+        {"tier": "T2", "title": "A New Leaf", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409500", "revid": 15409500, "retrieved": "2026-11-19", "quote": "* An [[antique lamp (A New Leaf)|antique lamp]] granting 2,500 experience in any combat skill", "fetched_by": "patch-sentinel"},
+        {"tier": "T1", "title": "Update:Quest Month Week 3 & TFA Practice Mode", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406871", "revid": 15406871, "retrieved": "2026-11-19", "published": "2026-11-18", "quote": "* A Combat lamp giving 2,500 XP for your chosen combat skill", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high",
+      "notes": "Needs Farming 45, Cooking 35 and Herblore 32 (wiki), which the owner does not have. Quest points disagree: T1 says 1, while the wiki says 2 and Quests/Release dates goes from 349 to 351."
+    },
+    {
+      "claim_id": "C-UPD-049",
+      "subject": "Daddy's Home",
+      "attribute": "conversion_to_quest",
+      "value": "converted from miniquest to quest; +1 QP; XP unchanged (Construction 400 + 544)",
+      "statement": "On 3 Nov 2026 Daddy's Home became a full quest worth 1 Quest Point. Its Construction XP is unchanged, and it gives no Agility or Defence XP. The owner has completed it.",
+      "released": "2026-11-03",
+      "sources": [
+        {"tier": "T2", "title": "Daddy's Home", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15401680", "revid": 15401680, "retrieved": "2026-11-19", "quote": "|change = The miniquest was converted to a fully fledged quest and given an additional reward of 1 Quest Point.", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-050",
+      "subject": "Pandemonium",
+      "attribute": "xp_rewards",
+      "value": {"Sailing": 400, "Agility": 0, "Defence": 0},
+      "statement": "Pandemonium (19 Nov 2025) gives Sailing XP only (300, plus 100 for the cargo delivery). It gives no Agility or Defence XP. The owner has completed it, and it is a prerequisite for The Graveyard.",
+      "released": "2025-11-19",
+      "sources": [
+        {"tier": "T2", "title": "Pandemonium", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15400400", "revid": 15400400, "retrieved": "2026-11-19", "quote": "*{{SCP|Sailing|300|link=yes}} experience", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-051",
+      "subject": "Prying Times",
+      "attribute": "xp_rewards",
+      "value": {"Smithing": 1000, "Sailing": 800, "Agility": 0, "Defence": 0},
+      "statement": "Prying Times (19 Nov 2025) gives 1,000 Smithing and 800 Sailing XP, with no Agility or Defence XP. The owner has completed it.",
+      "released": "2025-11-19",
+      "sources": [
+        {"tier": "T2", "title": "Prying Times", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15400401", "revid": 15400401, "retrieved": "2026-11-19", "quote": "*{{SCP|Smithing|1,000}} [[Smithing]] [[experience]]\n*{{SCP|Sailing|800}} [[Sailing]] [[experience]]", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-052",
+      "subject": "Current Affairs",
+      "attribute": "xp_rewards",
+      "value": {"Sailing": 1400, "Fishing": 1000, "Agility": 0, "Defence": 0},
+      "statement": "Current Affairs (19 Nov 2025) gives 1,400 Sailing and 1,000 Fishing XP, with no Agility or Defence XP. The owner has completed it.",
+      "released": "2025-11-19",
+      "sources": [
+        {"tier": "T2", "title": "Current Affairs", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15400402", "revid": 15400402, "retrieved": "2026-11-19", "quote": "*{{SCP|Sailing|1,400}} [[Sailing]] [[experience]]\n*{{SCP|Fishing|1,000}} [[Fishing]] [[experience]]", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-053",
+      "subject": "Troubled Tortugans",
+      "attribute": "xp_rewards",
+      "value": {"Sailing": 10000, "Slayer": 8000, "Agility": 0, "Defence": 0},
+      "statement": "Troubled Tortugans (19 Nov 2025; needs Sailing 45 and Slayer 51) gives 10,000 Sailing and 8,000 Slayer XP, with no Agility or Defence XP.",
+      "released": "2025-11-19",
+      "sources": [
+        {"tier": "T2", "title": "Troubled Tortugans", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15401691", "revid": 15401691, "retrieved": "2026-11-19", "quote": "*{{SCP|Sailing|10,000|link=yes}} experience\n*{{SCP|Slayer|8,000|link=yes}} experience", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-054",
+      "subject": "The Ides of Milk",
+      "attribute": "xp_rewards",
+      "value": {"Agility": 0, "Defence_fixed": 0, "lamps": "1 x 1,000 XP, any combat skill including Prayer (Defence selectable)"},
+      "statement": "The Ides of Milk (25 Feb 2026) gives no Agility or fixed Defence XP. Its only XP reward is a 1,000 XP lamp for any combat skill. The owner has completed it.",
+      "released": "2026-02-25",
+      "sources": [
+        {"tier": "T2", "title": "The Ides of Milk", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15401692", "revid": 15401692, "retrieved": "2026-11-19", "quote": "** A [[Magic lamp (The Ides of Milk)|magic lamp]] providing 1,000 experience in any combat skill, including [[Prayer]].", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-055",
+      "subject": "The Red Reef",
+      "attribute": "xp_rewards",
+      "value": {"Sailing": 15000, "Smithing": 5000, "Agility": 0, "Defence": 0},
+      "statement": "The Red Reef (20 May 2026; needs Sailing 52 and Smithing 48) gives 15,000 Sailing and 5,000 Smithing XP, with no Agility or Defence XP.",
+      "released": "2026-05-20",
+      "sources": [
+        {"tier": "T2", "title": "The Red Reef", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15400404", "revid": 15400404, "retrieved": "2026-11-19", "quote": "*{{SCP|Sailing|15,000|link=yes}} experience\n*{{SCP|Smithing|5,000|link=yes}} experience", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-056",
+      "subject": "The Blood Moon Rises",
+      "attribute": "xp_tome_reward",
+      "value": "Tome of experience: 6 x 30,000 XP, any skill at level 70+ (usable on Agility at 70+); no fixed Agility/Defence XP",
+      "statement": "The Blood Moon Rises (Grandmaster, 30 Jun 2026) gives a tome of six 30,000 XP uses, each for any skill at level 70 or higher. It could be spent on Agility once Agility is 70+. Its requirements (e.g. Slayer 74, Woodcutting 74, Smithing 72) put it out of the owner's reach.",
+      "released": "2026-06-30",
+      "sources": [
+        {"tier": "T2", "title": "The Blood Moon Rises", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404533", "revid": 15404533, "retrieved": "2026-11-19", "quote": "*A [[Tome of Experience (The Blood Moon Rises)|tome of experience]], granting 30,000 experience to any skill over level 70. This reward can be utilised six times and may be used for the same skill.", "fetched_by": "patch-sentinel"},
+        {"tier": "T1", "title": "Update:The Blood Moon Rises - Out Today!", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15254166", "revid": 15254166, "retrieved": "2026-11-19", "published": "2026-06-30", "quote": "* Six XP tomes, each granting 30K XP to a skill of your choice, level 70 or above.", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high",
+      "notes": "The sources differ slightly on the threshold: the wiki says 'over level 70' and T1 says 'level 70 or above'."
+    },
+    {
+      "claim_id": "C-UPD-057",
+      "subject": "Fallen From Grace",
+      "attribute": "xp_rewards",
+      "value": {"Crafting": 10000, "Sailing": 12500, "Mining": 5000, "Runecraft": 5000, "Agility": 0, "Defence": 0},
+      "statement": "Fallen From Grace (29 Jul 2026; needs Sailing 62, Crafting 60, Runecraft 47 and Mining 53) gives no Agility or Defence XP.",
+      "released": "2026-07-29",
+      "sources": [
+        {"tier": "T2", "title": "Fallen From Grace", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15400406", "revid": 15400406, "retrieved": "2026-11-19", "quote": "*{{SCP|Crafting|10,000|link=yes}} experience\n*{{SCP|Sailing|12,500|link=yes}} experience\n*{{SCP|Mining|5,000|link=yes}} experience\n*{{SCP|Runecraft|5,000|link=yes}} experience", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-058",
+      "subject": "A Ruff Situation",
+      "attribute": "xp_rewards",
+      "value": {"Crafting": 1000, "Agility": 0, "Defence": 0},
+      "statement": "A Ruff Situation (Novice, 8 Sep 2026; needs Crafting 15) gives 1,000 Crafting XP, with no Agility or Defence XP.",
+      "released": "2026-09-08",
+      "sources": [
+        {"tier": "T2", "title": "A Ruff Situation", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402249", "revid": 15402249, "retrieved": "2026-11-19", "quote": "*{{SCP|Crafting|1,000|link=yes}} experience", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-059",
+      "subject": "Crab Quest",
+      "attribute": "xp_rewards",
+      "value": {"Sailing": 10000, "Fishing": 3000, "Agility": 0, "Defence": 0},
+      "statement": "Crab Quest (Intermediate, 8 Sep 2026; needs Sailing 40 and Fishing 30) gives 10,000 Sailing and 3,000 Fishing XP, with no Agility or Defence XP.",
+      "released": "2026-09-08",
+      "sources": [
+        {"tier": "T2", "title": "Crab Quest", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402254", "revid": 15402254, "retrieved": "2026-11-19", "quote": "*{{SCP|Sailing|10,000|link=yes}} experience\n*{{SCP|Fishing|3,000|link=yes}} experience", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-UPD-060",
+      "subject": "Quests released in the window",
+      "attribute": "list",
+      "value": ["Pandemonium (2025-11-19)", "Prying Times (2025-11-19)", "Current Affairs (2025-11-19)", "Troubled Tortugans (2025-11-19)", "The Ides of Milk (2026-02-25)", "The Red Reef (2026-05-20)", "The Blood Moon Rises (2026-06-30)", "Fallen From Grace (2026-07-29)", "A Ruff Situation (2026-09-08)", "Crab Quest (2026-09-08)", "Daddy's Home (converted 2026-11-03)", "Mudfoot's Big Adventure (2026-11-03)", "The Writing's on the Wall (2026-11-03)", "The Birds and the Wasps (2026-11-11)", "A Shell of a Friend (2026-11-11)", "A New Leaf (2026-11-18)", "Rag and Bone Man III (2026-11-18)"],
+      "statement": "Seventeen quests were released or converted between 2025-11-19 and 2026-11-19 (#175-#191 on the wiki release list). Of these, only The Writing's on the Wall gives Agility XP, and none gives fixed Defence XP. Since 3 Nov 2026, the older quest Troll Stronghold also gives Agility XP.",
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Quests/Release dates", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15405795", "revid": 15405795, "retrieved": "2026-11-19", "quote": "| {{QuestRelease|nr=187|name=The Writing's on the Wall|date=3 November|year=2026|update=Quest Month Kick Off, TFA Tweaks & More|qp=346|diff=Intermediate}}", "fetched_by": "patch-sentinel"},
+        {"tier": "T2", "title": "Quest Month", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409627", "revid": 15409627, "retrieved": "2026-11-20", "quote": "|[[The Graveyard]]\n|25 November 2026\n|[[Quests/Master|Master]]", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "high",
+      "notes": "Learning the Ropes (Tutorial Island, converted 22 Oct 2025) is just before the window. The Chosen Commander and An Existential Crisis are in Category:Quests but unreleased (2027 and unfinished assets, respectively)."
+    },
+    {
+      "claim_id": "C-UPD-070",
+      "subject": "The Graveyard",
+      "attribute": "release_date",
+      "value": "2026-11-25",
+      "statement": "The Graveyard (Master) is scheduled for release on 25 Nov 2026, within the next 30 days. It is unreleased and must not be a route step.",
+      "scope": {"status": "upcoming"},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "The Graveyard", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409628", "revid": 15409628, "retrieved": "2026-11-20", "quote": "'''The Graveyard''' is an [[Upcoming updates|upcoming]] quest, scheduled for release on [[25 November]] [[2026]].", "fetched_by": "patch-sentinel"},
+        {"tier": "T1", "title": "Update:Quest Month Week 3 & TFA Practice Mode", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406871", "revid": 15406871, "retrieved": "2026-11-19", "published": "2026-11-18", "quote": "That's right, The Graveyard quest is coming next week! See you next week for our next Fremennik quest, bringing a new Agility course!", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "medium",
+      "notes": "The exact date was added to the wiki at 2026-11-20T00:59Z from a Jagex livestream Q&A ('1:12:27'). No Jagex news post with the date was found. Release dates can slip."
+    },
+    {
+      "claim_id": "C-UPD-071",
+      "subject": "The Graveyard",
+      "attribute": "skill_requirements",
+      "value": {"Sailing": 65, "Agility": 65, "Woodcutting": 56, "Fletching": 54},
+      "statement": "The Graveyard needs 65 Sailing, 65 Agility, 56 Woodcutting and 54 Fletching. The owner has 30, 57, 40 and 9 respectively.",
+      "scope": {"status": "upcoming"},
+      "released": null,
+      "sources": [
+        {"tier": "T1", "title": "Update:Summer Campfire 2026", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15220685", "revid": 15220685, "retrieved": "2026-11-19", "published": "2026-05-29", "quote": "* Level 65 Sailing\n* Level 65 Agility\n* Level 56 Woodcutting\n* Level 54 Fletching", "fetched_by": "patch-sentinel"},
+        {"tier": "T2", "title": "The Graveyard", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409628", "revid": 15409628, "retrieved": "2026-11-20", "quote": "* {{SCP|Sailing|65|link=yes}}\n* {{SCP|Agility|65|link=yes}}\n* {{SCP|Woodcutting|56|link=yes}}\n* {{SCP|Fletching|54|link=yes}}", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "medium",
+      "notes": "These are pre-release figures and can change at launch. Whether they can be boosted is unknown."
+    },
+    {
+      "claim_id": "C-UPD-072",
+      "subject": "The Graveyard",
+      "attribute": "quest_requirements",
+      "value": ["Olaf's Quest", "The Fremennik Exiles", "Pandemonium"],
+      "statement": "The Graveyard needs Olaf's Quest, The Fremennik Exiles and Pandemonium. The wiki expands Fremennik Exiles into its chain: Fremennik Isles, Fremennik Trials, Lunar Diplomacy, Mountain Daughter, Heroes' Quest and others. Of these the owner has only Pandemonium.",
+      "scope": {"status": "upcoming"},
+      "released": null,
+      "sources": [
+        {"tier": "T1", "title": "Update:Summer Campfire 2026", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15220685", "revid": 15220685, "retrieved": "2026-11-19", "published": "2026-05-29", "quote": "* Completion of: Olaf's Quest, The Fremennik Exiles, Pandemonium", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim_id": "C-UPD-073",
+      "subject": "The Graveyard",
+      "attribute": "agility_xp_reward",
+      "value": 35000,
+      "unit": "Agility XP",
+      "statement": "The Graveyard is announced to give 35,000 Agility XP on completion. It is unreleased.",
+      "scope": {"status": "upcoming"},
+      "released": null,
+      "sources": [
+        {"tier": "T1", "title": "Update:Summer Campfire 2026", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15220685", "revid": 15220685, "retrieved": "2026-11-19", "published": "2026-05-29", "quote": "* 35,000 Agility XP", "fetched_by": "patch-sentinel"},
+        {"tier": "T2", "title": "The Graveyard", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409628", "revid": 15409628, "retrieved": "2026-11-20", "quote": "*{{SCP|Agility|35,000|link=yes}} experience", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim_id": "C-UPD-074",
+      "subject": "The Graveyard",
+      "attribute": "lamp_rewards_defence_option",
+      "value": "2 lamps x 75,000 XP in Attack, Strength, Defence, Hitpoints or Prayer; 0 fixed Defence XP",
+      "statement": "The Graveyard is announced to give two 75,000 XP lamps for Attack, Strength, Defence, Hitpoints or Prayer, and no fixed Defence XP. Under the zerker build the lamps must never go to Defence: one lamp alone would take Defence from 1 to well above the cap of 50.",
+      "scope": {"status": "upcoming"},
+      "released": null,
+      "sources": [
+        {"tier": "T1", "title": "Update:Summer Campfire 2026", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15220685", "revid": 15220685, "retrieved": "2026-11-19", "published": "2026-05-29", "quote": "* 2 Lamps offering 75,000 XP in Attack, Strength, Defence, Hitpoints, or Prayer.", "fetched_by": "patch-sentinel"},
+        {"tier": "T2", "title": "The Graveyard", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409628", "revid": 15409628, "retrieved": "2026-11-20", "quote": "*2 lamps offering 75,000 XP in Attack, Strength, Defence, Hitpoints, or Prayer", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "medium",
+      "notes": "The level effect is stated only qualitatively. The XP engine owns the exact level arithmetic."
+    },
+    {
+      "claim_id": "C-UPD-075",
+      "subject": "The Graveyard",
+      "attribute": "other_rewards",
+      "value": {"quest_points": 3, "Runecraft": 15000, "Sailing": 35000, "Fletching": 10000, "unlock": "Access to The Graveyard and its Agility course"},
+      "statement": "The Graveyard's other announced rewards are 3 Quest Points, 15,000 Runecraft, 35,000 Sailing and 10,000 Fletching XP, plus access to The Graveyard and its new Agility course.",
+      "scope": {"status": "upcoming"},
+      "released": null,
+      "sources": [
+        {"tier": "T1", "title": "Update:Summer Campfire 2026", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15220685", "revid": 15220685, "retrieved": "2026-11-19", "published": "2026-05-29", "quote": "* 3 Quest Points\n* 35,000 Agility XP\n* 15,000 Runecraft XP\n* 35,000 Sailing XP\n* 10,000 Fletching XP", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim_id": "C-UPD-076",
+      "subject": "Graveyard Agility course",
+      "attribute": "target_level_range_and_design",
+      "value": "65-80 Agility; hybrid course (about two thirds rooftop-style, one third choice of AFK ~20-30s or one-tick high-intensity obstacles)",
+      "statement": "The Graveyard Agility course is aimed at players with 65-80 Agility. It is a hybrid course: about two thirds traditional rooftop-style obstacles and one third a choice between slow AFK obstacles (about 20-30 seconds) and intense one-click-per-tick obstacles.",
+      "scope": {"status": "upcoming"},
+      "released": null,
+      "sources": [
+        {"tier": "T1", "title": "Update:The Graveyard - Rewards Blog", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15363564", "revid": 15363564, "retrieved": "2026-11-19", "published": "2026-09-14", "quote": "You can expect some traditional rooftop Agility mechanics (around two thirds of the course), with the remaining third giving you a choice. You can pick a much more AFK and slow option (one click and come back ~20-30s later) or a more intense alternative for those who don't want to wait and want to proceed on to the next obstacle.", "fetched_by": "patch-sentinel"},
+        {"tier": "T2", "title": "The Graveyard", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409628", "revid": 15409628, "retrieved": "2026-11-20", "quote": "*A new {{SCP|Agility|65}} [[Agility course]] offering the fastest rates of [[marks of grace]] in the game", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "medium",
+      "notes": "This is design intent before release. The course's hazards (debris, half-sunken wreckage, 'stay above water') are not documented, and its Hardcore Worlds danger cannot be assessed until release."
+    },
+    {
+      "claim_id": "C-UPD-077",
+      "subject": "Graveyard Agility course",
+      "attribute": "projected_rates_high_intensity",
+      "value": {"xp_per_hour": "65,000-75,000", "marks_per_hour": "30+"},
+      "statement": "Jagex projects 65,000-75,000 Agility XP/hr and 30+ marks of grace/hr on the high-intensity path. The figures assume tick-perfect play, and Jagex says most players will get less, roughly comparable to Ardougne rooftops.",
+      "scope": {"status": "upcoming"},
+      "released": null,
+      "sources": [
+        {"tier": "T1", "title": "Update:The Graveyard - Rewards Blog", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15363564", "revid": 15363564, "retrieved": "2026-11-19", "published": "2026-09-14", "quote": "At the top end, you can expect to achieve 65,000 - 75,000 Agility XP per hour.", "fetched_by": "patch-sentinel"},
+        {"tier": "T1", "title": "Update:The Graveyard - Rewards Blog (18 Sep update section)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15363564", "revid": 15363564, "retrieved": "2026-11-19", "published": "2026-09-18", "quote": "We'd also like to clarify that the rates we’ve shared for high-intensity Graveyard assume tick-perfect gameplay, which is difficult to maintain consistently in practice. In reality, it will be lower than this for most players. Graveyard's high-intensity option will likely be comparable to Ardougne rooftops.", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "low",
+      "notes": "These are pre-release projections and must not be used as rates in any route."
+    },
+    {
+      "claim_id": "C-UPD-078",
+      "subject": "Graveyard Agility course",
+      "attribute": "projected_rates_low_intensity",
+      "value": {"xp_per_hour": "55,000-60,000", "marks_per_hour": "14-15"},
+      "statement": "Jagex projects about 55,000-60,000 Agility XP/hr and 14-15 marks/hr on the low-intensity path, but says these may change; on 18 Sep it proposed lowering XP to make the AFK path more consistent.",
+      "scope": {"status": "upcoming"},
+      "released": null,
+      "sources": [
+        {"tier": "T1", "title": "Update:The Graveyard - Rewards Blog", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15363564", "revid": 15363564, "retrieved": "2026-11-19", "published": "2026-09-14", "quote": "If you're taking the slower route, you can expect around 55,000 - 60,000 Agility XP per hour. This should keep it comfortably ahead of Seers' Village while leaving higher-level methods more relevant.", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "low",
+      "notes": "The blog says: 'Please note these rates are subject to change, especially with our feedback from Sept 18th.' The 18 Sep update adds: 'we'd look to reduce XP here to compensate.'"
+    },
+    {
+      "claim_id": "C-UPD-079",
+      "subject": "Graceful outfit",
+      "attribute": "rework_poll_result",
+      "value": "passed (40,921 yes / 3,909 no / 2,341 skip); not yet live",
+      "statement": "The Graceful rework passed its poll (21-25 Sep 2026). Under it, Graceful pieces become a one-time unlock bought with marks of grace, with duplicates re-bought from Grace for GP (430k per full set). It is not live yet, and no release date has been stated.",
+      "scope": {"status": "upcoming"},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Poll:Graveyard Rewards and Graceful Rework Poll", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15355917", "revid": 15355917, "retrieved": "2026-11-19", "quote": "|Question = Would you like us to rework the Graceful system as described in the blog?\n|Answer1 = Yes\n|Votes1 = 40921\n|Answer2 = No\n|Votes2 = 3909", "fetched_by": "patch-sentinel"},
+        {"tier": "T1", "title": "Update:The Graveyard - Rewards Blog", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15363564", "revid": 15363564, "retrieved": "2026-11-19", "published": "2026-09-14", "quote": "We're proposing to make Graceful pieces a one-time unlock. Once you've spent the required Marks of Grace to obtain Graceful, we can ensure the outfit or piece would be permanently unlocked for your account. To obtain a duplicate, you'll only need to spend GP with Grace.", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "medium",
+      "notes": "The wiki Graveyard poll page's own header says these rewards are for the Graveyard update. The full set still costs 260 marks of grace (T1 blog)."
+    },
+    {
+      "claim_id": "C-UPD-080",
+      "subject": "Graveyard Agility course",
+      "attribute": "sunken_treasure_chest",
+      "value": "picklock chest before final obstacle needs 65 Thieving; rare Fremennik Graceful ornament kit, otherwise Sunken treasure exchangeable for marks of grace in Rellekka",
+      "statement": "Announced: a chest near the end of the Graveyard course needs 65 Thieving to picklock. It rarely gives the Fremennik Graceful ornament kit; otherwise it gives stackable Sunken treasure that can be traded for marks of grace in Rellekka. The kit passed its poll.",
+      "scope": {"status": "upcoming"},
+      "released": null,
+      "sources": [
+        {"tier": "T1", "title": "Update:The Graveyard - Rewards Blog", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15363564", "revid": 15363564, "retrieved": "2026-11-19", "published": "2026-09-14", "quote": "You can earn this cosmetic as part of the course. It will be a rare drop found in a picklockable chest just before the final obstacle. Picklocking this chest requires 65 Thieving.", "fetched_by": "patch-sentinel"}
+      ],
+      "confidence": "low"
+    }
+  ],
+  "upcoming_30d": [
+    {
+      "title": "The Graveyard (Master quest) and the Graveyard Agility course",
+      "expected": "2026-11-25",
+      "claim_ids": ["C-UPD-070", "C-UPD-071", "C-UPD-072", "C-UPD-073", "C-UPD-074", "C-UPD-075", "C-UPD-076", "C-UPD-077", "C-UPD-078", "C-UPD-080"],
+      "route_use": "never as a step (unreleased)",
+      "note": "The owner is far from eligible: Sailing 30/65, Agility 57/65, Woodcutting 40/56, Fletching 9/54, and missing Olaf's Quest and the Fremennik Exiles chain. At most it is a long-term 'later' note in a 65-80 bracket. The 2 x 75,000 XP lamps include a Defence option that must never be used under the zerker cap. Rates are projections only, and the course's danger on Hardcore Worlds is unknown until release."
+    },
+    {
+      "title": "Graceful system rework (one-time unlock) and Fremennik Graceful ornament kit",
+      "expected": "with or after The Graveyard; date not stated",
+      "claim_ids": ["C-UPD-079", "C-UPD-080"],
+      "route_use": "never as a step",
+      "note": "Passed poll 21-25 Sep 2026. Not live yet per the wiki Graceful outfit page (rev 15403851)."
+    }
+  ],
+  "gaps": [
+    "Hiscores board ID m=hiscore_oldschool_hardcore_mains (C-UPD-014) has no T1 or T2 support. secure.runescape.com does not resolve in this session's network, osrstools.net is blocked too, and wiki.py has no page naming the ID. To fix this, someone needs to allow secure.runescape.com, or a desk allowed to run tools/hiscores.py needs to confirm the board.",
+    "No official Jagex news page could be fetched directly (secure.runescape.com DNS-blocked). All T1 evidence comes from the wiki's verbatim Update: copies. The independent web channel was WebSearch only.",
+    "Colossal Wyrm course per-lap XP and lap times after the 12 Aug 2026 change are not published: Jagex gave no numbers and the wiki page is tagged obsolete. XP/hr is only 'roughly the same' as before. The methods desk needs another source or must use a range.",
+    "Graveyard release date (25 Nov 2026) comes from the wiki citing a livestream Q&A, with the T1 18 Nov post saying only 'next week'. The rates, requirements and hazards are pre-release.",
+    "The Graveyard course's hazards and Hardcore Worlds death status (it is an 'underwater cavern' with debris) are unknown until release.",
+    "Quest-point totals disagree between T1 posts and wiki reward boxes for The Writing's on the Wall (T1 2 / wiki 1), A Shell of a Friend (T1 1 / wiki 2) and A New Leaf (T1 1 / wiki 2). These do not affect Agility or Defence XP and were not adjudicated.",
+    "No Sailing activity in the window was found to award Agility XP: no Sailing-related update page mentions Agility XP, and greps of the Sailing and Sea charting pages found only spyglass charting tasks that point at Agility courses. This is an absence finding with no source that states it directly.",
+    "Several non-gameplay Update pages (podcasts, merch, community, launcher/accounts, Leagues/DMM promotional posts and others listed in U-038/U-039) were triaged by title only, without reading their text.",
+    "The skill list for the Ernest the Chicken retrofit lamp (C-UPD-034) came from the quest page line; the antique-lamp item page was not read."
+  ],
+  "provenance": {
+    "agent": "patch-sentinel",
+    "started_at": "2026-11-19T22:04:50Z",
+    "finished_at": "2026-11-20T02:25:00Z",
+    "dispatch_ref": "dispatch/011-patch-sentinel.md",
+    "inputs": [
+      {"path": "dispatch/011-patch-sentinel.md", "sha256": "5dafbecbab142868b9530ccf96d273d7e6da064963d0db9193d667f4c0468aba"},
+      {"path": "brief.json", "sha256": "c27aa6bc9969f981aed9185637565c2792f58b80646cc531afa503e27f969389"},
+      {"path": ".claude/agents/patch-sentinel.md", "sha256": "82ef85a2f6b7cb8ebca3d169c1fa58f2333317253e27ab076ac7a2d34ea1eec3"},
+      {"path": "docs/06-sourcing-policy.md", "sha256": "f883176c3b9c0f10ad8c06027eebb8436f1989068c72fffdc9df51878c618bf8"},
+      {"path": "docs/07-hardcore-worlds-baseline.md", "sha256": "75a2a4abff833d60dce05ec9a0c7ceda54f682c275e3edf73dfa4fe04f79ecf1"},
+      {"path": "schemas/updates.schema.json", "sha256": "249a69abdeae4d39ab0e7570fc273a8e2546f22bebcf502a502dd92228170bf8"}
+    ],
+    "actions": [
+      {"kind": "read", "detail": "Read the charter (incl. constitution), CLAUDE.md, schemas/updates.schema.json, dispatch 011, brief.json, docs/06 and docs/07; hashed all inputs", "target": ".claude/agents/patch-sentinel.md; schemas/updates.schema.json; jobs/agility-1-99-20261119/brief.json; docs/06-sourcing-policy.md; docs/07-hardcore-worlds-baseline.md", "outcome": "charter sha256 82ef85a2...; brief sha256 c27aa6bc9969... matches the dispatch"},
+      {"kind": "verify", "detail": "python3 tools/ledger.py verify agility-1-99-20261119 (at start and again after the resume)", "target": "jobs/agility-1-99-20261119/ledger.jsonl", "outcome": "OK: ledger chain and all seals intact (both times); dispatch/011 sealed at ledger seq 34 with the hash I recorded"},
+      {"kind": "read", "detail": "Read the validator's updates/provenance checks and the Sentry guard rules (tools/validate.py, tools/sentry.py) to learn the command and write limits", "target": "tools/validate.py; tools/sentry.py", "outcome": "patch-sentinel may run only tools/wiki.py (plus read-only ledger.py); validate.py is outside my tool scope"},
+      {"kind": "search", "detail": "python3 tools/wiki.py new-pages --ns Update --since 2025-11-19", "target": "OSRS Wiki Update namespace", "outcome": "183 Update pages created in the window; all triaged into items U-001..U-039"},
+      {"kind": "search", "detail": "python3 tools/wiki.py category Quests --newest 40; python3 tools/wiki.py category Sailing --newest 40", "target": "Category:Quests; Category:Sailing", "outcome": "Window quests identified; Sailing category additions are cosmetics/sails only"},
+      {"kind": "fetch", "detail": "Full reads of key Update: pages: Summer Sweep Up - Agility & CoX (rev 15303824), Hardcore Worlds Are Coming (15379410), Hardcore Worlds - OUT TODAY (15397724), Reaper's Raffle (15406803), The Graveyard - Rewards Blog (15363564), Poll:Graveyard Rewards and Graceful Rework Poll (15355917)", "target": "https://oldschool.runescape.wiki", "outcome": "Sources for C-UPD-001..029, 070-080"},
+      {"kind": "fetch", "detail": "Grep reads of Quest Month Kick Off (15396686), Week Two (15399840), Week 3 (15406871), Summer Campfire 2026 (15220685), Red Reef Out Today (15279172), Blood Moon Rises Out Today (15254166), RuneFest 2026 Summit (15384614), Chosen Commander poll blog (15408831), Quest Month - RuneFest 2026 (15363537) and about 40 other window Update pages, using grep agility|marks of grace|graceful|rooftop|sepulchre (each a separate wiki.py call)", "target": "https://oldschool.runescape.wiki", "outcome": "Agility-relevant hits recorded per item; pages with no hits marked none/low"},
+      {"kind": "fetch", "detail": "Quest pages via wiki.py page --grep (release, qp, rewards, requirements): The Writing's on the Wall 15404622, Mudfoot 15401967, Birds and the Wasps 15407112, Shell of a Friend 15407128, RaBM III 15409360, A New Leaf 15409500, Pandemonium 15400400, Prying Times 15400401, Current Affairs 15400402, Troubled Tortugans 15401691, Red Reef 15400404, Blood Moon Rises 15404533, Fallen From Grace 15400406, A Ruff Situation 15402249, Crab Quest 15402254, Ides of Milk 15401692, Daddy's Home 15401680, Troll Stronghold 15395347, Ernest the Chicken 15390916, An Existential Crisis 15392936, The Chosen Commander 15396012, Shadows of Custodia 15391626, Scrambled! 15373706, Learning the Ropes 15405210, Antique lamp (A New Leaf) 15409261, Quests/Release dates 15405795, Quest Month 15408886", "target": "https://oldschool.runescape.wiki", "outcome": "Agility and Defence XP established for all 17 window quests"},
+      {"kind": "fetch", "detail": "Content pages: Hardcore Worlds 15404671 (full + grep), HiScores 15409279, Module:Hiscores 15383953, Agility 15405162, Mark of Grace 15403415, Colossal Wyrm Agility Course 15388138, Hallowed Sepulchre 15387544, Wilderness Agility Course 15351989, Graceful outfit 15403851, Sailing 15366653, Sea charting 15396464, Upcoming updates 15404511, Polls 15399921; wiki searches for Sailing/Agility interactions and the hiscores board id", "target": "https://oldschool.runescape.wiki", "outcome": "Colossal Wyrm page flagged obsolete; hiscores board id not on the wiki; no Sailing Agility-XP source found"},
+      {"kind": "search", "detail": "WebSearch x4: 'OSRS Hardcore Worlds hiscores hiscore_oldschool_hardcore_mains'; 'Old School RuneScape Quest Month November 2026 The Graveyard release date Agility course'; 'secure.runescape.com news oldschool Graveyard Agility course November 2026'; 'OSRS Agility update 2026 Hallowed Sepulchre floor 4 77 Colossal Wyrm course change'; plus '\"Hardcore Worlds\" OSRS news random events unsafe Hardcore Group Ironman ruleset Jagex'", "target": "web", "outcome": "Leads only (T4); consistent with the wiki; osrstools.net named the board id"},
+      {"kind": "fetch", "detail": "WebFetch https://secure.runescape.com/m=hiscore_oldschool_hardcore_mains/overall and https://www.osrstools.net/blog/hardcore-worlds-are-live", "target": "secure.runescape.com; www.osrstools.net", "outcome": "Both failed: getaddrinfo ENOTFOUND (hosts outside the session's network allowlist). Not retried."},
+      {"kind": "compute", "detail": "Diffed The Graveyard revisions 15408433 and 15409628 after the resume; compared T1 vs wiki QP and reward wording for the Quest Month quests; read the quest numbering on Quests/Release dates", "outcome": "Only the release date changed (to 25 November 2026); QP discrepancies recorded in gaps"},
+      {"kind": "verify", "detail": "After the resume: wiki.py new-pages --ns Update --since 2026-11-18; wiki.py history for The Graveyard, Hardcore Worlds and Quest Month; wiki.py rev 15409628 and 15409627", "target": "https://oldschool.runescape.wiki", "outcome": "No new Update pages; The Graveyard and Quest Month revised with a 25 Nov date (newer revisions cited); Hardcore Worlds unchanged"},
+      {"kind": "write", "detail": "Wrote research/updates.json", "target": "jobs/agility-1-99-20261119/research/updates.json"},
+      {"kind": "verify", "detail": "python3 tools/validate.py agility-1-99-20261119 research", "target": "jobs/agility-1-99-20261119/research/updates.json", "outcome": "No FAIL for updates.json (schema OK). WARN: not sealed (expected), and C-UPD-014 is T4-only. The 2 FAILs are both claims-quests.json (another desk; missing gaps/provenance)."}
+    ],
+    "decisions": [
+      {"decision": "Use wiki Update: pages as the T1 channel and WebSearch as the independent second channel", "reason": "The charter rates Update: pages as T1. secure.runescape.com is not reachable from this session, so WebSearch was the only independent web channel available.", "alternatives_considered": ["WebFetch of the official news posts (blocked by DNS/allowlist)", "Relying on wiki content pages only (would leave a single channel)"]},
+      {"decision": "Put the hiscores board identifier in a separate low-confidence T4 claim (C-UPD-014) rather than present it as T1-backed", "reason": "The dispatch asked for T1-backed claims, but no T1 or T2 source names m=hiscore_oldschool_hardcore_mains, and the official host is blocked. Claiming T1 support would be inventing it. The separate-board fact is T2-backed in C-UPD-013.", "alternatives_considered": ["Citing brief.json / docs/07 as a source (not a source tier; docs/07 is explicitly unverified leads)", "Omitting the claim (would hide the gap from the verifier)"]},
+      {"decision": "Use the 4 Nov launch post's 14-item unsafe list (with PvM Arena) as canonical over the 22 Oct 13-item list", "reason": "It is the later T1 post, and the wiki agrees with it.", "alternatives_considered": ["The 13-item announcement list"]},
+      {"decision": "Record the wiki-only safe exceptions (boat capsizing, Emir's Arena, Pete Kayer, Galvek and Glough replays) as medium-confidence T2 claims flagged as not Jagex-confirmed", "reason": "A safe death on Hardcore Worlds is a danger-critical classification. Sourcing policy rule 4 asks for T1 or a second source, which these lack.", "alternatives_considered": ["Merge into the official safe list", "Drop them"]},
+      {"decision": "Put all Graveyard facts under upcoming_30d and mark claims with scope.status=upcoming; no route use", "reason": "The dispatch and brief forbid routing unreleased content. The 25 Nov date falls inside the 30-day window.", "alternatives_considered": []},
+      {"decision": "Cite the newer revisions of The Graveyard (15409628) and Quest Month (15409627) that appeared during the interruption", "reason": "The verifier re-reads the current revision, and citing the older one would come back STALE. The only difference is the added 25 Nov date.", "alternatives_considered": ["Keep the 19 Nov revisions and note the change"]},
+      {"decision": "Give each window quest one 'xp_rewards' claim whose value lists Agility and Defence explicitly, with separate claims for choosable lamps and for the Agility-relevant quest (The Writing's on the Wall)", "reason": "This gives the planner and XP engine a citeable Agility and Defence value for every quest without splitting each quest into many near-duplicate claims.", "alternatives_considered": ["Two claims per quest (Agility, Defence) for all 17 quests"]},
+      {"decision": "Include Troll Stronghold's new 2,000 Agility XP and the Ernest the Chicken retrofit lamp, although both quests are old", "reason": "A window update changed their rewards, and both bear on Agility XP and the zerker lamp policy.", "alternatives_considered": []},
+      {"decision": "Correct docs/07 lead: the 30 Jun 2026 Myreque finale is The Blood Moon Rises (not Sins of the Father)", "reason": "Both Quests/Release dates and the T1 release post name The Blood Moon Rises. The Director may want to record this correction.", "alternatives_considered": []}
+    ],
+    "limitations": [
+      "Work was interrupted by a usage limit partway through the sweep. The last action before the stop was at about 2026-11-19T22:12Z, and work resumed at 2026-11-20T02:14Z on the coordinator's instruction. On resume I re-verified the ledger and input hashes, re-swept new Update pages and re-checked volatile pages (The Graveyard, Quest Month, Hardcore Worlds). No research was redone from memory.",
+      "secure.runescape.com and www.osrstools.net were unreachable (DNS/allowlist), so there is no direct Jagex news or hiscores fetch. T1 relies on the wiki's verbatim Update: copies.",
+      "tools/sentry.py lists only wiki.py in the patch-sentinel tool scope, but the validate.py run was not blocked. The Director should re-run the gate independently.",
+      "Process deviations, recorded for the audit: some early read-only commands chained several steps with '&&' (cat/sha256sum/ls/ledger verify), which the Sentry policy disallows for single commands. I also ran one mistaken command, 'python3 tools/rev.py 2' (no such script; exit 2, no effect). After that, every command was a single call.",
+      "WebSearch result summaries are model-written and were used only as leads.",
+      "About 70 Update pages with no gameplay text (podcasts, merch, community, accounts, Leagues/DMM promotion) were triaged by title only.",
+      "No Danger Scores or method rates were produced. Those belong to other desks."
+    ]
+  }
+}

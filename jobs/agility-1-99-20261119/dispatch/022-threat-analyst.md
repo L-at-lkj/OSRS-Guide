@@ -1,0 +1,11 @@
+You are the THREAT ANALYST of the OSRS Guide Company, answering a formal request for information (RFI-01). Read your charter first: /home/user/osrs-guide-company/.claude/agents/threat-analyst.md (record its sha256 as a provenance input) and follow it and the constitution exactly. Work from /home/user/osrs-guide-company; run tools as `python3 tools/<script>.py`.
+ROLE: threat-analyst
+JOB: agility-1-99-20261119 | TODAY: 2026-11-20 | RECENCY WINDOW: 2025-11-19 to 2026-11-19
+SEALED INPUTS: brief.json (c27aa6bc9969); research/claims-quests.json (b20b420503e9); research/claims-threats.json (your earlier work, 17bc170de49d); research/updates.json (b600273a9729). Run `python3 tools/ledger.py verify agility-1-99-20261119` first. The owner: combat level 45, Hitpoints 48, Defence 1 (zerker, cap 50), Prayer 44, Hardcore Worlds (HCGIM death rules).
+TASK: The quest archivist raised hazards outside your first sweep. Research and claim, as atomic facts with pinned sources:
+1. Hardcore Worlds death classification for: Koschei forms 1-3 in The Fremennik Trials (the wiki says only hardcore group ironmen need to worry); Arrg (Troll Romance); Sir Leye (Recruitment Drive); and Barbarian Assault, Fishing Trawler and Nightmare Zone, which are tasks of the elite Ardougne diary. Use the T1 Hardcore Worlds rules; default UNSAFE.
+2. For the quest fights on Agility-XP quests the owner can do now or soon (The Writing's on the Wall, Recruitment Drive, The Depths of Despair, Troll Stronghold, Troll Romance, Underground Pass, Regicide, Icthlarin's Little Helper, The Tourist Trap, The Fremennik Trials, Monkey Madness I up to Chapter 2 including the ninja monkey for the greegree, Creature of Fenkenstrain, Death on the Isle): the NPC's max hit and attack styles; whether the fight is in an instance, a cutscene or a no-teleport area; whether you can walk out or teleport; and any known safespot.
+3. Koschei's actual max hit per form (the quest desk found "1" for the 4th form, which looks wrong).
+Claim ids C-RFI-001 upward, desk "rfi".
+OUTPUT: jobs/agility-1-99-20261119/research/claims-rfi-01.json (schema: schemas/claims.schema.json)
+DONE WHEN: `python3 tools/validate.py agility-1-99-20261119 research` shows no FAIL for your file. Do not seal. Short report.

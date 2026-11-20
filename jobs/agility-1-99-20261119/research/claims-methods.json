@@ -1,0 +1,1642 @@
+{
+  "desk": "methods",
+  "as_of": "2026-11-19",
+  "claims": [
+    {
+      "claim_id": "C-MTH-001",
+      "subject": "Canifis Rooftop Course",
+      "attribute": "level_requirement",
+      "value": 40,
+      "unit": "Agility level",
+      "statement": "The Canifis Rooftop Course requires level 40 Agility.",
+      "scope": {"method": "Canifis Rooftop Course"},
+      "sources": [{"tier": "T2", "title": "Canifis Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374436", "revid": 15374436, "retrieved": "2026-11-19T22:05:27Z", "quote": "available to players with an [[Agility]] level of 40 or above.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-002",
+      "subject": "Canifis Rooftop Course",
+      "attribute": "requirement_quest",
+      "value": "Priest in Peril",
+      "statement": "The Canifis Rooftop Course is only accessible after completing Priest in Peril (the owner has completed it).",
+      "scope": {"method": "Canifis Rooftop Course"},
+      "sources": [{"tier": "T2", "title": "Canifis Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374436", "revid": 15374436, "retrieved": "2026-11-19T22:05:27Z", "quote": "It is only accessible to players who have completed the [[Priest in Peril]] quest.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-003",
+      "subject": "Canifis Rooftop Course",
+      "attribute": "xp_per_lap",
+      "value": 240,
+      "unit": "Agility XP per lap",
+      "statement": "A Canifis rooftop lap gives 240 Agility XP, 175 of it on completion.",
+      "scope": {"method": "Canifis Rooftop Course"},
+      "sources": [{"tier": "T2", "title": "Canifis Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374436", "revid": 15374436, "retrieved": "2026-11-19T22:05:27Z", "quote": "Players get 240 experience from completing the course, including 175 experience upon completion of the course.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-004",
+      "subject": "Canifis Rooftop Course",
+      "attribute": "xp_per_hour_range",
+      "value": {"low": 14000, "high": 19700},
+      "unit": "Agility XP/hour",
+      "statement": "Canifis gives about 14,000-17,000 XP/h in the wiki training table (levels 40-50), up to about 19,700 XP/h at the 43.8 s perfect lap time.",
+      "scope": {"method": "Canifis Rooftop Course", "assumptions": "Low end: wiki 'Agility training' rooftop table for levels 40-50, including fails. High end: course page's perfect 43.8 s laps, no fails (no fails from 64 Agility). Low attention; run energy refills during the lap."},
+      "sources": [
+        {"tier": "T2", "title": "Agility training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875", "revid": 15369875, "retrieved": "2026-11-19T22:05:10Z", "quote": "| 14,000–17,000", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Canifis Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374436", "revid": 15374436, "retrieved": "2026-11-19T22:05:27Z", "quote": "With a lap time of 43.8 seconds, it is possible to get around 19,700 Agility experience per hour from this course.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high",
+      "notes": "Below the owner's level for XP; relevant mainly as a Marks of Grace (Graceful) option."
+    },
+    {
+      "claim_id": "C-MTH-005",
+      "subject": "Canifis Rooftop Course",
+      "attribute": "marks_of_grace_rate",
+      "value": {"low": 16, "high": 18},
+      "unit": "marks of grace/hour",
+      "statement": "Canifis yields roughly 16-18 marks of grace per hour, and unlike other rooftops its mark rate does not drop at 20 levels above the requirement.",
+      "scope": {"method": "Canifis Rooftop Course", "assumptions": "Course page figure, luck dependent; the training table gives a lower 12.8-15.5."},
+      "sources": [
+        {"tier": "T2", "title": "Canifis Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374436", "revid": 15374436, "retrieved": "2026-11-19T22:05:27Z", "quote": "The Canifis Rooftop Agility Course should generally earn players roughly 16-18 marks per hour, depending on luck.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Canifis Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374436", "revid": 15374436, "retrieved": "2026-11-19T22:05:27Z", "quote": "unlike other rooftop courses, the mark of grace rate '''does not''' decrease at level 60 (20 levels above the course requirement)", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "medium",
+      "notes": "Wiki sources differ (training table 12.8-15.5/h vs course page 16-18/h)."
+    },
+    {
+      "claim_id": "C-MTH-006",
+      "subject": "Canifis Rooftop Course",
+      "attribute": "failure_level",
+      "value": 64,
+      "unit": "Agility level",
+      "statement": "Canifis has one failable obstacle (Jump Gap 3), which stops failing at level 64 Agility.",
+      "scope": {"method": "Canifis Rooftop Course"},
+      "sources": [{"tier": "T2", "title": "Canifis Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374436", "revid": 15374436, "retrieved": "2026-11-19T22:05:27Z", "quote": "The chance to succeed starts at 88.28% at level 40 Agility, scaling linearly until the player stops failing the obstacle at level 64 Agility.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-007",
+      "subject": "Canifis Rooftop Course",
+      "attribute": "location",
+      "value": "Canifis (Morytania), starting at the tall tree north of the bank",
+      "statement": "The Canifis course starts at the tall tree just north of the Canifis bank.",
+      "scope": {"method": "Canifis Rooftop Course"},
+      "sources": [{"tier": "T2", "title": "Canifis Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374436", "revid": 15374436, "retrieved": "2026-11-19T22:05:27Z", "quote": "The Canifis Rooftop Agility Course can be started by climbing the Tall Tree just north of the [[bank]]", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-008",
+      "subject": "Falador Rooftop Course",
+      "attribute": "level_requirement",
+      "value": 50,
+      "unit": "Agility level",
+      "statement": "The Falador Rooftop Course requires level 50 Agility and has no quest requirement stated.",
+      "scope": {"method": "Falador Rooftop Course"},
+      "sources": [{"tier": "T2", "title": "Falador Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15319531", "revid": 15319531, "retrieved": "2026-11-19T22:05:30Z", "quote": "available to players with an [[Agility]] level of 50.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-009",
+      "subject": "Falador Rooftop Course",
+      "attribute": "xp_per_lap",
+      "value": 586,
+      "unit": "Agility XP per lap",
+      "statement": "A Falador rooftop lap gives 586 Agility XP.",
+      "scope": {"method": "Falador Rooftop Course"},
+      "sources": [{"tier": "T2", "title": "Falador Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15319531", "revid": 15319531, "retrieved": "2026-11-19T22:05:30Z", "quote": "Players get 586 experience from completing the course, including the 241 experience from the last roof jump.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-010",
+      "subject": "Falador Rooftop Course",
+      "attribute": "xp_per_hour_range",
+      "value": {"low": 27200, "high": 35000},
+      "unit": "Agility XP/hour",
+      "statement": "Falador gives about 27,200-29,100 XP/h on average (29,000-34,000 in the training table) and about 35,000 XP/h at most.",
+      "scope": {"method": "Falador Rooftop Course", "assumptions": "Average includes fails, which stop at 66 Agility; maximum assumes ~1-minute perfect laps. Low attention."},
+      "sources": [
+        {"tier": "T2", "title": "Falador Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15319531", "revid": 15319531, "retrieved": "2026-11-19T22:05:30Z", "quote": "the maximum hourly experience rate approximately 35,000 experience per hour, whereas the average rate of experience would lie between 27,200–29,100 experience per hour, depending on Agility levels, as higher Agility means failing obstacles less.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Agility training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875", "revid": 15369875, "retrieved": "2026-11-19T22:05:10Z", "quote": "| 29,000–34,000", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-011",
+      "subject": "Falador Rooftop Course",
+      "attribute": "failure_damage",
+      "value": {"min": 3, "max": 8, "no_fail_level": 66},
+      "unit": "Hitpoints",
+      "statement": "Falador's Hand Holds can be failed for 3-8 damage; the course stops failing at 66 Agility.",
+      "scope": {"method": "Falador Rooftop Course"},
+      "sources": [
+        {"tier": "T2", "title": "Falador Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15319531", "revid": 15319531, "retrieved": "2026-11-19T22:05:30Z", "quote": "It's possible to fail during the \"Hand Holds\" section, dealing 3–8 damage.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Falador Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15319531", "revid": 15319531, "retrieved": "2026-11-19T22:05:30Z", "quote": "At 66 [[Agility]] you will stop failing the course.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-012",
+      "subject": "Falador Rooftop Course",
+      "attribute": "marks_of_grace_rate",
+      "value": {"low": 9.7, "high": 12.1},
+      "unit": "marks of grace/hour",
+      "statement": "Falador spawns about one mark every 5-6 laps, roughly 9.7-12.1 marks/h (until the rate drops to 20% at 70 Agility).",
+      "scope": {"method": "Falador Rooftop Course"},
+      "sources": [
+        {"tier": "T2", "title": "Falador Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15319531", "revid": 15319531, "retrieved": "2026-11-19T22:05:30Z", "quote": "The rate of spawn is roughly once per 5-6 laps.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Agility training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875", "revid": 15369875, "retrieved": "2026-11-19T22:05:10Z", "quote": "| 9.7–11.3", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high",
+      "notes": "Rooftop summary table on 'Rooftop Agility Courses' gives 10-12.1."
+    },
+    {
+      "claim_id": "C-MTH-013",
+      "subject": "Falador Rooftop Course",
+      "attribute": "location",
+      "value": "Eastern Falador, wall of the house directly east of the Mining Guild",
+      "statement": "The Falador course starts at the south wall of the house directly east of the Mining Guild in Falador.",
+      "scope": {"method": "Falador Rooftop Course"},
+      "sources": [{"tier": "T2", "title": "Falador Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15319531", "revid": 15319531, "retrieved": "2026-11-19T22:05:30Z", "quote": "The Falador Rooftop Agility Course can be started by climbing the south side wall of the house directly east of the [[Mining Guild]] in Falador.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-014",
+      "subject": "Rooftop Agility Courses",
+      "attribute": "marks_of_grace_level_penalty",
+      "value": {"levels_above_requirement": 20, "rate_multiplier": 0.2, "exception": "Canifis Rooftop Course"},
+      "statement": "On every rooftop course except Canifis, the mark of grace spawn rate drops to 20% once unboosted Agility is 20 or more levels above the course requirement.",
+      "scope": {"method": "all rooftop courses"},
+      "sources": [
+        {"tier": "T2", "title": "Rooftop Agility Courses", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15337972", "revid": 15337972, "retrieved": "2026-11-19T22:05:59Z", "quote": "If a player's Agility level is 20 or more levels higher than the requirement for the course, then marks will spawn at 20% of the normal rate.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Agility training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875", "revid": 15369875, "retrieved": "2026-11-19T22:05:10Z", "quote": "The spawn rate of marks on any rooftop course (excluding the [[Canifis Rooftop Course]]) is reduced to 20% of the normal rate once the player reaches 20 Agility levels higher than the requirement of that rooftop course.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-015",
+      "subject": "Seers' Village Rooftop Course",
+      "attribute": "level_requirement",
+      "value": 60,
+      "unit": "Agility level",
+      "statement": "The Seers' Village Rooftop Course requires level 60 Agility.",
+      "scope": {"method": "Seers' Village Rooftop Course"},
+      "sources": [{"tier": "T2", "title": "Seers' Village Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15356820", "revid": 15356820, "retrieved": "2026-11-19T22:05:32Z", "quote": "that is available to players with an [[Agility]] level of 60.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-016",
+      "subject": "Seers' Village Rooftop Course",
+      "attribute": "xp_per_lap",
+      "value": 570,
+      "unit": "Agility XP per lap",
+      "statement": "A Seers' Village rooftop lap gives 570 Agility XP; 60 to 70 takes 814 laps.",
+      "scope": {"method": "Seers' Village Rooftop Course"},
+      "sources": [{"tier": "T2", "title": "Seers' Village Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15356820", "revid": 15356820, "retrieved": "2026-11-19T22:05:32Z", "quote": "Players gain 570 experience in total per completed lap of the course.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-017",
+      "subject": "Seers' Village Rooftop Course",
+      "attribute": "xp_per_hour_range",
+      "value": {"no_teleport": {"low": 40000, "high": 44000}, "with_hard_diary_teleport": {"low": 50000, "high": 56000}},
+      "unit": "Agility XP/hour",
+      "statement": "Seers' gives about 40,000-44,000 XP/h walking back to the start, or 50,000-56,000 XP/h using the hard-diary Camelot Teleport to Seers' bank.",
+      "scope": {"method": "Seers' Village Rooftop Course", "assumptions": "Wiki training table, levels 60-70. Perfect-lap ceiling is 46,600 XP/h (no teleport) or 56,000 XP/h (teleport). The course page estimates ~75 s laps at 60-65 while still failing (obstacles stop failing at 79), which is well below the table. Low attention."},
+      "sources": [
+        {"tier": "T2", "title": "Agility training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875", "revid": 15369875, "retrieved": "2026-11-19T22:05:10Z", "quote": "No teleport:<br/>40,000–44,000", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Agility training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875", "revid": 15369875, "retrieved": "2026-11-19T22:05:10Z", "quote": "| Seers' Teleport:<br/>50,000–56,000", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Seers' Village Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15356820", "revid": 15356820, "retrieved": "2026-11-19T22:05:32Z", "quote": "meaning that at maximum efficiency, the maximum amount of experience gained is '''46,600 per hour (~81 laps per hour)''', or 56,000 per hour (~97 laps per hour) with Seers bank teleport.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high",
+      "notes": "The teleport rate is unavailable to this owner: see C-MTH-021 (hard diary needs 70 Defence)."
+    },
+    {
+      "claim_id": "C-MTH-018",
+      "subject": "Seers' Village Rooftop Course",
+      "attribute": "failure_level",
+      "value": 79,
+      "unit": "Agility level",
+      "statement": "Seers' has two failable obstacles (Jump Gap 1 and Tightrope Walk), which stop failing at 79 Agility.",
+      "scope": {"method": "Seers' Village Rooftop Course"},
+      "sources": [{"tier": "T2", "title": "Seers' Village Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15356820", "revid": 15356820, "retrieved": "2026-11-19T22:05:32Z", "quote": "There are two locations where the player may fail; Jump Gap 1 and Tightrope Walk. These obstacles will stop failing at 79 Agility.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-019",
+      "subject": "Seers' Village Rooftop Course",
+      "attribute": "marks_of_grace_rate",
+      "value": {"no_diary": {"low": 11.8, "high": 13.0}, "hard_diary": {"low": 14.3, "high": 16.0}},
+      "unit": "marks of grace/hour",
+      "statement": "Seers' gives about 11.8-13.0 marks/h without a Kandarin diary and 14.3-16.0 with the hard diary; easy/medium/hard Kandarin diaries add a 5/10/15% reroll on failed mark rolls.",
+      "scope": {"method": "Seers' Village Rooftop Course", "assumptions": "Wiki training table; the rate falls to 20% from 80 Agility."},
+      "sources": [
+        {"tier": "T2", "title": "Agility training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875", "revid": 15369875, "retrieved": "2026-11-19T22:05:10Z", "quote": "No diary:<br/>11.8–13.0", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Agility training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875", "revid": 15369875, "retrieved": "2026-11-19T22:05:10Z", "quote": "Completing the easy, medium, and hard Kandarin Diary provides a 5%, 10%, and 15% chance respectively of generating a Mark of Grace on a failed roll.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-020",
+      "subject": "Kandarin Diary (hard)",
+      "attribute": "reward_seers_teleport",
+      "value": "Camelot Teleport can be set to land at Seers' Village bank",
+      "statement": "Completing the hard Kandarin Diary lets Camelot Teleport land at Seers' Village bank, in front of the rooftop course start; the wiki says this teleport is needed for the fastest Seers' rates.",
+      "scope": {"method": "Seers' Village Rooftop Course"},
+      "sources": [
+        {"tier": "T2", "title": "Kandarin Diary", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404237", "revid": 15404237, "retrieved": "2026-11-19T22:05:36Z", "quote": "*[[Camelot Teleport]] can now be used to teleport to [[Seers' Village bank]] instead", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Agility training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875", "revid": 15369875, "retrieved": "2026-11-19T22:05:10Z", "quote": "The hard [[Kandarin Diary]] reward allows the player to toggle the [[Camelot Teleport]] location to just outside (south) of the Seers' bank, right in front of the start of the agility course. Using this teleport is required for the fastest rates on this course.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-021",
+      "subject": "Kandarin Diary (hard)",
+      "attribute": "requirement_defence",
+      "value": {"Defence": 70, "Prayer": 70, "boostable": false, "quests": ["King's Ransom", "Knight Waves Training Grounds"]},
+      "statement": "The hard Kandarin task 'Enter the Seers' courthouse with Piety' needs 70 Defence and 70 Prayer (neither boostable), plus King's Ransom and the Knight Waves Training Grounds.",
+      "scope": {"method": "Seers' Village Rooftop Course (teleport variant)"},
+      "sources": [
+        {"tier": "T2", "title": "Kandarin Diary", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404237", "revid": 15404237, "retrieved": "2026-11-19T22:05:36Z", "quote": "|4. Enter the [[Seers' Village courthouse]] with [[piety]] turned on.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Kandarin Diary", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404237", "revid": 15404237, "retrieved": "2026-11-19T22:05:36Z", "quote": "*{{SCP|Prayer|70|link=y}}{{Boostable|n}} and {{SCP|Defence|70|link=y}}{{Boostable|n}}", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Kandarin Diary", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404237", "revid": 15404237, "retrieved": "2026-11-19T22:05:36Z", "quote": "*{{SCP|Quest}} Completion of [[King's Ransom]] and the [[Knight Waves Training Grounds]]", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high",
+      "notes": "BUILD CONFLICT: the owner's zerker build caps Defence at 50 (brief profile.build), so the hard Kandarin Diary and the Seers' bank teleport cannot be obtained. Seers' must be planned at the no-teleport rate."
+    },
+    {
+      "claim_id": "C-MTH-022",
+      "subject": "Kandarin Diary (hard)",
+      "attribute": "requirement_minigame",
+      "value": "Buy and equip a granite body from Barbarian Assault (Penance Queen defeated; 50 Strength, 50 Defence)",
+      "statement": "Another hard Kandarin task is buying and equipping a granite body from Barbarian Assault, which needs the Penance Queen defeated plus 50 Strength and 50 Defence.",
+      "scope": {"method": "Seers' Village Rooftop Course (teleport variant)"},
+      "sources": [
+        {"tier": "T2", "title": "Kandarin Diary", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404237", "revid": 15404237, "retrieved": "2026-11-19T22:05:36Z", "quote": "|9. Purchase and equip a [[granite body]] from [[Barbarian Assault]].", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Kandarin Diary", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404237", "revid": 15404237, "retrieved": "2026-11-19T22:05:36Z", "quote": "This requires having defeated the [[Penance Queen]] at the end of [[Barbarian Assault]].", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high",
+      "notes": "For the Threat Analyst: docs/07 (unverified lead) lists Barbarian Assault as unsafe on Hardcore Worlds."
+    },
+    {
+      "claim_id": "C-MTH-023",
+      "subject": "Kandarin Diary (hard)",
+      "attribute": "requirement_skills",
+      "value": {"Fishing": 70, "Fletching": 70, "Woodcutting": 60, "Magic": 56, "Firemaking": 65, "Thieving": 53, "Smithing": 75, "Construction": 50},
+      "statement": "The other hard Kandarin tasks need 70 Fishing, 70 Fletching, 60 Woodcutting, 56 Magic, 65 Firemaking, 53 Thieving, 75 Smithing and 50 Construction, and the easy and medium tiers must be done before the hard reward can be claimed.",
+      "scope": {"method": "Seers' Village Rooftop Course (teleport variant)"},
+      "sources": [
+        {"tier": "T2", "title": "Kandarin Diary", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404237", "revid": 15404237, "retrieved": "2026-11-19T22:05:36Z", "quote": "*{{SCP|Fletching|70|link=y}} and {{SCP|Woodcutting|60|link=y}}", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Kandarin Diary", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404237", "revid": 15404237, "retrieved": "2026-11-19T22:05:36Z", "quote": "*{{SCP|Fishing|70|link=y}}, {{SCP|Agility|45|link=y}}, and {{SCP|Strength|45|link=y}}", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Kandarin Diary", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404237", "revid": 15404237, "retrieved": "2026-11-19T22:05:36Z", "quote": "Tasks may be done in any order, but the previous tiers of a diary must be completed to claim rewards of the next tier.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "medium",
+      "notes": "Skill list transcribed from the hard-tier table of the pinned revision; only representative lines are quoted. Quest Archivist / Fact Verifier should confirm the full list."
+    },
+    {
+      "claim_id": "C-MTH-024",
+      "subject": "Camelot Teleport",
+      "attribute": "level_requirement",
+      "value": 45,
+      "unit": "Magic level",
+      "statement": "Camelot Teleport needs 45 Magic (the owner has 44), so even the standard Camelot teleport to the Seers' area is one Magic level away.",
+      "scope": {"method": "Seers' Village Rooftop Course access"},
+      "sources": [
+        {"tier": "T2", "title": "Kandarin Diary", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404237", "revid": 15404237, "retrieved": "2026-11-19T22:05:36Z", "quote": "|6. Teleport to [[Camelot]].", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Kandarin Diary", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404237", "revid": 15404237, "retrieved": "2026-11-19T22:05:36Z", "quote": "*{{SCP|Magic|45|link=y}}", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "medium",
+      "notes": "Taken from the easy-tier task line of the Kandarin Diary. A Camelot teleport tablet may not need the Magic level; that was not checked (Logistics desk)."
+    },
+    {
+      "claim_id": "C-MTH-025",
+      "subject": "Seers' Village Rooftop Course",
+      "attribute": "location",
+      "value": "Seers' Village, wall near the entrance of Seers' Village bank",
+      "statement": "The Seers' course starts at the wall near the entrance of Seers' Village bank and ends at the church by the yew trees.",
+      "scope": {"method": "Seers' Village Rooftop Course"},
+      "sources": [{"tier": "T2", "title": "Seers' Village Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15356820", "revid": 15356820, "retrieved": "2026-11-19T22:05:32Z", "quote": "The Seers' Village Rooftop Agility Course can be started by climbing up the wall near the entrance of [[Seers' Village bank]]", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-026",
+      "subject": "Pollnivneach Rooftop Course",
+      "attribute": "level_requirement",
+      "value": 70,
+      "unit": "Agility level",
+      "statement": "The Pollnivneach Rooftop Course requires 70 Agility and cannot be failed from 85 Agility.",
+      "scope": {"method": "Pollnivneach Rooftop Course"},
+      "sources": [{"tier": "T2", "title": "Pollnivneach Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375189", "revid": 15375189, "retrieved": "2026-11-19T22:05:43Z", "quote": "that is available to players with an [[Agility]] level of 70 or over. At level 85 Agility, it becomes impossible to fail any part of the course.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-027",
+      "subject": "Pollnivneach Rooftop Course",
+      "attribute": "xp_per_lap",
+      "value": {"no_diary": 890, "desert_hard_diary": 1016},
+      "unit": "Agility XP per lap",
+      "statement": "A Pollnivneach lap gives 890 Agility XP, or 1,016 after the hard Desert Diary.",
+      "scope": {"method": "Pollnivneach Rooftop Course"},
+      "sources": [{"tier": "T2", "title": "Pollnivneach Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375189", "revid": 15375189, "retrieved": "2026-11-19T22:05:43Z", "quote": "Completing the course rewards a total of 890 Agility experience, which is increased to 1016 experience after completing the [[Desert Hard Diary]].", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-028",
+      "subject": "Pollnivneach Rooftop Course",
+      "attribute": "xp_per_hour_range",
+      "value": {"no_diary": {"low": 47000, "high": 51000}, "desert_hard_diary": {"low": 53000, "high": 58000}},
+      "unit": "Agility XP/hour",
+      "statement": "Pollnivneach gives about 47,000-51,000 XP/h without the hard Desert Diary and 53,000-58,000 XP/h with it; perfect 60.6 s laps cap at about 52,300 and 60,300.",
+      "scope": {"method": "Pollnivneach Rooftop Course", "assumptions": "Wiki training table, levels 70-80, including some fails. The ceiling assumes 101-tick perfect laps. Low attention."},
+      "sources": [
+        {"tier": "T2", "title": "Agility training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875", "revid": 15369875, "retrieved": "2026-11-19T22:05:10Z", "quote": "No hard diary:<br/>47,000–51,000", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Pollnivneach Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375189", "revid": 15375189, "retrieved": "2026-11-19T22:05:43Z", "quote": "With 101 ticks (60.6 seconds) per lap, it is possible to gain around 52,300 exp per hour without the diary, and 60,300 exp per hour with the diary.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-029",
+      "subject": "Pollnivneach Rooftop Course",
+      "attribute": "marks_of_grace_rate",
+      "value": {"no_diary": {"low": 13, "high": 14}, "desert_hard_diary": {"low": 16, "high": 18}},
+      "unit": "marks of grace/hour",
+      "statement": "Pollnivneach gives about 13-14 marks/h, or 16-18 with the hard Desert Diary (which gives a 1/3 chance of a 2-minute mark cooldown instead of 3).",
+      "scope": {"method": "Pollnivneach Rooftop Course"},
+      "sources": [
+        {"tier": "T2", "title": "Rooftop Agility Courses", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15337972", "revid": 15337972, "retrieved": "2026-11-19T22:05:59Z", "quote": "|16-18 ([[Desert Diary#Hard|hard diary]])", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Rooftop Agility Courses", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15337972", "revid": 15337972, "retrieved": "2026-11-19T22:05:59Z", "quote": "|13-14 (base)", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-030",
+      "subject": "Desert Diary (hard)",
+      "attribute": "requirements_summary",
+      "value": ["Kill the Kalphite Queen", "Desert Treasure I completed (Ancient Magicks)", "Dream Mentor completed and 68 Magic (Lunar)", "65 Thieving with partial The Feud", "65 Slayer with a Slayer helmet", "68 Smithing", "60 Firemaking", "Contact! partial and 50 Attack"],
+      "statement": "The hard Desert Diary, which boosts Pollnivneach XP and marks, includes killing the Kalphite Queen and needs Desert Treasure I, Dream Mentor (68 Magic), 65 Thieving, 65 Slayer and 68 Smithing among other tasks.",
+      "scope": {"method": "Pollnivneach Rooftop Course (diary variant)"},
+      "sources": [
+        {"tier": "T2", "title": "Desert Diary", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404231", "revid": 15404231, "retrieved": "2026-11-19T22:06:05Z", "quote": "|4. Kill the [[Kalphite Queen]].", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Desert Diary", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404231", "revid": 15404231, "retrieved": "2026-11-19T22:06:05Z", "quote": "*Roughly 14% increased experience and 25% more [[mark of grace|marks of grace]] from the [[Pollnivneach Rooftop Course]]", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "medium",
+      "notes": "Task list transcribed from the pinned hard-tier table; only two lines quoted. Far beyond the owner's current stats; treat the diary bonus as out of reach for planning."
+    },
+    {
+      "claim_id": "C-MTH-031",
+      "subject": "Pollnivneach Rooftop Course",
+      "attribute": "location",
+      "value": "Pollnivneach (Kharidian Desert), basket north-west of the bar",
+      "statement": "The Pollnivneach course starts at the basket north-west of the bar in Pollnivneach.",
+      "scope": {"method": "Pollnivneach Rooftop Course"},
+      "sources": [{"tier": "T2", "title": "Pollnivneach", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402250", "revid": 15402250, "retrieved": "2026-11-19T22:05:46Z", "quote": "Players with 70 [[Agility]] can use the [[Pollnivneach Rooftop Course]], by climbing the basket north-west of the bar.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-032",
+      "subject": "Pollnivneach Rooftop Course",
+      "attribute": "access",
+      "value": ["Magic carpet Shantay Pass to Pollnivneach (from 200 coins)", "Pollnivneach teleport tablet", "House teleport with house in Pollnivneach", "Fairy ring BIQ then walk"],
+      "statement": "Pollnivneach is reached by Ali Morrisane's magic carpet from Shantay Pass (from 200 coins per trip), a Pollnivneach tablet, a house teleport with the house there, or fairy ring BIQ and a walk.",
+      "scope": {"method": "Pollnivneach Rooftop Course"},
+      "sources": [
+        {"tier": "T2", "title": "Pollnivneach", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402250", "revid": 15402250, "retrieved": "2026-11-19T22:05:46Z", "quote": "Each route starts at 200 [[coins]] per trip:", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Pollnivneach", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402250", "revid": 15402250, "retrieved": "2026-11-19T22:05:46Z", "quote": "|teleport = [[House Teleport]] if POH is in Pollnivneach,<br/>[[Pollnivneach tablet]],<br/>", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Pollnivneach", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402250", "revid": 15402250, "retrieved": "2026-11-19T22:05:46Z", "quote": "Use the [[Fairy rings]] teleport ({{Fairycode|BIQ}}) to just south-west of the [[Shantay Pass]].", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high",
+      "notes": "Walking to Pollnivneach without the carpet means crossing the desert (desert heat). POH use on Hardcore Worlds is a threat-desk question (docs/07 lead)."
+    },
+    {
+      "claim_id": "C-MTH-033",
+      "subject": "Rellekka Rooftop Course",
+      "attribute": "level_requirement",
+      "value": 80,
+      "unit": "Agility level",
+      "statement": "The Rellekka Rooftop Course requires 80 Agility; the first tightrope stops failing at 85.",
+      "scope": {"method": "Rellekka Rooftop Course"},
+      "sources": [
+        {"tier": "T2", "title": "Rellekka Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15319532", "revid": 15319532, "retrieved": "2026-11-19T22:05:52Z", "quote": "that is available to players with an [[Agility]] level of 80 or higher.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Rellekka Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15319532", "revid": 15319532, "retrieved": "2026-11-19T22:05:52Z", "quote": "At level 85 Agility, players stop failing at the first tightrope.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-034",
+      "subject": "Rellekka Rooftop Course",
+      "attribute": "xp_per_lap",
+      "value": {"no_diary": 780, "fremennik_hard_diary": 920},
+      "unit": "Agility XP per lap",
+      "statement": "A Rellekka lap gives 780 Agility XP, or 920 after the hard Fremennik Diary.",
+      "scope": {"method": "Rellekka Rooftop Course"},
+      "sources": [
+        {"tier": "T2", "title": "Rellekka Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15319532", "revid": 15319532, "retrieved": "2026-11-19T22:05:52Z", "quote": "!780 (without diary)", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Rooftop Agility Courses", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15337972", "revid": 15337972, "retrieved": "2026-11-19T22:05:59Z", "quote": "|920", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-035",
+      "subject": "Rellekka Rooftop Course",
+      "attribute": "xp_per_hour_range",
+      "value": {"no_diary": {"low": 50000, "high": 55052}, "fremennik_hard_diary": {"low": 59000, "high": 64941}},
+      "unit": "Agility XP/hour",
+      "statement": "Rellekka gives about 50,000-53,000 XP/h without the hard Fremennik Diary (perfect-lap cap 55,052) and 59,000-63,000 with it (cap 64,941).",
+      "scope": {"method": "Rellekka Rooftop Course", "assumptions": "Wiki training table for levels 80-90; caps assume 51.0 s (85-tick) perfect laps. Low attention."},
+      "sources": [
+        {"tier": "T2", "title": "Agility training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875", "revid": 15369875, "retrieved": "2026-11-19T22:05:10Z", "quote": "No hard diary: 50,000–53,000", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Rellekka Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15319532", "revid": 15319532, "retrieved": "2026-11-19T22:05:52Z", "quote": "A full lap of this Agility course can be done in 51.0 seconds (85 [[tick]]s), allowing a maximum rate of 55,052.4 experience per hour assuming perfect laps. This rate is increased to a maximum rate of 64,941.2 experience per hour with the completion of the [[hard Fremennik Diary]].", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-036",
+      "subject": "Rellekka Rooftop Course",
+      "attribute": "marks_of_grace_rate",
+      "value": {"no_diary": {"low": 13, "high": 15.5}, "fremennik_hard_diary": {"low": 16, "high": 19.5}},
+      "unit": "marks of grace/hour",
+      "statement": "Rellekka gives about 13-15.5 marks/h, or 16-19.5 with the hard Fremennik Diary.",
+      "scope": {"method": "Rellekka Rooftop Course"},
+      "sources": [
+        {"tier": "T2", "title": "Rellekka Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15319532", "revid": 15319532, "retrieved": "2026-11-19T22:05:52Z", "quote": "At maximum efficiency, one can expect 13–15.5 marks per hour.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Rooftop Agility Courses", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15337972", "revid": 15337972, "retrieved": "2026-11-19T22:05:59Z", "quote": "|16–19.5 ([[Fremennik Diary#Hard|hard diary]])", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-037",
+      "subject": "Fremennik Diary (hard)",
+      "attribute": "requirements_summary",
+      "value": {"Thieving": 75, "Mining": 70, "Magic": 72, "Herblore": 66, "Hunter": 55, "Smithing": 60, "Woodcutting": 56, "quests": ["Lunar Diplomacy", "Eadgar's Ruse", "The Fremennik Isles (partial)", "The Giant Dwarf (started)", "Throne of Miscellania (partial)"]},
+      "statement": "The hard Fremennik Diary, which gives about 18% more Rellekka XP and 25% more marks, needs 75 Thieving, 70 Mining, 72 Magic with Lunar Diplomacy, 66 Herblore and other skills and quests.",
+      "scope": {"method": "Rellekka Rooftop Course (diary variant)"},
+      "sources": [
+        {"tier": "T2", "title": "Fremennik Diary", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404235", "revid": 15404235, "retrieved": "2026-11-19T22:06:12Z", "quote": "*Roughly 18% increased experience and 25% more [[mark of grace|marks of grace]] from the [[Rellekka Rooftop Course]]", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Fremennik Diary", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404235", "revid": 15404235, "retrieved": "2026-11-19T22:06:12Z", "quote": "*{{SCP|Thieving|75|link=y}}", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "medium",
+      "notes": "Requirement list transcribed from the pinned hard-tier table; representative lines quoted. No Defence requirement was seen in the hard tier."
+    },
+    {
+      "claim_id": "C-MTH-038",
+      "subject": "Rellekka Rooftop Course",
+      "attribute": "access",
+      "value": ["Fairy ring DKS (short run)", "Rellekka teleport tablet / Construction cape", "Teleport to House if house is in Rellekka", "Enchanted lyre"],
+      "statement": "Rellekka is reached by fairy ring DKS (a short run east of the northern entrance), a Rellekka teleport, a house teleport to a Rellekka house, or an enchanted lyre.",
+      "scope": {"method": "Rellekka Rooftop Course"},
+      "sources": [
+        {"tier": "T2", "title": "Rellekka", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387537", "revid": 15387537, "retrieved": "2026-11-19T22:06:18Z", "quote": "* {{Plink|Fairy ring|pic=Fairy ring (Construction) icon}} {{Fairycode|DKS}} — [[Keldagrim]] cave, a short run east of the northern village entrance.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Rellekka", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387537", "revid": 15387537, "retrieved": "2026-11-19T22:06:18Z", "quote": "* {{Plink|Construct. cape|txt=Construction cape}} or {{Plink|Rellekka teleport}} — just outside the house portal.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-039",
+      "subject": "Ardougne Rooftop Course",
+      "attribute": "level_requirement",
+      "value": 90,
+      "unit": "Agility level",
+      "statement": "The Ardougne Rooftop Course requires 90 Agility and stops failing at 95.",
+      "scope": {"method": "Ardougne Rooftop Course"},
+      "sources": [{"tier": "T2", "title": "Ardougne Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15352456", "revid": 15352456, "retrieved": "2026-11-19T22:05:53Z", "quote": "available to players with an [[Agility]] level of 90 or over. It is preceded by the [[Rellekka Rooftop Course]]. Players stop failing this course at 95 [[Agility]].", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-040",
+      "subject": "Ardougne Rooftop Course",
+      "attribute": "xp_per_lap",
+      "value": 889,
+      "unit": "Agility XP per lap",
+      "statement": "An Ardougne rooftop lap gives 889 Agility XP; 90 to 99 takes 8,649 laps.",
+      "scope": {"method": "Ardougne Rooftop Course"},
+      "sources": [
+        {"tier": "T2", "title": "Rooftop Agility Courses", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15337972", "revid": 15337972, "retrieved": "2026-11-19T22:05:59Z", "quote": "| rowspan=\"2\" |889", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Ardougne Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15352456", "revid": 15352456, "retrieved": "2026-11-19T22:05:53Z", "quote": "Using this course alone, levelling up from level 90 to 99 would require 8,649 laps, meaning roughly 110 hours at the maximum hourly rate.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high",
+      "notes": "Also equals the sum of the course page's obstacle table (43+65+50+21+28+57+625 = 889)."
+    },
+    {
+      "claim_id": "C-MTH-041",
+      "subject": "Ardougne Rooftop Course",
+      "attribute": "xp_per_hour_range",
+      "value": {"low": 66000, "high": 70184},
+      "unit": "Agility XP/hour",
+      "statement": "Ardougne gives about 66,000-70,000 XP/h, with a perfect-lap ceiling of 70,184 XP/h.",
+      "scope": {"method": "Ardougne Rooftop Course", "assumptions": "Wiki training table for 90-99; ceiling assumes 45.6 s (76-tick) perfect laps. Low-to-semi attention."},
+      "sources": [
+        {"tier": "T2", "title": "Agility training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875", "revid": 15369875, "retrieved": "2026-11-19T22:05:10Z", "quote": "| 66,000–70,000", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Ardougne Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15352456", "revid": 15352456, "retrieved": "2026-11-19T22:05:53Z", "quote": "A full lap of this course can be completed in 45.6 seconds (76 [[tick]]s) making the maximum experience per hour 70,184 assuming perfect laps.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-042",
+      "subject": "Ardougne Rooftop Course",
+      "attribute": "marks_of_grace_rate",
+      "value": {"no_diary": {"low": 16.8, "high": 17.9}, "elite_diary": {"low": 20.9, "high": 22.1}},
+      "unit": "marks of grace/hour",
+      "statement": "Ardougne gives about 16.8-17.9 marks/h (20.9-22.1 with the elite Ardougne Diary); marks spawn on one tile and stack, so they need not be picked up immediately.",
+      "scope": {"method": "Ardougne Rooftop Course"},
+      "sources": [
+        {"tier": "T2", "title": "Agility training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875", "revid": 15369875, "retrieved": "2026-11-19T22:05:10Z", "quote": "No elite diary: 16.8–17.9", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Agility training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875", "revid": 15369875, "retrieved": "2026-11-19T22:05:10Z", "quote": "However, on the [[Ardougne Rooftop Course]] the marks can only spawn on one tile, which stacks the marks and resets the 10-minute timer.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-043",
+      "subject": "Ardougne Rooftop Course",
+      "attribute": "boostable_entry",
+      "value": {"boost_from_level": 85, "boost_item": "Summer pie"},
+      "statement": "Summer pies can be used to run the Ardougne course from 85 Agility; the boost is only needed for the first, second and fourth obstacles.",
+      "scope": {"method": "Ardougne Rooftop Course"},
+      "sources": [{"tier": "T2", "title": "Ardougne Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15352456", "revid": 15352456, "retrieved": "2026-11-19T22:05:53Z", "quote": "[[Summer pie]]s can be used to run the course from 85 Agility to gain higher experience rates than previous rooftop courses.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-044",
+      "subject": "Ardougne Rooftop Course",
+      "attribute": "location",
+      "value": "East Ardougne marketplace, wooden beams by the gem stall (south-east corner)",
+      "statement": "The Ardougne course starts at the wooden beams next to the gem stall in the south-east corner of the East Ardougne marketplace.",
+      "scope": {"method": "Ardougne Rooftop Course"},
+      "sources": [{"tier": "T2", "title": "Ardougne Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15352456", "revid": 15352456, "retrieved": "2026-11-19T22:05:53Z", "quote": "It can be started by climbing the Wooden Beams outside of the house next to the [[Ardougne Gem Stall.|gem stall]] in the south-east corner of the marketplace.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-045",
+      "subject": "Ardougne Teleport",
+      "attribute": "requirement",
+      "value": {"Magic": 51, "quest": "Plague City"},
+      "statement": "Ardougne Teleport, which lands in the East Ardougne market, needs 51 Magic and Plague City (the owner has done Plague City but has 44 Magic).",
+      "scope": {"method": "Ardougne Rooftop Course access"},
+      "sources": [
+        {"tier": "T2", "title": "Ardougne Teleport", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=14918399", "revid": 14918399, "retrieved": "2026-11-19T22:08:27Z", "quote": "|level = 51", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Ardougne Teleport", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=14918399", "revid": 14918399, "retrieved": "2026-11-19T22:08:27Z", "quote": "This spell can only be cast after reading the [[Ardougne teleport scroll]], which is a quest completion reward from the [[Plague City]] quest.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-046",
+      "subject": "Colossal Wyrm Agility Course",
+      "attribute": "level_requirement",
+      "value": {"basic": 50, "advanced": 62},
+      "unit": "Agility level",
+      "statement": "The Colossal Wyrm basic course requires 50 Agility and the advanced course 62.",
+      "scope": {"method": "Colossal Wyrm Agility Course"},
+      "sources": [{"tier": "T2", "title": "Colossal Wyrm Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15388138", "revid": 15388138, "retrieved": "2026-11-19T22:06:22Z", "quote": "There are two courses available to players beginning at 50 Agility for the basic course, and 62 Agility for the advanced course.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-047",
+      "subject": "Colossal Wyrm Agility Course",
+      "attribute": "requirement_quest",
+      "value": "Children of the Sun",
+      "statement": "The Colossal Wyrm course needs Children of the Sun (completed by the owner), and you must speak to Worm Tongue before the first attempt.",
+      "scope": {"method": "Colossal Wyrm Agility Course"},
+      "sources": [
+        {"tier": "T2", "title": "Agility", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15405162", "revid": 15405162, "retrieved": "2026-11-19T22:07:47Z", "quote": "The Colossal Wyrm Agility Course requires level 50 Agility and completion of {{SCP|Quest}} [[Children of the Sun]] to access.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Colossal Wyrm Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15388138", "revid": 15388138, "retrieved": "2026-11-19T22:06:22Z", "quote": "Before attempting the course, players must first speak to [[Worm Tongue]]", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-048",
+      "subject": "Colossal Wyrm Agility Course",
+      "attribute": "xp_per_lap",
+      "value": {"basic": 633, "advanced": 1053.6},
+      "unit": "Agility XP per lap",
+      "statement": "After the 12 August 2026 rework, a Colossal Wyrm lap gives about 633 XP (basic) or 1,053.6 XP (advanced).",
+      "scope": {"method": "Colossal Wyrm Agility Course"},
+      "released": "2026-08-12",
+      "sources": [{"tier": "T2", "title": "Colossal Wyrm Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15388138", "revid": 15388138, "retrieved": "2026-11-19T22:06:22Z", "quote": "The courses merge for a final zipline, granting a total of 633 experience for basic lap completion, and 1053.6 experience for advanced lap completion.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "medium",
+      "notes": "The page carries an {{Obsolete}} banner for the Aug 2026 changes. Its basic obstacle table sums to 601.6, not 633, and the 'Agility' skill page still shows the pre-rework 504.1/749.6. The advanced figure (1053.6) matches the obstacle table. Use the XP/hour claim (C-MTH-049) for planning."
+    },
+    {
+      "claim_id": "C-MTH-049",
+      "subject": "Colossal Wyrm Agility Course",
+      "attribute": "xp_per_hour_range",
+      "value": {"basic": {"high": 31000}, "advanced": {"low": 42000, "high": 43000}},
+      "unit": "Agility XP/hour",
+      "statement": "The Colossal Wyrm course gives up to about 31,000 XP/h on the basic route and 42,000-43,000 XP/h on the advanced route.",
+      "scope": {"method": "Colossal Wyrm Agility Course", "assumptions": "Wiki figures assuming ideal lap times (basic 1:07.8, advanced 1:22.8) and no downtime beyond 3.6 s; obstacles cannot be failed, so rates depend only on attentiveness. Low intensity: the advanced route takes about 6 clicks per lap."},
+      "sources": [
+        {"tier": "T2", "title": "Agility training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875", "revid": 15369875, "retrieved": "2026-11-19T22:05:10Z", "quote": "There are two routes, the basic course requires 50 Agility and gives up to 31,000 xp/hr, and the advanced course requires 62 Agility and gives up to 42,000 xp/hr.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Colossal Wyrm Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15388138", "revid": 15388138, "retrieved": "2026-11-19T22:06:22Z", "quote": "The advanced course can be completed in 1:22.80, allowing roughly 41 completions per hour and ~43,000 xp/hr.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-050",
+      "subject": "Colossal Wyrm Agility Course",
+      "attribute": "patch_change",
+      "value": {"basic_duration_change": "+~25%", "advanced_duration_change": "+~40%", "xp_per_hour": "roughly unchanged"},
+      "statement": "On 12 August 2026 Jagex lengthened the basic Wyrm course by ~25% and the advanced by ~40%, raising XP, bone shards and termites so XP/h and termites/h stay roughly the same with fewer inputs.",
+      "scope": {"method": "Colossal Wyrm Agility Course"},
+      "released": "2026-08-12",
+      "sources": [{"tier": "T1", "title": "Update:Summer Sweep Up - Agility & Chambers of Xeric Changes", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15303824", "revid": 15303824, "retrieved": "2026-11-19T22:06:27Z", "published": "2026-08-12", "quote": "Increased XP, Bone shards and Termites to match so that it's roughly the same XP/hr and termites/hr but fewer inputs/hr, meaning the course is lower intensity than before.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-051",
+      "subject": "Colossal Wyrm Agility Course",
+      "attribute": "failure",
+      "value": "cannot be failed; run energy regenerates per obstacle",
+      "statement": "No obstacle on either Wyrm course can be failed, and run energy is regenerated per obstacle.",
+      "scope": {"method": "Colossal Wyrm Agility Course"},
+      "sources": [{"tier": "T2", "title": "Colossal Wyrm Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15388138", "revid": 15388138, "retrieved": "2026-11-19T22:06:22Z", "quote": "Run energy is regenerated per obstacle and players never fail obstacles on either course.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-052",
+      "subject": "Colossal Wyrm Agility Course",
+      "attribute": "marks_of_grace_rate",
+      "value": {"basic": {"low": 11, "high": 13}, "advanced": {"low": 15.7, "high": 18.8}},
+      "unit": "mark-of-grace equivalents/hour",
+      "statement": "The Wyrm course gives no marks directly, but termites buy amylase packs that Grace exchanges for 8 marks each (12.5 termites per mark): about 11-13 mark-equivalents/h basic and 15.7-18.8/h advanced.",
+      "scope": {"method": "Colossal Wyrm Agility Course", "assumptions": "35-42 advanced laps/h at ~5.6 termites per lap."},
+      "sources": [
+        {"tier": "T2", "title": "Colossal Wyrm Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15388138", "revid": 15388138, "retrieved": "2026-11-19T22:06:22Z", "quote": "Completing 35 to 42 laps an hour therefore results in 15.7 to 18.8 marks per hour.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Mark of Grace", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403415", "revid": 15403415, "retrieved": "2026-11-19T22:08:21Z", "quote": "Marks of grace can also be obtained indirectly via the [[Brimhaven Agility Arena]] or [[Colossal Wyrm Agility Course]], by exchanging [[Amylase packs]] with [[Grace]] at an exchange rate of 7.5 [[Brimhaven voucher]]s or 12.5 [[termite]]s per 1 mark of grace.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "medium",
+      "notes": "Basic-route 11-13 is from the Mark of Grace table; the termite spawn rate itself is 'currently unknown' per the course page."
+    },
+    {
+      "claim_id": "C-MTH-053",
+      "subject": "Colossal Wyrm Agility Course",
+      "attribute": "location",
+      "value": "Colossal Wyrm Remains, Avium Savannah (Varlamore)",
+      "statement": "The course runs around the Colossal Wyrm Remains in Varlamore's Avium Savannah; the fastest access is a colossal wyrm teleport scroll (Worm Tongue or GE), or the Quetzal Transport System once the nearby landing site is built.",
+      "scope": {"method": "Colossal Wyrm Agility Course"},
+      "sources": [
+        {"tier": "T2", "title": "Colossal Wyrm Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15388138", "revid": 15388138, "retrieved": "2026-11-19T22:06:22Z", "quote": "* Use a [[Colossal wyrm teleport scroll]], bought from [[Worm Tongue]] or the [[Grand Exchange]]. This is the quickest method to get there.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Colossal Wyrm Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15388138", "revid": 15388138, "retrieved": "2026-11-19T22:06:22Z", "quote": "* Using the [[Quetzal Transport System]] after building the nearby [[Landing Site]].", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-054",
+      "subject": "Hallowed Sepulchre",
+      "attribute": "requirement_quest",
+      "value": "Sins of the Father",
+      "statement": "Entering the Hallowed Sepulchre (in Darkmeyer) requires completion of Sins of the Father, which the owner has not done.",
+      "scope": {"method": "Hallowed Sepulchre"},
+      "sources": [
+        {"tier": "T2", "title": "Hallowed Sepulchre", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544", "revid": 15387544, "retrieved": "2026-11-19T22:06:41Z", "quote": "**Entering the Sepulchre requires completion of [[Sins of the Father]]", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Agility training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875", "revid": 15369875, "retrieved": "2026-11-19T22:05:10Z", "quote": "To access the Hallowed Sepulchre, players must have completed [[Sins of the Father]].", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high",
+      "notes": "Sins of the Father and its prerequisite chain are for the Quest Archivist."
+    },
+    {
+      "claim_id": "C-MTH-055",
+      "subject": "Hallowed Sepulchre",
+      "attribute": "level_requirement_by_floor",
+      "value": {"floor_1": 52, "floor_2": 62, "floor_3": 72, "floor_4": 77, "floor_5": 87, "boostable": true},
+      "unit": "Agility level",
+      "statement": "Sepulchre floors need 52/62/72/77/87 Agility; since 12 August 2026 floor entry can be boosted (e.g. a summer pie bite at 72 at the end of Floor 3 to enter Floor 4).",
+      "scope": {"method": "Hallowed Sepulchre"},
+      "released": "2026-08-12",
+      "sources": [
+        {"tier": "T2", "title": "Hallowed Sepulchre", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544", "revid": 15387544, "retrieved": "2026-11-19T22:06:41Z", "quote": "The entry requirements for a floor are boostable. For example, a player with 72 Agility can eat a bite of [[Summer pie]] at the end of Floor 3 to gain entry to Floor 4.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Hallowed Sepulchre", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544", "revid": 15387544, "retrieved": "2026-11-19T22:06:41Z", "quote": "**Floor 4: {{SCP|Agility|77 Agility}}", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Hallowed Sepulchre", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544", "revid": 15387544, "retrieved": "2026-11-19T22:06:41Z", "quote": "**Floor 5: {{SCP|Agility|87 Agility}}", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-056",
+      "subject": "Hallowed Sepulchre",
+      "attribute": "patch_change",
+      "value": {"floor_4": "82 -> 77", "floor_5": "92 -> 87", "floor_entry_boostable": true, "grand_coffin": "84 Thieving or 92 Agility, boostable"},
+      "statement": "On 12 August 2026 Jagex lowered Floor 4 entry from 82 to 77 and Floor 5 from 92 to 87, made floor entry boostable, and changed the Grand Coffin to 84 Thieving or 92 Agility (both boostable).",
+      "scope": {"method": "Hallowed Sepulchre"},
+      "released": "2026-08-12",
+      "sources": [
+        {"tier": "T1", "title": "Update:Summer Sweep Up - Agility & Chambers of Xeric Changes", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15303824", "revid": 15303824, "retrieved": "2026-11-19T22:06:27Z", "published": "2026-08-12", "quote": "Lowered the Floor 4 entry requirement to '''Level 77''', down from 82.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T1", "title": "Update:Summer Sweep Up - Agility & Chambers of Xeric Changes", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15303824", "revid": 15303824, "retrieved": "2026-11-19T22:06:27Z", "published": "2026-08-12", "quote": "Lowered the Floor 5 entry requirement to '''Level 87''', down from 92.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T1", "title": "Update:Summer Sweep Up - Agility & Chambers of Xeric Changes", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15303824", "revid": 15303824, "retrieved": "2026-11-19T22:06:27Z", "published": "2026-08-12", "quote": "Floor 5's Grand Coffin now requires 84 Thieving ''or'' 92 Agility to open. Boosting can be used for both requirements.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-057",
+      "subject": "Hallowed Sepulchre",
+      "attribute": "xp_per_run_by_floor",
+      "value": {"floor_1": 575, "floor_2": 925, "floor_3": 1600, "floor_4": 2875, "floor_5": 5725, "cumulative_to_floor": {"1": 575, "2": 1500, "3": 3100, "4": 5975, "5": 11700}},
+      "unit": "Agility XP",
+      "statement": "Sepulchre floors give 575/925/1,600/2,875/5,725 XP, so a run to Floors 2/3/4/5 gives 1,500/3,100/5,975/11,700 XP in total.",
+      "scope": {"method": "Hallowed Sepulchre"},
+      "sources": [
+        {"tier": "T2", "title": "Agility training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875", "revid": 15369875, "retrieved": "2026-11-19T22:05:10Z", "quote": "| 2\n| 62\n| 925\n| 1,500\n| 41\n| 9\n| 56,300", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Agility training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875", "revid": 15369875, "retrieved": "2026-11-19T22:05:10Z", "quote": "| 5\n| 87\n| 5,725\n| 11,700\n| 136\n| 22\n| 98,500\n| 85,800", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high",
+      "notes": "Treasure encounters add 100-160 XP per floor (Sepulchre page table)."
+    },
+    {
+      "claim_id": "C-MTH-058",
+      "subject": "Hallowed Sepulchre",
+      "attribute": "xp_per_hour_range",
+      "value": {"to_floor_2": {"low": 40000, "high": 56300}, "to_floor_3": {"low": 63000, "high": 71700}, "to_floor_4": {"low": 73000, "high": 81000}, "to_floor_5": {"low": 85800, "high": 98500}},
+      "unit": "Agility XP/hour",
+      "statement": "Sepulchre runs give about 40,000-56,300 XP/h through Floor 2, 63,000-71,700 through Floor 3, 73,000-81,000 through Floor 4 and 85,800-98,500 through Floor 5; the absolute cap is about 102,000-108,000.",
+      "scope": {"method": "Hallowed Sepulchre", "assumptions": "High intensity (traps need timing). Low ends: the Sepulchre page's 'realistic' rates with looting (F2 shows the no-looting figure). High ends: the 'Agility training' table, which assumes good practice and a private instance (200 hallowed marks). Expect lower while learning."},
+      "sources": [
+        {"tier": "T2", "title": "Agility training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875", "revid": 15369875, "retrieved": "2026-11-19T22:05:10Z", "quote": "The experience rates in the table below assume having good practice and using a private instance. Expect lower rates when learning.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Agility training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875", "revid": 15369875, "retrieved": "2026-11-19T22:05:10Z", "quote": "| 3\n| 72\n| 1,600\n| 3,100\n| 58\n| 8\n| 68,900", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Hallowed Sepulchre", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544", "revid": 15387544, "retrieved": "2026-11-19T22:06:41Z", "quote": "|1,600\n|3,100\n|63,000\n|71,700\n|150", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Hallowed Sepulchre", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544", "revid": 15387544, "retrieved": "2026-11-19T22:06:41Z", "quote": "|2,875\n|5,975\n|73,000\n|81,000\n|150", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "medium",
+      "notes": "The two wiki tables disagree for Floor 3 (68,900 private-instance vs 71,700 realistic no-looting) and Floor 4 (79,700 vs 81,000); the ranges span both. Floor 1 is 30,000-45,000."
+    },
+    {
+      "claim_id": "C-MTH-059",
+      "subject": "Hallowed Sepulchre",
+      "attribute": "failure_damage",
+      "value": "Running into a trap teleports you back before it and deals a small amount of damage unless a hallowed ring is worn; 70+ Hitpoints recommended",
+      "statement": "Sepulchre traps send the player back to before the trap and deal a small amount of damage unless a hallowed ring is worn; the wiki recommends 70+ Hitpoints (the owner has 48).",
+      "scope": {"method": "Hallowed Sepulchre"},
+      "sources": [
+        {"tier": "T2", "title": "Hallowed Sepulchre", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544", "revid": 15387544, "retrieved": "2026-11-19T22:06:41Z", "quote": "In most cases, running into a trap will teleport the player to a location just before the trap on the path, costing the player time. This deals a small amount of damage unless the [[hallowed ring]] is equipped.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Hallowed Sepulchre", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544", "revid": 15387544, "retrieved": "2026-11-19T22:06:41Z", "quote": "* (Recommended) {{SCP|Hitpoints|70+|link=yes}} to withstand damage from traps.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high",
+      "notes": "Danger rating and whether a Sepulchre death is safe on Hardcore Worlds are for the Threat Analyst."
+    },
+    {
+      "claim_id": "C-MTH-060",
+      "subject": "Hallowed Sepulchre",
+      "attribute": "location",
+      "value": "North-east Darkmeyer; Drakan's medallion or hallowed crystal shard",
+      "statement": "The Sepulchre is on the north-east side of Darkmeyer, reached with Drakan's medallion (then run) or a single-use hallowed crystal shard to the lobby.",
+      "scope": {"method": "Hallowed Sepulchre"},
+      "sources": [
+        {"tier": "T2", "title": "Hallowed Sepulchre", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544", "revid": 15387544, "retrieved": "2026-11-19T22:06:41Z", "quote": "The Hallowed Sepulchre is located on the north east side of Darkmeyer.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Hallowed Sepulchre", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544", "revid": 15387544, "retrieved": "2026-11-19T22:06:41Z", "quote": "* [[Hallowed crystal shard]] - Single use which teleports the player directly to the lobby.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-061",
+      "subject": "Hallowed Sepulchre",
+      "attribute": "marks_of_grace_rate",
+      "value": 0,
+      "unit": "marks of grace/hour",
+      "statement": "The Hallowed Sepulchre gives no marks of grace; its currency is hallowed marks from looting coffins.",
+      "scope": {"method": "Hallowed Sepulchre"},
+      "sources": [{"tier": "T2", "title": "Ardougne Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15352456", "revid": 15352456, "retrieved": "2026-11-19T22:05:53Z", "quote": "but requires more attention and does not reward marks of grace.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-062",
+      "subject": "Werewolf Agility Course",
+      "attribute": "level_requirement",
+      "value": {"level": 60, "boostable": true, "boost_from": 55},
+      "unit": "Agility level",
+      "statement": "The Werewolf course requires 60 Agility, which can be reached with summer pies from 55.",
+      "scope": {"method": "Werewolf Agility Course"},
+      "sources": [
+        {"tier": "T2", "title": "Werewolf Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15315234", "revid": 15315234, "retrieved": "2026-11-19T22:06:52Z", "quote": "available to players with level 60 [[Agility]]. Access to this course requires completion of [[Creature of Fenkenstrain]].", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Agility training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875", "revid": 15369875, "retrieved": "2026-11-19T22:05:10Z", "quote": "While this course requires level 60 Agility to use, players can use [[summer pie]]s to boost to level 60 even at level 55.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-063",
+      "subject": "Werewolf Agility Course",
+      "attribute": "requirement_quest",
+      "value": {"quest": "Creature of Fenkenstrain", "item": "Ring of Charos (worn)"},
+      "statement": "The Werewolf course needs Creature of Fenkenstrain (not done by the owner), and a Ring of Charos must be worn to use the entrance trapdoor.",
+      "scope": {"method": "Werewolf Agility Course"},
+      "sources": [{"tier": "T2", "title": "Werewolf Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15315234", "revid": 15315234, "retrieved": "2026-11-19T22:06:52Z", "quote": "To access the Agility course, the player has to wear a [[Ring of Charos]] to be allowed to climb-down the [[trapdoor (Werewolf Agility Course)|entrance]]", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-064",
+      "subject": "Werewolf Agility Course",
+      "attribute": "xp_per_lap",
+      "value": 730,
+      "unit": "Agility XP per lap",
+      "statement": "A Werewolf lap gives 730 Agility XP if the stick is handed in (380 of it is the stick bonus).",
+      "scope": {"method": "Werewolf Agility Course"},
+      "sources": [{"tier": "T2", "title": "Werewolf Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15315234", "revid": 15315234, "retrieved": "2026-11-19T22:06:52Z", "quote": "The Agility course rewards 730 Agility [[experience]] per completed lap, assuming the player hands in the [[Stick (item)|stick]] every time.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-065",
+      "subject": "Werewolf Agility Course",
+      "attribute": "xp_per_hour_range",
+      "value": {"lower_levels": {"low": 50000, "high": 65000}, "level_80_plus": {"high": 68600}},
+      "unit": "Agility XP/hour",
+      "statement": "Werewolf gives about 50,000-55,000 XP/h at lower levels (the course page says 60,000-65,000) and up to 67,000-68,600 XP/h from level 80.",
+      "scope": {"method": "Werewolf Agility Course", "assumptions": "High concentration and timing; stick handed in every lap; the maximum of 94 laps/h needs 80+ Agility. The training page and course page disagree on low-level rates; the range spans both."},
+      "sources": [
+        {"tier": "T2", "title": "Agility training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875", "revid": 15369875, "retrieved": "2026-11-19T22:05:10Z", "quote": "With good concentration and timing, players can gain up to around 50,000–55,000 experience per hour at lower levels and 67,000–68,000 experience per hour at higher levels.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Werewolf Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15315234", "revid": 15315234, "retrieved": "2026-11-19T22:06:52Z", "quote": "At lower Agility levels expect to get around 60,000–65,000 Agility experience per hour, depending on concentration levels.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim_id": "C-MTH-066",
+      "subject": "Werewolf Agility Course",
+      "attribute": "failure_damage",
+      "value": {"obstacle": "Deathslide", "damage": "upwards of 30, not scaled to Hitpoints", "never_fail": "80 Agility and 80 Strength with weight 2 kg or lower"},
+      "statement": "The deathslide is the only failable Werewolf obstacle; a fall can deal 30+ damage that does not scale with Hitpoints, and it cannot be failed with 80 Agility, 80 Strength and 2 kg or less carried.",
+      "scope": {"method": "Werewolf Agility Course"},
+      "sources": [
+        {"tier": "T2", "title": "Werewolf Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15315234", "revid": 15315234, "retrieved": "2026-11-19T22:06:52Z", "quote": "A fall can deal upwards of 30 damage and does NOT scale with [[Hitpoints]], so players with low HP are at risk of [[death]].", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Werewolf Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15315234", "revid": 15315234, "retrieved": "2026-11-19T22:06:52Z", "quote": "With level 80 in Agility and [[Strength]] and a weight of 2 kg or lower, this obstacle will never be failed.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high",
+      "notes": "Fact only; the Threat Analyst rates it. The owner has 48 Hitpoints and 32 Strength."
+    },
+    {
+      "claim_id": "C-MTH-067",
+      "subject": "Werewolf Agility Course",
+      "attribute": "marks_of_grace_rate",
+      "value": {"low": 10, "high": 15},
+      "unit": "marks of grace/hour",
+      "statement": "The Werewolf course gives about 10-15 marks of grace per hour.",
+      "scope": {"method": "Werewolf Agility Course"},
+      "sources": [{"tier": "T2", "title": "Agility training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875", "revid": 15369875, "retrieved": "2026-11-19T22:05:10Z", "quote": "In addition, players can get about 10–15 marks of grace per hour.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-068",
+      "subject": "Werewolf Agility Course",
+      "attribute": "location",
+      "value": "Near Canifis, south of Fenkenstrain's Castle; Fenkenstrain's Castle Teleport (Arceuus) then run south",
+      "statement": "The Werewolf course is near Canifis, south of Fenkenstrain's Castle; one route is Fenkenstrain's Castle Teleport (Arceuus spellbook) and a run south.",
+      "scope": {"method": "Werewolf Agility Course"},
+      "sources": [
+        {"tier": "T2", "title": "Werewolf Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15315234", "revid": 15315234, "retrieved": "2026-11-19T22:06:52Z", "quote": "*Use [[Fenkenstrain's Castle Teleport]] ([[Arceuus spells]]) and run south.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Werewolf Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15315234", "revid": 15315234, "retrieved": "2026-11-19T22:06:52Z", "quote": "|north = Fenkenstrain's Castle", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-069",
+      "subject": "Wilderness Agility Course",
+      "attribute": "level_requirement",
+      "value": {"gate": 52, "first_obstacle": 49, "boostable": true, "boost_from": 47},
+      "unit": "Agility level",
+      "statement": "The Wilderness course needs 52 Agility at the gate and 49 for the first obstacle, both boostable, so it can be used from 47 with a summer pie.",
+      "scope": {"method": "Wilderness Agility Course"},
+      "sources": [
+        {"tier": "T2", "title": "Wilderness Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15351989", "revid": 15351989, "retrieved": "2026-11-19T22:06:56Z", "quote": "requiring level 52 [[Agility]]{{Boostable|yes}} to enter, and 49 Agility{{Boostable|yes}} to complete the first obstacle inside.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Agility training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875", "revid": 15369875, "retrieved": "2026-11-19T22:05:10Z", "quote": "Level 52 is normally required to enter the course, but this can be boosted from level 47 with a [[summer pie]].", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-070",
+      "subject": "Wilderness Agility Course",
+      "attribute": "location",
+      "value": {"wilderness_levels": "50-56", "combat_area": "singles-plus, player killers can attack at any time"},
+      "statement": "The Wilderness course sits in Wilderness levels 50-56 in a singles-plus combat area where player killers can attack at any time; level 18 and 25 skeletons roam the course and the dungeon below.",
+      "scope": {"method": "Wilderness Agility Course"},
+      "sources": [
+        {"tier": "T2", "title": "Wilderness Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15351989", "revid": 15351989, "retrieved": "2026-11-19T22:06:56Z", "quote": "|wilderness = 50-56", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Wilderness Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15351989", "revid": 15351989, "retrieved": "2026-11-19T22:06:56Z", "quote": "taking place in a [[singles-plus combat]] area that allows [[player killers]] to attack at any time", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Wilderness Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15351989", "revid": 15351989, "retrieved": "2026-11-19T22:06:56Z", "quote": "there are multiple level 18 and 25 [[skeleton]]s roaming the course and underground respectively that will attack any player near them.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high",
+      "notes": "Main-game description. Whether Hardcore Worlds has PvP in the Wilderness was not researched by this desk (Threat Analyst)."
+    },
+    {
+      "claim_id": "C-MTH-071",
+      "subject": "Wilderness Agility Course",
+      "attribute": "xp_per_lap",
+      "value": 571.4,
+      "unit": "Agility XP per lap",
+      "statement": "A Wilderness course lap gives 571.4 Agility XP, most of it (498.9) a completion bonus paid only if every obstacle is passed in order; each lap also earns a ticket worth 200-230 XP.",
+      "scope": {"method": "Wilderness Agility Course"},
+      "sources": [{"tier": "T2", "title": "Wilderness Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15351989", "revid": 15351989, "retrieved": "2026-11-19T22:06:56Z", "quote": "The course rewards 571.4 Agility [[experience]] per completed lap, with five obstacles needing to be passed for completion.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-072",
+      "subject": "Wilderness Agility Course",
+      "attribute": "xp_per_hour_range",
+      "value": {"laps_only": {"low": 40000, "high": 47500}, "with_tickets": {"low": 50000, "high": 60000}},
+      "unit": "Agility XP/hour",
+      "statement": "The Wilderness course gives about 40,000-47,500 XP/h from laps, plus up to 18,400 XP/h from tickets turned in 101+ at a time, about 50,000-60,000 XP/h in total.",
+      "scope": {"method": "Wilderness Agility Course", "assumptions": "~45 s laps including fails (obstacles can be failed even at 99); tickets redeemed in batches of 101+. Rates fall if player killers are active. The wiki training table lists this course for 47-62 only."},
+      "sources": [
+        {"tier": "T2", "title": "Wilderness Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15351989", "revid": 15351989, "retrieved": "2026-11-19T22:06:56Z", "quote": "players can expect a base experience of 40,000-45,000 experience per hour depending on concentration and Agility level, and up to 18,400 bonus experience assuming players play for at least 2 hours and turn in all their [[Wilderness agility ticket|Agility tickets]] at once.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Agility training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875", "revid": 15369875, "retrieved": "2026-11-19T22:05:10Z", "quote": "Players can gain around 50,000–60,000 experience per hour when including fails and wilderness agility tickets.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-073",
+      "subject": "Wilderness Agility Course",
+      "attribute": "failure_damage",
+      "value": "Ropeswing and log balance: floor(current HP x 0.15) + 1 and a drop to the dungeon; stepping stones: floor(current HP x 0.2) + 1",
+      "statement": "Failing the ropeswing or log balance drops the player into the dungeon below for floor(current HP x 0.15)+1 damage; failing the third stepping stone deals floor(current HP x 0.2)+1.",
+      "scope": {"method": "Wilderness Agility Course"},
+      "sources": [
+        {"tier": "T2", "title": "Wilderness Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15351989", "revid": 15351989, "retrieved": "2026-11-19T22:06:56Z", "quote": "|Can be failed, which will send the player down to the [[Wilderness Agility Course Dungeon|dungeon]] below and deal <math>\\left\\lfloor\\text{Current hitpoints}\\times0.15\\right\\rfloor+1</math> damage.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-074",
+      "subject": "Wilderness Agility Course",
+      "attribute": "optional_fee",
+      "value": {"coins": 150000, "lost_on": "death or leaving the course"},
+      "statement": "An optional 150,000-coin dispenser fee adds per-lap loot; it is lost every time the player dies or leaves the course.",
+      "scope": {"method": "Wilderness Agility Course"},
+      "sources": [{"tier": "T2", "title": "Wilderness Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15351989", "revid": 15351989, "retrieved": "2026-11-19T22:06:56Z", "quote": "The fee is 150,000 coins, which is lost '''every time''' a player dies or leaves the course", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-075",
+      "subject": "Wilderness Agility Course",
+      "attribute": "access",
+      "value": "Ice Plateau Teleport (spell or tablet; the tablet has no requirements) then run south-east",
+      "statement": "The usual way to the Wilderness course is an Ice Plateau Teleport tablet (no requirements) and a short run south-east; other routes are the Ghorrock teleport, Wilderness obelisks, a burning amulet to Lava Maze and the Edgeville lever.",
+      "scope": {"method": "Wilderness Agility Course"},
+      "sources": [{"tier": "T2", "title": "Agility training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875", "revid": 15369875, "retrieved": "2026-11-19T22:05:10Z", "quote": "The easiest way to get there is to break an [[Ice plateau teleport (tablet)|Ice Plateau Teleport tablet]] and run slightly south-east.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-076",
+      "subject": "Wilderness Agility Course",
+      "attribute": "marks_of_grace_rate",
+      "value": 0,
+      "unit": "marks of grace/hour",
+      "statement": "The Wilderness Agility Course gives no marks of grace.",
+      "scope": {"method": "Wilderness Agility Course"},
+      "sources": [{"tier": "T2", "title": "Graceful outfit", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403851", "revid": 15403851, "retrieved": "2026-11-19T22:07:37Z", "quote": "while not at all on the Wilderness Agility Course.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-077",
+      "subject": "Prifddinas Agility Course",
+      "attribute": "level_requirement",
+      "value": 75,
+      "unit": "Agility level",
+      "statement": "The Prifddinas course requires 75 Agility and completion of Song of the Elves.",
+      "scope": {"method": "Prifddinas Agility Course"},
+      "sources": [{"tier": "T2", "title": "Prifddinas Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15322180", "revid": 15322180, "retrieved": "2026-11-19T22:07:01Z", "quote": "The '''Prifddinas Agility Course''' is an Agility course available to players with 75 [[Agility]] who have completed the [[Song of the Elves]] [[quest]].", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-078",
+      "subject": "Prifddinas Agility Course",
+      "attribute": "requirement_quest",
+      "value": "Song of the Elves",
+      "statement": "Prifddinas (and its course) needs Song of the Elves, which the owner has not done.",
+      "scope": {"method": "Prifddinas Agility Course"},
+      "sources": [{"tier": "T2", "title": "Agility training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875", "revid": 15369875, "retrieved": "2026-11-19T22:05:10Z", "quote": "Players must have completed [[Song of the Elves]] to access this course.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high",
+      "notes": "Song of the Elves' long requirement chain is for the Quest Archivist."
+    },
+    {
+      "claim_id": "C-MTH-079",
+      "subject": "Prifddinas Agility Course",
+      "attribute": "xp_per_lap",
+      "value": {"base": 1285.2, "average_with_portals": 1340.6},
+      "unit": "Agility XP per lap",
+      "statement": "A Prifddinas lap gives about 1,285 XP, or ~1,340 on average counting portal shortcuts (82 XP per portal, +55.4 XP per lap on average).",
+      "scope": {"method": "Prifddinas Agility Course"},
+      "sources": [
+        {"tier": "T2", "title": "Prifddinas Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15322180", "revid": 15322180, "retrieved": "2026-11-19T22:07:01Z", "quote": "Using a portal grants 82 experience and, on average, adds an additional 55.4 experience per lap.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Agility training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875", "revid": 15369875, "retrieved": "2026-11-19T22:05:10Z", "quote": "with the average of 1340.55 xp/lap and 122.83 ticks/lap including portals", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "medium",
+      "notes": "The base 1,285.2 is computed by this desk by summing the pinned obstacle table (11.5+30.7+28.1+23.0+11.5+0+25.6+30.7+25.6+30.7+30.7+1037.1); the page shows the total only as a template variable. The 1,340.55 average is in a hidden wikitext comment on the training page."
+    },
+    {
+      "claim_id": "C-MTH-080",
+      "subject": "Prifddinas Agility Course",
+      "attribute": "xp_per_hour_range",
+      "value": {"level_75": {"low": 54000, "high": 60000}, "level_80": 58000, "level_85": 62000, "level_90_plus": {"low": 65000, "high": 66000}},
+      "unit": "Agility XP/hour",
+      "statement": "Prifddinas gives about 54,000-60,000 XP/h at 75, rising to 65,000-66,000 XP/h from 90; it cannot be failed from 91.",
+      "scope": {"method": "Prifddinas Agility Course", "assumptions": "Using portal shortcuts; attentive, low-to-moderate click intensity. Lower if idling."},
+      "sources": [
+        {"tier": "T2", "title": "Prifddinas Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15322180", "revid": 15322180, "retrieved": "2026-11-19T22:07:01Z", "quote": "|75\n|54,000\n|-\n|80\n|58,000\n|-\n|85\n|62,000\n|-\n|90\n|66,000", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Agility training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875", "revid": 15369875, "retrieved": "2026-11-19T22:05:10Z", "quote": "Players can gain up to around 60,000 experience per hour at level 75, increasing to 65,000 experience per hour from level 90 onwards. Expect lower rates if idling.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-081",
+      "subject": "Prifddinas Agility Course",
+      "attribute": "marks_of_grace_rate",
+      "value": 0,
+      "unit": "marks of grace/hour",
+      "statement": "Prifddinas gives no marks of grace; instead about 45 crystal shards per hour come from portals.",
+      "scope": {"method": "Prifddinas Agility Course"},
+      "sources": [
+        {"tier": "T2", "title": "Prifddinas Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15322180", "revid": 15322180, "retrieved": "2026-11-19T22:07:01Z", "quote": "''[[Mark of grace|Marks of grace]] cannot be obtained on this course.''", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Prifddinas Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15322180", "revid": 15322180, "retrieved": "2026-11-19T22:07:01Z", "quote": "Players can expect to find roughly 45 [[crystal shard]]s per hour (0.94 shard per lap) on this course, with each portal providing one shard.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-082",
+      "subject": "Prifddinas Agility Course",
+      "attribute": "location",
+      "value": "Prifddinas, ladder just outside the north-western bank",
+      "statement": "The Prifddinas course starts at the ladder just outside the north-western bank in Prifddinas.",
+      "scope": {"method": "Prifddinas Agility Course"},
+      "sources": [{"tier": "T2", "title": "Prifddinas Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15322180", "revid": 15322180, "retrieved": "2026-11-19T22:07:01Z", "quote": "It can be started by climbing the ladder just outside of the north-western bank in [[Prifddinas]].", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-083",
+      "subject": "Ape Atoll Agility Course",
+      "attribute": "level_requirement",
+      "value": {"level": 48, "boostable": false},
+      "unit": "Agility level",
+      "statement": "The Ape Atoll course requires 48 Agility (not boostable) and Monkey Madness I up to Chapter 2.",
+      "scope": {"method": "Ape Atoll Agility Course"},
+      "sources": [{"tier": "T2", "title": "Ape Atoll Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15372987", "revid": 15372987, "retrieved": "2026-11-19T22:07:07Z", "quote": "available to players with level 48 [[Agility]] (cannot be [[Temporary skill boost|boosted]]). Access to this course requires partial completion of [[Monkey Madness I]], up to Chapter 2.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-084",
+      "subject": "Ape Atoll Agility Course",
+      "attribute": "requirement_item",
+      "value": "Ninja monkey greegree (small or medium) or Kruk monkey greegree, worn",
+      "statement": "A small or medium ninja monkey greegree or the Kruk greegree must be worn; without one the player fails the obstacle and takes a small amount of damage.",
+      "scope": {"method": "Ape Atoll Agility Course"},
+      "sources": [{"tier": "T2", "title": "Ape Atoll Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15372987", "revid": 15372987, "retrieved": "2026-11-19T22:07:07Z", "quote": "To use the agility course, the player has to wear either the [[Ninja monkey greegree (small)|small]] or [[Ninja monkey greegree (medium)|medium-sized]] ninja monkey greegree or the [[Kruk monkey greegree]].", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-085",
+      "subject": "Ape Atoll Agility Course",
+      "attribute": "xp_per_lap",
+      "value": 580,
+      "unit": "Agility XP per lap",
+      "statement": "An Ape Atoll lap gives 580 Agility XP.",
+      "scope": {"method": "Ape Atoll Agility Course"},
+      "sources": [{"tier": "T2", "title": "Ape Atoll Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15372987", "revid": 15372987, "retrieved": "2026-11-19T22:07:07Z", "quote": "The agility course rewards 580 [[Agility]] [[experience]] per completed lap.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-086",
+      "subject": "Ape Atoll Agility Course",
+      "attribute": "xp_per_hour_range",
+      "value": {"lower_levels": {"low": 40000, "high": 50000}, "level_75_plus": {"high": 55100}},
+      "unit": "Agility XP/hour",
+      "statement": "Ape Atoll gives about 40,000-50,000 XP/h at lower levels and up to about 55,000 XP/h from 75, when obstacles stop failing.",
+      "scope": {"method": "Ape Atoll Agility Course", "assumptions": "Concentrated play; 95 laps/h maximum at 75+. Summer pies or agility potions can hold a boosted 75 to avoid fails."},
+      "sources": [
+        {"tier": "T2", "title": "Agility training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875", "revid": 15369875, "retrieved": "2026-11-19T22:05:10Z", "quote": "Players can gain around 30,000–35,000 experience per hour at level 48, increasing to around 45,000–50,000 experience per hour at higher levels. Players stop failing the obstacles at level 75, from which point onwards it is possible to gain up to 55,000 experience per hour.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Ape Atoll Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15372987", "revid": 15372987, "retrieved": "2026-11-19T22:07:07Z", "quote": "At level 75 and higher, expect to be able to complete a maximum of 95 laps per hour (63 [[Game tick|ticks]] per lap), resulting in 55,100 [[Agility]] experience per hour.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-087",
+      "subject": "Ape Atoll Agility Course",
+      "attribute": "failure_damage",
+      "value": {"failable": "all obstacles except the stepping stones and last tropical tree", "damage": "small", "no_fail_level": 75},
+      "statement": "All Ape Atoll obstacles except the stepping stones and the last tropical tree can be failed for small amounts of damage, until 75 Agility.",
+      "scope": {"method": "Ape Atoll Agility Course"},
+      "sources": [{"tier": "T2", "title": "Ape Atoll Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15372987", "revid": 15372987, "retrieved": "2026-11-19T22:07:07Z", "quote": "can be failed by the player, resulting in small amounts of damage.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-088",
+      "subject": "Ape Atoll Agility Course",
+      "attribute": "marks_of_grace_rate",
+      "value": {"low": 5, "high": 6},
+      "unit": "marks of grace/hour",
+      "statement": "Ape Atoll gives about 5-6 marks of grace per hour with perfect laps.",
+      "scope": {"method": "Ape Atoll Agility Course"},
+      "sources": [{"tier": "T2", "title": "Ape Atoll Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15372987", "revid": 15372987, "retrieved": "2026-11-19T22:07:07Z", "quote": "In addition to experience, players will also receive [[marks of grace]] during this course, at a rate of 5-6 marks per hour with perfect laps.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-089",
+      "subject": "Ape Atoll Agility Course",
+      "attribute": "access",
+      "value": ["Ape Atoll Teleport (standard, 64 Magic + RFD Freeing King Awowogei)", "Ape Atoll teleport tablet", "Fairy ring CLR (needs MM1 complete and Daero's training)"],
+      "statement": "Ape Atoll is reached by the standard Ape Atoll Teleport (64 Magic and the RFD King Awowogei subquest), an Ape Atoll teleport tablet that bypasses the Magic requirement, or fairy ring CLR (needs Monkey Madness I complete and Daero's training).",
+      "scope": {"method": "Ape Atoll Agility Course"},
+      "sources": [
+        {"tier": "T2", "title": "Ape Atoll Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15372987", "revid": 15372987, "retrieved": "2026-11-19T22:07:07Z", "quote": "** Alternatively, use the [[Ape atoll teleport (tablet)|Ape Atoll teleport tablet]] to bypass the Magic level requirement.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Ape Atoll Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15372987", "revid": 15372987, "retrieved": "2026-11-19T22:07:07Z", "quote": "Using this fairy ring requires completion of [[Monkey Madness I]] and [[Daero|Daero's training]].", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-090",
+      "subject": "Brimhaven Agility Arena",
+      "attribute": "level_requirement",
+      "value": {"entry_fee_coins": 200, "floor_spikes_pressure_pads": 20, "all_obstacles": 40},
+      "statement": "The Brimhaven Agility Arena has no requirement except a 200-coin fee per entry; floor spikes and pressure pads need 20 Agility and blades and darts need 40.",
+      "scope": {"method": "Brimhaven Agility Arena"},
+      "sources": [
+        {"tier": "T2", "title": "Brimhaven Agility Arena", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15371976", "revid": 15371976, "retrieved": "2026-11-19T22:07:12Z", "quote": "The course has no requirements to access other than a 200 [[coins]] fee paid to [[Cap'n Izzy No-Beard]] before each entry.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Brimhaven Agility Arena", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15371976", "revid": 15371976, "retrieved": "2026-11-19T22:07:12Z", "quote": "while level 40 Agility is required for the [[spinning blades (Brimhaven Agility Arena)|spinning blades]] and [[darts (brimhaven agility arena)|darts]].", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-091",
+      "subject": "Brimhaven Agility Arena",
+      "attribute": "xp_per_action",
+      "value": {"dispenser_tag": "30 XP per 10 Agility levels (boosts count)", "ticket": 345, "ticket_with_karamja_gloves_2_plus": 379.5},
+      "unit": "Agility XP",
+      "statement": "Tagging an active dispenser gives 30 XP per 10 Agility levels (boosts count), and each ticket redeems for 345 XP (379.5 with Karamja gloves 2-4).",
+      "scope": {"method": "Brimhaven Agility Arena"},
+      "sources": [
+        {"tier": "T2", "title": "Brimhaven Agility Arena", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15371976", "revid": 15371976, "retrieved": "2026-11-19T22:07:12Z", "quote": "Tagging a dispenser awards 30 [[Agility]] [[experience]] for every 10 Agility levels ('''including''' Agility boosts or drains), maxing out at 300 if boosting to level 100 Agility.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Brimhaven Agility Arena", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15371976", "revid": 15371976, "retrieved": "2026-11-19T22:07:12Z", "quote": "Players wearing [[Karamja gloves 2]], [[Karamja gloves 3|3]], or [[Karamja gloves 4|4]] will receive an additional 10% experience, giving 379.5 Agility experience per ticket.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-092",
+      "subject": "Brimhaven Agility Arena",
+      "attribute": "xp_per_hour_range",
+      "value": {"passive_pillars_only_level_80": {"low": 35000, "high": 37000}, "floor_spike_low_focus": 36000, "max_level_99": {"low": 67000, "high": 68000}},
+      "unit": "Agility XP/hour",
+      "statement": "Brimhaven gives about 35,000-37,000 XP/h at 80 tagging pillars only, about 36,000 XP/h crossing the floor-spike trap with low focus, and up to 67,000-68,000 XP/h at 99 tagging every pillar and jumping spikes between them.",
+      "scope": {"method": "Brimhaven Agility Arena", "assumptions": "Passive figure assumes all 60 pillars/h tagged and no obstacle XP (37,000 with Karamja gloves 2). The maximum needs high intensity and the elite Karamja diary. Rates scale with Agility level."},
+      "sources": [
+        {"tier": "T2", "title": "Agility training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875", "revid": 15369875, "retrieved": "2026-11-19T22:05:10Z", "quote": "Additionally, the floor spike trap obstacle just south west of the entrance can be used, which is very low focus and can achieve approximately 36,000 experience per hour.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Brimhaven Agility Arena", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15371976", "revid": 15371976, "retrieved": "2026-11-19T22:07:12Z", "quote": "At level 80 Agility, players can earn roughly 35,000 experience per hour (or roughly 37,000 experience per hour with Karamja gloves 2).", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Brimhaven Agility Arena", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15371976", "revid": 15371976, "retrieved": "2026-11-19T22:07:12Z", "quote": "At level 99 with the elite diary complete, expect to be able to achieve up to 68,000 Agility experience per hour when constantly jumping over floor spikes during down time.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high",
+      "notes": "No wiki figure for the owner's level 57 range specifically; 40-level figure is 28,000 (passive)."
+    },
+    {
+      "claim_id": "C-MTH-093",
+      "subject": "Brimhaven Agility Arena",
+      "attribute": "failure_damage",
+      "value": "Trap damage scales with current Hitpoints; failing darts drains 2 Agility levels",
+      "statement": "Brimhaven trap damage scales with the player's current health, and a failed darts obstacle drains 2 Agility levels.",
+      "scope": {"method": "Brimhaven Agility Arena"},
+      "sources": [{"tier": "T2", "title": "Brimhaven Agility Arena", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15371976", "revid": 15371976, "retrieved": "2026-11-19T22:07:12Z", "quote": "as the damage the traps deal to your health scale with how much health you currently have.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-094",
+      "subject": "Brimhaven Agility Arena",
+      "attribute": "location",
+      "value": "Beneath Brimhaven (Karamja); e.g. amulet of glory to Musa Point then run west",
+      "statement": "The arena is beneath Brimhaven on Karamja; one route is an amulet of glory to Musa Point and a run west.",
+      "scope": {"method": "Brimhaven Agility Arena"},
+      "sources": [{"tier": "T2", "title": "Brimhaven Agility Arena", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15371976", "revid": 15371976, "retrieved": "2026-11-19T22:07:12Z", "quote": "*Teleport to [[Musa Point]] using an [[amulet of glory]] and run west.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-095",
+      "subject": "Brimhaven Agility Arena",
+      "attribute": "marks_of_grace_rate",
+      "value": 8,
+      "unit": "mark-of-grace equivalents/hour",
+      "statement": "Brimhaven gives no marks directly; vouchers buy amylase packs that Grace exchanges for marks, worth about 8 marks/h (7.5 vouchers per mark).",
+      "scope": {"method": "Brimhaven Agility Arena"},
+      "sources": [{"tier": "T2", "title": "Mark of Grace", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403415", "revid": 15403415, "retrieved": "2026-11-19T22:08:21Z", "quote": "|[[Brimhaven Agility Arena]]\n|1\n|8<ref group=\"a\">By purchasing [[Amylase packs]] from [[Pirate Jackie the Fruit]] and selling them to [[Grace]].</ref>", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-096",
+      "subject": "Agility Pyramid",
+      "attribute": "level_requirement",
+      "value": 30,
+      "unit": "Agility level",
+      "statement": "The Agility Pyramid requires 30 Agility and no quest.",
+      "scope": {"method": "Agility Pyramid"},
+      "sources": [{"tier": "T2", "title": "Agility Pyramid", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402952", "revid": 15402952, "retrieved": "2026-11-19T22:07:15Z", "quote": "The only requirement for this course is level 30 [[Agility]].", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-097",
+      "subject": "Agility Pyramid",
+      "attribute": "xp_per_lap",
+      "value": {"obstacles": 722, "completion_bonus_formula": "300 + 8 x Agility level, capped at 1,000 from level 88 (boosts ignored)", "at_level_57": 1478, "at_level_88_plus": 1722},
+      "unit": "Agility XP per lap",
+      "statement": "A Pyramid lap gives 722 XP from obstacles plus a 300 + 8 x level bonus (capped at 1,000 from 88, boosts ignored): 1,478 XP at 57 and 1,722 at 88+.",
+      "scope": {"method": "Agility Pyramid"},
+      "sources": [
+        {"tier": "T2", "title": "Agility Pyramid", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402952", "revid": 15402952, "retrieved": "2026-11-19T22:07:15Z", "quote": "Bonus experience is rewarded for completing the course. The maximum bonus experience is capped at 1,000 at level 88 and higher. [[Temporary skill boost]]s do not affect the bonus experience.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Agility Pyramid", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402952", "revid": 15402952, "retrieved": "2026-11-19T22:07:15Z", "quote": "300 +Agility \\ level \\times 8", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "medium",
+      "notes": "Computed by this desk from the pinned obstacle table (12x5 + 8x5 + 52x4 + 0x2 + 56.4x2 + 56.4x3 + 22x6 = 722) and the bonus formula; the page shows the total only as a template variable."
+    },
+    {
+      "claim_id": "C-MTH-098",
+      "subject": "Agility Pyramid",
+      "attribute": "xp_per_hour_range",
+      "value": {"level_55_60": {"low": 25000, "high": 30000}, "level_67_70": {"low": 33000, "high": 37000}, "level_75": 42100, "level_88_99": 44700},
+      "unit": "Agility XP/hour",
+      "statement": "The Pyramid gives about 25,000-30,000 XP/h at 55-60, 33,000-37,000 at 67-70, 42,100 at 75 and 44,700 at 88-99, plus 10,000 coins per pyramid top (up to 26 laps/h).",
+      "scope": {"method": "Agility Pyramid", "assumptions": "Lower-level figures are luck-dependent sample rates without stamina potions; 75+ figures are maxima at 26 laps/h with high concentration (no fails from 75)."},
+      "sources": [
+        {"tier": "T2", "title": "Agility Pyramid", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402952", "revid": 15402952, "retrieved": "2026-11-19T22:07:15Z", "quote": "Level 55–60: 25,000–30,000 experience.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Agility Pyramid", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402952", "revid": 15402952, "retrieved": "2026-11-19T22:07:15Z", "quote": "Level 67–70: 33,000–37,000 experience.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Agility Pyramid", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402952", "revid": 15402952, "retrieved": "2026-11-19T22:07:15Z", "quote": "* Level 88–99: 44,700 experience", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Agility Pyramid", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402952", "revid": 15402952, "retrieved": "2026-11-19T22:07:15Z", "quote": "Pyramid tops may be handed in to [[Simon Templeton]] in exchange for {{NoCoins|10,000}} [[coins]] each", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-099",
+      "subject": "Agility Pyramid",
+      "attribute": "failure_damage",
+      "value": {"max_hit": 10, "no_fail_level": 75, "pyramid_block": "cannot be bypassed by level; timing only (8 damage)"},
+      "statement": "Pyramid fails deal up to 10 damage and drop the player a level; nothing fails from 75 Agility except the moving pyramid blocks, which depend on timing (8 damage).",
+      "scope": {"method": "Agility Pyramid"},
+      "sources": [
+        {"tier": "T2", "title": "Agility Pyramid", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402952", "revid": 15402952, "retrieved": "2026-11-19T22:07:15Z", "quote": "Upon failure, the Agility Pyramid is capable of hitting a player for 10 damage", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Agility Pyramid", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402952", "revid": 15402952, "retrieved": "2026-11-19T22:07:15Z", "quote": "* At level 75 Agility, it is impossible to fail any obstacle.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-100",
+      "subject": "Agility Pyramid",
+      "attribute": "location",
+      "value": "Kharidian Desert between Sophanem and Nardah; Nardah teleport or fairy ring DLQ; desert heat applies",
+      "statement": "The Pyramid is in the Kharidian Desert between Sophanem and Nardah (Nardah teleport, desert amulet 2+, fairy ring DLQ or AKP), and desert heat applies there.",
+      "scope": {"method": "Agility Pyramid"},
+      "sources": [
+        {"tier": "T2", "title": "Agility Pyramid", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402952", "revid": 15402952, "retrieved": "2026-11-19T22:07:15Z", "quote": "* Use the [[Fairy rings|fairy ring]] system to teleport to {{Fairycode|DLQ}} and run south from there.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Agility Pyramid", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402952", "revid": 15402952, "retrieved": "2026-11-19T22:07:15Z", "quote": "Players will suffer from [[desert heat]] while in this area.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-101",
+      "subject": "Shayzien Agility Course (advanced)",
+      "attribute": "level_requirement",
+      "value": 45,
+      "unit": "Agility level",
+      "statement": "The advanced Shayzien course requires 45 Agility plus an equipped crossbow and mith grapple, and gives 507.5 XP per lap.",
+      "scope": {"method": "Shayzien Agility Course (advanced)"},
+      "sources": [{"tier": "T2", "title": "Shayzien Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375133", "revid": 15375133, "retrieved": "2026-11-19T22:07:22Z", "quote": "This course requires 45 Agility and yields 507.5 Agility [[experience]] for completion. A [[crossbow]] and a [[mith grapple]] are required to complete this course.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-102",
+      "subject": "Shayzien Agility Course (advanced)",
+      "attribute": "xp_per_hour_range",
+      "value": {"high": 30000},
+      "unit": "Agility XP/hour",
+      "statement": "The advanced Shayzien course gives at most about 30,000 XP/h; fails stop around 64 Agility.",
+      "scope": {"method": "Shayzien Agility Course (advanced)", "assumptions": "46.2 s minimum lap; wiki average maximum. Below the rooftop and Wyrm alternatives open to the owner."},
+      "sources": [
+        {"tier": "T2", "title": "Shayzien Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375133", "revid": 15375133, "retrieved": "2026-11-19T22:07:22Z", "quote": "the average Agility experience per hour is at most 30,000.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Shayzien Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375133", "revid": 15375133, "retrieved": "2026-11-19T22:07:22Z", "quote": "Players can expect to stop failing the obstacles that make up the advanced course at around level 64 Agility.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-103",
+      "subject": "Shayzien Agility Course (advanced)",
+      "attribute": "marks_of_grace_rate",
+      "value": 10,
+      "unit": "marks of grace/hour (approx.)",
+      "statement": "The advanced Shayzien course gives about 10 marks of grace per hour.",
+      "scope": {"method": "Shayzien Agility Course (advanced)"},
+      "sources": [{"tier": "T2", "title": "Mark of Grace", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403415", "revid": 15403415, "retrieved": "2026-11-19T22:08:21Z", "quote": "|[[Shayzien Agility Course#Advanced course|Advanced Shayzien Agility Course]]\n|45\n|10 (approx.)", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-104",
+      "subject": "Shayzien Agility Course (advanced)",
+      "attribute": "location",
+      "value": "Shayzien Encampment, south-west of Kourend Castle; Kourend Castle Teleport then run south-west",
+      "statement": "The Shayzien courses start south-west of Kourend Castle in the Shayzien Encampment (Kourend Castle Teleport and a run south-west).",
+      "scope": {"method": "Shayzien Agility Course (advanced)"},
+      "sources": [{"tier": "T2", "title": "Shayzien Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375133", "revid": 15375133, "retrieved": "2026-11-19T22:07:22Z", "quote": "The shared starting point is south-west of the [[Kourend Castle]] in the [[Shayzien Encampment]].", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-105",
+      "subject": "Mith grapple",
+      "attribute": "acquisition",
+      "value": "Made with 59 Fletching (tip needs 59 Smithing), or bought; must be equipped with a crossbow",
+      "statement": "A mith grapple is made with 59 Fletching from a tip smithed at 59 Smithing (the owner has 9 Fletching), so it would need to be bought on the Hardcore Worlds GE; it is used equipped with a crossbow.",
+      "scope": {"method": "Shayzien Agility Course (advanced)"},
+      "sources": [{"tier": "T2", "title": "Mith grapple", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374224", "revid": 15374224, "retrieved": "2026-11-19T22:07:25Z", "quote": "The grapple can be made by attaching a [[mith grapple tip]] to a [[mithril bolt]] to create a [[mith grapple (unf)]], requiring 59 [[Fletching]], then using the unfinished grapple on a [[rope]].", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "medium",
+      "notes": "Hardcore Worlds GE availability not checked (Logistics desk). Whether the Shayzien grapple obstacle has its own Ranged/Strength requirement was not found on the course page."
+    },
+    {
+      "claim_id": "C-MTH-106",
+      "subject": "Dorgesh-Kaan Agility Course",
+      "attribute": "level_requirement",
+      "value": 70,
+      "unit": "Agility level",
+      "statement": "The Dorgesh-Kaan course requires 70 Agility, Death to the Dorgeshuun and a light source.",
+      "scope": {"method": "Dorgesh-Kaan Agility Course"},
+      "sources": [
+        {"tier": "T2", "title": "Dorgesh-Kaan Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15302691", "revid": 15302691, "retrieved": "2026-11-19T22:07:53Z", "quote": "available to players with level 70 [[Agility]]. Completion of the [[quest]] [[Death to the Dorgeshuun]] is also required.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Dorgesh-Kaan Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15302691", "revid": 15302691, "retrieved": "2026-11-19T22:07:53Z", "quote": "To train at the Agility course, the player also has to bring a [[Light sources|light source]].", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-107",
+      "subject": "Dorgesh-Kaan Agility Course",
+      "attribute": "xp_per_lap",
+      "value": 2750,
+      "unit": "Agility XP per lap",
+      "statement": "A Dorgesh-Kaan lap on the Agility route gives 2,750 Agility XP.",
+      "scope": {"method": "Dorgesh-Kaan Agility Course"},
+      "sources": [{"tier": "T2", "title": "Dorgesh-Kaan Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15302691", "revid": 15302691, "retrieved": "2026-11-19T22:07:53Z", "quote": "The Agility course rewards 2,750 Agility [[experience]] per completed lap.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-108",
+      "subject": "Dorgesh-Kaan Agility Course",
+      "attribute": "xp_per_hour_range",
+      "value": {"low": 50000, "high": 63000},
+      "unit": "Agility XP/hour",
+      "statement": "Dorgesh-Kaan gives about 50,000-60,000 XP/h at lower levels and up to 63,000 XP/h at 99 (23 laps/h on the Agility route both ways).",
+      "scope": {"method": "Dorgesh-Kaan Agility Course", "assumptions": "Agility route both ways; rate scales with level and concentration. Not in the wiki 'Agility training' table."},
+      "sources": [
+        {"tier": "T2", "title": "Dorgesh-Kaan Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15302691", "revid": 15302691, "retrieved": "2026-11-19T22:07:53Z", "quote": "At lower Agility levels or lower concentration expect to get around 50,000–60,000 Agility experience per hour.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Dorgesh-Kaan Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15302691", "revid": 15302691, "retrieved": "2026-11-19T22:07:53Z", "quote": "When following the Agility route back and forth at level 99, expect to be able to complete a maximum of 23 laps per hour resulting in 63,000 Agility experience per hour.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-109",
+      "subject": "Dorgesh-Kaan Agility Course",
+      "attribute": "failure_damage",
+      "value": {"damage": "about 10", "failable_at_99": true},
+      "statement": "The tightrope cable and monkeybar ladder can be failed even at 99 Agility; a fall drops the player to the dungeon for about 10 damage and damages any carried generator part.",
+      "scope": {"method": "Dorgesh-Kaan Agility Course"},
+      "sources": [{"tier": "T2", "title": "Dorgesh-Kaan Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15302691", "revid": 15302691, "retrieved": "2026-11-19T22:07:53Z", "quote": "It is possible to fail the tightrope cable and monkeybar ladder obstacles, even at level 99 Agility. A fall will drop a player to the lower level of the dungeon, causing about 10 damage", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-110",
+      "subject": "Dorgesh-Kaan Agility Course",
+      "attribute": "marks_of_grace_rate",
+      "value": {"low": 10, "high": 14},
+      "unit": "marks of grace/hour",
+      "statement": "Dorgesh-Kaan gives about 10-14 marks of grace per hour; the fastest access is a Dorgesh-Kaan teleport sphere.",
+      "scope": {"method": "Dorgesh-Kaan Agility Course"},
+      "sources": [
+        {"tier": "T2", "title": "Dorgesh-Kaan Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15302691", "revid": 15302691, "retrieved": "2026-11-19T22:07:53Z", "quote": "Expect to obtain around 10-14 marks of grace per hour.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Dorgesh-Kaan Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15302691", "revid": 15302691, "retrieved": "2026-11-19T22:07:53Z", "quote": "*Break a [[Dorgesh-kaan sphere|Dorgesh-Kaan teleport sphere]] and run to the course from there.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-111",
+      "subject": "Rockslide (Vampyrium)",
+      "attribute": "release_and_requirement",
+      "value": {"released": "2026-06-30", "quest": "The Blood Moon Rises", "descend_level": 78, "climb_level": 61},
+      "statement": "The Vampyrium rockslide shortcut (released 30 June 2026 with The Blood Moon Rises) needs that quest, 61 Agility to climb and 78 to descend.",
+      "scope": {"method": "Rockslide (Vampyrium) supplementary XP"},
+      "released": "2026-06-30",
+      "sources": [
+        {"tier": "T2", "title": "Rockslide (Vampyrium)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15386511", "revid": 15386511, "retrieved": "2026-11-19T22:07:41Z", "quote": "|release = [[30 June]] [[2026]]", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Rockslide (Vampyrium)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15386511", "revid": 15386511, "retrieved": "2026-11-19T22:07:41Z", "quote": "The completion of [[The Blood Moon Rises]] is required to access the area. Level 61 [[Agility]] is required to go up the hill, whereas level 78 [[Agility]] is required to go down the hill.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-112",
+      "subject": "Rockslide (Vampyrium)",
+      "attribute": "xp_per_action",
+      "value": {"bonus_xp": 550, "cooldown_minutes": 7.5, "standalone_xp_per_hour": 4400, "added_to_other_training_per_hour": {"low": 3500, "high": 4000}},
+      "unit": "Agility XP",
+      "statement": "Descending the rockslide gives 550 XP instead of 27.5 at most once every 7.5 minutes (about 4,400 XP/h alone); woven into other training via Drakan's medallion it adds about 3,500-4,000 XP/h.",
+      "scope": {"method": "Rockslide (Vampyrium) supplementary XP", "assumptions": "Teleport to Vampyrium with Drakan's medallion; ~17-20 s per use; needs a nearby teleport back to the main activity."},
+      "released": "2026-06-30",
+      "sources": [
+        {"tier": "T2", "title": "Rockslide (Vampyrium)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15386511", "revid": 15386511, "retrieved": "2026-11-19T22:07:41Z", "quote": "If at least 7.5 minutes have passed since the player last gained [[Agility]] experience, successfully traversing either shortcut grants 550 Agility experience instead of the usual 27.5. Training Agility this way would give 4,400 experience per hour.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Agility training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875", "revid": 15369875, "retrieved": "2026-11-19T22:05:10Z", "quote": "Using the shortcut diligently will net players 3,500 to 4,000 extra experience each hour.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "low",
+      "notes": "CONFLICT: the shortcut page words the cooldown as 7.5 min since the player 'last gained Agility experience', which would rule out mixing it with course laps, while the training page recommends mixing it with Ardougne rooftops or the Sepulchre. Unresolved; the planner should not rely on the combined rate until verified. Also needs The Blood Moon Rises, a recent and long quest (Quest Archivist)."
+    },
+    {
+      "claim_id": "C-MTH-113",
+      "subject": "The Graveyard (quest) Agility course",
+      "attribute": "release_status",
+      "value": {"status": "unreleased", "scheduled_release": "2026-11-25"},
+      "statement": "The Graveyard is not yet released; it is scheduled for 25 November 2026 (Jagex's 18 Nov post: 'coming next week') and unlocks a new Agility course. Do not route it.",
+      "scope": {"method": "Graveyard Agility course (upcoming)"},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "The Graveyard", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409628", "revid": 15409628, "retrieved": "2026-11-20T02:14:38Z", "quote": "'''The Graveyard''' is an [[Upcoming updates|upcoming]] quest, scheduled for release on [[25 November]] [[2026]].", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T1", "title": "Update:Quest Month Week 3 & TFA Practice Mode", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406871", "revid": 15406871, "retrieved": "2026-11-19T22:08:07Z", "published": "2026-11-18", "quote": "That's right, The Graveyard quest is coming next week! See you next week for our next Fremennik quest, bringing a new Agility course!", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high",
+      "notes": "UPCOMING ONLY (within the 30-day announcement window). Revision 15408433 (2026-11-19) said 'last week of November'; the 2026-11-20 revision gives 25 November."
+    },
+    {
+      "claim_id": "C-MTH-114",
+      "subject": "The Graveyard (quest) Agility course",
+      "attribute": "level_requirement",
+      "value": 65,
+      "unit": "Agility level",
+      "statement": "The announced Graveyard course is a level 65 course aimed at players between 65 and 80 Agility; the quest itself lists 65 Agility.",
+      "scope": {"method": "Graveyard Agility course (upcoming)"},
+      "sources": [
+        {"tier": "T1", "title": "Update:The Graveyard - Rewards Blog", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15363564", "revid": 15363564, "retrieved": "2026-11-19T22:08:01Z", "published": "2026-09-14", "quote": "Once you complete the quest, you'll unlock a new Agility course, aimed at players between 65 and 80 Agility.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "The Graveyard", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408433", "revid": 15408433, "retrieved": "2026-11-19T22:08:07Z", "quote": "*A new {{SCP|Agility|65}} [[Agility course]] offering the fastest rates of [[marks of grace]] in the game", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "low",
+      "notes": "Pre-release; numbers can change at launch. The quest's other requirements (docs/07 lead: Sailing 65, Woodcutting 56, Fletching 54 and more) are for the Quest Archivist."
+    },
+    {
+      "claim_id": "C-MTH-115",
+      "subject": "The Graveyard (quest) Agility course",
+      "attribute": "xp_per_hour_range",
+      "value": {"high_intensity": {"low": 65000, "high": 75000}, "low_intensity": {"low": 55000, "high": 60000}, "marks_per_hour_high_intensity": "30+", "marks_per_hour_low_intensity": {"low": 14, "high": 15}},
+      "unit": "Agility XP/hour (announced)",
+      "statement": "Jagex announced 65,000-75,000 XP/h (30+ marks/h) for the high-intensity Graveyard route, assuming tick-perfect play, and 55,000-60,000 XP/h (14-15 marks/h) for the slower route.",
+      "scope": {"method": "Graveyard Agility course (upcoming)", "assumptions": "Pre-release developer estimates; Jagex says the high end assumes tick-perfect play and real rates will be lower for most players."},
+      "sources": [
+        {"tier": "T1", "title": "Update:The Graveyard - Rewards Blog", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15363564", "revid": 15363564, "retrieved": "2026-11-19T22:08:01Z", "published": "2026-09-14", "quote": "At the top end, you can expect to achieve 65,000 - 75,000 Agility XP per hour.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T1", "title": "Update:The Graveyard - Rewards Blog", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15363564", "revid": 15363564, "retrieved": "2026-11-19T22:08:01Z", "published": "2026-09-14", "quote": "If you're taking the slower route, you can expect around 55,000 - 60,000 Agility XP per hour.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T1", "title": "Update:The Graveyard - Rewards Blog", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15363564", "revid": 15363564, "retrieved": "2026-11-19T22:08:01Z", "published": "2026-09-14", "quote": "Graveyard's high-intensity option will likely be comparable to Ardougne rooftops.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "low",
+      "notes": "UPCOMING ONLY. The same blog proposed a Graceful rework (one-time unlock); whether that passed or shipped was not checked."
+    },
+    {
+      "claim_id": "C-MTH-116",
+      "subject": "Summer pie",
+      "attribute": "boost_amount",
+      "value": {"agility_boost_per_bite": 5, "bites": 2, "heal_total": 22, "run_energy_restored": "10%"},
+      "unit": "Agility levels",
+      "statement": "Each bite of a summer pie (two bites) boosts Agility by +5 and heals 11 (22 total), and the pie restores 10% run energy.",
+      "scope": {"method": "all courses with boostable requirements"},
+      "sources": [
+        {"tier": "T2", "title": "Summer pie", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369837", "revid": 15369837, "retrieved": "2026-11-19T22:07:32Z", "quote": "'''Summer pie''' is a type of [[pie]] that restores 22 [[Hitpoints]] in total, 2 bites each healing for 11. It also restores 10% [[run energy]], and grants a +5 [[temporary skill boost]] to [[Agility]] per bite.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high",
+      "notes": "The boost does not stack beyond +5 per the general boost rules; this desk did not verify stacking (the page says '+5 ... per bite')."
+    },
+    {
+      "claim_id": "C-MTH-117",
+      "subject": "Summer pie",
+      "attribute": "boost_limitations",
+      "value": ["Ape Atoll Agility Course", "Dragon Slayer II", "Saradomin's Encampment (GWD)"],
+      "statement": "Not every Agility requirement can be boosted: the wiki names the Ape Atoll course, Dragon Slayer II and Saradomin's Encampment as exceptions.",
+      "scope": {"method": "boosting"},
+      "sources": [{"tier": "T2", "title": "Summer pie", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369837", "revid": 15369837, "retrieved": "2026-11-19T22:07:32Z", "quote": "Not all requirements can be boosted, such as [[Dragon Slayer II]], the [[Ape Atoll Agility Course]] or [[Saradomin's Encampment]] in the [[God Wars Dungeon]].", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-118",
+      "subject": "Agility potion",
+      "attribute": "boost_amount",
+      "value": 3,
+      "unit": "Agility levels",
+      "statement": "An agility potion boosts Agility by +3 (made at 34 Herblore; the owner has 1 Herblore, so it would be bought).",
+      "scope": {"method": "boosting"},
+      "sources": [{"tier": "T2", "title": "Agility potion", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15250405", "revid": 15250405, "retrieved": "2026-11-19T22:07:36Z", "quote": "Agility potions temporarily raise your [[Agility]] by 3.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-119",
+      "subject": "Graceful outfit",
+      "attribute": "weight_reduction",
+      "value": -25,
+      "unit": "kg (full set)",
+      "statement": "The full Graceful set reduces weight by 25 kg (hood 3, top 5, legs 6, gloves 3, boots 4, cape 4).",
+      "scope": {"method": "all Agility training"},
+      "sources": [{"tier": "T2", "title": "Graceful outfit", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403851", "revid": 15403851, "retrieved": "2026-11-19T22:07:37Z", "quote": "! -25 kg", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-120",
+      "subject": "Graceful outfit",
+      "attribute": "set_effect",
+      "value": {"pieces_total": "+20% run energy restoration", "set_bonus": "+10%", "full_set_total": "+30%", "agility_cape_substitutes_for_cape": true},
+      "statement": "Graceful pieces add up to +20% natural run energy restoration and the full set adds another 10% (30% total); an Agility cape can replace the Graceful cape for the set effect.",
+      "scope": {"method": "all Agility training"},
+      "sources": [
+        {"tier": "T2", "title": "Graceful outfit", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403851", "revid": 15403851, "retrieved": "2026-11-19T22:07:37Z", "quote": "While individual pieces of the graceful outfit will increase the rate of the player's natural [[Energy|run energy]] restoration (adding up to 20%), wearing the full graceful outfit gives an additional 10% bonus, giving a total of 30% increased natural run energy restoration.", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Graceful outfit", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403851", "revid": 15403851, "retrieved": "2026-11-19T22:07:37Z", "quote": "The [[Agility cape]] is an exception to this and can be used as a substitute for the graceful cape for the graceful set effect.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-121",
+      "subject": "Graceful outfit",
+      "attribute": "cost_and_vendor",
+      "value": {"marks_of_grace": 260, "vendor": "Grace, Rogues' Den beneath The Toad and Chicken, Burthorpe"},
+      "statement": "A full Graceful set costs 260 marks of grace from Grace in the Rogues' Den beneath The Toad and Chicken in Burthorpe.",
+      "scope": {"method": "all Agility training"},
+      "sources": [
+        {"tier": "T2", "title": "Graceful outfit", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403851", "revid": 15403851, "retrieved": "2026-11-19T22:07:37Z", "quote": "'''Graceful clothing''' is [[Weight-reducing clothing|weight-reducing gear]] that can be bought from [[Grace]] found in the [[Rogues' Den]] beneath [[The Toad and Chicken]] in [[Burthorpe]].", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Graceful outfit", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403851", "revid": 15403851, "retrieved": "2026-11-19T22:07:37Z", "quote": "Buying the entire set costs 260 marks.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high",
+      "notes": "For the Threat Analyst: docs/07 (unverified lead) lists the Rogues' Den minigame as unsafe on Hardcore Worlds; whether visiting Grace's shop involves any risk was not assessed here."
+    },
+    {
+      "claim_id": "C-MTH-122",
+      "subject": "Agility (general mechanics)",
+      "attribute": "failure_damage_scaling",
+      "value": "On many courses failure damage is based on remaining Hitpoints",
+      "statement": "On many courses failure damage depends on remaining Hitpoints, so it is lower when health is low.",
+      "scope": {"method": "general"},
+      "sources": [{"tier": "T2", "title": "Agility", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15405162", "revid": 15405162, "retrieved": "2026-11-19T22:07:47Z", "quote": "On many courses, the amount of damage taken after failing an obstacle is based on your remaining [[Hitpoints]], so to conserve food it is often worthwhile to wait until your Hitpoints are low before eating.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high",
+      "notes": "Exceptions recorded above: Werewolf deathslide (30+ fixed, C-MTH-066) and Pyramid (fixed 4-10)."
+    },
+    {
+      "claim_id": "C-MTH-123",
+      "subject": "Agility (general mechanics)",
+      "attribute": "weight_effect_on_success",
+      "value": "Weight does not affect success chance on most obstacles (exception: Werewolf deathslide)",
+      "statement": "Weight does not affect obstacle success chance on most courses; the Werewolf deathslide is a coded exception.",
+      "scope": {"method": "general"},
+      "sources": [{"tier": "T2", "title": "Agility", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15405162", "revid": 15405162, "retrieved": "2026-11-19T22:07:47Z", "quote": "[[Weight]] does '''not''' affect the chance of success for most obstacles.", "fetched_by": "methods-analyst (tools/wiki.py)"}],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-MTH-124",
+      "subject": "Barbarian Fishing",
+      "attribute": "passive_agility_xp",
+      "value": {"requirements": {"Fishing": 48, "Agility": 15, "Strength": 15}, "agility_range_example": "Fishing 58->99 takes Agility 30->74"},
+      "statement": "Barbarian Fishing (48 Fishing, 15 Agility, 15 Strength; the owner has 25 Fishing) gives passive Agility and Strength XP; Fishing 58 to 99 this way takes Agility from 30 to 74.",
+      "scope": {"method": "Barbarian Fishing (passive)", "assumptions": "Low-effort, slow; an Agility side-effect of Fishing training, not a primary method."},
+      "sources": [
+        {"tier": "T2", "title": "Barbarian Training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404506", "revid": 15404506, "retrieved": "2026-11-19T22:08:35Z", "quote": "skills={{SCP|Fishing|48|link=yes}}, {{SCP|Agility|15|link=yes}}, {{SCP|Strength|15|link=yes}}", "fetched_by": "methods-analyst (tools/wiki.py)"},
+        {"tier": "T2", "title": "Agility training", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875", "revid": 15369875, "retrieved": "2026-11-19T22:05:10Z", "quote": "Levelling Fishing from level 58 to 99 by Barbarian Fishing would get the player from level 30 Agility to 74.", "fetched_by": "methods-analyst (tools/wiki.py)"}
+      ],
+      "confidence": "high"
+    }
+  ],
+  "gaps": [
+    "Hardcore Worlds specifics not researched by this desk (Threat Analyst lane): whether Wilderness PvP exists on Hardcore Worlds; whether deaths in the Hallowed Sepulchre, Brimhaven arena or Werewolf course count; safety of visiting Grace in the Rogues' Den; Barbarian Assault for the Kandarin hard diary.",
+    "Colossal Wyrm per-lap XP after the 12 Aug 2026 rework is uncertain: the course page is flagged {{Obsolete}}, its basic obstacle table sums to 601.6 against the stated 633, and the 'Agility' skill page still shows pre-rework 504.1/749.6. XP/hour (Jagex: roughly unchanged) is the reliable figure.",
+    "Rockslide (Vampyrium) cooldown wording conflicts with the training page's advice to mix it with course laps (C-MTH-112); not resolved.",
+    "Full requirement lists for the hard Kandarin, hard Desert, hard Fremennik and elite Ardougne diaries were only partly quoted; the elite Ardougne Diary was not fetched. Quest prerequisites (Sins of the Father, Song of the Elves, Creature of Fenkenstrain, Monkey Madness I, Death to the Dorgeshuun, The Blood Moon Rises, The Graveyard) are left to the Quest Archivist.",
+    "No wiki XP/hour figure was found for Brimhaven specifically at the owner's level (57); figures exist for 40, 80 and 99.",
+    "Teleport tablet requirements (Camelot, Ardougne, Pollnivneach, Rellekka) and Hardcore Worlds GE availability of tablets, summer pies, greegrees and mith grapples were not checked (Logistics desk).",
+    "The Graveyard course (upcoming, 25 Nov 2026) has only pre-release Jagex estimates; actual rates and requirements must be re-checked after release."
+  ],
+  "leads_not_used": [
+    {"lead": "docs/07-hardcore-worlds-baseline.md: The Graveyard 'Pending (late Nov?)', new Agility 65 course", "used_as": "lead only; confirmed by wiki The Graveyard rev 15409628 (scheduled 25 Nov 2026) and T1 Update:Quest Month Week 3 & TFA Practice Mode"},
+    {"lead": "docs/07-hardcore-worlds-baseline.md: '30 Jun 2026: Sins of the Father, the Myreque finale'", "used_as": "not used. Wiki pages pinned here say the Rockslide shortcut came with 'The Blood Moon Rises' on 30 June 2026, while the Hallowed Sepulchre (requiring Sins of the Father) long predates the window. The baseline item looks mislabelled; flagged for the Patch Sentinel / Director."},
+    {"lead": "docs/07-hardcore-worlds-baseline.md: unsafe activity list (Rogues' Den, Barbarian Assault, POH)", "used_as": "cross-referenced in notes only; danger rating left to the Threat Analyst"}
+  ],
+  "provenance": {
+    "agent": "methods-analyst",
+    "started_at": "2026-11-19T22:04:30Z",
+    "finished_at": "2026-11-20T02:20:00Z",
+    "dispatch_ref": "dispatch/012-methods-analyst.md",
+    "inputs": [
+      {"path": "brief.json", "sha256": "c27aa6bc9969f981aed9185637565c2792f58b80646cc531afa503e27f969389"},
+      {"path": "dispatch/012-methods-analyst.md", "sha256": "c63fa4f93936668e7efed69005884b2a6e00362bbb9868c47ab131ec79b20c79"},
+      {"path": ".claude/agents/methods-analyst.md", "sha256": "16cc925993648717d4f01213599600e738da5d35b516a648ee27014e99f674d5"},
+      {"path": "docs/06-sourcing-policy.md", "sha256": "f883176c3b9c0f10ad8c06027eebb8436f1989068c72fffdc9df51878c618bf8"},
+      {"path": "docs/07-hardcore-worlds-baseline.md", "sha256": "75a2a4abff833d60dce05ec9a0c7ceda54f682c275e3edf73dfa4fe04f79ecf1"}
+    ],
+    "actions": [
+      {"kind": "read", "detail": "Read charter and recorded sha256", "target": ".claude/agents/methods-analyst.md", "outcome": "16cc9259..."},
+      {"kind": "verify", "detail": "python3 tools/ledger.py verify agility-1-99-20261119 (before reading job files, and again on resume 2026-11-20)", "outcome": "OK both times"},
+      {"kind": "read", "detail": "Read dispatch 012 (and diffed against withdrawn 004), ledger entries, brief.json, schemas/claims.schema.json, tools/validate.py, tools/wiki.py, tools/sentry.py, docs/06 and docs/07", "outcome": "brief sha256 c27aa6bc... matches dispatch"},
+      {"kind": "fetch", "detail": "wiki.py page 'Agility training'", "target": "oldid=15369875", "outcome": "rate tables for rooftops, Sepulchre, Wyrm, Werewolf, Prifddinas, Ape Atoll, Brimhaven, Pyramid, Shayzien, Rockslide"},
+      {"kind": "fetch", "detail": "wiki.py rooftop course pages", "target": "Canifis 15374436; Falador 15319531; Seers' 15356820; Pollnivneach 15375189; Rellekka 15319532; Ardougne 15352456; Rooftop Agility Courses 15337972", "outcome": "levels, XP per lap, rates, marks, fail levels"},
+      {"kind": "fetch", "detail": "wiki.py diary pages for course bonuses", "target": "Kandarin Diary 15404237; Desert Diary 15404231; Fremennik Diary 15404235", "outcome": "found Kandarin hard needs Defence 70 (unboostable) and Barbarian Assault"},
+      {"kind": "fetch", "detail": "wiki.py access pages", "target": "Pollnivneach 15402250; Rellekka 15387537; Ardougne Teleport 14918399", "outcome": "travel options"},
+      {"kind": "fetch", "detail": "wiki.py other course pages", "target": "Colossal Wyrm 15388138 (+history); Hallowed Sepulchre 15387544; Werewolf 15315234; Wilderness 15351989; Prifddinas 15322180; Ape Atoll 15372987; Brimhaven 15371976; Agility Pyramid 15402952; Shayzien 15375133; Mith grapple 15374224; Dorgesh-Kaan 15302691; Rockslide (Vampyrium) 15386511; Agility 15405162; Mark of Grace 15403415; Barbarian Training 15404506", "outcome": "per-method facts"},
+      {"kind": "fetch", "detail": "wiki.py boosts and gear", "target": "Summer pie 15369837; Agility potion 15250405; Graceful outfit 15403851", "outcome": "+5 per bite; +3; -25 kg, 30% set restoration"},
+      {"kind": "search", "detail": "wiki.py new-pages --ns Update --since 2025-11-19; wiki.py search 'Agility course 2026'", "outcome": "identified agility-relevant updates in window"},
+      {"kind": "fetch", "detail": "wiki.py T1 Update pages", "target": "Summer Sweep Up - Agility & CoX Changes 15303824; The Graveyard - Rewards Blog 15363564; Quest Month Week 3 15406871; Getting Around 15104173; Remaining Getting Around Changes 15163005; Summer Sweep-Up 2026 15272295", "outcome": "Sepulchre floor changes and Wyrm rework (12 Aug 2026); Graveyard course announcement; Getting Around changes only touched shortcut animations (no claim)"},
+      {"kind": "fetch", "detail": "wiki.py page 'The Graveyard' (19 Nov rev 15408433; re-fetched on resume, rev 15409628)", "outcome": "still upcoming, now dated 25 Nov 2026"},
+      {"kind": "verify", "detail": "grep of cached wikitext to confirm exact multi-line table quotes (Mark of Grace rows; Rooftop per-lap rows) and Graveyard blog publish date", "outcome": "confirmed"},
+      {"kind": "compute", "detail": "Summed obstacle tables: Ardougne 889 (matches summary table); Prifddinas base 1285.2; Agility Pyramid obstacles 722 + bonus (300+8xlevel, cap 1000): 1478 at 57, 1722 at 88+; Colossal Wyrm basic table sums to 601.6 vs stated 633", "outcome": "used in C-MTH-040, 079, 097, 048"},
+      {"kind": "write", "detail": "Wrote research/claims-methods.json with the Write tool", "target": "jobs/agility-1-99-20261119/research/claims-methods.json", "outcome": "124 claims"},
+      {"kind": "verify", "detail": "python3 tools/validate.py agility-1-99-20261119 research", "outcome": "no FAIL for claims-methods.json (only WARN: not sealed); FAILs belong to other desks' files"},
+      {"kind": "verify", "detail": "Post-write spot check of 12 risky quotes against cached pinned wikitext with grep -cF / grep -Pzc (multi-line Sepulchre and Prifddinas tables, Seers' teleport row, Falador damage, Wilderness damage formula, Pyramid bonus formula, Ape Atoll fairy ring, Prifddinas hidden comment)", "outcome": "all 12 matched exactly once"}
+    ],
+    "decisions": [
+      {"decision": "Flag the Seers' bank teleport as unreachable for this owner and plan Seers' at the no-teleport rate", "reason": "The hard Kandarin Diary needs 70 Defence (not boostable) and the brief caps Defence at 50 (zerker build).", "alternatives_considered": ["Report the teleport rate as the default Seers' rate (rejected: violates build)"], "refs": ["C-MTH-021"]},
+      {"decision": "Give Hallowed Sepulchre rates as ranges spanning both wiki tables", "reason": "The 'Agility training' table (private instance) and the Sepulchre page's 'realistic' table disagree on Floors 3-4.", "alternatives_considered": ["Pick one table"]},
+      {"decision": "Use XP/hour, not per-lap XP, as the planning figure for the Colossal Wyrm course", "reason": "The page is flagged obsolete after the Aug 2026 rework and its tables are internally inconsistent; Jagex (T1) states XP/hour is roughly unchanged.", "alternatives_considered": ["Use the pre-rework 504.1/749.6 from the Agility page (rejected: stale)"]},
+      {"decision": "Record The Graveyard course as upcoming only, with low confidence", "reason": "Unreleased as of 2026-11-20 (scheduled 25 Nov); the brief forbids routing unreleased content.", "alternatives_considered": ["Omit it (rejected: within the 30-day announcement window)"]},
+      {"decision": "Include Dorgesh-Kaan, Rockslide and Barbarian Fishing beyond the dispatch's minimum list", "reason": "Each is a plausible planner option from 57 upward ('anything newer' and complete coverage); Rockslide is recent (30 Jun 2026).", "alternatives_considered": ["Omit as not in the minimum list"]},
+      {"decision": "Exclude Gnome Stronghold, Draynor, Al Kharid, Varrock, Penguin and Barbarian Outpost courses", "reason": "Below the owner's level 57 and slower than the alternatives; trivia for this route.", "alternatives_considered": ["Include for completeness"]},
+      {"decision": "Describe failure damage as facts only, with no danger rating", "reason": "Charter: the Threat Analyst rates danger.", "alternatives_considered": []}
+    ],
+    "limitations": [
+      "INTERRUPTION: the session was stopped by an account usage limit at about 22:10 UTC on 2026-11-19 (after the wiki fetches, before any file was written) and resumed at about 02:14 UTC on 2026-11-20 at the coordinator's instruction (ledger seq 45). On resume I re-ran ledger verify, re-hashed all inputs (unchanged) and re-fetched The Graveyard (newer revision used). All other sources keep their 2026-11-19 revisions and may since have changed (the verifier should check for STALE).",
+      "Before reading CLAUDE.md's shell rules I ran some non-allowlisted inspection commands: a chained 'cd ... && ...; ...' command, 'python3 -c' to pretty-print brief.json and the schema, and 'awk'/'sed -n' to view parts of cached wikitext. All were read-only and wrote nothing; they may appear in the Sentry audit log.",
+      "Some quotes are table cells (e.g. '| 66,000–70,000') whose meaning depends on the table row; the notes and statement say which row.",
+      "Some diary and requirement lists were transcribed from the pinned revision with only representative lines quoted (confidence medium).",
+      "Rates are wiki estimates for the main game; Hardcore Worlds has no XP modifiers per the docs/07 lead (unverified here)."
+    ]
+  }
+}

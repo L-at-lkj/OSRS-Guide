@@ -46,7 +46,7 @@ def main():
         if errs:
             die(f"{rel} schema: {errs[:5]}")
         desk = part.stem
-        lo, hi = RANGES.get(desk, (0, 9999))
+        lo, hi = RANGES.get(desk.split("-")[0], (0, 9999))
         for f in data["facts"]:
             n = int(f["fact_id"][2:])
             if not lo <= n <= hi:
