@@ -376,7 +376,13 @@ def g_risk(job, r):
     entries = ledger.read_entries(job)
     accepted = {e["ref"] for e in entries if e["event"] == "accept_risk"}
     scores = {}
+    plan_steps = {st["step_id"] for st in plan["steps"]}
+    plan_routes = {rt["route_id"] for rt in plan["routes"]}
     for e in risk["entries"]:
+        if e["step_id"] not in plan_steps:
+            note = " (veto honoured: step removed from plan)" if e["verdict"] == "veto" else ""
+            r.warn(f"risk {e['step_id']}: rated but no longer in the plan{note}")
+            continue
         try:
             s = danger.assess(e)
         except ValueError as exc:
@@ -414,7 +420,10 @@ def g_risk(job, r):
         r.ok(f"route {rt['route_id']}: worst residual DS {worst} ({danger.tier(worst)})")
     for rv in risk["route_verdicts"]:
         if rv["verdict"] == "veto":
-            r.fail(f"risk officer vetoed route {rv['route_id']}")
+            if rv["route_id"] in plan_routes:
+                r.fail(f"risk officer vetoed route {rv['route_id']}")
+            else:
+                r.warn(f"route {rv['route_id']} vetoed and removed from the plan (veto honoured)")
 
 
 def g_redteam(job, r):
