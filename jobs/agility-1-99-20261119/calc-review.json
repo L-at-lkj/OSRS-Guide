@@ -1,0 +1,272 @@
+{
+  "calc_sha256": "313257a6f2ab726594977b07ca87a2274e96bcb37dd57f474674383b57e8c643",
+  "findings": [
+    {
+      "finding_id": "Q-01",
+      "severity": "major",
+      "must_disclose": true,
+      "owner": "writer/editor",
+      "issue": "Route totals exclude quest time. Every quest step carries 0 hours because no verified fact gives quest durations (plan assumption; tools/xp.py uses est_hours, which no quest step has). Safest has 2 quest steps (S01, S02); balanced 7 (S01-S06, S12); fastest 7 (S01-S06, S22). The 228.2 / 222.86 / 209.85 h totals are training hours only.",
+      "recommendation": "The guide must state next to every route total: \"route totals exclude quest time\" and label the totals as training hours.",
+      "refs": [
+        "calc.json routes.*.steps[kind=quest].hours",
+        "plan.json assumptions (quest est_hours)"
+      ]
+    },
+    {
+      "finding_id": "Q-02",
+      "severity": "major",
+      "must_disclose": true,
+      "owner": "writer/editor (strategist for wording of the route comparison)",
+      "issue": "The safest-vs-balanced gap (228.2 - 222.86 = 5.34 h) is not a like-for-like time saving. It decomposes into 4.29 h from Rellekka instead of Pollnivneach at 80-90 (S13 67.193 h vs S11 71.479 h) and 1.05 h less Falador training (S08 1.046 h vs 2.096 h) because five extra quests (S03 Icthlarin's Little Helper, S04 A Tail of Two Cats, S05 Underground Pass, S06 Regicide, S12 The Fremennik Trials) add 28,562.4 Agility XP at 0 hours. If those five quests take more than about 1.05 h in total, the quest block costs time rather than saving it; if they take more than about 5.34 h, balanced is slower overall than safest. No fact gives their durations, so the direction of the comparison cannot be confirmed. The same caveat applies to fastest vs safest (5 extra quests, 18.35 h gap, mostly the Werewolf course).",
+      "recommendation": "Do not present balanced as '5.3 h faster' than safest. Present training hours only, show the decomposition (Rellekka 80-90 saves about 4.3 h of training; the quest block replaces about 1.05 h of Falador training plus unknown quest time), and justify the extra quests by their other value (Rellekka access, unlocks) rather than by time. Not a fail: the arithmetic is correct and the plan discloses quest time as 0; it becomes misleading only if the guide drops this caveat.",
+      "refs": [
+        "S03",
+        "S04",
+        "S05",
+        "S06",
+        "S12",
+        "S08",
+        "S11",
+        "S13"
+      ]
+    },
+    {
+      "finding_id": "Q-03",
+      "severity": "minor",
+      "owner": "strategist (review)",
+      "issue": "Seers' 60-70 (S09) uses 40,000 XP/h, the low end of F-1017's no-teleport range (40,000-44,000), but F-1017's own caveat says the course page's lap times while still failing (about 75 s at 60-65, 55 s at 65-70) imply roughly 27,000-37,000 XP/h and advises planning the low end or below at 60-65. Recomputed at those lap times (570 XP per lap): 6.42 h for 60-65 + 7.72 h for 65-70 = about 14.1 h, versus 11.59 h in calc.json, about 2.5 h more on safest and balanced. It does not change the safest-vs-balanced ordering (both routes use S09).",
+      "recommendation": "Present S09 hours as an estimate that may run about 2.5 h longer while laps still fail; optionally plan S09 at the caveat rate.",
+      "refs": [
+        "F-1017",
+        "S09"
+      ]
+    },
+    {
+      "finding_id": "Q-04",
+      "severity": "minor",
+      "owner": "strategist (review)",
+      "issue": "Fastest route S23 (Werewolf 60-90) uses 55,000 XP/h, inside F-1065's 50,000-65,000, but F-1065's caveat says deathslide fails cut the rate (and are dangerous at 48 HP). The 92.2 h figure may be optimistic; the route is shown for comparison only.",
+      "refs": [
+        "F-1065",
+        "F-1066",
+        "S23"
+      ]
+    },
+    {
+      "finding_id": "Q-05",
+      "severity": "info",
+      "issue": "The Fremennik Trials' 2,812.4 Agility XP is added as 2,812 on the Agility track (0.4 XP truncated); Defence is carried as 2,812.4 = level 16 (tools/xp.py level 2812.4 -> 16; level 17 needs 3,115). No effect on any level or count.",
+      "refs": [
+        "F-2037",
+        "F-2038",
+        "S12"
+      ]
+    },
+    {
+      "finding_id": "Q-06",
+      "severity": "info",
+      "issue": "Step hours are computed as XP still needed / XP per hour, not actions x XP per action / XP per hour; the overshoot of the last lap is not timed. The difference is at most 0.015 h per step (e.g. safest S08 2.096 h vs 2.111 h). Negligible.",
+      "refs": [
+        "tools/xp.py"
+      ]
+    },
+    {
+      "finding_id": "Q-07",
+      "severity": "info",
+      "issue": "tools/xp.py checks requirements only for the target skill (Agility). I checked the routed non-Agility skill requirements against brief.json stats: S01 Thieving 20 (owner 24), S05 Ranged 25 (56), S06 Crafting 10 (21), S22 Crafting 20 (21) and Thieving 25: owner Thieving 24 (at least 7,028 XP) plus S01's 2,500 Thieving XP gives at least 9,528 XP = level 26 (tools/xp.py), and S01 precedes S22 on the fastest route. Quest prerequisites are in route order (S05 before S06, S03 before S04); whether those prerequisite links are correct is the facts/strategist lane, not re-verified here.",
+      "refs": [
+        "S01",
+        "S05",
+        "S06",
+        "S22",
+        "F-0032",
+        "F-2093"
+      ]
+    },
+    {
+      "finding_id": "Q-08",
+      "severity": "info",
+      "issue": "Start XP 212,733 comes from the Hardcore Worlds hiscores, which refresh on logout; if the owner has trained since, every total is slightly overstated (conservative). Also: jobs/agility-1-99-20261119/calc-draft.json is an unsealed file with the same sha256 as calc.json; it was not used.",
+      "refs": [
+        "brief.json profile.skill_xp",
+        "ledger verify WARN"
+      ]
+    }
+  ],
+  "sanity_checks": [
+    {
+      "check": "1. calc.plan_sha256 equals sealed plan.json",
+      "result": "pass",
+      "detail": "6cc4bade59d9e2cd02653119a854f5df00e6c6af7d00872222c926173124203f on both; ledger verify OK."
+    },
+    {
+      "check": "2. No route errors; every level covered",
+      "result": "pass",
+      "detail": "errors=[] and warnings=[] on all three routes; levels arrays are contiguous 57..98 on every route (the 57->58 level-up on balanced/fastest is recorded at S04 with 0 actions, as tools/xp.py documents)."
+    },
+    {
+      "check": "3. Every route reaches 99; overshoot < one action",
+      "result": "pass",
+      "detail": "End XP 13,034,633 / 13,034,971 / 13,034,969 vs 13,034,431 for 99 (tools/xp.py xp 99): overshoot 202 / 540 / 538 XP, each below one Ardougne lap (889)."
+    },
+    {
+      "check": "Start XP",
+      "result": "pass",
+      "detail": "plan.start_xp = brief.profile.skill_xp.Agility = 212,733; first step start_xp 212,733 on every route = level 57 (tools/xp.py level 212733)."
+    },
+    {
+      "check": "4. Plausibility: XP/h inside fact ranges",
+      "result": "pass",
+      "detail": "S08 27,200 in F-1010 [27,200-35,000]; S09 40,000 in F-1017 no_teleport [40,000-44,000]; S10/S11 47,000 in F-1028 no_diary [47,000-51,000]; S13 50,000 in F-1035 no_diary [50,000-55,052]; S14 66,000 in F-1041 [66,000-70,184]; S23 55,000 in F-1065 lower_levels [50,000-65,000]. XP per action equals the fact value on every train step (586, 570, 890, 780, 889, 730). See Q-03/Q-04 for caveat-driven downside."
+    },
+    {
+      "check": "4. Plausibility: hours per step",
+      "result": "pass",
+      "detail": "Train steps range from 1.046 h (balanced S08) to 116.483 h (S14); none under 1 minute or over 200 hours. Route totals 228.2 / 222.86 / 209.85 h are consistent with the chosen rates (my recomputation 228.196 / 222.862 / 209.849)."
+    },
+    {
+      "check": "Quest steps carry 0 hours",
+      "result": "pass (with required disclosure)",
+      "detail": "All quest steps have hours 0 because no step has est_hours (no duration facts). Recorded as Q-01: the guide must disclose 'route totals exclude quest time'."
+    },
+    {
+      "check": "5. Quest XP applied at the right point; lamps consistent with plan",
+      "result": "pass",
+      "detail": "Quest XP is applied in plan route order before the training it precedes: S01 +2,500, S02 +1,500, S03 +4,000, S04 +5,000 (2 x 2,500 A Tail of Two Cats lamps, chosen_skill Agility, Agility 57 >= 30, F-2067), S05 +3,000, S06 +13,750, S12 +2,812.4 (balanced only), S22 +0 (fastest, at 60 before Werewolf). Every Agility requirement holds at the simulated level (S01 22, S02 18, S06 56 vs 57). No lamp goes to Defence."
+    },
+    {
+      "check": "Defence cap (zerker, 50)",
+      "result": "pass",
+      "detail": "Defence ends 1 / 16 / 1 (0 / 2,812.4 / 0 XP). Only S12 The Fremennik Trials adds Defence (2,812.4, F-2038, forced). tools/xp.py level 2812.4 -> 16. Headroom 109,132 (balanced) and 111,944 (others) below 111,945 (level 51)."
+    },
+    {
+      "check": "6. Action counts and supplies recomputed independently",
+      "result": "pass",
+      "detail": "No route has supplies (supplies=[] on every step), so supply totals are trivially 0. Recomputed every train step's actions as ceil((xp(until_level) - start_xp) / xp_per_action) with level XP from tools/xp.py xp (60=273,742; 65=449,428; 70=737,627; 80=1,986,068; 90=5,346,332; 99=13,034,431). Examples: safest S08 ceil(57,009/586)=98; balanced S13 ceil(3,359,673/780)=4,308; fastest S23 ceil(5,072,205/730)=6,949; safest S14 ceil(7,687,870/889)=8,648. All 17 train steps, all hours and route totals (actions 14,738 / 15,222 / 15,651) match calc.json."
+    },
+    {
+      "check": "7. Plan numbers match facts",
+      "result": "pass",
+      "detail": "python3 tools/validate.py agility-1-99-20261119 plan: 0 fail, 11 warn (unused option steps S07, S15-S21, S24-S26 only). I also spot-checked every routed step's xp_rewards / xp_per_action / xp_per_hour against facts.json values."
+    },
+    {
+      "check": "Safest-vs-balanced comparison",
+      "result": "pass with required disclosure",
+      "detail": "Arithmetic correct, but the 5.34 h gap depends on unquantified quest time; see Q-02."
+    }
+  ],
+  "decision": "pass",
+  "provenance": {
+    "agent": "quant",
+    "started_at": "2026-11-20T17:16:30Z",
+    "finished_at": "2026-11-20T17:19:29Z",
+    "dispatch_ref": "dispatch/029-quant.md",
+    "inputs": [
+      {
+        "path": ".claude/agents/quant.md",
+        "sha256": "4425318fb5b85b5fe95f16487243f4627ab52bd9cca03257cd9aa56ca7eb8bb9"
+      },
+      {
+        "path": "dispatch/029-quant.md",
+        "sha256": "40193da278921c25de715efc3ad938a3d6149e1797ec700a8c3af6c8854ffda5"
+      },
+      {
+        "path": "brief.json",
+        "sha256": "c27aa6bc9969f981aed9185637565c2792f58b80646cc531afa503e27f969389"
+      },
+      {
+        "path": "facts.json",
+        "sha256": "70fcb7eed3ab243ba3a64501f766da075bc69de64e8cdbc9fe39ed53f456fa12"
+      },
+      {
+        "path": "plan.json",
+        "sha256": "6cc4bade59d9e2cd02653119a854f5df00e6c6af7d00872222c926173124203f"
+      },
+      {
+        "path": "calc.json",
+        "sha256": "313257a6f2ab726594977b07ca87a2274e96bcb37dd57f474674383b57e8c643"
+      },
+      {
+        "path": "schemas/calc-review.schema.json",
+        "sha256": "dee2abee417718be568efd37b0009893f148af2d7a7cc2a2df8671a0b1e59e1f"
+      }
+    ],
+    "actions": [
+      {
+        "kind": "verify",
+        "detail": "python3 tools/ledger.py verify agility-1-99-20261119",
+        "outcome": "OK: ledger chain and all seals intact (WARN: unsealed calc-draft.json present, not used)"
+      },
+      {
+        "kind": "read",
+        "detail": "Read charter, dispatch 029, schema, brief.json profile, plan.json (routes, steps, assumptions), calc.json (all routes, steps, totals, capped_skills, levels)"
+      },
+      {
+        "kind": "read",
+        "detail": "Looked up facts F-0032, F-2003/2004, F-2017/2018, F-2037/2038, F-2044/2045, F-2053/2054, F-2060/2061, F-2067/2068, F-2094/2095, F-1009/1010, F-1016/1017, F-1027/1028, F-1034/1035, F-1040/1041, F-1064/1065 in facts.json",
+        "target": "facts.json"
+      },
+      {
+        "kind": "compute",
+        "detail": "python3 tools/xp.py xp for levels 16, 17, 18, 24, 25, 57, 58, 60, 65, 70, 80, 90, 99; tools/xp.py level for 2812.4, 2812, 212733, 225733, 9528",
+        "outcome": "Defence 2,812.4 = level 16; start 212,733 = level 57; Thieving 9,528 = 26"
+      },
+      {
+        "kind": "compute",
+        "detail": "Scratchpad script recheck.py: independent walk of every route from plan.json (quest XP incl. lamps, ceil-based action counts, hours, XP/h range check, overshoot, level contiguity) using tools/xp.py for level XP; compared with calc.json",
+        "outcome": "All steps, totals and Defence values match; all XP/h in range"
+      },
+      {
+        "kind": "compute",
+        "detail": "Decomposed safest-vs-balanced gap and Seers' 60-70 sensitivity at the F-1017 caveat lap times (75 s / 55 s)",
+        "outcome": "5.34 h = 4.29 h Rellekka + 1.05 h Falador; Seers' about 14.1 h vs 11.59 h"
+      },
+      {
+        "kind": "verify",
+        "detail": "python3 tools/validate.py agility-1-99-20261119 plan",
+        "outcome": "0 fail, 11 warn (unused steps)"
+      },
+      {
+        "kind": "verify",
+        "detail": "python3 tools/validate.py agility-1-99-20261119 calc (before and after writing)",
+        "outcome": "see final report"
+      },
+      {
+        "kind": "write",
+        "detail": "Wrote jobs/agility-1-99-20261119/calc-review.json",
+        "target": "jobs/agility-1-99-20261119/calc-review.json"
+      }
+    ],
+    "decisions": [
+      {
+        "decision": "decision = pass",
+        "reason": "Every number in calc.json reproduces independently and sits inside its fact; no route error; Defence stays within the cap. The quest-time issue is a presentation risk the plan already discloses; it is carried as must-disclose findings Q-01/Q-02 rather than a fail.",
+        "alternatives_considered": [
+          "fail until quest durations are researched: rejected, because no tool or fact can supply them and the calc is correct as training time; the risk is handled by mandatory disclosure"
+        ]
+      },
+      {
+        "decision": "Q-02 severity major with must_disclose",
+        "reason": "Without the caveat a player would read balanced as 5.3 h faster than safest, while 1.05 h of that comes from quests timed at 0 h and could reverse.",
+        "alternatives_considered": [
+          "minor: rejected, the comparison drives route choice",
+          "critical/fail: rejected, arithmetic is correct and fixable by wording"
+        ]
+      },
+      {
+        "decision": "Measured the Seers' caveat impact rather than demanding a rate change",
+        "reason": "40,000 is inside the fact range and is what the plan states; the caveat is a downside to disclose, not an error.",
+        "alternatives_considered": [
+          "fail S09 as implausible"
+        ]
+      }
+    ],
+    "limitations": [
+      "No web access by design; checks are against facts.json, plan.json, brief.json and tools/xp.py only.",
+      "Quest durations are not in the facts, so the real cost of the quest blocks (and so the true route ordering by total time) cannot be computed.",
+      "Correctness of quest prerequisite chains and non-Agility requirements beyond the brief's levels is the facts/strategist lane; I checked only levels against brief.json stats.",
+      "started_at is approximate (no clock read at session start)."
+    ]
+  }
+}
