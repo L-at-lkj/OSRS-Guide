@@ -13,7 +13,7 @@ A guide ships only when all of these hold:
 1. **Complete.** Every level in the requested range has a method. Every quest released in the last 12 months that touches the subject has been evaluated: used, or rejected with a reason.
 2. **Correct.** Every number traces to a fact that an independent verifier confirmed from its own fetch of a revision-pinned source. The arithmetic comes from deterministic code, never from a language model.
 3. **Current.** Updates were swept no more than 2 days before release. Content under 30 days old carries a caveat.
-4. **Safe.** Every step has raw and residual Danger Scores, mitigations, stop conditions, a bail-out plan and a Hardcore Worlds death classification. A `safest` route always exists. Nothing above the owner's cap appears without the owner's recorded acceptance.
+4. **Safe.** Every step has raw and residual Danger Scores, mitigations, stop conditions, a bail-out plan and a Hardcore Worlds death classification. A `safest` route always exists. In **informed** mode (this owner), nothing is hidden: every step scoring 45 or more on the game-relative index carries a complete prep card and a necessity label. In capped modes, nothing above the cap appears without the owner's recorded acceptance.
 5. **Adversarially tested.** A red team tried to get the player killed following the guide literally, and every critical or high finding is resolved.
 6. **Auditable.** Chain of custody (ledger), independent observation (Sentry), and self-reported provenance all exist and agree.
 7. **Usable.** Interactive, mobile-friendly, light and dark themes, progress tracking, and danger visible at all times.
