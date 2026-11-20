@@ -149,7 +149,7 @@ def ladder(cal: dict | None = None) -> dict:
         if a.get("status") not in ("rated", "approved") or "factors" not in a:
             continue
         raw, _ = apply_floors(raw_score(factor_values(a["factors"])), a.get("flags", []))
-        prem = premium(a.get("flags", []), cal)
+        prem = premium(a.get("flags", []), cal, a.get("wilderness_level"))
         rated.append({"id": a["id"], "activity": a["activity"], "position": a["position"], "raw": raw,
                       "published": min(int((cal.get("wilderness_premium") or {}).get("cap", 99)), a["position"] + prem)
                       if prem else a["position"], "premium": prem})
@@ -186,13 +186,22 @@ def ladder(cal: dict | None = None) -> dict:
     return out
 
 
-def premium(flags: list[str], cal: dict | None = None) -> int:
-    """Owner-set Wilderness premium (policy wilderness_premium), added after calibration."""
+def premium(flags: list[str], cal: dict | None = None, level: int | None = None) -> int:
+    """Owner-set tiered Wilderness premium (policy wilderness_premium), added after calibration.
+    The tier comes from the deepest Wilderness level of the activity (`wilderness_level`); when
+    that is missing, the most severe flag present implies a level (flag_fallback)."""
     cal = cal if cal is not None else load_calibration()
     wp = (cal or {}).get("wilderness_premium")
     if not wp or not any(f in wp["flags"] for f in flags):
         return 0
-    return int(wp["points"])
+    if "tiers" not in wp:  # legacy flat premium
+        return int(wp.get("points", 0))
+    if level is None:
+        level = max(wp.get("flag_fallback", {}).get(f, 0) for f in flags if f in wp["flags"])
+    for threshold, pts in wp["tiers"]:
+        if level >= threshold:
+            return int(pts)
+    return 0
 
 
 def calibrate(raw: int, lad: dict) -> tuple[int, list[str]]:
@@ -235,7 +244,8 @@ def assess(entry: dict, lad: dict | None = None) -> dict:
     g_res, near = calibrate(residual, lad)
     cal = load_calibration()
     cap = int(((cal or {}).get("wilderness_premium") or {}).get("cap", 99))
-    p_inh, p_res = premium(flags, cal), premium(rflags, cal)
+    wl = entry.get("wilderness_level")
+    p_inh, p_res = premium(flags, cal, wl), premium(rflags, cal, wl)
     if lad["calibrated"] and (p_inh or p_res):
         g_inh = min(cap, g_inh + p_inh) if p_inh else g_inh
         g_res = min(cap, g_res + p_res) if p_res else g_res

@@ -50,6 +50,18 @@ The formula above gives a **model score**. `tools/danger.py` places it on the **
 
 The board (/osrs-calibrate) researches, verifies, rates, challenges and gets the owner to approve the ladder. Until at least 6 anchors, including the top one, are rated, scores are published **uncalibrated** and marked with an asterisk.
 
+### Wilderness premium (owner rule, 2026-11-20)
+After calibration, any activity flagged Wilderness or PvP gets a premium based on the deepest Wilderness level it reaches (`wilderness_level`):
+
+| Deepest level | Premium |
+|---|---|
+| 30+ | +20 |
+| 20–29 | +15 |
+| 14–19 | +10 |
+| 1–13 | +5 |
+
+Scores are capped at 99, so The Fractured Archive stays the only 100. Without a recorded level, the flags imply one: DEEP_WILDERNESS or PVP_HOTSPOT count as level 21, and WILDERNESS alone as level 1.
+
 ## 6. Necessity and prep cards
 Every step carries a **necessity** label:
 - **required**: you can't reach the goal without it.

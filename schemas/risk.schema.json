@@ -264,6 +264,14 @@
             "breaks_hard_constraint",
             "dominated_without_benefit"
           ]
+        },
+        "wilderness_level": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 60
         }
       }
     },

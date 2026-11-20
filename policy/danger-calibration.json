@@ -1,5 +1,5 @@
 {
-  "version": "2026-11-20-approved",
+  "version": "2026-11-20-approved-r2",
   "status": "approved by owner 2026-11-20 (with wilderness premium +25)",
   "basis": "Each anchor is rated with the 8-factor model for a TYPICAL account that attempts that content (content-appropriate stats and gear). A guide step is rated for the OWNER's account. So a published score reads: 'this is as dangerous for you as <anchor> is for a typical player doing it'.",
   "scale_ceiling": "The Fractured Archive at solo/duo scale = 100 (owner decisions: agility job ledger seq 131; calibration job ledger).",
@@ -776,7 +776,9 @@
             "F-5071"
           ]
         }
-      }
+      },
+      "wilderness_level": 40,
+      "wilderness_level_source": "Revenant Caves span Wilderness levels 17-40 (verified calibration fact)"
     },
     {
       "id": "toa-150",
@@ -1127,7 +1129,9 @@
             "F-5091"
           ]
         }
-      }
+      },
+      "wilderness_level": 21,
+      "wilderness_level_source": "Artio/Calvar'ion lairs are in level 21 Wilderness (verified calibration fact)"
     },
     {
       "id": "barrows-low",
@@ -1338,7 +1342,9 @@
             "F-5106"
           ]
         }
-      }
+      },
+      "wilderness_level": 56,
+      "wilderness_level_source": "Wilderness Agility Course at levels 50-56 (verified calibration fact)"
     },
     {
       "id": "werewolf",
@@ -1926,13 +1932,35 @@
   ],
   "mapping": "isotonic (pool-adjacent-violators) fit of board position on model raw score; anchors the model cannot separate share an averaged position",
   "wilderness_premium": {
-    "points": 25,
+    "tiers": [
+      [
+        30,
+        20
+      ],
+      [
+        20,
+        15
+      ],
+      [
+        14,
+        10
+      ],
+      [
+        1,
+        5
+      ]
+    ],
     "flags": [
       "WILDERNESS",
       "DEEP_WILDERNESS",
       "PVP_HOTSPOT"
     ],
+    "flag_fallback": {
+      "DEEP_WILDERNESS": 21,
+      "PVP_HOTSPOT": 21,
+      "WILDERNESS": 1
+    },
     "cap": 99,
-    "owner_decision": "all wilderness activity should be roughly ~25 extra. other than that, perfect (2026-11-20)"
+    "owner_decision": "to more accurately reflect the danger add at most, 20 for deep wildy (level 30+), 15 for anything level 20+, 10 for anything 14+ and only 5 if something in wildy below level 14+ (2026-11-20; replaces the flat +25)"
   }
 }

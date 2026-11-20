@@ -31,6 +31,7 @@ Preview your scores with `python3 tools/danger.py score <job> --appetite <appeti
 ## Game-relative scale and necessity
 - Published scores are **game-relative** (policy/danger-calibration.json; `python3 tools/danger.py ladder`). The Fractured Archive (hardest mode) = 100. Every score reads "as dangerous for this owner as <reference activity> is for a typical player attempting it". If the ladder is not yet calibrated, scores are published raw and marked as such. Rate factors honestly either way: calibration is applied by code.
 - For every step give `necessity`: `class` is **required** (the owner's goal cannot be reached without it), **gateway** (unlocks a crucial upgrade: say which in `unlocks`), **efficiency** (faster but avoidable) or **optional**. Include `why` and `safer_alternatives`.
+- For any step in the Wilderness, set `wilderness_level` to the deepest level it reaches (cite a fact). The owner's tiered premium is added after calibration: +5 below level 14, +10 from 14, +15 from 20, +20 from 30.
 - From score 45 upwards a **complete prep card** is mandatory: mitigations, preconditions with min_hitpoints and stop_conditions, a bail-out plan, and necessity. The validator enforces this.
 
 ## Verdicts
