@@ -113,6 +113,7 @@ def main():
         "danger_model": {"tiers": danger.TIERS, "caps": danger.APPETITE_CAPS, "flags": danger.FLAG_FLOORS,
                          "anchors": danger.ANCHORS, "factors": danger.FACTORS, "prep_card_from": danger.PREP_CARD_FROM,
                          "ladder": {k: lad[k] for k in ("calibrated", "version", "anchors", "conflicts")},
+                         "wilderness_premium": (danger.load_calibration() or {}).get("wilderness_premium"),
                          "ladder_proposed": [{"activity": a["activity"], "position": a["position"], "status": a["status"]}
                                              for a in (danger.load_calibration() or {}).get("anchors", [])]},
     }

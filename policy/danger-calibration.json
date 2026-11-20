@@ -1,6 +1,6 @@
 {
-  "version": "2026-11-20-rated",
-  "status": "rated (owner approval pending)",
+  "version": "2026-11-20-approved",
+  "status": "approved by owner 2026-11-20 (with wilderness premium +25)",
   "basis": "Each anchor is rated with the 8-factor model for a TYPICAL account that attempts that content (content-appropriate stats and gear). A guide step is rated for the OWNER's account. So a published score reads: 'this is as dangerous for you as <anchor> is for a typical player doing it'.",
   "scale_ceiling": "The Fractured Archive at solo/duo scale = 100 (owner decisions: agility job ledger seq 131; calibration job ledger).",
   "process": "Calibration job (/osrs-calibrate): threat-analyst researches each anchor -> fact-verifier verifies -> risk-officer rates factors (status 'rated') -> red-team challenges ordering -> owner approves positions (status 'approved'). Re-run quarterly or after major content releases.",
@@ -11,7 +11,7 @@
       "position": 100,
       "proposed_position": 100,
       "rationale": "Owner-designated ceiling (calibration ledger seq 7); the model independently saturates at 100 (T5, C5, K4), so the anchor and the model agree.",
-      "status": "rated",
+      "status": "approved",
       "flags": [
         "ONE_SHOT_POSSIBLE",
         "LOCKED_INSTANCE_LETHAL",
@@ -108,7 +108,7 @@
       "position": 96,
       "proposed_position": 96,
       "rationale": "Second only to TFA: typeless one-shot boss after 68 waves of tick-precise play; escapable by crystal, but the model saturates (T5, C5) like every instanced top-end boss.",
-      "status": "rated",
+      "status": "approved",
       "flags": [
         "ONE_SHOT_POSSIBLE",
         "HW_UNSAFE_ACTIVITY"
@@ -192,7 +192,7 @@
       "position": 95,
       "proposed_position": 95,
       "rationale": "Top-end wave PvM with typeless damage and run-killing modifiers; ties the Inferno in the model, placed just under it by judgement.",
-      "status": "rated",
+      "status": "approved",
       "flags": [
         "ONE_SHOT_POSSIBLE"
       ],
@@ -269,7 +269,7 @@
       "position": 88,
       "proposed_position": 92,
       "rationale": "Lowered from 92: Expert starts at raid level 300, where a deathless solo money guide exists; still Extreme. The model (96) puts it above the Inferno only because of the knowledge term: an ordering concern for the board.",
-      "status": "rated",
+      "status": "approved",
       "flags": [
         "DISCONNECT_FATAL"
       ],
@@ -343,7 +343,7 @@
       "position": 92,
       "proposed_position": 90,
       "rationale": "Raised from 90 to sit above corrected ToA expert (300): one-shot P1, disconnect treated as death, tick-precise team mechanics.",
-      "status": "rated",
+      "status": "approved",
       "flags": [
         "ONE_SHOT_POSSIBLE",
         "DISCONNECT_FATAL"
@@ -414,7 +414,7 @@
       "position": 86,
       "proposed_position": 87,
       "rationale": "Hard raid but escapable by crystal and less tick-precise than ToB HM; model 84 sits below its neighbours (ordering concern).",
-      "status": "rated",
+      "status": "approved",
       "flags": [
         "HW_UNSAFE_ACTIVITY"
       ],
@@ -491,7 +491,7 @@
       "position": 87,
       "proposed_position": 85,
       "rationale": "Raised from 85 to 87: solo, very high max hits, undocumented exit; the model (96) rates it with ToA expert, above its suggested position (ordering concern).",
-      "status": "rated",
+      "status": "approved",
       "flags": [],
       "facts": [
         "F-5051",
@@ -557,7 +557,7 @@
       "position": 82,
       "proposed_position": 82,
       "rationale": "Unchanged at 82: no supplies brought in, typeless stomp, uncertain mid-fight exit.",
-      "status": "rated",
+      "status": "approved",
       "flags": [],
       "facts": [
         "F-5056",
@@ -634,7 +634,7 @@
       "position": 85,
       "proposed_position": 80,
       "rationale": "Raised from 80: several awakened specials exceed 99 HP outright, comparable to Phosani.",
-      "status": "rated",
+      "status": "approved",
       "flags": [
         "ONE_SHOT_POSSIBLE"
       ],
@@ -706,7 +706,7 @@
       "position": 76,
       "proposed_position": 78,
       "rationale": "Lowered from 78 to 76: singles-plus, not multi; still a designed PK hotspot with teleblock. The model (94, PvP 5 with escape 5) rates it with the Inferno: ordering concern.",
-      "status": "rated",
+      "status": "approved",
       "flags": [
         "WILDERNESS",
         "DEEP_WILDERNESS",
@@ -784,7 +784,7 @@
       "position": 70,
       "proposed_position": 70,
       "rationale": "Learner-raid baseline unchanged at 70.",
-      "status": "rated",
+      "status": "approved",
       "flags": [
         "DISCONNECT_FATAL"
       ],
@@ -854,7 +854,7 @@
       "position": 66,
       "proposed_position": 66,
       "rationale": "Model and proposal agree (66).",
-      "status": "rated",
+      "status": "approved",
       "flags": [
         "POISON_OR_VENOM"
       ],
@@ -921,7 +921,7 @@
       "position": 64,
       "proposed_position": 64,
       "rationale": "Kept at 64 by judgement (learner-level boss); model 84 (inherent one-shot, no credit for antifire/prayer) is above Jad and Zulrah positions: ordering concern.",
-      "status": "rated",
+      "status": "approved",
       "flags": [
         "ONE_SHOT_POSSIBLE"
       ],
@@ -984,7 +984,7 @@
       "position": 62,
       "proposed_position": 62,
       "rationale": "Kept at 62 by judgement; the model (94) cannot separate Jad from the Inferno (both T5, C5): the clearest saturation case.",
-      "status": "rated",
+      "status": "approved",
       "flags": [
         "ONE_SHOT_POSSIBLE",
         "DISCONNECT_FATAL",
@@ -1060,7 +1060,7 @@
       "position": 60,
       "proposed_position": 60,
       "rationale": "Kept at 60; model 84 is above Jad's position and below Jad's model score: ordering concern.",
-      "status": "rated",
+      "status": "approved",
       "flags": [
         "WILDERNESS",
         "DEEP_WILDERNESS",
@@ -1135,7 +1135,7 @@
       "position": 50,
       "proposed_position": 50,
       "rationale": "Kept at 50: the mid-game PvM reference point.",
-      "status": "rated",
+      "status": "approved",
       "flags": [],
       "facts": [
         "F-5094",
@@ -1197,7 +1197,7 @@
       "position": 48,
       "proposed_position": 48,
       "rationale": "Kept at 48: one-shot without the shield, escapable by teleport.",
-      "status": "rated",
+      "status": "approved",
       "flags": [
         "ONE_SHOT_POSSIBLE",
         "QUEST_BOSS"
@@ -1265,7 +1265,7 @@
       "position": 46,
       "proposed_position": 46,
       "rationale": "Kept at 46: deep-Wilderness PvP with no teleport; course damage itself is HP-proportional.",
-      "status": "rated",
+      "status": "approved",
       "flags": [
         "WILDERNESS",
         "DEEP_WILDERNESS",
@@ -1346,7 +1346,7 @@
       "position": 49,
       "proposed_position": 40,
       "rationale": "Raised from 40 to 49: the model (82) treats the undocumented fall maximum as real danger; placed between the quest-boss and Barrows anchors so the ladder stays monotone. Re-rate (likely about 40) if a maximum is ever sourced.",
-      "status": "rated",
+      "status": "approved",
       "flags": [
         "LOW_HP_SKILLING_DAMAGE"
       ],
@@ -1413,7 +1413,7 @@
       "position": 38,
       "proposed_position": 38,
       "rationale": "Kept at 38: the damage is described as small and the ring negates it; the model (63) is raised by the documentation gap.",
-      "status": "rated",
+      "status": "approved",
       "flags": [
         "UNVERIFIED_MECHANIC"
       ],
@@ -1484,7 +1484,7 @@
       "position": 32,
       "proposed_position": 32,
       "rationale": "Kept at 32: sustained, controllable damage in multi-combat.",
-      "status": "rated",
+      "status": "approved",
       "flags": [
         "POISON_OR_VENOM",
         "AGGRESSIVE_NPCS_ON_ROUTE"
@@ -1555,7 +1555,7 @@
       "position": 22,
       "proposed_position": 26,
       "rationale": "Lowered from 26 to 22: the aggressive-monkey and poison hazards are unsupported; left with an unpublished-fail-damage course like the low-HP rooftop anchor.",
-      "status": "rated",
+      "status": "approved",
       "flags": [],
       "facts": [
         "F-5121",
@@ -1616,7 +1616,7 @@
       "position": 10,
       "proposed_position": 20,
       "rationale": "Lowered from 20 to 10: damage is published and scales with current HP; below the unpublished-damage rooftop anchor.",
-      "status": "rated",
+      "status": "approved",
       "flags": [
         "LOW_HP_SKILLING_DAMAGE"
       ],
@@ -1683,7 +1683,7 @@
       "position": 20,
       "proposed_position": 14,
       "rationale": "Raised from 14 to 20 and swapped above Brimhaven: Brimhaven's trap damage is published and HP-scaled, rooftop damage at low HP is not.",
-      "status": "rated",
+      "status": "approved",
       "flags": [
         "LOW_HP_SKILLING_DAMAGE"
       ],
@@ -1745,7 +1745,7 @@
       "position": 14,
       "proposed_position": 12,
       "rationale": "Moved from 12 to 14 (above Brimhaven, per the model): HP is no longer what kills here, warmth is; manageable chip with known counters.",
-      "status": "rated",
+      "status": "approved",
       "flags": [],
       "facts": [
         "F-5133",
@@ -1812,7 +1812,7 @@
       "position": 6,
       "proposed_position": 6,
       "rationale": "Kept at 6: trivial damage.",
-      "status": "rated",
+      "status": "approved",
       "flags": [],
       "facts": [
         "F-5138",
@@ -1871,7 +1871,7 @@
       "position": 0,
       "proposed_position": 0,
       "rationale": "Floor of the ladder (0); model 2 from the knowledge term only.",
-      "status": "rated",
+      "status": "approved",
       "flags": [],
       "facts": [
         "F-5141",
@@ -1924,5 +1924,15 @@
       }
     }
   ],
-  "mapping": "isotonic (pool-adjacent-violators) fit of board position on model raw score; anchors the model cannot separate share an averaged position"
+  "mapping": "isotonic (pool-adjacent-violators) fit of board position on model raw score; anchors the model cannot separate share an averaged position",
+  "wilderness_premium": {
+    "points": 25,
+    "flags": [
+      "WILDERNESS",
+      "DEEP_WILDERNESS",
+      "PVP_HOTSPOT"
+    ],
+    "cap": 99,
+    "owner_decision": "all wilderness activity should be roughly ~25 extra. other than that, perfect (2026-11-20)"
+  }
 }

@@ -149,7 +149,10 @@ def ladder(cal: dict | None = None) -> dict:
         if a.get("status") not in ("rated", "approved") or "factors" not in a:
             continue
         raw, _ = apply_floors(raw_score(factor_values(a["factors"])), a.get("flags", []))
-        rated.append({"id": a["id"], "activity": a["activity"], "position": a["position"], "raw": raw})
+        prem = premium(a.get("flags", []), cal)
+        rated.append({"id": a["id"], "activity": a["activity"], "position": a["position"], "raw": raw,
+                      "published": min(int((cal.get("wilderness_premium") or {}).get("cap", 99)), a["position"] + prem)
+                      if prem else a["position"], "premium": prem})
     rated.sort(key=lambda x: (x["position"], x["raw"]))
     for lo, hi in zip(rated, rated[1:]):
         if hi["raw"] < lo["raw"]:
@@ -181,6 +184,15 @@ def ladder(cal: dict | None = None) -> dict:
     top = [a for a in cal.get("anchors", []) if a.get("position") == 100 and a.get("status") in ("rated", "approved")]
     out["calibrated"] = len(rated) >= MIN_ANCHORS and bool(top)
     return out
+
+
+def premium(flags: list[str], cal: dict | None = None) -> int:
+    """Owner-set Wilderness premium (policy wilderness_premium), added after calibration."""
+    cal = cal if cal is not None else load_calibration()
+    wp = (cal or {}).get("wilderness_premium")
+    if not wp or not any(f in wp["flags"] for f in flags):
+        return 0
+    return int(wp["points"])
 
 
 def calibrate(raw: int, lad: dict) -> tuple[int, list[str]]:
@@ -221,10 +233,17 @@ def assess(entry: dict, lad: dict | None = None) -> dict:
     lad = lad if lad is not None else ladder()
     g_inh, _ = calibrate(inherent, lad)
     g_res, near = calibrate(residual, lad)
+    cal = load_calibration()
+    cap = int(((cal or {}).get("wilderness_premium") or {}).get("cap", 99))
+    p_inh, p_res = premium(flags, cal), premium(rflags, cal)
+    if lad["calibrated"] and (p_inh or p_res):
+        g_inh = min(cap, g_inh + p_inh) if p_inh else g_inh
+        g_res = min(cap, g_res + p_res) if p_res else g_res
     return {"step_id": entry["step_id"],
             # published (game-relative) scores
             "inherent_ds": g_inh, "inherent_tier": tier(g_inh), "residual_ds": g_res, "residual_tier": tier(g_res),
             "comparable_to": near, "calibrated": lad["calibrated"], "calibration_version": lad.get("version"),
+            "wilderness_premium": p_res if lad["calibrated"] else 0,
             # model internals, kept for audit
             "model_inherent": inherent, "model_residual": residual,
             "floor_by": floor_by, "residual_floor_by": rfloor_by, "factors": v, "residual_factors": rv,
@@ -254,7 +273,8 @@ def main():
         lad = ladder()
         print(f"calibration {lad['version']}: {'CALIBRATED' if lad['calibrated'] else 'NOT CALIBRATED (scores published raw)'}")
         for an in lad["anchors"]:
-            print(f"  pos {an['position']:3d}  raw {an['raw']:3d}  {an['activity']}")
+            extra = f"  (+{an['premium']} Wilderness -> {an['published']})" if an.get("premium") else ""
+            print(f"  pos {an['position']:3d}  raw {an['raw']:3d}  {an['activity']}{extra}")
         for c in lad["conflicts"]:
             print("  CONFLICT " + c)
         return
