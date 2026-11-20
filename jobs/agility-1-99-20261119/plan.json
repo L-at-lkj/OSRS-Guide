@@ -1141,7 +1141,7 @@
     "Content under 30 days old in this plan: The Writing's on the Wall (3 Nov 2026), Troll Stronghold's new 2,000 XP, Black Knights' Fortress lamps (3 Nov 2026) and the Hardcore Worlds rules (4 Nov 2026). Treat them as volatile.",
     "Long-term next step 1 (vetoed, removed from steps): Werewolf Agility Course, 60-90 (former S23; 50,000-65,000 XP/h at lower levels, F-1065), with Creature of Fenkenstrain (former S22), which gives no Agility XP (F-2095) and only unlocks the course (Ring of Charos, F-1063/F-2092). Veto basis: unverifiable_mechanic, not danger. The deathslide fall's maximum damage is unpublished: it can hit over 30, does not scale with Hitpoints and can exceed current HP (F-2091, F-3067), so the guide cannot say at what HP a fall is survivable. The veto lifts when EITHER (A) the owner has Agility 81+, Strength 81+ and carries under 2 kg (the Risk Officer's lift condition; F-3068 gives the never-fail point as Agility 80, Strength 80, 2 kg or less; owner Strength 32), OR (B) a source publishes the deathslide maximum and the Risk Officer re-rates the step with a minimum-HP rule above it. Then re-add both steps and re-run the calculator.",
     "Long-term next step 2 (vetoed, removed from steps): Sins of the Father (former S24), the only way into the Hallowed Sepulchre (F-1054; S25, DP07 option B) and the source of a 6 x 15,000 XP tome that can all go to Agility (F-2102). Veto basis: insufficient_facts_for_prep, not danger. Its fights (F-2105) were not researched for max hits and teleport/instance rules, and the final boss's maximum is disputed, so no bail-out can be written from verified facts. It needs Woodcutting 62, Fletching 60, Crafting 56, Agility 52, Attack 50, Slayer 50 and Magic 49, none boostable (F-2100), plus A Taste of Hope and its prerequisite quests (F-2101). The veto lifts when, as the owner nears those requirements, an RFI researches its fights and the Risk Officer completes its prep card and re-rates it at the owner's stats then. The Sepulchre also needs 70+ Hitpoints (recommended, F-3056).",
-    "Danger scores are game-relative (The Fractured Archive = 100; Wilderness +25)"
+    "Danger scores are game-relative (The Fractured Archive = 100; Wilderness premium by deepest level reached: +20 at level 30+, +15 at 20-29, +10 at 14-19, +5 below 14; scores capped at 99). The owner replaced the earlier flat Wilderness +25 with these tiers on 2026-11-20 (docs/05-danger-model.md, policy/danger-calibration.json). No step in this plan enters the Wilderness."
   ],
   "prerequisite_checklist": [
     {
@@ -1666,7 +1666,7 @@
   "provenance": {
     "agent": "route-strategist",
     "started_at": "2026-11-20T23:25:00Z",
-    "finished_at": "FINISHED",
+    "finished_at": "2026-11-20T23:45:00Z",
     "dispatch_ref": "dispatch/032-route-strategist.md",
     "inputs": [
       {
@@ -1703,7 +1703,7 @@
       },
       {
         "path": "docs/05-danger-model.md",
-        "sha256": "3bebd2f7cae5e9e17a80c7721394d68b6f1eb130b636689e471ff39aa6c8b5fe"
+        "sha256": "c18afe9968a23878a13e7da4e730fde5fe15a443be27f819d5da3b304dcecffe"
       }
     ],
     "actions": [
@@ -1727,9 +1727,9 @@
       },
       {
         "kind": "read",
-        "detail": "Grepped docs/05-danger-model.md and policy/danger-calibration.json (sha256 582d2663cb58) for the game-relative scale and the Wilderness premium.",
+        "detail": "Grepped docs/05-danger-model.md and policy/danger-calibration.json for the game-relative scale and the Wilderness premium; both files changed during this run (docs/05 3bebd2f7cae5 -> c18afe9968a2; policy 582d2663cb58 -> 860002be20db), so both were re-read after the first validation run.",
         "target": "policy/danger-calibration.json",
-        "outcome": "Fractured Archive = 100 (docs/05); wilderness_premium approved by owner 2026-11-20: 'all wilderness activity should be roughly ~25 extra'"
+        "outcome": "Fractured Archive = 100 unchanged. The first read showed a flat Wilderness +25; the current version (owner decision 2026-11-20, 'replaces the flat +25') is tiered: +20 at level 30+, +15 at 20+, +10 at 14+, +5 below 14, cap 99"
       },
       {
         "kind": "search",
@@ -1741,25 +1741,25 @@
         "kind": "write",
         "detail": "Built plan.json v2 from a scratchpad copy of v1 with a builder script that removes S22/S23/S24, the fastest route and DP05, rewrites only text fields, asserts that every remaining step's numbers (xp_per_action, xp_per_hour, est_hours, xp_rewards, lamp_rewards, min/until level, requirements) are byte-identical to v1, that every route and option step exists, and that every cited fact is usable.",
         "target": "jobs/agility-1-99-20261119/plan.json",
-        "outcome": "WRITE_OUTCOME"
+        "outcome": "23 steps, 2 routes (safest, balanced), 7 decision points (DP01-DP04, DP06-DP08), 18 assumptions; numbers of every remaining step unchanged"
       },
       {
         "kind": "verify",
         "detail": "python3 tools/xp.py simulate agility-1-99-20261119 --out calc-draft.json",
         "target": "jobs/agility-1-99-20261119/calc-draft.json",
-        "outcome": "SIM_OUTCOME"
+        "outcome": "Both routes reach 99 with no errors: safest 228.2 h (14,738 actions), balanced 222.86 h (15,222 actions); quest hours not counted. Totals identical to v1 for these routes."
       },
       {
         "kind": "verify",
         "detail": "python3 tools/validate.py agility-1-99-20261119 plan",
         "target": "jobs/agility-1-99-20261119/plan.json",
-        "outcome": "PLAN_OUTCOME"
+        "outcome": "0 FAIL; WARN only for unsealed plan.json and 10 decision-point-only steps not on a route (S07, S15-S21, S25, S26)"
       },
       {
         "kind": "verify",
         "detail": "python3 tools/validate.py agility-1-99-20261119 risk",
         "target": "jobs/agility-1-99-20261119/risk.json",
-        "outcome": "RISK_OUTCOME"
+        "outcome": "0 FAIL; S23 and S24 show 'veto honoured: step removed from plan', S22 'rated but no longer in the plan'; other WARNs are company-file changes and calibration-ladder ordering conflicts outside this role"
       }
     ],
     "decisions": [
@@ -1839,6 +1839,18 @@
         ]
       },
       {
+        "decision": "The danger-scale assumption states the current tiered Wilderness premium instead of the dispatch's literal 'Wilderness +25'.",
+        "reason": "During this run docs/05 and policy/danger-calibration.json were updated: the owner replaced the flat +25 with depth tiers (+20/+15/+10/+5, cap 99). Writing '+25' would put a superseded rule in the guide (constitution rules 3 and 4). The assumption keeps the dispatch's wording 'Danger scores are game-relative (The Fractured Archive = 100; ...)' and notes the replacement. Flagged to the Director.",
+        "alternatives_considered": [
+          "Use the dispatch text verbatim (rejected: now inaccurate)",
+          "Stop and escalate without writing (rejected: the change is fully documented in governed files, and no plan step is in the Wilderness)"
+        ],
+        "refs": [
+          "docs/05-danger-model.md",
+          "policy/danger-calibration.json"
+        ]
+      },
+      {
         "decision": "Text-only updates where removed items were mentioned: S01 rationale, S09/S10/S14 why_not_faster, S25 rationale, safest/balanced intents (informed policy, no cap), DP02 text, and the assumptions on XP/h choices (Werewolf rate dropped), quest hours, Defence, Thieving and secondary XP.",
         "reason": "Keep the plan consistent after the removals and the policy change; no step numbers changed (asserted by the builder script).",
         "alternatives_considered": []
@@ -1852,7 +1864,7 @@
     "limitations": [
       "No web access by design. Quest durations are not in the facts, so the calculator counts 0 hours for quest steps and the balanced total understates its real time.",
       "The Werewolf lift condition is quoted from risk.json (Agility 81+, Strength 81+, under 2 kg); the verified never-fail point in F-3068 is Agility 80, Strength 80, 2 kg or less. The Risk Officer owns that margin.",
-      "The Wilderness +25 premium comes from policy/danger-calibration.json (sha256 582d2663cb58...), recorded under actions rather than inputs because the plan gate accepts only sealed job files and docs/, schemas/, .claude/, tools/ and templates/ paths as inputs.",
+      "The Wilderness premium comes from policy/danger-calibration.json (sha256 860002be20db..., current version), recorded under actions rather than inputs because the plan gate accepts only sealed job files and docs/, schemas/, .claude/, tools/ and templates/ paths as inputs.",
       "Open RFIs from v1 remain: Colossal Wyrm post-rework per-lap XP, Death to the Dorgeshuun requirements, secondary quest XP as numeric facts, quest durations, Thieving training for Death on the Isle. New long-term RFI (when the owner nears the requirements): Sins of the Father fights (max hits, Vanstrom Klause's specials, teleport/instance rules)."
     ]
   }
