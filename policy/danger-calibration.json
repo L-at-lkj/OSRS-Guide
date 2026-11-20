@@ -2,15 +2,15 @@
   "version": "2026-11-20-proposed",
   "status": "proposed",
   "basis": "Each anchor is rated with the 8-factor model for a TYPICAL account that attempts that content (content-appropriate stats and gear). A guide step is rated for the OWNER's account. So a published score reads: 'this is as dangerous for you as <anchor> is for a typical player doing it'.",
-  "scale_ceiling": "The Fractured Archive (hardest mode) = 100, by owner instruction (ledger seq 131).",
+  "scale_ceiling": "The Fractured Archive at solo/duo scale = 100 (owner decisions: agility job ledger seq 131; calibration job ledger).",
   "process": "Calibration job (/osrs-calibrate): threat-analyst researches each anchor -> fact-verifier verifies -> risk-officer rates factors (status 'rated') -> red-team challenges ordering -> owner approves positions (status 'approved'). Re-run quarterly or after major content releases.",
   "anchors": [
     {
       "id": "tfa-max",
-      "activity": "The Fractured Archive (hardest mode)",
+      "activity": "The Fractured Archive (solo/duo scale)",
       "position": 100,
       "proposed_position": 100,
-      "rationale": "Owner-designated ceiling: the most dangerous content in the game.",
+      "rationale": "Owner-designated ceiling (2026-11-20): TFA has no hard mode; solo is scaled as a duo; Jagex: over 1 in 4 duo runs 'ended in disaster' (18 Nov 2026).",
       "status": "proposed",
       "flags": [],
       "facts": []
