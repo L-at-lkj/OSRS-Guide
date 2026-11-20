@@ -1,0 +1,3493 @@
+{
+  "desk": "logistics",
+  "as_of": "2026-11-19",
+  "claims": [
+    {
+      "claim_id": "C-LOG-001",
+      "subject": "Hardcore Worlds economy",
+      "attribute": "economy_separate",
+      "value": true,
+      "unit": null,
+      "statement": "Hardcore Worlds have a completely separate economy from the main game: items can only be bought and sold within Hardcore Worlds, though trading and the Grand Exchange are allowed.",
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds - OUT TODAY",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+          "revid": 15397724,
+          "retrieved": "2026-11-19",
+          "quote": "Hardcore Worlds have a completely separate economy from the main game which means items from these worlds can only be bought and sold within them.",
+          "fetched_by": "logistics-analyst",
+          "published": "2026-11-04"
+        },
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-19",
+          "quote": "Players on Hardcore Worlds are still [[main account]]s, therefore they can still [[trade]] with other players, use the [[Grand Exchange]], or participate in group [[Monster killing|PvM]], unlike in other modes such as [[Ironman Mode|ironman]].",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high",
+      "released": "2026-11-04",
+      "notes": "All main-game prices in this file are proxies only."
+    },
+    {
+      "claim_id": "C-LOG-002",
+      "subject": "Hardcore Worlds",
+      "attribute": "release_date",
+      "value": "2026-11-04",
+      "unit": null,
+      "statement": "Hardcore Worlds were released on 4 November 2026 (15 days before this job), so its separate GE market is very young.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-19",
+          "quote": "It was released on [[4 November]] [[2026]] at 11:00 AM {{Wp|UTC}}.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high",
+      "released": "2026-11-04",
+      "notes": "Context for thin-supply flags: items needing high skills to make (summer pie 95 Cooking, stamina potion 77 Herblore, ice plateau tablet 89 Magic + Lunar Diplomacy) may be scarce or expensive on a 15-day-old economy. This is an inference, not a sourced market observation."
+    },
+    {
+      "claim_id": "C-LOG-003",
+      "subject": "Hardcore Worlds",
+      "attribute": "unsafe_activity",
+      "value": [
+        "Nightmare Zone",
+        "Death within a player-owned house",
+        "Rogues' Den (maze)"
+      ],
+      "unit": null,
+      "statement": "On Hardcore Worlds, dying in Nightmare Zone, within a player-owned house, or in the Rogues' Den maze is an official (run-ending) death. Relevant to logistics because Nightmare Zone is the only source of scrolls of redirection, Grace's shop is in the Rogues' Den, and house teleports lead to a POH.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-19",
+          "quote": "* [[Nightmare Zone]]",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-19",
+          "quote": "* Death within a [[player-owned house]]",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-19",
+          "quote": "* [[Rogues' Den]] (maze)",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high",
+      "released": "2026-11-04",
+      "notes": "Flag for the Threat Analyst; logistics does not rate hazards."
+    },
+    {
+      "claim_id": "C-LOG-004",
+      "subject": "Graceful outfit",
+      "attribute": "total_mark_cost",
+      "value": 260,
+      "unit": "marks of grace",
+      "statement": "A full (uncoloured) graceful outfit costs 260 marks of grace.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Graceful outfit",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403851",
+          "revid": 15403851,
+          "retrieved": "2026-11-19",
+          "quote": "Buying the entire set costs 260 marks.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-005",
+      "subject": "Graceful hood",
+      "attribute": "mark_cost",
+      "value": 35,
+      "unit": "marks of grace",
+      "statement": "The graceful hood costs 35 marks of grace.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Graceful outfit",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403851",
+          "revid": 15403851,
+          "retrieved": "2026-11-19",
+          "quote": "| {{plinkt|Graceful hood|txt=Hood}}||{{plinkp|Mark of Grace}}35||-3 kg||+3%||-0.086||0.086",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "The same table row also gives this piece's weight reduction and individual run-energy restoration bonus."
+    },
+    {
+      "claim_id": "C-LOG-006",
+      "subject": "Graceful top",
+      "attribute": "mark_cost",
+      "value": 55,
+      "unit": "marks of grace",
+      "statement": "The graceful top costs 55 marks of grace.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Graceful outfit",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403851",
+          "revid": 15403851,
+          "retrieved": "2026-11-19",
+          "quote": "| {{plinkt|Graceful top|txt=Top}}||{{plinkp|Mark of Grace}}55||-5 kg||+4%||-0.091||0.073",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "The same table row also gives this piece's weight reduction and individual run-energy restoration bonus."
+    },
+    {
+      "claim_id": "C-LOG-007",
+      "subject": "Graceful legs",
+      "attribute": "mark_cost",
+      "value": 60,
+      "unit": "marks of grace",
+      "statement": "The graceful legs costs 60 marks of grace.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Graceful outfit",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403851",
+          "revid": 15403851,
+          "retrieved": "2026-11-19",
+          "quote": "| {{plinkt|Graceful legs|txt=Legs}}||{{plinkp|Mark of Grace}}60||-6 kg||+4%||-0.100||0.067",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "The same table row also gives this piece's weight reduction and individual run-energy restoration bonus."
+    },
+    {
+      "claim_id": "C-LOG-008",
+      "subject": "Graceful gloves",
+      "attribute": "mark_cost",
+      "value": 30,
+      "unit": "marks of grace",
+      "statement": "The graceful gloves costs 30 marks of grace.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Graceful outfit",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403851",
+          "revid": 15403851,
+          "retrieved": "2026-11-19",
+          "quote": "| {{plinkt|Graceful gloves|txt=Gloves}}||{{plinkp|Mark of Grace}}30||-3 kg||+3%||-0.100||0.100",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "The same table row also gives this piece's weight reduction and individual run-energy restoration bonus."
+    },
+    {
+      "claim_id": "C-LOG-009",
+      "subject": "Graceful boots",
+      "attribute": "mark_cost",
+      "value": 40,
+      "unit": "marks of grace",
+      "statement": "The graceful boots costs 40 marks of grace.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Graceful outfit",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403851",
+          "revid": 15403851,
+          "retrieved": "2026-11-19",
+          "quote": "| {{plinkt|Graceful boots|txt=Boots}}||{{plinkp|Mark of Grace}}40||-4 kg||+3%||-0.100||0.075",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "The same table row also gives this piece's weight reduction and individual run-energy restoration bonus."
+    },
+    {
+      "claim_id": "C-LOG-010",
+      "subject": "Graceful cape",
+      "attribute": "mark_cost",
+      "value": 40,
+      "unit": "marks of grace",
+      "statement": "The graceful cape costs 40 marks of grace.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Graceful outfit",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403851",
+          "revid": 15403851,
+          "retrieved": "2026-11-19",
+          "quote": "| {{plinkt|Graceful cape|txt=Cape}}||{{plinkp|Mark of Grace}}40||-4 kg||+3%|||-0.100||0.075",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "The same table row also gives this piece's weight reduction and individual run-energy restoration bonus."
+    },
+    {
+      "claim_id": "C-LOG-011",
+      "subject": "Graceful outfit",
+      "attribute": "set_effect_run_energy_restoration",
+      "value": "+30%",
+      "unit": null,
+      "statement": "Individual graceful pieces add up to +20% natural run energy restoration; wearing the full set adds a further 10%, for +30% in total. The bonus applies only while energy is regenerating (not while running).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Graceful outfit",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403851",
+          "revid": 15403851,
+          "retrieved": "2026-11-19",
+          "quote": "While individual pieces of the graceful outfit will increase the rate of the player's natural [[Energy|run energy]] restoration (adding up to 20%), wearing the full graceful outfit gives an additional 10% bonus, giving a total of 30% increased natural run energy restoration.",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Energy",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15399707",
+          "revid": 15399707,
+          "retrieved": "2026-11-19",
+          "quote": "With the full [[graceful]] set equipped, the energy regenerated per tick is modified to <math>\\lfloor 1.3 R(a) \\rfloor</math>.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-012",
+      "subject": "Graceful outfit",
+      "attribute": "total_weight_reduction",
+      "value": -25,
+      "unit": "kg",
+      "statement": "Computed: the six graceful pieces reduce weight by 3+5+6+3+4+4 = 25 kg in total (hood -3, top -5, legs -6, gloves -3, boots -4, cape -4).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Graceful outfit",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403851",
+          "revid": 15403851,
+          "retrieved": "2026-11-19",
+          "quote": "| {{plinkt|Graceful legs|txt=Legs}}||{{plinkp|Mark of Grace}}60||-6 kg||+4%||-0.100||0.067",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Computation by logistics desk from the per-piece rows of the cited table (rev 15403851, lines 18-28); quote shows one row. The wiki also notes weight reduction does not apply on F2P worlds."
+    },
+    {
+      "claim_id": "C-LOG-013",
+      "subject": "Graceful outfit",
+      "attribute": "item_source",
+      "value": "Grace's Graceful Clothing (Rogues' Den, Burthorpe), marks of grace only",
+      "unit": null,
+      "statement": "The graceful outfit can only be bought from Grace in the Rogues' Den beneath the Toad and Chicken in Burthorpe, using marks of grace earned on Agility courses. It cannot be bought for coins or on the GE.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Graceful outfit",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403851",
+          "revid": 15403851,
+          "retrieved": "2026-11-19",
+          "quote": "The graceful outfit can only be bought with [[Mark of Grace|marks of grace]], which can only be obtained by running laps on certain [[Agility courses]].",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Graceful outfit",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403851",
+          "revid": 15403851,
+          "retrieved": "2026-11-19",
+          "quote": "'''Graceful clothing''' is [[Weight-reducing clothing|weight-reducing gear]] that can be bought from [[Grace]] found in the [[Rogues' Den]] beneath [[The Toad and Chicken]] in [[Burthorpe]].",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-014",
+      "subject": "Graceful hood",
+      "attribute": "tradeable",
+      "value": false,
+      "unit": null,
+      "statement": "Graceful pieces are untradeable (checked on the Graceful hood), so they cannot be bought from other players or the Hardcore Worlds GE.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Graceful hood",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15184835",
+          "revid": 15184835,
+          "retrieved": "2026-11-19",
+          "quote": "|tradeable = No",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Only the hood infobox was read; the outfit page says the outfit can only be bought with marks, which is consistent."
+    },
+    {
+      "claim_id": "C-LOG-015",
+      "subject": "Mark of Grace",
+      "attribute": "tradeable",
+      "value": false,
+      "unit": null,
+      "statement": "Marks of grace are untradeable (stackable), so they must be earned by the player on Agility courses.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Mark of Grace",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403415",
+          "revid": 15403415,
+          "retrieved": "2026-11-19",
+          "quote": "|tradeable = No",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-016",
+      "subject": "Rogues' Den",
+      "attribute": "shop_and_bank_outside_maze",
+      "value": true,
+      "unit": null,
+      "statement": "Grace's shop and the Rogues' Den bank (Emerald Benedict) are outside the maze; buying graceful does not require entering the maze (which needs 50 Agility and 50 Thieving and is an unsafe death on Hardcore Worlds).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Rogues' Den",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379507",
+          "revid": 15379507,
+          "retrieved": "2026-11-19",
+          "quote": "Outside of the maze there are several shops, a fire next to a bank, and four wall safes with a chance to provide [[uncut gem]]s up to [[diamond]] or 20 to 40 [[coins]] when cracked open.",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Rogues' Den",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379507",
+          "revid": 15379507,
+          "retrieved": "2026-11-19",
+          "quote": "[[Grace]] runs [[Grace's Graceful Clothing]]  which sells the [[graceful outfit]] and [[amylase pack]] in exchange for [[marks of grace]].",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Flag for Threat Analyst: do not enter the maze (Hardcore Worlds UNSAFE list)."
+    },
+    {
+      "claim_id": "C-LOG-017",
+      "subject": "Rogues' Den",
+      "attribute": "teleport_option",
+      "value": "Games necklace to Burthorpe",
+      "unit": null,
+      "statement": "To reach Grace: teleport to Burthorpe with a games necklace, run south to the Toad and Chicken inn, and go down the trapdoor near the bartender.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Rogues' Den",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379507",
+          "revid": 15379507,
+          "retrieved": "2026-11-19",
+          "quote": "* Use a [[Games necklace]] to teleport to [[Burthorpe]], run south to the inn, and go down the trapdoor near the bartender.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-018",
+      "subject": "Mark of Grace",
+      "attribute": "over_level_penalty",
+      "value": "20% of normal rate when unboosted Agility is 20+ levels above the course requirement",
+      "unit": null,
+      "statement": "If unboosted Agility is 20 or more levels above a rooftop course's requirement, the chance of a mark is 80% lower (e.g. Seers' at 80, Pollnivneach at 90). Canifis is exempt due to a coding error.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Mark of Grace",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403415",
+          "revid": 15403415,
+          "retrieved": "2026-11-19",
+          "quote": "If the unboosted [[Agility]] level of the player is 20 levels or more over the course requirement, the chances of getting a mark are 80% lower than normal for that course.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-019",
+      "subject": "Canifis Rooftop Course",
+      "attribute": "over_level_penalty_exempt",
+      "value": true,
+      "unit": null,
+      "statement": "The 20-levels-over mark penalty does not apply on the Canifis Rooftop Course.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Rooftop Agility Courses",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15337972",
+          "revid": 15337972,
+          "retrieved": "2026-11-19",
+          "quote": "However, this does not apply to the Canifis Agility Course.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-020",
+      "subject": "Seers' Village Rooftop Course",
+      "attribute": "marks_of_grace_per_hour",
+      "value": "11–13.8",
+      "unit": "marks/hour",
+      "statement": "Seers' Village Rooftop Course: about 11–13.8 marks of grace per hour at the base rate (no achievement diary).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Rooftop Agility Courses",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15337972",
+          "revid": 15337972,
+          "retrieved": "2026-11-19",
+          "quote": "|11–13.8 (base)",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Row of the 'Hourly rates' table on Rooftop Agility Courses; assumes perfect laps and that the player is not 20+ levels over the requirement (except Canifis). The owner has no diaries (brief)."
+    },
+    {
+      "claim_id": "C-LOG-021",
+      "subject": "Pollnivneach Rooftop Course",
+      "attribute": "marks_of_grace_per_hour",
+      "value": "13-14",
+      "unit": "marks/hour",
+      "statement": "Pollnivneach Rooftop Course: about 13-14 marks of grace per hour at the base rate (no achievement diary).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Rooftop Agility Courses",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15337972",
+          "revid": 15337972,
+          "retrieved": "2026-11-19",
+          "quote": "|13-14 (base)",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Row of the 'Hourly rates' table on Rooftop Agility Courses; assumes perfect laps and that the player is not 20+ levels over the requirement (except Canifis). The owner has no diaries (brief)."
+    },
+    {
+      "claim_id": "C-LOG-022",
+      "subject": "Rellekka Rooftop Course",
+      "attribute": "marks_of_grace_per_hour",
+      "value": "13–15.5",
+      "unit": "marks/hour",
+      "statement": "Rellekka Rooftop Course: about 13–15.5 marks of grace per hour at the base rate (no achievement diary).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Rooftop Agility Courses",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15337972",
+          "revid": 15337972,
+          "retrieved": "2026-11-19",
+          "quote": "|13–15.5 (base)",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Row of the 'Hourly rates' table on Rooftop Agility Courses; assumes perfect laps and that the player is not 20+ levels over the requirement (except Canifis). The owner has no diaries (brief)."
+    },
+    {
+      "claim_id": "C-LOG-023",
+      "subject": "Ardougne Rooftop Course",
+      "attribute": "marks_of_grace_per_hour",
+      "value": "16–18.1",
+      "unit": "marks/hour",
+      "statement": "Ardougne Rooftop Course: about 16–18.1 marks of grace per hour at the base rate (no achievement diary).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Rooftop Agility Courses",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15337972",
+          "revid": 15337972,
+          "retrieved": "2026-11-19",
+          "quote": "|16–18.1 (base)",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Row of the 'Hourly rates' table on Rooftop Agility Courses; assumes perfect laps and that the player is not 20+ levels over the requirement (except Canifis). The owner has no diaries (brief)."
+    },
+    {
+      "claim_id": "C-LOG-024",
+      "subject": "Canifis Rooftop Course",
+      "attribute": "marks_of_grace_per_hour",
+      "value": "16–18",
+      "unit": "marks/hour",
+      "statement": "Canifis Rooftop Course: about 16–18 marks of grace per hour at the base rate (no achievement diary).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Rooftop Agility Courses",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15337972",
+          "revid": 15337972,
+          "retrieved": "2026-11-19",
+          "quote": "|16–18<ref group=\"n\">Notably, this rate stays the same at all levels.</ref>",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Row of the 'Hourly rates' table on Rooftop Agility Courses; assumes perfect laps and that the player is not 20+ levels over the requirement (except Canifis). The owner has no diaries (brief)."
+    },
+    {
+      "claim_id": "C-LOG-025",
+      "subject": "Graceful outfit",
+      "attribute": "hours_to_full_set_at_seers",
+      "value": "18.8–23.6",
+      "unit": "hours",
+      "statement": "Computed: at the Seers' base rate of 11–13.8 marks/hour, 260 marks for a full graceful set takes about 260/13.8 = 18.8 to 260/11 = 23.6 hours of Seers' laps (before the 80+ penalty applies).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Rooftop Agility Courses",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15337972",
+          "revid": 15337972,
+          "retrieved": "2026-11-19",
+          "quote": "|11–13.8 (base)",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Graceful outfit",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403851",
+          "revid": 15403851,
+          "retrieved": "2026-11-19",
+          "quote": "Buying the entire set costs 260 marks.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Logistics-desk computation; ignores marks the owner may already hold (bank unknown)."
+    },
+    {
+      "claim_id": "C-LOG-026",
+      "subject": "Ardougne Rooftop Course",
+      "attribute": "marks_stack_single_tile",
+      "value": true,
+      "unit": null,
+      "statement": "On the Ardougne course marks of grace spawn on only one tile and stack, and each new mark refreshes the 10-minute despawn timer.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Mark of Grace",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403415",
+          "revid": 15403415,
+          "retrieved": "2026-11-19",
+          "quote": "Ardougne is an exception, as the marks can only spawn on one tile, and each new mark refreshes the 10 minute timer.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-027",
+      "subject": "Amylase pack",
+      "attribute": "item_source",
+      "value": {
+        "Grace": "10 marks",
+        "Agility Arena Store": "60 Brimhaven vouchers",
+        "Worm Tongue's Wares": "100 termites"
+      },
+      "unit": null,
+      "statement": "Amylase packs cost 10 marks from Grace, 60 Brimhaven vouchers from the Agility Arena store, or 100 termites from Worm Tongue (Colossal Wyrm course).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Amylase pack",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15316439",
+          "revid": 15316439,
+          "retrieved": "2026-11-19",
+          "quote": "These packs can be bought from [[Grace's Graceful Clothing]] for 10 [[marks of grace]], from the [[Agility Arena Store]] for 60 [[Brimhaven voucher]]s, or from [[Worm Tongue's Wares]] for 100 [[Termites]].",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-028",
+      "subject": "Amylase pack",
+      "attribute": "sell_back_to_grace",
+      "value": 8,
+      "unit": "marks of grace per pack",
+      "statement": "Amylase packs sell back to Grace for 8 marks of grace each, so 12.5 termites or 7.5 Brimhaven vouchers convert to 1 mark (a route to graceful from the Colossal Wyrm course or Brimhaven Arena).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Amylase pack",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15316439",
+          "revid": 15316439,
+          "retrieved": "2026-11-19",
+          "quote": "Therefore, if using amylase packs to convert between currencies, one would have to exchange {{Currency|Termites|12.5}} or {{Currency|Brimhaven voucher|7.5}} to receive {{Currency|Mark of Grace|1}}.",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Amylase pack",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15316439",
+          "revid": 15316439,
+          "retrieved": "2026-11-19",
+          "quote": "Amylase packs can only be sold back to [[Grace's Graceful Clothing]] for 8 [[marks of grace]], even if it was bought from the [[Agility Arena Store]] or [[Worm Tongue's Wares]].",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-029",
+      "subject": "Run energy",
+      "attribute": "regeneration_formula",
+      "value": "floor(Agility/10) + 15 units per tick (10,000 units = 100%)",
+      "unit": null,
+      "statement": "Run energy regenerates floor(Agility/10)+15 units per game tick when not running (10,000 units = 100%); formula in force since 8 January 2025.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Energy",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15399707",
+          "revid": 15399707,
+          "retrieved": "2026-11-19",
+          "quote": ":<math>R(\\text{agility}) = \\left\\lfloor \\frac{\\text{agility}}{10} \\right\\rfloor + 15,</math>",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T1",
+          "title": "Update:Run Energy Changes",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=14833541",
+          "revid": 14833541,
+          "retrieved": "2026-11-19",
+          "quote": "The formula which you'll be experiencing today looks like this: (Agility level / 10) + 15.",
+          "fetched_by": "logistics-analyst",
+          "published": "2025-01-08"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-030",
+      "subject": "Run energy",
+      "attribute": "drain_formula",
+      "value": "floor(60 + 67*clamp(weight,0,64)/64) * (1 - Agility/300) units per tick",
+      "unit": null,
+      "statement": "Run energy drains floor(60 + 67*weight/64)*(1 - Agility/300) units per tick while running; weight is clamped to 0–64 kg, so negative weight counts as 0 kg.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Energy",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15399707",
+          "revid": 15399707,
+          "retrieved": "2026-11-19",
+          "quote": ":<math> UnitsLost = \\left\\lfloor 60 + \\frac{67 \\,\\times\\, \\text{clamp}_{[0,64]}(\\text{weight})}{64} \\right\\rfloor \\times (1 - \\frac{\\text{agility}}{300})</math>",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T1",
+          "title": "Update:Run Energy Changes",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=14833541",
+          "revid": 14833541,
+          "retrieved": "2026-11-19",
+          "quote": "* Drain Rate formula in today's game update: (60 + (67 * Weight / 64)) * (1 - Agility/300)",
+          "fetched_by": "logistics-analyst",
+          "published": "2025-01-08"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-031",
+      "subject": "Run energy",
+      "attribute": "no_regen_while_running_or_on_obstacles",
+      "value": true,
+      "unit": null,
+      "statement": "Run energy does not regenerate while running, crossing an Agility obstacle, or riding a magic carpet.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Energy",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15399707",
+          "revid": 15399707,
+          "retrieved": "2026-11-19",
+          "quote": "For example, run energy will not regenerate while the player is running, crossing an agility obstacle, or flying on a [[Magic carpet]].",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-032",
+      "subject": "Rooftop Agility Courses",
+      "attribute": "energy_restored_per_obstacle",
+      "value": "1–2%",
+      "unit": "% run energy per obstacle",
+      "statement": "Passing an obstacle on a rooftop course actively restores about 1–2% run energy (the Energy page says around 2%), so it is typically possible to run rooftop courses continuously.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Rooftop Agility Courses",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15337972",
+          "revid": 15337972,
+          "retrieved": "2026-11-19",
+          "quote": "Passing an obstacle on a rooftop course actively restores 1–2% run energy, meaning it is typically possible to run around rooftop courses continually.",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Energy",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15399707",
+          "revid": 15399707,
+          "retrieved": "2026-11-19",
+          "quote": "*Energy instantly restores by around 2% when completing a [[Rooftop Agility]] obstacle.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Sources differ slightly (1–2% vs ~2%)."
+    },
+    {
+      "claim_id": "C-LOG-033",
+      "subject": "Rooftop Agility Courses",
+      "attribute": "consumable_per_hour_stamina",
+      "value": 0,
+      "unit": "doses/hour",
+      "statement": "Rooftop courses need no stamina potions for normal training: obstacle energy restoration makes continuous running typically possible.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Rooftop Agility Courses",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15337972",
+          "revid": 15337972,
+          "retrieved": "2026-11-19",
+          "quote": "Passing an obstacle on a rooftop course actively restores 1–2% run energy, meaning it is typically possible to run around rooftop courses continually.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "'Typically' — heavy weight or many fails may still drain energy. Applies to Seers', Pollnivneach, Rellekka, Ardougne, Canifis and Falador."
+    },
+    {
+      "claim_id": "C-LOG-034",
+      "subject": "Run energy",
+      "attribute": "regen_time_0_to_100_at_57",
+      "value": {
+        "no_graceful_ticks": 500,
+        "no_graceful_seconds": 300,
+        "full_graceful_ticks": 385,
+        "full_graceful_seconds": 231
+      },
+      "unit": null,
+      "statement": "Computed: at Agility 57 regeneration is floor(57/10)+15 = 20 units/tick, so 0→100% takes 500 ticks (5 min 0 s); with full graceful floor(1.3*20) = 26 units/tick, so about 385 ticks (about 3 min 51 s).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Energy",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15399707",
+          "revid": 15399707,
+          "retrieved": "2026-11-19",
+          "quote": ":<math>R(\\text{agility}) = \\left\\lfloor \\frac{\\text{agility}}{10} \\right\\rfloor + 15,</math>",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Energy",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15399707",
+          "revid": 15399707,
+          "retrieved": "2026-11-19",
+          "quote": "With the full [[graceful]] set equipped, the energy regenerated per tick is modified to <math>\\lfloor 1.3 R(a) \\rfloor</math>.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Logistics-desk computation (1 tick = 0.6 s). At 60 Agility: 21/27 units per tick; at 99: 24/31."
+    },
+    {
+      "claim_id": "C-LOG-035",
+      "subject": "Run energy",
+      "attribute": "full_drain_time_at_57_zero_weight",
+      "value": {
+        "no_stamina_ticks_approx": 206,
+        "with_stamina_ticks_approx": 714
+      },
+      "unit": null,
+      "statement": "Computed: at Agility 57 and 0 kg, drain is 60*(1-57/300) = 48.6 units/tick, so 100% lasts about 206 ticks (about 2 min 4 s) of continuous running; with a stamina effect (floor of 0.3x = 14 units/tick) about 714 ticks (about 7 min 8 s).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Energy",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15399707",
+          "revid": 15399707,
+          "retrieved": "2026-11-19",
+          "quote": ":<math> UnitsLost = \\left\\lfloor 60 + \\frac{67 \\,\\times\\, \\text{clamp}_{[0,64]}(\\text{weight})}{64} \\right\\rfloor \\times (1 - \\frac{\\text{agility}}{300})</math>",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Energy",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15399707",
+          "revid": 15399707,
+          "retrieved": "2026-11-19",
+          "quote": "With the stamina potion effect, a player's run energy depletion rate is reduced to <math display=\"inline\">\\lfloor 0.3 * UnitsLost \\rfloor</math>.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "low",
+      "notes": "Approximate: the wiki flags that rounding of UnitsLost is unconfirmed. Ignores energy regained from obstacles."
+    },
+    {
+      "claim_id": "C-LOG-036",
+      "subject": "Stamina potion",
+      "attribute": "effect",
+      "value": "restores 20% run energy per dose; 70% less drain for 2 minutes",
+      "unit": null,
+      "statement": "A stamina potion restores 20% run energy per dose and reduces run energy depletion by 70% for 2 minutes; extra doses reset the timer rather than stacking.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Stamina potion",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397662",
+          "revid": 15397662,
+          "retrieved": "2026-11-19",
+          "quote": "A '''stamina potion''' restores 20% of the player's [[Energy|run energy]] per dose, and offers a 70% reduction in run energy depletion for 2 minutes.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-037",
+      "subject": "Stamina potion",
+      "attribute": "item_source",
+      "value": "Herblore 77 (super energy + amylase crystal) or Grand Exchange",
+      "unit": null,
+      "statement": "Stamina potions are tradeable on the GE and are made at 77 Herblore from a super energy and amylase crystals; the owner (Herblore 1) must buy them. Supply on the 15-day-old Hardcore Worlds GE may be thin.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Stamina potion",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397662",
+          "revid": 15397662,
+          "retrieved": "2026-11-19",
+          "quote": "A stamina potion can be made at level 77 [[Herblore]] by mixing a [[super energy]] potion with [[amylase crystal]]s.",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Stamina potion",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397662",
+          "revid": 15397662,
+          "retrieved": "2026-11-19",
+          "quote": "|tradeable = Yes",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Thin-supply flag is an inference from the 77 Herblore requirement and the 4 Nov 2026 launch."
+    },
+    {
+      "claim_id": "C-LOG-038",
+      "subject": "Stamina potion",
+      "attribute": "relevance_after_2025_energy_changes",
+      "value": "reduced but still used on some courses",
+      "unit": null,
+      "statement": "The January 2025 Run Energy Changes reduced drain at all levels, so stamina potions matter less, but they stay relevant on some Agility courses.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Stamina potion",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397662",
+          "revid": 15397662,
+          "retrieved": "2026-11-19",
+          "quote": "The relevance of stamina potions diminished with the 2025 [[Update:Run Energy Changes|Run Energy Changes]] update, as run energy drain was decreased across the board.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim_id": "C-LOG-039",
+      "subject": "Wilderness Agility Course",
+      "attribute": "energy_restore_dispenser",
+      "value": true,
+      "unit": null,
+      "statement": "Tagging the Wilderness Agility Course dispenser restores run energy, whether or not the fee is paid.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Wilderness Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15351989",
+          "revid": 15351989,
+          "retrieved": "2026-11-19",
+          "quote": "The agility dispenser restores [[run energy]] whenever it's tagged, regardless of whether or not players have completed a lap or paid the fee.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-040",
+      "subject": "Colossal Wyrm Agility Course",
+      "attribute": "energy_and_fails",
+      "value": "energy regenerated per obstacle; obstacles never fail",
+      "unit": null,
+      "statement": "On the Colossal Wyrm course run energy is regenerated per obstacle and obstacles can never be failed, so no food or stamina potions are needed.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Colossal Wyrm Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15388138",
+          "revid": 15388138,
+          "retrieved": "2026-11-19",
+          "quote": "Run energy is regenerated per obstacle and players never fail obstacles on either course.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Page carries an Obsolete banner after the 12 Aug 2026 update (durations/XP/termites changed); this sentence was not part of the listed changes."
+    },
+    {
+      "claim_id": "C-LOG-041",
+      "subject": "Hallowed Sepulchre",
+      "attribute": "quest_requirement",
+      "value": "Sins of the Father",
+      "unit": null,
+      "statement": "Entering the Hallowed Sepulchre requires Sins of the Father, which is not in the owner's 36 completed quests, so the Sepulchre is not currently available.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Hallowed Sepulchre",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544",
+          "revid": 15387544,
+          "retrieved": "2026-11-19",
+          "quote": "**Entering the Sepulchre requires completion of [[Sins of the Father]]",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-042",
+      "subject": "Hallowed Sepulchre",
+      "attribute": "energy_restore_obelisk",
+      "value": "full restore at end-of-floor obelisks only with a Saradomin item; non-Saradomin god items drain energy",
+      "unit": null,
+      "statement": "Magical obelisks at the end of each floor restore run energy only if a Saradomin item is equipped; wearing any non-Saradomin god item drains run energy instead.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Hallowed Sepulchre",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544",
+          "revid": 15387544,
+          "retrieved": "2026-11-19",
+          "quote": "* (Recommended) A [[Saradomin#Affiliated_items|Saradomin item]] is necessary to use the [[Magical Obelisk]]s at the end of each floor to restore run [[energy]]. Run energy will be '''drained''' if the player has ''any'' non-Saradomin God items equipped (such as an [[Armadyl crossbow]]).",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-043",
+      "subject": "Hallowed Sepulchre",
+      "attribute": "stamina_recommended",
+      "value": true,
+      "unit": null,
+      "statement": "Use stamina potions in the Sepulchre: obelisk restoration is slower, and with enough mistakes a player can run out of energy mid-floor.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Agility training",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875",
+          "revid": 15369875,
+          "retrieved": "2026-11-19",
+          "quote": "Use [[Stamina potion|stamina potions]] (or some other form of run energy restoration) to restore [[Energy|run energy]]. Using the [[Magical Obelisk|obelisks]] to restore run energy is slower than drinking stamina potions, and with enough mistakes it is possible to run out of run energy during the floor.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Doses per hour not quantified by any source read (gap)."
+    },
+    {
+      "claim_id": "C-LOG-044",
+      "subject": "Hallowed Sepulchre",
+      "attribute": "teleport_option",
+      "value": [
+        "Drakan's medallion (to Darkmeyer, then run)",
+        "Hallowed crystal shard (single use, to lobby)"
+      ],
+      "unit": null,
+      "statement": "Transport to the Sepulchre is Drakan's medallion (teleport to Darkmeyer and run) or a single-use hallowed crystal shard straight to the lobby.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Hallowed Sepulchre",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544",
+          "revid": 15387544,
+          "retrieved": "2026-11-19",
+          "quote": "* [[Drakan's medallion]] - Teleport to Darkmeyer then run to the entrance.",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Hallowed Sepulchre",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544",
+          "revid": 15387544,
+          "retrieved": "2026-11-19",
+          "quote": "* [[Hallowed crystal shard]] - Single use which teleports the player directly to the lobby.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-045",
+      "subject": "Hallowed Sepulchre",
+      "attribute": "food_until_hallowed_ring",
+      "value": true,
+      "unit": null,
+      "statement": "Sepulchre traps deal a small amount of damage unless the hallowed ring is worn; bring food until the ring is bought with hallowed marks.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Hallowed Sepulchre",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544",
+          "revid": 15387544,
+          "retrieved": "2026-11-19",
+          "quote": "All traps can be completely avoided if movement is properly timed. However, this requires significant practice and players should consider bringing [[food]] until purchasing the [[hallowed ring]].",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Hallowed Sepulchre",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544",
+          "revid": 15387544,
+          "retrieved": "2026-11-19",
+          "quote": "This deals a small amount of damage unless the [[hallowed ring]] is equipped.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-046",
+      "subject": "Hallowed Sepulchre",
+      "attribute": "recommended_hitpoints",
+      "value": 70,
+      "unit": "Hitpoints",
+      "statement": "The wiki recommends 70+ Hitpoints for the Sepulchre to withstand trap damage (owner has 48).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Hallowed Sepulchre",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544",
+          "revid": 15387544,
+          "retrieved": "2026-11-19",
+          "quote": "* (Recommended) {{SCP|Hitpoints|70+|link=yes}} to withstand damage from traps.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Flag for Threat Analyst."
+    },
+    {
+      "claim_id": "C-LOG-047",
+      "subject": "Hallowed Sepulchre",
+      "attribute": "death_item_retention",
+      "value": "items held by the Mysterious Stranger in the lobby",
+      "unit": null,
+      "statement": "If a player dies inside the Sepulchre, their items are held by the Mysterious Stranger in the lobby. The Sepulchre is not on either Hardcore Worlds safe or unsafe list, so the run-ending status of a death there is unconfirmed.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Hallowed Sepulchre",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544",
+          "revid": 15387544,
+          "retrieved": "2026-11-19",
+          "quote": "If the player dies inside the Hallowed Sepulchre, their items will be held by the [[Mysterious Stranger (Hallowed Sepulchre)|Mysterious Stranger]] in the lobby.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Flag for Threat Analyst: item retention is not the same as a safe death."
+    },
+    {
+      "claim_id": "C-LOG-048",
+      "subject": "Hallowed Sepulchre",
+      "attribute": "floor_entry_boostable",
+      "value": true,
+      "unit": null,
+      "statement": "Since 12 August 2026 Sepulchre floor entry requirements can be boosted (e.g. a summer pie bite at 72 to enter Floor 4, now 77), and the Floor 4/5 requirements were lowered to 77/87.",
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Summer Sweep Up - Agility & Chambers of Xeric Changes",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15303824",
+          "revid": 15303824,
+          "retrieved": "2026-11-19",
+          "quote": "* You can now boost for Floor entry. For example, a player at 72 Agility can eat a bite of a Summer pie at the end of Floor 3 to gain entry to Floor 4.",
+          "fetched_by": "logistics-analyst",
+          "published": "2026-08-12"
+        },
+        {
+          "tier": "T2",
+          "title": "Hallowed Sepulchre",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544",
+          "revid": 15387544,
+          "retrieved": "2026-11-19",
+          "quote": "**Floor 4: {{SCP|Agility|77 Agility}}",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high",
+      "released": "2026-08-12"
+    },
+    {
+      "claim_id": "C-LOG-049",
+      "subject": "Ring of endurance",
+      "attribute": "stamina_charges",
+      "value": "up to 1000 stamina doses; doubles stamina duration; 15% less drain at 500+ charges",
+      "unit": null,
+      "statement": "The ring of endurance (Sepulchre reward) holds up to 1000 stamina doses as charges; each dose drunk uses a charge and lasts twice as long, and with 500+ charges it cuts drain by 15% when no stamina is active.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Hallowed Sepulchre",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544",
+          "revid": 15387544,
+          "retrieved": "2026-11-19",
+          "quote": "The ring can be charged with up to 1000 doses of stamina potion (1 dose = 1 charge). A charge is consumed when you drink a stamina potion, making the effects of the potion last twice as long.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Only obtainable after Sins of the Father (Sepulchre access)."
+    },
+    {
+      "claim_id": "C-LOG-050",
+      "subject": "Summer pie",
+      "attribute": "effect",
+      "value": "+5 Agility per bite; heals 11 per bite (22 total); restores 10% run energy",
+      "unit": null,
+      "statement": "A summer pie has 2 bites; each heals 11 Hitpoints and gives a +5 temporary Agility boost, and the pie restores 10% run energy.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Summer pie",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369837",
+          "revid": 15369837,
+          "retrieved": "2026-11-19",
+          "quote": "'''Summer pie''' is a type of [[pie]] that restores 22 [[Hitpoints]] in total, 2 bites each healing for 11. It also restores 10% [[run energy]], and grants a +5 [[temporary skill boost]] to [[Agility]] per bite.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-051",
+      "subject": "Summer pie",
+      "attribute": "item_source",
+      "value": "Cooking 95 or Grand Exchange (whole pie tradeable; half pie not on GE)",
+      "unit": null,
+      "statement": "Summer pies are tradeable on the GE (half-eaten pies are not), but cooking them needs 95 Cooking (owner has 23), so on Hardcore Worlds they must be bought and supply may be thin.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Summer pie",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369837",
+          "revid": 15369837,
+          "retrieved": "2026-11-19",
+          "quote": "It can be created by baking a [[raw summer pie]] on a [[cooking range]], requiring level 95 [[Cooking]] and granting 260 [[experience]] when successful.",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Summer pie",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369837",
+          "revid": 15369837,
+          "retrieved": "2026-11-19",
+          "quote": "|exchange1 = Yes",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Thin-supply flag is an inference from the 95 Cooking requirement and the young HW economy."
+    },
+    {
+      "claim_id": "C-LOG-052",
+      "subject": "Rooftop Agility Courses",
+      "attribute": "requirement_boostable",
+      "value": true,
+      "unit": null,
+      "statement": "Rooftop course Agility requirements are boostable, e.g. Seers' (60) is usable from 55 with a summer pie, Pollnivneach (70) from 65, Rellekka (80) from 75, Ardougne (90) from 85.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Rooftop Agility Courses",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15337972",
+          "revid": 15337972,
+          "retrieved": "2026-11-19",
+          "quote": "The agility requirement is boostable.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "The level examples are logistics-desk arithmetic from the +5 summer pie boost."
+    },
+    {
+      "claim_id": "C-LOG-053",
+      "subject": "Temporary skill boost",
+      "attribute": "decay_rate",
+      "value": "1 level per minute (90 s with Preserve)",
+      "unit": null,
+      "statement": "Temporary boosts decay by 1 level per minute (on a background cycle, so the first level may go sooner); the Preserve prayer extends this to 90 seconds.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Temporary skill boost",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374904",
+          "revid": 15374904,
+          "retrieved": "2026-11-19",
+          "quote": "Beyond this, skills that are temporarily boosted will decay at a rate of 1 level per minute, unless the [[Preserve]] prayer is active.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-054",
+      "subject": "Temporary skill boost",
+      "attribute": "visible_boosts_do_not_stack",
+      "value": true,
+      "unit": null,
+      "statement": "Visible boosts do not stack: eating another summer pie bite resets the boost to +5 above base, not +10.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Temporary skill boost",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374904",
+          "revid": 15374904,
+          "retrieved": "2026-11-19",
+          "quote": "Visible boosts do not stack.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Application to summer pie bites is the desk's reading of the general rule."
+    },
+    {
+      "claim_id": "C-LOG-055",
+      "subject": "Preserve",
+      "attribute": "level_requirement",
+      "value": 55,
+      "unit": "Prayer level",
+      "statement": "Preserve needs 55 Prayer (plus a torn prayer scroll) and makes boosts last 50% longer; the owner has 44 Prayer and cannot use it.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Preserve",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15389935",
+          "revid": 15389935,
+          "retrieved": "2026-11-19",
+          "quote": "'''Preserve''' is a forgotten [[prayer]] that requires a Prayer level of 55 to activate.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-056",
+      "subject": "Ardougne Rooftop Course",
+      "attribute": "summer_pies_per_level_85_to_90_with_preserve",
+      "value": {
+        "85-86": 119,
+        "86-87": 66,
+        "87-88": 49,
+        "88-89": 40,
+        "89-90": 36
+      },
+      "unit": "summer pies",
+      "statement": "With Preserve, perfect clicking and no fails, boosting onto Ardougne takes 119 summer pies for 85→86, 66 for 86→87, 49 for 87→88, 40 for 88→89 and 36 for 89→90 (310 pies for 85→90).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Ardougne Rooftop Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15352456",
+          "revid": 15352456,
+          "retrieved": "2026-11-19",
+          "quote": "|+Summer pies used with Preserve prayer enabled, optimal mouse-clicking, and zero obstacle failures",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Table rows at rev 15352456 lines ~83-106. The owner cannot use Preserve (Prayer 44), so real pie use would be higher (boost lasts 60 s per level instead of 90 s). The 310 total is a desk sum."
+    },
+    {
+      "claim_id": "C-LOG-057",
+      "subject": "Ardougne Rooftop Course",
+      "attribute": "boost_needed_only_on_obstacles",
+      "value": [
+        1,
+        2,
+        4
+      ],
+      "unit": null,
+      "statement": "On Ardougne, the 90 boost is needed only for obstacles 1, 2 and 4; the others cannot be failed below 90.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Ardougne Rooftop Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15352456",
+          "revid": 15352456,
+          "retrieved": "2026-11-19",
+          "quote": "The player's Agility level needs to be boosted to at least 90 only when attempting the first, second and fourth obstacles, because the other obstacles are impossible to fail even at levels below 90.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-058",
+      "subject": "Summer pie",
+      "attribute": "consumable_per_hour_boosting_without_preserve",
+      "value": "about 60/(2*(6-d)) pies/hour when d (1–5) levels short",
+      "unit": "pies/hour",
+      "statement": "Computed estimate: with no Preserve, a +5 bite keeps a player d levels short above the requirement for about (6-d) minutes, so about 60/(6-d) bites, or 30/(6-d) pies, per hour: about 6 pies/h at 1 level short and 30 pies/h at 5 levels short.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Temporary skill boost",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374904",
+          "revid": 15374904,
+          "retrieved": "2026-11-19",
+          "quote": "Beyond this, skills that are temporarily boosted will decay at a rate of 1 level per minute, unless the [[Preserve]] prayer is active.",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Summer pie",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369837",
+          "revid": 15369837,
+          "retrieved": "2026-11-19",
+          "quote": "'''Summer pie''' is a type of [[pie]] that restores 22 [[Hitpoints]] in total, 2 bites each healing for 11. It also restores 10% [[run energy]], and grants a +5 [[temporary skill boost]] to [[Agility]] per bite.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "low",
+      "notes": "Desk computation; upper-bound style estimate assuming constant re-boosting. Fewer pies are needed where only some obstacles need the boost (e.g. Ardougne). The first decay can come early (background cycle)."
+    },
+    {
+      "claim_id": "C-LOG-059",
+      "subject": "Agility potion",
+      "attribute": "effect_and_source",
+      "value": "+3 Agility; Herblore 34; tradeable",
+      "unit": null,
+      "statement": "Agility potions boost Agility by 3, are made at 34 Herblore (owner has 1), and are GE-tradeable; a cheaper but smaller boost than summer pies.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Agility potion",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15250405",
+          "revid": 15250405,
+          "retrieved": "2026-11-19",
+          "quote": "This requires level 34 [[Herblore]], and grants 80 Herblore experience. Agility potions temporarily raise your [[Agility]] by 3.",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Agility potion",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15250405",
+          "revid": 15250405,
+          "retrieved": "2026-11-19",
+          "quote": "|exchange = Yes",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-060",
+      "subject": "Lobster",
+      "attribute": "heal",
+      "value": 12,
+      "unit": "Hitpoints",
+      "statement": "Lobster heals 12 Hitpoints.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Lobster",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15183358",
+          "revid": 15183358,
+          "retrieved": "2026-11-19",
+          "quote": "'''Lobster''' is a type of [[fish]] that restores 12 [[Hitpoints]] when eaten.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-061",
+      "subject": "Swordfish",
+      "attribute": "heal",
+      "value": 14,
+      "unit": "Hitpoints",
+      "statement": "Swordfish heals 14 Hitpoints.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Swordfish",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15183520",
+          "revid": 15183520,
+          "retrieved": "2026-11-19",
+          "quote": "'''Swordfish''' is a type of [[fish]] that restores 14 [[Hitpoints]] when eaten.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-062",
+      "subject": "Monkfish",
+      "attribute": "heal",
+      "value": 16,
+      "unit": "Hitpoints",
+      "statement": "Monkfish heals 16 Hitpoints.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Monkfish",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15183439",
+          "revid": 15183439,
+          "retrieved": "2026-11-19",
+          "quote": "'''Monkfish''' is a type of [[fish]] that restores 16 [[Hitpoints]] when eaten.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-063",
+      "subject": "Tuna",
+      "attribute": "heal",
+      "value": 10,
+      "unit": "Hitpoints",
+      "statement": "Tuna heals 10 Hitpoints.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Tuna",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15358604",
+          "revid": 15358604,
+          "retrieved": "2026-11-19",
+          "quote": "'''Tuna''' is a type of [[fish]] that restores 10 [[Hitpoints]] when eaten.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-064",
+      "subject": "Jug of wine",
+      "attribute": "heal",
+      "value": 11,
+      "unit": "Hitpoints",
+      "statement": "A jug of wine heals 11 Hitpoints but lowers Attack by 2 for a while; the Wilderness course page suggests wine as cheap food.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Jug of wine",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15395989",
+          "revid": 15395989,
+          "retrieved": "2026-11-19",
+          "quote": "'''A jug of wine''' is a type of [[Drinks|drink]] that restores 11 [[Hitpoints]] and temporarily lowers [[Attack]] by 2, leaving behind an empty [[jug]] after consumption.",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Wilderness Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15351989",
+          "revid": 15351989,
+          "retrieved": "2026-11-19",
+          "quote": "For this reason, a source of cheap food (such as [[wines]]) can be useful to help restore lost [[health]].",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "The -2 Attack is harmless for Agility but matters if the player must fight."
+    },
+    {
+      "claim_id": "C-LOG-065",
+      "subject": "Cake",
+      "attribute": "heal",
+      "value": 12,
+      "unit": "Hitpoints",
+      "statement": "Cake heals 12 Hitpoints in 3 bites of 4, so it is good for topping up small fail damage.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Cake",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15360719",
+          "revid": 15360719,
+          "retrieved": "2026-11-19",
+          "quote": "'''Cake''' is a type of [[food]] that restores 12 [[Hitpoints]] in total, 3 bites each healing for 4.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-066",
+      "subject": "Ardougne Market",
+      "attribute": "food_on_site",
+      "value": "bakery stalls sell bread, cakes and chocolate cake slices",
+      "unit": null,
+      "statement": "The two bakery stalls in Ardougne Market (where the Ardougne course starts) sell bread, cakes and chocolate cake slices, so food can be bought on site for coins.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Ardougne Market",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15342851",
+          "revid": 15342851,
+          "retrieved": "2026-11-19",
+          "quote": "They both sell the same items but are owned by different owners. They sell [[bread]], [[cake]]s, 1/3 [[chocolate cake]]s, and [[chocolate bar]]s.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Do not steal from the stalls: guards and knights attack thieves (same page)."
+    },
+    {
+      "claim_id": "C-LOG-067",
+      "subject": "Rooftop Agility Courses",
+      "attribute": "regen_gear_suggestion",
+      "value": "regen bracelet and/or Hitpoints cape near the course minimum",
+      "unit": null,
+      "statement": "Near a rooftop course's minimum level, a regen bracelet or Hitpoints cape can beat food for healing fail damage because they weigh less and need no inventory.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Rooftop Agility Courses",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15337972",
+          "revid": 15337972,
+          "retrieved": "2026-11-19",
+          "quote": "A tip while doing rooftop Agility is to wear a [[regen bracelet]] and/or hitpoints cape if you are at, or near, the minimum level required to access the rooftop course, as they increase the rate at which [[Hitpoints]] regenerate after failing obstacles.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "The Hitpoints cape needs 99 Hitpoints (owner 48). The regen bracelet's main-game proxy price is very high (see price claims)."
+    },
+    {
+      "claim_id": "C-LOG-068",
+      "subject": "Seers' Village Rooftop Course",
+      "attribute": "fail_until_level",
+      "value": 79,
+      "unit": "Agility level",
+      "statement": "Seers' has two failable obstacles (Jump Gap 1 and Tightrope), which stop failing at 79 Agility; bring food until then.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Seers' Village Rooftop Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15356820",
+          "revid": 15356820,
+          "retrieved": "2026-11-19",
+          "quote": "There are two locations where the player may fail; Jump Gap 1 and Tightrope Walk. These obstacles will stop failing at 79 Agility.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Fail damage for Seers' is not stated on the course or obstacle pages read (gap)."
+    },
+    {
+      "claim_id": "C-LOG-069",
+      "subject": "Pollnivneach Rooftop Course",
+      "attribute": "fail_until_level",
+      "value": 85,
+      "unit": "Agility level",
+      "statement": "The Pollnivneach course cannot be failed from 85 Agility.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Pollnivneach Rooftop Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375189",
+          "revid": 15375189,
+          "retrieved": "2026-11-19",
+          "quote": "At level 85 Agility, it becomes impossible to fail any part of the course.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-070",
+      "subject": "Rellekka Rooftop Course",
+      "attribute": "fail_until_level",
+      "value": 85,
+      "unit": "Agility level",
+      "statement": "On the Rellekka course players stop failing the first tightrope at 85 Agility.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Rellekka Rooftop Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15319532",
+          "revid": 15319532,
+          "retrieved": "2026-11-19",
+          "quote": "At level 85 Agility, players stop failing at the first tightrope.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "The quote covers the first tightrope only; other failable points were not checked."
+    },
+    {
+      "claim_id": "C-LOG-071",
+      "subject": "Ardougne Rooftop Course",
+      "attribute": "fail_until_level",
+      "value": 95,
+      "unit": "Agility level",
+      "statement": "Players stop failing the Ardougne course at 95 Agility.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Ardougne Rooftop Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15352456",
+          "revid": 15352456,
+          "retrieved": "2026-11-19",
+          "quote": "Players stop failing this course at 95 [[Agility]].",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-072",
+      "subject": "Falador Rooftop Course",
+      "attribute": "fail_damage",
+      "value": "3–8 (Hand Holds); no fails from 66",
+      "unit": null,
+      "statement": "On the Falador course the Hand Holds can be failed for 3–8 damage until 66 Agility.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Falador Rooftop Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15319531",
+          "revid": 15319531,
+          "retrieved": "2026-11-19",
+          "quote": "It's possible to fail during the \"Hand Holds\" section, dealing 3–8 damage.",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Falador Rooftop Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15319531",
+          "revid": 15319531,
+          "retrieved": "2026-11-19",
+          "quote": "At 66 [[Agility]] you will stop failing the course.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-073",
+      "subject": "Canifis Rooftop Course",
+      "attribute": "fail_until_level",
+      "value": 64,
+      "unit": "Agility level",
+      "statement": "Canifis has one failable gap, which stops failing at 64 Agility.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Canifis Rooftop Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374436",
+          "revid": 15374436,
+          "retrieved": "2026-11-19",
+          "quote": "The chance to succeed starts at 88.28% at level 40 Agility, scaling linearly until the player stops failing the obstacle at level 64 Agility.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-074",
+      "subject": "Wilderness Agility Course",
+      "attribute": "fail_damage",
+      "value": "floor(current HP x 0.15)+1 (falls) or floor(current HP x 0.2)+1 (stepping stones)",
+      "unit": null,
+      "statement": "Wilderness course fails deal floor(current HP x 0.15)+1 (falls into the dungeon) or floor(current HP x 0.2)+1 (third stepping stone), and level 18/25 skeletons attack nearby players.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Wilderness Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15351989",
+          "revid": 15351989,
+          "retrieved": "2026-11-19",
+          "quote": "|Can be failed, which will send the player down to the [[Wilderness Agility Course Dungeon|dungeon]] below and deal <math>\\left\\lfloor\\text{Current hitpoints}\\times0.15\\right\\rfloor+1</math> damage.",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Wilderness Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15351989",
+          "revid": 15351989,
+          "retrieved": "2026-11-19",
+          "quote": "In addition to the risk of [[player-killers]], there are multiple level 18 and 25 [[skeleton]]s roaming the course and underground respectively that will attack any player near them.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Flag for Threat Analyst: deep Wilderness, PvP."
+    },
+    {
+      "claim_id": "C-LOG-075",
+      "subject": "Seers' Village Rooftop Course",
+      "attribute": "bank_distance",
+      "value": "start is beside Seers' Village bank",
+      "unit": null,
+      "statement": "The Seers' course starts by climbing the wall near the entrance of Seers' Village bank, so the bank is at the start.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Seers' Village Rooftop Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15356820",
+          "revid": 15356820,
+          "retrieved": "2026-11-19",
+          "quote": "The Seers' Village Rooftop Agility Course can be started by climbing up the wall near the entrance of [[Seers' Village bank]] and is finished by jumping off the roof of the [[Seers' Village church|church]], by the [[Yew tree|Yew trees]].",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-076",
+      "subject": "Camelot Teleport",
+      "attribute": "teleport_option",
+      "value": "Magic 45 (owner 44); lands at Camelot gate; Seers' bank option needs Kandarin Hard diary",
+      "unit": null,
+      "statement": "The Camelot Teleport spell needs 45 Magic (owner has 44) and lands at Camelot's front gate; moving it to Seers' bank needs the hard Kandarin diary (owner has none).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Camelot Teleport",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15356635",
+          "revid": 15356635,
+          "retrieved": "2026-11-19",
+          "quote": "|level = 45",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Camelot Teleport",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15356635",
+          "revid": 15356635,
+          "retrieved": "2026-11-19",
+          "quote": "After completing the [[Hard Kandarin Diary|Kandarin Hard tasks]], you may switch the location of the teleport to [[Seers' Village bank]] by right-clicking the spell and choosing Toggle-location.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-077",
+      "subject": "Camelot teleport (tablet)",
+      "attribute": "item_source",
+      "value": "GE-tradeable; usable without the Magic level",
+      "unit": null,
+      "statement": "Camelot teleport tablets are GE-tradeable and can be used without the Magic level, so the owner can reach Seers' with tablets now.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Camelot teleport (tablet)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15185080",
+          "revid": 15185080,
+          "retrieved": "2026-11-19",
+          "quote": "As with all tablets, the user does not need to have the relevant Magic level to use this tablet.",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Camelot teleport (tablet)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15185080",
+          "revid": 15185080,
+          "retrieved": "2026-11-19",
+          "quote": "|exchange = Yes",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-078",
+      "subject": "Pollnivneach",
+      "attribute": "teleport_option",
+      "value": "only house teleport or a redirected house tablet teleports directly",
+      "unit": null,
+      "statement": "The only direct teleports to Pollnivneach are a house teleport (house there) or the Pollnivneach redirected tablet; otherwise the magic carpet is used.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Pollnivneach teleport",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15309321",
+          "revid": 15309321,
+          "retrieved": "2026-11-19",
+          "quote": "This tablet is the only method (outside of a normal [[House Teleport]] with a [[POH|house]] in Pollnivneach) of teleporting directly to Pollnivneach.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-079",
+      "subject": "Pollnivneach teleport",
+      "attribute": "item_source",
+      "value": "untradeable; made from a teleport-to-house tablet plus a scroll of redirection at 20 Construction",
+      "unit": null,
+      "statement": "The Pollnivneach teleport tablet is untradeable and made by using a scroll of redirection on a teleport-to-house tablet at 20 Construction (owner has 23).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Pollnivneach teleport",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15309321",
+          "revid": 15309321,
+          "retrieved": "2026-11-19",
+          "quote": "|tradeable = No",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Pollnivneach teleport",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15309321",
+          "revid": 15309321,
+          "retrieved": "2026-11-19",
+          "quote": "It can be created at level 20 [[Construction]] by using a [[scroll of redirection]] on a [[teleport to house]] tablet.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-080",
+      "subject": "Scroll of Redirection",
+      "attribute": "item_source",
+      "value": "Nightmare Zone reward shop only, 775 points; untradeable",
+      "unit": null,
+      "statement": "Scrolls of redirection come only from the Nightmare Zone reward shop (775 points each) and are untradeable; NMZ is an unsafe death on Hardcore Worlds, so redirected Pollnivneach/Rellekka tablets are not a safe option.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Scroll of Redirection",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15384264",
+          "revid": 15384264,
+          "retrieved": "2026-11-19",
+          "quote": "'''Scrolls of redirection''' are a reward from the [[Nightmare Zone]], costing 775 reward points per scroll.",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Scroll of Redirection",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15384264",
+          "revid": 15384264,
+          "retrieved": "2026-11-19",
+          "quote": "|tradeable = No",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "The NMZ hazard rating is for the Threat Analyst; logistics flags it."
+    },
+    {
+      "claim_id": "C-LOG-081",
+      "subject": "Magic carpet",
+      "attribute": "teleport_option",
+      "value": "Shantay Pass to Pollnivneach, 200 coins",
+      "unit": "coins",
+      "statement": "Magic carpets from Shantay Pass to Pollnivneach cost 200 coins per trip (100 with Ring of Charos (a) or after starting Rogue Trader).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Magic carpet",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15371334",
+          "revid": 15371334,
+          "retrieved": "2026-11-19",
+          "quote": "The carpets require 200 [[coins]] to use, but this falls to 100 coins when using the [[Ring of Charos(a)]] or after having started the [[Rogue Trader]] miniquest.",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Pollnivneach",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402250",
+          "revid": 15402250,
+          "retrieved": "2026-11-19",
+          "quote": "*[[Shantay Pass]] to Pollnivneach or back",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-082",
+      "subject": "Shantay Pass",
+      "attribute": "bank_distance",
+      "value": "bank chest at Shantay Pass (members); pass costs 5 coins",
+      "unit": null,
+      "statement": "Shantay Pass has a members' bank chest, so with the carpet it is the practical bank for the Pollnivneach course; entering the desert needs a 5-coin Shantay pass.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Shantay Pass",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15360728",
+          "revid": 15360728,
+          "retrieved": "2026-11-19",
+          "quote": "The Shantay Pass has a [[bank chest]] which players can access before entering the desert. The bank is only available to members, but the [[Bank Deposit Box|deposit box]] is available in [[free-to-play]].",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Shantay Pass",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15360728",
+          "revid": 15360728,
+          "retrieved": "2026-11-19",
+          "quote": "Players will need to have 5 coins to buy a [[shantay pass (item)|pass]] from [[Shantay]], or have completed the elite [[Desert Diary]], if they wish to enter the desert.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Pollnivneach's town page lists no bank, only a Banknote Exchange Merchant; 'nearest bank' is the desk's reading."
+    },
+    {
+      "claim_id": "C-LOG-083",
+      "subject": "Pollnivneach Rooftop Course",
+      "attribute": "desert_heat",
+      "value": false,
+      "unit": null,
+      "statement": "Pollnivneach is not affected by desert heat, so no waterskins are needed for the course.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Pollnivneach Rooftop Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375189",
+          "revid": 15375189,
+          "retrieved": "2026-11-19",
+          "quote": "Pollnivneach is not affected by [[desert heat]], so no waterskins are required.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-084",
+      "subject": "Pollnivneach",
+      "attribute": "aggressive_npcs_nearby",
+      "value": "crocodiles (63, aggressive) south of town; jackals aggressive to combat 42 or lower",
+      "unit": null,
+      "statement": "In Pollnivneach the bandits and Menaphite thugs are not aggressive, but aggressive level 63 crocodiles live south of town, and jackals south-west are aggressive to combat level 42 or lower.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Pollnivneach",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402250",
+          "revid": 15402250,
+          "retrieved": "2026-11-19",
+          "quote": "*[[Crocodile]]s - Crocodiles populate the area south of town and may be dangerous to lower levelled players as their combat level is 63. They are aggressive.",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Pollnivneach",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402250",
+          "revid": 15402250,
+          "retrieved": "2026-11-19",
+          "quote": "These are aggressive to players with a combat level of 42 or less and can wander into areas affected by [[Desert heat]].",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Flag for Threat Analyst; the course itself is in town."
+    },
+    {
+      "claim_id": "C-LOG-085",
+      "subject": "Rellekka teleport",
+      "attribute": "item_source",
+      "value": "untradeable redirected tablet; needs 30 Construction",
+      "unit": null,
+      "statement": "The Rellekka teleport tablet is untradeable and needs 30 Construction (owner has 23) plus a Nightmare Zone scroll of redirection, so it is not available to the owner.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Rellekka teleport",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15309323",
+          "revid": 15309323,
+          "retrieved": "2026-11-19",
+          "quote": "It can be created at level 30 [[Construction]] by using a [[scroll of redirection]] on a [[teleport to house]] tablet.",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Rellekka teleport",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15309323",
+          "revid": 15309323,
+          "retrieved": "2026-11-19",
+          "quote": "|tradeable = No",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-086",
+      "subject": "Rellekka",
+      "attribute": "teleport_option",
+      "value": "enchanted lyre needs The Fremennik Trials; Camelot Teleport is a very long run",
+      "unit": null,
+      "statement": "The enchanted lyre (closest teleport) needs The Fremennik Trials (not completed); Camelot Teleport works but leaves a very long run north.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Rellekka teleport",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15309323",
+          "revid": 15309323,
+          "retrieved": "2026-11-19",
+          "quote": "It is extremely close to the [[enchanted lyre]] teleport location (requires completion of The Fremennik Trials).",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Rellekka",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387537",
+          "revid": 15387537,
+          "retrieved": "2026-11-19",
+          "quote": "* {{Plink|Camelot Teleport}} — Camelot, a very long run south of the village.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Fremennik sea boots need the Fremennik diary and fairy rings need Fairytale II; neither is in the brief."
+    },
+    {
+      "claim_id": "C-LOG-087",
+      "subject": "Rellekka",
+      "attribute": "bank_distance",
+      "value": "no bank in Rellekka; Peer the Seer deposit box after Easy Fremennik diary",
+      "unit": null,
+      "statement": "Rellekka lacks a nearby bank; Peer the Seer acts as a deposit box only after the Easy Fremennik diary.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Rellekka",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387537",
+          "revid": 15387537,
+          "retrieved": "2026-11-19",
+          "quote": "* {{Chatl|Peer the Seer}}, a seer who can see the future and can also help you make [[Skeletal armour]]. After completion of the [[Fremennik Diary#Easy|Easy Fremennik Diary]] he acts as a bank deposit box.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "low",
+      "notes": "The page says the Rellekka mining area has no nearby bank (line 124); no bank is listed for the town. The nearest full bank was not established (gap)."
+    },
+    {
+      "claim_id": "C-LOG-088",
+      "subject": "Ardougne teleport (tablet)",
+      "attribute": "item_source",
+      "value": "GE-tradeable; needs Plague City (completed)",
+      "unit": null,
+      "statement": "Ardougne teleport tablets are GE-tradeable and need Plague City (which the owner has); the spell itself needs 51 Magic (owner has 44), so tablets are the owner's route.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Ardougne teleport (tablet)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15183982",
+          "revid": 15183982,
+          "retrieved": "2026-11-19",
+          "quote": "Using the tablet requires completion of [[Plague City]], however, players '''do not''' have to read the [[Ardougne teleport scroll]] to use the tablet.",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Ardougne Teleport",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=14918399",
+          "revid": 14918399,
+          "retrieved": "2026-11-19",
+          "quote": "|level = 51",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-089",
+      "subject": "Ardougne Rooftop Course",
+      "attribute": "teleport_option",
+      "value": "Ardougne Teleport lands in the market centre; course starts in the market's south-east corner",
+      "unit": null,
+      "statement": "Ardougne Teleport lands in the centre of Ardougne Market, and the course starts at the wooden beams by the gem stall in the market's south-east corner.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "East Ardougne",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15364745",
+          "revid": 15364745,
+          "retrieved": "2026-11-19",
+          "quote": "The [[Ardougne Teleport]] spell teleports the caster into the centre of the Ardougne Marketplace.",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Ardougne Rooftop Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15352456",
+          "revid": 15352456,
+          "retrieved": "2026-11-19",
+          "quote": "It can be started by climbing the Wooden Beams outside of the house next to the [[Ardougne Gem Stall.|gem stall]] in the south-east corner of the marketplace.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-090",
+      "subject": "East Ardougne",
+      "attribute": "bank_distance",
+      "value": "banks near the north entrance and near the docks (south bank)",
+      "unit": null,
+      "statement": "East Ardougne has banks near the north entrance and near the docks (the southern bank).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "East Ardougne",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15364745",
+          "revid": 15364745,
+          "retrieved": "2026-11-19",
+          "quote": "Near the main north entrance of Ardougne and near the docks of Ardougne is a [[bank]].",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Exact distance from the course start was not measured."
+    },
+    {
+      "claim_id": "C-LOG-091",
+      "subject": "East Ardougne",
+      "attribute": "wilderness_lever_hazard",
+      "value": true,
+      "unit": null,
+      "statement": "A lever near the West Ardougne gate teleports the player to the Deserted Keep in deep Wilderness; avoid it.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "East Ardougne",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15364745",
+          "revid": 15364745,
+          "retrieved": "2026-11-19",
+          "quote": "*A [[Ardougne teleport lever|Teleport Lever]] - near the gates to [[West Ardougne]], there is a small house. It teleports the player to the [[Deserted Keep]] in deep [[Wilderness]] (or vice versa).",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Flag for Threat Analyst."
+    },
+    {
+      "claim_id": "C-LOG-092",
+      "subject": "Canifis Rooftop Course",
+      "attribute": "bank_distance",
+      "value": "starts just north of Canifis bank",
+      "unit": null,
+      "statement": "The Canifis course (needs Priest in Peril, completed) starts at the Tall Tree just north of the bank and ends on the bank's north side.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Canifis Rooftop Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374436",
+          "revid": 15374436,
+          "retrieved": "2026-11-19",
+          "quote": "The Canifis Rooftop Agility Course can be started by climbing the Tall Tree just north of the [[bank]] and is finished by jumping off the north side of the bank.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-093",
+      "subject": "Ectophial",
+      "attribute": "teleport_option",
+      "value": "free reusable teleport to the Ectofuntus (far east of Canifis); reward of Ghosts Ahoy",
+      "unit": null,
+      "statement": "The ectophial (Ghosts Ahoy reward, completed) is a free, reusable, untradeable teleport to the Ectofuntus outside Port Phasmatys, which is far east of Canifis.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Ectophial",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15195604",
+          "revid": 15195604,
+          "retrieved": "2026-11-19",
+          "quote": "The '''ectophial''' is a reward for completing the [[Ghosts Ahoy]] quest. Players can empty it, causing them to be teleported to the [[Ectofuntus]] outside [[Port Phasmatys]].",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Canifis",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397565",
+          "revid": 15397565,
+          "retrieved": "2026-11-19",
+          "quote": "* {{Plink|Ectophial}} — [[Ectofuntus]], far east of the town.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-094",
+      "subject": "Colossal Wyrm Agility Course",
+      "attribute": "requirements",
+      "value": {
+        "quest": "Children of the Sun",
+        "basic": 50,
+        "advanced": 62
+      },
+      "unit": null,
+      "statement": "The Colossal Wyrm course needs Children of the Sun (completed) and 50 Agility (basic) or 62 (advanced).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Colossal Wyrm Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15388138",
+          "revid": 15388138,
+          "retrieved": "2026-11-19",
+          "quote": "There are two courses available to players beginning at 50 Agility for the basic course, and 62 Agility for the advanced course.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-095",
+      "subject": "Colossal wyrm teleport scroll",
+      "attribute": "item_source",
+      "value": "GE-tradeable or 40 termites; usable after visiting Varlamore post-Children of the Sun",
+      "unit": null,
+      "statement": "Colossal wyrm teleport scrolls (fastest way to the course) are GE-tradeable or cost 40 termites from Worm Tongue, and work once the player has visited Varlamore after Children of the Sun.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Colossal wyrm teleport scroll",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403882",
+          "revid": 15403882,
+          "retrieved": "2026-11-19",
+          "quote": "They can be purchased from [[Worm Tongue's Wares]] for 40 [[termites]] obtained from the [[Colossal Wyrm Agility Course]].",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Colossal wyrm teleport scroll",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403882",
+          "revid": 15403882,
+          "retrieved": "2026-11-19",
+          "quote": "The scroll is only usable once the player has visited [[Varlamore]] for the first time after completing the [[Children of the Sun]] quest.",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Colossal Wyrm Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15388138",
+          "revid": 15388138,
+          "retrieved": "2026-11-19",
+          "quote": "* Use a [[Colossal wyrm teleport scroll]], bought from [[Worm Tongue]] or the [[Grand Exchange]]. This is the quickest method to get there.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-096",
+      "subject": "Landing Site",
+      "attribute": "requirement",
+      "value": "Twilight's Promise",
+      "unit": null,
+      "statement": "Quetzal landing sites, including the one near the Colossal Wyrm Remains, are only usable after Twilight's Promise (not completed) and must be built from 10 quetzal feed, 3 limestone bricks and 4 soft clay.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Landing Site",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15276733",
+          "revid": 15276733,
+          "retrieved": "2026-11-19",
+          "quote": "Initially unusable, players are gifted their own quetzal, [[Renu]], to access these landing sites during [[Twilight's Promise]].",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Landing Site",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15276733",
+          "revid": 15276733,
+          "retrieved": "2026-11-19",
+          "quote": "Building each landing site requires 10 [[quetzal feed]], 3 [[limestone brick]]s and 4 pieces of [[soft clay]] and can be done without any tools.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-097",
+      "subject": "Colossal Wyrm Agility Course",
+      "attribute": "course_change_2026_08_12",
+      "value": "basic ~25% and advanced ~40% longer; XP/termites raised to keep similar hourly rates",
+      "unit": null,
+      "statement": "On 12 August 2026 the Colossal Wyrm course got longer (basic ~25%, advanced ~40%), with XP, bone shards and termites raised so hourly XP and termites stay about the same; parts of the wiki course page are marked obsolete.",
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Summer Sweep Up - Agility & Chambers of Xeric Changes",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15303824",
+          "revid": 15303824,
+          "retrieved": "2026-11-19",
+          "quote": "* Increased XP, Bone shards and Termites to match so that it's roughly the same XP/hr and termites/hr but fewer inputs/hr, meaning the course is lower intensity than before.",
+          "fetched_by": "logistics-analyst",
+          "published": "2026-08-12"
+        },
+        {
+          "tier": "T2",
+          "title": "Colossal Wyrm Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15388138",
+          "revid": 15388138,
+          "retrieved": "2026-11-19",
+          "quote": "{{Obsolete|Changes to course durations, experience, termites, and bone shards.|update=Update:Summer Sweep Up - Agility & Chambers of Xeric Changes}}",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high",
+      "released": "2026-08-12",
+      "notes": "Within the recency window. Termite-per-lap figures on the course page may be outdated."
+    },
+    {
+      "claim_id": "C-LOG-098",
+      "subject": "Wilderness Agility Course",
+      "attribute": "teleport_option",
+      "value": "Ice plateau tablet (lands in level 53 Wilderness) or Wilderness obelisk/Edgeville lever",
+      "unit": null,
+      "statement": "The fastest way to the Wilderness course is an Ice plateau teleport tablet (no requirements to use, GE-tradeable) to level 53 Wilderness, then run east; banking is via the obelisk to Ferox Enclave.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Ice plateau teleport (tablet)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15189877",
+          "revid": 15189877,
+          "retrieved": "2026-11-19",
+          "quote": "The '''Ice plateau teleport''' is a [[magic tablet]] that can be broken by players to [[Teleportation|teleport]] to the members half of the [[Ice Plateau]] in level 53 [[Wilderness]].",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Wilderness Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15351989",
+          "revid": 15351989,
+          "retrieved": "2026-11-19",
+          "quote": "Bank time is assumed to be 2 minutes, 10 seconds, and done by leaving the course, running through the gate to the Wilderness obelisk, traveling to the 13-Wilderness option (Ferox Enclave), using the bank, and then returning with an [[Ice plateau teleport (tablet)|Ice Plateau tablet]].",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "WILDERNESS / PvP: flag for Threat Analyst. Tablets are made at 89 Magic on Lunar (thin HW supply likely)."
+    },
+    {
+      "claim_id": "C-LOG-099",
+      "subject": "Wilderness Agility Course",
+      "attribute": "optional_fee",
+      "value": 150000,
+      "unit": "coins",
+      "statement": "The Wilderness course's optional loot fee is 150,000 coins, paid from the inventory and lost on every death or exit; without it the course is free but gives no loot.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Wilderness Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15351989",
+          "revid": 15351989,
+          "retrieved": "2026-11-19",
+          "quote": "The fee is 150,000 coins, which is lost '''every time''' a player dies or leaves the course, but is not removed if they log out and remain within the course.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-100",
+      "subject": "Brimhaven Agility Arena",
+      "attribute": "entry_fee",
+      "value": 200,
+      "unit": "coins",
+      "statement": "Brimhaven Agility Arena charges 200 coins per entry, and logging out inside means paying again.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Brimhaven Agility Arena",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15371976",
+          "revid": 15371976,
+          "retrieved": "2026-11-19",
+          "quote": "*Bring 200 [[coins]] to pay [[Cap'n Izzy No-Beard]] for access to the arena. It is recommended to bring more, as this fee has to be paid upon each entry.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-101",
+      "subject": "Brimhaven Agility Arena",
+      "attribute": "teleport_option",
+      "value": "boat from East Ardougne or Rimmington; charter ship; glory to Musa Point",
+      "unit": null,
+      "statement": "To reach Brimhaven Agility Arena, take the boat from East Ardougne or Rimmington, a charter ship, or an amulet of glory to Musa Point and run west.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Brimhaven Agility Arena",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15371976",
+          "revid": 15371976,
+          "retrieved": "2026-11-19",
+          "quote": "*Take the boat from [[East Ardougne]] or [[Rimmington]] to Brimhaven or alternatively take a [[charter ship]].",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Brimhaven Agility Arena",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15371976",
+          "revid": 15371976,
+          "retrieved": "2026-11-19",
+          "quote": "*Teleport to [[Musa Point]] using an [[amulet of glory]] and run west.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "The listed Fight Cave minigame-teleport route passes the TzHaar area; the TzHaar Fight Cave is UNSAFE on HW (just passing through is not the minigame, but flag it)."
+    },
+    {
+      "claim_id": "C-LOG-102",
+      "subject": "Brimhaven Agility Arena",
+      "attribute": "food_and_energy",
+      "value": "small-heal food or summer pies; energy-restoring items needed",
+      "unit": null,
+      "statement": "At Brimhaven bring food (summer pies, or small heals like chocolate cake or strawberries, because trap damage scales with current HP) and enough energy-restoring items to run constantly.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Brimhaven Agility Arena",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15371976",
+          "revid": 15371976,
+          "retrieved": "2026-11-19",
+          "quote": "**Food that heals in small increments such as [[chocolate cake]]s or [[strawberries|baskets of strawberries]] are another good choice, as the damage the traps deal to your health scale with how much health you currently have.",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Brimhaven Agility Arena",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15371976",
+          "revid": 15371976,
+          "retrieved": "2026-11-19",
+          "quote": "*Bring enough [[Energy#Energy-restoring action|energy-restoring items]] for enough [[energy]] to constantly run around the course.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Quantity per hour not given (gap). Darts traps drain Agility by 2 on failure (summer pies offset this)."
+    },
+    {
+      "claim_id": "C-LOG-103",
+      "subject": "Brimhaven Agility Arena",
+      "attribute": "gear_bonus",
+      "value": "Karamja gloves 2/3/4: +10% obstacle and ticket XP",
+      "unit": null,
+      "statement": "Karamja gloves 2, 3 or 4 give 10% extra Brimhaven obstacle and ticket XP (they need the Karamja diary, which the owner does not have).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Brimhaven Agility Arena",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15371976",
+          "revid": 15371976,
+          "retrieved": "2026-11-19",
+          "quote": "*Wear [[Karamja gloves 2]], [[Karamja gloves 3|3]], or [[Karamja gloves 4|4]] for 10% extra Agility experience from obstacles in the Brimhaven Agility Arena.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-104",
+      "subject": "Agility Pyramid",
+      "attribute": "consumables",
+      "value": "waterskins (desert heat) and food; fails deal up to 10 damage",
+      "unit": null,
+      "statement": "The Agility Pyramid is in desert heat, so bring waterskins and food (unless Desert Elite diary); falls deal up to 10 damage.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Agility Pyramid",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402952",
+          "revid": 15402952,
+          "retrieved": "2026-11-19",
+          "quote": "Otherwise, players will need to bring enough [[waterskin]]s and [[food]] for the training.",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Agility Pyramid",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402952",
+          "revid": 15402952,
+          "retrieved": "2026-11-19",
+          "quote": "Upon failure, the Agility Pyramid is capable of hitting a player for 10 damage, so [[Ironman Mode#Hardcore|hardcore ironmen]] should be wary.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-105",
+      "subject": "Agility Pyramid",
+      "attribute": "teleport_option",
+      "value": "magic carpet Shantay Pass→Pollnivneach→Nardah, then walk",
+      "unit": null,
+      "statement": "One route without diaries: carpet from Shantay Pass to Pollnivneach, then a carpet to Nardah and walk south-west to the pyramid.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Agility Pyramid",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402952",
+          "revid": 15402952,
+          "retrieved": "2026-11-19",
+          "quote": "* Alternatively, take a magic carpet from [[Shantay Pass]] to Pollnivneach and follow the instructions above.",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Agility Pyramid",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402952",
+          "revid": 15402952,
+          "retrieved": "2026-11-19",
+          "quote": "** Take a magic carpet to [[Nardah]] and walk south-west from Nardah.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim_id": "C-LOG-106",
+      "subject": "Agility Pyramid",
+      "attribute": "income",
+      "value": "pyramid top sold to Simon Templeton for 10,000 coins",
+      "unit": "coins",
+      "statement": "Each pyramid top sells to Simon Templeton for 10,000 coins (up to about 26 tops/hour); sell each one at once because it weighs 11 kg.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Agility Pyramid",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402952",
+          "revid": 15402952,
+          "retrieved": "2026-11-19",
+          "quote": "Pyramid tops may be handed in to [[Simon Templeton]] in exchange for {{NoCoins|10,000}} [[coins]] each and respawn only when the player has entered the doorway at the top of the pyramid.",
+          "fetched_by": "logistics-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Agility Pyramid",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402952",
+          "revid": 15402952,
+          "retrieved": "2026-11-19",
+          "quote": "Players are advised to sell each pyramid top to Simon Templeton immediately after obtaining it, since it weighs 11 kg and would otherwise increase run energy expenditure on future laps.",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-107",
+      "subject": "Werewolf Agility Course",
+      "attribute": "requirements",
+      "value": "Creature of Fenkenstrain + Ring of Charos",
+      "unit": null,
+      "statement": "The Werewolf Agility Course needs Creature of Fenkenstrain (not completed) and a Ring of Charos, so the owner cannot use it.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Agility training",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875",
+          "revid": 15369875,
+          "retrieved": "2026-11-19",
+          "quote": "To access this course, players must have completed [[Creature of Fenkenstrain]] and wear a [[Ring of Charos]].",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-108",
+      "subject": "Shayzien Agility Course (advanced)",
+      "attribute": "gear_required",
+      "value": "crossbow + mith grapple",
+      "unit": null,
+      "statement": "The Shayzien advanced course needs a crossbow and a mith grapple.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Agility training",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875",
+          "revid": 15369875,
+          "retrieved": "2026-11-19",
+          "quote": "Completing this course requires a [[crossbow]] and a [[mith grapple]].",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-LOG-109",
+      "subject": "Stamina potion(4)",
+      "attribute": "price_proxy_main_game",
+      "value": 2250,
+      "unit": "coins (main game)",
+      "statement": "MAIN-GAME PROXY: Stamina potion(4) was about 2,250 coins on the main-game GE at 19 Nov 2026 20:00 UTC. This is not a Hardcore Worlds price.",
+      "sources": [
+        {
+          "tier": "T3",
+          "title": "OSRS Wiki Module:GEPrices/data.json (main-game GE price snapshot, %LAST_UPDATE_F% 19 November 2026 20:00:19 UTC)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409405",
+          "revid": 15409405,
+          "retrieved": "2026-11-19",
+          "quote": "\t\"Stamina potion(4)\": 2250,",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "MAIN-GAME PRICE PROXY ONLY. Hardcore Worlds has a separate Grand Exchange economy; this is the main-game wiki price snapshot and may differ greatly from Hardcore Worlds prices."
+    },
+    {
+      "claim_id": "C-LOG-110",
+      "subject": "Summer pie",
+      "attribute": "price_proxy_main_game",
+      "value": 1635,
+      "unit": "coins (main game)",
+      "statement": "MAIN-GAME PROXY: Summer pie was about 1,635 coins on the main-game GE at 19 Nov 2026 20:00 UTC. This is not a Hardcore Worlds price.",
+      "sources": [
+        {
+          "tier": "T3",
+          "title": "OSRS Wiki Module:GEPrices/data.json (main-game GE price snapshot, %LAST_UPDATE_F% 19 November 2026 20:00:19 UTC)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409405",
+          "revid": 15409405,
+          "retrieved": "2026-11-19",
+          "quote": "\t\"Summer pie\": 1635,",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "MAIN-GAME PRICE PROXY ONLY. Hardcore Worlds has a separate Grand Exchange economy; this is the main-game wiki price snapshot and may differ greatly from Hardcore Worlds prices."
+    },
+    {
+      "claim_id": "C-LOG-111",
+      "subject": "Agility potion(4)",
+      "attribute": "price_proxy_main_game",
+      "value": 243,
+      "unit": "coins (main game)",
+      "statement": "MAIN-GAME PROXY: Agility potion(4) was about 243 coins on the main-game GE at 19 Nov 2026 20:00 UTC. This is not a Hardcore Worlds price.",
+      "sources": [
+        {
+          "tier": "T3",
+          "title": "OSRS Wiki Module:GEPrices/data.json (main-game GE price snapshot, %LAST_UPDATE_F% 19 November 2026 20:00:19 UTC)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409405",
+          "revid": 15409405,
+          "retrieved": "2026-11-19",
+          "quote": "\t\"Agility potion(4)\": 243,",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "MAIN-GAME PRICE PROXY ONLY. Hardcore Worlds has a separate Grand Exchange economy; this is the main-game wiki price snapshot and may differ greatly from Hardcore Worlds prices."
+    },
+    {
+      "claim_id": "C-LOG-112",
+      "subject": "Super energy(4)",
+      "attribute": "price_proxy_main_game",
+      "value": 1626,
+      "unit": "coins (main game)",
+      "statement": "MAIN-GAME PROXY: Super energy(4) was about 1,626 coins on the main-game GE at 19 Nov 2026 20:00 UTC. This is not a Hardcore Worlds price.",
+      "sources": [
+        {
+          "tier": "T3",
+          "title": "OSRS Wiki Module:GEPrices/data.json (main-game GE price snapshot, %LAST_UPDATE_F% 19 November 2026 20:00:19 UTC)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409405",
+          "revid": 15409405,
+          "retrieved": "2026-11-19",
+          "quote": "\t\"Super energy(4)\": 1626,",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "MAIN-GAME PRICE PROXY ONLY. Hardcore Worlds has a separate Grand Exchange economy; this is the main-game wiki price snapshot and may differ greatly from Hardcore Worlds prices."
+    },
+    {
+      "claim_id": "C-LOG-113",
+      "subject": "Lobster",
+      "attribute": "price_proxy_main_game",
+      "value": 93,
+      "unit": "coins (main game)",
+      "statement": "MAIN-GAME PROXY: Lobster was about 93 coins on the main-game GE at 19 Nov 2026 20:00 UTC. This is not a Hardcore Worlds price.",
+      "sources": [
+        {
+          "tier": "T3",
+          "title": "OSRS Wiki Module:GEPrices/data.json (main-game GE price snapshot, %LAST_UPDATE_F% 19 November 2026 20:00:19 UTC)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409405",
+          "revid": 15409405,
+          "retrieved": "2026-11-19",
+          "quote": "\t\"Lobster\": 93,",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "MAIN-GAME PRICE PROXY ONLY. Hardcore Worlds has a separate Grand Exchange economy; this is the main-game wiki price snapshot and may differ greatly from Hardcore Worlds prices."
+    },
+    {
+      "claim_id": "C-LOG-114",
+      "subject": "Swordfish",
+      "attribute": "price_proxy_main_game",
+      "value": 172,
+      "unit": "coins (main game)",
+      "statement": "MAIN-GAME PROXY: Swordfish was about 172 coins on the main-game GE at 19 Nov 2026 20:00 UTC. This is not a Hardcore Worlds price.",
+      "sources": [
+        {
+          "tier": "T3",
+          "title": "OSRS Wiki Module:GEPrices/data.json (main-game GE price snapshot, %LAST_UPDATE_F% 19 November 2026 20:00:19 UTC)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409405",
+          "revid": 15409405,
+          "retrieved": "2026-11-19",
+          "quote": "\t\"Swordfish\": 172,",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "MAIN-GAME PRICE PROXY ONLY. Hardcore Worlds has a separate Grand Exchange economy; this is the main-game wiki price snapshot and may differ greatly from Hardcore Worlds prices."
+    },
+    {
+      "claim_id": "C-LOG-115",
+      "subject": "Monkfish",
+      "attribute": "price_proxy_main_game",
+      "value": 137,
+      "unit": "coins (main game)",
+      "statement": "MAIN-GAME PROXY: Monkfish was about 137 coins on the main-game GE at 19 Nov 2026 20:00 UTC. This is not a Hardcore Worlds price.",
+      "sources": [
+        {
+          "tier": "T3",
+          "title": "OSRS Wiki Module:GEPrices/data.json (main-game GE price snapshot, %LAST_UPDATE_F% 19 November 2026 20:00:19 UTC)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409405",
+          "revid": 15409405,
+          "retrieved": "2026-11-19",
+          "quote": "\t\"Monkfish\": 137,",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "MAIN-GAME PRICE PROXY ONLY. Hardcore Worlds has a separate Grand Exchange economy; this is the main-game wiki price snapshot and may differ greatly from Hardcore Worlds prices."
+    },
+    {
+      "claim_id": "C-LOG-116",
+      "subject": "Tuna",
+      "attribute": "price_proxy_main_game",
+      "value": 35,
+      "unit": "coins (main game)",
+      "statement": "MAIN-GAME PROXY: Tuna was about 35 coins on the main-game GE at 19 Nov 2026 20:00 UTC. This is not a Hardcore Worlds price.",
+      "sources": [
+        {
+          "tier": "T3",
+          "title": "OSRS Wiki Module:GEPrices/data.json (main-game GE price snapshot, %LAST_UPDATE_F% 19 November 2026 20:00:19 UTC)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409405",
+          "revid": 15409405,
+          "retrieved": "2026-11-19",
+          "quote": "\t\"Tuna\": 35,",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "MAIN-GAME PRICE PROXY ONLY. Hardcore Worlds has a separate Grand Exchange economy; this is the main-game wiki price snapshot and may differ greatly from Hardcore Worlds prices."
+    },
+    {
+      "claim_id": "C-LOG-117",
+      "subject": "Jug of wine",
+      "attribute": "price_proxy_main_game",
+      "value": 4,
+      "unit": "coins (main game)",
+      "statement": "MAIN-GAME PROXY: Jug of wine was about 4 coins on the main-game GE at 19 Nov 2026 20:00 UTC. This is not a Hardcore Worlds price.",
+      "sources": [
+        {
+          "tier": "T3",
+          "title": "OSRS Wiki Module:GEPrices/data.json (main-game GE price snapshot, %LAST_UPDATE_F% 19 November 2026 20:00:19 UTC)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409405",
+          "revid": 15409405,
+          "retrieved": "2026-11-19",
+          "quote": "\t\"Jug of wine\": 4,",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "MAIN-GAME PRICE PROXY ONLY. Hardcore Worlds has a separate Grand Exchange economy; this is the main-game wiki price snapshot and may differ greatly from Hardcore Worlds prices."
+    },
+    {
+      "claim_id": "C-LOG-118",
+      "subject": "Cake",
+      "attribute": "price_proxy_main_game",
+      "value": 72,
+      "unit": "coins (main game)",
+      "statement": "MAIN-GAME PROXY: Cake was about 72 coins on the main-game GE at 19 Nov 2026 20:00 UTC. This is not a Hardcore Worlds price.",
+      "sources": [
+        {
+          "tier": "T3",
+          "title": "OSRS Wiki Module:GEPrices/data.json (main-game GE price snapshot, %LAST_UPDATE_F% 19 November 2026 20:00:19 UTC)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409405",
+          "revid": 15409405,
+          "retrieved": "2026-11-19",
+          "quote": "\t\"Cake\": 72,",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "MAIN-GAME PRICE PROXY ONLY. Hardcore Worlds has a separate Grand Exchange economy; this is the main-game wiki price snapshot and may differ greatly from Hardcore Worlds prices."
+    },
+    {
+      "claim_id": "C-LOG-119",
+      "subject": "Camelot teleport (tablet)",
+      "attribute": "price_proxy_main_game",
+      "value": 422,
+      "unit": "coins (main game)",
+      "statement": "MAIN-GAME PROXY: Camelot teleport (tablet) was about 422 coins on the main-game GE at 19 Nov 2026 20:00 UTC. This is not a Hardcore Worlds price.",
+      "sources": [
+        {
+          "tier": "T3",
+          "title": "OSRS Wiki Module:GEPrices/data.json (main-game GE price snapshot, %LAST_UPDATE_F% 19 November 2026 20:00:19 UTC)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409405",
+          "revid": 15409405,
+          "retrieved": "2026-11-19",
+          "quote": "\t\"Camelot teleport (tablet)\": 422,",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "MAIN-GAME PRICE PROXY ONLY. Hardcore Worlds has a separate Grand Exchange economy; this is the main-game wiki price snapshot and may differ greatly from Hardcore Worlds prices."
+    },
+    {
+      "claim_id": "C-LOG-120",
+      "subject": "Ardougne teleport (tablet)",
+      "attribute": "price_proxy_main_game",
+      "value": 466,
+      "unit": "coins (main game)",
+      "statement": "MAIN-GAME PROXY: Ardougne teleport (tablet) was about 466 coins on the main-game GE at 19 Nov 2026 20:00 UTC. This is not a Hardcore Worlds price.",
+      "sources": [
+        {
+          "tier": "T3",
+          "title": "OSRS Wiki Module:GEPrices/data.json (main-game GE price snapshot, %LAST_UPDATE_F% 19 November 2026 20:00:19 UTC)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409405",
+          "revid": 15409405,
+          "retrieved": "2026-11-19",
+          "quote": "\t\"Ardougne teleport (tablet)\": 466,",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "MAIN-GAME PRICE PROXY ONLY. Hardcore Worlds has a separate Grand Exchange economy; this is the main-game wiki price snapshot and may differ greatly from Hardcore Worlds prices."
+    },
+    {
+      "claim_id": "C-LOG-121",
+      "subject": "Colossal wyrm teleport scroll",
+      "attribute": "price_proxy_main_game",
+      "value": 18666,
+      "unit": "coins (main game)",
+      "statement": "MAIN-GAME PROXY: Colossal wyrm teleport scroll was about 18,666 coins on the main-game GE at 19 Nov 2026 20:00 UTC. This is not a Hardcore Worlds price.",
+      "sources": [
+        {
+          "tier": "T3",
+          "title": "OSRS Wiki Module:GEPrices/data.json (main-game GE price snapshot, %LAST_UPDATE_F% 19 November 2026 20:00:19 UTC)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409405",
+          "revid": 15409405,
+          "retrieved": "2026-11-19",
+          "quote": "\t\"Colossal wyrm teleport scroll\": 18666,",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "MAIN-GAME PRICE PROXY ONLY. Hardcore Worlds has a separate Grand Exchange economy; this is the main-game wiki price snapshot and may differ greatly from Hardcore Worlds prices."
+    },
+    {
+      "claim_id": "C-LOG-122",
+      "subject": "Ice plateau teleport (tablet)",
+      "attribute": "price_proxy_main_game",
+      "value": 1054,
+      "unit": "coins (main game)",
+      "statement": "MAIN-GAME PROXY: Ice plateau teleport (tablet) was about 1,054 coins on the main-game GE at 19 Nov 2026 20:00 UTC. This is not a Hardcore Worlds price.",
+      "sources": [
+        {
+          "tier": "T3",
+          "title": "OSRS Wiki Module:GEPrices/data.json (main-game GE price snapshot, %LAST_UPDATE_F% 19 November 2026 20:00:19 UTC)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409405",
+          "revid": 15409405,
+          "retrieved": "2026-11-19",
+          "quote": "\t\"Ice plateau teleport (tablet)\": 1054,",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "MAIN-GAME PRICE PROXY ONLY. Hardcore Worlds has a separate Grand Exchange economy; this is the main-game wiki price snapshot and may differ greatly from Hardcore Worlds prices."
+    },
+    {
+      "claim_id": "C-LOG-123",
+      "subject": "Mith grapple",
+      "attribute": "price_proxy_main_game",
+      "value": 1274,
+      "unit": "coins (main game)",
+      "statement": "MAIN-GAME PROXY: Mith grapple was about 1,274 coins on the main-game GE at 19 Nov 2026 20:00 UTC. This is not a Hardcore Worlds price.",
+      "sources": [
+        {
+          "tier": "T3",
+          "title": "OSRS Wiki Module:GEPrices/data.json (main-game GE price snapshot, %LAST_UPDATE_F% 19 November 2026 20:00:19 UTC)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409405",
+          "revid": 15409405,
+          "retrieved": "2026-11-19",
+          "quote": "\t\"Mith grapple\": 1274,",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "MAIN-GAME PRICE PROXY ONLY. Hardcore Worlds has a separate Grand Exchange economy; this is the main-game wiki price snapshot and may differ greatly from Hardcore Worlds prices."
+    },
+    {
+      "claim_id": "C-LOG-124",
+      "subject": "Regen bracelet",
+      "attribute": "price_proxy_main_game",
+      "value": 2011078,
+      "unit": "coins (main game)",
+      "statement": "MAIN-GAME PROXY: Regen bracelet was about 2,011,078 coins on the main-game GE at 19 Nov 2026 20:00 UTC. This is not a Hardcore Worlds price.",
+      "sources": [
+        {
+          "tier": "T3",
+          "title": "OSRS Wiki Module:GEPrices/data.json (main-game GE price snapshot, %LAST_UPDATE_F% 19 November 2026 20:00:19 UTC)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409405",
+          "revid": 15409405,
+          "retrieved": "2026-11-19",
+          "quote": "\t\"Regen bracelet\": 2011078,",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "MAIN-GAME PRICE PROXY ONLY. Hardcore Worlds has a separate Grand Exchange economy; this is the main-game wiki price snapshot and may differ greatly from Hardcore Worlds prices. Regen bracelet value looks anomalous; verify before use."
+    },
+    {
+      "claim_id": "C-LOG-125",
+      "subject": "Amylase crystal",
+      "attribute": "price_proxy_main_game",
+      "value": 380,
+      "unit": "coins (main game)",
+      "statement": "MAIN-GAME PROXY: Amylase crystal was about 380 coins on the main-game GE at 19 Nov 2026 20:00 UTC. This is not a Hardcore Worlds price.",
+      "sources": [
+        {
+          "tier": "T3",
+          "title": "OSRS Wiki Module:GEPrices/data.json (main-game GE price snapshot, %LAST_UPDATE_F% 19 November 2026 20:00:19 UTC)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409405",
+          "revid": 15409405,
+          "retrieved": "2026-11-19",
+          "quote": "\t\"Amylase crystal\": 380,",
+          "fetched_by": "logistics-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "MAIN-GAME PRICE PROXY ONLY. Hardcore Worlds has a separate Grand Exchange economy; this is the main-game wiki price snapshot and may differ greatly from Hardcore Worlds prices."
+    }
+  ],
+  "gaps": [
+    "No Hardcore Worlds GE price/volume data: main-game proxies only.",
+    "Fail damage on the Seers', Pollnivneach, Rellekka and Ardougne rooftop obstacles is undocumented in the sources read, so food per hour cannot be computed for them.",
+    "Stamina doses per hour for the Hallowed Sepulchre and Brimhaven Arena are not quantified by any source read.",
+    "Nearest full bank to the Rellekka course is not established (no town bank listed; deposit box needs the Easy Fremennik diary).",
+    "Whether Sailing (owner level 30) gives useful boat transport to Rellekka or other course towns was not researched.",
+    "Summer pie shop sources (the store list is generated dynamically and was not visible in the wikitext).",
+    "How Hardcore Worlds classifies deaths in the Hallowed Sepulchre (items kept by the Mysterious Stranger) and on rooftop falls: for the Threat Analyst.",
+    "Other failable points on the Rellekka course beyond the first tightrope were not checked."
+  ],
+  "leads_not_used": [
+    {
+      "lead": "docs/07-hardcore-worlds-baseline.md items (HW launch, unsafe list, Quest Month)",
+      "reason": "Unverified seed; HW facts used here were re-sourced from T1/T2."
+    },
+    {
+      "lead": "WebSearch summary claiming the OSRS GE is shared across worlds",
+      "reason": "T4 model summary; contradicted by the T1 Hardcore Worlds launch post."
+    }
+  ],
+  "provenance": {
+    "agent": "logistics-analyst",
+    "started_at": "2026-11-19T22:04:30Z",
+    "finished_at": "2026-11-20T02:14:47Z",
+    "dispatch_ref": "dispatch/015-logistics-analyst.md",
+    "inputs": [
+      {
+        "path": "brief.json",
+        "sha256": "c27aa6bc9969f981aed9185637565c2792f58b80646cc531afa503e27f969389"
+      },
+      {
+        "path": ".claude/agents/logistics-analyst.md",
+        "sha256": "6cc17c94c6caecdb058cc95f5f56ccb4bfc93b779799b349e594a8dd5354fd53"
+      },
+      {
+        "path": "docs/06-sourcing-policy.md",
+        "sha256": "f883176c3b9c0f10ad8c06027eebb8436f1989068c72fffdc9df51878c618bf8"
+      },
+      {
+        "path": "docs/07-hardcore-worlds-baseline.md",
+        "sha256": "75a2a4abff833d60dce05ec9a0c7ceda54f682c275e3edf73dfa4fe04f79ecf1"
+      },
+      {
+        "path": "dispatch/015-logistics-analyst.md",
+        "sha256": "b4d278d2b5a1389eec65060893f93c3cbe087e17e5d4a7dcddcd5f207aeca515"
+      }
+    ],
+    "actions": [
+      {
+        "kind": "read",
+        "detail": "Read charter, CLAUDE.md, dispatch 015, schemas/claims.schema.json, docs/06, docs/07, brief.json, tools/validate.py, tools/wiki.py --help",
+        "outcome": "ok"
+      },
+      {
+        "kind": "verify",
+        "detail": "python3 tools/ledger.py verify agility-1-99-20261119",
+        "outcome": "OK: ledger chain and all seals intact; brief.json sha256 c27aa6bc... matches seal seq 33"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Graceful outfit\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15403851",
+        "outcome": "revid 15403851"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Graceful hood\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15184835",
+        "outcome": "revid 15184835"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Mark of Grace\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15403415",
+        "outcome": "revid 15403415"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Hardcore Worlds\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+        "outcome": "revid 15404671"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Seers' Village Rooftop Course\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15356820",
+        "outcome": "revid 15356820"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Rooftop Agility Courses\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15337972",
+        "outcome": "revid 15337972"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Agility training\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875",
+        "outcome": "revid 15369875"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Pollnivneach Rooftop Course\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15375189",
+        "outcome": "revid 15375189"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Pollnivneach\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15402250",
+        "outcome": "revid 15402250"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Rellekka\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15387537",
+        "outcome": "revid 15387537"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Rellekka Rooftop Course\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15319532",
+        "outcome": "revid 15319532"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Ardougne Rooftop Course\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15352456",
+        "outcome": "revid 15352456"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Pollnivneach teleport\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15309321",
+        "outcome": "revid 15309321"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Rellekka teleport\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15309323",
+        "outcome": "revid 15309323"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Camelot teleport (tablet)\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15185080",
+        "outcome": "revid 15185080"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Scroll of Redirection\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15384264",
+        "outcome": "revid 15384264"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Teleport to house (tablet)\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15185086",
+        "outcome": "revid 15185086"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Summer pie\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15369837",
+        "outcome": "revid 15369837"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Stamina potion\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15397662",
+        "outcome": "revid 15397662"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Agility potion\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15250405",
+        "outcome": "revid 15250405"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Update:Run Energy Changes\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=14833541",
+        "outcome": "revid 14833541"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Energy\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15399707",
+        "outcome": "revid 15399707"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Hallowed Sepulchre\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544",
+        "outcome": "revid 15387544"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Canifis Rooftop Course\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15374436",
+        "outcome": "revid 15374436"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Ectophial\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15195604",
+        "outcome": "revid 15195604"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Canifis\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15397565",
+        "outcome": "revid 15397565"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Camelot Teleport\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15356635",
+        "outcome": "revid 15356635"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Ardougne teleport (tablet)\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15183982",
+        "outcome": "revid 15183982"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Ardougne Teleport\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=14918399",
+        "outcome": "revid 14918399"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Ardougne Market\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15342851",
+        "outcome": "revid 15342851"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Seers' Village\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15402255",
+        "outcome": "revid 15402255"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"East Ardougne\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15364745",
+        "outcome": "revid 15364745"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Colossal Wyrm Agility Course\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15388138",
+        "outcome": "revid 15388138"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Falador Rooftop Course\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15319531",
+        "outcome": "revid 15319531"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Update:Summer Sweep Up - Agility & Chambers of Xeric Changes\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15303824",
+        "outcome": "revid 15303824"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Colossal wyrm teleport scroll\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15403882",
+        "outcome": "revid 15403882"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Landing Site\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15276733",
+        "outcome": "revid 15276733"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Amylase pack\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15316439",
+        "outcome": "revid 15316439"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Brimhaven Agility Arena\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15371976",
+        "outcome": "revid 15371976"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Wilderness Agility Course\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15351989",
+        "outcome": "revid 15351989"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Ice plateau teleport (tablet)\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15189877",
+        "outcome": "revid 15189877"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Module:GEPrices/data.json\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15409405",
+        "outcome": "revid 15409405"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Lobster\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15183358",
+        "outcome": "revid 15183358"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Swordfish\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15183520",
+        "outcome": "revid 15183520"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Monkfish\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15183439",
+        "outcome": "revid 15183439"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Jug of wine\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15395989",
+        "outcome": "revid 15395989"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Tuna\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15358604",
+        "outcome": "revid 15358604"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Cake\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15360719",
+        "outcome": "revid 15360719"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Magic carpet\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15371334",
+        "outcome": "revid 15371334"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Shantay Pass\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15360728",
+        "outcome": "revid 15360728"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Rogues' Den\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15379507",
+        "outcome": "revid 15379507"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Agility Pyramid\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15402952",
+        "outcome": "revid 15402952"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Preserve\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15389935",
+        "outcome": "revid 15389935"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Temporary skill boost\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15374904",
+        "outcome": "revid 15374904"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Update:Hardcore Worlds - OUT TODAY\" (with --grep filters) and reads of the cached revision file",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+        "outcome": "revid 15397724"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Gap (Seers' Village Rooftop Course)\"",
+        "outcome": "read; no fail-damage data (obstacle pages) / course list only; not cited"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Tightrope (Seers' Village Rooftop Course)\"",
+        "outcome": "read; no fail-damage data (obstacle pages) / course list only; not cited"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Agility course\"",
+        "outcome": "read; no fail-damage data (obstacle pages) / course list only; not cited"
+      },
+      {
+        "kind": "search",
+        "detail": "python3 tools/wiki.py search \"Pollnivneach teleport tablet\" and \"Hardcore Worlds Grand Exchange prices\"",
+        "outcome": "found the Pollnivneach teleport page; no Hardcore-Worlds-specific price data on the wiki"
+      },
+      {
+        "kind": "search",
+        "detail": "WebSearch: OSRS Hardcore Worlds Grand Exchange prices tracker",
+        "outcome": "no Hardcore Worlds price tracker found; the result summary claimed the GE is shared, which T1 contradicts; treated as a T4 lead and not used"
+      },
+      {
+        "kind": "compute",
+        "detail": "Run-energy regeneration/drain at Agility 57 (with/without graceful and stamina); graceful total weight; hours to 260 marks at the Seers' base rate; summer pies per hour without Preserve; Ardougne 85-90 pie total (310)",
+        "outcome": "recorded as claims with confidence medium/low"
+      },
+      {
+        "kind": "verify",
+        "detail": "After the usage-limit interruption: re-ran python3 tools/ledger.py verify agility-1-99-20261119 and re-hashed all inputs",
+        "outcome": "OK: ledger chain and seals intact; all input hashes unchanged"
+      },
+      {
+        "kind": "verify",
+        "detail": "Builder script checked that every quote is an exact substring of the cached wikitext for the cited revid",
+        "outcome": "all quotes matched"
+      },
+      {
+        "kind": "write",
+        "detail": "Wrote jobs/agility-1-99-20261119/research/claims-logistics.json via scratchpad builder script",
+        "target": "research/claims-logistics.json"
+      }
+    ],
+    "decisions": [
+      {
+        "decision": "Candidate methods covered from 57: Seers', Pollnivneach, Rellekka, Ardougne rooftops; Canifis (marks); Falador; Colossal Wyrm; Wilderness course (flagged); Brimhaven Arena; Agility Pyramid; Hallowed Sepulchre (locked: Sins of the Father); Werewolf (locked); Shayzien advanced. Prifddinas and Ape Atoll are quest-locked and left to the Methods desk.",
+        "reason": "These are the courses and minigames listed on the wiki Agility training/Agility course pages that a planner could use from 57; logistics are only useful where a route could use them.",
+        "alternatives_considered": [
+          "Cover only the four 60+ rooftops",
+          "Include the Prifddinas/Ape Atoll logistics despite quest locks"
+        ]
+      },
+      {
+        "decision": "Used Module:GEPrices/data.json (pinned revid) as the main-game price proxy, tier T3, with every price claim labelled 'MAIN-GAME PROXY'.",
+        "reason": "The wiki tool gives exact pinned numbers; WebFetch of a prices API would return a model summary. The wiki has no Hardcore Worlds price data.",
+        "alternatives_considered": [
+          "WebFetch prices.runescape.wiki API",
+          "Omit prices"
+        ]
+      },
+      {
+        "decision": "Flagged Nightmare Zone (scroll of redirection source), POH, Rogues' Den maze, the Wilderness course, the Ardougne Wilderness lever, Pollnivneach crocodiles/jackals and the Sepulchre death mechanics for the Threat Analyst without scoring them.",
+        "reason": "Charter: logistics flags hazards; Threat Analyst rates them.",
+        "alternatives_considered": []
+      },
+      {
+        "decision": "Did not use the docs/07 seed leads as evidence; Hardcore Worlds economy claims rest on the T1 launch post and the T2 Hardcore Worlds page.",
+        "reason": "docs/07 is marked as unverified leads.",
+        "alternatives_considered": []
+      }
+    ],
+    "limitations": [
+      "Fail damage for Seers', Pollnivneach, Rellekka and Ardougne obstacles is not on the course or obstacle pages read, so food per hour on those courses is not quantified.",
+      "Every price is a main-game proxy (19 Nov 2026 snapshot). No Hardcore Worlds GE price or volume source was found; thin-supply flags are inferences from skill requirements and the 4 Nov 2026 launch.",
+      "Computed run-energy figures depend on the wiki's formula, whose rounding is flagged as unconfirmed on the wiki.",
+      "The summer-pie-per-hour formula without Preserve is a desk estimate (low confidence); the Ardougne pie table assumes Preserve, which the owner cannot use (Prayer 44).",
+      "The owner's bank (existing graceful, marks, teleports) is unknown; claims assume nothing is owned.",
+      "Early commands in this session chained shell commands with && (charter tool rules ask for single commands); they were read-only reads and hashes.",
+      "Work was interrupted by a usage limit after research and before the file was written (around 2026-11-19T22:12Z), and resumed on 2026-11-20 on the coordinator's instruction. On resuming, the ledger was re-verified and all input hashes rechecked unchanged. Wiki sources were fetched on 2026-11-19 and were not re-fetched after the interruption, so pages may have changed since; the verifier re-reads current revisions."
+    ]
+  }
+}

@@ -1,0 +1,3705 @@
+{
+  "desk": "threats",
+  "as_of": "2026-11-20",
+  "claims": [
+    {
+      "claim_id": "C-THR-001",
+      "subject": "Hardcore Worlds",
+      "attribute": "hw_death_ruleset",
+      "value": "Hardcore Group Ironman death ruleset",
+      "unit": null,
+      "statement": "Hardcore Worlds use the Hardcore Group Ironman death ruleset; Jagex says to expect 99% of deaths to count (return to Death's Office).",
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds Are Coming On November 4th",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410",
+          "revid": 15379410,
+          "retrieved": "2026-11-19",
+          "quote": "Hardcore worlds will use the [https://oldschool.runescape.wiki/w/Group_Ironman_Mode#Hardcore_Group_Ironman Hardcore Group Ironman ruleset] for death which is much less forgiving! This ruleset has very few exceptions, which means you should go in with the expectation that 99% of deaths will land you right back in Death's office ready to make a difficult choice.",
+          "fetched_by": "threat-analyst via tools/wiki.py",
+          "published": "2026-10-22"
+        },
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-19",
+          "quote": "Hardcore Worlds follows the same death ruleset as [[Group_Ironman_Mode#Hardcore_Group_Ironman|Hardcore Group Ironman]].",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-002",
+      "subject": "Hardcore Worlds",
+      "attribute": "hw_safe_activity_list",
+      "value": [
+        "Castle Wars",
+        "Clan Wars",
+        "Soul Wars",
+        "The Fremennik Trials (4th phase of the Koschei duel only)",
+        "TzHaar Fight Caves (Karamja Elite diary resurrection only)",
+        "TzHaar Fight Pit",
+        "Zulrah (Elite Western Provinces diary resurrection only)"
+      ],
+      "unit": null,
+      "statement": "The official Hardcore Worlds safe-death exceptions are only: Castle Wars, Clan Wars, Soul Wars, the 4th phase of the Koschei duel in The Fremennik Trials, the Fight Caves Karamja Elite resurrection, TzHaar Fight Pit, and the Zulrah Elite Western Provinces resurrection. No Agility course, the Brimhaven Agility Arena and the Hallowed Sepulchre are not on it.",
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds Are Coming On November 4th",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410",
+          "revid": 15379410,
+          "retrieved": "2026-11-19",
+          "quote": "That doesn't mean there aren't exceptions though as the following minigames are safe:",
+          "fetched_by": "threat-analyst via tools/wiki.py",
+          "published": "2026-10-22"
+        },
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds - OUT TODAY",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+          "revid": 15397724,
+          "retrieved": "2026-11-19",
+          "quote": "* The Resurrection reward for the TzHaar Fight Caves from the Karamja Elite Diary",
+          "fetched_by": "threat-analyst via tools/wiki.py",
+          "published": "2026-11-04"
+        },
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-19",
+          "quote": "The following activities are '''{{colour|green|SAFE}}''' and dying within them will not count as an official death:",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "notes": "The wiki's Hardcore Worlds page (rev 15404671) also lists capsizing a boat, Emir's Arena, Last Man Standing (disabled), Pete Kayer's Challenges and the Galvek/Glough replays, copied from the HGIM list. These are not in either Jagex post. None of them is an Agility activity."
+    },
+    {
+      "claim_id": "C-THR-003",
+      "subject": "Hallowed Sepulchre",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "The Hallowed Sepulchre is not on the official safe list, so a death there is an official (run-ending) death on Hardcore Worlds.",
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds Are Coming On November 4th",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410",
+          "revid": 15379410,
+          "retrieved": "2026-11-19",
+          "quote": "That doesn't mean there aren't exceptions though as the following minigames are safe:",
+          "fetched_by": "threat-analyst via tools/wiki.py",
+          "published": "2026-10-22"
+        },
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-19",
+          "quote": "Hardcore Worlds follows the same death ruleset as [[Group_Ironman_Mode#Hardcore_Group_Ironman|Hardcore Group Ironman]].",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Derived classification: the default for any activity not on the T1 safe list is UNSAFE_DEATH (charter rule). No T1 source names this activity as safe."
+    },
+    {
+      "claim_id": "C-THR-004",
+      "subject": "Brimhaven Agility Arena",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "The Brimhaven Agility Arena is not on the official safe list, so a death there is an official (run-ending) death on Hardcore Worlds.",
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds Are Coming On November 4th",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410",
+          "revid": 15379410,
+          "retrieved": "2026-11-19",
+          "quote": "That doesn't mean there aren't exceptions though as the following minigames are safe:",
+          "fetched_by": "threat-analyst via tools/wiki.py",
+          "published": "2026-10-22"
+        },
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-19",
+          "quote": "Hardcore Worlds follows the same death ruleset as [[Group_Ironman_Mode#Hardcore_Group_Ironman|Hardcore Group Ironman]].",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Derived classification: the default for any activity not on the T1 safe list is UNSAFE_DEATH (charter rule). No T1 source names this activity as safe."
+    },
+    {
+      "claim_id": "C-THR-005",
+      "subject": "Rooftop Agility Courses (Canifis, Seers' Village, Pollnivneach, Rellekka, Ardougne)",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "No rooftop course is on the official safe list, so a death on any of them is an official (run-ending) death on Hardcore Worlds.",
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds Are Coming On November 4th",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410",
+          "revid": 15379410,
+          "retrieved": "2026-11-19",
+          "quote": "That doesn't mean there aren't exceptions though as the following minigames are safe:",
+          "fetched_by": "threat-analyst via tools/wiki.py",
+          "published": "2026-10-22"
+        },
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-19",
+          "quote": "Hardcore Worlds follows the same death ruleset as [[Group_Ironman_Mode#Hardcore_Group_Ironman|Hardcore Group Ironman]].",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Derived classification: the default for any activity not on the T1 safe list is UNSAFE_DEATH (charter rule). No T1 source names this activity as safe."
+    },
+    {
+      "claim_id": "C-THR-006",
+      "subject": "Werewolf Agility Course",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "The Werewolf Agility Course is not on the official safe list, so a death there (e.g. deathslide fall) is an official death on Hardcore Worlds.",
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds Are Coming On November 4th",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410",
+          "revid": 15379410,
+          "retrieved": "2026-11-19",
+          "quote": "That doesn't mean there aren't exceptions though as the following minigames are safe:",
+          "fetched_by": "threat-analyst via tools/wiki.py",
+          "published": "2026-10-22"
+        },
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-19",
+          "quote": "Hardcore Worlds follows the same death ruleset as [[Group_Ironman_Mode#Hardcore_Group_Ironman|Hardcore Group Ironman]].",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Derived classification: the default for any activity not on the T1 safe list is UNSAFE_DEATH (charter rule). No T1 source names this activity as safe."
+    },
+    {
+      "claim_id": "C-THR-007",
+      "subject": "Ape Atoll Agility Course",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "The Ape Atoll Agility Course is not on the official safe list, so a death there is an official death on Hardcore Worlds.",
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds Are Coming On November 4th",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410",
+          "revid": 15379410,
+          "retrieved": "2026-11-19",
+          "quote": "That doesn't mean there aren't exceptions though as the following minigames are safe:",
+          "fetched_by": "threat-analyst via tools/wiki.py",
+          "published": "2026-10-22"
+        },
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-19",
+          "quote": "Hardcore Worlds follows the same death ruleset as [[Group_Ironman_Mode#Hardcore_Group_Ironman|Hardcore Group Ironman]].",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Derived classification: the default for any activity not on the T1 safe list is UNSAFE_DEATH (charter rule). No T1 source names this activity as safe."
+    },
+    {
+      "claim_id": "C-THR-008",
+      "subject": "Agility Pyramid",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "The Agility Pyramid is not on the official safe list, so a death there (falls, desert heat) is an official death on Hardcore Worlds.",
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds Are Coming On November 4th",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410",
+          "revid": 15379410,
+          "retrieved": "2026-11-19",
+          "quote": "That doesn't mean there aren't exceptions though as the following minigames are safe:",
+          "fetched_by": "threat-analyst via tools/wiki.py",
+          "published": "2026-10-22"
+        },
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-19",
+          "quote": "Hardcore Worlds follows the same death ruleset as [[Group_Ironman_Mode#Hardcore_Group_Ironman|Hardcore Group Ironman]].",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Derived classification: the default for any activity not on the T1 safe list is UNSAFE_DEATH (charter rule). No T1 source names this activity as safe."
+    },
+    {
+      "claim_id": "C-THR-009",
+      "subject": "Colossal Wyrm Agility Course",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "The Colossal Wyrm Agility Course is not on the official safe list, so a death there or on the way there is an official death on Hardcore Worlds.",
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds Are Coming On November 4th",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410",
+          "revid": 15379410,
+          "retrieved": "2026-11-19",
+          "quote": "That doesn't mean there aren't exceptions though as the following minigames are safe:",
+          "fetched_by": "threat-analyst via tools/wiki.py",
+          "published": "2026-10-22"
+        },
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-19",
+          "quote": "Hardcore Worlds follows the same death ruleset as [[Group_Ironman_Mode#Hardcore_Group_Ironman|Hardcore Group Ironman]].",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Derived classification: the default for any activity not on the T1 safe list is UNSAFE_DEATH (charter rule). No T1 source names this activity as safe."
+    },
+    {
+      "claim_id": "C-THR-010",
+      "subject": "Dorgesh-Kaan Agility Course",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "The Dorgesh-Kaan Agility Course is not on the official safe list, so a death there is an official death on Hardcore Worlds.",
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds Are Coming On November 4th",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410",
+          "revid": 15379410,
+          "retrieved": "2026-11-19",
+          "quote": "That doesn't mean there aren't exceptions though as the following minigames are safe:",
+          "fetched_by": "threat-analyst via tools/wiki.py",
+          "published": "2026-10-22"
+        },
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-19",
+          "quote": "Hardcore Worlds follows the same death ruleset as [[Group_Ironman_Mode#Hardcore_Group_Ironman|Hardcore Group Ironman]].",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Derived classification: the default for any activity not on the T1 safe list is UNSAFE_DEATH (charter rule). No T1 source names this activity as safe."
+    },
+    {
+      "claim_id": "C-THR-011",
+      "subject": "Wilderness Agility Course",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "A death at the Wilderness Agility Course (to a player killer or to a monster) is an official death on Hardcore Worlds. PvP deaths follow the normal Wilderness item rules, and Jagex says PK deaths make characters 'sit permanently'.",
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds Are Coming On November 4th",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410",
+          "revid": 15379410,
+          "retrieved": "2026-11-19",
+          "quote": "The Wilderness is even more dangerous than ever before, as you'll be making characters sit ''permanently''.",
+          "fetched_by": "threat-analyst via tools/wiki.py",
+          "published": "2026-10-22"
+        },
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-19",
+          "quote": "For most deaths the player will keep 3 items (or 4 if [[Protect Item]] is enabled). As for [[PvP]] deaths, all of the usual rules within the [[Wilderness]] apply.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-012",
+      "subject": "Random events",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "A death inside a Random Event is an official death on Hardcore Worlds (it is on the unsafe list). This matters for long Agility sessions, where random events can appear.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-19",
+          "quote": "* [[Random Event]]",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Group Ironman Mode",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15401984",
+          "revid": 15401984,
+          "retrieved": "2026-11-19",
+          "quote": "* [[Random Event]]",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-013",
+      "subject": "Player-owned house",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "A death inside a player-owned house is an official death on Hardcore Worlds. This matters if the POH pool or POH fairy ring is used between laps.",
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds Are Coming On November 4th",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410",
+          "revid": 15379410,
+          "retrieved": "2026-11-19",
+          "quote": "* Within the Player-owned House ''(PoH)''",
+          "fetched_by": "threat-analyst via tools/wiki.py",
+          "published": "2026-10-22"
+        },
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-19",
+          "quote": "* Death within a [[player-owned house]]",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-014",
+      "subject": "The Fremennik Trials (Agility XP quest)",
+      "attribute": "hw_death_classification",
+      "value": "SAFE_DEATH only in the 4th phase of the Koschei duel; UNSAFE_DEATH elsewhere in the quest",
+      "unit": null,
+      "statement": "In The Fremennik Trials, only a death in the 4th phase of the duel with Koschei the Deathless is safe on Hardcore Worlds. Every other death in the quest is official.",
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds Are Coming On November 4th",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410",
+          "revid": 15379410,
+          "retrieved": "2026-11-19",
+          "quote": "* The Fremennik Trials ''(only the 4th phase of the duel with Koschei the Deathless)''",
+          "fetched_by": "threat-analyst via tools/wiki.py",
+          "published": "2026-10-22"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-015",
+      "subject": "Hardcore Worlds",
+      "attribute": "pvp_minigames",
+      "value": "Bounty Hunter and Last Man Standing disabled at launch",
+      "unit": null,
+      "statement": "Bounty Hunter and Last Man Standing were disabled when Hardcore Worlds launched, but the normal Wilderness stays fully PvP.",
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds Are Coming On November 4th",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410",
+          "revid": 15379410,
+          "retrieved": "2026-11-19",
+          "quote": "Minigames like Bounty Hunter and Last Man Standing will be disabled during the initial release of Hardcore Worlds to not take away from the initial Wilderness hype",
+          "fetched_by": "threat-analyst via tools/wiki.py",
+          "published": "2026-10-22"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Announcement dated 22 Oct 2026, before launch; whether either has since been enabled was not checked."
+    },
+    {
+      "claim_id": "C-THR-016",
+      "subject": "Escape crystal",
+      "attribute": "escape_item_availability",
+      "value": "1 free at start; 10,000 coins each from Death, Rick (Wizards' Tower) or the Mysterious Stranger",
+      "unit": null,
+      "statement": "Every Hardcore Worlds character starts with one escape crystal. More cost 10,000 coins from Death, Rick or the Mysterious Stranger.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-19",
+          "quote": "All players begin with a free [[escape crystal]]. More may be purchased from Death himself, [[Rick (Wizards' Tower)|Rick]] at the [[Wizards' Tower]], or the [[Mysterious Stranger]] in [[Ver Sinhaza]] for {{coins|10000}} each.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds - OUT TODAY",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+          "revid": 15397724,
+          "retrieved": "2026-11-19",
+          "quote": "First is that you can buy [https://oldschool.runescape.wiki/w/Escape_crystal Escape Crystals] from him for 10,000 coins.",
+          "fetched_by": "threat-analyst via tools/wiki.py",
+          "published": "2026-11-04"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-017",
+      "subject": "Escape crystal",
+      "attribute": "disconnect_behaviour",
+      "value": {
+        "auto_activation": "on taking damage (including 0s) after a configured inactivity of 2-300 seconds",
+        "immediate_after_login_or_hop": true
+      },
+      "unit": null,
+      "statement": "An escape crystal can be set to auto-teleport the player when they take damage (including 0s) after 2-300 seconds of inactivity. It also fires at once if the player takes damage just after logging in or hopping worlds.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Escape crystal",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409296",
+          "revid": 15409296,
+          "retrieved": "2026-11-19",
+          "quote": "Additionally, the crystal can be configured to auto-activate upon taking damage (including zeros) after a specified time of inactivity (ranging from 2 to 300 seconds) via the \"Configure\" option",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds Are Coming On November 4th",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410",
+          "revid": 15379410,
+          "retrieved": "2026-11-19",
+          "quote": "which can activate automatically when there's been no input for a while, essentially helping you out of situations where you might have disconnected or your device crashes!",
+          "fetched_by": "threat-analyst via tools/wiki.py",
+          "published": "2026-10-22"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-018",
+      "subject": "Escape crystal",
+      "attribute": "activation_limitation_moving",
+      "value": "does not activate while the player is moving",
+      "unit": null,
+      "statement": "The escape crystal does NOT activate while the player is moving. If the inactivity time is reached mid-movement, it activates only when the player stops. Agility obstacles and run paths are movement.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Escape crystal",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409296",
+          "revid": 15409296,
+          "retrieved": "2026-11-19",
+          "quote": "The crystal will '''NOT''' activate while the player is moving. If the inactive time is reached at any point during movement, the crystal will activate when the player stops moving.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Whether forced movement during an obstacle animation (e.g. a deathslide) counts as 'moving' was not found; treat the crystal as no protection against single-hit obstacle damage."
+    },
+    {
+      "claim_id": "C-THR-019",
+      "subject": "Escape crystal",
+      "attribute": "teleport_restriction",
+      "value": "works up to level 30 Wilderness only",
+      "unit": null,
+      "statement": "Escape crystal teleports work up to level 30 Wilderness. The Wilderness Agility Course (levels 50-56) is above that, so the crystal cannot get the player out there.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Escape crystal",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409296",
+          "revid": 15409296,
+          "retrieved": "2026-11-19",
+          "quote": "It is one of the [[Wilderness#Member_teleportation_up_to_level_30_Wilderness|few items]] whose teleports will work up to level 30 Wilderness, while most other means of [[teleport]]ation will not work above level 20 Wilderness.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-020",
+      "subject": "Escape crystal",
+      "attribute": "status_effect_clearing",
+      "value": "clears poison, burn and other status effects when activated (announced)",
+      "unit": null,
+      "statement": "Jagex announced that escape crystals would clear poison, burn and other status effects when activated.",
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds Are Coming On November 4th",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410",
+          "revid": 15379410,
+          "retrieved": "2026-11-19",
+          "quote": "Finally, we'd let the Crystals clear poison, burn or any other status effects if activated",
+          "fetched_by": "threat-analyst via tools/wiki.py",
+          "published": "2026-10-22"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Worded as an intention ('we'd let') in the pre-launch post. The escape crystal wiki page (rev 15409296) does not list this change, so it is unconfirmed in game."
+    },
+    {
+      "claim_id": "C-THR-021",
+      "subject": "Disconnect during combat",
+      "attribute": "disconnect_behaviour",
+      "value": {
+        "forced_logout_after_seconds": 60
+      },
+      "unit": null,
+      "statement": "If a player disconnects unexpectedly while in combat, the character stays in the game for up to 60 seconds and can keep taking hits before it is logged out.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Logout button",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15034464",
+          "revid": 15034464,
+          "retrieved": "2026-11-19",
+          "quote": "This works because of a 60 second timer before the game forcibly logs you out after an unexpected disconnection during combat.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-022",
+      "subject": "Logout in combat",
+      "attribute": "logout_restriction",
+      "value": {
+        "ticks": 16,
+        "seconds": 9.6
+      },
+      "unit": null,
+      "statement": "A player cannot log out until 16 ticks (9.6 seconds) after they last received a hit.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Logout button",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15034464",
+          "revid": 15034464,
+          "retrieved": "2026-11-19",
+          "quote": "Players may click the logout button at any time, although players in [[combat]] cannot log out until 16 game [[Game tick|ticks]], or 9.6 seconds, after they have last received a hit.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-023",
+      "subject": "Wilderness Agility Course",
+      "attribute": "disconnect_behaviour",
+      "value": "x-logging does not work in singles-plus combat",
+      "unit": null,
+      "statement": "X-logging (closing the client to escape a PKer) does not work in singles-plus combat areas, which include the Wilderness Agility Course.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Logout button",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15034464",
+          "revid": 15034464,
+          "retrieved": "2026-11-19",
+          "quote": "this will not work in [[Singles-plus combat]]",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Singles-plus combat",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15000253",
+          "revid": 15000253,
+          "retrieved": "2026-11-19",
+          "quote": "* the [[Wilderness Agility Course]] ",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-024",
+      "subject": "Owner's character (brief stats)",
+      "attribute": "combat_level",
+      "value": 45,
+      "unit": null,
+      "statement": "From the brief's verified stats (Def 1, HP 48, Prayer 44, Ranged 56, Atk 44, Str 32, Mag 44), the character is combat level 45 (Ranged-based), not ~60.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Combat level",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15383889",
+          "revid": 15383889,
+          "retrieved": "2026-11-19",
+          "quote": "\\text{Final} &= \\lfloor \\text{Base} + \\textrm{max}(\\text{Melee}, \\text{Range}, \\text{Mage}) \\rfloor",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "inputs": "brief.json profile.stats"
+      },
+      "notes": "Computed: base=17.75, range=27.300, melee=24.700, mage=21.450, so floor(45.050) = 45. The dispatch's '~60' is wrong for these stats."
+    },
+    {
+      "claim_id": "C-THR-025",
+      "subject": "Level-based monster aggression",
+      "attribute": "aggressive",
+      "value": "aggressive if player combat level <= 2 x monster level; vs combat 45 every level-based aggressive monster of level 23+ attacks",
+      "unit": null,
+      "statement": "Level-based aggressive monsters attack players whose combat level is at most twice their own. At combat 45, any such monster of level 23 or higher attacks (2 x 23 = 46).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Aggressiveness",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15373608",
+          "revid": 15373608,
+          "retrieved": "2026-11-19",
+          "quote": "When aggressiveness is based on combat level, an aggressive monster will attack a player whose combat level is less than or equal to twice the monster's level.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-026",
+      "subject": "Monster aggression tolerance",
+      "attribute": "aggressive",
+      "value": "aggressive monsters become tolerant after 10 minutes in the area; leaving and returning resets it",
+      "unit": null,
+      "statement": "After 10 minutes near aggressive monsters they become tolerant, but leaving and returning resets this. Most Wilderness monsters are aggressive regardless of level.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Aggressiveness",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15373608",
+          "revid": 15373608,
+          "retrieved": "2026-11-19",
+          "quote": "After a player spends 10 minutes in the vicinity of aggressive monsters, the monsters will become [[tolerant]] of the player and become passive.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Aggressiveness",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15373608",
+          "revid": 15373608,
+          "retrieved": "2026-11-19",
+          "quote": "*Most monsters in the [[Wilderness]] are aggressive regardless of level.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-027",
+      "subject": "Wilderness Agility Course",
+      "attribute": "wilderness_level",
+      "value": "50-56",
+      "unit": null,
+      "statement": "The Wilderness Agility Course lies in level 50-56 Wilderness.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Wilderness Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15351989",
+          "revid": 15351989,
+          "retrieved": "2026-11-19",
+          "quote": "|wilderness = 50-56",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-028",
+      "subject": "Wilderness Agility Course",
+      "attribute": "pvp_exposure",
+      "value": "singles-plus; players can attack even while you are fighting a monster",
+      "unit": null,
+      "statement": "The whole course is dangerous: it is a singles-plus area where player killers can attack at any time, even while you are already in combat with a monster.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Wilderness Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15351989",
+          "revid": 15351989,
+          "retrieved": "2026-11-19",
+          "quote": "'''{{Colour|Red|The entire course is dangerous}}''', taking place in a [[singles-plus combat]] area that allows [[player killers]] to attack at any time, '''even if you are already in combat with a monster'''.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-029",
+      "subject": "Wilderness Agility Course",
+      "attribute": "pvp_attackable_range",
+      "value": {
+        "formula": "own combat level +/- Wilderness level",
+        "range_at_wild_50_for_cb45": "3-95",
+        "range_at_wild_56_for_cb45": "3-101"
+      },
+      "unit": null,
+      "statement": "Players within combat level +/- the Wilderness level can attack. A combat-45 player at the course (level 50-56) can be attacked by any player from combat 3 up to 95-101.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Wilderness",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15405423",
+          "revid": 15405423,
+          "retrieved": "2026-11-19",
+          "quote": "This range is calculated by taking the [[combat]] level and adding or subtracting the current Wilderness level.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      },
+      "notes": "Range computed: 45-50 < 3 (the minimum), 45+50 = 95, 45+56 = 101."
+    },
+    {
+      "claim_id": "C-THR-030",
+      "subject": "Wilderness Agility Course: Ropeswing",
+      "attribute": "failure_damage",
+      "value": {
+        "formula": "floor(current_hp*0.15)+1",
+        "damage_at_48_hp": 8
+      },
+      "unit": "hitpoints",
+      "statement": "Failing the WAC ropeswing deals floor(current_hp*0.15)+1 damage (8 at 48 HP). It scales with current HP, so it cannot kill on its own.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Wilderness Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15351989",
+          "revid": 15351989,
+          "retrieved": "2026-11-19",
+          "quote": "Can be failed, which will send the player down to the [[Wilderness Agility Course Dungeon|dungeon]] below and deal <math>\\left\\lfloor\\text{Current hitpoints}\\times0.15\\right\\rfloor+1</math> damage.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-031",
+      "subject": "Wilderness Agility Course: Stepping stone",
+      "attribute": "failure_damage",
+      "value": {
+        "formula": "floor(current_hp*0.2)+1",
+        "damage_at_48_hp": 10
+      },
+      "unit": "hitpoints",
+      "statement": "Failing the WAC stepping stone deals floor(current_hp*0.2)+1 damage (10 at 48 HP). It scales with current HP, so it cannot kill on its own.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Wilderness Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15351989",
+          "revid": 15351989,
+          "retrieved": "2026-11-19",
+          "quote": "You can only fail on the third stone, which deals <math>\\left\\lfloor\\text{Current hitpoints}\\times0.2\\right\\rfloor+1</math> damage.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-032",
+      "subject": "Wilderness Agility Course: Log balance",
+      "attribute": "failure_damage",
+      "value": {
+        "formula": "floor(current_hp*0.15)+1",
+        "damage_at_48_hp": 8
+      },
+      "unit": "hitpoints",
+      "statement": "Failing the WAC log balance deals floor(current_hp*0.15)+1 damage (8 at 48 HP). It scales with current HP, so it cannot kill on its own.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Wilderness Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15351989",
+          "revid": 15351989,
+          "retrieved": "2026-11-19",
+          "quote": "Can be failed, which will send the player down to the dungeon below and deal <math>\\left\\lfloor\\text{Current hitpoints}\\times0.15\\right\\rfloor+1</math> damage.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-033",
+      "subject": "Wilderness Agility Course Dungeon",
+      "attribute": "aggressive_npcs",
+      "value": {
+        "npc": "Skeleton",
+        "combat": 25,
+        "max_hit": 4,
+        "count": 8,
+        "aggressive": true
+      },
+      "unit": null,
+      "statement": "A failed ropeswing or log balance drops the player into the dungeon below (level 53-56 Wilderness), which holds eight level 25 skeletons (max hit 4, aggressive).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Wilderness Agility Course Dungeon",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=14856301",
+          "revid": 14856301,
+          "retrieved": "2026-11-19",
+          "quote": "It covers level 53 to 56 Wilderness. The dungeon entrance is a ladder in the north-east corner of the Agility course, which is past the rope swing and before the stepping stones. The dungeon contains eight [[skeleton]]s and four [[bones|bone]] [[item spawn|spawns]].",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Skeleton",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15391775",
+          "revid": 15391775,
+          "retrieved": "2026-11-19",
+          "quote": "|location = [[Wilderness Agility Course Dungeon]]\n|levels = 25",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Skeleton",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15391775",
+          "revid": 15391775,
+          "retrieved": "2026-11-19",
+          "quote": "|max hit = 4",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "medium",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      },
+      "notes": "Max hit 4 / aggressive taken from the level 25 Skeleton infobox (rev 15391775), which the dungeon's 'dropversion = Armed' LocLine points to."
+    },
+    {
+      "claim_id": "C-THR-034",
+      "subject": "Skeleton (Wilderness Agility Course)",
+      "attribute": "max_hit",
+      "value": {
+        "combat": 18,
+        "max_hit": 1,
+        "aggressive": true,
+        "never_tolerant": true
+      },
+      "unit": null,
+      "statement": "Skeletons on the WAC surface are level 18, max hit 1, aggressive, and never become tolerant.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Skeleton (Wilderness Agility Course)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15216091",
+          "revid": 15216091,
+          "retrieved": "2026-11-19",
+          "quote": "|max hit = 1",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Skeleton (Wilderness Agility Course)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15216091",
+          "revid": 15216091,
+          "retrieved": "2026-11-19",
+          "quote": "They never lose [[aggressiveness]] regardless of how much time is spent in their tolerance region.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-035",
+      "subject": "Wilderness (above level 20/30)",
+      "attribute": "teleport_restriction",
+      "value": {
+        "normal_teleports_max_wilderness": 20,
+        "members_exceptions_max_wilderness": 30,
+        "teleblock_minutes": 5
+      },
+      "unit": null,
+      "statement": "Teleports do not work above level 20 Wilderness (a few members' items to level 30). Teleport Block stops nearly all teleports for 5 minutes (2.5 with Protect from Magic).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Wilderness",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15405423",
+          "revid": 15405423,
+          "retrieved": "2026-11-19",
+          "quote": "[[Teleportation|Teleports]] will not work above level 20 Wilderness, except for those methods listed below, which may be used by [[members]] up to level 30 Wilderness. However, the [[Teleport Block]] spell will prevent using nearly any means of teleportation for five minutes, or two and a half minutes if it is successfully cast on a player with [[Protect from Magic]] active.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-036",
+      "subject": "Wilderness (above level 30)",
+      "attribute": "escape_routes",
+      "value": [
+        "Deserted Keep lever",
+        "KBD lair lever",
+        "Mage Arena lever"
+      ],
+      "unit": null,
+      "statement": "Above level 30 Wilderness only the Deserted Keep, KBD and Mage Arena levers leave the Wilderness directly; PKers can still teleblock below 30.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Wilderness",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15405423",
+          "revid": 15405423,
+          "retrieved": "2026-11-19",
+          "quote": "However, nothing except members' [[Deserted Keep#Teleport lever|Deserted Keep]], [[King Black Dragon Lair|KBD]] and [[Mage Arena]] levers allow directly leaving the Wilderness above level 30, and pk-ers may tele-block the player below level 30.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-037",
+      "subject": "Ice plateau teleport (travel to WAC)",
+      "attribute": "wilderness_level",
+      "value": 53,
+      "unit": null,
+      "statement": "The usual WAC travel, the Ice Plateau teleport tablet, lands the player in level 53 Wilderness.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Ice plateau teleport (tablet)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15189877",
+          "revid": 15189877,
+          "retrieved": "2026-11-19",
+          "quote": "|examine = A teleport to the Ice Plateau in level 53 Wilderness.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-038",
+      "subject": "Ice spider (Frozen Waste Plateau, WAC travel)",
+      "attribute": "max_hit",
+      "value": {
+        "combat": 61,
+        "max_hit": 6,
+        "aggressive": true
+      },
+      "unit": null,
+      "statement": "The members' part of the Ice Plateau (Ice Plateau tablet landing) has ice spiders: level 61, max hit 6, aggressive.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Frozen Waste Plateau",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15275973",
+          "revid": 15275973,
+          "retrieved": "2026-11-19",
+          "quote": "In the member's area, [[ice spider]]s can also be found.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Ice spider",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15231530",
+          "revid": 15231530,
+          "retrieved": "2026-11-19",
+          "quote": "|combat = 61",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Ice spider",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15231530",
+          "revid": 15231530,
+          "retrieved": "2026-11-19",
+          "quote": "|max hit = 6",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-039",
+      "subject": "Wilderness Agility Course",
+      "attribute": "disconnect_behaviour",
+      "value": "logging out inside the course keeps the 150k fee but removes 10 laps from the streak; dying or leaving loses the fee",
+      "unit": null,
+      "statement": "The 150,000-coin loot fee is lost every time the player dies or leaves, but not when they log out inside the course. Logging out removes 10 laps from the streak.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Wilderness Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15351989",
+          "revid": 15351989,
+          "retrieved": "2026-11-19",
+          "quote": "The fee is 150,000 coins, which is lost '''every time''' a player dies or leaves the course, but is not removed if they log out and remain within the course.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Wilderness Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15351989",
+          "revid": 15351989,
+          "retrieved": "2026-11-19",
+          "quote": "Even though the coins are not lost when logging out inside the course, doing so will remove 10 laps from the reward lap counter.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-040",
+      "subject": "Ape Atoll Agility Course",
+      "attribute": "access_requirement",
+      "value": "Agility 48 (unboostable), Monkey Madness I chapter 2, ninja or Kruk greegree worn",
+      "unit": null,
+      "statement": "The course needs 48 Agility (cannot be boosted), Monkey Madness I up to chapter 2, and a worn ninja or Kruk greegree. Without one, every obstacle fails and deals damage.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Ape Atoll Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15372987",
+          "revid": 15372987,
+          "retrieved": "2026-11-19",
+          "quote": "available to players with level 48 [[Agility]] (cannot be [[Temporary skill boost|boosted]]). Access to this course requires partial completion of [[Monkey Madness I]], up to Chapter 2.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Ape Atoll Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15372987",
+          "revid": 15372987,
+          "retrieved": "2026-11-19",
+          "quote": "Attempting to complete any obstacle on the course without a ninja or Kruk greegree equipped will result in the player automatically failing the course and taking a small amount of damage.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-041",
+      "subject": "Ape Atoll Agility Course",
+      "attribute": "failure_damage",
+      "value": "small, exact amount not documented",
+      "unit": null,
+      "statement": "All obstacles except the stepping stones and the last tropical tree can be failed for 'small amounts' of damage. The wiki gives no exact figure. No failures at 75 Agility.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Ape Atoll Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15372987",
+          "revid": 15372987,
+          "retrieved": "2026-11-19",
+          "quote": "All of the obstacles except for the [[Stepping stone (Ape Atoll Agility Course)|stepping stones]] and the last [[Tropical tree (Ape Atoll Agility Course)|tropical tree]] can be failed by the player, resulting in small amounts of damage.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Ape Atoll Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15372987",
+          "revid": 15372987,
+          "retrieved": "2026-11-19",
+          "quote": "because the player will never fail an obstacle at this level",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim_id": "C-THR-042",
+      "subject": "Ape Atoll",
+      "attribute": "aggressive_npcs",
+      "value": "most inhabitants aggressive to players not in greegree form until Monkey Madness II; being spotted can mean being knocked out and jailed",
+      "unit": null,
+      "statement": "Without a greegree, creatures across Ape Atoll are aggressive, and being spotted by locals can get the player knocked out and jailed in Marim. MM2 makes surface inhabitants tolerant; monkey zombies and skeletal apes stay aggressive.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Ape Atoll",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15317976",
+          "revid": 15317976,
+          "retrieved": "2026-11-19",
+          "quote": "Players who have not taken the form of a monkey using a [[greegree]] will find themselves the target of [[aggressive]] creatures throughout the island. Being spotted by the monkey locals or interacting with them may result in the player being knocked out and sent to the prison in Marim.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-043",
+      "subject": "Monkey Archer (Ape Atoll)",
+      "attribute": "max_hit",
+      "value": {
+        "combat": 86,
+        "max_hit": 20,
+        "style": "Ranged",
+        "aggressive": "Yes unless holding a monkey greegree"
+      },
+      "unit": null,
+      "statement": "Ninja monkey archers on Ape Atoll are level 86, max hit 20 (Ranged), aggressive unless the player holds a greegree.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Monkey Archer",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15199637",
+          "revid": 15199637,
+          "retrieved": "2026-11-19",
+          "quote": "|max hit = 20",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Monkey Archer",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15199637",
+          "revid": 15199637,
+          "retrieved": "2026-11-19",
+          "quote": "|aggressive = Yes (unless the player is holding a [[monkey greegree]])",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-044",
+      "subject": "Monkey Guard (ninja) (Ape Atoll)",
+      "attribute": "max_hit",
+      "value": {
+        "combat": 149,
+        "max_hit": 14,
+        "aggressive": true
+      },
+      "unit": null,
+      "statement": "Ninja monkey guards are level 149, max hit 14, aggressive.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Monkey Guard (ninja)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15199678",
+          "revid": 15199678,
+          "retrieved": "2026-11-19",
+          "quote": "|combat = 149",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Monkey Guard (ninja)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15199678",
+          "revid": 15199678,
+          "retrieved": "2026-11-19",
+          "quote": "|max hit = 14",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-045",
+      "subject": "Jungle spider (Ape Atoll)",
+      "attribute": "poison",
+      "value": {
+        "combat": 37,
+        "max_hit": 10,
+        "poison_start": 1,
+        "aggressive": "without greegree, before MM2"
+      },
+      "unit": null,
+      "statement": "Ape Atoll jungle spiders are level 37, max hit 10, poison starting at 1, aggressive without a greegree before MM2.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Jungle spider (Ape Atoll)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15322116",
+          "revid": 15322116,
+          "retrieved": "2026-11-19",
+          "quote": "|poisonous = Yes (1)",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Jungle spider (Ape Atoll)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15322116",
+          "revid": 15322116,
+          "retrieved": "2026-11-19",
+          "quote": "|max hit = 10",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-046",
+      "subject": "Snake (Ape Atoll)",
+      "attribute": "poison",
+      "value": {
+        "combat": 24,
+        "max_hit": 10,
+        "poison_start": 2,
+        "aggressive": "without greegree, before MM2"
+      },
+      "unit": null,
+      "statement": "Ape Atoll jungle snakes are level 24, max hit 10, poison starting at 2, aggressive without a greegree before MM2.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Snake (Ape Atoll)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406488",
+          "revid": 15406488,
+          "retrieved": "2026-11-19",
+          "quote": "|poisonous = Yes (2)",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Snake (Ape Atoll)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406488",
+          "revid": 15406488,
+          "retrieved": "2026-11-19",
+          "quote": "|max hit = 10",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-047",
+      "subject": "Monkey Madness I (unlock quest for Ape Atoll course)",
+      "attribute": "quest_fight_max_hit",
+      "value": {
+        "npc": "Jungle Demon",
+        "combat": 195,
+        "max_hit": 32,
+        "styles": [
+          "Slash",
+          "Magic"
+        ]
+      },
+      "unit": null,
+      "statement": "Monkey Madness I requires defeating the level 195 Jungle Demon (max hit 32, slash and magic). That is two-thirds of 48 HP in one hit.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Monkey Madness I",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374574",
+          "revid": 15374574,
+          "retrieved": "2026-11-19",
+          "quote": "* The ability to defeat a level 195 [[Jungle Demon]]",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Jungle Demon",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15315103",
+          "revid": 15315103,
+          "retrieved": "2026-11-19",
+          "quote": "|max hit = 32",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-048",
+      "subject": "Brimhaven Agility Arena (all traps)",
+      "attribute": "failure_damage",
+      "value": {
+        "formula": "floor(current_hp*5/100)+2",
+        "damage_at_48_hp": 4
+      },
+      "unit": "hitpoints",
+      "statement": "Brimhaven Arena traps (floor spikes, pressure pads, spinning blades, darts, log balance, saw blades) deal floor(HP x 5/100) + 2 damage, 4 at 48 HP. It scales with current HP.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Floor spikes (Brimhaven Agility Arena)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15385429",
+          "revid": 15385429,
+          "retrieved": "2026-11-19",
+          "quote": "<math>\\left\\lfloor \\frac{ \\text{Hitpoints} \\times 5}{100} \\right\\rfloor + 2</math>",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Ticket Dispenser (darts)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15385421",
+          "revid": 15385421,
+          "retrieved": "2026-11-19",
+          "quote": "<math>\\left\\lfloor \\frac{ \\text{Hitpoints} \\times 5}{100} \\right\\rfloor + 2</math>",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-049",
+      "subject": "Brimhaven Agility Arena: darts",
+      "attribute": "stat_drain",
+      "value": {
+        "agility_drain": 2
+      },
+      "unit": null,
+      "statement": "Failing the dart trap also lowers Agility by 2 (no poison is mentioned), which can push a boosted player below an obstacle's level.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Ticket Dispenser (darts)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15385421",
+          "revid": 15385421,
+          "retrieved": "2026-11-19",
+          "quote": "Failing to dodge the obstacle will cause the player to take damage, and will lower their Agility by 2.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-050",
+      "subject": "Brimhaven Agility Arena: saw blade",
+      "attribute": "failure_damage",
+      "value": "can hit even at 99 Agility",
+      "unit": null,
+      "statement": "Saw blades hit a player standing or walking on the blade's tile even at 99 Agility.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Blade (Brimhaven Agility Arena)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15385424",
+          "revid": 15385424,
+          "retrieved": "2026-11-19",
+          "quote": "Players can take damage when standing or walking on the same tile as the incoming blade, even at 99 Agility.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-051",
+      "subject": "Brimhaven Agility Arena",
+      "attribute": "disconnect_behaviour",
+      "value": "logging out ejects the player; the 200-coin fee must be paid again after a 1-minute wait",
+      "unit": null,
+      "statement": "Logging out in the arena throws the player out, and the fee has to be paid again after waiting at least a minute.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Brimhaven Agility Arena",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15371976",
+          "revid": 15371976,
+          "retrieved": "2026-11-19",
+          "quote": "Logging out while in the arena will throw you out and require you to pay the fee again. You will need to wait at least a minute before being allowed to re-enter.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-052",
+      "subject": "Agility Pyramid",
+      "attribute": "failure_damage",
+      "value": {
+        "max": 10,
+        "per_obstacle": {
+          "stone block": 6,
+          "low wall": 4,
+          "ledge": 10,
+          "pyramid block": 8,
+          "plank": 10,
+          "gap (cross)": 8,
+          "gap (jump)": 8
+        }
+      },
+      "unit": "hitpoints",
+      "statement": "Pyramid falls deal fixed damage up to 10 (ledge and plank 10, gaps and moving blocks 8, stone block 6, low wall 4). Moving pyramid blocks can push the player off at any level.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Agility Pyramid",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402952",
+          "revid": 15402952,
+          "retrieved": "2026-11-19",
+          "quote": "Upon failure, the Agility Pyramid is capable of hitting a player for 10 damage, so [[Ironman Mode#Hardcore|hardcore ironmen]] should be wary.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Agility Pyramid",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402952",
+          "revid": 15402952,
+          "retrieved": "2026-11-19",
+          "quote": "If incorrectly timed, players will be pushed down to the level below and hit for 8 hitpoints of damage.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-053",
+      "subject": "Agility Pyramid",
+      "attribute": "failure_level_threshold",
+      "value": 75,
+      "unit": "Agility level",
+      "statement": "No Pyramid obstacle can be failed at 75 Agility (moving blocks can still push by timing).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Agility Pyramid",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402952",
+          "revid": 15402952,
+          "retrieved": "2026-11-19",
+          "quote": "* At level 75 Agility, it is impossible to fail any obstacle.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-054",
+      "subject": "Kharidian Desert (Agility Pyramid, desert travel)",
+      "attribute": "environmental_damage",
+      "value": {
+        "damage": "1-10",
+        "interval_seconds": "24-132 (90 default)",
+        "towns_exempt": true
+      },
+      "unit": null,
+      "statement": "Outside towns, desert heat deals 1-10 damage every 24-132 seconds unless a waterskin dose is drunk. Towns such as Pollnivneach are exempt.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Desert heat",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15292841",
+          "revid": 15292841,
+          "retrieved": "2026-11-19",
+          "quote": "For every 24-132 seconds (depending on armour worn) that a player spends in the desert, they will take 1-10 damage.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Desert heat",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15292841",
+          "revid": 15292841,
+          "retrieved": "2026-11-19",
+          "quote": "Players are not affected by desert heat while they are within the boundaries of towns or while a dialogue box is open.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-055",
+      "subject": "Hallowed Sepulchre",
+      "attribute": "access_requirement",
+      "value": "Sins of the Father completed; Agility 52 (floors 2-5: 62/72/77/87, boostable)",
+      "unit": null,
+      "statement": "The Sepulchre needs Sins of the Father, which needs A Taste of Hope and Darkness of Hallowvale (not in the owner's quest list), and 52 Agility.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Hallowed Sepulchre",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544",
+          "revid": 15387544,
+          "retrieved": "2026-11-19",
+          "quote": "**Entering the Sepulchre requires completion of [[Sins of the Father]]",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Sins of the Father",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15380480",
+          "revid": 15380480,
+          "retrieved": "2026-11-19",
+          "quote": "**[[A Taste of Hope]]",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-056",
+      "subject": "Hallowed Sepulchre",
+      "attribute": "recommended_hitpoints",
+      "value": 70,
+      "unit": "Hitpoints",
+      "statement": "The wiki recommends 70+ Hitpoints to withstand trap damage. The owner has 48.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Hallowed Sepulchre",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544",
+          "revid": 15387544,
+          "retrieved": "2026-11-19",
+          "quote": "* (Recommended) {{SCP|Hitpoints|70+|link=yes}} to withstand damage from traps.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-057",
+      "subject": "Hallowed Sepulchre",
+      "attribute": "failure_damage",
+      "value": "small per trap hit, per-floor values not documented",
+      "unit": null,
+      "statement": "Running into a trap (wizard fire, knight swords, crossbow bolts) usually teleports the player back before the trap and deals 'a small amount of damage' unless a hallowed ring is worn. The wiki gives no per-floor numbers.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Hallowed Sepulchre",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544",
+          "revid": 15387544,
+          "retrieved": "2026-11-19",
+          "quote": "This deals a small amount of damage unless the [[hallowed ring]] is equipped.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Damage per floor was asked for but is not documented on the pinned wiki pages (Sepulchre, statue pages, Strategies). See gaps."
+    },
+    {
+      "claim_id": "C-THR-058",
+      "subject": "Hallowed Sepulchre: priest statues (floors 4-5)",
+      "attribute": "stun",
+      "value": "lightning stuns briefly, leaving the player open to other traps",
+      "unit": null,
+      "statement": "On floors 4-5, priest statues' lightning stuns the player instead of dealing damage, leaving them helpless against other traps.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Hallowed Sepulchre",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544",
+          "revid": 15387544,
+          "retrieved": "2026-11-19",
+          "quote": "* [[Priest statue]] - Statues that summon lightning in a 3x3 chequerboard pattern which stuns the player briefly instead of inflicting damage, however this leaves the player immobile and vulnerable to other traps.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-059",
+      "subject": "Hallowed Sepulchre: coffins",
+      "attribute": "poison",
+      "value": "failing to loot a coffin poisons the player (2-damage poison per Strategies)",
+      "unit": null,
+      "statement": "A failed coffin loot (66 Thieving needed) poisons the player. The Strategies page calls it 2-damage poison.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Coffin (Hallowed Sepulchre)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15287308",
+          "revid": 15287308,
+          "retrieved": "2026-11-19",
+          "quote": "When failing to loot the coffin, the player will be [[poison]]ed.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Hallowed Sepulchre/Strategies",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375056",
+          "revid": 15375056,
+          "retrieved": "2026-11-19",
+          "quote": "2-damage poison consumes no prayer points to cure.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim_id": "C-THR-060",
+      "subject": "Hallowed ring",
+      "attribute": "damage_mitigation",
+      "value": "negates all Sepulchre trap damage; 250 hallowed marks",
+      "unit": null,
+      "statement": "The hallowed ring (250 hallowed marks) negates all damage from Sepulchre traps.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Hallowed ring",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15189754",
+          "revid": 15189754,
+          "retrieved": "2026-11-19",
+          "quote": "It can be purchased from the [[Mysterious Hallowed Goods]] shop for 250 [[hallowed mark]]s. When equipped, it negates all damage taken from failing environmental obstacles",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-061",
+      "subject": "Hallowed Sepulchre",
+      "attribute": "death_item_handling",
+      "value": "items held by the Mysterious Stranger in the lobby (ordinary death, official on HW)",
+      "unit": null,
+      "statement": "If the player dies in the Sepulchre, the Mysterious Stranger holds their items. It is an ordinary death, not a safe minigame death.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Hallowed Sepulchre",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544",
+          "revid": 15387544,
+          "retrieved": "2026-11-19",
+          "quote": "If the player dies inside the Hallowed Sepulchre, their items will be held by the [[Mysterious Stranger (Hallowed Sepulchre)|Mysterious Stranger]] in the lobby.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-062",
+      "subject": "Vyrewatch Sentinel (Darkmeyer, Sepulchre travel)",
+      "attribute": "max_hit",
+      "value": {
+        "combat": 151,
+        "max_hit": 17,
+        "aggressive": "Yes without vyre noble robes"
+      },
+      "unit": null,
+      "statement": "Vyrewatch Sentinels in Darkmeyer are level 151, max hit 17, and aggressive unless the player wears vyre noble robes.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Vyrewatch Sentinel",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15367082",
+          "revid": 15367082,
+          "retrieved": "2026-11-19",
+          "quote": "|max hit = 17",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Vyrewatch Sentinel",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15367082",
+          "revid": 15367082,
+          "retrieved": "2026-11-19",
+          "quote": "|aggressive = Yes (without [[Vyre_noble_clothing|vyre noble robes]])",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-063",
+      "subject": "Sins of the Father (Sepulchre unlock)",
+      "attribute": "quest_fight_max_hit",
+      "value": {
+        "npc": "Vanstrom Klause (vampyre form)",
+        "combat": 459,
+        "max_hit": 24,
+        "style": "Magic"
+      },
+      "unit": null,
+      "statement": "Sins of the Father ends with Vanstrom Klause (level 459, max hit 24 standard, Magic). The quest recommends combat 95.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Sins of the Father",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15380480",
+          "revid": 15380480,
+          "retrieved": "2026-11-19",
+          "quote": "*[[Vanstrom Klause]] (level 459)",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Vanstrom Klause",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403542",
+          "revid": 15403542,
+          "retrieved": "2026-11-19",
+          "quote": "|max hit = 24 (Standard)",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Sins of the Father",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15380480",
+          "revid": 15380480,
+          "retrieved": "2026-11-19",
+          "quote": "* {{SCP|Combat|95|link=yes}}",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-064",
+      "subject": "Sins of the Father (Sepulchre unlock)",
+      "attribute": "quest_fight_max_hit",
+      "value": {
+        "npc": "Damien Leucurte",
+        "combat": 204,
+        "max_hit": 20,
+        "poisonous": true
+      },
+      "unit": null,
+      "statement": "Sins of the Father also requires killing Damien Leucurte (level 204, max hit 20, poisonous).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Sins of the Father",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15380480",
+          "revid": 15380480,
+          "retrieved": "2026-11-19",
+          "quote": "*[[Damien Leucurte]] (level 204)",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Damien Leucurte",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374322",
+          "revid": 15374322,
+          "retrieved": "2026-11-19",
+          "quote": "|max hit = 20",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-065",
+      "subject": "Sins of the Father (Sepulchre unlock)",
+      "attribute": "quest_fight_max_hit",
+      "value": {
+        "npc": "Kroy",
+        "combat": 133,
+        "max_hit": 15
+      },
+      "unit": null,
+      "statement": "Sins of the Father requires killing Kroy (level 133, max hit 15).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Sins of the Father",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15380480",
+          "revid": 15380480,
+          "retrieved": "2026-11-19",
+          "quote": "|kills = *[[Kroy]] (level 133)",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Kroy",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15344384",
+          "revid": 15344384,
+          "retrieved": "2026-11-19",
+          "quote": "|max hit = 15",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-066",
+      "subject": "Werewolf Agility Course",
+      "attribute": "access_requirement",
+      "value": "Agility 60, Creature of Fenkenstrain, Ring of Charos worn",
+      "unit": null,
+      "statement": "The Werewolf course needs 60 Agility, Creature of Fenkenstrain (not in the owner's quest list) and a worn Ring of Charos.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Werewolf Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15315234",
+          "revid": 15315234,
+          "retrieved": "2026-11-19",
+          "quote": "available to players with level 60 [[Agility]]. Access to this course requires completion of [[Creature of Fenkenstrain]].",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-067",
+      "subject": "Werewolf Agility Course: deathslide",
+      "attribute": "failure_damage",
+      "value": "upwards of 30 damage, does not scale with Hitpoints; can exceed current HP",
+      "unit": "hitpoints",
+      "statement": "A deathslide fall can deal over 30 damage. It does not scale with HP, and it is the only Agility obstacle that can deal more damage than the player's current HP, so a fall at 30 or less HP can kill.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Werewolf Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15315234",
+          "revid": 15315234,
+          "retrieved": "2026-11-19",
+          "quote": "A fall can deal upwards of 30 damage and does NOT scale with [[Hitpoints]], so players with low HP are at risk of [[death]].",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Werewolf Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15315234",
+          "revid": 15315234,
+          "retrieved": "2026-11-19",
+          "quote": "*The deathslide is the only agility obstacle that can do damage past the player's [[Hitpoints]].",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-068",
+      "subject": "Werewolf Agility Course: deathslide",
+      "attribute": "failure_level_threshold",
+      "value": "never fails with Agility 80, Strength 80 and weight <= 2 kg; success also depends on weight (best at 0 kg); no head-slot item allowed",
+      "unit": null,
+      "statement": "Deathslide success depends on Agility, Strength and weight (best at 0 kg). It never fails only at 80 Agility, 80 Strength and 2 kg or less, which the owner (Str 32) is far from.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Werewolf Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15315234",
+          "revid": 15315234,
+          "retrieved": "2026-11-19",
+          "quote": "With level 80 in Agility and [[Strength]] and a weight of 2 kg or lower, this obstacle will never be failed.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Werewolf Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15315234",
+          "revid": 15315234,
+          "retrieved": "2026-11-19",
+          "quote": "*No item may be worn in the [[head slot]] when attempting the deathslide.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-069",
+      "subject": "Werewolf Agility Course",
+      "attribute": "disconnect_behaviour",
+      "value": "may be placed back at the entrance (inside the trapdoor); stick removed",
+      "unit": null,
+      "statement": "On logout the player may be put back at the entrance inside the trapdoor, and any stick is removed.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Werewolf Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15315234",
+          "revid": 15315234,
+          "retrieved": "2026-11-19",
+          "quote": "Upon logout, the player may be placed back at the entrance (through the trapdoor, not outside) and the stick will disappear from the inventory if the stick was previously obtained.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-070",
+      "subject": "Creature of Fenkenstrain (Werewolf unlock)",
+      "attribute": "quest_fight_max_hit",
+      "value": "must defeat a level 51 monster and run past level 72 monsters",
+      "unit": null,
+      "statement": "Creature of Fenkenstrain requires defeating a level 51 monster and running past level 72 monsters.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Creature of Fenkenstrain",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15385731",
+          "revid": 15385731,
+          "retrieved": "2026-11-19",
+          "quote": "* Able to defeat a level 51 monster and run past level 72 monsters",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "The individual NPCs' max hits were not looked up."
+    },
+    {
+      "claim_id": "C-THR-071",
+      "subject": "Canifis Rooftop Course",
+      "attribute": "failure_level_threshold",
+      "value": "one failable obstacle (gap 3); no failures from 64 Agility; damage not documented",
+      "unit": null,
+      "statement": "Canifis has one failable obstacle (gap 3, tannery to general store), which stops failing at 64 Agility. The wiki gives no damage figure.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Canifis Rooftop Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374436",
+          "revid": 15374436,
+          "retrieved": "2026-11-19",
+          "quote": "There is 1 failable obstacle in this agility course, located at the jump between the tanner and the general store (Jump Gap 3).",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-072",
+      "subject": "Ghoul (Canifis surroundings)",
+      "attribute": "max_hit",
+      "value": {
+        "combat": 42,
+        "max_hit": 5,
+        "aggressive": true
+      },
+      "unit": null,
+      "statement": "Ghouls north of Mort Myre and in the Salve graveyard (next to the Salve Graveyard Teleport landing west of Canifis) are level 42, max hit 5, aggressive. At combat 45 they attack (2 x 42 = 84).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Ghoul",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406499",
+          "revid": 15406499,
+          "retrieved": "2026-11-19",
+          "quote": "|combat = 42",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Ghoul",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406499",
+          "revid": 15406499,
+          "retrieved": "2026-11-19",
+          "quote": "|max hit = 5",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Canifis",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397565",
+          "revid": 15397565,
+          "retrieved": "2026-11-19",
+          "quote": "* The northern [[ghoul]] grounds features 12 ghouls, great for [[Slayer tasks]]. The Salve graveyard is just north of the swamp, with another 10 ghouls walking it.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-073",
+      "subject": "Canifis citizens",
+      "attribute": "aggressive",
+      "value": "turn into level 88 werewolves if attacked",
+      "unit": null,
+      "statement": "Canifis citizens turn into level 88 werewolves if attacked (avoid misclicks).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Canifis",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397565",
+          "revid": 15397565,
+          "retrieved": "2026-11-19",
+          "quote": "If you attack any of the human citizens of Canifis, they turn into level 88 [[Werewolf|werewolves]].",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-074",
+      "subject": "Seers' Village Rooftop Course",
+      "attribute": "failure_level_threshold",
+      "value": "two failable obstacles (gap 1, tightrope) until 79 Agility; damage not documented",
+      "unit": null,
+      "statement": "Seers' has two failable obstacles (gap 1 and tightrope), which stop failing at 79 Agility. The wiki gives no damage figure.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Seers' Village Rooftop Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15356820",
+          "revid": 15356820,
+          "retrieved": "2026-11-19",
+          "quote": "There are two locations where the player may fail; Jump Gap 1 and Tightrope Walk. These obstacles will stop failing at 79 Agility.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-075",
+      "subject": "Pollnivneach Rooftop Course: market stall",
+      "attribute": "failure_damage",
+      "value": {
+        "formula": "floor(current_hp/17 + 2)",
+        "damage_at_48_hp": 4
+      },
+      "unit": "hitpoints",
+      "statement": "The market stall is the only failable obstacle at Pollnivneach. A fall deals floor(HP/17 + 2) damage, 4 at 48 HP. No failures from 85 Agility.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Market stall (Pollnivneach Rooftop Course)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15334135",
+          "revid": 15334135,
+          "retrieved": "2026-11-19",
+          "quote": "This is the only obstacle a player may fail in the course, doing so inflicts <math>\\left\\lfloor \\frac{1}{17} \\text{Hitpoints} + 2\\right\\rfloor</math> fall damage based on your current [[Hitpoints]].",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Pollnivneach Rooftop Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375189",
+          "revid": 15375189,
+          "retrieved": "2026-11-19",
+          "quote": "At level 85 Agility, it becomes impossible to fail any part of the course.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-076",
+      "subject": "Pollnivneach Rooftop Course",
+      "attribute": "environmental_damage",
+      "value": "no desert heat in Pollnivneach",
+      "unit": null,
+      "statement": "Pollnivneach is not affected by desert heat, so no waterskins are needed on the course.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Pollnivneach Rooftop Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375189",
+          "revid": 15375189,
+          "retrieved": "2026-11-19",
+          "quote": "Pollnivneach is not affected by [[desert heat]], so no waterskins are required.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-077",
+      "subject": "Pollnivneach town NPCs",
+      "attribute": "aggressive",
+      "value": {
+        "menaphite_thugs": "non-aggressive, level 55",
+        "bandits": "non-aggressive, levels 41 and 56",
+        "jackals": "aggressive only to combat <= 42"
+      },
+      "unit": null,
+      "statement": "Pollnivneach's Menaphite thugs (level 55) and bandits (41/56) are non-aggressive. The jackals south-west of town attack only combat 42 or lower, so not the owner's combat-45 character.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Pollnivneach",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402250",
+          "revid": 15402250,
+          "retrieved": "2026-11-19",
+          "quote": "They are non-aggressive and populate the southern part of town. With [[combat level]]s of 55, they are slightly dangerous to lower levelled players.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Pollnivneach",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402250",
+          "revid": 15402250,
+          "retrieved": "2026-11-19",
+          "quote": "These are aggressive to players with a combat level of 42 or less and can wander into areas affected by [[Desert heat]].",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-078",
+      "subject": "Crocodile (south of Pollnivneach)",
+      "attribute": "max_hit",
+      "value": {
+        "combat": 63,
+        "max_hit": 6,
+        "aggressive": true
+      },
+      "unit": null,
+      "statement": "Crocodiles south of Pollnivneach (in the desert-heat area) are level 63, max hit 6, aggressive.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Pollnivneach",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402250",
+          "revid": 15402250,
+          "retrieved": "2026-11-19",
+          "quote": "*[[Crocodile]]s - Crocodiles populate the area south of town and may be dangerous to lower levelled players as their combat level is 63. They are aggressive.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Crocodile",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409452",
+          "revid": 15409452,
+          "retrieved": "2026-11-19",
+          "quote": "|max hit = 6",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-079",
+      "subject": "Rellekka Rooftop Course: first tightrope",
+      "attribute": "failure_damage",
+      "value": {
+        "formula": "floor(current_hp*0.10)",
+        "damage_at_48_hp": 4
+      },
+      "unit": "hitpoints",
+      "statement": "The first Rellekka tightrope can be failed for 10% of current HP, rounded down (4 at 48 HP). No failures from 85 Agility.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Tightrope (Rellekka Rooftop Course)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15359413",
+          "revid": 15359413,
+          "retrieved": "2026-11-19",
+          "quote": "The first tightrope can be failed, inflicting damage equal to 10% of the player's current hitpoints, rounded down.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Rellekka Rooftop Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15319532",
+          "revid": 15319532,
+          "retrieved": "2026-11-19",
+          "quote": "At level 85 Agility, players stop failing at the first tightrope.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-080",
+      "subject": "Ardougne Rooftop Course",
+      "attribute": "failure_level_threshold",
+      "value": "gaps 1 and 2 failable until 95 Agility; damage not documented",
+      "unit": null,
+      "statement": "On the Ardougne course, gaps 1 and 2 can be failed, and failures stop at 95 Agility. The wiki gives no damage figure.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Gap (Ardougne Rooftop Course)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15334145",
+          "revid": 15334145,
+          "retrieved": "2026-11-19",
+          "quote": "You can fail to pass gap one and two.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Ardougne Rooftop Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15352456",
+          "revid": 15352456,
+          "retrieved": "2026-11-19",
+          "quote": "Players stop failing this course at 95 [[Agility]].",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-081",
+      "subject": "Dorgesh-Kaan Agility Course",
+      "attribute": "failure_damage",
+      "value": "about 10 damage on a fall; tightrope and monkeybar ladder can fail even at 99",
+      "unit": "hitpoints",
+      "statement": "Dorgesh-Kaan's tightrope cable and monkeybar ladder can be failed even at 99 Agility. A fall drops the player a level for 'about 10' damage. Access needs Death to the Dorgeshuun and 70 Agility.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Dorgesh-Kaan Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15302691",
+          "revid": 15302691,
+          "retrieved": "2026-11-19",
+          "quote": "It is possible to fail the tightrope cable and monkeybar ladder obstacles, even at level 99 Agility. A fall will drop a player to the lower level of the dungeon, causing about 10 damage",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Dorgesh-Kaan Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15302691",
+          "revid": 15302691,
+          "retrieved": "2026-11-19",
+          "quote": "Completion of the [[quest]] [[Death to the Dorgeshuun]] is also required.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim_id": "C-THR-082",
+      "subject": "Death to the Dorgeshuun (Dorgesh-Kaan unlock)",
+      "attribute": "quest_fight_max_hit",
+      "value": "must defeat a level 50 enemy with Melee or Magic; open flames can cause gas explosions",
+      "unit": null,
+      "statement": "Death to the Dorgeshuun requires defeating a level 50 enemy with Melee or Magic. Open light sources such as candles can cause gas explosions.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Death to the Dorgeshuun",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396862",
+          "revid": 15396862,
+          "retrieved": "2026-11-19",
+          "quote": "*The ability to defeat a level 50 enemy with [[Melee]] or [[Magic]]",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Death to the Dorgeshuun",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396862",
+          "revid": 15396862,
+          "retrieved": "2026-11-19",
+          "quote": "open light sources such as a [[candle]] can cause [[gas explosion]]s and require a [[tinderbox]]",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim_id": "C-THR-083",
+      "subject": "Colossal Wyrm Agility Course (basic and advanced)",
+      "attribute": "failure_damage",
+      "value": 0,
+      "unit": "hitpoints",
+      "statement": "Obstacles on both Colossal Wyrm courses can never be failed, so there is no obstacle damage.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Colossal Wyrm Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15388138",
+          "revid": 15388138,
+          "retrieved": "2026-11-19",
+          "quote": "Run energy is regenerated per obstacle and players never fail obstacles on either course.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "notes": "The page carries an 'Obsolete' banner for the Summer Sweep-Up changes. The T1 Sweep-Up post (rev 15303824) changed only lap length and XP, not failability."
+    },
+    {
+      "claim_id": "C-THR-084",
+      "subject": "Colossal Wyrm Agility Course",
+      "attribute": "access_requirement",
+      "value": "Children of the Sun (owner has completed it)",
+      "unit": null,
+      "statement": "The Colossal Wyrm course requires Children of the Sun, which the owner has completed.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Colossal Wyrm Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15388138",
+          "revid": 15388138,
+          "retrieved": "2026-11-19",
+          "quote": "* [[Children of the Sun]]",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-085",
+      "subject": "Jaguar (Avium Savannah, Wyrm course area)",
+      "attribute": "max_hit",
+      "value": {
+        "combat": 67,
+        "max_hit": 6,
+        "aggressive": true
+      },
+      "unit": null,
+      "statement": "Jaguars roam the Avium Savannah (east of the Sunset Coast), the region of the Colossal Wyrm course: level 67, max hit 6, aggressive.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Jaguar",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15200503",
+          "revid": 15200503,
+          "retrieved": "2026-11-19",
+          "quote": "|max hit = 6",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Jaguar",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15200503",
+          "revid": 15200503,
+          "retrieved": "2026-11-19",
+          "quote": "'''Jaguars''' are hostile creatures found roaming in the [[Avium Savannah]] (east of the [[Sunset Coast]]) and the [[Tlati Rainforest]].",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Avium Savannah",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15399378",
+          "revid": 15399378,
+          "retrieved": "2026-11-19",
+          "quote": "Aggressive [[jaguars]] can also be found east of the [[Sunset Coast]].",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      },
+      "notes": "How close the jaguars are to the course scaffolding and to the wyrm teleport scroll landing was not established."
+    },
+    {
+      "claim_id": "C-THR-086",
+      "subject": "The Writing's on the Wall",
+      "attribute": "quest_fight_max_hit",
+      "value": "no kills required; a scripted knock-out cutscene",
+      "unit": null,
+      "statement": "The Writing's on the Wall (released 3 Nov 2026, 2,500 Agility XP, Agility 22 / Thieving 20) lists no kills. The 'ambush' is a cutscene in which the player is knocked out.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "The Writing's on the Wall",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404622",
+          "revid": 15404622,
+          "retrieved": "2026-11-19",
+          "quote": "|release = [[3 November]] [[2026]]",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "The Writing's on the Wall",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404622",
+          "revid": 15404622,
+          "retrieved": "2026-11-19",
+          "quote": "Reading the message triggers a cutscene in which a hooded figure enters the room to knock the player out.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Quest experience rewards",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+          "revid": 15408569,
+          "retrieved": "2026-11-19",
+          "quote": "|None",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "released": "2026-11-03",
+      "notes": "NEW CONTENT (<30 days old as of 2026-11-19): the wiki page may still change."
+    },
+    {
+      "claim_id": "C-THR-087",
+      "subject": "Death on the Isle",
+      "attribute": "hw_death_classification",
+      "value": "mandatory fights: NO_DEATH_POSSIBLE (per wiki); rest of quest UNSAFE_DEATH",
+      "unit": null,
+      "statement": "Death on the Isle's two low-level fights are done without equipment, and the wiki says you cannot die to them.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Death on the Isle",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375163",
+          "revid": 15375163,
+          "retrieved": "2026-11-19",
+          "quote": "|kills = Two low-level enemies must be fought with no equipment, but you can’t die to them",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "T2 only; no T1 confirmation. Travel and other quest parts stay under the default UNSAFE_DEATH."
+    },
+    {
+      "claim_id": "C-THR-088",
+      "subject": "Troll Stronghold",
+      "attribute": "quest_fight_max_hit",
+      "value": {
+        "npc": "Troll General",
+        "combat": 113,
+        "max_hit": 38,
+        "safespottable": true
+      },
+      "unit": null,
+      "statement": "Troll Stronghold (2,000 Agility XP) requires defeating a level 113 Troll General (max hit 38, more than 3/4 of 48 HP). It can be safespotted.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Troll Stronghold",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15395347",
+          "revid": 15395347,
+          "retrieved": "2026-11-19",
+          "quote": "* The ability to defeat a level 113 [[Troll General]] (can be [[safespot]]ted)",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Troll general",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406525",
+          "revid": 15406525,
+          "retrieved": "2026-11-19",
+          "quote": "|max hit = 38",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-089",
+      "subject": "Troll Romance",
+      "attribute": "quest_fight_max_hit",
+      "value": {
+        "npc": "Arrg",
+        "combat": 113,
+        "max_hit_melee": 38,
+        "max_hit_ranged": 30,
+        "safespottable": true
+      },
+      "unit": null,
+      "statement": "Troll Romance (8,000 Agility XP) requires defeating Arrg (level 113, max hit 38 melee / 30 ranged). Safespottable per the XP rewards table.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Arrg",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406527",
+          "revid": 15406527,
+          "retrieved": "2026-11-19",
+          "quote": "|max hit = 38 (melee), 30 (ranged)",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Quest experience rewards",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+          "revid": 15408569,
+          "retrieved": "2026-11-19",
+          "quote": "|[[Arrg]] ''(level 113)'' ([[Safespot|safespottable]])",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-090",
+      "subject": "Regicide",
+      "attribute": "quest_fight_max_hit",
+      "value": {
+        "npc": "Tyras guard",
+        "combat": 110,
+        "max_hit": 15,
+        "safespottable": true
+      },
+      "unit": null,
+      "statement": "Regicide (13,750 Agility XP, Agility 56) requires defeating a level 110 Tyras guard (max hit 15, safespottable).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Regicide",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396547",
+          "revid": 15396547,
+          "retrieved": "2026-11-19",
+          "quote": "* The ability to defeat a level 110 [[Tyras guard]] (can be [[safespotted]])",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Tyras guard",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15388911",
+          "revid": 15388911,
+          "retrieved": "2026-11-19",
+          "quote": "|max hit = 15",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-091",
+      "subject": "Grim Tales",
+      "attribute": "quest_fight_max_hit",
+      "value": {
+        "npc": "Glod",
+        "combat": 138,
+        "max_hit": 25,
+        "aggressive": true
+      },
+      "unit": null,
+      "statement": "Grim Tales (25,000 Agility XP, Agility 59) requires defeating Glod (level 138, max hit 25).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Grim Tales",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15363205",
+          "revid": 15363205,
+          "retrieved": "2026-11-19",
+          "quote": "*Ability to defeat a level 138 cloud giant—[[Glod]]",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Glod",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15221322",
+          "revid": 15221322,
+          "retrieved": "2026-11-19",
+          "quote": "|max hit = 25",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-092",
+      "subject": "Darkness of Hallowvale",
+      "attribute": "quest_fight_max_hit",
+      "value": {
+        "npc": "Vanstrom Klause",
+        "combat": 169,
+        "max_hit": 16
+      },
+      "unit": null,
+      "statement": "Darkness of Hallowvale (7,000 Agility XP, needed for Sins of the Father) requires facing Vanstrom Klause (level 169, max hit 16).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Quest experience rewards",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+          "revid": 15408569,
+          "retrieved": "2026-11-19",
+          "quote": "|[[Vanstrom Klause]] ''(level 169)''",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Vanstrom Klause",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403542",
+          "revid": 15403542,
+          "retrieved": "2026-11-19",
+          "quote": "|max hit = 16",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "medium",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      },
+      "notes": "The infobox version with max hit 16 is the first combat version on the page; matching it to the level 169 DoH form relies on the page's combat = 169 field (same infobox)."
+    },
+    {
+      "claim_id": "C-THR-093",
+      "subject": "Cabin Fever",
+      "attribute": "aggressive_npcs",
+      "value": {
+        "npc": "Pirate (Cabin Fever)",
+        "combat": 57,
+        "max_hit": 6,
+        "aggressive": true
+      },
+      "unit": null,
+      "statement": "In Cabin Fever (7,000 Agility XP), level 57 pirates (max hit 6, aggressive) attack the player on the ship.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Cabin Fever",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15365342",
+          "revid": 15365342,
+          "retrieved": "2026-11-19",
+          "quote": "*[[Food]] (level 57 [[pirate]]s will attack you on the ship)",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Pirate",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15389511",
+          "revid": 15389511,
+          "retrieved": "2026-11-19",
+          "quote": "|max hit5 = 6",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Pirate",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15389511",
+          "revid": 15389511,
+          "retrieved": "2026-11-19",
+          "quote": "|aggressive5 = Yes",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-094",
+      "subject": "Royal Trouble",
+      "attribute": "poison",
+      "value": {
+        "npc": "Giant Sea Snake",
+        "combat": 149,
+        "max_hit": 14,
+        "poison_start": 9
+      },
+      "unit": null,
+      "statement": "Royal Trouble (5,000 Agility XP) requires defeating the Giant Sea Snake (level 149, max hit 14, poison starting at 9, crush and ranged).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Quest experience rewards",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+          "revid": 15408569,
+          "retrieved": "2026-11-19",
+          "quote": "|[[Giant Sea Snake]] ''(level 149)''",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Giant Sea Snake",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15341256",
+          "revid": 15341256,
+          "retrieved": "2026-11-19",
+          "quote": "|poisonous = Yes (9)",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Giant Sea Snake",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15341256",
+          "revid": 15341256,
+          "retrieved": "2026-11-19",
+          "quote": "|max hit = 14",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-095",
+      "subject": "Cold War",
+      "attribute": "quest_fight_max_hit",
+      "value": {
+        "npc": "Icelord",
+        "combat": 51,
+        "max_hit": 5,
+        "count": "1-3"
+      },
+      "unit": null,
+      "statement": "Cold War (5,000 Agility XP) requires fighting 1-3 Icelords (level 51, max hit 5 melee).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Quest experience rewards",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+          "revid": 15408569,
+          "retrieved": "2026-11-19",
+          "quote": "|1–3 [[Icelord|Icelords]] ''(level 51)''",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Icelord",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15199467",
+          "revid": 15199467,
+          "retrieved": "2026-11-19",
+          "quote": "|max hit1 = 5",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-096",
+      "subject": "Recruitment Drive",
+      "attribute": "quest_fight_max_hit",
+      "value": {
+        "npc": "Sir Leye",
+        "combat": 20,
+        "max_hit": 3
+      },
+      "unit": null,
+      "statement": "Recruitment Drive requires defeating Sir Leye (level 20, max hit 3).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Quest experience rewards",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+          "revid": 15408569,
+          "retrieved": "2026-11-19",
+          "quote": "|[[Sir Leye]] ''(level 20)''",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Sir Leye",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15386161",
+          "revid": 15386161,
+          "retrieved": "2026-11-19",
+          "quote": "|max hit = 3",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-097",
+      "subject": "The Depths of Despair",
+      "attribute": "quest_fight_max_hit",
+      "value": {
+        "npc": "Sand Snake",
+        "combat": 36,
+        "max_hit": 3
+      },
+      "unit": null,
+      "statement": "The Depths of Despair (1,500 Agility XP) requires defeating a Sand Snake (level 36, max hit 3).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Quest experience rewards",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+          "revid": 15408569,
+          "retrieved": "2026-11-19",
+          "quote": "|[[Sand Snake]] ''(level 36)''",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        },
+        {
+          "tier": "T2",
+          "title": "Sand Snake",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15386615",
+          "revid": 15386615,
+          "retrieved": "2026-11-19",
+          "quote": "|max hit = 3",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "high",
+      "scope": {
+        "account_hitpoints": 48,
+        "account_defence": 1,
+        "account_combat_level": 45
+      }
+    },
+    {
+      "claim_id": "C-THR-098",
+      "subject": "The Graveyard Agility course (upcoming)",
+      "attribute": "status",
+      "value": "announced, unreleased: new Agility course at 65/80 alongside The Graveyard quest",
+      "unit": null,
+      "statement": "A new Agility course (65 and 80 Agility, similar to the Colossal Wyrm course) is announced with The Graveyard quest but not released. Its hazards are unknown. Upcoming only, never route.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Upcoming updates",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404511",
+          "revid": 15404511,
+          "retrieved": "2026-11-19",
+          "quote": "The quest will also be released alongside a new Agility course requiring 65 and 80 Agility in a manner similar to the Colossal Wyrm course.",
+          "fetched_by": "threat-analyst via tools/wiki.py"
+        }
+      ],
+      "confidence": "medium"
+    }
+  ],
+  "gaps": [
+    "Hallowed Sepulchre trap damage per floor (wizard fire, knight swords, crossbow bolts) is not on the wiki. Only 'a small amount of damage' and 'recommended 70+ HP'.",
+    "Failure damage on the Seers' Village (gap 1, tightrope), Ardougne (gaps 1-2) and Canifis (gap 3) rooftops is not documented on the pinned pages.",
+    "Ape Atoll Agility Course failure damage is not quantified ('small amounts').",
+    "Werewolf deathslide: only 'upwards of 30' damage; the exact maximum is unknown.",
+    "Whether the escape crystal works inside the Hallowed Sepulchre or the Brimhaven Arena, and whether obstacle animations count as 'moving' for its auto-activation, was not established.",
+    "The escape crystal's poison/status-clearing change is announced (T1, 22 Oct) but not confirmed on the item page.",
+    "Disconnect behaviour for the Hallowed Sepulchre, the rooftop courses, the Agility Pyramid and the Colossal Wyrm course is not documented beyond the general 60-second in-combat rule.",
+    "How close the Avium Savannah jaguars are to the Colossal Wyrm course and its teleport landing is not established.",
+    "Creature of Fenkenstrain fight NPCs (level 51 and 72) were not identified by name or max hit.",
+    "The upcoming Graveyard Agility course (65/80) has no hazard data; it is unreleased.",
+    "Hazards of high-requirement Agility-XP quests (Dragon Slayer II, Song of the Elves, Mourning's End II, Monkey Madness II, Secrets of the North, Beneath Cursed Sands, Curse of Arrav, Making Friends with My Arm, Icthlarin's Little Helper, Underground Pass, Land of the Goblins, Heart of Darkness, RFD Awowogei) were not researched. They are judged out of reach for this account at this stage.",
+    "Prifddinas Agility Course hazards were not researched (needs Song of the Elves).",
+    "No second independent (T3) source was gathered for any max hit or damage formula."
+  ],
+  "leads_not_used": [
+    {
+      "lead": "docs/07-hardcore-worlds-baseline.md safe/unsafe lists",
+      "status": "confirmed against T1 Update pages rev 15379410 and 15397724"
+    },
+    {
+      "lead": "WebSearch result: osrstoolkit.com, boostroom.com, accountshark.net HW rule guides (T4)",
+      "status": "not used; T1 sources used instead"
+    },
+    {
+      "lead": "WebSearch result: virtgold.com werewolf course guide (T4) 'over 30 damage'",
+      "status": "not used; consistent with wiki rev 15315234"
+    },
+    {
+      "lead": "WebSearch snippet claiming the HCIM safe list includes failing a regular agility course (T4)",
+      "status": "not used; irrelevant under the HGIM ruleset and unverified"
+    },
+    {
+      "lead": "docs/07: A Shell of a Friend adds aggressive feral vampyres",
+      "status": "not used; quest gives no Agility XP and is not a candidate"
+    }
+  ],
+  "provenance": {
+    "agent": "threat-analyst",
+    "started_at": "2026-11-19T22:04:30Z",
+    "finished_at": "2026-11-20T02:18:11Z",
+    "dispatch_ref": "dispatch/014-threat-analyst.md",
+    "inputs": [
+      {
+        "path": "brief.json",
+        "sha256": "c27aa6bc9969f981aed9185637565c2792f58b80646cc531afa503e27f969389"
+      },
+      {
+        "path": "dispatch/014-threat-analyst.md",
+        "sha256": "bf3514602c19ad7326d80b3ba96a3e42c91a3bbe298dd39b949d017ff980a99a"
+      },
+      {
+        "path": ".claude/agents/threat-analyst.md",
+        "sha256": "206863923728c7b8a24298b01af0a99a48d567123e31c123352a6e7025530110"
+      },
+      {
+        "path": "docs/06-sourcing-policy.md",
+        "sha256": "f883176c3b9c0f10ad8c06027eebb8436f1989068c72fffdc9df51878c618bf8"
+      },
+      {
+        "path": "docs/07-hardcore-worlds-baseline.md",
+        "sha256": "75a2a4abff833d60dce05ec9a0c7ceda54f682c275e3edf73dfa4fe04f79ecf1"
+      },
+      {
+        "path": "schemas/claims.schema.json",
+        "sha256": "bbbf6e22121f89057e87db49e0bdd800eaf94bc53de1fba7b2413f5c894072a8"
+      }
+    ],
+    "actions": [
+      {
+        "kind": "verify",
+        "detail": "python3 tools/ledger.py verify agility-1-99-20261119 (start, 2026-11-19 ~22:04Z)",
+        "outcome": "OK: ledger chain and all seals intact"
+      },
+      {
+        "kind": "read",
+        "detail": "Read charter, dispatch 014 (and superseded 006 for context), brief.json, docs/06, docs/07, schemas/claims.schema.json, tools/wiki.py, tools/validate.py"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Wilderness Agility Course Dungeon\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=14856301",
+        "outcome": "pinned revid 14856301"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Singles-plus combat\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15000253",
+        "outcome": "pinned revid 15000253"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Logout button\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15034464",
+        "outcome": "pinned revid 15034464"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Hallowed ring\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15189754",
+        "outcome": "pinned revid 15189754"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Ice plateau teleport (tablet)\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15189877",
+        "outcome": "pinned revid 15189877"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Icelord\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15199467",
+        "outcome": "pinned revid 15199467"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Monkey Archer\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15199637",
+        "outcome": "pinned revid 15199637"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Monkey Guard (ninja)\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15199678",
+        "outcome": "pinned revid 15199678"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Jaguar\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15200503",
+        "outcome": "pinned revid 15200503"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Skeleton (Wilderness Agility Course)\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15216091",
+        "outcome": "pinned revid 15216091"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Glod\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15221322",
+        "outcome": "pinned revid 15221322"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Ice spider\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15231530",
+        "outcome": "pinned revid 15231530"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Frozen Waste Plateau\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15275973",
+        "outcome": "pinned revid 15275973"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Coffin (Hallowed Sepulchre)\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15287308",
+        "outcome": "pinned revid 15287308"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Desert heat\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15292841",
+        "outcome": "pinned revid 15292841"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Dorgesh-Kaan Agility Course\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15302691",
+        "outcome": "pinned revid 15302691"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Jungle Demon\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15315103",
+        "outcome": "pinned revid 15315103"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Werewolf Agility Course\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15315234",
+        "outcome": "pinned revid 15315234"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Ape Atoll\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15317976",
+        "outcome": "pinned revid 15317976"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Rellekka Rooftop Course\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15319532",
+        "outcome": "pinned revid 15319532"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Jungle spider (Ape Atoll)\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15322116",
+        "outcome": "pinned revid 15322116"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Market stall (Pollnivneach Rooftop Course)\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15334135",
+        "outcome": "pinned revid 15334135"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Gap (Ardougne Rooftop Course)\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15334145",
+        "outcome": "pinned revid 15334145"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Giant Sea Snake\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15341256",
+        "outcome": "pinned revid 15341256"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Kroy\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15344384",
+        "outcome": "pinned revid 15344384"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Wilderness Agility Course\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15351989",
+        "outcome": "pinned revid 15351989"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Ardougne Rooftop Course\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15352456",
+        "outcome": "pinned revid 15352456"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Seers' Village Rooftop Course\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15356820",
+        "outcome": "pinned revid 15356820"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Tightrope (Rellekka Rooftop Course)\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15359413",
+        "outcome": "pinned revid 15359413"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Grim Tales\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15363205",
+        "outcome": "pinned revid 15363205"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Cabin Fever\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15365342",
+        "outcome": "pinned revid 15365342"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Vyrewatch Sentinel\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15367082",
+        "outcome": "pinned revid 15367082"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Brimhaven Agility Arena\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15371976",
+        "outcome": "pinned revid 15371976"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Ape Atoll Agility Course\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15372987",
+        "outcome": "pinned revid 15372987"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Aggressiveness\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15373608",
+        "outcome": "pinned revid 15373608"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Damien Leucurte\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15374322",
+        "outcome": "pinned revid 15374322"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Canifis Rooftop Course\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15374436",
+        "outcome": "pinned revid 15374436"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Monkey Madness I\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15374574",
+        "outcome": "pinned revid 15374574"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Hallowed Sepulchre/Strategies\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15375056",
+        "outcome": "pinned revid 15375056"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Death on the Isle\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15375163",
+        "outcome": "pinned revid 15375163"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Pollnivneach Rooftop Course\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15375189",
+        "outcome": "pinned revid 15375189"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Update:Hardcore Worlds Are Coming On November 4th\" (T1)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410",
+        "outcome": "pinned revid 15379410"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Sins of the Father\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15380480",
+        "outcome": "pinned revid 15380480"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Combat level\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15383889",
+        "outcome": "pinned revid 15383889"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Ticket Dispenser (darts)\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15385421",
+        "outcome": "pinned revid 15385421"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Blade (Brimhaven Agility Arena)\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15385424",
+        "outcome": "pinned revid 15385424"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Floor spikes (Brimhaven Agility Arena)\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15385429",
+        "outcome": "pinned revid 15385429"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Creature of Fenkenstrain\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15385731",
+        "outcome": "pinned revid 15385731"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Sir Leye\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15386161",
+        "outcome": "pinned revid 15386161"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Sand Snake\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15386615",
+        "outcome": "pinned revid 15386615"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Hallowed Sepulchre\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544",
+        "outcome": "pinned revid 15387544"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Colossal Wyrm Agility Course\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15388138",
+        "outcome": "pinned revid 15388138"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Tyras guard\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15388911",
+        "outcome": "pinned revid 15388911"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Pirate\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15389511",
+        "outcome": "pinned revid 15389511"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Skeleton\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15391775",
+        "outcome": "pinned revid 15391775"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Troll Stronghold\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15395347",
+        "outcome": "pinned revid 15395347"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Regicide\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15396547",
+        "outcome": "pinned revid 15396547"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Death to the Dorgeshuun\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15396862",
+        "outcome": "pinned revid 15396862"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Canifis\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15397565",
+        "outcome": "pinned revid 15397565"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Update:Hardcore Worlds - OUT TODAY\" (T1)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+        "outcome": "pinned revid 15397724"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Avium Savannah\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15399378",
+        "outcome": "pinned revid 15399378"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Group Ironman Mode\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15401984",
+        "outcome": "pinned revid 15401984"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Pollnivneach\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15402250",
+        "outcome": "pinned revid 15402250"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Agility Pyramid\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15402952",
+        "outcome": "pinned revid 15402952"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Vanstrom Klause\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15403542",
+        "outcome": "pinned revid 15403542"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Upcoming updates\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15404511",
+        "outcome": "pinned revid 15404511"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"The Writing's on the Wall\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15404622",
+        "outcome": "pinned revid 15404622"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Hardcore Worlds\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+        "outcome": "pinned revid 15404671"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Wilderness\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15405423",
+        "outcome": "pinned revid 15405423"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Snake (Ape Atoll)\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15406488",
+        "outcome": "pinned revid 15406488"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Ghoul\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15406499",
+        "outcome": "pinned revid 15406499"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Troll general\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15406525",
+        "outcome": "pinned revid 15406525"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Arrg\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15406527",
+        "outcome": "pinned revid 15406527"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Quest experience rewards\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+        "outcome": "pinned revid 15408569"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Escape crystal\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15409296",
+        "outcome": "pinned revid 15409296"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Crocodile\" (T2)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15409452",
+        "outcome": "pinned revid 15409452"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Agility training\"",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875",
+        "outcome": "candidate methods list (methods context only)"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Seers' Village Rooftop Course obstacle pages: Gap 15334119, Tightrope 15359414\"",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15334119",
+        "outcome": "no failure damage documented"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Gap (Pollnivneach Rooftop Course) / Monkeybars\"",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15334147",
+        "outcome": "no failure damage"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Gap (Rellekka Rooftop Course)\"",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15334134",
+        "outcome": "gap no longer failable"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Gap (Canifis Rooftop Course)\"",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15334120",
+        "outcome": "success chance only, no damage"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Tropical tree / Monkeybars / Skull slope / Rope (Ape Atoll Agility Course)\"",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15241805",
+        "outcome": "no exact damage (revids 15241805, 15241802, 15241803, 15324369)"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Spinning blades / Pressure pad / Log balance (Brimhaven Agility Arena)\"",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15385428",
+        "outcome": "same formula (revids 15385428, 15385422, 15385425); Saw page not found"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Wizard Statue / Knight Statue / Crossbowman Statue\"",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15201417",
+        "outcome": "no damage values (revids 15201417, 15201416, 15201418)"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Zip line (Werewolf Agility Course)\"",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15333943",
+        "outcome": "no exact damage"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Ice giant / Ice warrior\"",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15406494",
+        "outcome": "free-to-play side of plateau, not on Ice Plateau tablet landing (revids 15406494, 15382514)"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Feral Vampyre\"",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15356500",
+        "outcome": "no locations near Canifis course"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Varlamore / Colossal wyrm teleport scroll\"",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15355752",
+        "outcome": "no aggression or landing details (15355752, 15403882)"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Summer Sweep-Up 2026\"",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15350825",
+        "outcome": "led to T1 Agility update"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Rooftop Agility Courses / Agility\"",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15337972",
+        "outcome": "no per-course damage"
+      },
+      {
+        "kind": "fetch",
+        "detail": "tools/wiki.py page \"Upcoming updates\"",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15404511",
+        "outcome": "The Graveyard course announced"
+      },
+      {
+        "kind": "search",
+        "detail": "tools/wiki.py search: 'Hardcore Worlds'; 'disconnect logged out combat 60 seconds remain in game'; 'rooftop gap fail damage hitpoints Seers'; 'Hallowed Sepulchre trap damage floor hitpoints'; 'Summer Sweep Up Agility Colossal Wyrm'"
+      },
+      {
+        "kind": "search",
+        "detail": "WebSearch (T4 leads only): 'Hardcore Worlds OSRS death agility course werewolf deathslide hardcore death'",
+        "outcome": "no HW-specific Agility death source; leads only, none used as evidence"
+      },
+      {
+        "kind": "compute",
+        "detail": "Combat level from brief stats: base=(1+48+22)/4=17.75; range=13/40*84=27.3; floor(45.05)=45",
+        "outcome": "45"
+      },
+      {
+        "kind": "compute",
+        "detail": "Failure damage at 48 HP: WAC ropeswing/log floor(7.2)+1=8, stones floor(9.6)+1=10; Brimhaven floor(2.4)+2=4; Pollnivneach floor(48/17+2)=4; Rellekka floor(4.8)=4; PvP range 45+/-50..56",
+        "outcome": "8/10/4/4/4; attackable by combat 3-101"
+      },
+      {
+        "kind": "verify",
+        "detail": "Resumed after usage-limit interruption (2026-11-20): re-ran tools/ledger.py verify and re-hashed brief.json and dispatch 014",
+        "outcome": "OK; hashes unchanged (brief c27aa6bc..., dispatch bf351460...)"
+      },
+      {
+        "kind": "compute",
+        "detail": "Built claims with scratchpad script build_threats.py; every quote is asserted to be an exact substring of the cached pinned revision text"
+      },
+      {
+        "kind": "write",
+        "detail": "Wrote research/claims-threats.json",
+        "target": "jobs/agility-1-99-20261119/research/claims-threats.json"
+      },
+      {
+        "kind": "verify",
+        "detail": "python3 tools/validate.py agility-1-99-20261119 research"
+      }
+    ],
+    "decisions": [
+      {
+        "decision": "Classify every Agility activity (rooftops, Werewolf, Ape Atoll, Pyramid, Brimhaven Arena, Hallowed Sepulchre, WAC, Colossal Wyrm, Dorgesh-Kaan) as UNSAFE_DEATH.",
+        "reason": "The T1 Jagex posts give an exhaustive safe list (Castle Wars, Clan Wars, Soul Wars, FT 4th phase, Fight Caves and Zulrah diary resurrections, Fight Pit) plus the '99% of deaths' framing; no Agility activity is on it, and the charter makes UNSAFE the default without a T1 safe source.",
+        "alternatives_considered": [
+          "Use the HCIM safe-death list (rejected: HW uses the stricter HGIM ruleset)",
+          "Leave unclassified (rejected: dispatch asks for a class per activity)"
+        ]
+      },
+      {
+        "decision": "Use combat level 45 (computed) rather than the dispatch's '~60' for aggression checks.",
+        "reason": "The brief's verified stats give combat 45 by the wiki formula, and aggression thresholds depend on it (e.g. Pollnivneach jackals, level 23+ monsters).",
+        "alternatives_considered": [
+          "Use ~60 as dispatched (rejected: contradicts sealed brief stats)"
+        ]
+      },
+      {
+        "decision": "Record 'not documented' instead of numbers for Seers/Ardougne/Canifis rooftop, Ape Atoll and Sepulchre per-floor damage.",
+        "reason": "The pinned wiki pages give no figures; the constitution forbids guessing.",
+        "alternatives_considered": [
+          "Use community figures from memory (rejected: memory is not a source)"
+        ]
+      },
+      {
+        "decision": "Include quest fights only for quests that award Agility XP or unlock candidate courses, as listed by 'Quest experience rewards' rev 15408569.",
+        "reason": "Coverage of what a planner could plausibly use, without trivia; quests already in the owner's list are excluded.",
+        "alternatives_considered": [
+          "Cover every Agility-XP quest including Dragon Slayer II, Song of the Elves, MEP2 and Secrets of the North (rejected: requirements far out of reach; noted in gaps)"
+        ]
+      },
+      {
+        "decision": "Mark the escape crystal's 'clears poison/status effects' change as medium confidence.",
+        "reason": "It appears only as a stated intention in the 22 Oct T1 post; the item page's change log does not record it."
+      }
+    ],
+    "limitations": [
+      "Work was interrupted by an account usage limit at about 22:10 UTC on 2026-11-19 and resumed on 2026-11-20 at the coordinator's request (ledger seq 45). Wiki fetches were made on 2026-11-19 before the interruption, and the cached pinned revisions were reused after it. The ledger and input hashes were re-verified on resume and were unchanged.",
+      "Several cache/wiki files are shared with other desks. I relied only on files whose revids I fetched myself with tools/wiki.py this session.",
+      "No T1 source names an Agility activity at all. The UNSAFE classifications follow from the T1 exhaustive safe list plus the charter default, not from an explicit statement.",
+      "Per-floor Hallowed Sepulchre trap damage, and failure damage on the Seers', Ardougne and Canifis rooftops and the Ape Atoll obstacles, are not documented on the pinned wiki pages.",
+      "Most danger-critical facts have one T2 source. Second independent sources (T3, e.g. RuneLite data) were not gathered.",
+      "No known Hardcore Worlds Agility death incidents were found. One T4 web search returned only generic rule guides."
+    ]
+  }
+}
