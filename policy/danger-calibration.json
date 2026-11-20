@@ -1,6 +1,6 @@
 {
-  "version": "2026-11-20-proposed",
-  "status": "proposed",
+  "version": "2026-11-20-rated",
+  "status": "rated (owner approval pending)",
   "basis": "Each anchor is rated with the 8-factor model for a TYPICAL account that attempts that content (content-appropriate stats and gear). A guide step is rated for the OWNER's account. So a published score reads: 'this is as dangerous for you as <anchor> is for a typical player doing it'.",
   "scale_ceiling": "The Fractured Archive at solo/duo scale = 100 (owner decisions: agility job ledger seq 131; calibration job ledger).",
   "process": "Calibration job (/osrs-calibrate): threat-analyst researches each anchor -> fact-verifier verifies -> risk-officer rates factors (status 'rated') -> red-team challenges ordering -> owner approves positions (status 'approved'). Re-run quarterly or after major content releases.",
@@ -10,270 +10,1919 @@
       "activity": "The Fractured Archive (solo/duo scale)",
       "position": 100,
       "proposed_position": 100,
-      "rationale": "Owner-designated ceiling (2026-11-20): TFA has no hard mode; solo is scaled as a duo; Jagex: over 1 in 4 duo runs 'ended in disaster' (18 Nov 2026).",
-      "status": "proposed",
-      "flags": [],
-      "facts": []
+      "rationale": "Owner-designated ceiling (calibration ledger seq 7); the model independently saturates at 100 (T5, C5, K4), so the anchor and the model agree.",
+      "status": "rated",
+      "flags": [
+        "ONE_SHOT_POSSIBLE",
+        "LOCKED_INSTANCE_LETHAL",
+        "NEW_CONTENT"
+      ],
+      "facts": [
+        "F-5005",
+        "F-5006",
+        "F-5007",
+        "F-5009",
+        "F-5010",
+        "F-5011",
+        "F-5012",
+        "F-5013",
+        "F-5016",
+        "F-5017",
+        "F-5018",
+        "F-5019",
+        "F-5020",
+        "F-5021",
+        "F-5022"
+      ],
+      "factors": {
+        "lethality": {
+          "score": 5,
+          "rationale": "Two charged Ezekiel swords can insta-kill even after the 70-per-sword cap; Ocellus 'annihilation' fires many projectiles at once with a very high chance to kill a 95+ HP account.",
+          "facts": [
+            "F-5012",
+            "F-5013",
+            "F-5010"
+          ]
+        },
+        "pvp": {
+          "score": 0,
+          "rationale": "Instanced raid, no PvP.",
+          "facts": [
+            "F-5020"
+          ]
+        },
+        "escape": {
+          "score": 5,
+          "rationale": "Instanced raid with no documented mid-raid teleport and not on the escape crystal's list. This is absence of documentation (RFI open), so it is rated as a locked fight until a source says otherwise.",
+          "facts": [
+            "F-5019"
+          ]
+        },
+        "attention": {
+          "score": 5,
+          "rationale": "Team mechanics with hard timers (tendril mitigation before Ocellus annihilation, blocker spells, Moia enrage cycles); Jagex: going in blind 'you will die'.",
+          "facts": [
+            "F-5013",
+            "F-5011",
+            "F-5016"
+          ]
+        },
+        "disconnect": {
+          "score": 5,
+          "rationale": "Disconnect behaviour other than consumables is undocumented; a player idle during one-shot mechanics is rated as dead.",
+          "facts": [
+            "F-5019"
+          ]
+        },
+        "unpredictability": {
+          "score": 5,
+          "rationale": "Seven balance/mechanic changes since release, the latest on 18 Nov 2026; paired-choice rooms vary the raid.",
+          "facts": [
+            "F-5022",
+            "F-5011",
+            "F-5007"
+          ]
+        },
+        "exposure": {
+          "score": 3,
+          "rationale": "Experienced duos take ~20 min per run; learner sessions of several runs take a few hours.",
+          "facts": [
+            "F-5021"
+          ]
+        },
+        "knowledge": {
+          "score": 4,
+          "rationale": "Mechanics changed within the last 30 days; two max-hit facts are DISPUTED; escape and Practice Mode death safety are open RFIs.",
+          "facts": [
+            "F-5022",
+            "F-5014",
+            "F-5015",
+            "F-5008"
+          ]
+        }
+      }
     },
     {
       "id": "inferno",
       "activity": "The Inferno",
       "position": 96,
       "proposed_position": 96,
-      "rationale": "Long no-escape wave content; prayer/tick precision; HW-unsafe list.",
-      "status": "proposed",
-      "flags": [],
-      "facts": []
+      "rationale": "Second only to TFA: typeless one-shot boss after 68 waves of tick-precise play; escapable by crystal, but the model saturates (T5, C5) like every instanced top-end boss.",
+      "status": "rated",
+      "flags": [
+        "ONE_SHOT_POSSIBLE",
+        "HW_UNSAFE_ACTIVITY"
+      ],
+      "facts": [
+        "F-5002",
+        "F-5023",
+        "F-5024",
+        "F-5025",
+        "F-5026",
+        "F-5027",
+        "F-5028",
+        "F-5144"
+      ],
+      "factors": {
+        "lethality": {
+          "score": 5,
+          "rationale": "TzKal-Zuk max 148 typeless roll; can kill from full HP (typical 90+ HP).",
+          "facts": [
+            "F-5025",
+            "F-5023"
+          ]
+        },
+        "pvp": {
+          "score": 0,
+          "rationale": "Solo; other players cannot enter.",
+          "facts": [
+            "F-5028"
+          ]
+        },
+        "escape": {
+          "score": 3,
+          "rationale": "CORRECTED: escapable. An escape crystal teleports out and a logout request pauses between waves; there is no restocking.",
+          "facts": [
+            "F-5026",
+            "F-5144"
+          ]
+        },
+        "attention": {
+          "score": 5,
+          "rationale": "Tick-precise prayer and positioning over 69 waves; one mistake at Zuk can be fatal.",
+          "facts": [
+            "F-5024",
+            "F-5025"
+          ]
+        },
+        "disconnect": {
+          "score": 4,
+          "rationale": "A mid-wave disconnect leaves you among attackers with no pause until the wave ends; the HW starter escape crystal can auto-teleport after inactivity if configured, so not rated 5.",
+          "facts": [
+            "F-5026",
+            "F-5144"
+          ]
+        },
+        "unpredictability": {
+          "score": 3,
+          "rationale": "Fixed wave composition, but spawns and attack timing vary.",
+          "facts": [
+            "F-5024"
+          ]
+        },
+        "exposure": {
+          "score": 3,
+          "rationale": "One attempt runs a long session (69 waves).",
+          "facts": [
+            "F-5024"
+          ]
+        },
+        "knowledge": {
+          "score": 1,
+          "rationale": "Mechanics verified; only the HW death rule carries the new-ruleset caveat.",
+          "facts": [
+            "F-5027"
+          ]
+        }
+      }
     },
     {
       "id": "colosseum",
       "activity": "Fortis Colosseum",
       "position": 95,
       "proposed_position": 95,
-      "rationale": "Wave PvM with modifiers; no escape mid-wave.",
-      "status": "proposed",
-      "flags": [],
-      "facts": []
+      "rationale": "Top-end wave PvM with typeless damage and run-killing modifiers; ties the Inferno in the model, placed just under it by judgement.",
+      "status": "rated",
+      "flags": [
+        "ONE_SHOT_POSSIBLE"
+      ],
+      "facts": [
+        "F-5029",
+        "F-5030",
+        "F-5031",
+        "F-5032",
+        "F-5033",
+        "F-5034"
+      ],
+      "factors": {
+        "lethality": {
+          "score": 5,
+          "rationale": "Doom modifier kills outright on stack overflow; Sol Heredit typeless AoE and Grapple 44 each, stacking with wave attackers.",
+          "facts": [
+            "F-5030",
+            "F-5031",
+            "F-5029"
+          ]
+        },
+        "pvp": {
+          "score": 0,
+          "rationale": "Solo PvM instance."
+        },
+        "escape": {
+          "score": 1,
+          "rationale": "CORRECTED: teleporting or logging out mid-wave is possible (forfeits loot).",
+          "facts": [
+            "F-5032"
+          ]
+        },
+        "attention": {
+          "score": 5,
+          "rationale": "Tick-precise: praying too early against Sol's parries disables the prayer.",
+          "facts": [
+            "F-5031"
+          ]
+        },
+        "disconnect": {
+          "score": 4,
+          "rationale": "An idle player keeps being hit by the wave until logged out.",
+          "facts": [
+            "F-5032"
+          ]
+        },
+        "unpredictability": {
+          "score": 4,
+          "rationale": "Cumulative random modifiers chosen from three each wave.",
+          "facts": [
+            "F-5030"
+          ]
+        },
+        "exposure": {
+          "score": 3,
+          "rationale": "~24 min per full run for an experienced player; a session is a few hours.",
+          "facts": [
+            "F-5034"
+          ]
+        },
+        "knowledge": {
+          "score": 1,
+          "rationale": "Verified; duration derived; new-ruleset caveat only.",
+          "facts": [
+            "F-5033",
+            "F-5034"
+          ]
+        }
+      }
     },
     {
       "id": "toa-expert",
       "activity": "Tombs of Amascut, expert (500+ invocation)",
-      "position": 92,
+      "position": 88,
       "proposed_position": 92,
-      "rationale": "Raid, invocation-scaled lethality.",
-      "status": "proposed",
-      "flags": [],
-      "facts": []
+      "rationale": "Lowered from 92: Expert starts at raid level 300, where a deathless solo money guide exists; still Extreme. The model (96) puts it above the Inferno only because of the knowledge term: an ordering concern for the board.",
+      "status": "rated",
+      "flags": [
+        "DISCONNECT_FATAL"
+      ],
+      "facts": [
+        "F-5035",
+        "F-5036",
+        "F-5037",
+        "F-5038",
+        "F-5039",
+        "F-5144"
+      ],
+      "factors": {
+        "lethality": {
+          "score": 5,
+          "rationale": "+120% NPC damage and accuracy at raid level 300, capped at +150% from 375, against an 85+ HP account. No base max hits were researched: this is a judgement from the scaling (see knowledge).",
+          "facts": [
+            "F-5036",
+            "F-5037"
+          ]
+        },
+        "pvp": {
+          "score": 0,
+          "rationale": "Instanced raid."
+        },
+        "escape": {
+          "score": 3,
+          "rationale": "Instance; the escape crystal is documented to work in ToA and turns a logout wipe into an eject.",
+          "facts": [
+            "F-5039",
+            "F-5144"
+          ]
+        },
+        "attention": {
+          "score": 4,
+          "rationale": "Prayer switching and room mechanics."
+        },
+        "disconnect": {
+          "score": 5,
+          "rationale": "Logging out during an active encounter counts as a death on rejoin (or a wipe), unless an escape crystal intervenes.",
+          "facts": [
+            "F-5039"
+          ]
+        },
+        "unpredictability": {
+          "score": 4,
+          "rationale": "Invocation combinations change the raid; scaling multiplies every attacker.",
+          "facts": [
+            "F-5036"
+          ]
+        },
+        "exposure": {
+          "score": 3,
+          "rationale": "~34 min per solo raid at 300 (1.75/h); a session is a few hours.",
+          "facts": [
+            "F-5037"
+          ]
+        },
+        "knowledge": {
+          "score": 2,
+          "rationale": "No per-attack max hits in the facts; the disconnect fact is caveated as incomplete.",
+          "facts": [
+            "F-5039",
+            "F-5037"
+          ]
+        }
+      }
     },
     {
       "id": "tob-hm",
       "activity": "Theatre of Blood: Hard Mode",
-      "position": 90,
+      "position": 92,
       "proposed_position": 90,
-      "rationale": "Raid, mechanics, no mid-room escape.",
-      "status": "proposed",
-      "flags": [],
-      "facts": []
+      "rationale": "Raised from 90 to sit above corrected ToA expert (300): one-shot P1, disconnect treated as death, tick-precise team mechanics.",
+      "status": "rated",
+      "flags": [
+        "ONE_SHOT_POSSIBLE",
+        "DISCONNECT_FATAL"
+      ],
+      "facts": [
+        "F-5040",
+        "F-5041",
+        "F-5042",
+        "F-5043",
+        "F-5044"
+      ],
+      "factors": {
+        "lethality": {
+          "score": 5,
+          "rationale": "Verzik HM P1 max 137, P2 bounce ~80, P3 melee 63.",
+          "facts": [
+            "F-5041"
+          ]
+        },
+        "pvp": {
+          "score": 0,
+          "rationale": "Instanced raid."
+        },
+        "escape": {
+          "score": 3,
+          "rationale": "All normal teleports blocked; the escape crystal is the only way out.",
+          "facts": [
+            "F-5044"
+          ]
+        },
+        "attention": {
+          "score": 5,
+          "rationale": "Tick-precise room mechanics; entry requires a normal-mode completion.",
+          "facts": [
+            "F-5040"
+          ]
+        },
+        "disconnect": {
+          "score": 5,
+          "rationale": "Disconnect or logout during a fight is treated as a death.",
+          "facts": [
+            "F-5043"
+          ]
+        },
+        "unpredictability": {
+          "score": 4,
+          "rationale": "Bounces and team-dependent mechanics.",
+          "facts": [
+            "F-5041"
+          ]
+        },
+        "exposure": {
+          "score": 3,
+          "rationale": "A session of raids takes a few hours."
+        },
+        "knowledge": {
+          "score": 1,
+          "rationale": "Verified; new-ruleset caveat only.",
+          "facts": [
+            "F-5042"
+          ]
+        }
+      }
     },
     {
       "id": "cox-cm",
       "activity": "Chambers of Xeric: Challenge Mode",
-      "position": 87,
+      "position": 86,
       "proposed_position": 87,
-      "rationale": "Raid; CoX is on the HW-unsafe list.",
-      "status": "proposed",
-      "flags": [],
-      "facts": []
+      "rationale": "Hard raid but escapable by crystal and less tick-precise than ToB HM; model 84 sits below its neighbours (ordering concern).",
+      "status": "rated",
+      "flags": [
+        "HW_UNSAFE_ACTIVITY"
+      ],
+      "facts": [
+        "F-5002",
+        "F-5045",
+        "F-5046",
+        "F-5047",
+        "F-5048",
+        "F-5049",
+        "F-5050"
+      ],
+      "factors": {
+        "lethality": {
+          "score": 5,
+          "rationale": "Two unprotected Tekton hits are likely fatal; Olm head 38-41 at CM.",
+          "facts": [
+            "F-5047",
+            "F-5045"
+          ]
+        },
+        "pvp": {
+          "score": 0,
+          "rationale": "Instanced raid."
+        },
+        "escape": {
+          "score": 3,
+          "rationale": "All teleports blocked except the escape crystal.",
+          "facts": [
+            "F-5050"
+          ]
+        },
+        "attention": {
+          "score": 4,
+          "rationale": "Every room in a fixed layout, +50% combat stats; prayer and mechanics.",
+          "facts": [
+            "F-5046"
+          ]
+        },
+        "disconnect": {
+          "score": 4,
+          "rationale": "Not documented in the facts; an idle player next to Tekton or Olm takes heavy damage.",
+          "facts": [
+            "F-5047"
+          ]
+        },
+        "unpredictability": {
+          "score": 4,
+          "rationale": "Many rooms and multiple attackers.",
+          "facts": [
+            "F-5046"
+          ]
+        },
+        "exposure": {
+          "score": 3,
+          "rationale": "Solo target 1 h 10 min; first attempts longer.",
+          "facts": [
+            "F-5049"
+          ]
+        },
+        "knowledge": {
+          "score": 2,
+          "rationale": "Vanguard part of the max-hit claim unsourced; durations are bonus targets, not measured.",
+          "facts": [
+            "F-5047",
+            "F-5049"
+          ]
+        }
+      }
     },
     {
       "id": "phosani",
       "activity": "Phosani's Nightmare",
-      "position": 85,
+      "position": 87,
       "proposed_position": 85,
-      "rationale": "Solo boss, high damage, instance.",
-      "status": "proposed",
+      "rationale": "Raised from 85 to 87: solo, very high max hits, undocumented exit; the model (96) rates it with ToA expert, above its suggested position (ordering concern).",
+      "status": "rated",
       "flags": [],
-      "facts": []
+      "facts": [
+        "F-5051",
+        "F-5052",
+        "F-5053",
+        "F-5054",
+        "F-5055"
+      ],
+      "factors": {
+        "lethality": {
+          "score": 5,
+          "rationale": "Melee 73, magic/ranged 80, dash ~85 against a 90+ HP account: two hits in quick succession exceed HP.",
+          "facts": [
+            "F-5051",
+            "F-5053"
+          ]
+        },
+        "pvp": {
+          "score": 0,
+          "rationale": "Solo instance."
+        },
+        "escape": {
+          "score": 4,
+          "rationale": "Solo-only boss; whether you can teleport or log out mid-fight is undocumented (RFI). The only escape-related claim (F-5054) is DISPUTED and not used.",
+          "facts": [
+            "F-5052"
+          ]
+        },
+        "attention": {
+          "score": 5,
+          "rationale": "Far more punishing on mistakes than the group Nightmare; prayer and movement mechanics.",
+          "facts": [
+            "F-5052"
+          ]
+        },
+        "disconnect": {
+          "score": 4,
+          "rationale": "Undocumented; an idle player against 73-85 hits is in serious danger."
+        },
+        "unpredictability": {
+          "score": 4,
+          "rationale": "Multiple attack styles and specials.",
+          "facts": [
+            "F-5051"
+          ]
+        },
+        "exposure": {
+          "score": 3,
+          "rationale": "A session of kills takes a few hours."
+        },
+        "knowledge": {
+          "score": 2,
+          "rationale": "Escape behaviour undocumented; the escape/retrieval fact is DISPUTED.",
+          "facts": [
+            "F-5054"
+          ]
+        }
+      }
     },
     {
       "id": "cg",
       "activity": "Corrupted Gauntlet",
       "position": 82,
       "proposed_position": 82,
-      "rationale": "No food/gear brought in; instance; prayer switching.",
-      "status": "proposed",
+      "rationale": "Unchanged at 82: no supplies brought in, typeless stomp, uncertain mid-fight exit.",
+      "status": "rated",
       "flags": [],
-      "facts": []
+      "facts": [
+        "F-5056",
+        "F-5057",
+        "F-5058",
+        "F-5059",
+        "F-5060",
+        "F-5061",
+        "F-5144"
+      ],
+      "factors": {
+        "lethality": {
+          "score": 5,
+          "rationale": "Typeless stomp 68 plus unprotected standard attacks up to 68 with no armour; no food or gear brought in.",
+          "facts": [
+            "F-5058",
+            "F-5056"
+          ]
+        },
+        "pvp": {
+          "score": 0,
+          "rationale": "Solo instance."
+        },
+        "escape": {
+          "score": 4,
+          "rationale": "The Teleport Platform is in the prep room; leaving the Hunllef room mid-fight is undocumented; forced into the boss after 7 min 30 s.",
+          "facts": [
+            "F-5060",
+            "F-5057"
+          ]
+        },
+        "attention": {
+          "score": 4,
+          "rationale": "Prayer and weapon switching, tornadoes and floor tiles.",
+          "facts": [
+            "F-5058"
+          ]
+        },
+        "disconnect": {
+          "score": 4,
+          "rationale": "An idle player takes standing hits and floor damage; the escape crystal's inactivity teleport applies if carried on entry.",
+          "facts": [
+            "F-5060",
+            "F-5144"
+          ]
+        },
+        "unpredictability": {
+          "score": 3,
+          "rationale": "Tornado and tile damage ranges.",
+          "facts": [
+            "F-5058"
+          ]
+        },
+        "exposure": {
+          "score": 3,
+          "rationale": "Short runs; a session is a few hours.",
+          "facts": [
+            "F-5057"
+          ]
+        },
+        "knowledge": {
+          "score": 2,
+          "rationale": "Stat page revision over a year old; tile damage possibly higher than listed.",
+          "facts": [
+            "F-5059",
+            "F-5058"
+          ]
+        }
+      }
     },
     {
       "id": "dt2-awakened",
       "activity": "Desert Treasure II awakened bosses",
-      "position": 80,
+      "position": 85,
       "proposed_position": 80,
-      "rationale": "Upgraded bosses, one-shot mechanics.",
-      "status": "proposed",
-      "flags": [],
-      "facts": []
+      "rationale": "Raised from 80: several awakened specials exceed 99 HP outright, comparable to Phosani.",
+      "status": "rated",
+      "flags": [
+        "ONE_SHOT_POSSIBLE"
+      ],
+      "facts": [
+        "F-5062",
+        "F-5063",
+        "F-5064",
+        "F-5065",
+        "F-5066"
+      ],
+      "factors": {
+        "lethality": {
+          "score": 5,
+          "rationale": "Awakened Duke gaze 121, Vardorvis axes 96, Leviathan 86, Whisperer 70+ twice.",
+          "facts": [
+            "F-5063",
+            "F-5064",
+            "F-5065"
+          ]
+        },
+        "pvp": {
+          "score": 0,
+          "rationale": "Instanced bosses."
+        },
+        "escape": {
+          "score": 3,
+          "rationale": "Instanced (items go to a grave outside); teleport-out not documented in the facts.",
+          "facts": [
+            "F-5066"
+          ]
+        },
+        "attention": {
+          "score": 5,
+          "rationale": "Hard-mode variants with enhanced mechanics.",
+          "facts": [
+            "F-5062"
+          ]
+        },
+        "disconnect": {
+          "score": 4,
+          "rationale": "Not documented; an idle player meets one-shot mechanics."
+        },
+        "unpredictability": {
+          "score": 3,
+          "rationale": "Known but enhanced mechanics.",
+          "facts": [
+            "F-5062"
+          ]
+        },
+        "exposure": {
+          "score": 2,
+          "rationale": "One fight per orb, minutes each.",
+          "facts": [
+            "F-5062"
+          ]
+        },
+        "knowledge": {
+          "score": 2,
+          "rationale": "No typical-account or escape facts.",
+          "facts": [
+            "F-5066"
+          ]
+        }
+      }
     },
     {
       "id": "revs-pvp",
       "activity": "Revenant Caves (deep Wilderness, PvP hotspot)",
-      "position": 78,
+      "position": 76,
       "proposed_position": 78,
-      "rationale": "Skulled PvP hotspot; teleblock; multi.",
-      "status": "proposed",
-      "flags": [],
-      "facts": []
+      "rationale": "Lowered from 78 to 76: singles-plus, not multi; still a designed PK hotspot with teleblock. The model (94, PvP 5 with escape 5) rates it with the Inferno: ordering concern.",
+      "status": "rated",
+      "flags": [
+        "WILDERNESS",
+        "DEEP_WILDERNESS",
+        "PVP_HOTSPOT",
+        "TELEPORT_RESTRICTED"
+      ],
+      "facts": [
+        "F-5004",
+        "F-5067",
+        "F-5068",
+        "F-5069",
+        "F-5070",
+        "F-5071",
+        "F-5072"
+      ],
+      "factors": {
+        "lethality": {
+          "score": 4,
+          "rationale": "Revenant dragon and maledictus 30, knight 27 (no typical-account HP fact; at 70-90 HP that is up to ~40%). PK burst is rated under pvp.",
+          "facts": [
+            "F-5070"
+          ]
+        },
+        "pvp": {
+          "score": 5,
+          "rationale": "Designed PK ground: exits placed away from entrances so players cannot escape PKers; PvP active on HW.",
+          "facts": [
+            "F-5068",
+            "F-5004",
+            "F-5069"
+          ]
+        },
+        "escape": {
+          "score": 5,
+          "rationale": "Wilderness 17-40; no normal teleports above 20; teleblock 5 min; 2-tick teleport delay in NPC combat.",
+          "facts": [
+            "F-5067",
+            "F-5071"
+          ]
+        },
+        "attention": {
+          "score": 4,
+          "rationale": "Constant PK watch while fighting revenants."
+        },
+        "disconnect": {
+          "score": 4,
+          "rationale": "Revenants keep attacking and PKers can follow; a revenant death counts as a PvP death.",
+          "facts": [
+            "F-5069"
+          ]
+        },
+        "unpredictability": {
+          "score": 4,
+          "rationale": "PK arrival is random.",
+          "facts": [
+            "F-5068"
+          ]
+        },
+        "exposure": {
+          "score": 3,
+          "rationale": "A farming session of a few hours."
+        },
+        "knowledge": {
+          "score": 1,
+          "rationale": "Verified; teleblock duration caveat (2.5 min with Protect from Magic).",
+          "facts": [
+            "F-5071"
+          ]
+        }
+      }
     },
     {
       "id": "toa-150",
       "activity": "Tombs of Amascut (entry/normal ~150)",
       "position": 70,
       "proposed_position": 70,
-      "rationale": "Learner-raid baseline.",
-      "status": "proposed",
-      "flags": [],
-      "facts": []
+      "rationale": "Learner-raid baseline unchanged at 70.",
+      "status": "rated",
+      "flags": [
+        "DISCONNECT_FATAL"
+      ],
+      "facts": [
+        "F-5039",
+        "F-5073",
+        "F-5074",
+        "F-5075",
+        "F-5076",
+        "F-5144"
+      ],
+      "factors": {
+        "lethality": {
+          "score": 4,
+          "rationale": "+60% NPC damage and accuracy against a 75+ HP account; base max hits not researched.",
+          "facts": [
+            "F-5075",
+            "F-5074"
+          ]
+        },
+        "pvp": {
+          "score": 0,
+          "rationale": "Instanced raid."
+        },
+        "escape": {
+          "score": 3,
+          "rationale": "Instance; escape crystal documented for ToA.",
+          "facts": [
+            "F-5144",
+            "F-5039"
+          ]
+        },
+        "attention": {
+          "score": 4,
+          "rationale": "Prayer switching and room mechanics."
+        },
+        "disconnect": {
+          "score": 5,
+          "rationale": "Logout during an active encounter counts as a death or wipe unless an escape crystal intervenes.",
+          "facts": [
+            "F-5039"
+          ]
+        },
+        "unpredictability": {
+          "score": 3,
+          "rationale": "Invocations chosen by the team.",
+          "facts": [
+            "F-5073"
+          ]
+        },
+        "exposure": {
+          "score": 3,
+          "rationale": "A session of raids takes a few hours."
+        },
+        "knowledge": {
+          "score": 2,
+          "rationale": "No per-attack max hits; disconnect fact caveated.",
+          "facts": [
+            "F-5039"
+          ]
+        }
+      }
     },
     {
       "id": "zulrah",
       "activity": "Zulrah (learner)",
       "position": 66,
       "proposed_position": 66,
-      "rationale": "Rotations, venom, instance.",
-      "status": "proposed",
-      "flags": [],
-      "facts": []
+      "rationale": "Model and proposal agree (66).",
+      "status": "rated",
+      "flags": [
+        "POISON_OR_VENOM"
+      ],
+      "facts": [
+        "F-5077",
+        "F-5078",
+        "F-5079",
+        "F-5080"
+      ],
+      "factors": {
+        "lethality": {
+          "score": 4,
+          "rationale": "Max 41 (about half a typical HP pool) plus venom 6-20 per hit.",
+          "facts": [
+            "F-5077",
+            "F-5080"
+          ]
+        },
+        "pvp": {
+          "score": 0,
+          "rationale": "Instanced shrine."
+        },
+        "escape": {
+          "score": 1,
+          "rationale": "Teleporting or logging out is allowed.",
+          "facts": [
+            "F-5078"
+          ]
+        },
+        "attention": {
+          "score": 4,
+          "rationale": "Rotations, prayer and positioning."
+        },
+        "disconnect": {
+          "score": 3,
+          "rationale": "Venom and Zulrah keep hitting an idle player.",
+          "facts": [
+            "F-5077"
+          ]
+        },
+        "unpredictability": {
+          "score": 4,
+          "rationale": "Venom stacking.",
+          "facts": [
+            "F-5077"
+          ]
+        },
+        "exposure": {
+          "score": 3,
+          "rationale": "A learning session of a few hours."
+        },
+        "knowledge": {
+          "score": 1,
+          "rationale": "Verified; typical-account wording ambiguous.",
+          "facts": [
+            "F-5080"
+          ]
+        }
+      }
     },
     {
       "id": "vorkath",
       "activity": "Vorkath (learner)",
       "position": 64,
       "proposed_position": 64,
-      "rationale": "Acid/fireball one-shot mechanics if mishandled.",
-      "status": "proposed",
-      "flags": [],
-      "facts": []
+      "rationale": "Kept at 64 by judgement (learner-level boss); model 84 (inherent one-shot, no credit for antifire/prayer) is above Jad and Zulrah positions: ordering concern.",
+      "status": "rated",
+      "flags": [
+        "ONE_SHOT_POSSIBLE"
+      ],
+      "facts": [
+        "F-5081",
+        "F-5082",
+        "F-5083"
+      ],
+      "factors": {
+        "lethality": {
+          "score": 5,
+          "rationale": "Dragonfire bomb 121 and dragonfire 80 can exceed a typical account's HP if mishandled; spawn explosion 60.",
+          "facts": [
+            "F-5081",
+            "F-5082"
+          ]
+        },
+        "pvp": {
+          "score": 0,
+          "rationale": "Instanced boss."
+        },
+        "escape": {
+          "score": 3,
+          "rationale": "Instanced (retrieval via Torfinn); teleport-out not documented in the facts.",
+          "facts": [
+            "F-5083"
+          ]
+        },
+        "attention": {
+          "score": 4,
+          "rationale": "Acid walk, fireball dodge, spawn handling."
+        },
+        "disconnect": {
+          "score": 4,
+          "rationale": "The bomb must be moved away from; an idle player takes it.",
+          "facts": [
+            "F-5081"
+          ]
+        },
+        "unpredictability": {
+          "score": 3,
+          "rationale": "Known special rotation."
+        },
+        "exposure": {
+          "score": 3,
+          "rationale": "A learning session of a few hours."
+        },
+        "knowledge": {
+          "score": 2,
+          "rationale": "Exit behaviour not in the facts.",
+          "facts": [
+            "F-5083"
+          ]
+        }
+      }
     },
     {
       "id": "jad",
       "activity": "TzHaar Fight Cave (Jad)",
       "position": 62,
       "proposed_position": 62,
-      "rationale": "Long waves; HW-unsafe list (safe for HCIM).",
-      "status": "proposed",
-      "flags": [],
-      "facts": []
+      "rationale": "Kept at 62 by judgement; the model (94) cannot separate Jad from the Inferno (both T5, C5): the clearest saturation case.",
+      "status": "rated",
+      "flags": [
+        "ONE_SHOT_POSSIBLE",
+        "DISCONNECT_FATAL",
+        "HW_UNSAFE_ACTIVITY"
+      ],
+      "facts": [
+        "F-5002",
+        "F-5084",
+        "F-5085",
+        "F-5086",
+        "F-5087",
+        "F-5088",
+        "F-5144"
+      ],
+      "factors": {
+        "lethality": {
+          "score": 5,
+          "rationale": "TzTok-Jad 97 melee/ranged, 95 magic: one wrong prayer can kill.",
+          "facts": [
+            "F-5085"
+          ]
+        },
+        "pvp": {
+          "score": 0,
+          "rationale": "Solo minigame."
+        },
+        "escape": {
+          "score": 4,
+          "rationale": "Only documented exit is a logout request that takes effect after the current wave ends; the Fight Cave is not on the escape crystal's list.",
+          "facts": [
+            "F-5086",
+            "F-5144"
+          ]
+        },
+        "attention": {
+          "score": 4,
+          "rationale": "Prayer switching against Jad and healers."
+        },
+        "disconnect": {
+          "score": 5,
+          "rationale": "A logout cannot happen until the wave ends; an idle player at Jad is likely killed.",
+          "facts": [
+            "F-5086",
+            "F-5085"
+          ]
+        },
+        "unpredictability": {
+          "score": 2,
+          "rationale": "Fixed waves, known attacks.",
+          "facts": [
+            "F-5084"
+          ]
+        },
+        "exposure": {
+          "score": 3,
+          "rationale": "Often well over an hour for lower-level players.",
+          "facts": [
+            "F-5088"
+          ]
+        },
+        "knowledge": {
+          "score": 1,
+          "rationale": "Verified; the resurrection-condition RFI affects death classification, not survival.",
+          "facts": [
+            "F-5087"
+          ]
+        }
+      }
     },
     {
       "id": "wildy-boss",
       "activity": "Wilderness bosses (singles, e.g. Artio/Calvar'ion)",
       "position": 60,
       "proposed_position": 60,
-      "rationale": "PvP exposure plus boss damage.",
-      "status": "proposed",
-      "flags": [],
-      "facts": []
+      "rationale": "Kept at 60; model 84 is above Jad's position and below Jad's model score: ordering concern.",
+      "status": "rated",
+      "flags": [
+        "WILDERNESS",
+        "DEEP_WILDERNESS",
+        "TELEPORT_RESTRICTED"
+      ],
+      "facts": [
+        "F-5004",
+        "F-5089",
+        "F-5090",
+        "F-5091",
+        "F-5092",
+        "F-5093"
+      ],
+      "factors": {
+        "lethality": {
+          "score": 5,
+          "rationale": "Artio magic 50 and crush 35 against a 60+ HP account: two hits exceed HP.",
+          "facts": [
+            "F-5090",
+            "F-5092"
+          ]
+        },
+        "pvp": {
+          "score": 4,
+          "rationale": "Level 21 singles-plus lairs entered by PKers; PvP active on HW.",
+          "facts": [
+            "F-5089",
+            "F-5091",
+            "F-5004"
+          ]
+        },
+        "escape": {
+          "score": 4,
+          "rationale": "Level 21: only members' level-30 teleports work; anyone entering blocks teleports for 3 ticks without the hard Wilderness Diary.",
+          "facts": [
+            "F-5091",
+            "F-5089"
+          ]
+        },
+        "attention": {
+          "score": 4,
+          "rationale": "Prayer against the boss while watching for PKers."
+        },
+        "disconnect": {
+          "score": 4,
+          "rationale": "Boss and PKers keep acting on an idle player; logging out places you at the lair entrance, still in the Wilderness.",
+          "facts": [
+            "F-5091"
+          ]
+        },
+        "unpredictability": {
+          "score": 3,
+          "rationale": "PK arrival random."
+        },
+        "exposure": {
+          "score": 3,
+          "rationale": "A session of a few hours."
+        },
+        "knowledge": {
+          "score": 2,
+          "rationale": "Lair entry requirement caveat (hard diary or boss task) and open RFI.",
+          "facts": [
+            "F-5089",
+            "F-5091"
+          ]
+        }
+      }
     },
     {
       "id": "barrows-low",
       "activity": "Barrows (mid-level account)",
       "position": 50,
       "proposed_position": 50,
-      "rationale": "Prayer drain, multiple brothers.",
-      "status": "proposed",
+      "rationale": "Kept at 50: the mid-game PvM reference point.",
+      "status": "rated",
       "flags": [],
-      "facts": []
+      "facts": [
+        "F-5094",
+        "F-5095",
+        "F-5096",
+        "F-5097"
+      ],
+      "factors": {
+        "lethality": {
+          "score": 5,
+          "rationale": "Dharok 29 normally and 57 near 1 HP, against a ~50-combat account: one hit can exceed HP.",
+          "facts": [
+            "F-5096",
+            "F-5094"
+          ]
+        },
+        "pvp": {
+          "score": 0,
+          "rationale": "No PvP."
+        },
+        "escape": {
+          "score": 0,
+          "rationale": "No exit restriction is documented in this job's facts (not researched); it does not change C, which attention and disconnect set."
+        },
+        "attention": {
+          "score": 3,
+          "rationale": "Prayer must be managed against an 8-14 point drain every 18 s.",
+          "facts": [
+            "F-5095"
+          ]
+        },
+        "disconnect": {
+          "score": 4,
+          "rationale": "A brother keeps attacking an idle player.",
+          "facts": [
+            "F-5096"
+          ]
+        },
+        "unpredictability": {
+          "score": 3,
+          "rationale": "Tunnel brother and order vary."
+        },
+        "exposure": {
+          "score": 3,
+          "rationale": "A session of runs takes a few hours."
+        },
+        "knowledge": {
+          "score": 1,
+          "rationale": "Verified; new-ruleset caveat only.",
+          "facts": [
+            "F-5097"
+          ]
+        }
+      }
     },
     {
       "id": "quest-boss-mid",
       "activity": "Mid-level quest boss (e.g. Elvarg at ~40 combat)",
       "position": 48,
       "proposed_position": 48,
-      "rationale": "Locked fight, burst damage.",
-      "status": "proposed",
-      "flags": [],
-      "facts": []
+      "rationale": "Kept at 48: one-shot without the shield, escapable by teleport.",
+      "status": "rated",
+      "flags": [
+        "ONE_SHOT_POSSIBLE",
+        "QUEST_BOSS"
+      ],
+      "facts": [
+        "F-5098",
+        "F-5099",
+        "F-5100",
+        "F-5101"
+      ],
+      "factors": {
+        "lethality": {
+          "score": 5,
+          "rationale": "Unprotected dragonfire 70 against a ~45-combat account (inherent: no shield credited); 10 with an anti-dragon shield.",
+          "facts": [
+            "F-5099",
+            "F-5098"
+          ]
+        },
+        "pvp": {
+          "score": 0,
+          "rationale": "No PvP."
+        },
+        "escape": {
+          "score": 1,
+          "rationale": "Not locked: the quest guide recommends bringing a teleport to escape.",
+          "facts": [
+            "F-5100"
+          ]
+        },
+        "attention": {
+          "score": 3,
+          "rationale": "Prayer drained 10% per dragonfire; eat and pray.",
+          "facts": [
+            "F-5099"
+          ]
+        },
+        "disconnect": {
+          "score": 4,
+          "rationale": "Elvarg keeps attacking an idle player.",
+          "facts": [
+            "F-5099"
+          ]
+        },
+        "unpredictability": {
+          "score": 2,
+          "rationale": "Known attacks."
+        },
+        "exposure": {
+          "score": 2,
+          "rationale": "One fight."
+        },
+        "knowledge": {
+          "score": 1,
+          "rationale": "Verified; new-ruleset caveat only.",
+          "facts": [
+            "F-5101"
+          ]
+        }
+      }
     },
     {
       "id": "wildy-course",
       "activity": "Wilderness Agility Course (level 50+ Wilderness)",
       "position": 46,
       "proposed_position": 46,
-      "rationale": "PvP exposure, deep Wilderness.",
-      "status": "proposed",
-      "flags": [],
-      "facts": []
+      "rationale": "Kept at 46: deep-Wilderness PvP with no teleport; course damage itself is HP-proportional.",
+      "status": "rated",
+      "flags": [
+        "WILDERNESS",
+        "DEEP_WILDERNESS",
+        "TELEPORT_RESTRICTED",
+        "AGGRESSIVE_NPCS_ON_ROUTE"
+      ],
+      "facts": [
+        "F-5004",
+        "F-5102",
+        "F-5103",
+        "F-5104",
+        "F-5105",
+        "F-5106",
+        "F-5107"
+      ],
+      "factors": {
+        "lethality": {
+          "score": 3,
+          "rationale": "Falls deal 15-20% of current HP (cannot kill alone) and drop you among level 18/25 skeletons that attack.",
+          "facts": [
+            "F-5104",
+            "F-5105"
+          ]
+        },
+        "pvp": {
+          "score": 4,
+          "rationale": "Singles-plus at level 50-56 where PKers can attack you even while you fight a monster; PvP active on HW. Not rated 5: no fact calls it a notorious hotspot.",
+          "facts": [
+            "F-5102",
+            "F-5004",
+            "F-5107"
+          ]
+        },
+        "escape": {
+          "score": 5,
+          "rationale": "No teleport works at 50-56; you must walk 20+ levels south.",
+          "facts": [
+            "F-5106",
+            "F-5102"
+          ]
+        },
+        "attention": {
+          "score": 3,
+          "rationale": "Constant PK watch."
+        },
+        "disconnect": {
+          "score": 4,
+          "rationale": "Skeletons keep attacking and PKers can find an idle player.",
+          "facts": [
+            "F-5105",
+            "F-5102"
+          ]
+        },
+        "unpredictability": {
+          "score": 4,
+          "rationale": "Random PKers and roaming skeletons.",
+          "facts": [
+            "F-5102",
+            "F-5105"
+          ]
+        },
+        "exposure": {
+          "score": 3,
+          "rationale": "A training session of a few hours."
+        },
+        "knowledge": {
+          "score": 1,
+          "rationale": "Verified; escape is derived from general teleport rules.",
+          "facts": [
+            "F-5106"
+          ]
+        }
+      }
     },
     {
       "id": "werewolf",
       "activity": "Werewolf Agility Course (deathslide)",
-      "position": 40,
+      "position": 49,
       "proposed_position": 40,
-      "rationale": "One large fall hit, otherwise controlled.",
-      "status": "proposed",
-      "flags": [],
-      "facts": []
+      "rationale": "Raised from 40 to 49: the model (82) treats the undocumented fall maximum as real danger; placed between the quest-boss and Barrows anchors so the ladder stays monotone. Re-rate (likely about 40) if a maximum is ever sourced.",
+      "status": "rated",
+      "flags": [
+        "LOW_HP_SKILLING_DAMAGE"
+      ],
+      "facts": [
+        "F-5108",
+        "F-5109",
+        "F-5110",
+        "F-5111",
+        "F-5112"
+      ],
+      "factors": {
+        "lethality": {
+          "score": 4,
+          "rationale": "Deathslide fall 'upwards of 30', not scaled to HP: about half a typical mid-level HP pool per fall; low-HP players can die.",
+          "facts": [
+            "F-5109"
+          ]
+        },
+        "pvp": {
+          "score": 0,
+          "rationale": "No PvP."
+        },
+        "escape": {
+          "score": 0,
+          "rationale": "Open course; no exit restriction documented in this job's facts (not researched); does not change C."
+        },
+        "attention": {
+          "score": 2,
+          "rationale": "Check HP before every deathslide.",
+          "facts": [
+            "F-5109"
+          ]
+        },
+        "disconnect": {
+          "score": 1,
+          "rationale": "Nothing attacks a standing player."
+        },
+        "unpredictability": {
+          "score": 5,
+          "rationale": "The fall's maximum is undocumented ('upwards of 30'), the same rating as the owner's S23 step.",
+          "facts": [
+            "F-5109"
+          ]
+        },
+        "exposure": {
+          "score": 3,
+          "rationale": "A training session of a few hours (38 s laps).",
+          "facts": [
+            "F-5111"
+          ]
+        },
+        "knowledge": {
+          "score": 4,
+          "rationale": "Thinly documented maximum (no published figure), same as S23.",
+          "facts": [
+            "F-5109"
+          ]
+        }
+      }
     },
     {
       "id": "sepulchre-high",
       "activity": "Hallowed Sepulchre (floors 4-5)",
       "position": 38,
       "proposed_position": 38,
-      "rationale": "Traps, projectiles, fast reactions.",
-      "status": "proposed",
-      "flags": [],
-      "facts": []
+      "rationale": "Kept at 38: the damage is described as small and the ring negates it; the model (63) is raised by the documentation gap.",
+      "status": "rated",
+      "flags": [
+        "UNVERIFIED_MECHANIC"
+      ],
+      "facts": [
+        "F-5113",
+        "F-5114",
+        "F-5115",
+        "F-5116"
+      ],
+      "factors": {
+        "lethality": {
+          "score": 3,
+          "rationale": "Trap damage is 'small' with no published number; rated by the unpublished-damage convention (up to ~25% HP) for a 70+ HP account; the hallowed ring prevents it.",
+          "facts": [
+            "F-5114",
+            "F-5113"
+          ]
+        },
+        "pvp": {
+          "score": 0,
+          "rationale": "No PvP."
+        },
+        "escape": {
+          "score": 0,
+          "rationale": "No exit restriction documented in this job's facts (not researched); does not change C."
+        },
+        "attention": {
+          "score": 5,
+          "rationale": "Floors 4-5 need fast, precisely timed movement against traps on a running timer.",
+          "facts": [
+            "F-5113",
+            "F-5115"
+          ]
+        },
+        "disconnect": {
+          "score": 3,
+          "rationale": "Traps keep firing around an idle player.",
+          "facts": [
+            "F-5114"
+          ]
+        },
+        "unpredictability": {
+          "score": 3,
+          "rationale": "Trap damage unquantified.",
+          "facts": [
+            "F-5114"
+          ]
+        },
+        "exposure": {
+          "score": 3,
+          "rationale": "Runs of up to ~10 min; a session is a few hours.",
+          "facts": [
+            "F-5115"
+          ]
+        },
+        "knowledge": {
+          "score": 4,
+          "rationale": "No damage number published (same as the owner's S25 step).",
+          "facts": [
+            "F-5114"
+          ]
+        }
+      }
     },
     {
       "id": "slayer-mid",
       "activity": "Mid-level Slayer task (e.g. Kalphites, Dagannoth)",
       "position": 32,
       "proposed_position": 32,
-      "rationale": "Sustained damage, controllable.",
-      "status": "proposed",
-      "flags": [],
-      "facts": []
+      "rationale": "Kept at 32: sustained, controllable damage in multi-combat.",
+      "status": "rated",
+      "flags": [
+        "POISON_OR_VENOM",
+        "AGGRESSIVE_NPCS_ON_ROUTE"
+      ],
+      "facts": [
+        "F-5117",
+        "F-5118",
+        "F-5119",
+        "F-5120"
+      ],
+      "factors": {
+        "lethality": {
+          "score": 3,
+          "rationale": "Kalphite soldiers hit 8 with poison (starts at 4); lighthouse dagannoth 8-10.",
+          "facts": [
+            "F-5117",
+            "F-5119"
+          ]
+        },
+        "pvp": {
+          "score": 0,
+          "rationale": "No PvP."
+        },
+        "escape": {
+          "score": 1,
+          "rationale": "Cave/basement locations with a climb out; the lair-access fact is DISPUTED and not used.",
+          "facts": [
+            "F-5119"
+          ]
+        },
+        "attention": {
+          "score": 2,
+          "rationale": "Periodic eating and prayer checks."
+        },
+        "disconnect": {
+          "score": 3,
+          "rationale": "Aggressive monsters keep attacking an idle player.",
+          "facts": [
+            "F-5117",
+            "F-5119"
+          ]
+        },
+        "unpredictability": {
+          "score": 4,
+          "rationale": "Multi-combat aggressive groups and poison.",
+          "facts": [
+            "F-5117",
+            "F-5119"
+          ]
+        },
+        "exposure": {
+          "score": 3,
+          "rationale": "A task takes a few hours."
+        },
+        "knowledge": {
+          "score": 2,
+          "rationale": "Waterbirth damage unquantified; lair layout fact disputed.",
+          "facts": [
+            "F-5119",
+            "F-5118"
+          ]
+        }
+      }
     },
     {
       "id": "ape-atoll",
       "activity": "Ape Atoll Agility Course",
-      "position": 26,
+      "position": 22,
       "proposed_position": 26,
-      "rationale": "Aggressive monkeys, poison.",
-      "status": "proposed",
+      "rationale": "Lowered from 26 to 22: the aggressive-monkey and poison hazards are unsupported; left with an unpublished-fail-damage course like the low-HP rooftop anchor.",
+      "status": "rated",
       "flags": [],
-      "facts": []
+      "facts": [
+        "F-5121",
+        "F-5122",
+        "F-5123",
+        "F-5124"
+      ],
+      "factors": {
+        "lethality": {
+          "score": 3,
+          "rationale": "Fail damage is unpublished. The only damage claim (F-5122) is DISPUTED as a whole (its 'unspecified damage' part was confirmed), so the unpublished-damage convention applies; the cited fact establishes only that a death there is possible and run-ending.",
+          "facts": [
+            "F-5124"
+          ]
+        },
+        "pvp": {
+          "score": 0,
+          "rationale": "No PvP."
+        },
+        "escape": {
+          "score": 0,
+          "rationale": "No exit restriction documented in this job's facts; does not change C."
+        },
+        "attention": {
+          "score": 2,
+          "rationale": "Keep HP up while still failing (never fails from 75 boosted).",
+          "facts": [
+            "F-5123"
+          ]
+        },
+        "disconnect": {
+          "score": 1,
+          "rationale": "No documented attacker on the course."
+        },
+        "unpredictability": {
+          "score": 3,
+          "rationale": "Unquantified fail damage; return-to-start behaviour documented only for the first tree.",
+          "facts": [
+            "F-5122"
+          ]
+        },
+        "exposure": {
+          "score": 3,
+          "rationale": "A training session of a few hours."
+        },
+        "knowledge": {
+          "score": 4,
+          "rationale": "Fail damage unpublished; the key fact is DISPUTED.",
+          "facts": [
+            "F-5122"
+          ]
+        }
+      }
     },
     {
       "id": "brimhaven",
       "activity": "Brimhaven Agility Arena",
-      "position": 20,
+      "position": 10,
       "proposed_position": 20,
-      "rationale": "Traps, low damage.",
-      "status": "proposed",
-      "flags": [],
-      "facts": []
+      "rationale": "Lowered from 20 to 10: damage is published and scales with current HP; below the unpublished-damage rooftop anchor.",
+      "status": "rated",
+      "flags": [
+        "LOW_HP_SKILLING_DAMAGE"
+      ],
+      "facts": [
+        "F-5125",
+        "F-5126",
+        "F-5127",
+        "F-5128"
+      ],
+      "factors": {
+        "lethality": {
+          "score": 2,
+          "rationale": "Floor spikes floor(HP x 5/100)+2; trap damage scales with current HP.",
+          "facts": [
+            "F-5126"
+          ]
+        },
+        "pvp": {
+          "score": 0,
+          "rationale": "No PvP."
+        },
+        "escape": {
+          "score": 1,
+          "rationale": "Logging out ejects you from the arena.",
+          "facts": [
+            "F-5127"
+          ]
+        },
+        "attention": {
+          "score": 2,
+          "rationale": "Active trap avoidance, but damage is small and HP-scaled."
+        },
+        "disconnect": {
+          "score": 1,
+          "rationale": "Logout ejects you.",
+          "facts": [
+            "F-5127"
+          ]
+        },
+        "unpredictability": {
+          "score": 2,
+          "rationale": "Trap RNG within a published formula; darts drain Agility.",
+          "facts": [
+            "F-5126",
+            "F-5127"
+          ]
+        },
+        "exposure": {
+          "score": 3,
+          "rationale": "A session of a few hours."
+        },
+        "knowledge": {
+          "score": 1,
+          "rationale": "Formula published (Mod Ash cited).",
+          "facts": [
+            "F-5126"
+          ]
+        }
+      }
     },
     {
       "id": "rooftop-lowhp",
       "activity": "Rooftop course at low Hitpoints",
-      "position": 14,
+      "position": 20,
       "proposed_position": 14,
-      "rationale": "Small fall damage vs low HP.",
-      "status": "proposed",
-      "flags": [],
-      "facts": []
+      "rationale": "Raised from 14 to 20 and swapped above Brimhaven: Brimhaven's trap damage is published and HP-scaled, rooftop damage at low HP is not.",
+      "status": "rated",
+      "flags": [
+        "LOW_HP_SKILLING_DAMAGE"
+      ],
+      "facts": [
+        "F-5129",
+        "F-5130",
+        "F-5131",
+        "F-5132"
+      ],
+      "factors": {
+        "lethality": {
+          "score": 3,
+          "rationale": "Fail damage is 'small', often HP-scaled, but unpublished per course; at ~10 HP a single fail can be a large share of HP.",
+          "facts": [
+            "F-5129",
+            "F-5131"
+          ]
+        },
+        "pvp": {
+          "score": 0,
+          "rationale": "No PvP."
+        },
+        "escape": {
+          "score": 0,
+          "rationale": "Walk off the course; no restriction documented (not researched); does not change C."
+        },
+        "attention": {
+          "score": 2,
+          "rationale": "Eat early, check HP between laps."
+        },
+        "disconnect": {
+          "score": 0,
+          "rationale": "Nothing attacks a standing player."
+        },
+        "unpredictability": {
+          "score": 3,
+          "rationale": "Unpublished damage per obstacle.",
+          "facts": [
+            "F-5131"
+          ]
+        },
+        "exposure": {
+          "score": 3,
+          "rationale": "A training session of a few hours."
+        },
+        "knowledge": {
+          "score": 4,
+          "rationale": "Damage unpublished on Canifis and others (same convention as the owner's rooftop steps).",
+          "facts": [
+            "F-5131",
+            "F-5130"
+          ]
+        }
+      }
     },
     {
       "id": "wintertodt-low",
       "activity": "Wintertodt at low Hitpoints",
-      "position": 12,
+      "position": 14,
       "proposed_position": 12,
-      "rationale": "Chip damage, AFK-able with food.",
-      "status": "proposed",
+      "rationale": "Moved from 12 to 14 (above Brimhaven, per the model): HP is no longer what kills here, warmth is; manageable chip with known counters.",
+      "status": "rated",
       "flags": [],
-      "facts": []
+      "facts": [
+        "F-5133",
+        "F-5134",
+        "F-5135",
+        "F-5136",
+        "F-5137"
+      ],
+      "factors": {
+        "lethality": {
+          "score": 2,
+          "rationale": "Cold, snowfall and brazier damage now drain a warmth meter instead of HP; 0% warmth is instant death. Magnitudes are scaled to Firemaking and reduced by warm clothing.",
+          "facts": [
+            "F-5134",
+            "F-5135"
+          ]
+        },
+        "pvp": {
+          "score": 0,
+          "rationale": "No PvP."
+        },
+        "escape": {
+          "score": 1,
+          "rationale": "Walk out of the prison; the escape crystal's inactivity teleport also works here.",
+          "facts": [
+            "F-5137"
+          ]
+        },
+        "attention": {
+          "score": 2,
+          "rationale": "Periodic warmth checks and restoring."
+        },
+        "disconnect": {
+          "score": 3,
+          "rationale": "Cold damage keeps draining warmth while an idle player stays logged in (crystal mitigates if configured).",
+          "facts": [
+            "F-5135",
+            "F-5137"
+          ]
+        },
+        "unpredictability": {
+          "score": 2,
+          "rationale": "Snowfall and brazier shatter RNG within known mechanics.",
+          "facts": [
+            "F-5135"
+          ]
+        },
+        "exposure": {
+          "score": 3,
+          "rationale": "A session of a few hours."
+        },
+        "knowledge": {
+          "score": 1,
+          "rationale": "Verified mechanics; warmth damage magnitudes not quantified.",
+          "facts": [
+            "F-5135"
+          ]
+        }
+      }
     },
     {
       "id": "rooftop",
       "activity": "Rooftop course at normal Hitpoints / Colossal Wyrm (no-fail)",
       "position": 6,
       "proposed_position": 6,
-      "rationale": "Trivial damage.",
-      "status": "proposed",
+      "rationale": "Kept at 6: trivial damage.",
+      "status": "rated",
       "flags": [],
-      "facts": []
+      "facts": [
+        "F-5138",
+        "F-5139",
+        "F-5140"
+      ],
+      "factors": {
+        "lethality": {
+          "score": 1,
+          "rationale": "Small, often HP-proportional fail damage against a normal HP pool; the Colossal Wyrm courses cannot be failed at all.",
+          "facts": [
+            "F-5139",
+            "F-5138"
+          ]
+        },
+        "pvp": {
+          "score": 0,
+          "rationale": "No PvP."
+        },
+        "escape": {
+          "score": 0,
+          "rationale": "Walk off the course."
+        },
+        "attention": {
+          "score": 1,
+          "rationale": "Safe above a modest HP threshold."
+        },
+        "disconnect": {
+          "score": 0,
+          "rationale": "Nothing attacks a standing player."
+        },
+        "unpredictability": {
+          "score": 2,
+          "rationale": "Fail damage bounded but not published on every course.",
+          "facts": [
+            "F-5139"
+          ]
+        },
+        "exposure": {
+          "score": 3,
+          "rationale": "A training session of a few hours."
+        },
+        "knowledge": {
+          "score": 2,
+          "rationale": "Per-course numbers not all published.",
+          "facts": [
+            "F-5139",
+            "F-5140"
+          ]
+        }
+      }
     },
     {
       "id": "afk-safe",
       "activity": "AFK skilling in a safe area (e.g. banking, fishing in a safe zone)",
       "position": 0,
       "proposed_position": 0,
-      "rationale": "No damage source.",
-      "status": "proposed",
+      "rationale": "Floor of the ladder (0); model 2 from the knowledge term only.",
+      "status": "rated",
       "flags": [],
-      "facts": []
+      "facts": [
+        "F-5141",
+        "F-5142",
+        "F-5143",
+        "F-5144"
+      ],
+      "factors": {
+        "lethality": {
+          "score": 0,
+          "rationale": "No damage source; combat 'guardian' random events were removed.",
+          "facts": [
+            "F-5143"
+          ]
+        },
+        "pvp": {
+          "score": 0,
+          "rationale": "Safe zone."
+        },
+        "escape": {
+          "score": 0,
+          "rationale": "Nothing to escape."
+        },
+        "attention": {
+          "score": 0,
+          "rationale": "Fully AFK-safe."
+        },
+        "disconnect": {
+          "score": 0,
+          "rationale": "Harmless."
+        },
+        "unpredictability": {
+          "score": 1,
+          "rationale": "A random event is offered every 1-2 hours.",
+          "facts": [
+            "F-5141"
+          ]
+        },
+        "exposure": {
+          "score": 3,
+          "rationale": "A session of a few hours."
+        },
+        "knowledge": {
+          "score": 1,
+          "rationale": "Random events are listed HW-unsafe (new ruleset caveat); no damage source identified.",
+          "facts": [
+            "F-5142"
+          ]
+        }
+      }
     }
-  ]
+  ],
+  "mapping": "isotonic (pool-adjacent-violators) fit of board position on model raw score; anchors the model cannot separate share an averaged position"
 }

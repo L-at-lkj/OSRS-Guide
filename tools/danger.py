@@ -155,11 +155,27 @@ def ladder(cal: dict | None = None) -> dict:
         if hi["raw"] < lo["raw"]:
             out["conflicts"].append(f"{hi['activity']} (pos {hi['position']}, raw {hi['raw']}) rates below "
                                     f"{lo['activity']} (pos {lo['position']}, raw {lo['raw']})")
-    # monotone points: position ascending, raw forced non-decreasing (running max)
-    pts, best = [(0, 0)], 0
-    for a in rated:
-        best = max(best, a["raw"])
-        pts.append((best, a["position"]))
+    # Isotonic (pool-adjacent-violators) fit of board position on model raw score: the
+    # monotone mapping closest to the board's judgement. Where the model cannot separate
+    # anchors (e.g. several instanced bosses at raw 94), they share their averaged position.
+    by_raw = sorted(rated, key=lambda x: (x["raw"], x["position"]))
+    blocks = []  # [sum_pos, count, max_raw, min_raw]
+    for a in by_raw:
+        blocks.append([a["position"], 1, a["raw"], a["raw"]])
+        while len(blocks) > 1 and (blocks[-2][0] / blocks[-2][1] > blocks[-1][0] / blocks[-1][1]
+                                   or blocks[-2][2] == blocks[-1][3]):
+            b = blocks.pop()
+            blocks[-1][0] += b[0]; blocks[-1][1] += b[1]; blocks[-1][2] = b[2]
+    pts = [(0, 0)]
+    for sm, n, rmax, rmin in blocks:
+        pos = round(sm / n, 1)
+        if rmin == rmax:
+            pts.append((rmax, pos))
+        else:
+            pts.append((rmin, pos)); pts.append((rmax, pos))
+    top = max(rated, key=lambda a: a["position"]) if rated else None
+    if top and top["position"] == 100:
+        pts.append((101, 100))
     out["points"] = pts
     out["anchors"] = rated
     top = [a for a in cal.get("anchors", []) if a.get("position") == 100 and a.get("status") in ("rated", "approved")]
@@ -173,11 +189,11 @@ def calibrate(raw: int, lad: dict) -> tuple[int, list[str]]:
         return raw, []
     pts = lad["points"]
     if raw >= pts[-1][0]:
-        return 100 if raw > pts[-1][0] else pts[-1][1], [lad["anchors"][-1]["activity"]]
+        return min(100, round(pts[-1][1])), [lad["anchors"][-1]["activity"]]
     for (r0, p0), (r1, p1) in zip(pts, pts[1:]):
         if r0 <= raw <= r1:
             pos = p0 if r1 == r0 else p0 + (p1 - p0) * (raw - r0) / (r1 - r0)
-            near = sorted(lad["anchors"], key=lambda a: abs(a["raw"] - raw))[:2]
+            near = sorted(lad["anchors"], key=lambda a: (abs(a["raw"] - raw), -a["position"]))[:2]
             return round(pos), [a["activity"] for a in near]
     return raw, []
 
