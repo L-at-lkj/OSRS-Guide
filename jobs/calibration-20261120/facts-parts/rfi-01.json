@@ -1,0 +1,1267 @@
+{
+  "as_of": "2026-11-20",
+  "facts": [
+    {"fact_id": "F-5001", "claim_id": "C-RFI-001", "subject": "hw-rules: death ruleset", "attribute": "hw_death_ruleset",
+     "value": "Hardcore Group Ironman ruleset; ~99% of deaths are run-ending", "unit": null,
+     "statement": "Jagex (T1) states Hardcore Worlds use the Hardcore Group Ironman death ruleset with very few exceptions and to expect 99% of deaths to send the player to Death's office (Reset or Transfer). The HW wiki page agrees.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "Hardcore Worlds launched 2026-11-04 (16 days before this job): new content; Jagex may amend the ruleset. Re-check the T1 post before release.",
+     "sources": [
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "Hardcore worlds will use the [https://oldschool.runescape.wiki/w/Group_Ironman_Mode#Hardcore_Group_Ironman Hardcore Group Ironman ruleset] for death which is much less forgiving! This ruleset has very few exceptions, which means you should go in with the expectation that 99% of deaths will land you right back in Death's office ready to make a difficult choice.", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "Hardcore Worlds", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671", "revid": 15404671, "retrieved": "2026-11-20", "published": null, "quote": "Hardcore Worlds follows the same death ruleset as [[Group_Ironman_Mode#Hardcore_Group_Ironman|Hardcore Group Ironman]].", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": "2026-11-04", "new_content": true},
+
+    {"fact_id": "F-5002", "claim_id": "C-RFI-002", "subject": "hw-rules: unsafe list", "attribute": "hw_unsafe_activities",
+     "value": ["Barbarian Assault","Camelot Training Room","Chambers of Xeric","Dream World (Lunar Diplomacy)","Fishing Trawler","Inferno","Magic Training Arena","Nightmare Zone","Pest Control","Random Events","Rogues' Den","TzHaar Fight Cave","Player-owned House"], "unit": null,
+     "statement": "The T1 announcement lists exactly these 13 activities as UNSAFE on Hardcore Worlds although usually safe for Hardcore Ironman.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "New content (HW launched 2026-11-04). The HW wiki page (T2) additionally lists PvM Arena as unsafe; since unsafe is the HGIM default this only widens the list. The list names HCIM-safe activities that become unsafe; it is not a list of all unsafe activities.",
+     "sources": [
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "Here's the full list of '''UNSAFE''' activities that are usually safe in Hardcore Ironman: * Barbarian Assault * Camelot Training Room * Chambers of Xeric * Dream World ''(during Lunar Diplomacy)'' * Fishing Trawler * Inferno * Magic Training Arena * Nightmare Zone * Pest Control * Random Events * Rogues' Den * TzHaar Fight Cave * Within the Player-owned House ''(PoH)''", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "Hardcore Worlds", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671", "revid": 15404671, "retrieved": "2026-11-20", "published": null, "quote": "'''The following activities are {{colour|red|UNSAFE}} and dying in them will result in an official death:''' ... * [[PvM Arena]]", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": true},
+
+    {"fact_id": "F-5003", "claim_id": "C-RFI-003", "subject": "hw-rules: safe exceptions", "attribute": "hw_safe_exceptions",
+     "value": ["Castle Wars","Clan Wars","Soul Wars","Fremennik Trials (Koschei phase 4 only)","Karamja Elite Diary Fight Caves resurrection","TzHaar Fight Pit","Zulrah (Western Provinces Elite resurrection only)"], "unit": null,
+     "statement": "The T1 announcement lists exactly these 7 safe exceptions on Hardcore Worlds.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "Matches the T1 list exactly. The HW wiki page (T2, rev 15404671) lists further SAFE items not in the T1 post (capsizing a boat, Emir's Arena, Pete Kayer's Challenges, Galvek replay, Glough replay, Last Man Standing (disabled at launch)) and omits the Zulrah resurrection. Per policy (HW death rules T1 only) those T2-only items must NOT be treated as safe until T1-confirmed; RFI raised. New content (HW launched 2026-11-04).",
+     "sources": [
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "That doesn't mean there aren't exceptions though as the following minigames are safe: * Castle Wars * Clan Wars * Soul Wars * The Fremennik Trials ''(only the 4th phase of the duel with Koschei the Deathless)'' * The Resurrection reward for the TzHaar Fight Caves from the Karamja Elite Diary * TzHaar Fight Pit * Zulrah ''(only the Resurrection reward from the Elite Western Provinces Diary)''", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "Hardcore Worlds", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671", "revid": 15404671, "retrieved": "2026-11-20", "published": null, "quote": "The following activities are '''{{colour|green|SAFE}}''' and dying within them will not count as an official death: * Capsizing your [[Boat]] ... * [[Emir's Arena]] ... * [[Pete Kayer's Challenges]] * Replay of the [[Galvek]] fight * Replay of [[Glough]] boss fight", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": true},
+
+    {"fact_id": "F-5004", "claim_id": "C-RFI-004", "subject": "hw-rules: PvP deaths", "attribute": "pvp_exposure",
+     "value": "Wilderness PvP is active on Hardcore Worlds; PvP deaths follow normal Wilderness rules and then force Reset/Transfer", "unit": null,
+     "statement": "Jagex states PvP deaths on HW follow the usual Wilderness item rules, then the player must choose Reset or Transfer; PKing proceeds as normal in the Wilderness.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "New content (HW launched 2026-11-04). Bounty Hunter and Last Man Standing were disabled at launch.",
+     "sources": [
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "As for PvP deaths, all of the [https://oldschool.runescape.wiki/w/Items_Kept_on_Death#Player_versus_Player_death_inside_the_Wilderness usual rule within the Wilderness]. Then you'll be given a choice: '''Reset''' or '''Transfer'''.", "fetched_by": "fact-verifier"},
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "For those of you PKing out there for added risk, death proceeds as normal in the Wilderness so you'll receive the same items you'd usually get in the main game. The Wilderness is even more dangerous than ever before, as you'll be making characters sit ''permanently''.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": true},
+
+    {"fact_id": "F-5005", "claim_id": "C-RFI-005", "subject": "tfa-max: identity", "attribute": "activity_identity",
+     "value": {"name":"The Fractured Archive","aka":["Raids 4","TFA"],"type":"raid (fourth raid)","location":"Chasm of Tears","access":"While Guthix Sleeps"}, "unit": null,
+     "statement": "The Fractured Archive (aka Raids 4, TFA) is the fourth raid, located in the Chasm of Tears; While Guthix Sleeps is required.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "TFA released 2026-10-20 (31 days ago) and has changed 7 times since (latest 2026-11-18); identity facts are stable but the page is volatile.",
+     "sources": [
+      {"tier": "T2", "title": "The Fractured Archive", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15410254", "revid": 15410254, "retrieved": "2026-11-20", "published": null, "quote": "'''The Fractured Archive''' is the fourth [[Raids|raid]] in ''Old School RuneScape'', released on [[20 October]] [[2026]]. ... Completion of [[While Guthix Sleeps]] is required to access the raid | |aka = Raids 4, TFA | |location = [[Chasm of Tears]]", "fetched_by": "fact-verifier"},
+      {"tier": "T1", "title": "Update:The Fractured Archive - Out Today", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15382533", "revid": 15382533, "retrieved": "2026-11-20", "published": "2026-10-20", "quote": "If you've not already got While Guthix Sleeps completed, then you better get to it ASAP!", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": "2026-10-20", "new_content": false},
+
+    {"fact_id": "F-5006", "claim_id": "C-RFI-006", "subject": "tfa-max: release date", "attribute": "release_date",
+     "value": "2026-10-20", "unit": null,
+     "statement": "The Fractured Archive was released on 20 October 2026 (Jagex release post dated 20 October 2026).",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T1", "title": "Update:The Fractured Archive - Out Today", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15382533", "revid": 15382533, "retrieved": "2026-11-20", "published": "2026-10-20", "quote": "{{Update|date=20 October 2026|rev=22 October 2026|url=https://secure.runescape.com/m=news/the-fractured-archive---out-today?oldschool=1|category=game}}", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "The Fractured Archive", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15410254", "revid": 15410254, "retrieved": "2026-11-20", "published": null, "quote": "|release = [[20 October]] [[2026]]", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": "2026-10-20", "new_content": false},
+
+    {"fact_id": "F-5007", "claim_id": "C-RFI-007", "subject": "tfa-max: modes", "attribute": "modes",
+     "value": {"modes":["Normal","Practice"],"hard_mode_exists":false,"hardest_mode":"Normal mode (there is no hard mode)"}, "unit": null,
+     "statement": "TFA has no hard mode (the only current raid without one); Practice Mode was added on 18 Nov 2026, so the modes are Normal and Practice.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "The Raids page says TFA has no hard mode 'at least initially'; a hard mode may be added later. Practice Mode is 2 days old (new content). 'Hardest mode = Normal' is a derived reading; scale (solo/duo vs larger teams) also changes difficulty.",
+     "sources": [
+      {"tier": "T2", "title": "Raids", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15393781", "revid": 15393781, "retrieved": "2026-11-20", "published": null, "quote": "Three of the four current raids -- all except [[The Fractured Archive]] -- have a hard mode variant to them ... [[The Fractured Archive]], at least initially, does not have a hard mode", "fetched_by": "fact-verifier"},
+      {"tier": "T1", "title": "Update:Quest Month Week 3 & TFA Practice Mode", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406871", "revid": 15406871, "retrieved": "2026-11-20", "published": "2026-11-18", "quote": "* Practice Mode is now available! Use it to practise unlocked encounters, retry after wipes and skip phases, without affecting normal-mode records or earning loot.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": "2026-11-18", "new_content": true},
+
+    {"fact_id": "F-5008", "claim_id": "C-RFI-008", "subject": "tfa-max: practice mode supplies", "attribute": "practice_mode_mechanics",
+     "value": "Practice Mode provides an unlimited-use Guthixian root (heals 20, acts as super restore/combat/ranging/magic/stamina, cures poison and bleed); bosses are fought as-is", "unit": null,
+     "statement": "Jagex and the wiki agree: Practice Mode gives a reusable Guthixian Root (20 HP, stamina, super restore, super combat, ranging, magic, removes poison and bleed) and the boss is fought as-is.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "Practice Mode released 2026-11-18 (new content). Charged equipment is still consumed. No source says whether a death in Practice Mode is safe on Hardcore Worlds: treat it as UNSAFE until a T1 source says otherwise (RFI raised).",
+     "sources": [
+      {"tier": "T2", "title": "The Fractured Archive", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15410254", "revid": 15410254, "retrieved": "2026-11-20", "published": null, "quote": "Rather than the player's own supplies (although charged equipment will still be expended as normal), players are given a [[Guthixian root]] as their supply ... they heal 20 health, act as a super restore, stamina, combat, ranging, and magic potion, along with curing bleed and poison statuses. This item has unlimited uses.", "fetched_by": "fact-verifier"},
+      {"tier": "T1", "title": "Update:Quest Month Week 3 & TFA Practice Mode", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406871", "revid": 15406871, "retrieved": "2026-11-20", "published": "2026-11-18", "quote": "This is effectively a one-slot, reusable version of the bandages from Theatre of Blood's Entry Mode: it restores 20HP, grants the Stamina potion effect, acts as a Super Restore, Super Combat, Ranging and Magic potion all at once, as well as removing poison and bleed effects.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": "2026-11-18", "new_content": true},
+
+    {"fact_id": "F-5009", "claim_id": "C-RFI-009", "subject": "tfa-max: scaling", "attribute": "party_scaling",
+     "value": {"players":"1-8","solo_scales_as":"duo"}, "unit": null,
+     "statement": "TFA takes 1-8 players; boss HP scales with party size with a minimum of two-player scaling, so a solo raid scales as a duo.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "TFA scaling has been retuned (duo/solo +10% HP on 2026-11-11, reverted for duos 2026-11-18); further changes are likely.",
+     "sources": [
+      {"tier": "T2", "title": "The Fractured Archive", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15410254", "revid": 15410254, "retrieved": "2026-11-20", "published": null, "quote": "|players = 1-8 ... All bosses' hitpoints scale to the amount of players present in the raid, with the minimum scaling being set to two players if the player enters alone.", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "Raids", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15393781", "revid": 15393781, "retrieved": "2026-11-20", "published": null, "quote": "*The Fractured Archive - party size determines the raid's scaling - if attempted solo, enemies will scale as if doing a duo.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5010", "claim_id": "C-RFI-010", "subject": "tfa-max: typical account", "attribute": "typical_stats",
+     "value": {"Hitpoints":"95+","Attack":"90+","Strength":"95+","Defence":"75+","Ranged":"95+","Magic":"75+"}, "unit": null,
+     "statement": "The TFA strategy page recommends 95+ Hitpoints, 90+ Attack, 95+ Strength, 75+ Defence, 95+ Ranged and 75+ Magic.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "Recommendations, not requirements. The duo money-making guide recommends higher in places (Defence 80+, Magic 94+, Prayer 77+; Hitpoints 90+). The page was edited today (rev 15410382); these lines match the researcher's revision.",
+     "sources": [
+      {"tier": "T2", "title": "The Fractured Archive/Strategies", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15410382", "revid": 15410382, "retrieved": "2026-11-20", "published": null, "quote": "* {{SCP|Hitpoints|95}}+ * {{SCP|Attack|90}}+ * {{SCP|Strength|95}}+ * {{SCP|Defence|75}}+ * {{SCP|Ranged|95}}+ * {{SCP|Magic|75}}+", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "Money making guide/The Fractured Archive (Duo)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15405222", "revid": 15405222, "retrieved": "2026-11-20", "published": null, "quote": "* {{SCP|Attack|90+}}, {{SCP|Strength|95}}, {{SCP|Defence|80+}}, {{SCP|Hitpoints|90+}}, {{SCP|Ranged|95+}} recommended * {{SCP|Magic|94+}} recommended * {{SCP|Prayer|77+}} recommended", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5011", "claim_id": "C-RFI-011", "subject": "tfa-max: encounter structure", "attribute": "encounter_structure",
+     "value": "5 of 8 bosses per raid: Archive Guardian first, then three paired-choice rooms, Ocellus last", "unit": null,
+     "statement": "TFA has eight bosses; five are fought per raid: Archive Guardian, then a choice of Ezekiel/Bork, Moia/Dreadnoth, Dagon'hai/Xarth, then Ocellus.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "TFA content is volatile (latest change 2026-11-18).",
+     "sources": [
+      {"tier": "T2", "title": "The Fractured Archive", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15410254", "revid": 15410254, "retrieved": "2026-11-20", "published": null, "quote": "There are eight bosses, however only five of these will be fought per raid, with the first and final bosses being encountered in every run. After defeating the first boss, the Archive Guardian, the player can select one of two doors to the side leading to a different boss encounter. ... !5th |[[File:Ocellus icon.png]] || colspan=\"2\" | [[/Strategies#Ocellus|Ocellus]]", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5012", "claim_id": "C-RFI-012", "subject": "tfa-max: Ezekiel charged swords", "attribute": "max_hit",
+     "value": {"charged_sword":70,"uncharged_sword":55,"two_charged_swords":"can insta-kill"}, "unit": "hitpoints",
+     "statement": "Ezekiel's animated swords hit up to 55 (plus bleed); charged swords are capped at 70 per sword since 11 Nov 2026, and two charged swords at once can insta-kill.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "The 70 cap was introduced on 2026-11-11 (before that charged-sword damage was uncapped); TFA damage values are still being tuned.",
+     "sources": [
+      {"tier": "T2", "title": "The Fractured Archive/Strategies", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15410382", "revid": 15410382, "retrieved": "2026-11-20", "published": null, "quote": "After {{ticks|14}}, they will swing forward, dealing up to 55 damage and inflicting a [[bleed]] starting at 2 damage. ... Note that charging up the swords increases the damage they deal to the player as well, up to a maximum of 70 damage, and can potentially insta-kill players if struck by two charged swords at once.", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "The Fractured Archive", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15410254", "revid": 15410254, "retrieved": "2026-11-20", "published": null, "quote": "**Damage from charged swords is now capped at 70. Previously, the damage was unaffected, which could instantly kill players if they weren't being careful.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5013", "claim_id": "C-RFI-013", "subject": "tfa-max: Ocellus annihilation", "attribute": "deadliest_mechanic",
+     "value": "Ocellus 'Embrace... annihilation...': numerous simultaneous projectiles with a very high chance to kill", "unit": null,
+     "statement": "If not enough tendrils are mitigated, Ocellus announces 'Embrace... annihilation...' and launches numerous projectiles at once with a very high chance to kill.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "No numeric max hit is published for this attack. TFA mechanics are still being changed.",
+     "sources": [
+      {"tier": "T2", "title": "The Fractured Archive/Strategies", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15410382", "revid": 15410382, "retrieved": "2026-11-20", "published": null, "quote": "* If not enough tendrils were mitigated, he will announce {{Overhead|Embrace... annihilation...}}, launching numerous projectiles all at once that have a very high chance to kill players.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5014", "claim_id": "C-RFI-014", "subject": "tfa-max: other max hits", "attribute": "max_hit",
+     "value": {"Xarth explosive blast":60,"Bork big cannon":60,"Dagon'hai blocker (Bandosian spell)":55,"Dagon'hai blocker (Zamorakian spell)":30,"Moia magic blade":45,"Dreadnoth slam/projectiles":30,"Archive Guardian fall":30}, "unit": "hitpoints",
+     "researcher_value": {"Xarth explosive blast":60,"Bork big cannon":60,"Dagon'hai blocker (Zamorak spell)":55,"Moia magic blade":45,"Dreadnoth slam/projectiles":30,"Archive Guardian fall":30},
+     "statement": "Five of six numbers match, but the 55-damage Dagon'hai blocker hit is the Bandosian spell; the Zamorakian spell hits the blocker for up to 30 plus burn.",
+     "status": "DISPUTED", "caveat": "Researcher mislabelled the 55 as the Zamorak spell. If a spell is not blocked its damage applies to the whole team. The other values (Xarth 60, Bork cannon 60, Moia blade 45 without Protect from Magic, Dreadnoth 30, Archive Guardian fall 30) match. TFA values are still being tuned.",
+     "sources": [
+      {"tier": "T2", "title": "The Fractured Archive/Strategies", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15410382", "revid": 15410382, "retrieved": "2026-11-20", "published": null, "quote": "|{{Overhead|Zamorak empowers us!}} |The blocker takes up to 30 damage and is inflicted with a [[burn]] that starts at 3 damage. ... |{{Overhead|Bandosian strength, feed the flame!}} |The blocker takes up to 55 damage.", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "The Fractured Archive/Strategies", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15410382", "revid": 15410382, "retrieved": "2026-11-20", "published": null, "quote": "he will unleash an explosive blast in the process, which can hit up to 60 and apply 7 burn stacks. | Getting hit directly by it will deal up to 60 damage, but is easily avoided. | which can deal up to 45 damage without [[Protect from Magic]] | The slam and projectiles can deal up to 30 damage each | players will be dealt up to 30 damage if they are next to the boss when it falls down", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5015", "claim_id": "C-RFI-015", "subject": "tfa-max: Moia enrage wipe risk", "attribute": "deadliest_mechanic",
+     "value": "Moia enrage explosion ~25 damage per undead binder alive when the countdown ends; the countdown starts at 41 ticks and shortens by 2 ticks with each subsequent charge (not per death); a teammate death cuts team damage, so the shrinking timer makes a wipe likely", "unit": null,
+     "researcher_value": "Moia enrage explosion ~25 damage per undead binder alive; each death shortens the timer, so deaths cascade into wipes",
+     "statement": "In Moia's enrage phase the explosion deals roughly 25 per living undead binder; the countdown shrinks by 2 ticks every cycle, so a teammate death (less damage) is likely to cause a wipe.",
+     "status": "DISPUTED", "caveat": "The page says the timer shortens with each subsequent charge, not with each death; the wipe-cascade conclusion holds for a different reason (less time per cycle, less team damage).",
+     "sources": [
+      {"tier": "T2", "title": "The Fractured Archive/Strategies", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15410382", "revid": 15410382, "retrieved": "2026-11-20", "published": null, "quote": "When this timer runs out, she will unleash an explosive attack, dealing roughly 25 damage for every undead binder present ... The first countdown lasts for {{ticks|41}}, but is reduced by {{ticks|2}} for each subsequent charge. As such, any teammates who die are likely to cause a wipe as there is less and less time to defeat her.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5016", "claim_id": "C-RFI-016", "subject": "tfa-max: Jagex danger statement", "attribute": "official_danger_statement",
+     "value": "Jagex: 'toughest raid yet'; going in blind 'you will die'", "unit": null,
+     "statement": "Jagex called TFA its 'toughest raid yet' and warned that players going in blind on release 'will die'.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "'Toughest raid yet' is quoted on the wiki from Jagex's 'First Look' post (25 Jan 2026), which I did not fetch directly. The 'you will die' warning (T1) was aimed at blind players at release.",
+     "sources": [
+      {"tier": "T2", "title": "The Fractured Archive", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15410254", "revid": 15410254, "retrieved": "2026-11-20", "published": null, "quote": "Described by [[Jagex]] as the \"toughest raid yet\",{{CiteNews|url=https://secure.runescape.com/m=news/a=13/the-fractured-archive---first-look?oldschool=1|title=The Fractured Archive - First Look|newsdate=25 January 2026}}", "fetched_by": "fact-verifier"},
+      {"tier": "T1", "title": "Update:The Fractured Archive - Out Today", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15382533", "revid": 15382533, "retrieved": "2026-11-20", "published": "2026-10-20", "quote": "but if you are going in blind on release without knowledge of all mechanics, then you ''will'' die. You have been warned!", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5017", "claim_id": "C-RFI-017", "subject": "tfa-max: duo failure rate", "attribute": "observed_failure_rate",
+     "value": ">1 in 4 duo runs ended 'in disaster' in the week before 18 Nov 2026", "unit": null,
+     "statement": "Jagex (18 Nov 2026) said more than 1 in 4 duo runs ended in disaster the previous week.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "Jagex does not define 'disaster' (wipe or death); the figure is for the week with the +10% duo HP that was reverted on 18 Nov. Not a per-player death rate.",
+     "sources": [
+      {"tier": "T1", "title": "Update:Quest Month Week 3 & TFA Practice Mode", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406871", "revid": 15406871, "retrieved": "2026-11-20", "published": "2026-11-18", "quote": "Despite all of the above, duos remain a riskier scale, with more than 1 in 4 runs ending in disaster last week - perhaps it would be nice if you could brush up on your skills to tidy up those runs?", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": "2026-11-18", "new_content": true},
+
+    {"fact_id": "F-5018", "claim_id": "C-RFI-018", "subject": "tfa-max: death and wipe", "attribute": "hw_death_classification",
+     "value": "UNSAFE_DEATH", "unit": null,
+     "statement": "Jagex states TFA deaths are not safe (HCIM/HCGIM lose status); TFA is not among the HW safe exceptions, so a TFA death is run-ending on Hardcore Worlds. A team wipe ejects players and places a gravestone outside.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "Classification rests on T1 (TFA release post + HW announcement). HW ruleset is new content (2026-11-04). Practice Mode death safety is not documented anywhere (treat as unsafe).",
+     "sources": [
+      {"tier": "T1", "title": "Update:The Fractured Archive - Out Today", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15382533", "revid": 15382533, "retrieved": "2026-11-20", "published": "2026-10-20", "quote": "'''Deaths in The Fractured Archive are not considered 'safe' deaths. If you are a HCIM or HCGIM, you will lose your status on death inside the archive. ... * If your team wipes, you'll be removed from the raid and have a gravestone placed outside.", "fetched_by": "fact-verifier"},
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "Hardcore worlds will use the [https://oldschool.runescape.wiki/w/Group_Ironman_Mode#Hardcore_Group_Ironman Hardcore Group Ironman ruleset] for death which is much less forgiving! This ruleset has very few exceptions, which means you should go in with the expectation that 99% of deaths will land you right back in Death's office", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "The Fractured Archive", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15410254", "revid": 15410254, "retrieved": "2026-11-20", "published": null, "quote": "{{Safe death|IRS=no|HCIM=no|HCGIM=no}}", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": true},
+
+    {"fact_id": "F-5019", "claim_id": "C-RFI-019", "subject": "tfa-max: escape", "attribute": "escape",
+     "value": "Instanced raid; no documented mid-raid teleport or escape-crystal support", "unit": null,
+     "statement": "All raids are instanced. The escape crystal page lists CoX, ToB and ToA but not TFA, and the TFA page documents no mid-raid teleport out.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "This is absence of documentation, not proof that escape is impossible. Whether an escape crystal or teleport works inside TFA needs a T1 or in-game check (RFI raised). Disconnect: since 22 Oct, food/potions are no longer lost on disconnect; other disconnect behaviour is undocumented.",
+     "sources": [
+      {"tier": "T2", "title": "Raids", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15393781", "revid": 15393781, "retrieved": "2026-11-20", "published": null, "quote": "All raids take place in an instance", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "Escape crystal", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409296", "revid": 15409296, "retrieved": "2026-11-20", "published": null, "quote": "The crystal acts similarly to a [[respawn teleport]], teleporting players away from various activities ... * [[Barbarian Assault]] * [[Chambers of Xeric]] * [[The Inferno]] * [[Pest Control]] * [[Theatre of Blood]] * [[TzHaar-Ket-Rak's Challenges]] * [[Tombs of Amascut]]", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5020", "claim_id": "C-RFI-020", "subject": "tfa-max: PvP", "attribute": "pvp_exposure",
+     "value": "none (instanced raid)", "unit": null,
+     "statement": "TFA, like all raids, takes place in an instance, so there is no PvP exposure inside.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Raids", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15393781", "revid": 15393781, "retrieved": "2026-11-20", "published": null, "quote": "All raids take place in an instance", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5021", "claim_id": "C-RFI-021", "subject": "tfa-max: duration", "attribute": "typical_attempt_duration",
+     "value": 20, "unit": "minutes",
+     "statement": "The duo money-making guide assumes 3 completions per hour, i.e. about 20 minutes per duo run (computed 60/3).",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "Derived from an experienced-duo kill rate (kph 3); learner attempts will be longer. The guide already uses the post-18-Nov duo unique rate (1/17), so it reflects the reverted duo HP.",
+     "sources": [
+      {"tier": "T2", "title": "Money making guide/The Fractured Archive (Duo)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15405222", "revid": 15405222, "retrieved": "2026-11-20", "published": null, "quote": "|kph = 3 {{#vardefine:unique|{{#expr:1/17}}}} <!--Overall unique chance-->", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5022", "claim_id": "C-RFI-022", "subject": "tfa-max: volatility", "attribute": "content_volatility",
+     "value": ["2026-10-21 hotfix","2026-10-22 hotfix","2026-10-28","2026-11-03","2026-11-11 (HP, mechanics, Ezekiel damage cap)","2026-11-12 hotfix","2026-11-18 (duo HP revert, Practice Mode)"], "unit": null,
+     "statement": "The TFA changes section lists seven changes since release: hotfixes on 21 and 22 Oct, updates on 28 Oct and 3 Nov, the 11 Nov balance update, a 12 Nov hotfix and the 18 Nov update.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "Further changes are likely; the TFA page was edited again today (rev 15410254, 2026-11-20 18:21 UTC) without changing these entries.",
+     "sources": [
+      {"tier": "T2", "title": "The Fractured Archive", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15410254", "revid": 15410254, "retrieved": "2026-11-20", "published": null, "quote": "|date = 18 November 2026 ... *Reverted the 10% duo HP increase. ... |date = 12 November 2026 |type = hotfix ... |date = 11 November 2026 ... |date = 3 November 2026 ... |date = 28 October 2026 ... |date = 22 October 2026 |type = hotfix ... |date = 21 October 2026 |type = hotfix", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5023", "claim_id": "C-RFI-023", "subject": "inferno: typical account", "attribute": "typical_stats",
+     "value": {"Ranged":"90+","Defence":"90+","Prayer":"80+","Magic":"94+ (Ice Barrage)","Hitpoints":"90+"}, "unit": null,
+     "statement": "The Inferno strategy page recommends 90+ Ranged, 90+ Defence, 80+ Prayer, 94+ Magic (Ice Barrage) and 90+ Hitpoints; entry costs a fire cape.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Inferno/Strategies", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403169", "revid": 15403169, "retrieved": "2026-11-20", "published": null, "quote": "*{{SCP|Ranged|90+}} *{{SCP|Defence|90+}} *{{SCP|Prayer|80+}} *{{SCP|Magic|94+}} for [[Ice Barrage]] *{{SCP|Hitpoints|90+}}", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "Inferno", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409416", "revid": 15409416, "retrieved": "2026-11-20", "published": null, "quote": "In order to access the Inferno, players must give [[TzHaar-Ket-Keh]] a [[fire cape]].", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5024", "claim_id": "C-RFI-024", "subject": "inferno: structure", "attribute": "encounter_structure",
+     "value": "69 waves, solo, restart from wave 1 on defeat", "unit": null,
+     "statement": "The Inferno has 69 waves, other players cannot enter, and a defeated player restarts from wave 1.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Inferno", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409416", "revid": 15409416, "retrieved": "2026-11-20", "published": null, "quote": "There are 69 waves in total. ... Restocking between waves is not possible and other players cannot enter ... [[Death|Dying]] results in the player being returned to the entrance to the Inferno, having to restart from the first wave", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5025", "claim_id": "C-RFI-025", "subject": "inferno: max hit", "attribute": "max_hit",
+     "value": 148, "unit": "hitpoints",
+     "statement": "TzKal-Zuk's max hit is 148 (a single typeless roll on the average of its 128 magic and 169 ranged max hits); Zuk can kill from full hitpoints, including over-max.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "TzKal-Zuk", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409418", "revid": 15409418, "retrieved": "2026-11-20", "published": null, "quote": "|max hit = 148 ... The max hit of the mage attack is 128, while the range attack's max hit is 169. ... Zuk is extremely accurate and can kill a player from full hitpoints (including over max) and its attacks cannot be [[Tick manipulation|tick-eaten]].", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5026", "claim_id": "C-RFI-026", "subject": "inferno: escape", "attribute": "escape",
+     "value": "No restocking; pausing is possible only by requesting logout between waves; an escape crystal can teleport the player out", "unit": null,
+     "statement": "No restocking between waves; the run can be paused by attempting to log out between waves (no longer at the start of a wave); the Inferno is on the escape crystal's list of activities it teleports out of.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Inferno", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409416", "revid": 15409416, "retrieved": "2026-11-20", "published": null, "quote": "Restocking between waves is not possible and other players cannot enter, although the minigame can be paused by attempting to log out between waves. | * You can no longer log out at the start of a wave during the Inferno.", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "Escape crystal", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409296", "revid": 15409296, "retrieved": "2026-11-20", "published": null, "quote": "teleporting players away from various activities ... * [[The Inferno]]", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5027", "claim_id": "C-RFI-027", "subject": "inferno: HW death", "attribute": "hw_death_classification",
+     "value": "UNSAFE_DEATH", "unit": null,
+     "statement": "Jagex lists the Inferno as UNSAFE on Hardcore Worlds (safe for HCIM, unsafe for HCGIM); the Karamja Elite resurrection does not apply there.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "HW ruleset is new content (2026-11-04); re-check T1 before release.",
+     "sources": [
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "Here's the full list of '''UNSAFE''' activities that are usually safe in Hardcore Ironman: ... * Inferno", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "Inferno", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409416", "revid": 15409416, "retrieved": "2026-11-20", "published": null, "quote": "{{Safe death|IRS=yes|HCIM=yes|HCGIM=no}} ... The [[Karamja Diary#Elite|elite Karamja Diary]] resurrection does not apply in the Inferno.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": true},
+
+    {"fact_id": "F-5028", "claim_id": "C-RFI-028", "subject": "inferno: PvP", "attribute": "pvp_exposure",
+     "value": "none", "unit": null,
+     "statement": "Other players cannot enter the Inferno, so there is no PvP exposure.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Inferno", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409416", "revid": 15409416, "retrieved": "2026-11-20", "published": null, "quote": "Restocking between waves is not possible and other players cannot enter", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5029", "claim_id": "C-RFI-029", "subject": "colosseum: typical account", "attribute": "typical_stats",
+     "value": {"Attack":"95+","Strength":"95+","Defence":"90+","Hitpoints":"95+","Ranged":"90+","Magic":"94+","Prayer":"77+"}, "unit": null,
+     "statement": "The Colosseum wave-12 money guide recommends 95+ Attack/Strength/Hitpoints, 90+ Defence/Ranged, 94+ Magic and 77+ Prayer.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Money making guide/Completing the Fortis Colosseum (Wave 12)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15317627", "revid": 15317627, "retrieved": "2026-11-20", "published": null, "quote": "* {{SCP|Attack|95+}}, {{SCP|Strength|95+}}, {{SCP|Defence|90+}}, {{SCP|Hitpoints|95+}}, {{SCP|Ranged|90+}} recommended * {{SCP|Magic|94+}} * {{SCP|Prayer|77+}} recommended", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5030", "claim_id": "C-RFI-030", "subject": "colosseum: structure", "attribute": "encounter_structure",
+     "value": "12 waves (11 regular + Sol Heredit); a cumulative modifier is chosen each wave, including Doom (instant kill on stack overflow)", "unit": null,
+     "statement": "11 regular waves then Sol Heredit; before each next wave the player chooses one of three modifiers that persist for the run; Doom kills the player at too many stacks.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Fortis Colosseum", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404131", "revid": 15404131, "retrieved": "2026-11-20", "published": null, "quote": "There are 11 waves of regular enemies before facing the final boss. ... players must choose one of three modifiers that will make subsequent waves harder to clear ... will persist for all subsequent waves of that run. ... *''Doom'' (3 levels): When damage is taken, a stack of Doom is gained, and when too many are accumulated, the player is killed.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5031", "claim_id": "C-RFI-031", "subject": "colosseum: max hit", "attribute": "max_hit",
+     "value": {"Sol Heredit typeless AoE":44,"Grapple":44,"Triple Parry 2":"15-30-45"}, "unit": "hitpoints",
+     "statement": "Sol Heredit's max hits are 44 (typeless AoE), 44 (Grapple), 15-25-35 (Triple Parry 1) and 15-30-45 (Triple Parry 2); praying too early disables the prayer.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Sol Heredit", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379686", "revid": 15379686, "retrieved": "2026-11-20", "published": null, "quote": "|max hit = 44 (Typeless AOE), 44 (Grapple), 15-25-35 (Triple Parry 1), 15-30-45 (Triple Parry 2)", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5032", "claim_id": "C-RFI-032", "subject": "colosseum: escape", "attribute": "escape",
+     "value": "Teleporting or logging out mid-wave is possible (forfeits accumulated loot)", "unit": null,
+     "statement": "Logging out or teleporting out during a Colosseum wave is possible and loses all accumulated loot.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Fortis Colosseum", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404131", "revid": 15404131, "retrieved": "2026-11-20", "published": null, "quote": "Logging out or teleporting out during a wave also causes all accumulated loot to be lost.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5033", "claim_id": "C-RFI-033", "subject": "colosseum: HW death", "attribute": "hw_death_classification",
+     "value": "UNSAFE_DEATH", "unit": null,
+     "statement": "A Colosseum death is dangerous even for HCIM/HCGIM and is not a HW safe exception, so it is run-ending on Hardcore Worlds.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "HW ruleset is new content (2026-11-04); re-check T1 before release.",
+     "sources": [
+      {"tier": "T2", "title": "Fortis Colosseum", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404131", "revid": 15404131, "retrieved": "2026-11-20", "published": null, "quote": "{{Safe death|IRS=no|HCIM=no|HCGIM=no}}", "fetched_by": "fact-verifier"},
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "Hardcore worlds will use the [https://oldschool.runescape.wiki/w/Group_Ironman_Mode#Hardcore_Group_Ironman Hardcore Group Ironman ruleset] for death which is much less forgiving! This ruleset has very few exceptions, which means you should go in with the expectation that 99% of deaths will land you right back in Death's office", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": true},
+
+    {"fact_id": "F-5034", "claim_id": "C-RFI-034", "subject": "colosseum: duration", "attribute": "typical_attempt_duration",
+     "value": 24, "unit": "minutes",
+     "statement": "The money guide assumes 2.5 full completions per hour, i.e. about 24 minutes per completion (computed 60/2.5).",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "Derived; the guide assumes a Scythe of Vitur and an experienced player. Slower players and failed runs take different times.",
+     "sources": [
+      {"tier": "T2", "title": "Money making guide/Completing the Fortis Colosseum (Wave 12)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15317627", "revid": 15317627, "retrieved": "2026-11-20", "published": null, "quote": "|kph = 2.5 ... Supply cost assumes the use of a [[Scythe of Vitur]]", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5035", "claim_id": "C-RFI-035", "subject": "toa-expert: mode bands", "attribute": "modes",
+     "value": {"Entry":"0-149","Normal":"150-299","Expert":"300-600"}, "unit": null,
+     "statement": "ToA modes by raid level: Entry 0-149, Normal 150-299, Expert 300-600.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Tombs of Amascut", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15391794", "revid": 15391794, "retrieved": "2026-11-20", "published": null, "quote": "|Entry Mode |0–149 ... |Normal Mode |150–299 ... |Expert Mode |300–600", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5036", "claim_id": "C-RFI-036", "subject": "toa-expert: damage scaling", "attribute": "max_hit_scaling",
+     "value": {"per_5_raid_levels":"+2% HP/defence/accuracy/damage","damage_cap":"+150%","at_raid_level_500":"+150% damage (cap reached; uncapped would be +200%)","at_raid_level_300":"+120%","at_raid_level_150":"+60%"}, "unit": null,
+     "statement": "Every 5 raid levels adds 2% NPC HP, defence, accuracy and damage; damage caps at +150% (reached by level 375). Raid level 500 gives +200% HP/def/accuracy and +150% damage; computed: level 300 = +120%, level 150 = +60%.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Tombs of Amascut", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15391794", "revid": 15391794, "retrieved": "2026-11-20", "published": null, "quote": "for every 5 raid levels, an NPC's [[hitpoints]], [[defence]], accuracy, and damage are increased by 2% additively, with damage capping out at +150%. For example, a raid level of 100 will modify these stats for all enemies within the raid by +40%, whereas a raid level of 500 will modify enemy hitpoints, defence, and accuracy by +200%, and damage by +150%.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5037", "claim_id": "C-RFI-037", "subject": "toa-expert: typical account", "attribute": "typical_stats",
+     "value": {"Attack":"82+","Strength":"85","Defence":"80+","Hitpoints":"85+","Ranged":"90","Magic":"94+","Prayer":"77+"}, "unit": null,
+     "statement": "The Expert ToA money guide recommends 82+ Attack, 85 Strength, 80+ Defence, 85+ Hitpoints, 90 Ranged, 94+ Magic, 77+ Prayer.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "The guide is for a deathless solo raid level 300 (1.75 raids/hour); higher Expert levels (up to 600) need more.",
+     "sources": [
+      {"tier": "T2", "title": "Money making guide/Tombs of Amascut (Expert)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15315543", "revid": 15315543, "retrieved": "2026-11-20", "published": null, "quote": "* {{SCP|Attack|82+}}, {{SCP|Strength|85}}, {{SCP|Defence|80+}}, {{SCP|Hitpoints|85+}}, {{SCP|Ranged|90}} recommended * {{SCP|Magic|94+}} recommended * {{SCP|Prayer|77+}} recommended", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5038", "claim_id": "C-RFI-038", "subject": "toa-expert: HW death", "attribute": "hw_death_classification",
+     "value": "UNSAFE_DEATH", "unit": null,
+     "statement": "Dying in ToA is always a dangerous death (HCIM and HCGIM) and ToA is not a HW safe exception, so it is run-ending on Hardcore Worlds, even though by default players may die repeatedly within the raid.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "HW ruleset is new content (2026-11-04); re-check T1 before release.",
+     "sources": [
+      {"tier": "T2", "title": "Tombs of Amascut", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15391794", "revid": 15391794, "retrieved": "2026-11-20", "published": null, "quote": "{{Safe death|IRS=Only without death invocations|HCIM=no|HCGIM=no}} ... Dying in the Tombs of Amascut is always a [[Death#Unsafe and safe deaths|dangerous death]]", "fetched_by": "fact-verifier"},
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "Hardcore worlds will use the [https://oldschool.runescape.wiki/w/Group_Ironman_Mode#Hardcore_Group_Ironman Hardcore Group Ironman ruleset] for death which is much less forgiving! This ruleset has very few exceptions, which means you should go in with the expectation that 99% of deaths will land you right back in Death's office", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": true},
+
+    {"fact_id": "F-5039", "claim_id": "C-RFI-039", "subject": "toa-expert: disconnect", "attribute": "disconnect_behaviour",
+     "value": "Logging out during an active encounter counts as a death (rejoin) or a wipe; an escape crystal changes the outcome", "unit": null,
+     "statement": "On rejoin, a player who logged out during an encounter is counted as a death; one who cannot rejoin is wiped; an escape crystal turns a logout wipe or dangerous death into an eject.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "Incomplete: with no death invocations enabled, or outside an active encounter, a disconnect results in an Eject (removed with a safe death). The wipe case applies when death invocations are on or the player cannot rejoin.",
+     "sources": [
+      {"tier": "T2", "title": "Tombs of Amascut", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15391794", "revid": 15391794, "retrieved": "2026-11-20", "published": null, "quote": "They will be counted as a death if they logged out during an encounter, or log back in during a new one. * '''Eject''' – ... This happens if no death invocations are enabled, or if the player was not in an active encounter. ... An escape crystal turns a wipe or dangerous death caused by logging out into an eject.", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "Escape crystal", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409296", "revid": 15409296, "retrieved": "2026-11-20", "published": null, "quote": "* [[Tombs of Amascut]]", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5040", "claim_id": "C-RFI-040", "subject": "tob-hm: entry requirement", "attribute": "typical_account",
+     "value": "Every participant needs at least one normal-mode completion", "unit": null,
+     "statement": "All participants in a ToB Hard Mode raid must have at least one normal-mode completion.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Theatre of Blood/Hard Mode", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15392823", "revid": 15392823, "retrieved": "2026-11-20", "published": null, "quote": "To attempt a hard mode raid, all participants must have at least one normal mode completion.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5041", "claim_id": "C-RFI-041", "subject": "tob-hm: max hit", "attribute": "max_hit",
+     "value": {"Verzik HM P1":137,"Verzik HM P2 bounce after standing underneath":"~80","Verzik HM P3 melee":63}, "unit": "hitpoints",
+     "statement": "Verzik Vitur (Hard version) max hits: P1 137; P2 44, 50 bounce, ~80 bounce after standing underneath; P3 63 melee, 33 magic, 33 ranged.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Verzik Vitur", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15391510", "revid": 15391510, "retrieved": "2026-11-20", "published": null, "quote": "|text4 = Hard ... |max hit1 = 137 |max hit2 = 44, 50 (bounce), ~80 (bounce after standing underneath) |max hit3 = 63 ([[melee]]), 33 ([[magic]]), 33 ([[ranged]])", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5042", "claim_id": "C-RFI-042", "subject": "tob-hm: HW death", "attribute": "hw_death_classification",
+     "value": "UNSAFE_DEATH", "unit": null,
+     "statement": "A ToB death is dangerous for HCIM and HCGIM even if the team completes; ToB is not a HW safe exception, so it is run-ending on Hardcore Worlds.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "HW ruleset is new content (2026-11-04); re-check T1 before release.",
+     "sources": [
+      {"tier": "T2", "title": "Theatre of Blood", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15393349", "revid": 15393349, "retrieved": "2026-11-20", "published": null, "quote": "{{Safe death|IRS=no|HCIM=no|HCGIM=no}} ... Hardcore Group Ironman]] players losing a life, regardless of whether the team successfully completes the challenges or not.", "fetched_by": "fact-verifier"},
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "Hardcore worlds will use the [https://oldschool.runescape.wiki/w/Group_Ironman_Mode#Hardcore_Group_Ironman Hardcore Group Ironman ruleset] for death which is much less forgiving! This ruleset has very few exceptions, which means you should go in with the expectation that 99% of deaths will land you right back in Death's office", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": true},
+
+    {"fact_id": "F-5043", "claim_id": "C-RFI-043", "subject": "tob-hm: disconnect", "attribute": "disconnect_behaviour",
+     "value": "Disconnect or logout during a fight is treated as a death", "unit": null,
+     "statement": "Any disconnection or logout during a ToB fight is treated as a death; logging out outside an encounter is a safe death.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Theatre of Blood", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15393349", "revid": 15393349, "retrieved": "2026-11-20", "published": null, "quote": "Any '''disconnection''' or logout during a fight is '''treated as a death''', and will likewise result in Hardcore Ironman players losing their Hardcore status and Hardcore Group Ironman players losing a life.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5044", "claim_id": "C-RFI-044", "subject": "tob-hm: escape", "attribute": "escape",
+     "value": "Only the escape crystal can teleport a player out of ToB", "unit": null,
+     "statement": "All normal teleports are blocked in ToB; the escape crystal is the only item that teleports a player out.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Escape crystal", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409296", "revid": 15409296, "retrieved": "2026-11-20", "published": null, "quote": "It is also the only item that can be used to teleport out of the [[Theatre of Blood]].", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "Theatre of Blood", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15393349", "revid": 15393349, "retrieved": "2026-11-20", "published": null, "quote": "All normal forms of teleportation within the Theatre are blocked; however, the [[Mysterious Stranger]] outside sells [[escape crystal]]s for {{NoCoins|75000}} coins each, and is the only item players can use to teleport away from the Theatre safely.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5045", "claim_id": "C-RFI-045", "subject": "cox-cm: typical account", "attribute": "typical_stats",
+     "value": {"Hitpoints":"90+","Attack":"90+","Strength":"90+","Defence":"90+","Ranged":"90+","Magic":"90+","Prayer":"77+"}, "unit": null,
+     "statement": "CoX Challenge Mode recommends 90+ in Hitpoints, Attack, Strength, Defence, Ranged and Magic, and 77+ Prayer.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Chambers of Xeric/Challenge Mode", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15391859", "revid": 15391859, "retrieved": "2026-11-20", "published": null, "quote": "*{{SCP|Hitpoints|90+}} *{{SCP|Attack|90+}} *{{SCP|Strength|90+}} *{{SCP|Defence|90+}} *{{SCP|Ranged|90+}} *{{SCP|Magic|90+}} *{{SCP|Prayer|77+}} for [[Piety]], [[Rigour]], and [[Augury]]", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5046", "claim_id": "C-RFI-046", "subject": "cox-cm: difficulty", "attribute": "mechanics",
+     "value": "All non-Olm enemies have +50% combat stats including HP; fixed linear layout with every room", "unit": null,
+     "statement": "In Challenge Mode every enemy except the Great Olm's health gets +50% combat stats including HP, and the raid contains all rooms in a fixed linear layout.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Chambers of Xeric/Challenge Mode", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15391859", "revid": 15391859, "retrieved": "2026-11-20", "published": null, "quote": "Apart from the [[Great Olm]]'s health, all of the enemies' combat stats (including health) are increased by 50%, making them harder to kill. ... Unlike the normal raid, Challenge Mode possesses all of the potential rooms. All of the rooms are linear and use the same layout in each run", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5047", "claim_id": "C-RFI-047", "subject": "cox-cm: max hit", "attribute": "max_hit",
+     "value": {"Great Olm head (CM)":"38-41","Tekton/Vanguards":"two unprotected Tekton hits likely fatal"}, "unit": "hitpoints",
+     "statement": "Great Olm head (Challenge Mode) max hit 38 (P1-2), 39, 41 (P4); two unprotected Tekton hits will likely kill.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "Olm stats scale with the highest combat level in the party; the CM page gives 39 for solo P1-2 and ~41 for P3-4. The claim's 'Vanguards' part has no source; only Tekton is quoted.",
+     "sources": [
+      {"tier": "T2", "title": "Great Olm", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15372769", "revid": 15372769, "retrieved": "2026-11-20", "published": null, "quote": "|version2 = Head (Challenge Mode) ... |max hit2 = 38 (phases 1 and 2) <br/> 39 <br/> 41 (phase 4)", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "Chambers of Xeric/Challenge Mode", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15391859", "revid": 15391859, "retrieved": "2026-11-20", "published": null, "quote": "Apart from an intentional hit, players should avoid getting hit by Tekton at all costs as two unprotected hits will likely result in death. | in solo encounters; phase 1 and 2 has a max of 39, while phase 3 and 4 has a max of ~41.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5048", "claim_id": "C-RFI-048", "subject": "cox-cm: HW death", "attribute": "hw_death_classification",
+     "value": "UNSAFE_DEATH", "unit": null,
+     "statement": "CoX is safe for HCIM but unsafe for HCGIM, and Jagex lists Chambers of Xeric as UNSAFE on Hardcore Worlds.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "HW ruleset is new content (2026-11-04). The CoX page (edited today, rev 15410137) still says deaths cost nothing and never eject the player; that is main-game behaviour, not a HW safe death.",
+     "sources": [
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "Here's the full list of '''UNSAFE''' activities that are usually safe in Hardcore Ironman: ... * Chambers of Xeric", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "Chambers of Xeric", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15410137", "revid": 15410137, "retrieved": "2026-11-20", "published": null, "quote": "{{Safe death|IRS=yes|HCIM=yes|HCGIM=no}} ... There is no monetary penalty for dying within the raid, and a death never causes a player to be ejected from the raid.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": true},
+
+    {"fact_id": "F-5049", "claim_id": "C-RFI-049", "subject": "cox-cm: duration", "attribute": "typical_attempt_duration",
+     "value": {"solo_target":"1 h 10 min","trio":"50 min","5-10 players":"42 min"}, "unit": null,
+     "statement": "CM completion-time targets: 1 player 1 h 10 min, 3 players 50 min, 5-10 players 42 min.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "These are the target times for the CM time bonus, not measured typical durations; actual first attempts will usually take longer.",
+     "sources": [
+      {"tier": "T2", "title": "Chambers of Xeric/Challenge Mode", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15391859", "revid": 15391859, "retrieved": "2026-11-20", "published": null, "quote": "!Number of players !Completion time required |- |1 |1 hour 10 minutes |- |2 |1 hour 5 minutes |- |3 |50 minutes |- |4 |45 minutes |- |5-10 |42 minutes", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5050", "claim_id": "C-RFI-050", "subject": "cox-cm: escape", "attribute": "escape",
+     "value": "Escape crystal teleports out of CoX", "unit": null,
+     "statement": "All teleports out of CoX are blocked except escape crystals, which are listed for Chambers of Xeric.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Escape crystal", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409296", "revid": 15409296, "retrieved": "2026-11-20", "published": null, "quote": "* [[Chambers of Xeric]]", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "Chambers of Xeric", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15410137", "revid": 15410137, "retrieved": "2026-11-20", "published": null, "quote": "All forms of teleportation out of the raid are blocked other than [[escape crystal]]s", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5051", "claim_id": "C-RFI-051", "subject": "phosani: max hit", "attribute": "max_hit",
+     "value": {"melee":73,"magic/ranged":80,"dash":"~85"}, "unit": "hitpoints",
+     "statement": "Phosani's Nightmare max hits: 73 melee, 80 magic/ranged, ~85 dash.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Phosani's Nightmare", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387587", "revid": 15387587, "retrieved": "2026-11-20", "published": null, "quote": "|max hit = 73 (melee), 80 (magic/ranged), ~85 (dash)", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5052", "claim_id": "C-RFI-052", "subject": "phosani: format", "attribute": "encounter_structure",
+     "value": "Solo-only; far more punishing on mistakes than the group Nightmare", "unit": null,
+     "statement": "Phosani's Nightmare can only be fought alone and is far more punishing when mistakes are made than the solo Nightmare.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Phosani's Nightmare", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387587", "revid": 15387587, "retrieved": "2026-11-20", "published": null, "quote": "Phosani's Nightmare can only be fought alone ... Compared to fighting the Nightmare solo, Phosani's Nightmare is significantly faster, with little damage being taken if players master the fight's mechanics, though far more punishing when mistakes are made.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5053", "claim_id": "C-RFI-053", "subject": "phosani: typical account", "attribute": "typical_stats",
+     "value": {"Hitpoints":"90+","Magic":"90+","Prayer":"70+"}, "unit": null,
+     "statement": "The Phosani money guide recommends 90+ Hitpoints, 90+ Magic and 70+ Prayer (Attack/Strength/Defence listed without levels).",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Money making guide/Killing Phosani's Nightmare", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15319450", "revid": 15319450, "retrieved": "2026-11-20", "published": null, "quote": "* {{SCP|Attack}}, {{SCP|Strength}}, {{SCP|Defence}}, {{SCP|Hitpoints|90+}}, {{SCP|Magic|90+}} * {{SCP|Prayer|70+}} recommended", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5054", "claim_id": "C-RFI-054", "subject": "phosani: escape", "attribute": "escape",
+     "value": "Instanced boss; Phosani's Nightmare uses Sister Senga as its item retrieval service (60,000 coins), not Shura", "unit": null,
+     "researcher_value": "Instanced boss (Nightmare instance, item retrieval via Shura)",
+     "statement": "Phosani's Nightmare's own page gives Sister Senga (60,000 coins) as its item retrieval service; Shura is the retrieval NPC for the group Nightmare.",
+     "status": "DISPUTED", "caveat": "The researcher cited The Nightmare page (Shura) rather than Phosani's page. Teleport-out behaviour for Phosani is still undocumented in the fetched pages (the Nightmare changelog mentions teleporting out of a Nightmare encounter, but not for Phosani).",
+     "sources": [
+      {"tier": "T2", "title": "Phosani's Nightmare", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387587", "revid": 15387587, "retrieved": "2026-11-20", "published": null, "quote": "{{Instance|irs=Sister Senga|cost=60000}}", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "The Nightmare", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15360502", "revid": 15360502, "retrieved": "2026-11-20", "published": null, "quote": "{{Instance|irs=Shura|cost=60000}}", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5055", "claim_id": "C-RFI-055", "subject": "phosani: HW death", "attribute": "hw_death_classification",
+     "value": "UNSAFE_DEATH", "unit": null,
+     "statement": "Phosani's Nightmare is not among the T1 HW safe exceptions, so under the HGIM ruleset a death there is run-ending.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "HW ruleset is new content (2026-11-04). The Phosani page carries no Safe death template; the classification rests on the T1 default.",
+     "sources": [
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "Hardcore worlds will use the [https://oldschool.runescape.wiki/w/Group_Ironman_Mode#Hardcore_Group_Ironman Hardcore Group Ironman ruleset] for death which is much less forgiving! This ruleset has very few exceptions, which means you should go in with the expectation that 99% of deaths will land you right back in Death's office", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": true},
+
+    {"fact_id": "F-5056", "claim_id": "C-RFI-056", "subject": "cg: no gear", "attribute": "mechanics",
+     "value": "No items may be brought in; pre-applied boosts removed; dangerous minigame", "unit": null,
+     "statement": "No items can be brought into the Gauntlet, boosts are removed on entry, and it is a dangerous minigame.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "The Gauntlet", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15401270", "revid": 15401270, "retrieved": "2026-11-20", "published": null, "quote": "Players '''cannot''' bring any items into the Gauntlet; ... Any pre-applied skill boosts will also be removed upon entry to the Gauntlet. It is a dangerous minigame, so [[hardcore ironmen]] will lose their hardcore status", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5057", "claim_id": "C-RFI-057", "subject": "cg: prep timer", "attribute": "mechanics",
+     "value": "7 min 30 s of gathering/crafting, then forced into the Corrupted Hunllef (1000 HP)", "unit": null,
+     "statement": "The Corrupted Gauntlet gives 7 min 30 s to prepare; the boss room holds the Corrupted Hunllef with 1000 HP.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "The Gauntlet", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15401270", "revid": 15401270, "retrieved": "2026-11-20", "published": null, "quote": "*The player only has 7 minutes and 30 seconds to prepare compared to the normal version at 10 minutes. ... *The boss room instead contains the [[Corrupted Hunllef]], which has 1000 health and increased aggressive stats.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5058", "claim_id": "C-RFI-058", "subject": "cg: max hit", "attribute": "max_hit",
+     "value": {"stomp (typeless)":68,"standard (with correct prayer, no armour)":16,"standard (full T3)":8,"tornado (no armour)":"15-30","orange floor tiles":"10-20"}, "unit": "hitpoints",
+     "statement": "Corrupted Hunllef: stomp up to 68 typeless; standard attacks with correct prayer 16 (no armour) to 8 (full T3); tornadoes 15-30 with no armour; orange tiles 10-20 per tick.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "Unprotected standard attacks hit up to 68 with no armour (35 in full T3). Orange-tile damage is flagged on the wiki as possibly higher. Tornado ranges for T1/T3 differ slightly between the two pages.",
+     "sources": [
+      {"tier": "T2", "title": "Corrupted Hunllef", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404193", "revid": 15404193, "retrieved": "2026-11-20", "published": null, "quote": "the Hunllef will perform a stomp attack which deals up to 68 typeless damage ... If the player stands on an orange tile they will take between 10-20 damage{{fact|May be able to hit higher than this.}} ... ||No armour||16||15-30 |68 ... ||Full T3 armour||8||7-15 |35", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "The Gauntlet", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15401270", "revid": 15401270, "retrieved": "2026-11-20", "published": null, "quote": "|0||16||15-30 ... ||Full T3 armour |9||8||8-15", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5059", "claim_id": "C-RFI-059", "subject": "cg: typical account", "attribute": "typical_stats",
+     "value": {"Attack":"80+","Strength":"85+","Ranged":"85+","Magic":"80+","Prayer":"77+"}, "unit": null,
+     "statement": "The CG money guide recommends 80+ Attack, 85+ Strength, 85+ Ranged, 80+ Magic and 77+ Prayer.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "Current revision 14997893 dates from 2025-10-02 (over a year old); the stats assume a 6 completions/hour player.",
+     "sources": [
+      {"tier": "T2", "title": "Money making guide/Completing The Corrupted Gauntlet", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=14997893", "revid": 14997893, "retrieved": "2026-11-20", "published": null, "quote": "* {{SCP|Attack|80+}}, {{SCP|Strength|85+}}, {{SCP|Ranged|85+}}, {{SCP|Magic|80+}}, {{SCP|Prayer|77+}}", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5060", "claim_id": "C-RFI-060", "subject": "cg: escape", "attribute": "escape",
+     "value": "A Teleport Platform lets the player abandon the challenge (in the prep area)", "unit": null,
+     "statement": "The Gauntlet's starting room has a Teleport Platform used to abandon the current challenge.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "The platform is in the starting room; whether the player can leave from the Hunllef boss room mid-fight is not documented. The escape crystal's inactivity auto-teleport applies in the Gauntlet if the crystal was in the inventory on entry.",
+     "sources": [
+      {"tier": "T2", "title": "The Gauntlet", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15401270", "revid": 15401270, "retrieved": "2026-11-20", "published": null, "quote": "===Starting room=== ... *'''[[Teleport Platform (The Gauntlet)|Teleport Platform]]:''' Used to abandon the current challenge.", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "Escape crystal", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409296", "revid": 15409296, "retrieved": "2026-11-20", "published": null, "quote": "This function will apply in [[The Gauntlet]] if the crystal was in the player's inventory upon entry, and is configured to auto-activate.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5061", "claim_id": "C-RFI-061", "subject": "cg: HW death", "attribute": "hw_death_classification",
+     "value": "UNSAFE_DEATH", "unit": null,
+     "statement": "The Gauntlet is a dangerous minigame and is not a HW safe exception, so a death there is run-ending on Hardcore Worlds.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "HW ruleset is new content (2026-11-04); re-check T1 before release.",
+     "sources": [
+      {"tier": "T2", "title": "The Gauntlet", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15401270", "revid": 15401270, "retrieved": "2026-11-20", "published": null, "quote": "{{Dangerous|noitems=yes}}", "fetched_by": "fact-verifier"},
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "Hardcore worlds will use the [https://oldschool.runescape.wiki/w/Group_Ironman_Mode#Hardcore_Group_Ironman Hardcore Group Ironman ruleset] for death which is much less forgiving! This ruleset has very few exceptions, which means you should go in with the expectation that 99% of deaths will land you right back in Death's office", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": true},
+
+    {"fact_id": "F-5062", "claim_id": "C-RFI-062", "subject": "dt2-awakened: format", "attribute": "mechanics",
+     "value": "Awakener's orb: one attempt per orb, effectively a hard-mode variant with stronger stats and mechanics", "unit": null,
+     "statement": "Each awakener's orb starts one awakened fight (a hard-mode variant with enhanced mechanics, much higher stats, immune to stat drains) and is consumed win or lose.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Awakener's orb", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15239080", "revid": 15239080, "retrieved": "2026-11-20", "published": null, "quote": "These orbs are a one-time use to start an awakened version of the fight, which is essentially a [[hard mode]] variant of the four bosses. ... Each orb will only persist for one attempt", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5063", "claim_id": "C-RFI-063", "subject": "dt2-awakened: Duke Sucellus max hit", "attribute": "max_hit",
+     "value": {"melee":81,"magic":71,"gaze":121}, "unit": "hitpoints",
+     "statement": "Awakened Duke Sucellus max hits: 81 melee, 71 magic, 121 gaze.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Duke Sucellus", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409966", "revid": 15409966, "retrieved": "2026-11-20", "published": null, "quote": "|text2 = Awakened ... |max hit = 81 ([[Melee]]), 71 ([[Magic]]), 121 (Gaze)", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5064", "claim_id": "C-RFI-064", "subject": "dt2-awakened: Vardorvis max hit", "attribute": "max_hit",
+     "value": {"melee":"46-61","axes":96}, "unit": "hitpoints",
+     "statement": "Awakened Vardorvis max hits: 46-61 melee (scales with his remaining HP) and 96 from axes.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Vardorvis", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15385991", "revid": 15385991, "retrieved": "2026-11-20", "published": null, "quote": "|version2 = Awakened ... |max hit2 = 46-61 ([[Melee]]){{efn|name=def}}, 96 (axes)", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5065", "claim_id": "C-RFI-065", "subject": "dt2-awakened: Leviathan and Whisperer", "attribute": "max_hit",
+     "value": {"Leviathan melee orb/bite":86,"Leviathan smoke blast":75,"Whisperer melee":"70+ x2","Whisperer soul siphon":75}, "unit": "hitpoints",
+     "statement": "Awakened Leviathan: 86 melee orb/bite, 75 smoke blast. Awakened Whisperer: 70+ (x2) melee, 75 soul siphon.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "The Leviathan", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15385989", "revid": 15385989, "retrieved": "2026-11-20", "published": null, "quote": "|version2 = Awakened ... |max hit2 = 86 (Melee orb & Bite), 41 (Ranged orb), 55 (Magic orb), 75 (Smoke Blast)", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "The Whisperer", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387570", "revid": 15387570, "retrieved": "2026-11-20", "published": null, "quote": "|version2 = Awakened ... |max hit2 = 70+ (x2) ([[Melee]]), 53 ([[Ranged]]), 45 ([[Magic]]), 70 (Screech), 75 (Soul Siphon)", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5066", "claim_id": "C-RFI-066", "subject": "dt2-awakened: HW death", "attribute": "hw_death_classification",
+     "value": "UNSAFE_DEATH", "unit": null,
+     "statement": "Deaths to the DT2 bosses are dangerous for HCIM/HCGIM (items go to a grave outside the instance) and are not HW safe exceptions, so they are run-ending on Hardcore Worlds.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "HW ruleset is new content (2026-11-04); re-check T1 before release.",
+     "sources": [
+      {"tier": "T2", "title": "Vardorvis", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15385991", "revid": 15385991, "retrieved": "2026-11-20", "published": null, "quote": "{{Safe death|IRS=no|HCIM=no|HCGIM=no}} ... [[Death|Dying]] results in all unprotected items being moved to a grave outside the instance.", "fetched_by": "fact-verifier"},
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "Hardcore worlds will use the [https://oldschool.runescape.wiki/w/Group_Ironman_Mode#Hardcore_Group_Ironman Hardcore Group Ironman ruleset] for death which is much less forgiving! This ruleset has very few exceptions, which means you should go in with the expectation that 99% of deaths will land you right back in Death's office", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": true},
+
+    {"fact_id": "F-5067", "claim_id": "C-RFI-067", "subject": "revs-pvp: wilderness level and combat type", "attribute": "wilderness_level",
+     "value": {"range":"17-40","combat":"singles-plus (not multi)"}, "unit": null,
+     "statement": "The Revenant Caves span Wilderness levels 17-40 and are exclusively singles-plus combat.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Revenant Caves", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397220", "revid": 15397220, "retrieved": "2026-11-20", "published": null, "quote": "it is an extremely dangerous cave that ranges from level 17 to 40 Wilderness and is exclusively a [[singles-plus combat]] area.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5068", "claim_id": "C-RFI-068", "subject": "revs-pvp: PK design", "attribute": "pvp_exposure",
+     "value": "Exits are placed away from entrances specifically so players cannot escape PKers by hopping in and out", "unit": null,
+     "statement": "The cave exits (by level 17 and 40) are deliberately away from the entrances to stop players escaping PKers by going in and out.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Revenant Caves", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397220", "revid": 15397220, "retrieved": "2026-11-20", "published": null, "quote": "These are intentionally placed away from the dungeon entrance to prevent players from escaping player killers by going in and out of them.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5069", "claim_id": "C-RFI-069", "subject": "revs-pvp: revenant deaths count as PvP", "attribute": "death_mechanics",
+     "value": "Dying to a revenant in the caves is treated as a PvP death", "unit": null,
+     "statement": "Dying to a revenant in the caves, even without player damage, is treated as a PvP death; unconverted items are visible to all players for up to 60 minutes.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Revenant Caves", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397220", "revid": 15397220, "retrieved": "2026-11-20", "published": null, "quote": "Unlike other locations in the Wilderness, [[death|dying]] to a revenant in the caves without taking damage from another player will be considered a '''player-versus-player''' death and follows its death mechanics accordingly.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5070", "claim_id": "C-RFI-070", "subject": "revs-pvp: max hit", "attribute": "max_hit",
+     "value": {"revenant dragon":30,"revenant maledictus (demiboss)":30,"revenant knight":27}, "unit": "hitpoints",
+     "statement": "Revenant max hits: dragon 30, maledictus (demiboss) 30, knight 27; a bracelet of ethereum cuts revenant damage by 75%.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Revenants", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15364433", "revid": 15364433, "retrieved": "2026-11-20", "published": null, "quote": "!Max hit ... |[[Revenant knight]] |126 |143 |80 |145 |27 ... |[[Revenant dragon]] |135 |155 |87 |150 |30 ... |[[Revenant maledictus]] (demiboss) |397 |1250 |90 |130 |30", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "Revenant Caves", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397220", "revid": 15397220, "retrieved": "2026-11-20", "published": null, "quote": "*[[Bracelet of Ethereum]] damage reduction lowered by 25% for a total of 75% damage reduction.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5071", "claim_id": "C-RFI-071", "subject": "revs-pvp: teleport restrictions", "attribute": "teleport_restriction",
+     "value": "No normal teleports above level 20; members' level-30 teleports up to 30; teleblock 5 min; 2-tick teleport delay in combat with an NPC in the caves", "unit": null,
+     "statement": "Teleports fail above Wilderness level 20 except listed members' items up to 30; Teleport Block lasts 5 minutes; in the caves a 2-tick delay applies to teleports while in NPC combat.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "Teleport Block lasts 2.5 minutes if cast on a player with Protect from Magic active. Completing the hard Wilderness Diary removes the 2-tick cave delay.",
+     "sources": [
+      {"tier": "T2", "title": "Wilderness", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15405423", "revid": 15405423, "retrieved": "2026-11-20", "published": null, "quote": "[[Teleportation|Teleports]] will not work above level 20 Wilderness, except for those methods listed below, which may be used by [[members]] up to level 30 Wilderness. However, the [[Teleport Block]] spell will prevent using nearly any means of teleportation for five minutes, or two and a half minutes if it is successfully cast on a player with [[Protect from Magic]] active.", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "Revenant Caves", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397220", "revid": 15397220, "retrieved": "2026-11-20", "published": null, "quote": "|change = A 2-tick delay has been added to any teleportation method while in combat with an NPC inside of the Revenant Caves. | * Players who complete the hard Wilderness Diary will now have the 2-tick teleportation delay removed.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5072", "claim_id": "C-RFI-072", "subject": "revs-pvp: HW death", "attribute": "hw_death_classification",
+     "value": "UNSAFE_DEATH", "unit": null,
+     "statement": "Jagex: PvP deaths on HW follow the usual Wilderness rules and then force Reset or Transfer; revenant deaths count as PvP deaths, so a revenant cave death is run-ending.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "HW ruleset is new content (2026-11-04); re-check T1 before release.",
+     "sources": [
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "As for PvP deaths, all of the [https://oldschool.runescape.wiki/w/Items_Kept_on_Death#Player_versus_Player_death_inside_the_Wilderness usual rule within the Wilderness]. Then you'll be given a choice: '''Reset''' or '''Transfer'''.", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "Revenant Caves", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397220", "revid": 15397220, "retrieved": "2026-11-20", "published": null, "quote": "[[death|dying]] to a revenant in the caves without taking damage from another player will be considered a '''player-versus-player''' death", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": true},
+
+    {"fact_id": "F-5073", "claim_id": "C-RFI-073", "subject": "toa-150: mode", "attribute": "modes",
+     "value": "Raid level 150 is the bottom of Normal Mode (150-299)", "unit": null,
+     "statement": "Normal Mode covers raid levels 150-299, so raid level 150 is its lowest level.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Tombs of Amascut/Strategies", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15410134", "revid": 15410134, "retrieved": "2026-11-20", "published": null, "quote": "|Normal Mode |150 - 299", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5074", "claim_id": "C-RFI-074", "subject": "toa-150: typical account", "attribute": "typical_stats",
+     "value": {"Attack":"70+","Strength":"70+","Defence":"70+","Hitpoints":"75+","Ranged":"70+","Magic":"70+","Prayer":"77+"}, "unit": null,
+     "statement": "The ToA strategy page recommends 70+ Attack/Strength/Defence/Ranged/Magic, 75+ Hitpoints and 77+ Prayer.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Tombs of Amascut/Strategies", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15410134", "revid": 15410134, "retrieved": "2026-11-20", "published": null, "quote": "* {{SCP|Attack|70+}} * {{SCP|Strength|70+}} * {{SCP|Defence|70+}} * {{SCP|Hitpoints|75+}} * {{SCP|Ranged|70+}} * {{SCP|Magic|70+}} * {{SCP|Prayer|77+}}for [[Piety]], [[Rigour]], and [[Augury]]", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5075", "claim_id": "C-RFI-075", "subject": "toa-150: damage scaling", "attribute": "max_hit_scaling",
+     "value": "+60% NPC damage/accuracy/HP/defence at raid level 150", "unit": null,
+     "statement": "At 2% per 5 raid levels, raid level 150 adds +60% to NPC HP, defence, accuracy and damage (computed).",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Tombs of Amascut", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15391794", "revid": 15391794, "retrieved": "2026-11-20", "published": null, "quote": "for every 5 raid levels, an NPC's [[hitpoints]], [[defence]], accuracy, and damage are increased by 2% additively, with damage capping out at +150%.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5076", "claim_id": "C-RFI-076", "subject": "toa-150: HW death", "attribute": "hw_death_classification",
+     "value": "UNSAFE_DEATH", "unit": null,
+     "statement": "Dying in ToA is always a dangerous death and ToA is not a HW safe exception, so it is run-ending on Hardcore Worlds.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "HW ruleset is new content (2026-11-04); re-check T1 before release.",
+     "sources": [
+      {"tier": "T2", "title": "Tombs of Amascut", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15391794", "revid": 15391794, "retrieved": "2026-11-20", "published": null, "quote": "Dying in the Tombs of Amascut is always a [[Death#Unsafe and safe deaths|dangerous death]]", "fetched_by": "fact-verifier"},
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "Hardcore worlds will use the [https://oldschool.runescape.wiki/w/Group_Ironman_Mode#Hardcore_Group_Ironman Hardcore Group Ironman ruleset] for death which is much less forgiving! This ruleset has very few exceptions, which means you should go in with the expectation that 99% of deaths will land you right back in Death's office", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": true},
+
+    {"fact_id": "F-5077", "claim_id": "C-RFI-077", "subject": "zulrah: max hit", "attribute": "max_hit",
+     "value": 41, "unit": "hitpoints",
+     "statement": "Zulrah's max hit is 41; its venom starts at 6 and rises to 20 per hit.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Zulrah", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15385964", "revid": 15385964, "retrieved": "2026-11-20", "published": null, "quote": "|max hit1 = 41 ... starting at 6 damage per hit and increasing up to 20.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5078", "claim_id": "C-RFI-078", "subject": "zulrah: escape", "attribute": "escape",
+     "value": "Teleporting or logging out is allowed", "unit": null,
+     "statement": "The shrine can be left by killing Zulrah, teleporting, logging out or dying.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Zulrah", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15385964", "revid": 15385964, "retrieved": "2026-11-20", "published": null, "quote": "The only way to escape from the shrine is by killing Zulrah, teleporting, logging out, or dying.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5079", "claim_id": "C-RFI-079", "subject": "zulrah: HW death", "attribute": "hw_death_classification",
+     "value": "UNSAFE_DEATH (safe only via the Western Provinces Elite resurrection)", "unit": null,
+     "statement": "Zulrah deaths are dangerous; Jagex lists only the Elite Western Provinces resurrection at Zulrah as safe on HW (one free resurrection per day).",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "HW ruleset is new content (2026-11-04). The resurrection is once per day after daily reset. The HW wiki page does not repeat the Zulrah exception; T1 governs.",
+     "sources": [
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "* Zulrah ''(only the Resurrection reward from the Elite Western Provinces Diary)''", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "Zulrah", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15385964", "revid": 15385964, "retrieved": "2026-11-20", "published": null, "quote": "{{Safe death|IRS=no|HCIM=no|HCGIM=no}} ... Completion of the elite [[Western Provinces Diary#Elite|Western Provinces Diary]] grants the player one free daily resurrection at Zulrah", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": true},
+
+    {"fact_id": "F-5080", "claim_id": "C-RFI-080", "subject": "zulrah: typical account", "attribute": "typical_stats",
+     "value": {"Ranged":"80+","Magic":"85+ (magic phases)"}, "unit": null,
+     "statement": "The Zulrah money guide recommends 80+ Ranged and Magic 85+ (worded 'only magic 85+').",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "The page's wording '(only magic 85+)' is ambiguous (it may mean a magic-only setup), so '(magic phases)' is the researcher's reading. The guide also recommends Defence 70+ and Prayer 45+.",
+     "sources": [
+      {"tier": "T2", "title": "Money making guide/Killing Zulrah", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15380484", "revid": 15380484, "retrieved": "2026-11-20", "published": null, "quote": "* {{SCP|Defence|70+}} recommended * {{SCP|Ranged|80+}}, {{SCP|Magic}} (only magic 85+), {{SCP|Hitpoints}} recommended * {{SCP|Prayer|45+}} recommended", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5081", "claim_id": "C-RFI-081", "subject": "vorkath: max hit", "attribute": "max_hit",
+     "value": {"dragonfire bomb/special":121,"dragonfire":80,"zombified spawn explosion":60}, "unit": "hitpoints",
+     "statement": "Post-quest Vorkath: 121 dragonfire bomb, 80 dragonfire; a full-health zombified spawn explodes for 60.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Vorkath", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409686", "revid": 15409686, "retrieved": "2026-11-20", "published": null, "quote": "|version1 = Post-quest ... |max hit1 = 30 ([[Magic]]), 32 ([[Ranged]]), 32 ([[Melee]]), 80 ([[Dragonfire]]), 121 (Dragonfire Bomb/Special), 41 (Rapid Fire/Special) ... at full health, it will deal 60 damage.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5082", "claim_id": "C-RFI-082", "subject": "vorkath: typical account", "attribute": "typical_stats",
+     "value": {"Ranged":"85+ (strategy) / 90+ (money guide)","Defence":"75+ / 80+","Prayer":"74+ (Rigour)"}, "unit": null,
+     "statement": "Vorkath strategy page recommends 85+ Ranged, 75+ Defence, 74+ Prayer for Rigour; the DHCB money guide recommends 90+ Ranged, 80+ Defence, 74+ Prayer.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Vorkath/Strategies", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15410400", "revid": 15410400, "retrieved": "2026-11-20", "published": null, "quote": "*{{SCP|Ranged|85+}} (Ranged method) ... *{{SCP|Defence|75+}} *{{SCP|Prayer|70+}} for [[Piety]] (74+ for [[Rigour]])", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "Money making guide/Killing Vorkath (Dragon hunter crossbow)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15355232", "revid": 15355232, "retrieved": "2026-11-20", "published": null, "quote": "* {{SCP|Ranged|90+}}, {{SCP|Hitpoints}} recommended * {{SCP|Defence|80+}} recommended * {{SCP|Prayer|74+}} for [[Rigour]] recommended", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5083", "claim_id": "C-RFI-083", "subject": "vorkath: instance and HW death", "attribute": "hw_death_classification",
+     "value": "UNSAFE_DEATH", "unit": null,
+     "statement": "Vorkath is an instanced boss (item retrieval via Torfinn) and not a HW safe exception, so a death there is run-ending on Hardcore Worlds.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "HW ruleset is new content (2026-11-04); re-check T1 before release.",
+     "sources": [
+      {"tier": "T2", "title": "Vorkath", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409686", "revid": 15409686, "retrieved": "2026-11-20", "published": null, "quote": "{{Instance|irs=Torfinn|cost=100000}}", "fetched_by": "fact-verifier"},
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "Hardcore worlds will use the [https://oldschool.runescape.wiki/w/Group_Ironman_Mode#Hardcore_Group_Ironman Hardcore Group Ironman ruleset] for death which is much less forgiving! This ruleset has very few exceptions, which means you should go in with the expectation that 99% of deaths will land you right back in Death's office", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": true},
+
+    {"fact_id": "F-5084", "claim_id": "C-RFI-084", "subject": "jad: structure", "attribute": "encounter_structure",
+     "value": "63 waves solo, ending with TzTok-Jad", "unit": null,
+     "statement": "The Fight Cave is 63 solo waves ending with TzTok-Jad.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "TzHaar Fight Cave", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387577", "revid": 15387577, "retrieved": "2026-11-20", "published": null, "quote": "It involves single-handedly fighting off 63 waves of [[volcanic creatures]], including a boss fight against the strongest of the creatures: [[TzTok-Jad]].", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5085", "claim_id": "C-RFI-085", "subject": "jad: max hit", "attribute": "max_hit",
+     "value": {"melee":97,"ranged":97,"magic":95}, "unit": "hitpoints",
+     "statement": "TzTok-Jad max hits: 97 melee, 97 ranged, 95 magic.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "TzTok-Jad", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15394926", "revid": 15394926, "retrieved": "2026-11-20", "published": null, "quote": "|max hit = 97 ([[Melee]]), 97 ([[Ranged]]), 95 ([[Magic]])", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5086", "claim_id": "C-RFI-086", "subject": "jad: escape", "attribute": "escape",
+     "value": "The player can request logout during a wave; the run pauses after the wave completes", "unit": null,
+     "statement": "Clicking Log Out while enemies are alive requests a logout; after the wave is completed the run pauses and resumes on login.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "TzHaar Fight Cave", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387577", "revid": 15387577, "retrieved": "2026-11-20", "published": null, "quote": "*'''You can REQUEST to log out of the game at anytime by clicking \"Log Out\" before you end your current round (when enemy NPCs are still alive).''' After you complete the wave, the wave will pause, you will log out safely, and the next wave will begin once you log back in.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5087", "claim_id": "C-RFI-087", "subject": "jad: HW death", "attribute": "hw_death_classification",
+     "value": "UNSAFE_DEATH (safe only via the once-per-day Karamja Elite resurrection)", "unit": null,
+     "statement": "Jagex lists the TzHaar Fight Cave as UNSAFE on HW, with the Karamja Elite Diary resurrection as the only safe exception (once per day in the Fight Caves).",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "HW ruleset is new content (2026-11-04). The wiki changelog says the daily resurrection was introduced for players who 'already own a Fire cape'; if that still applies, a first-ever Jad attempt gets no resurrection. Not confirmed on the current page text (RFI raised).",
+     "sources": [
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "* TzHaar Fight Cave ... * The Resurrection reward for the TzHaar Fight Caves from the Karamja Elite Diary", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "TzHaar Fight Cave", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387577", "revid": 15387577, "retrieved": "2026-11-20", "published": null, "quote": "{{Safe death|IRS=yes|HCIM=yes|HCGIM=no}} ... once per day, upon reaching 0 hitpoints within the Caves, the player will be resurrected ... *You now get one resurrection per day in the fight cave if you already own a [[Fire cape]] and you have completed the [[Karamja Elite Diary]].", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": true},
+
+    {"fact_id": "F-5088", "claim_id": "C-RFI-088", "subject": "jad: duration", "attribute": "typical_attempt_duration",
+     "value": "often well over 1 hour for lower-level players; ~25 min at best with fast melee", "unit": null,
+     "statement": "A Fight Cave run often takes well over an hour for lower-level players; heavily sped-up runs can take about 25 minutes.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "TzHaar Fight Cave/Strategies", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402469", "revid": 15402469, "retrieved": "2026-11-20", "published": null, "quote": "Completing the Fight Cave takes a significant amount of time (often well over an hour for lower-level players) ... *Fight Cave is heavily sped up and can be as fast as approximately 25 minutes.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5089", "claim_id": "C-RFI-089", "subject": "wildy-boss: location", "attribute": "wilderness_level",
+     "value": {"Artio":"Hunter's End, level 21, singles-plus","Calvar'ion":"Skeletal Tomb, level 21, singles-plus"}, "unit": null,
+     "statement": "Artio is fought in Hunter's End and Calvar'ion in the Skeletal Tomb, both singles-plus lairs in level 21 Wilderness.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "Entry to either lair requires the hard Wilderness Diary OR a boss Slayer task for the stronger variant (Callisto/Vet'ion); a bear/skeleton task does not bypass it.",
+     "sources": [
+      {"tier": "T2", "title": "Artio", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15358758", "revid": 15358758, "retrieved": "2026-11-20", "published": null, "quote": "who is fought in the [[Hunter's End]], a [[singles-plus combat]] area in level 21 [[Wilderness]]. To enter Artio's lair, players must have completed the [[Wilderness Diary#Hard|hard Wilderness diary]], '''OR''' they must have a Callisto boss Slayer task", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "Calvar'ion", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397210", "revid": 15397210, "retrieved": "2026-11-20", "published": null, "quote": "who is fought in the [[Skeletal Tomb]], a [[singles-plus combat]] area in level 21 [[Wilderness]]. To enter Calvar'ion's lair, players must have completed the [[Wilderness Diary#Hard|hard Wilderness diary]], '''OR''' they must have a Vet'ion boss Slayer task", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5090", "claim_id": "C-RFI-090", "subject": "wildy-boss: max hit", "attribute": "max_hit",
+     "value": {"Artio magic":50,"Artio crush":35,"Calvar'ion":26}, "unit": "hitpoints",
+     "statement": "Artio max hits: 50 magic, 35 crush (17 ranged); Calvar'ion max hit 26.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Artio", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15358758", "revid": 15358758, "retrieved": "2026-11-20", "published": null, "quote": "|max hit = 35 ([[Crush]]), 50 ([[Magic]]), 17 ([[Ranged]])", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "Calvar'ion", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397210", "revid": 15397210, "retrieved": "2026-11-20", "published": null, "quote": "|max hit = 26", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5091", "claim_id": "C-RFI-091", "subject": "wildy-boss: teleport restriction", "attribute": "teleport_restriction",
+     "value": "Level 21: standard teleports fail (need level-30 teleports); entering players block teleports for 3 ticks without the hard Wilderness diary", "unit": null,
+     "statement": "At level 21 only the members' level-30 teleports (glory, escape crystal, etc.) work; when a player enters the lair everyone inside cannot teleport for 3 ticks unless they have the hard Wilderness Diary.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "Lair entry itself needs the hard Wilderness Diary or a matching boss Slayer task. Logging out in a weaker-boss lair places the player at the lair entrance (still in the Wilderness).",
+     "sources": [
+      {"tier": "T2", "title": "Wilderness", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15405423", "revid": 15405423, "retrieved": "2026-11-20", "published": null, "quote": "While inside the lairs of any of the weaker bosses, players that have not completed the [[Wilderness Diary#Hard|Hard Wilderness tasks]] have a {{Ticks|3}} delay before being able to teleport away. ... Logging out while inside a boss lair will either place a player in the Escape Caves (for the stronger variants) or at the boss lair entrance (for the weaker variants).", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "Artio", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15358758", "revid": 15358758, "retrieved": "2026-11-20", "published": null, "quote": "Upon any player entering the den, all players inside will be unable to [[teleport]] for 3 [[ticks]]. This delay no longer occurs after completion of the [[Wilderness Diary#Hard|hard Wilderness diary]].", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "Escape crystal", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409296", "revid": 15409296, "retrieved": "2026-11-20", "published": null, "quote": "It is one of the [[Wilderness#Member_teleportation_up_to_level_30_Wilderness|few items]] whose teleports will work up to level 30 Wilderness", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5092", "claim_id": "C-RFI-092", "subject": "wildy-boss: typical account", "attribute": "typical_stats",
+     "value": {"Hitpoints":"60+","Ranged":"75+","Magic":"70 (79+ for Ice Burst/Entangle)","Prayer":"43"}, "unit": null,
+     "statement": "The Artio money guide recommends 60+ Hitpoints, 75+ Ranged, Magic 70 (79+ for Ice Burst/Entangle) and 43 Prayer.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Money making guide/Killing Artio", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15309938", "revid": 15309938, "retrieved": "2026-11-20", "published": null, "quote": "* {{SCP|Hitpoints|60+ Recommended}} * {{SCP|Ranged|75+ Recommended}} * {{SCP|Magic|70}} (79+ Recommended (Ice Burst / Entangle)) * {{SCP|Prayer|43}}", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5093", "claim_id": "C-RFI-093", "subject": "wildy-boss: HW death", "attribute": "hw_death_classification",
+     "value": "UNSAFE_DEATH", "unit": null,
+     "statement": "Wilderness boss deaths (PvM or PvP) are not HW safe exceptions; PvP deaths follow Wilderness rules then force Reset/Transfer, so they are run-ending.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "HW ruleset is new content (2026-11-04); re-check T1 before release.",
+     "sources": [
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "Hardcore worlds will use the [https://oldschool.runescape.wiki/w/Group_Ironman_Mode#Hardcore_Group_Ironman Hardcore Group Ironman ruleset] for death which is much less forgiving! This ruleset has very few exceptions, which means you should go in with the expectation that 99% of deaths will land you right back in Death's office", "fetched_by": "fact-verifier"},
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "As for PvP deaths, all of the [https://oldschool.runescape.wiki/w/Items_Kept_on_Death#Player_versus_Player_death_inside_the_Wilderness usual rule within the Wilderness]. Then you'll be given a choice: '''Reset''' or '''Transfer'''.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": true},
+
+    {"fact_id": "F-5094", "claim_id": "C-RFI-094", "subject": "barrows-low: typical account", "attribute": "typical_stats",
+     "value": {"Attack":"50+","Strength":"50+","Defence":"50+","Ranged":"50+","Magic":"50+","Prayer":"43+"}, "unit": null,
+     "statement": "Barrows strategy page recommends 50+ Attack, Strength, Defence, Ranged and Magic, and 43+ Prayer for the protection prayers.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Barrows/Strategies", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404618", "revid": 15404618, "retrieved": "2026-11-20", "published": null, "quote": "*{{SCP|Attack|50+}} [[Attack]] *{{SCP|Strength|50+}} [[Strength]] *{{SCP|Defence|50+}} [[Defence]] *{{SCP|Ranged|50+}} [[Ranged]] (if ranging [[Ahrim the Blighted|Ahrim]]) *{{SCP|Magic|50+}} [[Magic]] ... *{{SCP|Prayer|43+}} [[Prayer]]", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5095", "claim_id": "C-RFI-095", "subject": "barrows-low: prayer drain", "attribute": "mechanics",
+     "value": "Prayer drained every 18 s underground: 8 points, +1 per brother killed, up to 14", "unit": null,
+     "statement": "In the Barrows the brothers' faces drain Prayer every 18 seconds: 8 points, +1 per brother killed, up to 14.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Barrows/Strategies", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404618", "revid": 15404618, "retrieved": "2026-11-20", "published": null, "quote": "draining a considerable amount of [[Prayer]] points every 18 seconds. The amount of Prayer drained begins at eight Prayer points, and increases by one for each brother killed, for a maximum of fourteen once all six brothers are killed.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5096", "claim_id": "C-RFI-096", "subject": "barrows-low: max hit", "attribute": "max_hit",
+     "value": {"Dharok normal":29,"Dharok at 1 HP":57}, "unit": "hitpoints",
+     "statement": "Dharok's max hit is 29 normally and 57 when he is at 1 hitpoint (+1% per missing HP).",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Dharok the Wretched", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15316733", "revid": 15316733, "retrieved": "2026-11-20", "published": null, "quote": "|max hit = 29 (normal), 57 (at 1 [[Hitpoint]]s)", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5097", "claim_id": "C-RFI-097", "subject": "barrows-low: HW death", "attribute": "hw_death_classification",
+     "value": "UNSAFE_DEATH", "unit": null,
+     "statement": "Barrows is not a HW safe exception, so under the HGIM ruleset a death there is run-ending.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "HW ruleset is new content (2026-11-04); re-check T1 before release.",
+     "sources": [
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "Hardcore worlds will use the [https://oldschool.runescape.wiki/w/Group_Ironman_Mode#Hardcore_Group_Ironman Hardcore Group Ironman ruleset] for death which is much less forgiving! This ruleset has very few exceptions, which means you should go in with the expectation that 99% of deaths will land you right back in Death's office", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": true},
+
+    {"fact_id": "F-5098", "claim_id": "C-RFI-098", "subject": "quest-boss-mid: typical account", "attribute": "typical_stats",
+     "value": {"Combat":"45 (recommended)","Prayer":"37 (Protect from Magic)"}, "unit": null,
+     "statement": "Dragon Slayer I recommends combat level 45 and 37 Prayer (unboostable) for Protect from Magic against Elvarg.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Dragon Slayer I", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15405352", "revid": 15405352, "retrieved": "2026-11-20", "published": null, "quote": "|recommended = * {{SCP|Combat|45|link=yes}} ... * {{SCP|Prayer|37|link=yes}}{{Boostable|no}} for [[Protect from Magic]] against Elvarg's magic attacks.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5099", "claim_id": "C-RFI-099", "subject": "quest-boss-mid: max hit", "attribute": "max_hit",
+     "value": {"dragonfire unprotected":70,"dragonfire with anti-dragon shield":10,"slash":8}, "unit": "hitpoints",
+     "statement": "Elvarg max hits: 70 dragonfire, 10 dragonfire with an anti-dragon shield, 8 slash; each dragonfire drains 10% of remaining Prayer.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Elvarg", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15390088", "revid": 15390088, "retrieved": "2026-11-20", "published": null, "quote": "|max hit = 8 ([[Slash]]), 70 ([[Dragonfire]]), 10 (with [[anti-dragon shield]])", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5100", "claim_id": "C-RFI-100", "subject": "quest-boss-mid: escape", "attribute": "escape",
+     "value": "Not locked: the quest guide recommends bringing a teleport to escape death", "unit": null,
+     "statement": "The DS1 quest guide suggests taking a teleport to escape death or to leave Crandor after killing Elvarg.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Dragon Slayer I", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15405352", "revid": 15405352, "retrieved": "2026-11-20", "published": null, "quote": "You may also consider taking a [[teleportation]] method with you, either to escape death or to leave the island after killing her.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5101", "claim_id": "C-RFI-101", "subject": "quest-boss-mid: HW death", "attribute": "hw_death_classification",
+     "value": "UNSAFE_DEATH", "unit": null,
+     "statement": "The only quest exception on the T1 HW safe list is the 4th phase of Koschei in The Fremennik Trials; an Elvarg death is run-ending.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "HW ruleset is new content (2026-11-04). The HW wiki page (T2 only) lists a Galvek replay and Glough replay as safe; quest boss first fights are not.",
+     "sources": [
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "Hardcore worlds will use the [https://oldschool.runescape.wiki/w/Group_Ironman_Mode#Hardcore_Group_Ironman Hardcore Group Ironman ruleset] for death which is much less forgiving! This ruleset has very few exceptions, which means you should go in with the expectation that 99% of deaths will land you right back in Death's office", "fetched_by": "fact-verifier"},
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "* The Fremennik Trials ''(only the 4th phase of the duel with Koschei the Deathless)''", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": true},
+
+    {"fact_id": "F-5102", "claim_id": "C-RFI-102", "subject": "wildy-course: wilderness level", "attribute": "wilderness_level",
+     "value": {"level":"50-56","combat":"singles-plus","pk_while_in_npc_combat":true}, "unit": null,
+     "statement": "The Wilderness Agility Course is at Wilderness level 50-56 in a singles-plus area where PKers can attack even while you fight a monster.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Wilderness Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15351989", "revid": 15351989, "retrieved": "2026-11-20", "published": null, "quote": "|wilderness = 50-56 ... taking place in a [[singles-plus combat]] area that allows [[player killers]] to attack at any time, '''even if you are already in combat with a monster'''.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5103", "claim_id": "C-RFI-103", "subject": "wildy-course: typical account", "attribute": "typical_account",
+     "value": "52 Agility to enter (49 for obstacles; boostable)", "unit": null,
+     "statement": "Entering needs 52 Agility (boostable); the obstacles need 49 (boostable).",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Wilderness Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15351989", "revid": 15351989, "retrieved": "2026-11-20", "published": null, "quote": "requiring level 52 [[Agility]]{{Boostable|yes}} to enter, and 49 Agility{{Boostable|yes}} to complete the first obstacle inside.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5104", "claim_id": "C-RFI-104", "subject": "wildy-course: fail damage", "attribute": "failure_damage",
+     "value": {"ropeswing":"floor(HP*0.15)+1","stepping stones":"floor(HP*0.2)+1"}, "unit": null,
+     "statement": "Ropeswing failure deals floor(current HP x 0.15)+1 and drops the player into the dungeon; the stepping stones (third stone only) deal floor(current HP x 0.2)+1.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "The log balance can also fail (floor(HP x 0.15)+1, drops the player into the dungeon with level 25 skeletons). Damage is a fraction of current HP, so the fall alone cannot kill.",
+     "sources": [
+      {"tier": "T2", "title": "Wilderness Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15351989", "revid": 15351989, "retrieved": "2026-11-20", "published": null, "quote": "|[[Ropeswing (Wilderness Agility Course)|Ropeswing]] ... deal <math>\\left\\lfloor\\text{Current hitpoints}\\times0.15\\right\\rfloor+1</math> damage. ... You can only fail on the third stone, which deals <math>\\left\\lfloor\\text{Current hitpoints}\\times0.2\\right\\rfloor+1</math> damage.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5105", "claim_id": "C-RFI-105", "subject": "wildy-course: aggressive NPCs", "attribute": "aggressive",
+     "value": "Level 18 and 25 skeletons roam the course and the dungeon below and attack nearby players", "unit": null,
+     "statement": "Level 18 skeletons roam the course and level 25 skeletons the dungeon below; both attack nearby players.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Wilderness Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15351989", "revid": 15351989, "retrieved": "2026-11-20", "published": null, "quote": "there are multiple level 18 and 25 [[skeleton]]s roaming the course and underground respectively that will attack any player near them.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5106", "claim_id": "C-RFI-106", "subject": "wildy-course: escape", "attribute": "teleport_restriction",
+     "value": "No teleport works at 50-56 (above the level-30 cap of members' teleports); the player must walk south 20+ levels", "unit": null,
+     "statement": "Teleports fail above level 20 except members' items that work to level 30; the course is at 50-56, so a player must travel at least 20 levels south before any teleport works (derived).",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "Derived from the general Wilderness teleport rules; non-teleport exits (e.g. levers, obelisks) were not researched.",
+     "sources": [
+      {"tier": "T2", "title": "Wilderness", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15405423", "revid": 15405423, "retrieved": "2026-11-20", "published": null, "quote": "[[Teleportation|Teleports]] will not work above level 20 Wilderness, except for those methods listed below, which may be used by [[members]] up to level 30 Wilderness.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5107", "claim_id": "C-RFI-107", "subject": "wildy-course: HW death", "attribute": "hw_death_classification",
+     "value": "UNSAFE_DEATH", "unit": null,
+     "statement": "Wilderness deaths (PvM or PvP) are not HW safe exceptions; Jagex stresses the Wilderness is more dangerous than ever on HW.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "HW ruleset is new content (2026-11-04); re-check T1 before release.",
+     "sources": [
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "Hardcore worlds will use the [https://oldschool.runescape.wiki/w/Group_Ironman_Mode#Hardcore_Group_Ironman Hardcore Group Ironman ruleset] for death which is much less forgiving! This ruleset has very few exceptions, which means you should go in with the expectation that 99% of deaths will land you right back in Death's office", "fetched_by": "fact-verifier"},
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "The Wilderness is even more dangerous than ever before, as you'll be making characters sit ''permanently''.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": true},
+
+    {"fact_id": "F-5108", "claim_id": "C-RFI-108", "subject": "werewolf: typical account", "attribute": "typical_account",
+     "value": "60 Agility, Creature of Fenkenstrain, Ring of Charos", "unit": null,
+     "statement": "The Werewolf course needs 60 Agility, Creature of Fenkenstrain, and a worn Ring of Charos to enter.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Werewolf Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15315234", "revid": 15315234, "retrieved": "2026-11-20", "published": null, "quote": "available to players with level 60 [[Agility]]. Access to this course requires completion of [[Creature of Fenkenstrain]]. To access the Agility course, the player has to wear a [[Ring of Charos]]", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5109", "claim_id": "C-RFI-109", "subject": "werewolf: fail damage", "attribute": "failure_damage",
+     "value": "Deathslide fall: 'upwards of 30', not scaled with Hitpoints", "unit": "hitpoints",
+     "statement": "The Deathslide (zip line) is the only failable obstacle; a fall can deal upwards of 30 and does not scale with Hitpoints, so low-HP players can die.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Werewolf Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15315234", "revid": 15315234, "retrieved": "2026-11-20", "published": null, "quote": "|[[Zip line (Werewolf Agility Course)|Zip line]]<br/>(Deathslide) ... |This is the only failable obstacle of the course. A fall can deal upwards of 30 damage and does NOT scale with [[Hitpoints]], so players with low HP are at risk of [[death]].", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5110", "claim_id": "C-RFI-110", "subject": "werewolf: no-fail threshold", "attribute": "mitigation",
+     "value": "Never fails at 80 Agility + 80 Strength with weight <=2 kg", "unit": null,
+     "statement": "With 80 Agility and 80 Strength and carried weight of 2 kg or less the Deathslide is never failed (Mod Ash confirmation cited on the page).",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Werewolf Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15315234", "revid": 15315234, "retrieved": "2026-11-20", "published": null, "quote": "With level 80 in Agility and [[Strength]] and a weight of 2 kg or lower, this obstacle will never be failed.{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1158672314575261697|date=6 August 2019", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5111", "claim_id": "C-RFI-111", "subject": "werewolf: duration", "attribute": "typical_attempt_duration",
+     "value": 38, "unit": "seconds per lap",
+     "statement": "An average Werewolf course lap takes 38 seconds.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Werewolf Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15315234", "revid": 15315234, "retrieved": "2026-11-20", "published": null, "quote": "With an average time of 38 seconds per lap, it is possible to get upwards of 68,500 Agility experience per hour from this course.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5112", "claim_id": "C-RFI-112", "subject": "werewolf: HW death", "attribute": "hw_death_classification",
+     "value": "UNSAFE_DEATH", "unit": null,
+     "statement": "Agility courses are not HW safe exceptions, so a Deathslide death is run-ending.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "HW ruleset is new content (2026-11-04); re-check T1 before release.",
+     "sources": [
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "Hardcore worlds will use the [https://oldschool.runescape.wiki/w/Group_Ironman_Mode#Hardcore_Group_Ironman Hardcore Group Ironman ruleset] for death which is much less forgiving! This ruleset has very few exceptions, which means you should go in with the expectation that 99% of deaths will land you right back in Death's office", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": true},
+
+    {"fact_id": "F-5113", "claim_id": "C-RFI-113", "subject": "sepulchre-high: typical account", "attribute": "typical_stats",
+     "value": {"Agility floor 4":77,"Agility floor 5":87,"Hitpoints":"70+ recommended","quest":"Sins of the Father"}, "unit": null,
+     "statement": "Hallowed Sepulchre floors 4 and 5 need 77 and 87 Agility; 70+ Hitpoints is recommended for traps; entry needs Sins of the Father.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Hallowed Sepulchre", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544", "revid": 15387544, "retrieved": "2026-11-20", "published": null, "quote": "**Entering the Sepulchre requires completion of [[Sins of the Father]] ... **Floor 4: {{SCP|Agility|77 Agility}} **Floor 5: {{SCP|Agility|87 Agility}} * (Recommended) {{SCP|Hitpoints|70+|link=yes}} to withstand damage from traps.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5114", "claim_id": "C-RFI-114", "subject": "sepulchre-high: trap damage", "attribute": "failure_damage",
+     "value": "Traps deal 'a small amount of damage' per hit (no number published); the hallowed ring prevents it", "unit": null,
+     "statement": "Running into a trap usually teleports the player back and deals a small amount of damage unless the hallowed ring is worn; no number is published.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Hallowed Sepulchre", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544", "revid": 15387544, "retrieved": "2026-11-20", "published": null, "quote": "In most cases, running into a trap will teleport the player to a location just before the trap on the path, costing the player time. This deals a small amount of damage unless the [[hallowed ring]] is equipped.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5115", "claim_id": "C-RFI-115", "subject": "sepulchre-high: duration", "attribute": "typical_attempt_duration",
+     "value": "2 min timer on floor 1, +2 min per floor (up to 10 min by floor 5)", "unit": null,
+     "statement": "Floor 1 starts with 2 minutes; 2 minutes are added on each descent, so the cumulative budget by floor 5 is 10 minutes (computed).",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "The 10-minute figure is derived (cumulative timer, unused time carries over). After the timer ends the player can still finish the floor for XP but cannot loot or progress.",
+     "sources": [
+      {"tier": "T2", "title": "Hallowed Sepulchre", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544", "revid": 15387544, "retrieved": "2026-11-20", "published": null, "quote": "The first floor begins with 2 minutes on the timer, and an additional 2 minutes is added to the timer when climbing down to each lower level.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5116", "claim_id": "C-RFI-116", "subject": "sepulchre-high: HW death", "attribute": "hw_death_classification",
+     "value": "UNSAFE_DEATH", "unit": null,
+     "statement": "The Hallowed Sepulchre is marked dangerous and is not a HW safe exception, so a death there is run-ending.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "HW ruleset is new content (2026-11-04); re-check T1 before release.",
+     "sources": [
+      {"tier": "T2", "title": "Hallowed Sepulchre", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544", "revid": 15387544, "retrieved": "2026-11-20", "published": null, "quote": "{{Dangerous|irs=yes}}", "fetched_by": "fact-verifier"},
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "Hardcore worlds will use the [https://oldschool.runescape.wiki/w/Group_Ironman_Mode#Hardcore_Group_Ironman Hardcore Group Ironman ruleset] for death which is much less forgiving! This ruleset has very few exceptions, which means you should go in with the expectation that 99% of deaths will land you right back in Death's office", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": true},
+
+    {"fact_id": "F-5117", "claim_id": "C-RFI-117", "subject": "slayer-mid: kalphite soldiers", "attribute": "max_hit",
+     "value": {"Kalphite Soldier max hit":8,"aggressive":true,"poison":4,"multi-combat":true}, "unit": "hitpoints",
+     "statement": "Kalphite soldiers hit up to 8, are aggressive, poison starting at 4, and live in a multi-combat area.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Kalphite Soldier", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15240656", "revid": 15240656, "retrieved": "2026-11-20", "published": null, "quote": "|max hit = 8 |aggressive = Yes |poisonous = Yes (4) ... These are highly dangerous because of their ability to [[poison]] starting at 4 damage without dealing melee damage, and they inhabit a [[multi-combat area]].", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5118", "claim_id": "C-RFI-118", "subject": "slayer-mid: kalphite lair access", "attribute": "escape",
+     "value": "Rope-entry cave (a rope each visit unless the Hard Desert Diary is done); the Queen's Lair is a middle level reached through a hole with a second rope; the page's 'lower/second level' has one exit, a rope climb; an 86 Agility + Elite Desert Diary two-way crevice shortcut also leads to the room before the Queen", "unit": null,
+     "researcher_value": "Rope-entry cave; the Queen level's only exit is a rope climb",
+     "statement": "The Kalphite Lair page does not say the Queen's level has only a rope exit: it calls the Queen's Lair the middle level (reached by a hole and a second rope), says the lower 'second level' has one exit (a rope climb), and documents a two-way crevice shortcut (86 Agility, Elite Desert Diary) to the room before the Queen.",
+     "status": "DISPUTED", "caveat": "The page's level naming is internally inconsistent, so 'the Queen level's only exit is a rope climb' is not supported as stated. Teleport availability inside the lair was not researched.",
+     "sources": [
+      {"tier": "T2", "title": "Kalphite Lair", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15392929", "revid": 15392929, "retrieved": "2026-11-20", "published": null, "quote": "*There is a hole to the middle level (the Queen's Lair), which requires the second rope ... ==Lower level== The second level has one exit: a [[rope]] climb at the east to the first level, which is how players must enter initially.", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "Kalphite Lair", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15392929", "revid": 15392929, "retrieved": "2026-11-20", "published": null, "quote": "There is also a crevice [[shortcut]] requiring 86 [[Agility]] and the [[Elite Desert Diary]] to use; it is a two-way shortcut and is helpful for players wishing to kill the Kalphite Queen as it will drop them off in the room leading to her chamber.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5119", "claim_id": "C-RFI-119", "subject": "slayer-mid: dagannoth", "attribute": "max_hit",
+     "value": {"Lighthouse level 74 ranged":10,"Lighthouse level 92 melee":8,"aggressive":true,"Waterbirth variant":"much higher max hits"}, "unit": "hitpoints",
+     "statement": "Lighthouse dagannoth: level 74 ranged hits up to 10 (poor accuracy), level 92 melee up to 8; aggressive; multicombat basement; Waterbirth dagannoth hit much harder.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Dagannoth", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406476", "revid": 15406476, "retrieved": "2026-11-20", "published": null, "quote": "|aggressive = Yes ... The level 74 in the Lighthouse uses a [[ranged]] attack that hits up to 10, but has poor accuracy. The level 92 dagannoth uses [[melee]], which is more accurate and hits up to 8. ... with the Waterbirth Island dagannoth having much higher max hits.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5120", "claim_id": "C-RFI-120", "subject": "slayer-mid: HW death", "attribute": "hw_death_classification",
+     "value": "UNSAFE_DEATH", "unit": null,
+     "statement": "Slayer locations are not HW safe exceptions, so a death there is run-ending.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "HW ruleset is new content (2026-11-04); re-check T1 before release.",
+     "sources": [
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "Hardcore worlds will use the [https://oldschool.runescape.wiki/w/Group_Ironman_Mode#Hardcore_Group_Ironman Hardcore Group Ironman ruleset] for death which is much less forgiving! This ruleset has very few exceptions, which means you should go in with the expectation that 99% of deaths will land you right back in Death's office", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": true},
+
+    {"fact_id": "F-5121", "claim_id": "C-RFI-121", "subject": "ape-atoll: typical account", "attribute": "typical_account",
+     "value": "48 Agility (unboostable), Monkey Madness I chapter 2, ninja/Kruk greegree", "unit": null,
+     "statement": "Ape Atoll course needs 48 Agility (not boostable), Monkey Madness I up to chapter 2, and a small/medium ninja or Kruk greegree.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Ape Atoll Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15372987", "revid": 15372987, "retrieved": "2026-11-20", "published": null, "quote": "available to players with level 48 [[Agility]] (cannot be [[Temporary skill boost|boosted]]). Access to this course requires partial completion of [[Monkey Madness I]], up to Chapter 2. ... * Wear a [[Ninja monkey greegree (small)|small]] or [[Ninja monkey greegree (medium)|medium-sized]] ninja monkey greegree or the [[Kruk monkey greegree]]", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5122", "claim_id": "C-RFI-122", "subject": "ape-atoll: fail behaviour", "attribute": "failure_damage",
+     "value": "Failures deal unspecified damage; failing the first tropical tree sends the player back to the course entrance (return behaviour for other obstacles is not documented); the stepping stone and second tropical tree can no longer be failed", "unit": null,
+     "researcher_value": "Failures deal unspecified damage and send the player back to the course entrance; the stepping stone and second tree can no longer be failed",
+     "statement": "Only the first tropical tree is documented as sending the player back to the entrance; the claim generalises this to all failures. Unspecified fail damage and the no-fail stepping stone and second tree are confirmed.",
+     "status": "DISPUTED", "caveat": "Over-generalised from the tropical tree page. Fail damage values are not published.",
+     "sources": [
+      {"tier": "T2", "title": "Ape Atoll Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15372987", "revid": 15372987, "retrieved": "2026-11-20", "published": null, "quote": "* Bring some [[food]] to restore lost [[hitpoints]] from taking damage from failing agility obstacles. ... |change = The [[Stepping stone (Ape Atoll Agility Course)|stepping stone]] and the second [[Tropical tree (Ape Atoll Agility Course)|tropical tree]] obstacles can no longer be failed.", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "Tropical tree (Ape Atoll Agility Course)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15241805", "revid": 15241805, "retrieved": "2026-11-20", "published": null, "quote": "Failing the first tree obstacle will send the player back to the course entrance next to the signpost. Players cannot fail the second tree obstacle.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5123", "claim_id": "C-RFI-123", "subject": "ape-atoll: no-fail threshold", "attribute": "mitigation",
+     "value": "Never fails at 75+ (boosted) Agility", "unit": null,
+     "statement": "At a (boosted) Agility level of 75 or more the player never fails an Ape Atoll obstacle.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Ape Atoll Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15372987", "revid": 15372987, "retrieved": "2026-11-20", "published": null, "quote": "to maintain a boosted [[Agility]] level of at least 75, because the player will never fail an obstacle at this level.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5124", "claim_id": "C-RFI-124", "subject": "ape-atoll: HW death", "attribute": "hw_death_classification",
+     "value": "UNSAFE_DEATH", "unit": null,
+     "statement": "Agility courses are not HW safe exceptions, so a death there is run-ending.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "HW ruleset is new content (2026-11-04); re-check T1 before release.",
+     "sources": [
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "Hardcore worlds will use the [https://oldschool.runescape.wiki/w/Group_Ironman_Mode#Hardcore_Group_Ironman Hardcore Group Ironman ruleset] for death which is much less forgiving! This ruleset has very few exceptions, which means you should go in with the expectation that 99% of deaths will land you right back in Death's office", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": true},
+
+    {"fact_id": "F-5125", "claim_id": "C-RFI-125", "subject": "brimhaven: typical account", "attribute": "typical_account",
+     "value": "No requirement (200 coins per entry); 20 Agility for pressure pads and floor spikes", "unit": null,
+     "statement": "Brimhaven Agility Arena has no requirement except a 200-coin fee per entry; 20 Agility is needed for pressure pads and floor spikes (40 for spinning blades and darts).",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Brimhaven Agility Arena", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15371976", "revid": 15371976, "retrieved": "2026-11-20", "published": null, "quote": "The course has no requirements to access other than a 200 [[coins]] fee paid to [[Cap'n Izzy No-Beard]] before each entry. ... level 20 Agility is required to pass the [[pressure pad (Brimhaven Agility Arena)|pressure pad]] and [[Floor spikes (Brimhaven Agility Arena)|floor spike]] obstacles", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5126", "claim_id": "C-RFI-126", "subject": "brimhaven: fail damage", "attribute": "failure_damage",
+     "value": "Floor spikes: floor(HP*5/100)+2; trap damage scales with current HP", "unit": null,
+     "statement": "Floor spikes deal floor(current HP x 5/100)+2 (Mod Ash formula cited); arena trap damage scales with current health, lowest around 20 HP; spikes are never failed at 50 Agility.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Floor spikes (Brimhaven Agility Arena)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15385429", "revid": 15385429, "retrieved": "2026-11-20", "published": null, "quote": "Players will no longer fail this obstacle at level 50 [[Agility]]. The amount of damage is based on the player's current health ... <math>\\left\\lfloor \\frac{ \\text{Hitpoints} \\times 5}{100} \\right\\rfloor + 2</math>", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "Brimhaven Agility Arena", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15371976", "revid": 15371976, "retrieved": "2026-11-20", "published": null, "quote": "as the damage the traps deal to your health scale with how much health you currently have. By keeping your health around 20, the traps deal the least amount of damage", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5127", "claim_id": "C-RFI-127", "subject": "brimhaven: other effects", "attribute": "mechanics",
+     "value": "Darts drain 2 Agility levels on failure; logging out ejects from the arena", "unit": null,
+     "statement": "Failing the darts temporarily drains 2 Agility levels; logging out in the arena throws the player out (fee payable again).",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Brimhaven Agility Arena", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15371976", "revid": 15371976, "retrieved": "2026-11-20", "published": null, "quote": "Failure of this obstacle will result in temporarily draining 2 Agility levels. ... Logging out while in the arena will throw you out and require you to pay the fee again.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5128", "claim_id": "C-RFI-128", "subject": "brimhaven: HW death", "attribute": "hw_death_classification",
+     "value": "UNSAFE_DEATH", "unit": null,
+     "statement": "Brimhaven Agility Arena is not a HW safe exception, so a death there is run-ending.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "HW ruleset is new content (2026-11-04); re-check T1 before release.",
+     "sources": [
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "Hardcore worlds will use the [https://oldschool.runescape.wiki/w/Group_Ironman_Mode#Hardcore_Group_Ironman Hardcore Group Ironman ruleset] for death which is much less forgiving! This ruleset has very few exceptions, which means you should go in with the expectation that 99% of deaths will land you right back in Death's office", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": true},
+
+    {"fact_id": "F-5129", "claim_id": "C-RFI-129", "subject": "rooftop-lowhp: fail damage", "attribute": "failure_damage",
+     "value": "Failures deal 'small amounts of damage', often scaled to remaining HP", "unit": null,
+     "statement": "Failing an Agility obstacle often deals small amounts of damage; on many courses the damage scales with remaining Hitpoints.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Agility", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15405162", "revid": 15405162, "retrieved": "2026-11-20", "published": null, "quote": "It is possible to fail an obstacle, which often results in the player taking small amounts of damage. ... On many courses, the amount of damage taken after failing an obstacle is based on your remaining [[Hitpoints]]", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5130", "claim_id": "C-RFI-130", "subject": "rooftop-lowhp: Draynor", "attribute": "failure_damage",
+     "value": "Draynor's wall-cross and tightrope can no longer be failed", "unit": null,
+     "statement": "The Draynor rooftop wall-cross and tightrope can no longer be failed.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "Whether any other Draynor obstacle can still be failed (and for how much) is not documented on the fetched page.",
+     "sources": [
+      {"tier": "T2", "title": "Draynor Village Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15239943", "revid": 15239943, "retrieved": "2026-11-20", "published": null, "quote": "* It is no longer possible to fail the [[Wall (Draynor Village Rooftop Course)|wall-cross]] and [[Tightrope (Draynor Village Rooftop Course)|tightrope]] obstacles in the course.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5131", "claim_id": "C-RFI-131", "subject": "rooftop-lowhp: Canifis", "attribute": "failure_damage",
+     "value": "1 failable obstacle; 88.28% success at 40 Agility", "unit": null,
+     "statement": "Canifis rooftop has one failable obstacle (Jump Gap 3); success starts at 88.28% at 40 Agility and rises linearly until no failures at 64.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "The obstacle stops failing at 64 Agility; fail damage is not given.",
+     "sources": [
+      {"tier": "T2", "title": "Canifis Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374436", "revid": 15374436, "retrieved": "2026-11-20", "published": null, "quote": "There is 1 failable obstacle in this agility course, located at the jump between the tanner and the general store (Jump Gap 3). ... The chance to succeed starts at 88.28% at level 40 Agility, scaling linearly until the player stops failing the obstacle at level 64 Agility.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5132", "claim_id": "C-RFI-132", "subject": "rooftop-lowhp: HW death", "attribute": "hw_death_classification",
+     "value": "UNSAFE_DEATH", "unit": null,
+     "statement": "Rooftop courses are not HW safe exceptions, so a death there is run-ending.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "HW ruleset is new content (2026-11-04); re-check T1 before release.",
+     "sources": [
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "Hardcore worlds will use the [https://oldschool.runescape.wiki/w/Group_Ironman_Mode#Hardcore_Group_Ironman Hardcore Group Ironman ruleset] for death which is much less forgiving! This ruleset has very few exceptions, which means you should go in with the expectation that 99% of deaths will land you right back in Death's office", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": true},
+
+    {"fact_id": "F-5133", "claim_id": "C-RFI-133", "subject": "wintertodt-low: typical account", "attribute": "typical_account",
+     "value": "50 Firemaking", "unit": null,
+     "statement": "Level 50 Firemaking is required to take part in the Wintertodt fight.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Wintertodt", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409295", "revid": 15409295, "retrieved": "2026-11-20", "published": null, "quote": "*Level {{SCP|Firemaking|50}} is required to participate in the Wintertodt fight.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5134", "claim_id": "C-RFI-134", "subject": "wintertodt-low: warmth meter", "attribute": "mechanics",
+     "value": "Since 9 Oct 2024, Wintertodt damage hits a warmth meter instead of Hitpoints; 0% warmth = instant death", "unit": null,
+     "statement": "Since the 9 Oct 2024 update a warmth meter replaces Hitpoints inside the prison; dropping to 0% warmth causes instant death.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Wintertodt", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409295", "revid": 15409295, "retrieved": "2026-11-20", "published": null, "quote": "|date = 9 October 2024 ... * A warmth meter has replaced [[Hitpoints]] as the resource required to maintain meaning that Wintertodt's basic and special attacks now damage to the warmth rather than Hitpoints. | '''Dropping to 0% warmth will cause instant [[death]].'''", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5135", "claim_id": "C-RFI-135", "subject": "wintertodt-low: damage sources", "attribute": "mechanics",
+     "value": "Passive cold damage (scaled to Firemaking and braziers lit, reduced by warm clothing), 3x3 snowfall, brazier shatter", "unit": null,
+     "statement": "Damage comes from periodic cold (scaled to Firemaking level and braziers lit, reduced by warm clothing), 3x3 snowfall, and brazier shatter for adjacent players.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Wintertodt", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409295", "revid": 15409295, "retrieved": "2026-11-20", "published": null, "quote": "This passive damage is scaled to each player's [[Firemaking]] level as well as the number of braziers that are currently lit. ... *Area attack - Heavy snow will occasionally appear over a 3x3 area ... *Brazier heavy attack - ... the brazier will shatter. Players standing directly next to a brazier when it shatters will take damage.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5136", "claim_id": "C-RFI-136", "subject": "wintertodt-low: HW death", "attribute": "hw_death_classification",
+     "value": "UNSAFE_DEATH", "unit": null,
+     "statement": "Dying at the Wintertodt is unsafe (it is a boss) and it is not a HW safe exception, so a death there is run-ending.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "HW ruleset is new content (2026-11-04); re-check T1 before release.",
+     "sources": [
+      {"tier": "T2", "title": "Wintertodt", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409295", "revid": 15409295, "retrieved": "2026-11-20", "published": null, "quote": "As the Wintertodt is a boss, '''dying here is unsafe.''' The normal rules for loss of items apply, and Hardcore Ironmen will lose their Hardcore status on death.", "fetched_by": "fact-verifier"},
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "Hardcore worlds will use the [https://oldschool.runescape.wiki/w/Group_Ironman_Mode#Hardcore_Group_Ironman Hardcore Group Ironman ruleset] for death which is much less forgiving! This ruleset has very few exceptions, which means you should go in with the expectation that 99% of deaths will land you right back in Death's office", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": true},
+
+    {"fact_id": "F-5137", "claim_id": "C-RFI-137", "subject": "wintertodt-low: disconnect/AFK", "attribute": "disconnect_behaviour",
+     "value": "Escape crystal inactivity auto-teleport activates in the prison", "unit": null,
+     "statement": "Inside the Wintertodt prison, an escape crystal's inactivity auto-teleport activates if enabled (as do ring of life below 10% warmth and phoenix necklace at 20%).",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Wintertodt", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409295", "revid": 15409295, "retrieved": "2026-11-20", "published": null, "quote": "A [[ring of life]] will activate if warmth drops below 10%. A [[Phoenix necklace|Phoenix Necklace]] will also activate at 20% or less and restore Warmth.  The inactivity auto-tele feature of an [[Escape crystal]] will also activate if enabled.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5138", "claim_id": "C-RFI-138", "subject": "rooftop: Colossal Wyrm no-fail", "attribute": "failure_damage",
+     "value": "Colossal Wyrm obstacles can never be failed (no fail damage)", "unit": null,
+     "statement": "Players never fail obstacles on either Colossal Wyrm course.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Colossal Wyrm Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15388138", "revid": 15388138, "retrieved": "2026-11-20", "published": null, "quote": "Run energy is regenerated per obstacle and players never fail obstacles on either course.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5139", "claim_id": "C-RFI-139", "subject": "rooftop: normal HP fail damage", "attribute": "failure_damage",
+     "value": "Small, often HP-proportional fail damage", "unit": null,
+     "statement": "Agility failures often deal small amounts of damage, and on many courses it depends on remaining Hitpoints.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Agility", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15405162", "revid": 15405162, "retrieved": "2026-11-20", "published": null, "quote": "It is possible to fail an obstacle, which often results in the player taking small amounts of damage. ... On many courses, the amount of damage taken after failing an obstacle is based on your remaining [[Hitpoints]]", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5140", "claim_id": "C-RFI-140", "subject": "rooftop: HW death", "attribute": "hw_death_classification",
+     "value": "UNSAFE_DEATH (Colossal Wyrm: no course damage source found)", "unit": null,
+     "statement": "Agility courses are not HW safe exceptions, so any death there is run-ending; the Colossal Wyrm course itself has no fail damage.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "HW ruleset is new content (2026-11-04); re-check T1 before release.",
+     "sources": [
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "Hardcore worlds will use the [https://oldschool.runescape.wiki/w/Group_Ironman_Mode#Hardcore_Group_Ironman Hardcore Group Ironman ruleset] for death which is much less forgiving! This ruleset has very few exceptions, which means you should go in with the expectation that 99% of deaths will land you right back in Death's office", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "Colossal Wyrm Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15388138", "revid": 15388138, "retrieved": "2026-11-20", "published": null, "quote": "players never fail obstacles on either course.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": true},
+
+    {"fact_id": "F-5141", "claim_id": "C-RFI-141", "subject": "afk-safe: random events", "attribute": "mechanics",
+     "value": "A random event is offered every 1-2 hours of play", "unit": null,
+     "statement": "The game schedules the next random event at a point 1 to 2 hours after the player's last one (Mod Ash quote cited).",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Random events", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15407277", "revid": 15407277, "retrieved": "2026-11-20", "published": null, "quote": "To determine when the player will receive a random event, the game will pick a point in time between 1 and 2 hours in the future relative to the player's last random event.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5142", "claim_id": "C-RFI-142", "subject": "afk-safe: random events are HW-unsafe", "attribute": "hw_death_classification",
+     "value": "Random Events: UNSAFE on Hardcore Worlds", "unit": null,
+     "statement": "Jagex lists Random Events among the activities that are UNSAFE on Hardcore Worlds; the HW wiki page agrees.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "HW ruleset is new content (2026-11-04); re-check T1 before release.",
+     "sources": [
+      {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "Here's the full list of '''UNSAFE''' activities that are usually safe in Hardcore Ironman: ... * Random Events", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "Hardcore Worlds", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671", "revid": 15404671, "retrieved": "2026-11-20", "published": null, "quote": "* [[Random Event]]", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": true},
+
+    {"fact_id": "F-5143", "claim_id": "C-RFI-143", "subject": "afk-safe: combat randoms removed", "attribute": "aggressive",
+     "value": "Combat 'guardian' random events were removed", "unit": null,
+     "statement": "The guardian random events, whose purpose was to kill players, were removed; the guardians remain elsewhere as non-aggressive NPCs.",
+     "status": "VERIFIED",
+     "sources": [
+      {"tier": "T2", "title": "Random events", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15407277", "revid": 15407277, "retrieved": "2026-11-20", "published": null, "quote": "The guardians were all removed from the game in the random event update, as their primary function was to kill players. However, for historical purposes, the guardians were relocated to areas across [[Gielinor]]. Players may still kill them for their drops, but they are no longer considered aggressive.", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": false},
+
+    {"fact_id": "F-5144", "claim_id": "C-RFI-144", "subject": "afk-safe: escape crystal", "attribute": "disconnect_behaviour",
+     "value": "Escape crystal can auto-teleport after 2-300 s of inactivity when the player takes damage", "unit": null,
+     "statement": "An escape crystal can be configured to auto-activate on taking damage after 2-300 s of inactivity; every HW player starts with a free one.",
+     "status": "VERIFIED_WITH_CAVEAT", "caveat": "It only teleports out of the listed activities (BA, CoX, Inferno, Pest Control, ToB, TzHaar-Ket-Rak's Challenges, ToA) plus the Gauntlet/Wintertodt cases; it does not activate while moving; it activates immediately on damage after login or world hop. The free HW crystal is new content (2026-11-04).",
+     "sources": [
+      {"tier": "T2", "title": "Escape crystal", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409296", "revid": 15409296, "retrieved": "2026-11-20", "published": null, "quote": "Additionally, the crystal can be configured to auto-activate upon taking damage (including zeros) after a specified time of inactivity (ranging from 2 to 300 seconds) via the \"Configure\" option ... The crystal will '''NOT''' activate while the player is moving.", "fetched_by": "fact-verifier"},
+      {"tier": "T2", "title": "Hardcore Worlds", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671", "revid": 15404671, "retrieved": "2026-11-20", "published": null, "quote": "All players begin with a free [[escape crystal]].", "fetched_by": "fact-verifier"}
+     ], "verified_at": "2026-11-20T22:20:00Z", "independent": true, "released": null, "new_content": true}
+  ],
+  "rfi": [
+    {"desk": "threat-analyst", "question": "Is a death inside The Fractured Archive Practice Mode (released 2026-11-18) safe on Hardcore Worlds? Needs a T1 (Jagex post or in-game text) answer; until then planners must treat it as UNSAFE.", "refs": ["C-RFI-008", "C-RFI-018"]},
+    {"desk": "threat-analyst", "question": "Can an escape crystal or any teleport be used to leave The Fractured Archive mid-raid, and what happens on disconnect? No source found (escape crystal page does not list TFA).", "refs": ["C-RFI-019"]},
+    {"desk": "threat-analyst", "question": "T1 confirmation needed for the HW safe/unsafe items that appear only on the Hardcore Worlds wiki page (rev 15404671): SAFE - capsizing a boat, Emir's Arena, Pete Kayer's Challenges, Galvek replay, Glough replay, Last Man Standing; UNSAFE - PvM Arena. Was the T1 list amended in a later Jagex post?", "refs": ["C-RFI-002", "C-RFI-003"]},
+    {"desk": "threat-analyst", "question": "Does the Karamja Elite Diary daily Fight Cave resurrection still require already owning a fire cape (per the wiki changelog)? This decides whether a first-ever Jad attempt on HW has any safety net.", "refs": ["C-RFI-087"]},
+    {"desk": "threat-analyst", "question": "Phosani's Nightmare: can the player teleport or log out mid-fight, and what happens to items (Sister Senga retrieval)? Not documented on the fetched pages.", "refs": ["C-RFI-054"]},
+    {"desk": "logistics-analyst", "question": "Artio/Calvar'ion lairs require the hard Wilderness Diary or a Callisto/Vet'ion boss Slayer task to enter; planners using the wildy-boss anchor need the diary requirement and its own Wilderness exposure sourced.", "refs": ["C-RFI-089", "C-RFI-091"]}
+  ],
+  "provenance": {
+    "agent": "fact-verifier",
+    "started_at": "2026-11-20T22:08:00Z",
+    "finished_at": "2026-11-20T22:45:00Z",
+    "dispatch_ref": "dispatch/002-fact-verifier.md",
+    "inputs": [
+      {"path": "research/claims-rfi-01.json", "sha256": "d5282fdb74096a4b670d5494805d0a3584735dce260be9079b5799a22178479c"},
+      {"path": "dispatch/002-fact-verifier.md", "sha256": "5c65a1ff92c705ac7258bf0738892ed327e48898576807ed82cc09774d0a70ae"},
+      {"path": ".claude/agents/fact-verifier.md", "sha256": "61bff653ddf324af3fd3b78496c155a195e46cbf52e2ab087ceffacd1bdecf34"},
+      {"path": "schemas/facts.schema.json", "sha256": "e098fdf95c8a68673eecb8880afcddbf608298a25d485bd3a83a80a75c8b7bb2"}
+    ],
+    "actions": [
+      {"kind": "read", "detail": "Read charter .claude/agents/fact-verifier.md and recorded its sha256", "target": ".claude/agents/fact-verifier.md", "outcome": "61bff653...cf34"},
+      {"kind": "verify", "detail": "python3 tools/ledger.py verify calibration-20261120", "outcome": "OK: ledger chain and all seals intact"},
+      {"kind": "read", "detail": "Read the sealed claims file (144 claims, 69 distinct cited pages), dispatch 002, facts schema, and the facts gate in tools/validate.py", "target": "research/claims-rfi-01.json"},
+      {"kind": "fetch", "detail": "python3 tools/wiki.py page \"<Title>\" for the current revision of all 69 cited pages, once each (2026-11-20 22:10-22:12 UTC). Every current revid equals the researcher's cited revid, so the current fetch is also the pinned cited revision; no separate rev fetch was needed.", "target": "Update:Hardcore Worlds Are Coming On November 4th@15379410; Hardcore Worlds@15404671; The Fractured Archive@15410254; The Fractured Archive/Strategies@15410382; Update:The Fractured Archive - Out Today@15382533; Update:Quest Month Week 3 & TFA Practice Mode@15406871; Raids@15393781; Money making guide/The Fractured Archive (Duo)@15405222; Escape crystal@15409296; Inferno@15409416; Inferno/Strategies@15403169; TzKal-Zuk@15409418; Money making guide/Completing the Fortis Colosseum (Wave 12)@15317627; Fortis Colosseum@15404131; Sol Heredit@15379686; Tombs of Amascut@15391794; Tombs of Amascut/Strategies@15410134; Money making guide/Tombs of Amascut (Expert)@15315543; Theatre of Blood@15393349; Theatre of Blood/Hard Mode@15392823; Verzik Vitur@15391510; Chambers of Xeric/Challenge Mode@15391859; Chambers of Xeric@15410137; Great Olm@15372769; Phosani's Nightmare@15387587; Money making guide/Killing Phosani's Nightmare@15319450; The Nightmare@15360502; The Gauntlet@15401270; Corrupted Hunllef@15404193; Money making guide/Completing The Corrupted Gauntlet@14997893; Awakener's orb@15239080; Duke Sucellus@15409966; Vardorvis@15385991; The Leviathan@15385989; The Whisperer@15387570; Revenant Caves@15397220; Revenants@15364433; Wilderness@15405423; Zulrah@15385964; Money making guide/Killing Zulrah@15380484; Vorkath@15409686; Vorkath/Strategies@15410400; Money making guide/Killing Vorkath (Dragon hunter crossbow)@15355232; TzHaar Fight Cave@15387577; TzHaar Fight Cave/Strategies@15402469; TzTok-Jad@15394926; Artio@15358758; Calvar'ion@15397210; Money making guide/Killing Artio@15309938; Barrows/Strategies@15404618; Dharok the Wretched@15316733; Dragon Slayer I@15405352; Elvarg@15390088; Wilderness Agility Course@15351989; Werewolf Agility Course@15315234; Hallowed Sepulchre@15387544; Kalphite Soldier@15240656; Kalphite Lair@15392929; Dagannoth@15406476; Ape Atoll Agility Course@15372987; Tropical tree (Ape Atoll Agility Course)@15241805; Brimhaven Agility Arena@15371976; Floor spikes (Brimhaven Agility Arena)@15385429; Agility@15405162; Draynor Village Rooftop Course@15239943; Canifis Rooftop Course@15374436; Wintertodt@15409295; Colossal Wyrm Agility Course@15388138; Random events@15407277", "outcome": "69/69 current revid == cited revid"},
+      {"kind": "search", "detail": "Grep over the cached wikitext (cache/wiki/<Title>@<revid>.wikitext) for each claimed value, reading my own quotes rather than the researcher's", "outcome": "values checked line by line for all 144 claims"},
+      {"kind": "compute", "detail": "Derived checks: ToA raid level 150/300/500 scaling (2% per 5 levels, damage cap +150%); TFA duo 60/3 = 20 min; Colosseum 60/2.5 = 24 min; Sepulchre cumulative timer 2+4x2 = 10 min", "outcome": "all match the claims"},
+      {"kind": "decide", "detail": "Adjudicated 144 claims; status per claim recorded in each fact", "outcome": "see decisions"},
+      {"kind": "write", "detail": "Wrote jobs/calibration-20261120/facts-parts/rfi-01.json (F-5001..F-5144)", "target": "facts-parts/rfi-01.json"},
+      {"kind": "verify", "detail": "python3 tools/validate.py calibration-20261120 facts --part rfi-01 --claims C-RFI-001:C-RFI-144", "outcome": "0 fail, 1 warn (part not sealed, as instructed); statuses VERIFIED 77, VERIFIED_WITH_CAVEAT 62, DISPUTED 5"}
+    ],
+    "decisions": [
+      {"decision": "No claim marked STALE", "reason": "All 69 cited pages are still at the researcher's cited revision (several, e.g. TFA, TFA/Strategies, ToA/Strategies, CoX, Duke Sucellus, Vorkath, Vorkath/Strategies, were edited today, but the researcher already cited today's revision), so no claimed value changed.", "alternatives_considered": ["Mark today-edited pages STALE pending a later re-check (rejected: dispatch says STALE only if the claim's value changed)"]},
+      {"decision": "F-5014 (C-RFI-014) DISPUTED", "reason": "The 55-damage Dagon'hai blocker hit belongs to the Bandosian spell; the Zamorakian spell is 30 + burn. Other five values confirmed.", "alternatives_considered": ["VERIFIED_WITH_CAVEAT (rejected: the labelled value differs from the source)"]},
+      {"decision": "F-5015 (C-RFI-015) DISPUTED", "reason": "Source says Moia's countdown shrinks by 2 ticks per subsequent charge, not per death; the wipe-cascade conclusion holds for a different reason.", "alternatives_considered": ["VERIFIED_WITH_CAVEAT"]},
+      {"decision": "F-5054 (C-RFI-054) DISPUTED", "reason": "Phosani's own page gives Sister Senga as its item retrieval service; the claim used The Nightmare page (Shura).", "alternatives_considered": ["VERIFIED_WITH_CAVEAT"]},
+      {"decision": "F-5118 (C-RFI-118) DISPUTED", "reason": "Kalphite Lair page calls the Queen's Lair the middle level and attributes the single rope exit to the lower 'second level'; an 86 Agility + Elite Desert Diary two-way crevice shortcut also exists.", "alternatives_considered": ["VERIFIED_WITH_CAVEAT", "REJECTED (too strong: rope entry itself is confirmed)"]},
+      {"decision": "F-5122 (C-RFI-122) DISPUTED", "reason": "Only the first tropical tree is documented to send the player back to the entrance; the claim generalises it to all failures.", "alternatives_considered": ["VERIFIED_WITH_CAVEAT"]},
+      {"decision": "HW death classifications marked VERIFIED_WITH_CAVEAT with new_content true, always citing the T1 HW announcement", "reason": "Dispatch requires HW death rules from T1 only; HW launched 2026-11-04 (under 30 days), so charter rule 5 requires new_content and a caveat.", "alternatives_considered": ["VERIFIED without caveat (rejected: new content)"]},
+      {"decision": "T2-only HW safe exceptions (Emir's Arena, boat capsizing, Pete Kayer's, Galvek/Glough replays, LMS) not accepted as safe; RFI raised", "reason": "Policy: HW death rules T1 only; these appear only on the HW wiki page, not in the Jagex post.", "alternatives_considered": ["DISPUTE C-RFI-003 (rejected: the claimed 7 items match T1 exactly)"]},
+      {"decision": "TFA base facts new_content false but with volatility caveats; Practice Mode and the 18 Nov duo statistic new_content true", "reason": "TFA released 2026-10-20 (31 days, just outside the 30-day rule) but changed 7 times; Practice Mode released 2026-11-18.", "alternatives_considered": ["new_content true for all TFA facts"]},
+      {"decision": "Did not upgrade wiki-quoted Jagex statements (Mod Ash tweets, 'toughest raid yet') to T1", "reason": "I did not fetch those Jagex originals myself; they remain T2 via the wiki.", "alternatives_considered": ["Fetch the Jagex First Look post with WebFetch (skipped for efficiency; does not change any status)"]}
+    ],
+    "limitations": [
+      "All checks rest on the OSRS Wiki and its Update: copies of Jagex posts; I did not fetch secure.runescape.com originals directly, so 'second independent source' is a second wiki page or a T1 Update: page in most cases.",
+      "Because every current revid matched the cited revid, the 'cited revision' and 'current revision' checks are one fetch per page; no separate tools/wiki.py rev call was made.",
+      "Several pages were edited today (TFA/Strategies last at 21:14 UTC, Vorkath/Strategies at 21:43 UTC); further edits after 22:12 UTC are not reflected.",
+      "No source documents TFA escape/teleport behaviour, TFA Practice Mode death safety, Phosani teleport-out, or whether the Karamja resurrection needs a prior fire cape (RFIs raised).",
+      "Early in the run I used some read-only orientation commands that company shell policy disallows (a chained cd/ls/sha256sum command, python3 -c to summarise the claims JSON, and sed to view tool source). They read files only and wrote nothing; all later work used single allowed commands."
+    ]
+  }
+}

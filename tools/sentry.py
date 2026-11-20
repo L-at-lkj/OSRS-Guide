@@ -60,7 +60,7 @@ WRITE_SCOPE = {
     "fact-verifier": ["facts.json", "facts-parts/"],
     "route-strategist": ["plan.json"],
     "quant": ["calc-review.json"],
-    "risk-officer": ["risk.json"],
+    "risk-officer": ["risk.json", "anchor-ratings.json"],
     "red-team": ["redteam.json"],
     "guide-author": ["prose.json"],
     "qa-auditor": ["qa.json"],

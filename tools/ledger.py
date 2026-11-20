@@ -53,6 +53,7 @@ SEAL_RIGHTS: list[tuple[str, set[str]]] = [
     ("calc.json", {"system"}),                      # produced by tools/xp.py only
     ("calc-review.json", {"quant"}),
     ("risk.json", {"risk-officer"}),
+    ("anchor-ratings.json", {"risk-officer"}),      # calibration jobs
     ("redteam.json", {"red-team"}),
     ("prose.json", {"guide-author"}),
     ("content.json", {"system"}),                   # produced by tools/assemble.py only
