@@ -1,0 +1,550 @@
+{
+  "desk": "rfi",
+  "as_of": "2026-11-20",
+  "claims": [
+    {
+      "claim_id": "C-RFI-301",
+      "subject": "Agility courses (rooftops incl. Seers', Ardougne, Canifis, Pollnivneach; Colossal Wyrm) and the Hallowed Sepulchre",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "statement": "An ordinary death on any rooftop course, on the Colossal Wyrm course or in the Hallowed Sepulchre is an official (run-ending) death on Hardcore Worlds. Hardcore Worlds uses the Hardcore Group Ironman ruleset, and none of these activities is on Jagex's safe list or on the wiki's current Hardcore Worlds safe list (rev 15404671, 17 Nov 2026). No later Jagex post adds them.",
+      "scope": {"game_mode": "Hardcore Worlds", "confirms": ["F-3003", "F-3005", "F-3009"]},
+      "released": null,
+      "sources": [
+        {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "Hardcore worlds will use the [https://oldschool.runescape.wiki/w/Group_Ironman_Mode#Hardcore_Group_Ironman Hardcore Group Ironman ruleset] for death which is much less forgiving! This ruleset has very few exceptions, which means you should go in with the expectation that 99% of deaths will land you right back in Death's office", "fetched_by": "threat-analyst"},
+        {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th (safe list)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "That doesn't mean there aren't exceptions though as the following minigames are safe: * Castle Wars * Clan Wars * Soul Wars * The Fremennik Trials ''(only the 4th phase of the duel with Koschei the Deathless)'' * The Resurrection reward for the TzHaar Fight Caves from the Karamja Elite Diary * TzHaar Fight Pit * Zulrah ''(only the Resurrection reward from the Elite Western Provinces Diary)''", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Hardcore Worlds", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671", "revid": 15404671, "retrieved": "2026-11-20", "quote": "Hardcore Worlds follows the same death ruleset as [[Group_Ironman_Mode#Hardcore_Group_Ironman|Hardcore Group Ironman]]. ... The following activities are '''{{colour|green|SAFE}}''' and dying within them will not count as an official death: * Capsizing your [[Boat]] ... * [[Castle Wars]] * [[Clan Wars]] * [[Emir's Arena]] ... * [[Soul Wars]] * [[TzHaar Fight Pit]] * [[Zulrah]]", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Hallowed Sepulchre", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387544", "revid": 15387544, "retrieved": "2026-11-20", "quote": "If the player dies inside the Hallowed Sepulchre, their items will be held by the [[Mysterious Stranger (Hallowed Sepulchre)|Mysterious Stranger]] in the lobby.", "fetched_by": "threat-analyst"}
+      ],
+      "confidence": "high",
+      "notes": "Re-confirmation only: the classification itself is already settled in F-3003, F-3005 and F-3009. New here: the current wiki Hardcore Worlds page (17 Nov 2026) and the post-launch Update pages (4-20 Nov 2026) add no Agility activity to the safe list. The Sepulchre's item-retention mechanic is an ordinary death mechanic, not a safe-death rule."
+    },
+    {
+      "claim_id": "C-RFI-302",
+      "subject": "Death on the Isle: Adala fight",
+      "attribute": "quest_fight_max_hit",
+      "value": {"npc": "Adala (in combat)", "combat": 49, "max_hit": 4, "style": "Crush", "attack_speed_ticks": 4, "aggressive": true, "hitpoints": 60, "mechanic": "fight stops when either side is close to death", "player_equipment": "none (items held by the Head Butler)", "hw_death_classification": "UNSAFE_DEATH (no T1 exception; wiki says death cannot occur)"},
+      "statement": "Adala is level 49, max hit 4 (Crush, every 4 ticks), aggressive, 60 Hitpoints. The fight stops when either of you is close to death, and the wiki says the combat ends before either dies. This quest is not on any Hardcore Worlds safe list, so if a death did somehow happen it would count.",
+      "scope": {"game_mode": "Hardcore Worlds", "owner_hitpoints": 48, "related": ["C-RFI-037", "F-3087", "F-2505"]},
+      "released": "2024-09-25",
+      "sources": [
+        {"tier": "T2", "title": "Adala", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15325078", "revid": 15325078, "retrieved": "2026-11-20", "quote": "|text3 = In combat ... |combat = 49 ... |max hit = 4 |aggressive = Yes |poisonous = No |attack style = [[Crush]] |attack speed = 4 |hitpoints = 60", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Adala", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15325078", "revid": 15325078, "retrieved": "2026-11-20", "quote": "She is also briefly fought after the player accuses her of murder, though the combat will end before either she or the player dies.", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Death on the Isle", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375163", "revid": 15375163, "retrieved": "2026-11-20", "quote": "She is level 49, and has no special mechanics to attack with. Once either of you are close to death, she will stop and claim that she's too weak to kill Livius or you depending on how the fight went.", "fetched_by": "threat-analyst"}
+      ],
+      "confidence": "high",
+      "notes": "Computed: 48 HP / max hit 4 = at least 12 max hits before the owner could reach 0, so the fight's stop condition should trigger long before; still not a T1 safe exception. The classification answers RFI quests-b item 1 together with C-RFI-303 and C-RFI-304."
+    },
+    {
+      "claim_id": "C-RFI-303",
+      "subject": "Death on the Isle: Naiatli on-stage fight",
+      "attribute": "quest_fight_max_hit",
+      "value": {"npc": "Naiatli", "combat_infobox": "none (NPC infobox only, no combat stats)", "max_hit": "unknown, no source", "player_weapon": "prop sword (cannot be unequipped on stage; 0 bonuses)", "player_damage": "a set amount per hit, no combat XP", "hw_death_classification": "UNSAFE_DEATH (no T1 exception; wiki says death cannot occur)"},
+      "statement": "Naiatli is fought on stage with a prop sword that cannot be unequipped. Her wiki page has no combat infobox, so no level or max hit is published; the player deals a set amount of damage per hit. The quest infobox says you can't die in either fight, but there is no Hardcore Worlds safe exception for it.",
+      "scope": {"game_mode": "Hardcore Worlds"},
+      "released": "2024-09-25",
+      "sources": [
+        {"tier": "T2", "title": "Naiatli", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15197266", "revid": 15197266, "retrieved": "2026-11-20", "quote": "She's ultimately apprehended after being identified as the murderer, but only after the player survives intense on-stage combat. The player will always deal a set amount of damage to her with each attack during the play, however the hitsplats are tinted darkly as if they did not come from the player, and do not award any combat experience.", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Prop sword (Death on the Isle)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15327820", "revid": 15327820, "retrieved": "2026-11-20", "quote": "The prop sword cannot be unequipped during the play sequence; attempting to do so will result in the \"{{mes|You should keep the prop sword equipped while on stage.}}\" [[Chat Interface|chat]] message.", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Death on the Isle", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375163", "revid": 15375163, "retrieved": "2026-11-20", "quote": "|kills = Two low-level enemies must be fought with no equipment, but you can’t die to them", "fetched_by": "threat-analyst"}
+      ],
+      "confidence": "medium",
+      "notes": "'Survives intense on-stage combat' implies Naiatli may deal damage, but no amount is documented. Max hit: unknown, no source."
+    },
+    {
+      "claim_id": "C-RFI-304",
+      "subject": "Death on the Isle: Villa Lucens (both fights)",
+      "attribute": "teleport_restriction",
+      "value": {"items_on_entry": "held by the Head Butler before entering the villa", "consequence": "no food, no escape crystal and no teleport items are carried into the villa for the Adala and Naiatli fights", "spell_teleports_mid_fight": "unknown, no source", "instance": "not stated"},
+      "statement": "The Head Butler holds onto your items before you enter Villa Lucens, where both fights happen. So the owner fights Adala and Naiatli with no food, no escape crystal and no teleport item. Whether a spellbook teleport or home teleport works mid-fight is not documented.",
+      "scope": {"game_mode": "Hardcore Worlds"},
+      "released": "2024-09-25",
+      "sources": [
+        {"tier": "T2", "title": "Death on the Isle", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375163", "revid": 15375163, "retrieved": "2026-11-20", "quote": "He will inform you of the rules whilst inside the villa, and will hold onto your items before entering for security purposes.", "fetched_by": "threat-analyst"}
+      ],
+      "confidence": "medium",
+      "notes": "The quote says 'your items'; it does not say explicitly whether every carried item is taken. The escape-crystal consequence is my reading of that sentence, not a separate source."
+    },
+    {
+      "claim_id": "C-RFI-305",
+      "subject": "Rag and Bone Man III: Odd Old Man scripted 'death' and the Tolna death loop",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH (policy default: no T1 source says it is safe on Hardcore Worlds; the wiki calls it 'a safe death for hardcore accounts', linking regular Hardcore Ironman)",
+      "statement": "Rag and Bone Man III has a scripted sequence where the Odd Old Man 'kills' you in one hit, then a loop in which Tolna's heads 'kill' you again. The wiki calls it an illusory sequence and 'a safe death for hardcore accounts', but that wording links the regular Hardcore Ironman page. No Jagex post says it is safe on Hardcore Worlds, which use the stricter Hardcore Group Ironman ruleset, so under company policy it stays UNSAFE.",
+      "scope": {"game_mode": "Hardcore Worlds", "new_content": true, "agility_relevance": "none (F-2609)"},
+      "released": "2026-11-18",
+      "sources": [
+        {"tier": "T2", "title": "Rag and Bone Man III", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409896", "revid": 15409896, "retrieved": "2026-11-20", "quote": "''This next section is done without any items. Your equipment and items will disappear, but you will get them back later in the quest. This is a safe death for [[hardcore]] accounts. If you use the [[Home Teleport|home]] or [[Minigame Teleport|minigame teleports]] at any time during this section, you will be sent outside of the upcoming [[Instance|instanced]] section.", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Rag and Bone Man III", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409896", "revid": 15409896, "retrieved": "2026-11-20", "quote": "The Odd Old Man will seemingly kill you in one hit, putting you into an illusory sequence that begins with you being taken to [[Death's Office]]. ... Upon arrival, you will be attacked by Tolna's three-headed forms, like you faced in [[A Soul's Bane]]. You will not be able to kill them, however, and will die again, starting the loop over.", "fetched_by": "threat-analyst"},
+        {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "This ruleset has very few exceptions, which means you should go in with the expectation that 99% of deaths will land you right back in Death's office ready to make a difficult choice.", "fetched_by": "threat-analyst"}
+      ],
+      "confidence": "medium",
+      "notes": "NEW CONTENT: released 18 Nov 2026 (2 days ago), page edited 20 Nov 2026; volatile. The wiki itself calls the sequence illusory, so it may not be processed as a death at all, but I found no T1 or in-game text confirming how Hardcore Worlds treats it. The Week 3 Update post (rev 15406871) does not mention it. Recommend planners never route this quest (it gives no Agility XP anyway)."
+    },
+    {
+      "claim_id": "C-RFI-306",
+      "subject": "Hardcore Worlds: Bounty Hunter and Last Man Standing",
+      "attribute": "pvp_minigames",
+      "value": "still disabled as of 2026-11-20 (no enabling announcement found)",
+      "statement": "Bounty Hunter and Last Man Standing were disabled at the Hardcore Worlds launch, and Jagex said they are open to enabling them later. None of the Update posts from 4 to 20 Nov 2026 announces enabling either on Hardcore Worlds, and the wiki's Hardcore Worlds page (17 Nov 2026) still marks LMS as disabled at launch.",
+      "scope": {"game_mode": "Hardcore Worlds", "related": ["F-3015", "F-0016"]},
+      "released": null,
+      "sources": [
+        {"tier": "T1", "title": "Update:Hardcore Worlds - OUT TODAY", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724", "revid": 15397724, "retrieved": "2026-11-20", "published": "2026-11-04", "quote": "Last Man Standing (LMS) and Bounty Hunter cannot be accessed on these worlds.", "fetched_by": "threat-analyst"},
+        {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "Minigames like Bounty Hunter and Last Man Standing will be disabled during the initial release of Hardcore Worlds to not take away from the initial Wilderness hype, but the team are open to enabling them in the future if that is something you would like to see!", "fetched_by": "threat-analyst"},
+        {"tier": "T1", "title": "Update:Quest Month Week 3 & TFA Practice Mode (Hardcore Worlds changes)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406871", "revid": 15406871, "retrieved": "2026-11-20", "published": "2026-11-18", "quote": "====Hardcore Worlds==== * Added a setting called “Hardcore death broadcast minimum level” to choose the minimum total level for Hardcore death broadcasts shown in chat on Hardcore Worlds. * Fixed an issue preventing Hardcore World players from completing the 'Fighting as Intended' Combat Achievements for Obor and Bryophyta. * Hardcore World players can no longer trade within Death’s Office.", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Hardcore Worlds", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671", "revid": 15404671, "retrieved": "2026-11-20", "quote": "* [[Last Man Standing]] '''(disabled at launch)'''", "fetched_by": "threat-analyst"}
+      ],
+      "confidence": "medium",
+      "notes": "This rests on absence of evidence. I listed every Update: page created since 2026-11-04 (10 pages) and grepped each for Bounty Hunter / LMS / Hardcore; the BH and LMS lines found are the main-game PvP world rota only. The owner can confirm in game."
+    },
+    {
+      "claim_id": "C-RFI-307",
+      "subject": "Hardcore Worlds: Wilderness",
+      "attribute": "pvp_exposure",
+      "value": "PvP exists in the Wilderness on Hardcore Worlds (player kills are an official raffle task; PvP deaths follow the normal Wilderness rules)",
+      "statement": "The Wilderness on Hardcore Worlds is fully PvP. Jagex's Hardcore Worlds raffle includes the task 'Kill another player in The Wilderness' and Wilderness Agility Course lap tasks, and the announcement says PKing deaths proceed as normal. A death to a player killer ends the run like any other unsafe death.",
+      "scope": {"game_mode": "Hardcore Worlds", "related": ["F-3028", "F-3029", "F-0009"]},
+      "released": "2026-11-04",
+      "sources": [
+        {"tier": "T1", "title": "Update:The Reaper's Raffle - Hardcore Worlds", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406803", "revid": 15406803, "retrieved": "2026-11-20", "published": "2026-11-03", "quote": "|Kill another player in The Wilderness || Wilderness || +5 Entries", "fetched_by": "threat-analyst"},
+        {"tier": "T1", "title": "Update:The Reaper's Raffle - Hardcore Worlds", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406803", "revid": 15406803, "retrieved": "2026-11-20", "published": "2026-11-03", "quote": "|Complete a lap of the Wilderness Agility Course || Wilderness || +5 Entries", "fetched_by": "threat-analyst"},
+        {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "For those of you PKing out there for added risk, death proceeds as normal in the Wilderness so you'll receive the same items you'd usually get in the main game. The Wilderness is even more dangerous than ever before, as you'll be making characters sit ''permanently''.", "fetched_by": "threat-analyst"}
+      ],
+      "confidence": "high",
+      "notes": "The raffle tasks reward Wilderness Agility Course laps, which may draw PKers to that course on Hardcore Worlds; this is an inference, not a sourced observation."
+    },
+    {
+      "claim_id": "C-RFI-308",
+      "subject": "Seers' Village Rooftop Course: Jump Gap 1 and Tightrope",
+      "attribute": "failure_damage",
+      "value": {"failable": ["Gap 1", "Tightrope"], "fail_until_agility": 79, "damage": "unknown, no source"},
+      "statement": "Seers' Gap 1 and the Tightrope can be failed until 79 Agility. Neither the course page nor either obstacle's own page gives a failure damage figure, so the damage is unknown. The general Agility page says failures often deal small damage, and on many courses it depends on current Hitpoints.",
+      "scope": {"owner_hitpoints": 48, "related": ["F-3074"]},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Seers' Village Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15356820", "revid": 15356820, "retrieved": "2026-11-20", "quote": "There are two locations where the player may fail; Jump Gap 1 and Tightrope Walk. These obstacles will stop failing at 79 Agility. Players who are constantly failing obstacles can take advantage of the [[altar]] in the church at the end of the course by having the [[Rapid Heal]] [[prayer]] active at all times.", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Gap (Seers' Village Rooftop Course)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15334119", "revid": 15334119, "retrieved": "2026-11-20", "quote": "The '''gap''' is an [[Agility]] obstacle found within the [[Seers' Village Rooftop Course]]. An Agility level of 60 is required to pass the obstacle.", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Tightrope (Seers' Village Rooftop Course)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15359414", "revid": 15359414, "retrieved": "2026-11-20", "quote": "The '''tightrope''' is an [[Agility]] obstacle found within the [[Seers' Village Rooftop Course]]. An Agility level of 60 is required to pass the obstacle, which will then grant the player 20 Agility experience.", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Agility", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15405162", "revid": 15405162, "retrieved": "2026-11-20", "quote": "It is possible to fail an obstacle, which often results in the player taking small amounts of damage. ... On many courses, the amount of damage taken after failing an obstacle is based on your remaining [[Hitpoints]], so to conserve food it is often worthwhile to wait until your Hitpoints are low before eating.", "fetched_by": "threat-analyst"}
+      ],
+      "confidence": "high",
+      "notes": "Confidence applies to the finding that no figure is published. Damage value: unknown, no source."
+    },
+    {
+      "claim_id": "C-RFI-309",
+      "subject": "Ardougne Rooftop Course: gaps 1 and 2",
+      "attribute": "failure_damage",
+      "value": {"failable": ["Gap 1", "Gap 2"], "fail_until_agility": 95, "damage": "unknown, no source"},
+      "statement": "Ardougne gaps 1 and 2 can be failed until 95 Agility. Neither the course page nor the gap obstacle page gives a failure damage figure, so the damage is unknown.",
+      "scope": {"owner_hitpoints": 48, "related": ["F-3080"]},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Gap (Ardougne Rooftop Course)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15334145", "revid": 15334145, "retrieved": "2026-11-20", "quote": "An Agility level of 90 is required to successfully pass gap one and two, however there is no agility requirement for the other gaps. You can fail to pass gap one and two.", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Ardougne Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15352456", "revid": 15352456, "retrieved": "2026-11-20", "quote": "Players stop failing this course at 95 [[Agility]].", "fetched_by": "threat-analyst"}
+      ],
+      "confidence": "high",
+      "notes": "The same course page says a boost to 90 is needed for obstacles 1, 2 and 4 when using summer pies from 85 (F-4057). Its course table marks only gaps 1 and 2 as failable. Damage value: unknown, no source."
+    },
+    {
+      "claim_id": "C-RFI-310",
+      "subject": "Canifis Rooftop Course: gap 3 (tannery to general store)",
+      "attribute": "failure_damage",
+      "value": {"failable": ["Gap 3"], "success_chance": "linear from 69% at level 1 to 118% at level 99 (Mod Ash); no failures from 64", "damage": "unknown, no source"},
+      "statement": "Canifis gap 3 is the course's only failable obstacle. Its success chance rises linearly (about 88% at 40 Agility, no failures from 64), but the obstacle page and course page give no failure damage, so the damage is unknown.",
+      "scope": {"owner_hitpoints": 48, "related": ["F-3071"]},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Gap (Canifis Rooftop Course)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15334120", "revid": 15334120, "retrieved": "2026-11-20", "quote": "The chance to successfully jump across the third gap (between the tannery and the general store) ranges from around 88% at level 40 Agility, up to a 100% success rate at level 64.", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Canifis Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374436", "revid": 15374436, "retrieved": "2026-11-20", "quote": "There is 1 failable obstacle in this agility course, located at the jump between the tanner and the general store (Jump Gap 3). It is recommended to have some food stored in the bank in case you repeatedly fail obstacles.", "fetched_by": "threat-analyst"}
+      ],
+      "confidence": "high",
+      "notes": "Damage value: unknown, no source. The fifth gap stopped being failable on 15 May 2024 (same page, Changes)."
+    },
+    {
+      "claim_id": "C-RFI-311",
+      "subject": "Pollnivneach Rooftop Course",
+      "attribute": "failure_damage",
+      "value": {"failable": ["Market stall"], "fail_until_agility": 85, "other_obstacles": "cannot be failed (banner fail point removed)", "market_stall_damage": "see F-3075"},
+      "statement": "At Pollnivneach only the market stall can be failed (until 85 Agility). The course table lists Basket, Banner, Gap and Tree as not failable, and the banner fail point was removed. The market stall damage formula is already settled in F-3075.",
+      "scope": {"related": ["F-3075"]},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Pollnivneach Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375189", "revid": 15375189, "retrieved": "2026-11-20", "quote": "|[[Market stall (Pollnivneach Rooftop Course)|Market stall]] |{{+=|xp|45|echo=2}} | style=\"text-align:center;\" |Yes (until 85) ... |[[Banner (Pollnivneach Rooftop Course)|Banner]] |{{+=|xp|65|echo=2}} | style=\"text-align:center;\" |No", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Pollnivneach Rooftop Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375189", "revid": 15375189, "retrieved": "2026-11-20", "quote": "* The banner jump fail point has been removed.", "fetched_by": "threat-analyst"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-RFI-312",
+      "subject": "Ape Atoll Agility Course obstacles",
+      "attribute": "failure_damage",
+      "value": {"damage": "small, exact amounts unknown, no source", "first_tropical_tree": "fail sends you back to the course entrance by the signpost", "monkeybars": "fail sends you back to the course entrance by the signpost", "skull_slope": "fail sends you back to the course entrance by the signpost", "rope": "fail drops a monkey-form player to the tropical tree (human form: to the stepping stone)", "stepping_stone": "cannot fail", "second_tropical_tree": "cannot fail", "no_greegree": "every obstacle auto-fails with a small amount of damage", "no_fail_level": 75},
+      "statement": "On the Ape Atoll course the first tropical tree, monkeybars, skull slope and rope can be failed until 75 Agility; the stepping stone and second tropical tree cannot. Failing the tree, monkeybars or skull slope sends you back to the course entrance, and failing the rope drops you to the tropical tree. Without a ninja or Kruk greegree every obstacle auto-fails for a small amount of damage. No page gives exact damage numbers.",
+      "scope": {"related": ["F-3041", "F-1087"]},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Ape Atoll Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15372987", "revid": 15372987, "retrieved": "2026-11-20", "quote": "Attempting to complete any obstacle on the course without a ninja or Kruk greegree equipped will result in the player automatically failing the course and taking a small amount of damage.", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Tropical tree (Ape Atoll Agility Course)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15241805", "revid": 15241805, "retrieved": "2026-11-20", "quote": "Failing the first tree obstacle will send the player back to the course entrance next to the signpost. Players cannot fail the second tree obstacle.", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Monkeybars (Ape Atoll Agility Course)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15241802", "revid": 15241802, "retrieved": "2026-11-20", "quote": "Failing this obstacle will send the player player back to the course entrance next to the signpost.", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Skull slope (Ape Atoll Agility Course)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15241803", "revid": 15241803, "retrieved": "2026-11-20", "quote": "Failing this obstacle will send the player back to the course entrance next to the signpost.", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Rope (Ape Atoll Agility Course)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15324369", "revid": 15324369, "retrieved": "2026-11-20", "quote": "Failing this obstacle will send a human character down to the [[Stepping stone (Ape Atoll Agility Course)|stepping stone]], or a monkey character to the [[Tropical tree (Ape Atoll Agility Course)|tropical tree]].", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Stepping stone (Ape Atoll Agility Course)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15201388", "revid": 15201388, "retrieved": "2026-11-20", "quote": "Players cannot fail at this obstacle.", "fetched_by": "threat-analyst"}
+      ],
+      "confidence": "high",
+      "notes": "Exact damage per obstacle: unknown, no source (none of the five obstacle pages gives a number)."
+    },
+    {
+      "claim_id": "C-RFI-313",
+      "subject": "Wilderness Agility Course skeletons (levels 18 and 25)",
+      "attribute": "aggressive",
+      "value": {"level_18_surface": "attacks a combat-45 player (Wilderness exception; the level rule alone would not apply since 2x18 = 36 < 45)", "level_25_dungeon": "attacks a combat-45 player (2x25 = 50 >= 45, and the Wilderness exception)", "tolerance": "level 18 never becomes tolerant (F-3034)"},
+      "statement": "Both skeleton types on the Wilderness Agility Course attack a combat-45 character. The course page says the level 18 and 25 skeletons 'will attack any player near them', and the Aggressiveness page says most Wilderness monsters are aggressive regardless of level. The level 25 skeletons would be aggressive to combat 45 even under the normal level rule; the level 18 ones only because of the Wilderness exception.",
+      "scope": {"owner_combat": 45, "related": ["F-3033", "F-3034"]},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Wilderness Agility Course", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15351989", "revid": 15351989, "retrieved": "2026-11-20", "quote": "In addition to the risk of [[player-killers]], there are multiple level 18 and 25 [[skeleton]]s roaming the course and underground respectively that will attack any player near them.", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Aggressiveness", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15373608", "revid": 15373608, "retrieved": "2026-11-20", "quote": "*Most monsters in the [[Wilderness]] are aggressive regardless of level.", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Aggressiveness", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15373608", "revid": 15373608, "retrieved": "2026-11-20", "quote": "When aggressiveness is based on combat level, an aggressive monster will attack a player whose combat level is less than or equal to twice the monster's level.", "fetched_by": "threat-analyst"}
+      ],
+      "confidence": "high",
+      "notes": "Computed: 2 x 18 = 36 < 45; 2 x 25 = 50 >= 45."
+    },
+    {
+      "claim_id": "C-RFI-314",
+      "subject": "Crocodiles (level 63) on the routes to the Agility Pyramid",
+      "attribute": "aggressive",
+      "value": {"combat": 63, "max_hit": 6, "aggressive_to_combat_45": true, "rule": "aggressive monsters level 63+ always attack (126 max player combat)", "locations": ["south of Pollnivneach", "middle of the River Elid", "north of Sophanem and Menaphos", "near the Ruins of Unkah", "near the Ruins of Ullek"], "pyramid_routes_through_these_areas": ["Pollnivneach: 'Run south to the Agility Pyramid'", "magic carpet to Sophanem, then run north-east"]},
+      "statement": "Crocodiles (level 63, max hit 6, aggressive) attack any player, including combat 45, because aggressive monsters of level 63 or more always attack. They live south of Pollnivneach and north of Sophanem, on either side of the River Elid. Two of the Agility Pyramid page's routes go through these areas: running south from Pollnivneach, and running north-east from Sophanem. The Nardah routes are not described as passing them.",
+      "scope": {"owner_combat": 45, "related": ["F-3078", "F-4084", "F-4105"]},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Crocodile", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409452", "revid": 15409452, "retrieved": "2026-11-20", "quote": "|combat = 63 ... |max hit = 6 |aggressive = Yes |poisonous = No ... '''Crocodiles''' are found in the [[Kharidian Desert]] south of [[Pollnivneach]] on either side of the [[River Elid]].", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Crocodile (locations)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409452", "revid": 15409452, "retrieved": "2026-11-20", "quote": "|location = South of [[Pollnivneach]] ... |location = Middle of the [[River Elid]] ... |location = North of [[Sophanem]] and [[Menaphos]]", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Agility Pyramid", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402952", "revid": 15402952, "retrieved": "2026-11-20", "quote": "** Take a magic carpet to [[Sophanem]] (requires starting [[Icthlarin's Little Helper]]), and run north-east to the pyramid. ** Run south to the Agility Pyramid. ** Take a magic carpet to [[Nardah]] and walk south-west from Nardah.", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Aggressiveness", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15373608", "revid": 15373608, "retrieved": "2026-11-20", "quote": "Since the maximum combat level for players is 126, this means aggressive monsters level 63 or greater will always attack players.", "fetched_by": "threat-analyst"}
+      ],
+      "confidence": "medium",
+      "notes": "Aggression and stats: high confidence. Route overlap is my reading of the location descriptions; I did not compare map coordinates with the walking path. The pyramid area also has desert heat (Agility Pyramid page line 44); crocodiles in the river cannot reach players further from the shore (Crocodile page)."
+    },
+    {
+      "claim_id": "C-RFI-315",
+      "subject": "Death Plateau: thrower trolls on the paths",
+      "attribute": "aggressive_npcs",
+      "value": {"npc": "Thrower Troll", "combat": 67, "max_hit": 6, "style": "Ranged", "aggressive": true, "hitpoints": 95, "always_hits": true, "multi_combat": "the path around the plateau is multi-combat; the plateau itself is not"},
+      "statement": "The paths around Death Plateau are multi-combat and full of thrower trolls (level 67, max hit 6, Ranged, aggressive, 95 HP). Their attacks always hit, and three or more at once can be deadly. Protection prayers are advised.",
+      "scope": {"owner_combat": 45, "owner_hitpoints": 48},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Thrower Troll", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406535", "revid": 15406535, "retrieved": "2026-11-20", "quote": "|combat = 67 ... |max hit = 6 |aggressive = Yes ... |attack style = [[Ranged]] ... |hitpoints = 95", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Thrower Troll", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406535", "revid": 15406535, "retrieved": "2026-11-20", "quote": "Unlike most other monsters, the thrower troll's attacks are always [[successful hit]]s. As they are found in [[multi-way]] areas, being attacked by three or more thrower trolls at once can be deadly.", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Death Plateau (location)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15342417", "revid": 15342417, "retrieved": "2026-11-20", "quote": "Though the plateau is not a multi-combat area, the path leading around the plateau is riddled with thrower trolls and is multi-combat. Extreme caution is advised here, and players should take advantage of [[protection prayers]] as certain monsters can hit very high here.", "fetched_by": "threat-analyst"}
+      ],
+      "confidence": "high",
+      "notes": "Computed: three trolls each hitting 6 every attack is up to 18 per volley if all fire at once; attack speed not checked."
+    },
+    {
+      "claim_id": "C-RFI-316",
+      "subject": "Death Plateau (quest): secret path vs the guarded main path",
+      "attribute": "aggressive_npcs",
+      "value": {"main_north_path": "warning sign; trolls attack", "secret_path_from_Tenzing": "trolls only attack on the normal path; ignore the popup warning", "plateau_named_trolls": {"Pee Hat": {"combat": 91, "max_hit": 23, "style": "Crush"}, "Kraka": {"combat": 91, "max_hit": 23, "style": "Crush"}, "Stick": {"combat": 104, "max_hit": 27, "style": "Crush"}, "Rock": {"combat": 111, "max_hit": 30, "style": "Slash"}}, "all_aggressive": true},
+      "statement": "In Death Plateau the guide warns not to take the northern path, where trolls attack. The required secret path from Tenzing's house is described as safe: the trolls only attack on the normal path. The plateau itself holds aggressive named trolls: Pee Hat and Kraka (91, max hit 23), Stick (104, max hit 27) and Rock (111, max hit 30).",
+      "scope": {"owner_combat": 45, "owner_hitpoints": 48},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Death Plateau", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15382205", "revid": 15382205, "retrieved": "2026-11-20", "quote": "'''{{Colour|red|Warning}}:''' ''If you head north, a warning sign will tell you that Death Plateau is dangerous and you will be attacked by trolls. Do not go this way! Head back south-west.''", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Death Plateau", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15382205", "revid": 15382205, "retrieved": "2026-11-20", "quote": "You may get a popup message saying that you'll be assailed by trolls if you continue while walking along the secret path. Ignore it, as the trolls will only attack if you're on the normal path.", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Rock (Troll)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406532", "revid": 15406532, "retrieved": "2026-11-20", "quote": "|combat = 111 ... |max hit = 30 |aggressive = Yes ... |attack style = [[Slash]]", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Stick", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406531", "revid": 15406531, "retrieved": "2026-11-20", "quote": "|combat = 104 ... |max hit = 27 |aggressive = Yes ... |attack style = [[Crush]]", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Pee Hat", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406534", "revid": 15406534, "retrieved": "2026-11-20", "quote": "|combat = 91 ... |max hit = 23 |aggressive = Yes ... |attack style = [[Crush]]", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Kraka", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406530", "revid": 15406530, "retrieved": "2026-11-20", "quote": "|combat = 91 ... |max hit = 23 |aggressive = Yes ... |attack style = [[Crush]]", "fetched_by": "threat-analyst"}
+      ],
+      "confidence": "medium",
+      "notes": "The 'secret path is safe' statement is a walkthrough assertion, not a mechanic citation. The quest does not require going onto the plateau or fighting the named trolls. Mountain trolls (69/71) are already in C-RFI-020."
+    },
+    {
+      "claim_id": "C-RFI-317",
+      "subject": "Troll Stronghold: thrower trolls on the Trollheim mountain path",
+      "attribute": "aggressive_npcs",
+      "value": {"npc": "Thrower troll (Trollheim)", "combat": 68, "max_hit": 10, "style": "Ranged", "aggressive": true, "hitpoints": 95, "always_hits": true, "multi_combat": true, "avoidance": "Agility shortcuts needing 41/43/44/47 (owner Agility 57, F-2024) or Protect from Missiles around the northern bend"},
+      "statement": "After the Troll arena, the path round Trollheim passes level 68 thrower trolls (max hit 10, Ranged, aggressive, always hit, in multi-combat groups). The quest guide says you can avoid them by taking the rock shortcuts (41, 43, 44 or 47 Agility); below 44, run around with Protect from Missiles on.",
+      "scope": {"owner_combat": 45, "owner_hitpoints": 48, "owner_agility": 57},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Troll Stronghold", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15395347", "revid": 15395347, "retrieved": "2026-11-20", "quote": "There are level 68 [[thrower troll]]s who will range players here as they walk past the northern part of the mountain. You can avoid them entirely by taking a shortcut by climbing up the rocks, starting from the eastern region of the mountain and ending at the western side. Some of the shortcuts require 41, 43, 44, or 47 [[Agility]].", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Thrower troll (Trollheim)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15200204", "revid": 15200204, "retrieved": "2026-11-20", "quote": "|combat = 68 ... |max hit = 10 |aggressive = Yes ... |attack style = [[Ranged]] ... |hitpoints = 95", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Thrower troll (Trollheim)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15200204", "revid": 15200204, "retrieved": "2026-11-20", "quote": "Unlike most other monsters, the thrower troll's attacks are always [[successful hit]]s. As they are found in [[multi-way]] areas, being attacked by three or more thrower trolls at once can be deadly.", "fetched_by": "threat-analyst"}
+      ],
+      "confidence": "high",
+      "notes": "Owner Agility 57 is from the sealed fact F-2024. Dad (C-RFI-017), the Troll generals (C-RFI-018), Berry and Twig (C-RFI-019) and the interior mountain trolls (C-RFI-020) are already settled and not repeated."
+    },
+    {
+      "claim_id": "C-RFI-318",
+      "subject": "Troll Stronghold: prison break and exit",
+      "attribute": "escape",
+      "value": {"guards": "Berry and Twig (C-RFI-019): a failed pickpocket makes them attack", "exit": "south through the secret exit, then climb over rocks", "teleport_after_exit": "minigame teleport or games necklace to Burthorpe", "safespot": "inside a vacant cell"},
+      "statement": "In the prison, a failed pickpocket on Berry or Twig makes them attack (both level 71). They can be safespotted from inside a vacant cell. After freeing Eadgar and Godric you leave by the secret exit to the south, climb over rocks, and can then use a minigame teleport or games necklace to Burthorpe.",
+      "scope": {"owner_thieving": 24},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Troll Stronghold", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15395347", "revid": 15395347, "retrieved": "2026-11-20", "quote": "If you have level 30 [[Thieving]], pickpocket both to get [[Cell key 1]] and [[Cell key 2]]. Beware, if you fail to pickpocket one, they will still attack you! If not, kill them for the keys. You can [[safespot]] both trolls by standing inside one of the vacant cells. Free both [[Eadgar]] and [[Godric]] with the keys; then, exit the prison by going south to the secret exit.", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Troll Stronghold", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15395347", "revid": 15395347, "retrieved": "2026-11-20", "quote": "Head south-east and climb over the rocks; you can use the [[minigame teleport]] or use a [[games necklace]] to return to [[Burthorpe]].", "fetched_by": "threat-analyst"}
+      ],
+      "confidence": "high",
+      "notes": "Whether teleports work inside the prison itself is not stated. No damage source is described for the exit route."
+    },
+    {
+      "claim_id": "C-RFI-319",
+      "subject": "Creature of Fenkenstrain: the 'level 72 monsters' to run past",
+      "attribute": "aggressive_npcs",
+      "value": {"identification": "most likely the level 72 Feral Vampyres that Haunted Woods spiders summon (inference)", "combat": 72, "max_hit": 8, "style": "Stab", "aggressive": "Yes (attack anyone)", "hitpoints": 50, "poisonous": false, "special": "occasional bite that can drain stats and heal the vampyre", "mitigation": "holy symbol occasionally weakens them by 25% (briefly)"},
+      "statement": "The quest says you must 'run past level 72 monsters' and recommends food and a holy symbol against Feral Vampyres for low combat levels; the grave you must dig is in the Haunted Woods. The level 72 Feral Vampyre is the one Haunted Woods spiders summon: max hit 8 (Stab), aggressive to anyone, 50 HP, not poisonous, and its bite can drain stats.",
+      "scope": {"owner_combat": 45, "owner_hitpoints": 48, "related": ["F-3070", "C-RFI-036"]},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Creature of Fenkenstrain", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15385731", "revid": 15385731, "retrieved": "2026-11-20", "quote": "* Able to defeat a level 51 monster and run past level 72 monsters", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Creature of Fenkenstrain", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15385731", "revid": 15385731, "retrieved": "2026-11-20", "quote": "{{Needed|A [[spade]]|recommended=[[Armour]], [[food]], and a [[holy symbol]] is recommended for protection against [[Feral Vampyre]]s and [[leech]]es.}}", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Feral Vampyre", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15356500", "revid": 15356500, "retrieved": "2026-11-20", "quote": "|version5 = Level 72 (Spider) ... |combat5 = 72 ... |max hit5 = 8 ... |aggressive5 = Yes ... |poisonous = No ... |attack style5 = [[Stab]] ... |hitpoints5 = 50", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Feral Vampyre", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15356500", "revid": 15356500, "retrieved": "2026-11-20", "quote": "The feral vampyres found in the Haunted Woods and Abandoned Mine will occasionally bite players, which can sometimes drain stats and will cause the vampyre to recover a small amount of [[hitpoints]]. Additionally, the [[Spider (Morytania)|spiders]] in the Haunted Woods will follow players and summon level 72 feral vampyres to attack them.", "fetched_by": "threat-analyst"}
+      ],
+      "confidence": "medium",
+      "notes": "INFERENCE: no page states that the 'level 72 monsters' in the requirements are Feral Vampyres. The match rests on the level, the Haunted Woods grave location (near fairy ring ALQ) and the quest's Feral Vampyre warning. The level 61 Feral Vampyre (max hit 7, Haunted Woods) may also be met. Leeches were not researched. The verifier should treat the identification as unconfirmed."
+    },
+    {
+      "claim_id": "C-RFI-320",
+      "subject": "Underground Pass traversal (for Regicide): Agility-check failures",
+      "attribute": "failure_damage",
+      "value": {"rope_swing_north": "up to 14 damage; you lose the rope and must climb back to the very start of the Pass", "iban_lair_bridges": "up to 24 (20% current HP + 5); you land among Soulless; success about 39% at level 1 to 100% at 77", "owner_bridge_success_per_jump_at_57": "about 83.6% (computed)", "owner_bridge_fall_at_48_hp": "about 14 (computed: 48 x 0.2 + 5 = 14.6, rounding not documented)", "middle_swamp_path": "drags you down a hillside (no damage stated)", "narrow_ledge": "fail sends you back through the slave cage (no damage stated)", "agility_level_needed": "all obstacles possible at level 1"},
+      "statement": "On the Underground Pass route Regicide sends you through, a failed rope swing deals up to 14 damage, loses your rope and returns you to the very start. Failing an Iban's Lair bridge jump deals up to 24 (20% + 5) and drops you among the Soulless. The bridge success chance runs from 39% at level 1 to 100% at 77, so at the owner's 57 Agility each jump succeeds about 84% of the time. The grid pits (15) and the traps are already settled in C-RFI-026.",
+      "scope": {"owner_agility": 57, "owner_hitpoints": 48, "related": ["C-RFI-026", "C-RFI-028", "F-3090"]},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Rope swing (Underground Pass, north)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15202216", "revid": 15202216, "retrieved": "2026-11-20", "quote": "If the player fails to make the swing across, they will fall into the dark pit and land in the north-eastern corner of a rocky subcavern below, taking up to 14 damage in the process.", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Bridge (Iban's Lair)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15401279", "revid": 15401279, "retrieved": "2026-11-20", "quote": "If the player fails to make the jump, they will fall into the large subcavern below and land amidst the [[soulless]], taking up to 24 (20% + 5) [[Hitpoints]] of damage in the process.", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Bridge (Iban's Lair)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15401279", "revid": 15401279, "retrieved": "2026-11-20", "quote": "The chance to successfully cross one of the bridges is about 39% at level 1, scaling to a 100% chance at level 77.", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Underground Pass (dungeon)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15302569", "revid": 15302569, "retrieved": "2026-11-20", "quote": "* While there are many [[Agility]]-based obstacles in the dungeon, all are possible at level 1, and only the [[Pipe (Underground Pass)|pipe]] obstacle rewards Agility experience.", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Ledge (Underground Pass)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15302555", "revid": 15302555, "retrieved": "2026-11-20", "quote": "If the players fail to cross it, they will need to get through the cage of slave and dig the mud again.", "fetched_by": "threat-analyst"}
+      ],
+      "confidence": "high",
+      "notes": "Computed bridge odds use the Mod Ash line cited on the bridge page (39% at 1, 117% at 99, linear): 39 + 78 x 56/98 = 83.6%. Several jumps are needed ('It can take many attempts', dungeon page), so the chance of at least one fall over a crossing is high."
+    },
+    {
+      "claim_id": "C-RFI-321",
+      "subject": "Underground Pass traversal (for Regicide): aggressive monsters and supplies",
+      "attribute": "aggressive_npcs",
+      "value": {"Blessed spider": {"combat": 39, "max_hit": 4, "aggressive_below_combat": 79}, "Giant bat": {"combat": 27, "max_hit": 3, "aggressive": true, "aggressive_to_combat_45": "yes (2x27 = 54 >= 45)"}, "Zombie (first area)": {"levels": [13, 24], "max_hit": {"13": 2, "24": 3}, "aggressive": true, "aggressive_to_combat_45": "level 24 yes (48 >= 45); level 13 no by level rule (26 < 45)"}, "Soulless": "land among them after a bridge fall (C-RFI-025)", "wall_traps_run_through": "around 10-12 damage", "banks": "none beyond the Pass"},
+      "statement": "Walking the Underground Pass for Regicide, you pass aggressive blessed spiders (level 39, max hit 4; aggressive below combat 79), giant bats (27, max hit 3) and zombies (13 and 24, max hits 2 and 3). Running straight through the wall traps instead of using the plank deals around 10-12 damage. There are no accessible banks beyond the Pass.",
+      "scope": {"owner_combat": 45, "related": ["C-RFI-024", "C-RFI-025", "C-RFI-026"]},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Underground Pass (dungeon)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15302569", "revid": 15302569, "retrieved": "2026-11-20", "quote": "*Once you have crossed the bridge, you may be attacked by level 39 [[blessed spider]]s if you are under level 79 [[Combat]].", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Underground Pass (dungeon)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15302569", "revid": 15302569, "retrieved": "2026-11-20", "quote": "*Be careful of the traps! The plank is not actually needed to pass them, as you can just run straight through them, but doing so will deal around 10-12 damage.", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Giant bat", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15258141", "revid": 15258141, "retrieved": "2026-11-20", "quote": "|combat = 27 ... |max hit = 3 |aggressive1 = Yes ... |location = [[Underground Pass (dungeon)|Underground Pass]] (Part 1)", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Zombie", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406552", "revid": 15406552, "retrieved": "2026-11-20", "quote": "|combat = 24 ... |max hit = 3 |aggressive = Yes ... |location = [[Underground Pass (dungeon)]] (north-western area) |levels = 13, 24", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Regicide", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396547", "revid": 15396547, "retrieved": "2026-11-20", "quote": ":'''Note:''' There are '''no''' accessible [[banks]] beyond the Underground Pass.", "fetched_by": "threat-analyst"}
+      ],
+      "confidence": "medium",
+      "notes": "The 'Zombie' page lists Underground Pass zombies of levels 13 and 24 in the Tirannwn-region map (mapID 10163); that the first-area zombie room uses these is my reading. The ogres (level 53) on the map are on an orb path used only in the quest itself; their stats were not pinned. The Regicide guide also advises 2-3 Agility boosts below 56 Agility (owner 57)."
+    },
+    {
+      "claim_id": "C-RFI-322",
+      "subject": "Death to the Dorgeshuun: Sigmund and the H.A.M. guards",
+      "attribute": "quest_fight_max_hit",
+      "value": {"Sigmund": {"combat": 50, "max_hit": 5, "style": "Crush", "attack_speed_ticks": 4, "aggressive": true, "hitpoints": 60, "prayer": "switches protection prayer to match your style", "ends": "escapes with a ring of life at 1 HP"}, "H.A.M. Guard": {"combat": 22, "max_hit": 3, "style": "Crush", "aggressive": true, "hitpoints": 30, "count": 3}, "kill_style_allowed": "Melee or Magic (not Ranged)", "safespot": "nearby crates, with Magic or a halberd"},
+      "statement": "Sigmund in Death to the Dorgeshuun is level 50, max hit 5 (Crush, every 4 ticks), aggressive, 60 HP, and appears with three level 22 H.A.M. guards (max hit 3, Crush). He switches his protection prayer to match your attack style and escapes with a ring of life at 1 HP. The crates nearby can be used as a safespot with Magic or a halberd; Ranged cannot be used.",
+      "scope": {"owner_combat": 45, "owner_hitpoints": 48, "owner_magic": 44},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Sigmund", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15322064", "revid": 15322064, "retrieved": "2026-11-20", "quote": "|text3 = Death to the Dorgeshuun ... |combat = 50 ... |max hit = 5 |aggressive = Yes |poisonous = No |attack style = [[Crush]] |attack speed = 4 |hitpoints = 60", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Guard (Death to the Dorgeshuun)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15200109", "revid": 15200109, "retrieved": "2026-11-20", "quote": "|combat = 22 ... |max hit = 3 |aggressive = Yes ... |attack style = [[Crush]] ... |hitpoints = 30", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Death to the Dorgeshuun", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396862", "revid": 15396862, "retrieved": "2026-11-20", "quote": "Sigmund will use a protection [[prayer]] based on the attack you are using, so (at low levels) you may want to focus on his guards first. The crates nearby may be used as a [[safespot]] with [[Magic]] or melee using [[halberds]].", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Death to the Dorgeshuun", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396862", "revid": 15396862, "retrieved": "2026-11-20", "quote": "*The ability to defeat a level 50 enemy with [[Melee]] or [[Magic]]", "fetched_by": "threat-analyst"}
+      ],
+      "confidence": "high",
+      "notes": "The same page says 'Sigmund's protection prayer does not completely protect him' and lists a bug note that his prayers do not work. Computed: Sigmund plus three guards at max hits is 5 + 3x3 = 14 per round if all hit."
+    },
+    {
+      "claim_id": "C-RFI-323",
+      "subject": "Death to the Dorgeshuun: Lumbridge Swamp Caves route to Juna",
+      "attribute": "aggressive_npcs",
+      "value": {"Wall beast": {"max_hit": 18, "average_hit": 9}, "Cave crawler": "poisonous if aggressive", "avoidance": "enter via the dark hole in western Lumbridge Swamp; a games necklace teleport to Tears of Guthix is usable only after the Tears of Guthix quest", "lantern": "a candle lantern can break if you slip on the stepping stones"},
+      "statement": "To reach Juna you go through the Lumbridge Swamp Caves unless you can use a games necklace teleport, which needs the Tears of Guthix quest. The guide warns that wall beasts hit up to 18 (about 9 on average) and cave crawlers poison you. It also says slipping on the stepping stones breaks a candle lantern, leaving you without a light source.",
+      "scope": {"owner_hitpoints": 48},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Death to the Dorgeshuun", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396862", "revid": 15396862, "retrieved": "2026-11-20", "quote": "'''Warning for Hardcore Ironmen:''' It is recommended you enter the Lumbridge Swamp caves via the dark hole entrance in the western part of Lumbridge Swamp. This way you bypass the Cave Crawlers that if aggressive will poison you. Also bring plenty of food as the Wall Beasts deal on average 9 damage, with a max hit of 18.", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Death to the Dorgeshuun", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396862", "revid": 15396862, "retrieved": "2026-11-20", "quote": "*[[Pickaxe]] (if not using a [[games necklace]] to teleport to [[Tears of Guthix (minigame)|Tears of Guthix]] - only usable after you have completed the [[Tears of Guthix]] quest)", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Death to the Dorgeshuun", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396862", "revid": 15396862, "retrieved": "2026-11-20", "quote": "'''Warning: '''If you happen to slip on the stepping stones carrying a [[candle lantern]] it will break, leaving you stranded without a light source", "fetched_by": "threat-analyst"}
+      ],
+      "confidence": "medium",
+      "notes": "Wall beast and cave crawler infoboxes were not fetched; the figures are the quest guide's. Whether the owner has done Tears of Guthix is an owner question (not in the sealed inputs I read)."
+    },
+    {
+      "claim_id": "C-RFI-324",
+      "subject": "The Fremennik Trials: level 48 Rellekka citizens (lyre droppers)",
+      "attribute": "max_hit",
+      "value": {"npcs": ["Lanzig", "Borrokar", "Lensa", "Freidir"], "combat": 48, "max_hit": 6, "style": "Crush", "aggressive": false, "poisonous": false, "hitpoints": 50, "lyre_drop_rate": "30/512 (about 1/17)"},
+      "statement": "Lanzig, Borrokar, Lensa and Freidir are each level 48, max hit 6 (Crush), not aggressive, not poisonous, 50 HP. Each drops a lyre at 30/512 (about 1 in 17).",
+      "scope": {"owner_hitpoints": 48, "related": ["F-2043"]},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Lanzig", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15351177", "revid": 15351177, "retrieved": "2026-11-20", "quote": "|combat = 48 ... |max hit = 6 |aggressive = No |poisonous = No |attack style = [[Crush]] ... |hitpoints = 50", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Borrokar", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15351167", "revid": 15351167, "retrieved": "2026-11-20", "quote": "|combat = 48 ... |max hit = 6 |aggressive = No |poisonous = No |attack style = [[Crush]] ... |hitpoints = 50", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Lensa", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15351178", "revid": 15351178, "retrieved": "2026-11-20", "quote": "|combat = 48 ... |max hit = 6 |aggressive = No |poisonous = No |attack style = [[Crush]] ... |hitpoints = 50", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Freidir", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15351170", "revid": 15351170, "retrieved": "2026-11-20", "quote": "|combat = 48 ... |max hit = 6 |aggressive = No |poisonous = No |attack style = [[Crush]] ... |hitpoints = 50", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Borrokar (drops)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15351167", "revid": 15351167, "retrieved": "2026-11-20", "quote": "{{DropsLine|name=Lyre|quantity=1|rarity=30/512|gemw=No|raritynotes={{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1168426117235183616|date=2 September 2019", "fetched_by": "threat-analyst"}
+      ],
+      "confidence": "high",
+      "notes": "Computed: 512/30 = 17.1 kills per lyre on average. Rellekka is open world; a death there is UNSAFE (not part of the Koschei 4th-phase exception)."
+    },
+    {
+      "claim_id": "C-RFI-325",
+      "subject": "The Depths of Despair: Crabclaw Caves stepping stones and rocks",
+      "attribute": "failure_damage",
+      "value": {"obstacles": ["Stepping stone (Crabclaw Caves)", "Rocks (Crabclaw Caves)"], "agility_required": 18, "can_fall": true, "damage": "unknown, no source"},
+      "statement": "The Crabclaw Caves stepping stones and rocks each need 18 Agility, and the quest guide warns you might fall crossing them. Neither obstacle page nor the quest page gives a fall damage figure.",
+      "scope": {"owner_agility": 57, "owner_hitpoints": 48, "related": ["C-RFI-016"]},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "The Depths of Despair", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15365598", "revid": 15365598, "retrieved": "2026-11-20", "quote": "If your [[Hitpoints]] level and [[Agility]] level are both low, you might want to bring some food in case you fall while attempting to cross the stepping stones or rocks, and for the upcoming fight.", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Stepping stone (Crabclaw Caves)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=14033870", "revid": 14033870, "retrieved": "2026-11-20", "quote": "The '''stepping stone''' is an [[Agility]] obstacle in the [[Crabclaw Caves]]. It allows deeper access into the caves during the [[The Depths of Despair]] [[quest]], requiring 18 [[Agility]].", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Rocks (Crabclaw Caves)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=13969289", "revid": 13969289, "retrieved": "2026-11-20", "quote": "The '''rocks''' are an [[Agility]] obstacle in the [[Crabclaw Caves]]. It allows deeper access into the caves during the [[The Depths of Despair]] [[quest]], requiring 18 [[Agility]].", "fetched_by": "threat-analyst"}
+      ],
+      "confidence": "high",
+      "notes": "Confidence applies to 'not documented'. Fall damage: unknown, no source. Whether the owner (57 Agility) can still fail is not documented either."
+    },
+    {
+      "claim_id": "C-RFI-326",
+      "subject": "Monkey Madness I: greegree and the Ape Atoll Dungeon monsters",
+      "attribute": "aggressive",
+      "value": {"Skeleton (Ape Atoll)": "aggressive to all players not using a greegree", "Monkey Zombie": "aggressive: Yes (no greegree exception documented)", "greegree_timing": "greegrees are made by Zooknock at the end of the second dungeon run, so both required runs are made without one (inference)", "ninja_monkey_kill": "needed before the second run, also without a greegree (Monkey Archer, C-RFI-033)"},
+      "statement": "A greegree stops the Ape Atoll Dungeon skeletons from attacking, but the monkey zombie infobox lists no greegree exception. In Monkey Madness I the greegrees are only made at the end of your second run through the tunnels, so both runs (and the ninja monkey kill for the bones) happen without one. A greegree only protects you on later visits.",
+      "scope": {"owner_combat": 45, "owner_hitpoints": 48, "related": ["C-RFI-033", "C-RFI-034", "F-2088", "F-2089"]},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Skeleton (Ape Atoll)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15322119", "revid": 15322119, "retrieved": "2026-11-20", "quote": "Players are advised to use [[Protect from Melee]] against these monsters, as they attack accurately and can easily overwhelm with their sheer numbers. They are aggressive to all players who are not using a [[greegree]] to turn themselves into a monkey.", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Monkey Zombie", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15322124", "revid": 15322124, "retrieved": "2026-11-20", "quote": "|combat1 = 82 |combat2 = 98 |combat3 = 129 ... |max hit1 = 7 |max hit2 = 7 |max hit3 = 12 |aggressive = Yes |poisonous = No", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Monkey Madness I", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374574", "revid": 15374574, "retrieved": "2026-11-20", "quote": "Once you have all of the required bones (or monkey corpse) and talismans, you must run through the tunnels again, bringing your items to Zooknock. Travel through the tunnel for a second time, and when you reach the end, '''use''' the [[monkey talisman]] and all monkey bones (or corpses) on [[Zooknock]].", "fetched_by": "threat-analyst"}
+      ],
+      "confidence": "medium",
+      "notes": "The order of runs is read from the walkthrough; no page states 'without a greegree' outright. The level 129 monkey zombie (max hit 12) is a third variant not in C-RFI-034; its location was not checked."
+    },
+    {
+      "claim_id": "C-RFI-327",
+      "subject": "Escape crystal: scope in the Hallowed Sepulchre and Brimhaven Agility Arena, and forced movement",
+      "attribute": "escape",
+      "value": {"documented_activities": ["Barbarian Assault", "Chambers of Xeric", "The Inferno", "Pest Control", "Theatre of Blood", "TzHaar-Ket-Rak's Challenges", "Tombs of Amascut", "The Gauntlet (if carried on entry)"], "hallowed_sepulchre": "unknown, no source", "brimhaven_agility_arena": "unknown, no source", "moving_rule": "does NOT activate while moving; fires when movement stops", "forced_obstacle_or_trap_movement_counts_as_moving": "unknown, no source", "jagex_description": "an escape option that can activate automatically after no input; Jagex calls it a teleport to your respawn point"},
+      "statement": "No source says whether the escape crystal works in the Hallowed Sepulchre or the Brimhaven Agility Arena. The wiki lists the activities it teleports you out of (seven raids and minigames, plus the Gauntlet), and Jagex describes it generally as an automatic escape and a teleport to your respawn point. It does not activate while you are moving. Whether forced movement on an obstacle or a Sepulchre trap reset counts as moving is not documented.",
+      "scope": {"game_mode": "Hardcore Worlds", "related": ["F-3016", "F-3017", "F-3018", "F-3019"]},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Escape crystal", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409296", "revid": 15409296, "retrieved": "2026-11-20", "quote": "The crystal acts similarly to a [[respawn teleport]], teleporting players away from various activities, which may count as dangerous deaths for [[Hardcore Ironmen]] and [[Hardcore Group Ironmen]]. {{list|c=1|* [[Barbarian Assault]] * [[Chambers of Xeric]] * [[The Inferno]] * [[Pest Control]] * [[Theatre of Blood]] * [[TzHaar-Ket-Rak's Challenges]] * [[Tombs of Amascut]] }}", "fetched_by": "threat-analyst"},
+        {"tier": "T2", "title": "Escape crystal", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409296", "revid": 15409296, "retrieved": "2026-11-20", "quote": "The crystal will '''NOT''' activate while the player is moving. If the inactive time is reached at any point during movement, the crystal will activate when the player stops moving.", "fetched_by": "threat-analyst"},
+        {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "If you're not familiar with the Escape Crystal, it's an equippable escape option to help prevent unfortunate deaths from happening in the first place, which can activate automatically when there's been no input for a while, essentially helping you out of situations where you might have disconnected or your device crashes!", "fetched_by": "threat-analyst"},
+        {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": "2026-10-22", "quote": "We still want them to have a cost as otherwise they would be free teleports to your respawn point but the current price is very high and we'd like to make it more accessible.", "fetched_by": "threat-analyst"}
+      ],
+      "confidence": "high",
+      "notes": "Confidence applies to the finding that the Sepulchre, Brimhaven and forced-movement behaviour are undocumented. The wiki list and the Jagex description do not agree on scope: the wiki enumerates activities, Jagex describes a general escape. Neither the Sepulchre page (rev 15387544) nor the Brimhaven page (rev 15371976) mentions the escape crystal. Only an owner in-game test (T1 in-game observation) can settle it."
+    },
+    {
+      "claim_id": "C-RFI-328",
+      "subject": "Brimhaven Agility Arena",
+      "attribute": "teleport_restriction",
+      "value": "teleporting out of the arena is possible (re-entry is delayed afterwards)",
+      "statement": "Players can teleport out of the Brimhaven Agility Arena: a 23 May 2024 hotfix added a delay to re-entering after teleporting out. This is about teleports in general; the escape crystal is not mentioned.",
+      "scope": {"related": ["F-3051", "C-RFI-327"]},
+      "released": "2024-05-23",
+      "sources": [
+        {"tier": "T2", "title": "Brimhaven Agility Arena", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15371976", "revid": 15371976, "retrieved": "2026-11-20", "quote": "|date = 23 May 2024 |update = Minigame Tweaks, Skilling Adjustments & more! |type = hotfix |change = There is now a delay to re-entering the Brimhaven Agility Arena after teleporting out.", "fetched_by": "threat-analyst"}
+      ],
+      "confidence": "medium",
+      "notes": "Single T2 source (a changes-log entry). The underlying Jagex hotfix post was not fetched."
+    }
+  ],
+  "gaps": [
+    "Seers' Village Rooftop Course Gap 1 and Tightrope failure damage: unknown, no source (C-RFI-308).",
+    "Ardougne Rooftop Course gaps 1 and 2 failure damage: unknown, no source (C-RFI-309).",
+    "Canifis Rooftop Course gap 3 failure damage: unknown, no source (C-RFI-310).",
+    "Ape Atoll Agility Course per-obstacle failure damage: unknown, no source; only 'small amounts' (C-RFI-312).",
+    "The Depths of Despair Crabclaw Caves stepping stones and rocks fall damage: unknown, no source (C-RFI-325).",
+    "Naiatli (Death on the Isle) damage to the player: unknown, no source; no combat infobox exists (C-RFI-303).",
+    "Whether spellbook or home teleports work during the Death on the Isle fights: unknown, no source (C-RFI-304).",
+    "Hardcore Worlds treatment of the Rag and Bone Man III illusory death: no T1 or in-game source; classified UNSAFE by policy (C-RFI-305). New content (18 Nov 2026).",
+    "Escape crystal inside the Hallowed Sepulchre: unknown, no source (C-RFI-327).",
+    "Escape crystal inside the Brimhaven Agility Arena: unknown, no source; general teleports do work there (C-RFI-327, C-RFI-328).",
+    "Whether forced obstacle movement or a Sepulchre trap reset counts as 'moving' for escape crystal auto-activation: unknown, no source (C-RFI-327).",
+    "Identity of the 'level 72 monsters' in Creature of Fenkenstrain: identified by inference only as level 72 Feral Vampyres (C-RFI-319); no page names them.",
+    "Bounty Hunter / LMS on Hardcore Worlds: no enabling announcement found up to 2026-11-20; absence of evidence only (C-RFI-306).",
+    "Underground Pass ogres (level 53) and Iban's Lair Soulless max hit re-pin, wall beast and cave crawler infoboxes: not fetched.",
+    "Teleport behaviour inside the Troll Stronghold prison and the Troll arena: not documented (also open in C-RFI-017)."
+  ],
+  "leads_not_used": [],
+  "provenance": {
+    "agent": "threat-analyst",
+    "started_at": "2026-11-20T12:04:30Z",
+    "finished_at": "2026-11-20T12:16:00Z",
+    "dispatch_ref": "dispatch/023-threat-analyst.md",
+    "inputs": [
+      {"path": ".claude/agents/threat-analyst.md", "sha256": "206863923728c7b8a24298b01af0a99a48d567123e31c123352a6e7025530110"},
+      {"path": "dispatch/023-threat-analyst.md", "sha256": "b61e0c91fe0675eec568e0005064a512069825991f183f887de09bfca4fca27b"},
+      {"path": "brief.json", "sha256": "c27aa6bc9969f981aed9185637565c2792f58b80646cc531afa503e27f969389"},
+      {"path": "facts-parts/logistics.json", "sha256": "1080f8994e6eec8911f7e35b71e369f955518a5424e074227dcb750fa2ff5650"},
+      {"path": "facts-parts/methods.json", "sha256": "32bec49569f6161a639dfb11166b0c8faeb118a1e31056250dfb8c546c25cafd"},
+      {"path": "facts-parts/quests-a.json", "sha256": "7e1fbbc8535bd03015d86fe252003ec61ae953b3f105f373a8aed4ba9e70518e"},
+      {"path": "facts-parts/quests-b.json", "sha256": "9db503bb8bd52333f2837bcc644bf394f5e2de371dccc9bbadf54c4a55e9ea01"},
+      {"path": "facts-parts/threats.json", "sha256": "2276ca6c6cc74d5924fb0a9ba0463b0b5f52c565017e8bffbf465ff08ebbda68"},
+      {"path": "facts-parts/updates.json", "sha256": "fbe229573fd32a1253f33fbd9466bded1173ac44109948f8096738c87e3e37cf"},
+      {"path": "research/claims-rfi-01.json", "sha256": "15f58309cf8e264dac779e6d1bd3d3395cdb24268daa29d0ef1fe22f05a8cf52"},
+      {"path": "schemas/claims.schema.json", "sha256": "bbbf6e22121f89057e87db49e0bdd800eaf94bc53de1fba7b2413f5c894072a8"},
+      {"path": "docs/06-sourcing-policy.md", "sha256": "f883176c3b9c0f10ad8c06027eebb8436f1989068c72fffdc9df51878c618bf8"},
+      {"path": "docs/07-hardcore-worlds-baseline.md", "sha256": "8108c4460dbecdbdac501880220d2ad6ab93ed6ed611a99bb9532debb5e72c01"}
+    ],
+    "actions": [
+      {"kind": "read", "detail": "Read charter and recorded its sha256", "target": ".claude/agents/threat-analyst.md", "outcome": "206863923728..."},
+      {"kind": "verify", "detail": "python3 tools/ledger.py verify agility-1-99-20261119", "outcome": "OK: ledger chain and all seals intact"},
+      {"kind": "read", "detail": "Read CLAUDE.md, schemas/claims.schema.json, docs/06 and docs/07; inspected the ledger tail to find the dispatch (023, resealed b61e0c91 after the C-RFI-301 renumbering)"},
+      {"kind": "read", "detail": "Listed every fact in facts-parts/*.json and every claim in research/claims-rfi-01.json, then printed the relevant ones (F-3002..F-3098, F-0004/0009/0016, F-2028/2043/2088/2089, C-RFI-001..037) and all verifier RFI entries, to avoid re-researching settled items"},
+      {"kind": "fetch", "detail": "tools/wiki.py page 'Escape crystal' --full", "target": "revid 15409296"},
+      {"kind": "fetch", "detail": "tools/wiki.py page 'Hardcore Worlds' --full", "target": "revid 15404671"},
+      {"kind": "search", "detail": "tools/wiki.py new-pages --ns Update --since 2026-11-04", "outcome": "10 Update pages listed"},
+      {"kind": "fetch", "detail": "Grepped 6 post-launch Update pages for bounty|last man|LMS|hardcore|pvp|escape crystal|wilderness", "target": "revids 15399840, 15402047, 15406871, 15406803, 15410057, 15408871", "outcome": "no BH/LMS enabling on Hardcore Worlds; Reaper's Raffle has a player-kill task"},
+      {"kind": "fetch", "detail": "Grepped Update:Hardcore Worlds - OUT TODAY and Update:Hardcore Worlds Are Coming On November 4th; read lines 36-46 and 72-90 of the latter", "target": "revids 15397724, 15379410"},
+      {"kind": "fetch", "detail": "Grepped Hallowed Sepulchre and Brimhaven Agility Arena for teleport/escape/death", "target": "revids 15387544, 15371976"},
+      {"kind": "fetch", "detail": "Death on the Isle quest page, Adala (full), Naiatli, Prop sword (Death on the Isle)", "target": "revids 15375163, 15325078, 15197266, 15327820"},
+      {"kind": "fetch", "detail": "Rag and Bone Man III page grep; Week 3 Update grep for rag and bone / safe / death", "target": "revids 15409896, 15406871"},
+      {"kind": "fetch", "detail": "Seers' Village Rooftop Course, Gap (Seers'), Tightrope (Seers'), Gap (Ardougne), Gap (Canifis), Ardougne/Canifis/Pollnivneach course pages, Rooftop Agility Courses, Agility", "target": "revids 15356820, 15334119, 15359414, 15334145, 15334120, 15352456, 15374436, 15375189, 15337972, 15405162"},
+      {"kind": "search", "detail": "tools/wiki.py search 'Seers' Village Rooftop Course gap tightrope fail damage' and 'rooftop failing obstacle damage hitpoints'", "outcome": "no per-obstacle damage figures"},
+      {"kind": "fetch", "detail": "Ape Atoll Agility Course plus Tropical tree, Monkeybars, Skull slope, Rope, Stepping stone obstacle pages", "target": "revids 15372987, 15241805, 15241802, 15241803, 15324369, 15201388"},
+      {"kind": "fetch", "detail": "Aggressiveness, Wilderness Agility Course, Agility Pyramid, Crocodile", "target": "revids 15373608, 15351989, 15402952, 15409452"},
+      {"kind": "fetch", "detail": "Death Plateau, Death Plateau (location), Thrower Troll, Troll Stronghold, Thrower troll (Trollheim), Pee Hat, Kraka, Stick, Rock (Troll), Mountain troll", "target": "revids 15382205, 15342417, 15406535, 15395347, 15200204, 15406534, 15406530, 15406531, 15406532, 15406524"},
+      {"kind": "fetch", "detail": "Creature of Fenkenstrain, Feral Vampyre", "target": "revids 15385731, 15356500"},
+      {"kind": "fetch", "detail": "Underground Pass, Regicide, Underground Pass (dungeon), Rope swing (Underground Pass, north), Bridge (Iban's Lair), Ledge (Underground Pass), Giant bat, Zombie", "target": "revids 15392817, 15396547, 15302569, 15202216, 15401279, 15302555, 15258141, 15406552"},
+      {"kind": "fetch", "detail": "Death to the Dorgeshuun, Sigmund, Guard (Death to the Dorgeshuun)", "target": "revids 15396862, 15322064, 15200109"},
+      {"kind": "fetch", "detail": "Lanzig, Borrokar, Lensa, Freidir", "target": "revids 15351177, 15351167, 15351178, 15351170"},
+      {"kind": "fetch", "detail": "The Depths of Despair, Crabclaw Caves, Stepping stone (Crabclaw Caves), Rocks (Crabclaw Caves); wiki search 'Crabclaw Caves stepping stones' and 'Crabclaw Caves rocks climb agility obstacle'", "target": "revids 15365598, 15356301, 14033870, 13969289"},
+      {"kind": "fetch", "detail": "Monkey Zombie, Skeleton (Ape Atoll), Monkey Madness I (lines 200-262)", "target": "revids 15322124, 15322119, 15374574"},
+      {"kind": "compute", "detail": "Bridge (Iban's Lair) success at Agility 57: 39 + 78 x 56/98 = 83.6%; fall at 48 HP: 48 x 0.2 + 5 = 14.6; aggression thresholds 2x18=36, 2x25=50, 2x27=54, 2x24=48 vs combat 45; lyre 512/30 = 17.1", "outcome": "values in C-RFI-313, C-RFI-320, C-RFI-321, C-RFI-324"},
+      {"kind": "compute", "detail": "sha256sum of all inputs; checked each job input hash against its ledger seal entry", "outcome": "all match sealed versions"},
+      {"kind": "read", "detail": "Read tools/validate.py research gate and provenance checks to confirm the input-path conventions"},
+      {"kind": "write", "detail": "Wrote research/claims-rfi-02.json (28 claims, C-RFI-301..328)", "target": "jobs/agility-1-99-20261119/research/claims-rfi-02.json"},
+      {"kind": "verify", "detail": "python3 tools/validate.py agility-1-99-20261119 research"}
+    ],
+    "decisions": [
+      {"decision": "Did not re-research Dad (C-RFI-017), Troll generals (C-RFI-018), Berry/Twig (C-RFI-019), interior mountain trolls (C-RFI-020), Underground Pass fights and traps (C-RFI-022..026), Monkey Archer (C-RFI-033), Ape Atoll Dungeon (C-RFI-034), Experiment (C-RFI-036), WAC skeleton stats (F-3033/F-3034), crocodile stats (F-3078), Pollnivneach market stall damage (F-3075) or the base HW classifications (F-3003/3005/3009)", "reason": "Dispatch: do not re-research anything settled in facts-parts/ or claims-rfi-01.json. New claims only add what those lack (aggression versus combat 45, routes, fail consequences, unknowns) and reference them.", "alternatives_considered": ["Re-pin and restate every settled stat for one-stop reading (rejected: duplicates verified facts and invites conflicting copies)"]},
+      {"decision": "C-RFI-301 restates UNSAFE for Agility courses and the Sepulchre although F-3003/3005/3009 settle it", "reason": "The dispatch asks for the classification explicitly; the only new evidence is that the current HW page and post-launch Update posts add nothing. Marked as re-confirmation in scope.confirms.", "alternatives_considered": ["Answer only in gaps/decisions (rejected: the Director asked for claims)"]},
+      {"decision": "Rag and Bone Man III scripted death classified UNSAFE_DEATH despite the wiki's 'safe death for hardcore accounts'", "reason": "Charter: SAFE only with a T1 Hardcore Worlds source. The wiki text links regular Hardcore Ironman, and Hardcore Worlds uses the stricter HCGIM ruleset. No T1 or in-game source found.", "alternatives_considered": ["SAFE per wiki (rejected: T2 about HCIM, not HW)", "NO_DEATH_POSSIBLE (rejected: the wiki calls it a 'safe death', implying it may register as a death)"]},
+      {"decision": "Death on the Isle fights left UNSAFE_DEATH (with the wiki's no-death mechanic recorded)", "reason": "No T1 exception exists; C-RFI-037 already records NO_DEATH_POSSIBLE_PER_WIKI. Added Adala's stats and the item confiscation, which removes food and the escape crystal.", "alternatives_considered": ["Classify SAFE because death is reportedly impossible (rejected: charter forbids SAFE without T1)"]},
+      {"decision": "Identified the CoF 'level 72 monsters' as level 72 Feral Vampyres with confidence medium and an explicit INFERENCE note", "reason": "Level, location (Haunted Woods grave) and the quest's own Feral Vampyre warning match; no page states it outright.", "alternatives_considered": ["Leave as unknown (rejected: the evidence is specific and useful, provided it is flagged)", "Confidence high (rejected: identification is not stated by any source)"]},
+      {"decision": "Wrote 'unknown, no source' claims (C-RFI-308/309/310/312/325/327) rather than only gaps", "reason": "Dispatch: unknown is a valid answer; pinned pages prove the figure is absent, which the verifier can check.", "alternatives_considered": ["Estimate from other courses' formulas (rejected: guessing)"]},
+      {"decision": "Used owner Agility 57 from sealed fact F-2024 for bridge and shortcut computations", "reason": "The dispatch profile lists no Agility level; F-2024 (VERIFIED_WITH_CAVEAT) records owner Agility 57.", "alternatives_considered": ["Omit owner-specific computations"]}
+    ],
+    "limitations": [
+      "All T2 evidence is OSRS Wiki wikitext pinned by revid via tools/wiki.py; no T3 data (e.g. RuneLite) was found for rooftop or Ape Atoll fail damage.",
+      "Bounty Hunter / LMS status rests on the absence of any enabling announcement in the 10 Update pages created 2026-11-04..2026-11-20; a hotfix announced only on social media would be missed.",
+      "Rag and Bone Man III is new content (released 2026-11-18; page last edited 2026-11-20) and is volatile.",
+      "Route-overlap statements (crocodiles on the Pyramid routes, UP zombies in the first area) are readings of location text, not map-coordinate comparisons.",
+      "Items outside this dispatch's list (Werewolf deathslide T1 figure, Sepulchre per-floor trap damage, Glod's max hit, Taverley Dungeon skeletons, Black Knights, Icthlarin's Little Helper pit and crushers, Jonny the Beard) were not researched here.",
+      "Escape-crystal scope can only be settled by in-game testing by the owner or a Jagex statement; I cannot test in game."
+    ]
+  }
+}
