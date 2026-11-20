@@ -1,0 +1,700 @@
+{
+  "desk": "rfi",
+  "as_of": "2026-11-20",
+  "claims": [
+    {
+      "claim_id": "C-RFI-001",
+      "subject": "The Fremennik Trials: Koschei the deathless, forms 1-3",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "On Hardcore Worlds, dying to Koschei's first, second or third form is an unsafe (run-ending) death. The official rules list only the 4th phase of the Koschei duel as safe. The wiki's note that forms 1-3 are safe applies to regular Hardcore Ironmen, not to the Hardcore Group Ironman ruleset that Hardcore Worlds uses.",
+      "scope": {"world_type": "hardcore_worlds", "death_ruleset": "HCGIM"},
+      "released": null,
+      "sources": [
+        {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": null, "quote": "* The Fremennik Trials ''(only the 4th phase of the duel with Koschei the Deathless)''", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T1", "title": "Update:Hardcore Worlds - OUT TODAY", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724", "revid": 15397724, "retrieved": "2026-11-20", "published": null, "quote": "* The Fremennik Trials ''(only the 4th phase of the duel with Koschei the Deathless)''", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Group Ironman Mode", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15401984", "revid": 15401984, "retrieved": "2026-11-20", "quote": "* [[The Fremennik Trials]] - 4th phase of the duel with [[Koschei the Deathless]]", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Koschei the deathless", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387641", "revid": 15387641, "retrieved": "2026-11-20", "quote": "Only [[Hardcore group ironmen]] need to be concerned about dying to the first three forms, as dying to the fourth form is a scripted safe death.", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "high",
+      "notes": "Conflict to handle: The Fremennik Trials page (rev 15396092, line 218) says dying in the first three rounds is a 'safe death' and 'regular Hardcore ironmen will not lose their status'. That statement is about HCIM. The Hardcore Worlds T1 rules name only the 4th phase as safe. Since 24 June 2020, dying in the first three phases respawns you outside the room (Koschei page, Changes), but on Hardcore Worlds that is still a counted death."
+    },
+    {
+      "claim_id": "C-RFI-002",
+      "subject": "The Fremennik Trials: Koschei the deathless, form 4",
+      "attribute": "hw_death_classification",
+      "value": "SAFE_DEATH",
+      "unit": null,
+      "statement": "Losing to Koschei's 4th form is listed as safe in the official Hardcore Worlds rules. The quest guide says you do not actually die: the fight ends when you reach 1 Hitpoint, and you still get Thorvald's vote.",
+      "scope": {"world_type": "hardcore_worlds", "death_ruleset": "HCGIM"},
+      "released": null,
+      "sources": [
+        {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": null, "quote": "That doesn't mean there aren't exceptions though as the following minigames are safe:", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "The Fremennik Trials", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396092", "revid": 15396092, "retrieved": "2026-11-20", "quote": "*Note for [[Hardcore Group Ironmen]]: Dying to the 4th phase of the fight '''is a safe death'''. You do not actually die, the fight ends if you get to 1 health.", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Hardcore Worlds", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671", "revid": 15404671, "retrieved": "2026-11-20", "quote": "* [[The Fremennik Trials]] - 4th phase of the duel with [[Koschei the Deathless]]", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "high",
+      "notes": "Only the 4th phase is covered. Any damage that carries over from forms 1-3 (or poison from elsewhere) before form 4 starts falls under C-RFI-001."
+    },
+    {
+      "claim_id": "C-RFI-003",
+      "subject": "Troll Romance: Arrg",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "Dying to Arrg in Troll Romance is an unsafe death on Hardcore Worlds. Arrg is not on the official safe list, and the quest page says the fight is not a safe death even for regular Hardcore Ironmen.",
+      "scope": {"world_type": "hardcore_worlds", "death_ruleset": "HCGIM"},
+      "released": null,
+      "sources": [
+        {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": null, "quote": "This ruleset has very few exceptions, which means you should go in with the expectation that 99% of deaths will land you right back in Death's office ready to make a difficult choice.", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Troll Romance", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375194", "revid": 15375194, "retrieved": "2026-11-20", "quote": "'''Note:''' The fight with Arrg is not a safe death for [[Ironman Mode#Hardcore|Hardcore Ironmen]].", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-RFI-004",
+      "subject": "Recruitment Drive: Sir Leye",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "Dying to Sir Leye in Recruitment Drive is an unsafe death on Hardcore Worlds. He is not on the official safe list, and the wiki says the death is not safe even for regular Hardcore Ironmen.",
+      "scope": {"world_type": "hardcore_worlds", "death_ruleset": "HCGIM"},
+      "released": null,
+      "sources": [
+        {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": null, "quote": "This ruleset has very few exceptions, which means you should go in with the expectation that 99% of deaths will land you right back in Death's office ready to make a difficult choice.", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Sir Leye", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15386161", "revid": 15386161, "retrieved": "2026-11-20", "quote": "Dying to him is not a safe death for [[hardcore ironmen]].", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Recruitment Drive", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15395322", "revid": 15395322, "retrieved": "2026-11-20", "quote": "|ironman = [[File:Hardcore ironman chat badge.png]] You will lose your Hardcore ironman status if you die to Sir Leye.<br/>", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-RFI-005",
+      "subject": "Barbarian Assault",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "Barbarian Assault is officially UNSAFE on Hardcore Worlds: a death there ends the run, even though it is safe for regular Hardcore Ironmen.",
+      "scope": {"world_type": "hardcore_worlds", "death_ruleset": "HCGIM", "related_tasks": "Kandarin hard diary granite body task (C-QST-257)"},
+      "released": null,
+      "sources": [
+        {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": null, "quote": "Here's the full list of '''UNSAFE''' activities that are usually safe in Hardcore Ironman:\n\n* Barbarian Assault", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Hardcore Worlds", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671", "revid": 15404671, "retrieved": "2026-11-20", "quote": "'''The following activities are {{colour|red|UNSAFE}} and dying in them will result in an official death:'''\n* [[Barbarian Assault]]", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "high",
+      "notes": "Dispatch said Barbarian Assault is an elite Ardougne diary task. The quest desk's sourced claims place it in the Kandarin hard diary (C-QST-257, task 9: granite body), not the elite Ardougne diary (C-QST-266 lists Fishing Trawler and Nightmare Zone). The classification is the same either way."
+    },
+    {
+      "claim_id": "C-RFI-006",
+      "subject": "Fishing Trawler",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "Fishing Trawler is officially UNSAFE on Hardcore Worlds: a death there ends the run. Elite Ardougne diary task 1 (catch a manta ray in Fishing Trawler) is affected.",
+      "scope": {"world_type": "hardcore_worlds", "death_ruleset": "HCGIM", "related_tasks": "Ardougne elite diary task 1 (C-QST-266)"},
+      "released": null,
+      "sources": [
+        {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": null, "quote": "* Fishing Trawler", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T1", "title": "Update:Hardcore Worlds - OUT TODAY", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724", "revid": 15397724, "retrieved": "2026-11-20", "published": null, "quote": "* Fishing Trawler", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Hardcore Worlds", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671", "revid": 15404671, "retrieved": "2026-11-20", "quote": "* [[Fishing Trawler]]", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "high",
+      "notes": "Both T1 quotes are list items under the heading of UNSAFE activities (update rev 15379410 line 20, OUT TODAY rev 15397724 line 192)."
+    },
+    {
+      "claim_id": "C-RFI-007",
+      "subject": "Nightmare Zone",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "Nightmare Zone is officially UNSAFE on Hardcore Worlds: a death inside a dream ends the run. The elite Ardougne diary's salve amulet(i) task (800,000 NMZ points, or 400,000 with hard Combat Achievements) means long stays there. The wiki's HCGIM section advises extra care to use the exit potion.",
+      "scope": {"world_type": "hardcore_worlds", "death_ruleset": "HCGIM", "related_tasks": "Ardougne elite diary task 5 (C-QST-266)"},
+      "released": null,
+      "sources": [
+        {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": null, "quote": "* Nightmare Zone", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Group Ironman Mode", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15401984", "revid": 15401984, "retrieved": "2026-11-20", "quote": "* [[Nightmare Zone]] (players should take extra care to use the exit potion)", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Hardcore Worlds", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671", "revid": 15404671, "retrieved": "2026-11-20", "quote": "* [[Nightmare Zone]]", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-RFI-008",
+      "subject": "Hardcore Worlds safe-death exceptions",
+      "attribute": "hw_safe_activity_list",
+      "value": {"t1_safe_list": ["Castle Wars", "Clan Wars", "Soul Wars", "The Fremennik Trials (only the 4th phase of the duel with Koschei the Deathless)", "TzHaar Fight Caves Resurrection reward (Karamja Elite Diary)", "TzHaar Fight Pit", "Zulrah (only the Resurrection reward from the Elite Western Provinces Diary)"], "wiki_hw_page_adds": ["Capsizing your Boat (other deaths on a boat unsafe)", "Emir's Arena", "Last Man Standing (disabled at launch)", "Pete Kayer's Challenges", "Replay of the Galvek fight", "Replay of Glough boss fight"]},
+      "unit": null,
+      "statement": "Jagex's Hardcore Worlds posts list only seven safe exceptions, and no quest fight other than Koschei's 4th phase is among them. Every other death, including Sir Leye, Arrg and Koschei forms 1-3, defaults to unsafe. The wiki's Hardcore Worlds page (copied from the HCGIM rules) adds six more safe items not in the Jagex list, and leaves out Soul Wars, TzHaar Fight Pit and the Zulrah resurrection.",
+      "scope": {"world_type": "hardcore_worlds", "death_ruleset": "HCGIM"},
+      "released": "2026-11-04",
+      "sources": [
+        {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": null, "quote": "* Castle Wars\n* Clan Wars\n* Soul Wars\n* The Fremennik Trials ''(only the 4th phase of the duel with Koschei the Deathless)''\n* The Resurrection reward for the TzHaar Fight Caves from the Karamja Elite Diary\n* TzHaar Fight Pit\n* Zulrah ''(only the Resurrection reward from the Elite Western Provinces Diary)''", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Hardcore Worlds", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671", "revid": 15404671, "retrieved": "2026-11-20", "quote": "The following activities are '''{{colour|green|SAFE}}''' and dying within them will not count as an official death:\n* Capsizing your [[Boat]] (although other forms of dying on your boat are still unsafe)", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "medium",
+      "notes": "Hardcore Worlds launched 4 Nov 2026 (under 30 days ago): treat as volatile, new content. The wiki-only safe items are not backed by a T1 source found in this sweep; by policy, treat them as UNSAFE until Jagex confirms them. None are on the Agility route."
+    },
+    {
+      "claim_id": "C-RFI-009",
+      "subject": "Koschei the deathless (The Fremennik Trials)",
+      "attribute": "max_hit",
+      "value": {"form1": {"max_hit": 3, "style": "Slash", "attack_speed_ticks": 4, "hitpoints": 30}, "form2": {"max_hit": 5, "style": "Melee", "attack_speed_ticks": 4, "hitpoints": 50}, "form3": {"max_hit": 7, "style": "Melee", "attack_speed_ticks": 4, "hitpoints": 70}, "form4": {"max_hit": 1, "style": "Melee", "attack_speed_ticks": 1, "hitpoints": 255, "max_damage_per_minute": 100}},
+      "unit": "hitpoints",
+      "statement": "Koschei's max hits are 3 / 5 / 7 for forms 1-3, each attacking every 4 ticks (2.4 s). The 4th form's max hit really is 1, not a data error: it hits for 1 every game tick (0.6 s), up to 100 damage a minute, and has 255 Hitpoints. Two wiki pages agree on this.",
+      "scope": {"account_hitpoints": 48, "account_defence": 1},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Koschei the deathless", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387641", "revid": 15387641, "retrieved": "2026-11-20", "quote": "His max hits are 3 in his first form, 5 in his second, and 7 in his third.", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Koschei the deathless", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387641", "revid": 15387641, "retrieved": "2026-11-20", "quote": "When he hits, he always hits for 1 [[Hitpoint]], but at a rate of 1 hit every 0.6 seconds", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Koschei the deathless", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387641", "revid": 15387641, "retrieved": "2026-11-20", "quote": "*He is the fastest attacking [[NPC]] in the game (in his final form with an attack speed of 1, meaning every 0.6 seconds), along with [[Scarab swarm]]s. The attack speed for his first three forms is 4 (2.4 seconds), the same as unarmed combat.", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "The Fremennik Trials", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396092", "revid": 15396092, "retrieved": "2026-11-20", "quote": "The fourth form is the hardest. He will hit once every game tick, but can only hit for 1 damage at a time.", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "high",
+      "notes": "Infobox rows (rev 15387641): form 1 '|max hit = 3' '|attack style = [[Slash]]' '|attack speed = 4' '|hitpoints = 30'; form 2 max hit 5, Melee, speed 4, HP 50; form 3 max hit 7, Melee, speed 4, HP 70; form 4 max hit 1, Melee, speed 1, HP 255, att 255. Computed: 1 damage x 100 ticks per minute = up to 100 damage per minute in form 4 (rate x time; accuracy not modelled, and Koschei's Attack is 255 against the owner's Defence 1). One sentence on the Koschei page ('in his third and fourth form he hits progressively harder and quicker') does not match the infobox; the infobox and both strategy passages give 1. The wiki's stat-derived combat levels are 25/48/71/212."
+    },
+    {
+      "claim_id": "C-RFI-010",
+      "subject": "Koschei the deathless, form 4",
+      "attribute": "prayer_drain",
+      "value": {"on_form_start": "all prayer points", "ongoing": "1-2 points per second"},
+      "unit": null,
+      "statement": "When Koschei's 4th form starts he drains all your prayer points, then keeps draining 1-2 points every second. Protection prayers cannot be relied on in form 4.",
+      "scope": {"account_prayer": 44},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "The Fremennik Trials", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396092", "revid": 15396092, "retrieved": "2026-11-20", "quote": "In this form, Koschei will quickly drop your prayer points in intervals of 1-2 every second and will drop all of your prayer points as soon as the form starts.", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "medium",
+      "notes": "Only one source. The Koschei page's change log (6 Feb 2014) says Koschei now keeps prayer drained, which supports this."
+    },
+    {
+      "claim_id": "C-RFI-011",
+      "subject": "The Fremennik Trials: Koschei fight arena",
+      "attribute": "teleport_restriction",
+      "value": {"instance": true, "items_banned": "weapons, armour, fletching materials, runes", "items_allowed": "food, Prayer, god books, jewellery", "ring_of_life": "teleports you to your respawn point and the fight restarts at form 1", "phase_timer": "10 minutes in one phase, then Koschei despawns and the fight resets", "normal_teleport_out": "not documented", "walk_out": "not documented (a ladder is mentioned only in an untested aside)"},
+      "unit": null,
+      "statement": "The Koschei fight is in an instance below Thorvald's house, with no weapons, armour or runes allowed. Food, Prayer and jewellery are allowed. A ring of life will pull you out to your respawn point and reset the fight. If you stay over 10 minutes in one phase, Koschei despawns and the fight restarts. Whether normal teleports work in the arena is not documented.",
+      "scope": {},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "The Fremennik Trials", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396092", "revid": 15396092, "retrieved": "2026-11-20", "quote": "* As his fight is in an instance, it is possible to return to the instance before it closes to continue the fight from where you left off.", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "The Fremennik Trials", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396092", "revid": 15396092, "retrieved": "2026-11-20", "quote": "# You cannot use any [[weapons]], [[armour]], [[fletching]] materials (such as [[logs]]/[[arrowtips]]), or bring [[runes]]. The Ardougne cloak counts as armour, but the boots of lightness do not. However, you can use [[food]], [[Prayer]], [[god book]]s, and jewellery.", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "The Fremennik Trials", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396092", "revid": 15396092, "retrieved": "2026-11-20", "quote": "* Do not wear a [[ring of life]] as you will be teleported back to your spawn point. You will need to fight him again at his first phase.", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Koschei the deathless", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387641", "revid": 15387641, "retrieved": "2026-11-20", "quote": "Additionally, if you take too long fighting Koschei (10 minutes in the same phase), he will simply disappear and you will have to start the challenge all over again.", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim_id": "C-RFI-012",
+      "subject": "The Fremennik Trials: Koschei fight arena",
+      "attribute": "safespot",
+      "value": "Koschei can be trapped on the far side of a chasm or by the pillars of fire to regenerate. Staying too long makes him reset to form 1. He can be flinched at the torches.",
+      "unit": null,
+      "statement": "There is no attack safespot for Koschei (you have no weapons), but you can trap him on the other side of a hole in the floor or by the fire pillars and wait to regenerate. Staying too long makes him disappear and reset to form 1. He can also be flinched from the north or south tile of a torch.",
+      "scope": {},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "The Fremennik Trials", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396092", "revid": 15396092, "retrieved": "2026-11-20", "quote": "There is no way to safespot him as you have no weapons, but you can trap him over the hole and wait a while for your health to regenerate. However, if you stay there too long, he will disappear and reappear after you run around, back in his first form.", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Koschei the deathless", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387641", "revid": 15387641, "retrieved": "2026-11-20", "quote": "There are certain [[safespots]] in Koschei's basement, such as the pillars of fire, or the many chasms in the ground.", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim_id": "C-RFI-013",
+      "subject": "The Fremennik Trials: The Draugen",
+      "attribute": "quest_fight_max_hit",
+      "value": {"npc": "The Draugen", "combat": 69, "max_hit": 7, "style": "Crush", "aggressive": true, "hitpoints": 60, "location": "roams the Fremennik Province (open world)"},
+      "unit": "hitpoints",
+      "statement": "The Fremennik Trials also requires beating the Draugen (level 69, max hit 7, Crush, aggressive, 60 HP). It roams the open Fremennik Province, and you start the fight by using the hunters' talisman on its tile. No instance or teleport restriction is documented.",
+      "scope": {"account_hitpoints": 48},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "The Draugen", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15383109", "revid": 15383109, "retrieved": "2026-11-20", "quote": "|max hit = 7", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "The Fremennik Trials", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396092", "revid": 15396092, "retrieved": "2026-11-20", "quote": "* [[Draugen]] ''(level 69)''", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "high",
+      "notes": "Infobox (rev 15383109): combat 69, aggressive Yes, attack style Crush, hitpoints 60. Classification: UNSAFE_DEATH (not on the T1 safe list)."
+    },
+    {
+      "claim_id": "C-RFI-014",
+      "subject": "The Writing's on the Wall",
+      "attribute": "teleport_restriction",
+      "value": {"kills": "none", "ambush": "cutscene (the player is knocked out)", "betty_cell": "teleport-blocked", "guards": "being caught sends you back to the cell (no damage documented)"},
+      "unit": null,
+      "statement": "The Writing's on the Wall has no fights: the ambush in the trapdoor room is a cutscene. You cannot teleport out of Betty's cell in Port Piscarilius prison ('A teleport block has been placed on this cell'); you escape through a gap in the wall. Being caught by the jail guards sends you back to the cell.",
+      "scope": {},
+      "released": "2026-11-03",
+      "sources": [
+        {"tier": "T2", "title": "The Writing's on the Wall", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404622", "revid": 15404622, "retrieved": "2026-11-20", "quote": "* You cannot teleport out of Betty's cell to escape, as {{Mes|A teleport block has been placed on this cell. You'll need to find another way out.}}", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "The Writing's on the Wall", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404622", "revid": 15404622, "retrieved": "2026-11-20", "quote": "Reading the message triggers a cutscene in which a hooded figure enters the room to knock the player out.", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "The Writing's on the Wall", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404622", "revid": 15404622, "retrieved": "2026-11-20", "quote": "Return to the jail (getting caught by one of the two guards will immediately transport the player back to the prison cell)", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "medium",
+      "notes": "NEW CONTENT: released 3 Nov 2026, under 30 days ago, so the page may still change. The infobox kills field is empty ('|kills = '). No damage source was found in the walkthrough."
+    },
+    {
+      "claim_id": "C-RFI-015",
+      "subject": "Recruitment Drive: Sir Leye",
+      "attribute": "quest_fight_max_hit",
+      "value": {"npc": "Sir Leye", "combat": 20, "max_hit": 3, "style": "Crush", "aggressive": true, "hitpoints": 20, "equipment_allowed": "none (empty inventory, nothing worn: no food)", "escape": "yellow portal at the start of each test room returns you to Falador", "instance": "testing grounds (instance status not stated)"},
+      "unit": "hitpoints",
+      "statement": "Sir Leye is level 20, max hit 3 (Crush), aggressive, 20 HP. You fight him with an empty inventory and nothing equipped, so no food. Only the steel warhammer or unarmed attacks can land the final blow. Each test room has a portal at its start that returns you to Falador. The wiki says low-level players may find he heals faster than they can damage him.",
+      "scope": {"account_hitpoints": 48, "account_defence": 1},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Sir Leye", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15386161", "revid": 15386161, "retrieved": "2026-11-20", "quote": "|max hit = 3", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Recruitment Drive", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15395322", "revid": 15395322, "retrieved": "2026-11-20", "quote": "In each room, there is a yellow portal at the beginning of the room (takes you back to [[Falador]]) and a yellow portal at the end of the room, which you may use to travel to the next room after you pass the test.", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Recruitment Drive", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15395322", "revid": 15395322, "retrieved": "2026-11-20", "quote": "In order to be able to be tested, '''you need to have an empty inventory''' and no items equipped.", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "high",
+      "notes": "Infobox (rev 15386161): aggressive Yes, attack style Crush, hitpoints 20. The healing remark is on the Recruitment Drive page, line 52 ('he may heal faster than the damage being done', about skillers). Whether the testing grounds are instanced, and whether teleports work there, is not documented; the portal is the documented exit."
+    },
+    {
+      "claim_id": "C-RFI-016",
+      "subject": "The Depths of Despair: Sand Snake",
+      "attribute": "quest_fight_max_hit",
+      "value": {"npc": "Sand Snake", "combat": 36, "max_hit": 3, "style": "Crush", "aggressive": true, "hitpoints": 60, "instance": true, "safespot": "west wall, back to the centre entrance by the rubble"},
+      "unit": "hitpoints",
+      "statement": "The Sand Snake is level 36, max hit 3 (Crush), aggressive, 60 HP. The Crabclaw Caves section of the quest is marked as an instance. It can be safespotted by hugging the west wall back to the centre entrance by the rubble. The stepping stones and rocks on the way in can be failed; the guide advises food if your Agility and Hitpoints are low.",
+      "scope": {"account_hitpoints": 48},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Sand Snake", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15386615", "revid": 15386615, "retrieved": "2026-11-20", "quote": "|max hit = 3", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "The Depths of Despair", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15365598", "revid": 15365598, "retrieved": "2026-11-20", "quote": "===The Crabclaw Caves===\n{{Instance}}", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "The Depths of Despair", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15365598", "revid": 15365598, "retrieved": "2026-11-20", "quote": "'''Tip:''' The sand snake can be safespotted by going all the way either north or south along the west wall. Once the snake is near or attacks you, continue hugging the west wall and walk back to the centre entrance where the rubble is. Note that the [[max hit]] of the snake is 3.", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "high",
+      "notes": "Teleport restriction in the Crabclaw Caves is not documented. Stepping-stone failure damage is not quantified."
+    },
+    {
+      "claim_id": "C-RFI-017",
+      "subject": "Troll Stronghold: Dad",
+      "attribute": "quest_fight_max_hit",
+      "value": {"npc": "Dad", "combat": 101, "max_hit": 27, "style": "Crush", "aggressive": false, "hitpoints": 120, "special": "knock-back stun", "location": "Troll arena (no instance documented for this fight)", "safespot": "next to the western gate or among the audience, with Ranged, Magic or a halberd"},
+      "unit": "hitpoints",
+      "statement": "Dad (level 101) hits up to 27 with Crush melee and can send you flying, stunning you briefly. He is not aggressive. He can be safespotted next to the western gate of the Troll arena, or from where the audience stands, using Ranged, Magic or a halberd. When he is low he asks to be spared.",
+      "scope": {"account_hitpoints": 48, "account_defence": 1},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Dad", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15352679", "revid": 15352679, "retrieved": "2026-11-20", "quote": "|max hit = 27", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Troll Stronghold", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15395347", "revid": 15395347, "retrieved": "2026-11-20", "quote": "At level 101 and using a tree to hit with [[Melee]], he can hit up to 27 and send players flying, temporarily [[Stun (status)|stunning]] them. Dad can be [[safespotted]] by standing next to the western gate, or standing where the audience is, and attacking with either [[Ranged]] or [[Magic]] (using a [[halberd]] is a good Melee alternative).", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Troll arena", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15133880", "revid": 15133880, "retrieved": "2026-11-20", "quote": "The player fights trolls in the arena is in two quests: Troll Stronghold, against [[Dad]], and [[Troll Romance]], against [[Arrg]].", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "high",
+      "notes": "Classification: UNSAFE_DEATH. Teleport behaviour in the Troll arena is not documented. The arena page mentions an instanced version only for the drink-troll fight, not for Dad."
+    },
+    {
+      "claim_id": "C-RFI-018",
+      "subject": "Troll Stronghold: Troll general",
+      "attribute": "quest_fight_max_hit",
+      "value": {"npc": "Troll general", "combat": 113, "max_hit": 38, "styles": ["Slash", "Crush"], "aggressive": true, "hitpoints": 140, "count": "several in one room", "safespot": "either side of the desk in the southern-most general's room"},
+      "unit": "hitpoints",
+      "statement": "To get the prison key you must kill one of several aggressive Troll generals (level 113, max hit 38, Slash or Crush, 140 HP) inside the Stronghold. Use Protect from Melee, or safespot one with Ranged or Magic: the southern-most general can be safespotted from either side of the desk in his room.",
+      "scope": {"account_hitpoints": 48, "account_defence": 1},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Troll general", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406525", "revid": 15406525, "retrieved": "2026-11-20", "quote": "|max hit = 38", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Troll Stronghold", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15395347", "revid": 15395347, "retrieved": "2026-11-20", "quote": "You will see several '''aggressive''' [[troll generals]] (level 113). They wield huge granite knives and mauls, which can hit up to 38. Kill one to get a [[prison key (Troll Stronghold)|prison key]]. Use [[Protect from Melee]] or [[safespot]] them with [[Ranged]] or [[Magic]]. The southern-most general can be safespotted easily by standing on either side of the desk in his room", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "high",
+      "notes": "Computed: two max hits in a row (38 + 38 = 76) exceed the owner's 48 Hitpoints; one max hit leaves 10. Classification: UNSAFE_DEATH."
+    },
+    {
+      "claim_id": "C-RFI-019",
+      "subject": "Troll Stronghold: Berry and Twig (prison guards)",
+      "attribute": "quest_fight_max_hit",
+      "value": {"npcs": {"Berry": {"combat": 71, "max_hit": 13, "aggressive": true}, "Twig": {"combat": 71, "max_hit": "13 (approx)", "aggressive": false}}, "style": "Crush", "hitpoints": 90, "trigger": "fought if Thieving below 30 or a pickpocket fails", "owner_thieving": 24, "safespot": "inside a vacant cell"},
+      "unit": "hitpoints",
+      "statement": "The prison guards Berry and Twig (level 71, max hit 13 Crush, 90 HP; Berry aggressive) must be fought if you have under 30 Thieving or fail to pickpocket them. The owner has 24 Thieving; the quest page marks the 30 Thieving as boostable. Both can be safespotted from inside a vacant cell.",
+      "scope": {"account_thieving": 24, "account_hitpoints": 48},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Berry", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406537", "revid": 15406537, "retrieved": "2026-11-20", "quote": "|max hit = 13", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Twig", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406536", "revid": 15406536, "retrieved": "2026-11-20", "quote": "|max hit = 13 (approx)", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Troll Stronghold", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15395347", "revid": 15395347, "retrieved": "2026-11-20", "quote": "If you have level 30 [[Thieving]], pickpocket both to get [[Cell key 1]] and [[Cell key 2]]. Beware, if you fail to pickpocket one, they will still attack you! If not, kill them for the keys. You can [[safespot]] both trolls by standing inside one of the vacant cells.", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "medium",
+      "notes": "Twig's max hit is marked approximate on the wiki. Thieving requirement line (rev 15395347 line 33): '*At least {{SCP|Thieving|30|link=yes}} {{Boostable|yes}} to prevent a fight with two level 71 guards'."
+    },
+    {
+      "claim_id": "C-RFI-020",
+      "subject": "Troll Stronghold: mountain trolls (interior)",
+      "attribute": "aggressive_npcs",
+      "value": {"npc": "Mountain troll", "levels": [69, 71], "max_hit": {"69": 11, "71": 13}, "style": "Crush", "aggressive": true},
+      "unit": "hitpoints",
+      "statement": "Level 69 and 71 mountain trolls (max hit 11 and 13, Crush, aggressive) are inside the Stronghold on the way to the generals.",
+      "scope": {"account_combat_level": 45},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Mountain troll", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406524", "revid": 15406524, "retrieved": "2026-11-20", "quote": "|max hit1 = 11\n|max hit2 = 13\n|aggressive = Yes", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Troll Stronghold", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15395347", "revid": 15395347, "retrieved": "2026-11-20", "quote": "Inside are some more level 69 and 71 [[mountain troll]]s.", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "high",
+      "notes": "The quotes are joined infobox rows (lines 21-23 of rev 15406524). By the aggression rule in C-THR-025 (aggressive if player combat <= 2x monster level), they stay aggressive to the owner (combat 45)."
+    },
+    {
+      "claim_id": "C-RFI-021",
+      "subject": "Troll Romance: Arrg",
+      "attribute": "quest_fight_max_hit",
+      "value": {"npc": "Arrg", "combat": 113, "max_hit": {"melee_slash": 38, "ranged": 30}, "aggressive": true, "hits_through_protection_prayers": "occasionally", "location": "Troll arena, reached by a forced teleport; Arrg attacks at once and you auto-retaliate", "despawn": "after a few minutes", "safespots": 2, "instance": "not documented", "teleport_out": "not documented"},
+      "unit": "hitpoints",
+      "statement": "Arrg (level 113) hits up to 38 with melee and up to 30 with a much more accurate Ranged attack. Both can sometimes hit through protection prayers. He teleports you into the Troll arena and attacks at once. He can be safespotted against the north-west mountain wall or the northern gate, but you take hits while getting there. He despawns after a few minutes. If you return after a failed attempt, he follows you but does not attack first.",
+      "scope": {"account_hitpoints": 48, "account_defence": 1},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Arrg", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406527", "revid": 15406527, "retrieved": "2026-11-20", "quote": "|max hit = 38 (melee), 30 (ranged)", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Troll Romance", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375194", "revid": 15375194, "retrieved": "2026-11-20", "quote": "He primarily uses a moderately inaccurate, but very strong melee attack with a max hit of 38. However, he also uses a slightly weaker but '''significantly''' more accurate Ranged attack that hits up to 30 damage. Both attacks can occasionally hit through protection prayers.", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Troll Romance", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375194", "revid": 15375194, "retrieved": "2026-11-20", "quote": "Arrg attacks immediately after the teleport, so be prepared. '''Note that you will automatically retaliate.'''", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Arrg", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406527", "revid": 15406527, "retrieved": "2026-11-20", "quote": "This negates the need to use [[Prayer|prayers]] and simply requires the player to tank the initial hits taken while moving to the safespot, as you start in the centre of the arena.", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "high",
+      "notes": "Computed: melee max + ranged max = 68, above the owner's 48 Hitpoints; two max hits in a row of either style can kill. Despawn and re-entry details are from Troll Romance rev 15375194, lines 154 and 158. Classification: C-RFI-003 (UNSAFE_DEATH)."
+    },
+    {
+      "claim_id": "C-RFI-022",
+      "subject": "Underground Pass: demons Doomion, Othainian, Holthion",
+      "attribute": "quest_fight_max_hit",
+      "value": {"combat": 91, "max_hit": 9, "style": "Slash", "aggressive": true, "hitpoints": 87, "count": 3, "safespot": "narrow pathways (Ranged or Magic)"},
+      "unit": "hitpoints",
+      "statement": "The three Underground Pass demons (Doomion, Othainian, Holthion) are each level 91, max hit 9 (Slash), aggressive, 87 HP. They can be safespotted from the narrow pathways with Ranged or Magic. Once you have a demon's amulet, that demon stops being aggressive.",
+      "scope": {"account_hitpoints": 48},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Doomion", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15306550", "revid": 15306550, "retrieved": "2026-11-20", "quote": "|max hit = 9", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Othainian", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15306540", "revid": 15306540, "retrieved": "2026-11-20", "quote": "|max hit = 9", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Holthion", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15306369", "revid": 15306369, "retrieved": "2026-11-20", "quote": "|max hit = 9", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Underground Pass", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15392817", "revid": 15392817, "retrieved": "2026-11-20", "quote": "|kills = * 3 demons [[Doomion]], [[Othainian]], and [[Holthion]] ''(level 91)'' (easily [[safespot]]table)", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-RFI-023",
+      "subject": "Underground Pass: paladins Sir Carl, Sir Harry, Sir Jerro",
+      "attribute": "quest_fight_max_hit",
+      "value": {"combat": 62, "max_hit": 8, "style": "Slash", "aggressive": false, "hitpoints": 57, "count": 3, "safespot": "attack, then run west where they do not follow"},
+      "unit": "hitpoints",
+      "statement": "All three Underground Pass paladins (Sir Carl, Sir Harry, Sir Jerro) are level 62, max hit 8 (Slash), not aggressive, 57 HP. They can be safespotted by attacking and running west, where they do not follow.",
+      "scope": {"account_hitpoints": 48},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Sir Carl", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15392098", "revid": 15392098, "retrieved": "2026-11-20", "quote": "|max hit = 8", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Sir Harry", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15392099", "revid": 15392099, "retrieved": "2026-11-20", "quote": "|max hit = 8", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Sir Jerro", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15392095", "revid": 15392095, "retrieved": "2026-11-20", "quote": "|max hit = 8", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Underground Pass", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15392817", "revid": 15392817, "retrieved": "2026-11-20", "quote": "They're all level 62 and attack with melee. It is possible to [[safespot]] the paladins by attacking them and running west where they will not follow you.", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "high",
+      "notes": "This closes the quest desk's gap that only Sir Carl had been checked."
+    },
+    {
+      "claim_id": "C-RFI-024",
+      "subject": "Underground Pass: Kalrag and blessed spiders",
+      "attribute": "quest_fight_max_hit",
+      "value": {"Kalrag": {"combat": 89, "max_hit": 9, "style": "Stab", "aggressive": true, "hitpoints": 78, "note": "won't hit with Protect from Melee"}, "Blessed spider": {"combat": 39, "max_hit": 4, "aggressive": true, "pile_up": "several can attack at once although the area is single-combat"}, "post_kill_stun_seconds": 2},
+      "unit": "hitpoints",
+      "statement": "Kalrag is level 89, max hit 9 (Stab), aggressive, and does not hit through Protect from Melee. The corridor to her is full of aggressive blessed spiders (level 39, max hit 4) that can pile onto you even though it is not a multi-combat area. Killing Kalrag stuns you for about two seconds.",
+      "scope": {"account_hitpoints": 48, "account_prayer": 44},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Kalrag", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15199478", "revid": 15199478, "retrieved": "2026-11-20", "quote": "|max hit = 9", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Blessed spider", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15199730", "revid": 15199730, "retrieved": "2026-11-20", "quote": "|max hit = 4", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Underground Pass", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15392817", "revid": 15392817, "retrieved": "2026-11-20", "quote": "'''The spiders nearby will attack you and can pile up on you despite not being a [[multi-combat area]]. They will interrupt the fight with Kalrag if they are attacking you. Once you kill Kalrag, you will be [[Stun (status)|stunned]] for about two second", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Underground Pass", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15392817", "revid": 15392817, "retrieved": "2026-11-20", "quote": "* [[Kalrag]] ''(level 89)'' ([[safespot]]table) (won't hit with [[Protect from Melee]])", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-RFI-025",
+      "subject": "Underground Pass: Disciple of Iban and Soulless",
+      "attribute": "quest_fight_max_hit",
+      "value": {"Disciple of Iban": {"combat": 13, "max_hit": 2, "aggressive": "no, unless spoken to without Zamorak robes"}, "Soulless": {"combat": 18, "max_hit": 2, "aggressive": true}},
+      "unit": "hitpoints",
+      "statement": "You must kill a Disciple of Iban (level 13, max hit 2) for Zamorak robes. If you fall from the Iban's Lair bridges you land among aggressive Soulless (level 18, max hit 2).",
+      "scope": {},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Disciple of Iban", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15398004", "revid": 15398004, "retrieved": "2026-11-20", "quote": "|max hit = 2", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Soulless", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397997", "revid": 15397997, "retrieved": "2026-11-20", "quote": "|max hit = 2", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-RFI-026",
+      "subject": "Underground Pass: traps and environment",
+      "attribute": "failure_damage",
+      "value": {"grid_pit": 15, "wall_trap_disarm_fail": "5-14", "wall_trap_run_through": "percentage of current HP (as low as 3); standing in front repeatedly hits very fast and could be fatal", "swinging_log_disarm_fail": "6-13", "iban_lair_bridge_fall": "up to 24 (20% + 5), landing among Soulless", "iban_tomb_claw": 10, "iban_spikes": "about 5-8 each, rapid, not blocked by prayer, stun and send you back to the entrance", "teleport": "instant teleports work to leave the dungeon", "death_penalty_note": "dying during the doll step means running the whole dungeon again"},
+      "unit": "hitpoints",
+      "statement": "Underground Pass damage outside fights: the grid-puzzle pits deal a fixed 15; wall traps deal 5-14 on a failed disarm; swinging logs deal 6-13; a fall from an Iban's Lair bridge deals up to 24 (20% + 5) and lands you among Soulless; Iban's tomb claw deals 10. Iban's red spikes hit about 5-8 each, rapidly, cannot be prayed against, stun you and return you to the entrance. Standing in front of an armed wall trap 'will repeatedly hit very fast and could be fatal'. The quest lists any instant teleport as a way to leave the dungeon.",
+      "scope": {"account_hitpoints": 48},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Underground Pass", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15392817", "revid": 15392817, "retrieved": "2026-11-20", "quote": "The grid puzzle '''always''' does 15 damage upon falling into a pit.", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Underground Pass", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15392817", "revid": 15392817, "retrieved": "2026-11-20", "quote": "#The traps can be disarmed normally, with a chance to fail and be hit for 5 to 14 damage.", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Underground Pass", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15392817", "revid": 15392817, "retrieved": "2026-11-20", "quote": "'''{{Colour|red|Warning:}}''' Do not stand on the tile in front of an armed trap for a prolonged period. It will repeatedly hit very fast and could be fatal.", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Bridge (Iban's Lair)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15401279", "revid": 15401279, "retrieved": "2026-11-20", "quote": "If the player fails to make the jump, they will fall into the large subcavern below and land amidst the [[soulless]], taking up to 24 (20% + 5) [[Hitpoints]] of damage in the process.", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Underground Pass", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15392817", "revid": 15392817, "retrieved": "2026-11-20", "quote": "These spikes rapidly deal around 5 to 8 damage each and can't be blocked with prayers. They also stun you and teleport you back to the entrance, so make sure you run in with plenty of health.", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Underground Pass", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15392817", "revid": 15392817, "retrieved": "2026-11-20", "quote": "* Any instant [[Transportation#Teleportation|teleportation]] method if you need to leave the dungeon", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "high",
+      "notes": "Swinging log 6-13 (rev 15392817 line 161) and tomb claw 10 (line 261) are from the same revision. The bridge figure '20% + 5' gives at most 24 only up to about 95 HP; at the owner's 48 HP it is 14-15 if the 20% applies to max or current HP (not specified; computed: 48 x 0.2 + 5 = 14.6). The page's own wording, 'up to 24', is used as the value. Regicide sends you back through this dungeon (C-RFI-028)."
+    },
+    {
+      "claim_id": "C-RFI-027",
+      "subject": "Regicide: Tyras guard",
+      "attribute": "quest_fight_max_hit",
+      "value": {"npc": "Tyras guard", "combat": 110, "max_hit": 15, "style": "Stab", "aggressive": false, "hitpoints": 110, "attack_range": "melee only (the first guard); the alternative guard at the camp entrance has a 2-square range", "safespot": "the mushrooms (first guard); a rock hollow north-east of the dense forest (alternative guard)", "despawn": "the first guard despawns if the kill takes too long"},
+      "unit": "hitpoints",
+      "statement": "The Tyras guard is level 110, max hit 15 (Stab), 110 HP. He attacks after you climb through the dense forest. He can be safespotted at the mushrooms, or fought with Protect from Melee (his attacks are slow, so prayer flicking works). If the kill takes too long he despawns. The alternative guard by the Tyras camp entrance does not despawn, but has a 2-square attack range and a harder safespot.",
+      "scope": {"account_hitpoints": 48},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Tyras guard", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15388911", "revid": 15388911, "retrieved": "2026-11-20", "quote": "|max hit = 15", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Regicide", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396547", "revid": 15396547, "retrieved": "2026-11-20", "quote": "You can use the mushrooms as a safespot or use [[Protect from Melee]] to make the fight easier ([[Prayer flicking]] is an option as he has a slow attack speed). If you take too long in killing him, he will despawn, and you will have to try to summon him again, or kill the guard by the entrance to the Tyras camp instead.", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Regicide", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396547", "revid": 15396547, "retrieved": "2026-11-20", "quote": "This alternative guard does not despawn, but he does in fact have a 2-square attack range, and his safe spot is more difficult.", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "high",
+      "notes": "Infobox (rev 15388911): aggressive No, attack style Stab, hitpoints 110."
+    },
+    {
+      "claim_id": "C-RFI-028",
+      "subject": "Regicide: Isafdar traps and travel",
+      "attribute": "failure_damage",
+      "value": {"leaf_trap": 15, "tripwire": "10 plus poison starting at 2", "stick_trap": 8, "route": "through the Underground Pass again (C-RFI-026 hazards)", "teleport": "teleporting out of Isafdar is described as safe once the quest items are held"},
+      "unit": "hitpoints",
+      "statement": "Isafdar's traps in Regicide deal fixed damage when failed or ignored: leaf trap 15, tripwire 10 plus poison (starting at 2), stick trap 8. Regicide sends you through the Underground Pass again. The guide says it is safe to teleport out of Isafdar once you have the needed items.",
+      "scope": {"account_hitpoints": 48},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Regicide", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396547", "revid": 15396547, "retrieved": "2026-11-20", "quote": "If you ignore or fail the trap, you will fall through the leaves and lose 15 [[HP]].", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Regicide", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396547", "revid": 15396547, "retrieved": "2026-11-20", "quote": "If you ignore or fail the trap, you will lose 10 [[HP]] and be [[poison]]ed, starting at 2 HP.", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Regicide", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396547", "revid": 15396547, "retrieved": "2026-11-20", "quote": "If you ignore or fail the trap, you will lose 8 [[HP]].", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Regicide", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396547", "revid": 15396547, "retrieved": "2026-11-20", "quote": "After this, it is safe to teleport out of Isafdar.", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "high",
+      "notes": "Quotes are from lines 86, 88 and 90 (leaf, tripwire, sticks) and line 125 of rev 15396547. Isafdar's other monsters were not researched."
+    },
+    {
+      "claim_id": "C-RFI-029",
+      "subject": "Icthlarin's Little Helper: Possessed Priest",
+      "attribute": "quest_fight_max_hit",
+      "value": {"npc": "Possessed Priest", "combat": 91, "max_hit": 6, "styles": ["Magic", "Crush"], "aggressive": true, "hitpoints": 90, "reset": "recovers to full HP if the fight takes too long; leave and re-enter to retry", "teleport_block": "not stated for this fight (it is after the flashbacks)"},
+      "unit": "hitpoints",
+      "statement": "The Possessed Priest is level 91, max hit 6 (Magic and Crush), aggressive, 90 HP. The guide recommends Protect from Magic. If the fight takes too long he recovers, and you must leave and re-enter to face him again at full Hitpoints.",
+      "scope": {"account_hitpoints": 48, "account_prayer": 44},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Possessed Priest", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15199218", "revid": 15199218, "retrieved": "2026-11-20", "quote": "|max hit = 6", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Icthlarin's Little Helper", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15401465", "revid": 15401465, "retrieved": "2026-11-20", "quote": "You will fight a level 91 [[Possessed Priest]]. You can use [[Protect from Magic]] and kill him.", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "high",
+      "notes": "Infobox (rev 15199218): attack style '[[Magic]], [[Crush]]', aggressive Yes, hitpoints 90."
+    },
+    {
+      "claim_id": "C-RFI-030",
+      "subject": "Icthlarin's Little Helper: guardian apparition (second flashback)",
+      "attribute": "teleport_restriction",
+      "value": {"no_teleport": "once a flashback begins, you cannot teleport away until you finish it or die", "guardians": {"Het": {"combat": 81, "max_hit": 9, "style": "Slash"}, "Apmeken": {"combat": 75, "max_hit": 6, "style": "Magic"}, "Scabaras": {"combat": 75, "max_hit": 8, "style": "Slash"}, "Crondis": {"combat": 75, "max_hit": 6, "style": "Magic"}}, "aggressive": true, "which_guardian": "set by the canopic jar you get, which depends on your best combat stat and equipment bonuses at quest start"},
+      "unit": "hitpoints",
+      "statement": "The guardian fight in Icthlarin's Little Helper takes place in a flashback, and you cannot teleport away until you finish the flashback or die. The guardian is one of four apparitions: Het (81, max hit 9, Slash), Apmeken (75, max hit 6, Magic), Scabaras (75, max hit 8, Slash) or Crondis (75, max hit 6, Magic). Examining your canopic jar before the pit jump tells you which one you will face. Klenter's Pyramid also has wall crushers and pit traps (damage not quantified).",
+      "scope": {"account_hitpoints": 48},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Icthlarin's Little Helper", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15401465", "revid": 15401465, "retrieved": "2026-11-20", "quote": "Prior to triggering each flashback, make sure you are prepared as once you begin a flashback, you will be '''unable to teleport away until you either finish the flashback, or die.", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Apparition", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15355488", "revid": 15355488, "retrieved": "2026-11-20", "quote": "|max hit1 = 9\n|max hit2 = 6\n|max hit3 = 8\n|max hit4 = 6", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Icthlarin's Little Helper", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15401465", "revid": 15401465, "retrieved": "2026-11-20", "quote": "Dying during this fight will send you to your [[respawn]] location with the canopic jar in your inventory.", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "high",
+      "notes": "Apparition infobox versions (rev 15355488): version1 Het, version2 Apmeken, version3 Scabaras, version4 Crondis; combat 81/75/75/75; attack style Slash/Magic/Slash/Magic. Classification: UNSAFE_DEATH (not on the T1 safe list). The owner's highest combat stat is Ranged 56 (brief), but how the jar is chosen is probabilistic per the wiki ('most likely'), so the guardian cannot be predicted from stats alone."
+    },
+    {
+      "claim_id": "C-RFI-031",
+      "subject": "The Tourist Trap: Mercenary Captain and desert hazards",
+      "attribute": "quest_fight_max_hit",
+      "value": {"npc": "Mercenary Captain", "combat": 47, "max_hit": 5, "style": "Slash", "aggressive": false, "hitpoints": 80, "forced_combat": "combat starts as soon as the dialogue ends", "safespot": "block him with a nearby mercenary", "desert_heat": "about 10 damage per interval without waterskin charges, every 30-90 seconds", "jail": "you can teleport out of the mine jail", "mine_cart_fail": "1-4"},
+      "unit": "hitpoints",
+      "statement": "The Mercenary Captain is level 47, max hit 5 (Slash), 80 HP. He attacks as soon as the dialogue ends, outside the Desert Mining Camp. He can be safespotted by talking to a mercenary so that it blocks his path; the guide also says Protect from Melee lets you take no damage. In the desert, heat deals about 10 damage every 30-90 seconds once your waterskins are empty. If you are jailed in the mine, you can teleport out.",
+      "scope": {"account_hitpoints": 48},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Mercenary Captain", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15344524", "revid": 15344524, "retrieved": "2026-11-20", "quote": "|max hit = 5", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "The Tourist Trap", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396485", "revid": 15396485, "retrieved": "2026-11-20", "quote": "It is possible to [[safespot]] the captain by waiting to complete the dialogue until a [[mercenary]] is nearby, then talking to the [[mercenary]] to block the captain's way.", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "The Tourist Trap", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396485", "revid": 15396485, "retrieved": "2026-11-20", "quote": "Before starting, note that while in the desert, you will take around 10 damage from [[desert heat]] if not holding a [[waterskin]]. Every 30-90 seconds, you will use a charge from your waterskin, or take damage if you have no charges left.", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "The Tourist Trap", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396485", "revid": 15396485, "retrieved": "2026-11-20", "quote": "If the guards spot you without the robes,  you will be jailed and forced to mine 15 [[Rock (The Tourist Trap)|rocks]] to be freed (alternatively, you may teleport out).", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "high",
+      "notes": "Mine-cart failure damage of 1-4 is from rev 15396485 line 101. The desert-heat page (C-THR-054) gives 1-10 damage at a 24-132 s interval; the quest page's 'around 10' is consistent with that upper bound."
+    },
+    {
+      "claim_id": "C-RFI-032",
+      "subject": "Monkey Madness I (Chapters 1-2): Ape Atoll arrival and jail",
+      "attribute": "quest_fight_max_hit",
+      "value": {"jail_guard_punch": "10-20", "gate_archers": "volley of poisoned arrows near the Ape Atoll gate", "poisonous_wildlife": ["snakes", "scorpions", "jungle spiders"], "temple_cavern_drop": "32.9% of current HP (Agility can negate)", "teleport": "teleporting out is allowed (the guide recommends it)"},
+      "unit": "hitpoints",
+      "statement": "In Monkey Madness I Chapter 2, the Ape Atoll jail guards punch for 10-20 if you stand in their range. Near the gate you are pelted with poisoned arrows, and the route passes poisonous snakes, scorpions and jungle spiders. Dropping into the cavern under the dentures crate deals 32.9% of your current HP, which Agility can negate. The guide repeatedly recommends teleporting out, so teleports work on the Atoll.",
+      "scope": {"account_hitpoints": 48},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Monkey Madness I", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374574", "revid": 15374574, "retrieved": "2026-11-20", "quote": "If you're in their range, they will punch you for 10-20 damage.", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Monkey Madness I", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374574", "revid": 15374574, "retrieved": "2026-11-20", "quote": "If you have the level to use it, activate [[Protect from Missiles]] as you travel north, as a volley of poisoned arrows will start pelting you as you come closer to the Ape Atoll gate.", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Monkey Madness I", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374574", "revid": 15374574, "retrieved": "2026-11-20", "quote": "You will take 32.9% of your current hitpoints as fall damage if you drop down into the cavern when entering, so heal up if necessary before attempting it to avoid dying to the poisonous spiders.", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "medium",
+      "notes": "The jail guards (Trefaji, Aberab) have NPC infoboxes with no combat stats (revs 14767891, 14767890), so the 10-20 figure rests on the quest walkthrough alone. Poisonous wildlife stats are in C-THR-045 and C-THR-046."
+    },
+    {
+      "claim_id": "C-RFI-033",
+      "subject": "Monkey Madness I: ninja monkey for the small ninja monkey greegree (Monkey Archer)",
+      "attribute": "quest_fight_max_hit",
+      "value": {"npc": "Monkey Archer", "combat": 86, "max_hit": 20, "style": "Ranged", "aggressive": "yes, unless holding a monkey greegree", "hitpoints": 50, "bones": "small ninja monkey bones", "alternative_sources": "Maniacal monkeys (small); Duke, Oipuis, Padulah, Uodai, Ouhai (medium)"},
+      "unit": "hitpoints",
+      "statement": "The 'ninja monkey' to kill for the ninja greegree that the Ape Atoll course needs is normally a Monkey Archer: they drop small ninja monkey bones. Monkey Archers are level 86, max hit 20 (Ranged), 50 HP, and aggressive unless you hold a monkey greegree. They do not fire while you are in the tall grass. Maniacal monkeys also drop the small bones, and Duke, Oipuis, Padulah, Uodai and Ouhai drop medium ninja bones.",
+      "scope": {"account_hitpoints": 48, "account_defence": 1},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Small ninja monkey bones", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403796", "revid": 15403796, "retrieved": "2026-11-20", "quote": "'''Small ninja monkey bones''' are a form of monkey bones that can be obtained by killing [[Monkey Archer]]s and [[Maniacal monkey]]s.", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Monkey Archer", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15199637", "revid": 15199637, "retrieved": "2026-11-20", "quote": "|max hit = 20", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Medium ninja monkey bones", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15270879", "revid": 15270879, "retrieved": "2026-11-20", "quote": "'''Medium ninja monkey bones''' are [[bones]] from killing medium-sized ninja monkeys: [[Duke (monkey)|Duke]], [[Oipuis]], [[Padulah]], [[Uodai]], and [[Ouhai]].", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Monkey Madness I", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374574", "revid": 15374574, "retrieved": "2026-11-20", "quote": "When you are in the grass, the [[monkey archer]]s do not fire, but it's still a good idea to activate [[Protect from Missiles]] as a precaution.", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "high",
+      "notes": "Infobox (rev 15199637): combat 86, Ranged, hitpoints 50, aggressive 'Yes (unless the player is holding a [[monkey greegree]])'. Stats of Duke/Oipuis/Padulah/Uodai/Ouhai and Maniacal monkeys were not researched. Making the greegree means another run of the Ape Atoll Dungeon to Zooknock (C-RFI-034). Computed: 20 + 20 = 40 from two archers in one tick leaves 8 of 48 HP."
+    },
+    {
+      "claim_id": "C-RFI-034",
+      "subject": "Monkey Madness I: Ape Atoll Dungeon tunnel (Chapter 2)",
+      "attribute": "aggressive_npcs",
+      "value": {"area": "long, tight multicombat tunnel", "Monkey Zombie": {"level_in_tunnel": 98, "max_hit": 7, "count": 30, "aggressive": true}, "Skeleton (Ape Atoll)": {"combat": 142, "max_hit_infobox": 10, "max_hit_quest_page": 12, "count": 17, "aggressive": true}, "floor_spikes": "7.5% of current HP, rapid", "rock_trap": "20% of current HP, rapid", "falling_rocks": "4% of current HP every 15 s", "minimum_time": "about 3 minutes of running", "trips": "at least 2 (enchanted bar, then greegrees)", "teleport": "teleport out recommended at the end"},
+      "unit": "hitpoints",
+      "statement": "The Ape Atoll Dungeon in Chapter 2 is a long, tight multicombat tunnel with 30 aggressive monkey zombies (level 98, max hit 7) and 17 gorilla skeletons (level 142). The skeleton's max hit is 10 in its infobox but 12 in the quest guide. Floor spikes deal 7.5% of current HP rapidly, the rock trap 20%, and falling rocks 4% every 15 seconds. It takes at least three minutes of running. You must go through at least twice: once for the enchanted bar, once to make greegrees. The guide says to teleport out at the end.",
+      "scope": {"account_hitpoints": 48, "account_prayer": 44},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Monkey Madness I", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374574", "revid": 15374574, "retrieved": "2026-11-20", "quote": "This section involves running past dozens of accurate [[Monkey Zombie|monkey zombies]] and [[Skeleton (Ape Atoll)|gorilla skeletons]] which can hit up to 7 and 12 respectively, all while inside a long and tight multicombat tunnel.", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Skeleton (Ape Atoll)", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15322119", "revid": 15322119, "retrieved": "2026-11-20", "quote": "|max hit = 10", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Monkey Zombie", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15322124", "revid": 15322124, "retrieved": "2026-11-20", "quote": "|max hit1 = 7\n|max hit2 = 7\n|max hit3 = 12", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Monkey Madness I", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374574", "revid": 15374574, "retrieved": "2026-11-20", "quote": "|Every 15 seconds, a pile of rocks will fall from the ceiling, dealing damage equal to 4% of your current health, rounded up.", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Monkey Madness I", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374574", "revid": 15374574, "retrieved": "2026-11-20", "quote": "Even with consistent running, it will take at least three minutes of running to navigate the dungeon.", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "medium",
+      "notes": "CONFLICT: skeleton max hit 10 (infobox) vs 12 (quest walkthrough and threats table). The Risk Officer should use 12 as the conservative value. Monkey Zombie versions: level 82 (max 7), 98 (max 7), 129 (max 12); the quest map labels the tunnel zombies level 98. Counts of 30 and 17 come from the quest page's threats table. Overlaps with C-QST-088 (quest desk); this claim adds the pinned NPC infoboxes."
+    },
+    {
+      "claim_id": "C-RFI-035",
+      "subject": "Monkey Madness I: Temple of Marimbo monkey guards (Chapter 2, m'speak amulet)",
+      "attribute": "quest_fight_max_hit",
+      "value": {"npc": "Monkey Guard", "combat": 167, "max_hit": 14, "style": "Crush", "aggressive": "yes, unless wielding a greegree", "hitpoints": 130, "trap_risk": "bearded guards near the trapdoor can surround and trap you", "escape": "if surrounded, teleport out immediately"},
+      "unit": "hitpoints",
+      "statement": "To make the m'speak amulet you must go through the Temple of Marimbo to the trapdoor, past aggressive Monkey Guards (level 167, max hit 14, Crush, 130 HP). Bearded guards near the trapdoor act as walls and can trap you. The guide says to pray Protect from Melee and, if surrounded, teleport out immediately. Monkey zombies wait below the trapdoor.",
+      "scope": {"account_hitpoints": 48, "account_prayer": 44},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Monkey Guard", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15199592", "revid": 15199592, "retrieved": "2026-11-20", "quote": "|max hit = 14", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Monkey Madness I", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374574", "revid": 15374574, "retrieved": "2026-11-20", "quote": "Most of the guards can simply be run through, but the ones with beards near the trapdoor will act as walls, trapping you if they surround you.", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Monkey Madness I", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374574", "revid": 15374574, "retrieved": "2026-11-20", "quote": "If you're surrounded by guards and can't move, teleport out immediately; if you're trapped near the ladder, go up the stairs and hop worlds.", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "high",
+      "notes": "Infobox (rev 15199592): combat 167, attack style Crush, hitpoints 130, aggressive 'Yes, unless you are wielding a [[Greegree]] of any kind or after completing [[Monkey Madness II]]'. C-THR-044 cites a different page ('Monkey Guard (ninja)', combat 149, max 14). The Jungle Demon (C-THR-047) is Chapter 4 and outside the Ape Atoll course unlock."
+    },
+    {
+      "claim_id": "C-RFI-036",
+      "subject": "Creature of Fenkenstrain: Experiment (level 51)",
+      "attribute": "quest_fight_max_hit",
+      "value": {"npc": "Experiment (level 51)", "combat": 51, "max_hit": 6, "style": "Stab", "aggressive": false, "hitpoints": 40, "location": "Experiment cave (also has level 25 experiments, max hit 1)", "safespot": "an experiment in a crevice to the south-west can be safespotted with Ranged/Magic or flinched with melee", "level_72_monsters": "named in requirements but not identified"},
+      "unit": "hitpoints",
+      "statement": "Creature of Fenkenstrain requires killing a level 51 Experiment (max hit 6, Stab, not aggressive, 40 HP) in the Experiment cave for the cavern key. One experiment in a south-west crevice can be safespotted with Ranged or Magic, or flinched with melee. The quest also says you must 'run past level 72 monsters', but the walkthrough does not name them.",
+      "scope": {"account_hitpoints": 48},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Experiment", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406502", "revid": 15406502, "retrieved": "2026-11-20", "quote": "|max hit1 = 6\n|max hit2 = 1\n|max hit3 = 1\n|aggressive = No", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Creature of Fenkenstrain", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15385731", "revid": 15385731, "retrieved": "2026-11-20", "quote": "Kill a level 51 wolf-woman [[Experiment]] to get a [[cavern key]]. An experiment in a crevice to the south-west may be [[safespotted]] with ranged or magic, or [[flinched]] with melee by attacking from the crevice entrance.", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Creature of Fenkenstrain", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15385731", "revid": 15385731, "retrieved": "2026-11-20", "quote": "* Able to defeat a level 51 monster and run past level 72 monsters", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "medium",
+      "notes": "The level 72 monsters remain unidentified, which partly closes the gap from the first sweep: the level 51 NPC is now identified, the level 72 ones are not. Teleport restrictions in the Experiment cave are not documented."
+    },
+    {
+      "claim_id": "C-RFI-037",
+      "subject": "Death on the Isle: mandatory fights",
+      "attribute": "hw_death_classification",
+      "value": "NO_DEATH_POSSIBLE_PER_WIKI (fights scripted to stop); any death that did occur would be UNSAFE_DEATH",
+      "unit": null,
+      "statement": "Death on the Isle's two required fights are done with no equipment, and the wiki says you cannot die to them. Adala (level 49) stops when either of you is close to death, and Naiatli is attacked with a prop sword. Hardcore Worlds has no safe exception for this quest, so any death that did happen would count.",
+      "scope": {"world_type": "hardcore_worlds", "death_ruleset": "HCGIM"},
+      "released": null,
+      "sources": [
+        {"tier": "T2", "title": "Death on the Isle", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375163", "revid": 15375163, "retrieved": "2026-11-20", "quote": "|kills = Two low-level enemies must be fought with no equipment, but you can’t die to them", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T2", "title": "Death on the Isle", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375163", "revid": 15375163, "retrieved": "2026-11-20", "quote": "She is level 49, and has no special mechanics to attack with. Once either of you are close to death, she will stop and claim that she's too weak to kill Livius or you depending on how the fight went.", "fetched_by": "threat-analyst via tools/wiki.py"},
+        {"tier": "T1", "title": "Update:Hardcore Worlds Are Coming On November 4th", "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410", "revid": 15379410, "retrieved": "2026-11-20", "published": null, "quote": "This ruleset has very few exceptions, which means you should go in with the expectation that 99% of deaths will land you right back in Death's office ready to make a difficult choice.", "fetched_by": "threat-analyst via tools/wiki.py"}
+      ],
+      "confidence": "medium",
+      "notes": "Same finding as C-THR-087, re-pinned to the same revision. No max hit is published for Adala or Naiatli as fought in the quest (not researched). Not a T1 safe exception: if a death is possible through an unusual route (e.g. poison carried in), it counts."
+    }
+  ],
+  "gaps": [
+    "Whether normal teleports work inside the Koschei arena, the Troll arena (Dad, Arrg), the Recruitment Drive testing grounds or the Crabclaw Caves instance is not documented on the pages read. Only the Recruitment Drive portal, the ring of life (Koschei), Underground Pass, Isafdar after the items, the Tourist Trap jail and Ape Atoll are documented as escapable by teleport.",
+    "Whether the Arrg fight is instanced is not stated. The Troll arena page mentions an instance only for the drink-troll fight.",
+    "Creature of Fenkenstrain's 'level 72 monsters' to run past are not named in the quest walkthrough.",
+    "Skeleton (Ape Atoll) max hit conflicts: 10 (infobox) vs 12 (MM1 quest guide). Unresolved.",
+    "Twig's max hit is marked '(approx)' on the wiki.",
+    "No T1 source covers the extra safe items on the wiki's Hardcore Worlds page (boat capsizing, Emir's Arena, Pete Kayer's Challenges, Galvek/Glough replays). They stay UNSAFE by policy.",
+    "Damage from Klenter's Pyramid wall crushers (Icthlarin's Little Helper), from the stepping stones in the Crabclaw Caves, and from Isafdar monsters was not quantified.",
+    "Stats of the medium ninja monkeys (Duke, Oipuis, Padulah, Uodai, Ouhai) and of Maniacal monkeys were not researched; Monkey Archer is assumed to be the practical ninja-bone source.",
+    "Adala and Naiatli (Death on the Isle) max hits were not researched; the wiki says the fights cannot kill.",
+    "No independent T3 second source was gathered for any max hit. All NPC numbers are wiki infobox values plus the quest walkthroughs on the same wiki.",
+    "Disconnect behaviour in these quest fights was not researched beyond the general 60-second in-combat rule (C-THR-021)."
+  ],
+  "leads_not_used": [
+    {"lead": "docs/07-hardcore-worlds-baseline.md: reported unsafe/safe lists", "status": "confirmed against T1 Update pages (revs 15379410, 15397724)"}
+  ],
+  "provenance": {
+    "agent": "threat-analyst",
+    "started_at": "2026-11-20T07:01:30Z",
+    "finished_at": "2026-11-20T07:13:00Z",
+    "dispatch_ref": "dispatch/022-threat-analyst.md",
+    "inputs": [
+      {"path": ".claude/agents/threat-analyst.md", "sha256": "206863923728c7b8a24298b01af0a99a48d567123e31c123352a6e7025530110"},
+      {"path": "dispatch/022-threat-analyst.md", "sha256": "adf6d15866ec832a2c9b8817d50ac0d840b393ff0bced5cd5090655c1e1332c3"},
+      {"path": "brief.json", "sha256": "c27aa6bc9969f981aed9185637565c2792f58b80646cc531afa503e27f969389"},
+      {"path": "research/claims-quests.json", "sha256": "b20b420503e983c7912ce0909fb9c244aaaacc82a568116d295274c6ada03dea"},
+      {"path": "research/claims-threats.json", "sha256": "17bc170de49dc77d224e7bab0bca44ccc1a20649290cc7678af58c35cf60cf6b"},
+      {"path": "research/updates.json", "sha256": "b600273a97297879bd2c38e663ed79bc8c55973cd793a7edf041690f2be988c5"},
+      {"path": "schemas/claims.schema.json", "sha256": "bbbf6e22121f89057e87db49e0bdd800eaf94bc53de1fba7b2413f5c894072a8"},
+      {"path": "docs/06-sourcing-policy.md", "sha256": "f883176c3b9c0f10ad8c06027eebb8436f1989068c72fffdc9df51878c618bf8"},
+      {"path": "docs/07-hardcore-worlds-baseline.md", "sha256": "8108c4460dbecdbdac501880220d2ad6ab93ed6ed611a99bb9532debb5e72c01"}
+    ],
+    "actions": [
+      {"kind": "read", "detail": "Read the charter and recorded its sha256", "target": ".claude/agents/threat-analyst.md"},
+      {"kind": "verify", "detail": "python3 tools/ledger.py verify agility-1-99-20261119", "outcome": "OK: ledger chain and all seals intact"},
+      {"kind": "read", "detail": "Hashed and read the sealed inputs (brief.json, claims-quests.json, claims-threats.json, updates.json) and dispatch 022", "outcome": "hashes match the dispatch's sealed prefixes"},
+      {"kind": "read", "detail": "Read schemas/claims.schema.json, docs/06-sourcing-policy.md, docs/07-hardcore-worlds-baseline.md and tools/validate.py research checks"},
+      {"kind": "fetch", "detail": "wiki.py page 'Update:Hardcore Worlds Are Coming On November 4th'", "target": "revid 15379410", "outcome": "full UNSAFE list and 7-item safe list"},
+      {"kind": "fetch", "detail": "wiki.py page 'Update:Hardcore Worlds - OUT TODAY'", "target": "revid 15397724", "outcome": "same lists repeated, plus PvM Arena on the unsafe list"},
+      {"kind": "fetch", "detail": "wiki.py page 'Hardcore Worlds'", "target": "revid 15404671"},
+      {"kind": "fetch", "detail": "wiki.py page 'Group Ironman Mode' (HCGIM section)", "target": "revid 15401984"},
+      {"kind": "fetch", "detail": "wiki.py page 'Ironman Mode' (HCIM safe list)", "target": "revid 15389053", "outcome": "Koschei duel safe for HCIM with an HCGIM-not-safe footnote; Arrg and Sir Leye absent"},
+      {"kind": "fetch", "detail": "wiki.py page 'Death'", "target": "revid 15403323", "outcome": "no list content in grep; not cited"},
+      {"kind": "fetch", "detail": "wiki.py page 'Koschei the deathless' --full", "target": "revid 15387641"},
+      {"kind": "fetch", "detail": "wiki.py page 'The Fremennik Trials'", "target": "revid 15396092"},
+      {"kind": "fetch", "detail": "wiki.py page 'Arrg', 'Troll Romance', 'Troll arena'", "target": "revids 15406527, 15375194, 15133880"},
+      {"kind": "fetch", "detail": "wiki.py page 'Troll Stronghold', 'Dad', 'Troll general', 'Berry', 'Twig', 'Mountain troll'", "target": "revids 15395347, 15352679, 15406525, 15406537, 15406536, 15406524"},
+      {"kind": "fetch", "detail": "wiki.py kills lists: The Writing's on the Wall, Recruitment Drive, The Depths of Despair, Underground Pass, Regicide, Icthlarin's Little Helper, The Tourist Trap, Monkey Madness I, Creature of Fenkenstrain, Death on the Isle", "target": "revids 15404622, 15395322, 15365598, 15392817, 15396547, 15401465, 15396485, 15374574, 15385731, 15375163"},
+      {"kind": "fetch", "detail": "wiki.py NPC infoboxes: Sir Leye, Sand Snake, Doomion, Othainian, Holthion, Paladin, Sir Carl, Sir Harry, Sir Jerro, Kalrag, Blessed spider, Soulless, Iban, Disciple of Iban, Tyras guard, Possessed Priest, Apparition, Mercenary Captain, The Draugen, Experiment, Monkey Archer, Monkey Zombie, Skeleton (Ape Atoll), Monkey Guard, Trefaji, Aberab", "target": "revids 15386161, 15386615, 15306550, 15306540, 15306369, 15392082, 15392098, 15392099, 15392095, 15199478, 15199730, 15397997, 15398000, 15398004, 15388911, 15199218, 15355488, 15344524, 15383109, 15406502, 15199637, 15322124, 15322119, 15199592, 14767891, 14767890"},
+      {"kind": "fetch", "detail": "wiki.py page 'Bridge (Iban's Lair)', 'Experiment cave', 'Ninja monkey greegree', 'Small ninja monkey bones', 'Medium ninja monkey bones'", "target": "revids 15401279, 15234162, 15341284, 15403796, 15270879"},
+      {"kind": "compute", "detail": "Koschei form 4: 1 damage per tick x 100 ticks per minute = 100 damage per minute", "outcome": "100"},
+      {"kind": "compute", "detail": "Max-hit sums against 48 HP: Arrg 38+30=68; Troll general 38+38=76; two Monkey Archers 20+20=40; Iban's Lair bridge 48x0.2+5=14.6", "outcome": "recorded in claim notes"},
+      {"kind": "write", "detail": "Wrote research/claims-rfi-01.json (37 claims C-RFI-001..037, desk rfi)", "target": "jobs/agility-1-99-20261119/research/claims-rfi-01.json"},
+      {"kind": "verify", "detail": "python3 tools/validate.py agility-1-99-20261119 research, plus a jsonschema check of this file"}
+    ],
+    "decisions": [
+      {"decision": "Classify Koschei forms 1-3, Arrg and Sir Leye as UNSAFE_DEATH", "reason": "The T1 Hardcore Worlds rules give a closed list of safe exceptions, and only Koschei's 4th phase is on it. The charter defaults to UNSAFE without a T1 safe source. Wiki statements that forms 1-3 are safe refer to regular HCIM.", "alternatives_considered": ["Follow the wiki quest page's 'safe death' wording for forms 1-3 (rejected: HCIM, not HCGIM)"], "refs": ["C-RFI-001", "C-RFI-003", "C-RFI-004"]},
+      {"decision": "Report Koschei's 4th-form max hit as 1 (correct), not an error", "reason": "The infobox, the strategy text and the Fremennik Trials walkthrough all agree on 1 damage per hit at attack speed 1. The danger is the rate (up to 100/min) and the prayer drain, which is now in the claim.", "alternatives_considered": ["Flag the value as anomalous (rejected: three independent passages agree)"], "refs": ["C-RFI-009", "C-RFI-010"]},
+      {"decision": "Use the Monkey Archer as the ninja monkey for the greegree", "reason": "The Small ninja monkey bones page names Monkey Archers and Maniacal monkeys; Monkey Archers are the ones on Ape Atoll during Chapter 2.", "alternatives_considered": ["Medium ninja monkeys (Duke etc.; stats not researched)"], "refs": ["C-RFI-033"]},
+      {"decision": "Record the skeleton max-hit conflict (10 vs 12) instead of choosing one value", "reason": "Two wiki pages disagree; the Risk Officer should apply the conservative 12.", "refs": ["C-RFI-034"]},
+      {"decision": "Note that Barbarian Assault is a Kandarin hard diary task, not an elite Ardougne one", "reason": "The quest desk's own sourced claims C-QST-257 and C-QST-266 say so; the classification is unaffected.", "refs": ["C-RFI-005"]}
+    ],
+    "limitations": [
+      "All game data is from the OSRS Wiki (T2) and wiki copies of Jagex posts (T1). No T3 second source was used.",
+      "Hardcore Worlds launched on 4 Nov 2026 and The Writing's on the Wall on 3 Nov 2026, both under 30 days ago, so the rules and pages are volatile.",
+      "Teleport and instance behaviour is reported only where a page states it; absence of a statement is recorded as 'not documented', not as 'allowed'.",
+      "I give evidence only and do not score danger; ratings belong to the Risk Officer."
+    ]
+  }
+}
