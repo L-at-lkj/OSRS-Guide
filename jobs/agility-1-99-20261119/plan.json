@@ -1,0 +1,2149 @@
+{
+  "target": {
+    "skill": "Agility",
+    "from_level": 57,
+    "to_level": 99
+  },
+  "start_xp": 212733,
+  "routes": [
+    {
+      "route_id": "safest",
+      "label": "Safest: low-danger quests, then rooftops (Falador, Seers', Pollnivneach, Ardougne)",
+      "intent": "Minimise danger first, then time. Only quests with no or trivial combat (The Writing's on the Wall, The Depths of Despair); rooftop courses whose failure damage is small or absent; Pollnivneach through 90 because it cannot fail from 85. No Wilderness, no Werewolf deathslide, no boss-style quest fights, no Defence XP.",
+      "step_ids": [
+        "S01",
+        "S02",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S14"
+      ]
+    },
+    {
+      "route_id": "balanced",
+      "label": "Balanced: full reachable quest block at 57, then Falador, Seers', Pollnivneach, Rellekka, Ardougne",
+      "intent": "Best time inside the owner's danger cap (44). Adds the reachable Agility-XP quests whose fights are safespottable or prayer-blockable (Icthlarin's Little Helper, A Tail of Two Cats, Underground Pass, Regicide) and The Fremennik Trials (2,812.4 quest Defence XP for the zerker, Defence 16; enchanted lyre for Rellekka). Rellekka replaces Pollnivneach at 80-90 for a slightly higher rate.",
+      "step_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S06",
+        "S12",
+        "S08",
+        "S09",
+        "S10",
+        "S13",
+        "S14"
+      ]
+    },
+    {
+      "route_id": "fastest",
+      "label": "Fastest: quest block, then Creature of Fenkenstrain and Werewolf 60-90 (exceeds cap), Ardougne",
+      "intent": "Maximum XP rate for the owner's account today. Uses the Werewolf course from 60 to 90, whose deathslide can deal 30+ damage regardless of Hitpoints at the owner's 48 HP; expected to exceed the danger cap. Not recommended; shown for comparison only.",
+      "step_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S06",
+        "S08",
+        "S22",
+        "S23",
+        "S14"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "step_id": "S01",
+      "kind": "quest",
+      "title": "The Writing's on the Wall (Quest Month, released 3 Nov 2026)",
+      "location": "Starts with Betty at Land's End; visits Port Piscarilius prison",
+      "xp_rewards": [
+        {
+          "skill": "Agility",
+          "xp": {
+            "value": 2500,
+            "fact": "F-2003"
+          }
+        },
+        {
+          "skill": "Thieving",
+          "xp": {
+            "value": 2500,
+            "fact": "F-0032"
+          }
+        },
+        {
+          "skill": "Defence",
+          "xp": {
+            "value": 0,
+            "fact": "F-2004"
+          }
+        }
+      ],
+      "requirements": [
+        {
+          "type": "skill",
+          "fact": "F-2005",
+          "skill": "Agility",
+          "level": 22,
+          "boostable": false
+        },
+        {
+          "type": "skill",
+          "fact": "F-2005",
+          "skill": "Thieving",
+          "level": 20,
+          "boostable": false
+        }
+      ],
+      "facts": [
+        "F-0032",
+        "F-0033",
+        "F-0034",
+        "F-2003",
+        "F-2004",
+        "F-2005",
+        "F-2006",
+        "F-2007",
+        "F-3086",
+        "F-5014"
+      ],
+      "rationale": "Fixed 2,500 Agility XP with no required kills (the ambush is a cutscene, F-3086/F-5014) and no Defence XP, so it is safe for the Defence-50 cap. Done first, at 57, because fixed quest XP replaces the slowest training of the whole route (Falador, 57-60). Its 2,500 Thieving XP also lifts Thieving 24 to at least 26 (tools/xp.py), which meets Creature of Fenkenstrain's Thieving 25 without a boost (used on the fastest route). New content (17 days old at verification): re-check the walkthrough before release; the prison cell is teleport-blocked (F-5014).",
+      "why_not_faster": "Training straight through would avoid the quest's travel and walking time, but this quest has no documented damage source and its XP lands where the route's XP rate is lowest; its only danger signal is that it is under 30 days old.",
+      "update_refs": [
+        "U-030"
+      ]
+    },
+    {
+      "step_id": "S02",
+      "kind": "quest",
+      "title": "The Depths of Despair",
+      "location": "Great Kourend (Crabclaw Caves section is instanced)",
+      "xp_rewards": [
+        {
+          "skill": "Agility",
+          "xp": {
+            "value": 1500,
+            "fact": "F-2017"
+          }
+        },
+        {
+          "skill": "Defence",
+          "xp": {
+            "value": 0,
+            "fact": "F-2018"
+          }
+        }
+      ],
+      "requirements": [
+        {
+          "type": "skill",
+          "fact": "F-2019",
+          "skill": "Agility",
+          "level": 18,
+          "boostable": false
+        },
+        {
+          "type": "quest",
+          "fact": "F-2019",
+          "name": "Client of Kourend (complete)"
+        }
+      ],
+      "facts": [
+        "F-2017",
+        "F-2018",
+        "F-2019",
+        "F-2021",
+        "F-3097",
+        "F-5016",
+        "F-5384"
+      ],
+      "rationale": "Fixed 1,500 Agility XP, no Defence XP, prerequisites already complete. The only required kill is a Sand Snake (level 36, max hit 3, safespottable along the west wall, F-5016), trivial against 48 Hitpoints. Placed at 57 with the other low-danger quest because fixed XP is worth most where training is slowest. Bring a little food: the Crabclaw stepping stones and rocks can be failed and their damage is undocumented (F-5384).",
+      "why_not_faster": "Skipping it saves the quest's travel time, but the 1,500 XP comes from a fight with a max hit of 3, so it adds almost no danger to the safest route."
+    },
+    {
+      "step_id": "S03",
+      "kind": "quest",
+      "title": "Icthlarin's Little Helper",
+      "location": "Sophanem and Klenter's Pyramid (Kharidian Desert)",
+      "xp_rewards": [
+        {
+          "skill": "Agility",
+          "xp": {
+            "value": 4000,
+            "fact": "F-2060"
+          }
+        },
+        {
+          "skill": "Defence",
+          "xp": {
+            "value": 0,
+            "fact": "F-2061"
+          }
+        }
+      ],
+      "requirements": [
+        {
+          "type": "quest",
+          "fact": "F-2062",
+          "name": "Gertrude's Cat (complete)"
+        },
+        {
+          "type": "item",
+          "fact": "F-2062",
+          "name": "A cat or kitten from Gertrude's Cat"
+        }
+      ],
+      "facts": [
+        "F-2060",
+        "F-2061",
+        "F-2062",
+        "F-2064",
+        "F-2065",
+        "F-2066",
+        "F-5029",
+        "F-5030"
+      ],
+      "rationale": "Fixed 4,000 Agility XP and no Defence XP (F-2061 also lists Thieving 4,500 and Woodcutting 4,000, not carried as numbers here because no fact holds them as a value). Fights: the Possessed Priest (max hit 6, Protect from Magic stops his damage, F-5029) and one apparition (max hit 6-9; protection prayers protect fully). Placed in the 57 quest block because it is the prerequisite for A Tail of Two Cats (S04), whose two lamps are the larger reward. Danger to note: once a flashback starts you cannot teleport until it ends (F-2064/F-5030); logging out is the exit. Dying also loses the cat.",
+      "update_refs": []
+    },
+    {
+      "step_id": "S04",
+      "kind": "quest",
+      "title": "A Tail of Two Cats (both lamps into Agility)",
+      "location": "Burthorpe / Sophanem and others",
+      "xp_rewards": [
+        {
+          "skill": "Defence",
+          "xp": {
+            "value": 0,
+            "fact": "F-2068"
+          }
+        }
+      ],
+      "lamp_rewards": [
+        {
+          "count": 2,
+          "xp": {
+            "value": 2500,
+            "fact": "F-2067"
+          },
+          "skill_choices": [
+            "any skill at level 30+"
+          ],
+          "chosen_skill": "Agility"
+        }
+      ],
+      "requirements": [
+        {
+          "type": "quest",
+          "fact": "F-2069",
+          "name": "Icthlarin's Little Helper"
+        }
+      ],
+      "facts": [
+        "F-2067",
+        "F-2068",
+        "F-2069",
+        "F-2071"
+      ],
+      "rationale": "Two 2,500 XP lamps for any skill at 30+, both spent on Agility (5,000 XP); never Defence (the build forbids it, and the owner's Defence 1 is below 30 anyway). No required kills (F-2071). Done straight after Icthlarin's Little Helper while the cat and desert travel are fresh. Items: 5 death runes, a chocolate cake (buy it to avoid the Cooking 50 route) and a cat (F-2069)."
+    },
+    {
+      "step_id": "S05",
+      "kind": "quest",
+      "title": "Underground Pass",
+      "location": "West Ardougne to the Underground Pass (whole quest instanced)",
+      "xp_rewards": [
+        {
+          "skill": "Agility",
+          "xp": {
+            "value": 3000,
+            "fact": "F-2044"
+          }
+        },
+        {
+          "skill": "Defence",
+          "xp": {
+            "value": 0,
+            "fact": "F-2045"
+          }
+        }
+      ],
+      "requirements": [
+        {
+          "type": "skill",
+          "fact": "F-2046",
+          "skill": "Ranged",
+          "level": 25,
+          "boostable": true
+        },
+        {
+          "type": "quest",
+          "fact": "F-2046",
+          "name": "Biohazard and Plague City (complete)"
+        },
+        {
+          "type": "item",
+          "fact": "F-2046",
+          "name": "A bow and 1-5 non-poisoned metal-tipped arrows (no crossbows)"
+        }
+      ],
+      "facts": [
+        "F-2044",
+        "F-2045",
+        "F-2046",
+        "F-2048",
+        "F-2049",
+        "F-2050",
+        "F-2051",
+        "F-2052",
+        "F-5022",
+        "F-5023",
+        "F-5024",
+        "F-5025",
+        "F-5026",
+        "F-5379",
+        "F-5380"
+      ],
+      "rationale": "Fixed 3,000 Agility XP and no Defence XP (F-2045 also lists 3,000 Attack, not carried as a number). Its real value is the gate to Regicide (S06, 13,750 Agility XP). All required fights are safespottable from Ranged (owner Ranged 56): demons max hit 9, paladins 8, Kalrag 9 and blocked by Protect from Melee. The hazards are traps (up to 24 on a failed bridge jump, F-5026/F-5379) and blessed spiders that pile on after Kalrag dies (F-5024); plan full HP before bridges and Kalrag. Placed in the 57 block so Regicide's large fixed XP lands before the slow 57-60 training."
+    },
+    {
+      "step_id": "S06",
+      "kind": "quest",
+      "title": "Regicide",
+      "location": "Through the Underground Pass to Isafdar and Tirannwn",
+      "xp_rewards": [
+        {
+          "skill": "Agility",
+          "xp": {
+            "value": 13750,
+            "fact": "F-2053"
+          }
+        },
+        {
+          "skill": "Defence",
+          "xp": {
+            "value": 0,
+            "fact": "F-2054"
+          }
+        }
+      ],
+      "requirements": [
+        {
+          "type": "skill",
+          "fact": "F-2055",
+          "skill": "Agility",
+          "level": 56,
+          "boostable": true
+        },
+        {
+          "type": "skill",
+          "fact": "F-2055",
+          "skill": "Crafting",
+          "level": 10,
+          "boostable": false
+        },
+        {
+          "type": "quest",
+          "fact": "F-2056",
+          "name": "Underground Pass"
+        }
+      ],
+      "facts": [
+        "F-2053",
+        "F-2054",
+        "F-2055",
+        "F-2056",
+        "F-2058",
+        "F-2059",
+        "F-3090",
+        "F-5027",
+        "F-5028"
+      ],
+      "rationale": "The largest Agility reward the owner can reach today: fixed 13,750 XP, no Defence XP. Agility 56 is met (57). The required Tyras guard (level 110, max hit 15) is safespottable at the mushrooms or fought with Protect from Melee (F-5027); Isafdar traps hit 8-15 (F-5028). It sends you through the Underground Pass again, with no bank past it (F-5380). It also unlocks Tirannwn (F-2059), the first link of the long Song of the Elves / Prifddinas chain (not reachable now: Song of the Elves needs 70 in eight skills, F-2109). Placed right after Underground Pass at 57, where its XP replaces the slowest training.",
+      "update_refs": []
+    },
+    {
+      "step_id": "S07",
+      "kind": "train",
+      "title": "Canifis Rooftop Course, 57 to 60",
+      "method": "Canifis rooftop laps",
+      "location": "Canifis, tall tree north of the bank",
+      "min_level": 40,
+      "until_level": 60,
+      "xp_per_action": {
+        "value": 240,
+        "fact": "F-1003"
+      },
+      "xp_per_hour": {
+        "value": 14000,
+        "fact": "F-1004"
+      },
+      "requirements": [
+        {
+          "type": "skill",
+          "fact": "F-1001",
+          "skill": "Agility",
+          "level": 40
+        },
+        {
+          "type": "quest",
+          "fact": "F-1002",
+          "name": "Priest in Peril (complete)"
+        }
+      ],
+      "facts": [
+        "F-1001",
+        "F-1002",
+        "F-1003",
+        "F-1004",
+        "F-1005",
+        "F-1006",
+        "F-1007",
+        "F-3071",
+        "F-4019",
+        "F-4024",
+        "F-4073",
+        "F-4092",
+        "F-4093"
+      ],
+      "rationale": "Alternative first course (DP01 option B). One failable gap until 64 (damage undocumented, F-3071); the best mark rate of the low courses (16-18/h, never penalised, F-4024) for an early Graceful start; free Ectophial teleport nearby (F-4093). About half Falador's XP rate, so it is not on any route."
+    },
+    {
+      "step_id": "S08",
+      "kind": "train",
+      "title": "Falador Rooftop Course, 57 to 60",
+      "method": "Falador rooftop laps",
+      "location": "East Falador, wall of the house east of the Mining Guild",
+      "min_level": 50,
+      "until_level": 60,
+      "xp_per_action": {
+        "value": 586,
+        "fact": "F-1009"
+      },
+      "xp_per_hour": {
+        "value": 27200,
+        "fact": "F-1010"
+      },
+      "requirements": [
+        {
+          "type": "skill",
+          "fact": "F-1008",
+          "skill": "Agility",
+          "level": 50
+        }
+      ],
+      "facts": [
+        "F-1008",
+        "F-1009",
+        "F-1010",
+        "F-1011",
+        "F-1012",
+        "F-1013",
+        "F-4072",
+        "F-1014"
+      ],
+      "rationale": "Best open course for 57-60: the next course up (Seers') needs 60. Failure damage is known and small (Hand Holds, 3-8, until 66, F-1011/F-4072) against 48 Hitpoints; city location, no aggressive monsters noted. Rate set at the low end of the fact range (fails still happen below 66).",
+      "why_not_faster": "Seers' can be entered from 55 with a summer-pie boost (F-4052), but boosted laps fail more (caveat on F-4052) and need a pie supply; Wilderness Agility Course (52+) is faster with tickets but is deep-Wilderness PvP on Hardcore Worlds (F-5366, F-1070), so it is never routed."
+    },
+    {
+      "step_id": "S09",
+      "kind": "train",
+      "title": "Seers' Village Rooftop Course, 60 to 70 (no teleport)",
+      "method": "Seers' rooftop laps, run back from the church",
+      "location": "Seers' Village, wall by the bank",
+      "min_level": 60,
+      "until_level": 70,
+      "xp_per_action": {
+        "value": 570,
+        "fact": "F-1016"
+      },
+      "xp_per_hour": {
+        "value": 40000,
+        "fact": "F-1017"
+      },
+      "requirements": [
+        {
+          "type": "skill",
+          "fact": "F-1015",
+          "skill": "Agility",
+          "level": 60,
+          "boostable": true
+        }
+      ],
+      "facts": [
+        "F-1015",
+        "F-1016",
+        "F-1017",
+        "F-1018",
+        "F-1019",
+        "F-1021",
+        "F-2619",
+        "F-2621",
+        "F-3074",
+        "F-4020",
+        "F-4068",
+        "F-4075",
+        "F-5355",
+        "F-5347",
+        "F-4076",
+        "F-4077",
+        "F-4025"
+      ],
+      "rationale": "Standard 60-70 course: bank at the start (F-4075), two failable obstacles until 79 with undocumented damage (F-3074), Rapid Heal and the church altar at the end for HP (F-5355). Planned at the no-teleport rate because the hard Kandarin diary is impossible for this zerker (Piety task needs Defence 70, F-1021/F-2621), so the Seers' bank teleport never applies; Camelot tablets land at Camelot (F-5347). Marks here buy Graceful (a full set is roughly 18.8-23.6 hours of Seers' laps, F-4025).",
+      "why_not_faster": "Werewolf Agility Course (after Creature of Fenkenstrain) gives 50,000+ XP/h but its deathslide can hit over 30 regardless of Hitpoints and can kill a 48-HP character (F-2091/F-3067); Hallowed Sepulchre needs Sins of the Father, which the owner cannot start (F-2100). Both avoided."
+    },
+    {
+      "step_id": "S10",
+      "kind": "train",
+      "title": "Pollnivneach Rooftop Course, 70 to 80",
+      "method": "Pollnivneach rooftop laps (no desert diary)",
+      "location": "Pollnivneach, basket north-west of the bar",
+      "min_level": 70,
+      "until_level": 80,
+      "xp_per_action": {
+        "value": 890,
+        "fact": "F-1027"
+      },
+      "xp_per_hour": {
+        "value": 47000,
+        "fact": "F-1028"
+      },
+      "requirements": [
+        {
+          "type": "skill",
+          "fact": "F-1026",
+          "skill": "Agility",
+          "level": 70,
+          "boostable": true
+        }
+      ],
+      "facts": [
+        "F-1026",
+        "F-1027",
+        "F-1028",
+        "F-1029",
+        "F-1031",
+        "F-1032",
+        "F-3075",
+        "F-3076",
+        "F-3077",
+        "F-4069",
+        "F-4078",
+        "F-4083",
+        "F-4084",
+        "F-5370"
+      ],
+      "rationale": "Fastest open rooftop at 70. Only the market stall can be failed (floor(HP/17+2) = 4 at 48 HP, F-3075) and nothing fails from 85 (F-4069). No desert heat in town (F-3076); town NPCs are not aggressive to combat 45 (jackals only to 42 or below, F-3077). Reach it by Ali Morrisane's carpet from Shantay Pass (F-1032); never walk south of town (aggressive level-63 crocodiles, F-4084). The redirected Pollnivneach tablet needs a Nightmare Zone scroll (F-4079/F-4080), and NMZ is unsafe on Hardcore Worlds, so do not use it.",
+      "why_not_faster": "Werewolf (50,000+ XP/h) is avoided for its potentially lethal deathslide; Dorgesh-Kaan (50,000-63,000) fails even at 99 for about 10 damage and its quest requirements are not in the verified facts; Seers' is slower (40,000)."
+    },
+    {
+      "step_id": "S11",
+      "kind": "train",
+      "title": "Pollnivneach Rooftop Course, 80 to 90",
+      "method": "Pollnivneach rooftop laps (no desert diary)",
+      "location": "Pollnivneach",
+      "min_level": 70,
+      "until_level": 90,
+      "xp_per_action": {
+        "value": 890,
+        "fact": "F-1027"
+      },
+      "xp_per_hour": {
+        "value": 47000,
+        "fact": "F-1028"
+      },
+      "requirements": [
+        {
+          "type": "skill",
+          "fact": "F-1026",
+          "skill": "Agility",
+          "level": 70,
+          "boostable": true
+        }
+      ],
+      "facts": [
+        "F-1026",
+        "F-1027",
+        "F-1028",
+        "F-3075",
+        "F-4069",
+        "F-5370",
+        "F-4018",
+        "F-1014"
+      ],
+      "rationale": "Safest course for 80-90: from 85 no Pollnivneach obstacle can fail (F-4069/F-5370), so the course itself has no damage source for the last five levels before Ardougne. Mark rate falls to 20% at 90 (F-4018), when the route moves on anyway.",
+      "why_not_faster": "Rellekka (80+) is slightly faster (50,000-55,052 XP/h vs 47,000-51,000) but its tightrope fails until 85, it has no bank, and the run there is not fully researched (F-5345); the difference does not justify extra uncertainty on the safest route."
+    },
+    {
+      "step_id": "S12",
+      "kind": "quest",
+      "title": "The Fremennik Trials (quest Defence for the zerker; enchanted lyre for Rellekka)",
+      "location": "Rellekka",
+      "xp_rewards": [
+        {
+          "skill": "Agility",
+          "xp": {
+            "value": 2812.4,
+            "fact": "F-2037"
+          }
+        },
+        {
+          "skill": "Defence",
+          "xp": {
+            "value": 2812.4,
+            "fact": "F-2038"
+          }
+        }
+      ],
+      "requirements": [
+        {
+          "type": "other",
+          "fact": "F-2039",
+          "name": "Lyre: craft it (Fletching 25, Woodcutting 40, Crafting 40) or get the 1/17 drop from the level 48 citizens; the owner uses the drop"
+        },
+        {
+          "type": "other",
+          "fact": "F-2041",
+          "name": "Fight Koschei with no armour, weapons or spells"
+        }
+      ],
+      "facts": [
+        "F-2037",
+        "F-2038",
+        "F-2039",
+        "F-2041",
+        "F-2042",
+        "F-3014",
+        "F-5001",
+        "F-5002",
+        "F-5011",
+        "F-5012",
+        "F-5013",
+        "F-5383",
+        "F-0004",
+        "F-4086"
+      ],
+      "rationale": "2,812.4 Agility XP plus 2,812.4 Defence XP that cannot be declined (F-2038): this is exactly the quest-sourced Defence the owner's zerker plan wants, taking Defence from 1 to 16 (tools/xp.py), far under the 50 cap. No hard skill requirements if the lyre is taken as a drop from the level 48 citizens (max hit 6, non-aggressive, F-5383). Fights: Draugen (max 7) and Koschei (max 3/5/7, then 1); only Koschei's 4th form is a safe death on Hardcore Worlds (F-0004/F-3014), forms 1-3 are run-ending. Placed in the 57 quest block so its Agility XP lands during the slowest training, and so the enchanted lyre (Rellekka teleport, F-4086) is ready when Rellekka opens at 80."
+    },
+    {
+      "step_id": "S13",
+      "kind": "train",
+      "title": "Rellekka Rooftop Course, 80 to 90",
+      "method": "Rellekka rooftop laps (no Fremennik diary)",
+      "location": "Rellekka",
+      "min_level": 80,
+      "until_level": 90,
+      "xp_per_action": {
+        "value": 780,
+        "fact": "F-1034"
+      },
+      "xp_per_hour": {
+        "value": 50000,
+        "fact": "F-1035"
+      },
+      "requirements": [
+        {
+          "type": "skill",
+          "fact": "F-1033",
+          "skill": "Agility",
+          "level": 80,
+          "boostable": true
+        }
+      ],
+      "facts": [
+        "F-1033",
+        "F-1034",
+        "F-1035",
+        "F-1036",
+        "F-1038",
+        "F-3079",
+        "F-4070",
+        "F-4086",
+        "F-4087",
+        "F-5342",
+        "F-5343",
+        "F-5345"
+      ],
+      "rationale": "Fastest open course for 80-90 on the balanced route. Only the first tightrope fails, until 85, for floor(HP x 0.10) = 4 at 48 HP (F-3079/F-4070). Rellekka has no bank (F-4087); bring what you need. With The Fremennik Trials done (S12) the enchanted lyre teleports here (F-4086); otherwise a Camelot tablet and a long run north (F-5343)."
+    },
+    {
+      "step_id": "S14",
+      "kind": "train",
+      "title": "Ardougne Rooftop Course, 90 to 99",
+      "method": "Ardougne rooftop laps",
+      "location": "East Ardougne marketplace, beams by the gem stall",
+      "min_level": 90,
+      "until_level": 99,
+      "xp_per_action": {
+        "value": 889,
+        "fact": "F-1040"
+      },
+      "xp_per_hour": {
+        "value": 66000,
+        "fact": "F-1041"
+      },
+      "requirements": [
+        {
+          "type": "skill",
+          "fact": "F-1039",
+          "skill": "Agility",
+          "level": 90,
+          "boostable": true
+        }
+      ],
+      "facts": [
+        "F-1039",
+        "F-1040",
+        "F-1041",
+        "F-1042",
+        "F-1043",
+        "F-1044",
+        "F-2627",
+        "F-3080",
+        "F-4026",
+        "F-4057",
+        "F-4071",
+        "F-4089",
+        "F-4090",
+        "F-4091",
+        "F-5357"
+      ],
+      "rationale": "The best rooftop course and the finish for every route. Gaps 1 and 2 fail until 95 (damage undocumented, F-3080); church altar for Rapid Heal and market food nearby (F-5357). Marks stack on one tile (F-4026), so missed marks are not lost. Do not touch the Wilderness lever in East Ardougne (F-4091).",
+      "why_not_faster": "The Hallowed Sepulchre floors 4-5 (73,000-98,500 XP/h) need Sins of the Father, which is out of reach; Werewolf's 80+ ceiling (68,600) barely beats Ardougne and keeps the lethal deathslide."
+    },
+    {
+      "step_id": "S15",
+      "kind": "quest",
+      "title": "Death Plateau (secret path; prerequisite for Troll Stronghold)",
+      "location": "Burthorpe / Death Plateau",
+      "xp_rewards": [
+        {
+          "skill": "Attack",
+          "xp": {
+            "value": 3000,
+            "fact": "F-2026"
+          }
+        },
+        {
+          "skill": "Agility",
+          "xp": {
+            "value": 0,
+            "fact": "F-5301"
+          }
+        },
+        {
+          "skill": "Defence",
+          "xp": {
+            "value": 0,
+            "fact": "F-2026"
+          }
+        }
+      ],
+      "requirements": [
+        {
+          "type": "item",
+          "fact": "F-5300",
+          "name": "60 coins (1,000 for the dice), 10 bread, 10 cooked trout, iron bar, Asgarnian ale"
+        }
+      ],
+      "facts": [
+        "F-2026",
+        "F-5300",
+        "F-5301",
+        "F-5374",
+        "F-5375"
+      ],
+      "rationale": "No Agility XP itself (3,000 Attack only); it exists in this plan only as the gate to Troll Stronghold (DP03). Use the secret path from Tenzing's house: the normal path is multi-combat with thrower trolls whose attacks always hit (F-5374); the plateau holds aggressive named trolls hitting 23-30 (F-5375)."
+    },
+    {
+      "step_id": "S16",
+      "kind": "quest",
+      "title": "Troll Stronghold (2,000 Agility XP since 3 Nov 2026)",
+      "location": "Trollheim",
+      "xp_rewards": [
+        {
+          "skill": "Agility",
+          "xp": {
+            "value": 2000,
+            "fact": "F-2022"
+          }
+        },
+        {
+          "skill": "Defence",
+          "xp": {
+            "value": 0,
+            "fact": "F-2023"
+          }
+        }
+      ],
+      "requirements": [
+        {
+          "type": "skill",
+          "fact": "F-2024",
+          "skill": "Agility",
+          "level": 15,
+          "boostable": true
+        },
+        {
+          "type": "quest",
+          "fact": "F-2025",
+          "name": "Death Plateau"
+        }
+      ],
+      "facts": [
+        "F-0029",
+        "F-2022",
+        "F-2023",
+        "F-2024",
+        "F-2025",
+        "F-2028",
+        "F-2029",
+        "F-2030",
+        "F-3088",
+        "F-5017",
+        "F-5018",
+        "F-5019",
+        "F-5020",
+        "F-5376",
+        "F-5377"
+      ],
+      "rationale": "2,000 Agility XP added in Quest Month (F-0029). Required kills: Dad (101, max 27, safespot at the western gate, F-5017), one of several aggressive Troll generals (113, max 38: two hits exceed 48 HP, F-5018) and, at Thieving 24, Berry and Twig (71, max 13, safespot from a cell, F-5019). The owner's 57 Agility uses the rock shortcuts (41-47) that avoid the thrower trolls entirely (F-5376). Offered only as a decision-point option.",
+      "update_refs": [
+        "U-030"
+      ]
+    },
+    {
+      "step_id": "S17",
+      "kind": "quest",
+      "title": "Troll Romance",
+      "location": "Trollheim / Troll arena",
+      "xp_rewards": [
+        {
+          "skill": "Agility",
+          "xp": {
+            "value": 8000,
+            "fact": "F-2031"
+          }
+        },
+        {
+          "skill": "Defence",
+          "xp": {
+            "value": 0,
+            "fact": "F-2032"
+          }
+        }
+      ],
+      "requirements": [
+        {
+          "type": "skill",
+          "fact": "F-2033",
+          "skill": "Agility",
+          "level": 28,
+          "boostable": true
+        },
+        {
+          "type": "quest",
+          "fact": "F-2034",
+          "name": "Troll Stronghold"
+        }
+      ],
+      "facts": [
+        "F-2031",
+        "F-2032",
+        "F-2033",
+        "F-2034",
+        "F-2036",
+        "F-3089",
+        "F-5003",
+        "F-5021"
+      ],
+      "rationale": "8,000 Agility XP (F-2032 also lists 4,000 Strength, not carried as a number). The required Arrg fight is the problem: level 113, 38 melee / 30 accurate ranged, occasionally through protection prayers, attacks the moment you arrive, and the wiki says it is not a safe death even for Hardcore Ironmen (F-2036/F-5021); on Hardcore Worlds it is run-ending (F-5003). Decision-point option only; not recommended at 48 Hitpoints."
+    },
+    {
+      "step_id": "S18",
+      "kind": "quest",
+      "title": "Druidic Ritual (prerequisite for Recruitment Drive)",
+      "location": "Taverley / Taverley Dungeon",
+      "xp_rewards": [
+        {
+          "skill": "Herblore",
+          "xp": {
+            "value": 250,
+            "fact": "F-2016"
+          }
+        },
+        {
+          "skill": "Defence",
+          "xp": {
+            "value": 0,
+            "fact": "F-2016"
+          }
+        }
+      ],
+      "facts": [
+        "F-2016"
+      ],
+      "rationale": "Gate to Recruitment Drive (DP04 option B). Only an avoidable level 19 suit of armour; the dungeon route passes level 22/25 skeletons (F-2016). Unlocks Herblore."
+    },
+    {
+      "step_id": "S19",
+      "kind": "quest",
+      "title": "Black Knights' Fortress (prerequisite for Recruitment Drive)",
+      "location": "Black Knights' Fortress, north of Falador",
+      "xp_rewards": [
+        {
+          "skill": "Defence",
+          "xp": {
+            "value": 0,
+            "fact": "F-2015"
+          }
+        }
+      ],
+      "lamp_rewards": [
+        {
+          "count": 2,
+          "xp": {
+            "value": 1000,
+            "fact": "F-2015"
+          },
+          "skill_choices": [
+            "Attack",
+            "Strength",
+            "Ranged",
+            "Magic",
+            "Hitpoints",
+            "Prayer"
+          ],
+          "chosen_skill": "Prayer"
+        }
+      ],
+      "requirements": [
+        {
+          "type": "other",
+          "fact": "F-2015",
+          "name": "12 quest points (the owner has 36 quests done)"
+        }
+      ],
+      "facts": [
+        "F-2015"
+      ],
+      "rationale": "Gate to Recruitment Drive. No required kills (evade the level 33 Black Knights). Its two 1,000 XP combat lamps (added 3 Nov 2026) can be put into Defence: never do that on this build. Prayer is entered as a placeholder; the owner may choose any listed non-Defence skill.",
+      "update_refs": [
+        "U-030"
+      ]
+    },
+    {
+      "step_id": "S20",
+      "kind": "quest",
+      "title": "Recruitment Drive",
+      "location": "Falador, Temple Knight testing grounds",
+      "xp_rewards": [
+        {
+          "skill": "Agility",
+          "xp": {
+            "value": 1000.5,
+            "fact": "F-2009"
+          }
+        },
+        {
+          "skill": "Defence",
+          "xp": {
+            "value": 0,
+            "fact": "F-2010"
+          }
+        }
+      ],
+      "requirements": [
+        {
+          "type": "quest",
+          "fact": "F-2012",
+          "name": "Black Knights' Fortress"
+        },
+        {
+          "type": "quest",
+          "fact": "F-2012",
+          "name": "Druidic Ritual"
+        }
+      ],
+      "facts": [
+        "F-2009",
+        "F-2010",
+        "F-2011",
+        "F-2012",
+        "F-2014",
+        "F-3096",
+        "F-5004",
+        "F-5015"
+      ],
+      "rationale": "1,000.5 Agility XP (F-2010 also lists Prayer and Herblore 1,000.5, not carried as numbers). Sir Leye (level 20, max hit 3) is fought with no armour or food and is not a safe death (F-5004/F-5015); the yellow portal at each test room's start is the documented exit. Three quests for 1,000.5 Agility XP, so it is a decision-point option only."
+    },
+    {
+      "step_id": "S21",
+      "kind": "quest",
+      "title": "Death on the Isle (needs Thieving 34)",
+      "location": "Varlamore, Villa Lucens",
+      "xp_rewards": [
+        {
+          "skill": "Agility",
+          "xp": {
+            "value": 7500,
+            "fact": "F-2501"
+          }
+        },
+        {
+          "skill": "Defence",
+          "xp": {
+            "value": 0,
+            "fact": "F-2502"
+          }
+        }
+      ],
+      "requirements": [
+        {
+          "type": "skill",
+          "fact": "F-2503",
+          "skill": "Thieving",
+          "level": 34,
+          "boostable": false
+        },
+        {
+          "type": "skill",
+          "fact": "F-2503",
+          "skill": "Agility",
+          "level": 32,
+          "boostable": false
+        },
+        {
+          "type": "quest",
+          "fact": "F-2503",
+          "name": "Children of the Sun (complete)"
+        }
+      ],
+      "facts": [
+        "F-2501",
+        "F-2502",
+        "F-2503",
+        "F-2505",
+        "F-3087",
+        "F-5037",
+        "F-5361",
+        "F-5362",
+        "F-5363"
+      ],
+      "rationale": "7,500 Agility XP, no Defence (F-2502 also lists Thieving 10,000 and Crafting 5,000). Blocked by Thieving 34 (owner 24; at least 26 after The Writing's on the Wall). The Thieving training is the owner's choice and is not sized here (no verified Thieving-rate facts in this job). Its two fights are scripted to stop before death per the wiki (Adala max hit 4), but you enter with no food or teleports (F-5363) and there is no Hardcore Worlds safe exception (F-5037)."
+    },
+    {
+      "step_id": "S22",
+      "kind": "quest",
+      "title": "Creature of Fenkenstrain (unlocks the Werewolf course)",
+      "location": "Canifis / Fenkenstrain's Castle / Haunted Woods",
+      "xp_rewards": [
+        {
+          "skill": "Agility",
+          "xp": {
+            "value": 0,
+            "fact": "F-2095"
+          }
+        },
+        {
+          "skill": "Defence",
+          "xp": {
+            "value": 0,
+            "fact": "F-2094"
+          }
+        }
+      ],
+      "requirements": [
+        {
+          "type": "skill",
+          "fact": "F-2093",
+          "skill": "Crafting",
+          "level": 20,
+          "boostable": true
+        },
+        {
+          "type": "skill",
+          "fact": "F-2093",
+          "skill": "Thieving",
+          "level": 25,
+          "boostable": true
+        },
+        {
+          "type": "quest",
+          "fact": "F-2093",
+          "name": "Priest in Peril, The Restless Ghost (complete)"
+        }
+      ],
+      "facts": [
+        "F-2092",
+        "F-2093",
+        "F-2094",
+        "F-2095",
+        "F-2097",
+        "F-3070",
+        "F-5036",
+        "F-5351",
+        "F-5378"
+      ],
+      "rationale": "No Agility XP; its reward is the Ring of Charos, the key to the Werewolf course (F-2092). Thieving 25 is met after The Writing's on the Wall (S01 lifts Thieving to at least 26, tools/xp.py), so no Bandit's brew is needed (F-5351). Fights: a level 51 Experiment (max 6, safespottable, F-5036) and running past level 72 feral vampyres (max 8, F-5378). Fastest route only."
+    },
+    {
+      "step_id": "S23",
+      "kind": "train",
+      "title": "Werewolf Agility Course, 60 to 90 (exceeds the danger cap)",
+      "method": "Werewolf laps, stick handed in",
+      "location": "South of Fenkenstrain's Castle, near Canifis",
+      "min_level": 60,
+      "until_level": 90,
+      "xp_per_action": {
+        "value": 730,
+        "fact": "F-1064"
+      },
+      "xp_per_hour": {
+        "value": 55000,
+        "fact": "F-1065"
+      },
+      "requirements": [
+        {
+          "type": "skill",
+          "fact": "F-2090",
+          "skill": "Agility",
+          "level": 60
+        },
+        {
+          "type": "quest",
+          "fact": "F-1063",
+          "name": "Creature of Fenkenstrain"
+        },
+        {
+          "type": "item",
+          "fact": "F-1063",
+          "name": "Ring of Charos (worn)"
+        }
+      ],
+      "facts": [
+        "F-1062",
+        "F-1063",
+        "F-1064",
+        "F-1065",
+        "F-1066",
+        "F-1067",
+        "F-1068",
+        "F-2090",
+        "F-2091",
+        "F-3006",
+        "F-3067",
+        "F-3068",
+        "F-3069",
+        "F-4107",
+        "F-1123"
+      ],
+      "rationale": "Fastest open method from 60 to 90 (50,000-65,000 XP/h at lower levels). It is on the fastest route only and is expected to exceed the owner's cap: the deathslide can hit over 30, does not scale with Hitpoints and can exceed current HP (F-2091/F-3067); it never fails only with 80 Agility and 80 Strength at 2 kg or less (owner Strength 32, F-3068). A death here is official (F-3006). If used at all: full HP before every deathslide, weight as low as possible (F-1123), no head-slot item."
+    },
+    {
+      "step_id": "S24",
+      "kind": "quest",
+      "title": "Sins of the Father (long-term; NOT reachable now)",
+      "location": "Morytania / Darkmeyer",
+      "xp_rewards": [
+        {
+          "skill": "Defence",
+          "xp": {
+            "value": 0,
+            "fact": "F-2103"
+          }
+        }
+      ],
+      "lamp_rewards": [
+        {
+          "count": 6,
+          "xp": {
+            "value": 15000,
+            "fact": "F-2102"
+          },
+          "skill_choices": [
+            "any skill at level 60+"
+          ],
+          "chosen_skill": "Agility"
+        }
+      ],
+      "requirements": [
+        {
+          "type": "skill",
+          "fact": "F-2100",
+          "skill": "Woodcutting",
+          "level": 62,
+          "boostable": false
+        },
+        {
+          "type": "skill",
+          "fact": "F-2100",
+          "skill": "Fletching",
+          "level": 60,
+          "boostable": false
+        },
+        {
+          "type": "skill",
+          "fact": "F-2100",
+          "skill": "Crafting",
+          "level": 56,
+          "boostable": false
+        },
+        {
+          "type": "skill",
+          "fact": "F-2100",
+          "skill": "Agility",
+          "level": 52,
+          "boostable": false
+        },
+        {
+          "type": "skill",
+          "fact": "F-2100",
+          "skill": "Attack",
+          "level": 50,
+          "boostable": false
+        },
+        {
+          "type": "skill",
+          "fact": "F-2100",
+          "skill": "Slayer",
+          "level": 50,
+          "boostable": false
+        },
+        {
+          "type": "skill",
+          "fact": "F-2100",
+          "skill": "Magic",
+          "level": 49,
+          "boostable": false
+        },
+        {
+          "type": "quest",
+          "fact": "F-2101",
+          "name": "A Taste of Hope, Darkness of Hallowvale, In Aid of the Myreque, In Search of the Myreque, Nature Spirit"
+        }
+      ],
+      "facts": [
+        "F-2100",
+        "F-2101",
+        "F-2102",
+        "F-2103",
+        "F-2105",
+        "F-3064",
+        "F-3065",
+        "F-1054",
+        "F-3055",
+        "F-4041",
+        "F-5335"
+      ],
+      "rationale": "The Sepulchre gate. Out of reach today: Woodcutting 40/62, Fletching 9/60, Crafting 21/56, Slayer 20/50, Attack 44/50, Magic 44/49 (F-2100), plus five prerequisite quests whose fixed Defence XP is 4,600 (Defence 20, F-5335; within the cap). Bosses include Damien Leucurte (204, max 20, poison) and Kroy (133, max 15). Its tome (6 x 15,000 XP, skill 60+) can all go to Agility. Listed only so the owner can see the long-term option (DP07)."
+    },
+    {
+      "step_id": "S25",
+      "kind": "train",
+      "title": "Hallowed Sepulchre, Floors 1-4, 77 to 99 (needs Sins of the Father)",
+      "method": "Sepulchre runs to Floor 4",
+      "location": "North-east Darkmeyer",
+      "min_level": 77,
+      "until_level": 99,
+      "xp_per_action": {
+        "value": 5975,
+        "fact": "F-1057"
+      },
+      "xp_per_hour": {
+        "value": 73000,
+        "fact": "F-1058"
+      },
+      "requirements": [
+        {
+          "type": "quest",
+          "fact": "F-1054",
+          "name": "Sins of the Father"
+        },
+        {
+          "type": "skill",
+          "fact": "F-2099",
+          "skill": "Agility",
+          "level": 77,
+          "boostable": true
+        }
+      ],
+      "facts": [
+        "F-0018",
+        "F-0019",
+        "F-0020",
+        "F-0021",
+        "F-1054",
+        "F-1055",
+        "F-1056",
+        "F-1057",
+        "F-1058",
+        "F-1059",
+        "F-1060",
+        "F-1061",
+        "F-2099",
+        "F-3003",
+        "F-3056",
+        "F-3057",
+        "F-3061",
+        "F-3062",
+        "F-4042",
+        "F-4043",
+        "F-4044",
+        "F-4045",
+        "F-4047",
+        "F-4048"
+      ],
+      "rationale": "Highest Agility XP rates in the game for this range (73,000-81,000 XP/h to Floor 4; Floor 4 needs 77 since 12 Aug 2026, boostable, F-0018/F-0020). Not reachable now (S24). Even when reachable: the wiki recommends 70+ Hitpoints (owner 48, F-3056), trap damage is undocumented (F-3057), a death is an ordinary official death (F-3003/F-3061), Darkmeyer has Vyrewatch Sentinels (151, max 17, F-3062), and the Sepulchre gives no marks of grace (F-1061).",
+      "update_refs": [
+        "U-019"
+      ]
+    },
+    {
+      "step_id": "S26",
+      "kind": "train",
+      "title": "Seers' Village Rooftop Course, 70 to 80 (stay on Seers')",
+      "method": "Seers' rooftop laps, run back",
+      "location": "Seers' Village",
+      "min_level": 60,
+      "until_level": 80,
+      "xp_per_action": {
+        "value": 570,
+        "fact": "F-1016"
+      },
+      "xp_per_hour": {
+        "value": 40000,
+        "fact": "F-1017"
+      },
+      "requirements": [
+        {
+          "type": "skill",
+          "fact": "F-1015",
+          "skill": "Agility",
+          "level": 60,
+          "boostable": true
+        }
+      ],
+      "facts": [
+        "F-1015",
+        "F-1016",
+        "F-1017",
+        "F-1018",
+        "F-3074",
+        "F-4068",
+        "F-4075",
+        "F-5355",
+        "F-4018"
+      ],
+      "rationale": "DP06 option B: keep the familiar course with the bank at the start instead of travelling to the desert. Fails stop at 79 (F-1018) and marks drop to 20% at 80 (F-4018). Planned at the same 40,000 XP/h as 60-70 (the fact's range is for 60-70; later laps are faster once fails stop, so this is conservative)."
+    }
+  ],
+  "assumptions": [
+    "Start: Agility 57 with 212,733 XP (Hardcore Worlds hiscores, brief). Hiscores refresh on logout, so in-game XP may be slightly higher; the calculator starts from 212,733.",
+    "XP/h choices inside fact ranges (low end unless noted, because the owner plays semi-attentively and the rates include fails): Canifis 14,000 (F-1004: 14,000-19,700); Falador 27,200 (F-1010: 27,200-35,000); Seers' 40,000 (F-1017 no-teleport 40,000-44,000; its caveat warns that laps while still failing at 60-65 may be slower, 27,000-37,000); Pollnivneach 47,000 (F-1028 no diary 47,000-51,000); Rellekka 50,000 (F-1035 no diary 50,000-55,052); Ardougne 66,000 (F-1041: 66,000-70,184); Werewolf 55,000 (F-1065 lower levels 50,000-65,000; 55,000 is the top of the training page's 50,000-55,000 band, and the 80+ ceiling of 68,600 is not used); Sepulchre to Floor 4: 73,000 (F-1058: 73,000-81,000).",
+    "Seers' 70-80 (S26, decision-point option only) uses the 60-70 figure of 40,000 (F-1017); this is an extrapolation and probably conservative because fails stop at 79.",
+    "Per-lap XP: Pollnivneach 890 and Rellekka 780 are the no-diary values (F-1027, F-1034). The owner has no achievement diaries (brief), so diary variants are never used.",
+    "The hard Kandarin diary is impossible for this zerker (Piety task needs Defence 70, F-1021/F-2621), so Seers' is planned without the Seers' bank teleport; Camelot tablets land at Camelot (F-5347).",
+    "Quest steps have no est_hours because no verified fact gives quest durations, so the calculator counts 0 hours for every quest: route totals understate the real time of quest-heavy routes (balanced, fastest).",
+    "Defence (cap 50, build profile): only The Fremennik Trials adds Defence on any route (2,812.4, F-2038), taking the balanced route to Defence 16 (tools/xp.py); safest and fastest add 0. All other routed quests give 0 fixed Defence XP (cited per step). Every lamp or tome in this plan is assigned to Agility or a non-Defence skill; the Black Knights' Fortress, Graveyard and similar combat lamps must never go to Defence. Monkey Madness I's Daero training (35,000 or 20,000 Defence) is not part of any route (F-2085).",
+    "Thieving: Thieving 24 is at least 7,028 XP; with The Writing's on the Wall's 2,500 Thieving XP (F-0032) it is at least 9,528 XP = level 26 (tools/xp.py), which meets Creature of Fenkenstrain's Thieving 25 without a boost. Death on the Isle's Thieving 34 (20,224 XP) still needs training.",
+    "Secondary quest XP that no fact holds as a numeric value is named in step rationales but not carried as xp_rewards numbers: Icthlarin's Little Helper (Thieving 4,500, Woodcutting 4,000; F-2061), Underground Pass (Attack 3,000; F-2045), Troll Romance (Strength 4,000; F-2032), Recruitment Drive (Prayer and Herblore 1,000.5; F-2010), Death on the Isle (Thieving 10,000, Crafting 5,000; F-2502), Creature of Fenkenstrain (Thieving 1,000; F-2094) and the eight unnamed non-Agility, non-Defence skills of The Fremennik Trials (F-2038). Each of those facts confirms 0 (or, for The Fremennik Trials, the carried 2,812.4) Defence XP, so the Defence-cap tracking is complete.",
+    "The Graveyard (Master quest) and its Agility course are scheduled for 25 Nov 2026 and are NOT released (F-0052, F-1113, F-2611): never a step here. Even on release the owner would need Sailing 65 (30), Agility 65, Woodcutting 56 (40), Fletching 54 (9), Olaf's Quest and The Fremennik Exiles (F-2614). Its projected course rates (55,000-75,000 XP/h, F-1115) are pre-release, and its two 75,000 XP lamps offer Defence, which must never be chosen (F-2615).",
+    "Wilderness PvP is live on Hardcore Worlds (F-5366); the Wilderness Agility Course (levels 50-56, singles-plus, no x-logging) is never routed (F-1070, F-3023, F-3011).",
+    "Random events are an unsafe death on Hardcore Worlds (F-0003); long rooftop sessions should be broken up and HP kept high.",
+    "The Colossal Wyrm course (obstacles never fail, Children of the Sun done) is not routed: after the 12 Aug 2026 rework no verified per-lap XP exists (F-0025; F-1048 is DISPUTED), so the calculator cannot size it. RFI raised.",
+    "Marks of grace and the Graceful outfit (260 marks, F-1121) are not modelled in XP rates; they improve run energy but rooftops need no stamina potions (F-4033).",
+    "Content under 30 days old in this plan: The Writing's on the Wall (3 Nov 2026), Troll Stronghold's new 2,000 XP, Black Knights' Fortress lamps (3 Nov 2026) and the Hardcore Worlds rules (4 Nov 2026). Treat them as volatile."
+  ],
+  "prerequisite_checklist": [
+    {
+      "item": "Cat or kitten (Gertrude's Cat) for Icthlarin's Little Helper and A Tail of Two Cats",
+      "fact": "F-2062"
+    },
+    {
+      "item": "Chocolate cake (buy) and 5 death runes for A Tail of Two Cats",
+      "fact": "F-2069"
+    },
+    {
+      "item": "Bow and 1-5 non-poisoned metal-tipped arrows for Underground Pass",
+      "fact": "F-2046"
+    },
+    {
+      "item": "Food for Falador/Seers' fails and the Crabclaw Caves obstacles; Rapid Heal (Prayer 22) for natural regeneration",
+      "fact": "F-5355"
+    },
+    {
+      "item": "Escape crystal: one free at start, more for 10,000 coins (does not activate while moving)",
+      "fact": "F-3016"
+    },
+    {
+      "item": "Coins for the Shantay Pass carpet to Pollnivneach (from 200 coins per trip)",
+      "fact": "F-1032"
+    }
+  ],
+  "decision_points": [
+    {
+      "dp_id": "DP01",
+      "at_level": 57,
+      "until_level": 60,
+      "question": "Which course for 57 to 60, before Seers' opens at 60?",
+      "options": [
+        {
+          "option_id": "A",
+          "title": "Falador Rooftop Course",
+          "step_ids": [
+            "S08"
+          ],
+          "justification": "About twice Canifis's XP rate (27,200-35,000 vs 14,000-19,700 XP/h) with small, documented failure damage (3-8 on the Hand Holds until 66).",
+          "pros": [
+            "Fastest open course for 57-60",
+            "Fail damage known and small against 48 HP",
+            "City course, no aggressive monsters noted"
+          ],
+          "cons": [
+            "Fails until 66",
+            "Fewer marks than Canifis (9.7-12.1/h)"
+          ],
+          "best_for": "Getting to Seers' quickly",
+          "facts": [
+            "F-1009",
+            "F-1010",
+            "F-1011",
+            "F-1012"
+          ]
+        },
+        {
+          "option_id": "B",
+          "title": "Canifis Rooftop Course",
+          "step_ids": [
+            "S07"
+          ],
+          "justification": "Best marks of grace per hour of the low courses (16-18/h, never penalised), so it starts the Graceful set early, but at roughly half the XP rate.",
+          "pros": [
+            "16-18 marks/h, no over-level penalty",
+            "Bank at the course, free Ectophial teleport nearby",
+            "Only one failable gap, stops failing at 64"
+          ],
+          "cons": [
+            "About half Falador's XP/h",
+            "Failure damage not documented"
+          ],
+          "best_for": "Owners who want Graceful before Seers'",
+          "facts": [
+            "F-1003",
+            "F-1004",
+            "F-1005",
+            "F-3071",
+            "F-4019",
+            "F-4093"
+          ]
+        }
+      ],
+      "recommended": "A",
+      "recommendation_reason": "Only three levels remain before Seers'; Falador gets there far sooner with a known, small damage source. Graceful marks come later at Seers', Pollnivneach and Ardougne."
+    },
+    {
+      "dp_id": "DP02",
+      "at_level": 57,
+      "until_level": 60,
+      "question": "Do the reachable Agility-XP quests now, and which ones?",
+      "conditions": "Every option here gives 0 Defence XP except The Fremennik Trials (2,812.4, Defence 1 to 16), which stays far under the cap of 50.",
+      "options": [
+        {
+          "option_id": "A",
+          "title": "Only the no-combat / trivial-combat quests (The Writing's on the Wall, The Depths of Despair)",
+          "step_ids": [
+            "S01",
+            "S02"
+          ],
+          "justification": "4,000 fixed Agility XP with no documented damage source except a max-hit-3 snake; the Thieving XP also opens Creature of Fenkenstrain later.",
+          "pros": [
+            "Lowest danger",
+            "Quick",
+            "Thieving 26+ afterwards"
+          ],
+          "cons": [
+            "Leaves the bigger Regicide reward (13,750) for later"
+          ],
+          "best_for": "The safest route",
+          "facts": [
+            "F-2003",
+            "F-2007",
+            "F-2017",
+            "F-5016"
+          ]
+        },
+        {
+          "option_id": "B",
+          "title": "Full reachable quest block (A + Icthlarin's Little Helper, A Tail of Two Cats, Underground Pass, Regicide, The Fremennik Trials)",
+          "step_ids": [
+            "S01",
+            "S02",
+            "S03",
+            "S04",
+            "S05",
+            "S06",
+            "S12"
+          ],
+          "justification": "All fixed or lamp Agility XP the owner can reach today, plus quest-sourced Defence for the zerker. Every required fight is safespottable or blocked by protection prayers, and the XP lands where training is slowest (Falador, 57-60).",
+          "pros": [
+            "Adds the 4,000 + 5,000 (lamps) + 3,000 + 13,750 + 2,812.4 Agility XP of the cited rewards; combined effect is in the calculator output",
+            "Quest Defence (Defence 16) from The Fremennik Trials, per the owner's zerker plan",
+            "Regicide unlocks Tirannwn; the lyre teleports to Rellekka at 80"
+          ],
+          "cons": [
+            "Hours of questing that the calculator does not count (no verified quest durations)",
+            "Underground Pass traps up to 24 and spider pile-ups; Icthlarin flashbacks block teleports; Koschei forms 1-3 are not safe deaths"
+          ],
+          "best_for": "The balanced route and the owner's quest-based zerker build",
+          "facts": [
+            "F-2053",
+            "F-2058",
+            "F-5026",
+            "F-5030",
+            "F-2038",
+            "F-3014"
+          ]
+        },
+        {
+          "option_id": "C",
+          "title": "Skip quests for now; rooftops only",
+          "step_ids": [
+            "S08"
+          ],
+          "justification": "Training alone has the simplest danger profile; the quests stay available and can be done at any level because their XP is fixed.",
+          "pros": [
+            "No quest combat at all",
+            "No preparation or item gathering"
+          ],
+          "cons": [
+            "Fixed XP is worth more time now (slowest training) than later",
+            "No quest Defence progress"
+          ],
+          "best_for": "Pure Agility focus",
+          "facts": [
+            "F-1010"
+          ]
+        }
+      ],
+      "recommended": "B",
+      "recommendation_reason": "The owner optimises for balance and builds Defence only through quests; option B gives the most fixed XP where it saves the most training time, with fights that can all be safespotted or prayed against. Choose A if a Risk Officer rating for Underground Pass or Regicide comes back above the owner's cap."
+    },
+    {
+      "dp_id": "DP03",
+      "at_level": 57,
+      "until_level": 70,
+      "question": "Do the Troll quests (Death Plateau, Troll Stronghold, Troll Romance)?",
+      "conditions": "The owner's 57 Agility already uses the Trollheim rock shortcuts (41-47) that avoid the multi-combat thrower trolls.",
+      "options": [
+        {
+          "option_id": "A",
+          "title": "Skip the Troll quests for now; keep training",
+          "step_ids": [
+            "S09"
+          ],
+          "justification": "The required fights hit 27-38 (Dad, Troll generals, Arrg) against 48 Hitpoints for only 2,000 + 8,000 Agility XP of fixed rewards.",
+          "pros": [
+            "Avoids the two most dangerous fights in the quest list",
+            "No time spent on prerequisites"
+          ],
+          "cons": [
+            "Troll Stronghold is a prerequisite for later content (e.g. Monkey Madness II)"
+          ],
+          "best_for": "Hardcore Worlds at 48 Hitpoints",
+          "facts": [
+            "F-5018",
+            "F-5021",
+            "F-1017"
+          ]
+        },
+        {
+          "option_id": "B",
+          "title": "Death Plateau and Troll Stronghold only",
+          "step_ids": [
+            "S15",
+            "S16"
+          ],
+          "justification": "2,000 Agility XP (new in Quest Month); Dad and the southern-most Troll general can be safespotted with Ranged, and Berry/Twig from a cell.",
+          "pros": [
+            "Safespots documented for every required kill",
+            "Thrower trolls avoided by the 57-Agility shortcuts"
+          ],
+          "cons": [
+            "Several aggressive Troll generals (max 38) share the room; two hits exceed 48 HP",
+            "Only 2,000 Agility XP"
+          ],
+          "best_for": "Owners who want the quest points and unlock now",
+          "facts": [
+            "F-0029",
+            "F-5017",
+            "F-5018",
+            "F-5019",
+            "F-5376"
+          ]
+        },
+        {
+          "option_id": "C",
+          "title": "All three, including Troll Romance",
+          "step_ids": [
+            "S15",
+            "S16",
+            "S17"
+          ],
+          "justification": "Adds 8,000 Agility XP from Troll Romance, but its Arrg fight is aggressive on arrival, hits 38/30, occasionally through prayers, and is not a safe death.",
+          "pros": [
+            "Both Troll rewards (2,000 + 8,000 Agility XP)"
+          ],
+          "cons": [
+            "Arrg is the most dangerous required fight in this plan (F-5003)",
+            "Not a safe death even for Hardcore Ironmen"
+          ],
+          "best_for": "Only with much higher Hitpoints and Defence later",
+          "facts": [
+            "F-2031",
+            "F-2036",
+            "F-5003",
+            "F-5021"
+          ]
+        }
+      ],
+      "recommended": "A",
+      "recommendation_reason": "The XP is small next to the hazard; revisit option B when Hitpoints are higher, and leave Troll Romance until the Arrg fight can be rated against a stronger character."
+    },
+    {
+      "dp_id": "DP04",
+      "at_level": 57,
+      "until_level": 99,
+      "question": "Small or gated quest detours: Recruitment Drive chain, or train Thieving to 34 for Death on the Isle?",
+      "options": [
+        {
+          "option_id": "A",
+          "title": "Skip both for now",
+          "step_ids": [
+            "S08"
+          ],
+          "justification": "Recruitment Drive needs two extra quests for 1,000.5 Agility XP; Death on the Isle needs ten more Thieving levels first.",
+          "pros": [
+            "No extra prerequisites",
+            "Avoids Sir Leye's no-food fight"
+          ],
+          "cons": [
+            "Leaves the 1,000.5 and 7,500 Agility XP rewards unclaimed for now"
+          ],
+          "best_for": "Agility focus",
+          "facts": [
+            "F-2012",
+            "F-2503"
+          ]
+        },
+        {
+          "option_id": "B",
+          "title": "Druidic Ritual, Black Knights' Fortress, Recruitment Drive",
+          "step_ids": [
+            "S18",
+            "S19",
+            "S20"
+          ],
+          "justification": "Clears three quests and gives 1,000.5 Agility XP plus two 1,000 XP combat lamps (never into Defence).",
+          "pros": [
+            "Quest points and Herblore unlocked",
+            "Lamps for Attack/Strength/Prayer"
+          ],
+          "cons": [
+            "Sir Leye is fought with no armour or food and is not a safe death",
+            "Very little Agility XP for the time"
+          ],
+          "best_for": "Owners clearing the quest list anyway",
+          "facts": [
+            "F-2009",
+            "F-2015",
+            "F-2016",
+            "F-5004",
+            "F-5015"
+          ]
+        },
+        {
+          "option_id": "C",
+          "title": "Train Thieving to 34, then Death on the Isle",
+          "step_ids": [
+            "S21"
+          ],
+          "justification": "7,500 Agility XP plus Thieving and Crafting XP, and the wiki says its two fights cannot kill; the cost is Thieving training the plan cannot size from verified facts.",
+          "pros": [
+            "Largest of these rewards",
+            "Fights scripted to stop before death (wiki)"
+          ],
+          "cons": [
+            "Thieving 34 needed (owner 24, at least 26 after The Writing's on the Wall)",
+            "Fights with no food or teleports; no Hardcore Worlds safe exception"
+          ],
+          "best_for": "Owners who also want Thieving",
+          "facts": [
+            "F-2501",
+            "F-2503",
+            "F-5037",
+            "F-5361",
+            "F-5363"
+          ]
+        }
+      ],
+      "recommended": "A",
+      "recommendation_reason": "Neither detour is efficient for Agility now. Take option C if Thieving reaches 34 through other play; take B only when clearing quests for their own sake."
+    },
+    {
+      "dp_id": "DP05",
+      "at_level": 60,
+      "until_level": 70,
+      "question": "Which method from 60: Seers' rooftop or Werewolf (after Creature of Fenkenstrain)?",
+      "options": [
+        {
+          "option_id": "A",
+          "title": "Seers' Village Rooftop Course (no teleport)",
+          "step_ids": [
+            "S09"
+          ],
+          "justification": "Standard, bank at the start, small fails until 79, and Rapid Heal at the church; rate is the no-teleport figure because the hard Kandarin diary is impossible for this zerker.",
+          "pros": [
+            "Low danger",
+            "11.8-13.0 marks/h for Graceful"
+          ],
+          "cons": [
+            "40,000-44,000 XP/h at best without the diary teleport, lower while still failing"
+          ],
+          "best_for": "Safest and balanced routes",
+          "facts": [
+            "F-1017",
+            "F-1021",
+            "F-3074",
+            "F-5355"
+          ]
+        },
+        {
+          "option_id": "B",
+          "title": "Creature of Fenkenstrain, then the Werewolf course",
+          "step_ids": [
+            "S22",
+            "S23"
+          ],
+          "justification": "Higher XP/h (50,000-65,000) and Thieving 25 is met after The Writing's on the Wall, but the deathslide can deal 30+ damage regardless of Hitpoints.",
+          "pros": [
+            "Fastest course open to the owner from 60",
+            "10-15 marks/h"
+          ],
+          "cons": [
+            "Deathslide fall can exceed current HP at 48 HP; never-fail needs 80 Strength (owner 32)",
+            "High attention; official death on Hardcore Worlds"
+          ],
+          "best_for": "Not recommended on Hardcore Worlds at this Hitpoints level",
+          "facts": [
+            "F-1065",
+            "F-2091",
+            "F-3067",
+            "F-3068",
+            "F-3006"
+          ]
+        }
+      ],
+      "recommended": "A",
+      "recommendation_reason": "A one-shot-capable obstacle repeated hundreds of times per hour is the wrong trade on a one-life account; Seers' costs some hours but has no lethal failure."
+    },
+    {
+      "dp_id": "DP06",
+      "at_level": 70,
+      "until_level": 80,
+      "question": "At 70: move to Pollnivneach or stay on Seers'?",
+      "conditions": "Dorgesh-Kaan (70) was considered but its quest requirements are not in the verified facts (RFI).",
+      "options": [
+        {
+          "option_id": "A",
+          "title": "Pollnivneach Rooftop Course",
+          "step_ids": [
+            "S10"
+          ],
+          "justification": "Faster (47,000-51,000 XP/h), only the market stall can fail (4 damage at 48 HP) and nothing fails from 85.",
+          "pros": [
+            "Higher XP/h",
+            "Damage quantified and small",
+            "13-14 marks/h"
+          ],
+          "cons": [
+            "Carpet travel from Shantay Pass; never walk south of town (crocodiles)",
+            "Pollnivneach tablets need an NMZ scroll (NMZ is unsafe on Hardcore Worlds)"
+          ],
+          "best_for": "All routes that reach 70 on rooftops",
+          "facts": [
+            "F-1028",
+            "F-3075",
+            "F-4069",
+            "F-1032",
+            "F-4084"
+          ]
+        },
+        {
+          "option_id": "B",
+          "title": "Stay on Seers' to 80",
+          "step_ids": [
+            "S26"
+          ],
+          "justification": "Familiar course with the bank at the start; fails stop at 79.",
+          "pros": [
+            "No travel to the desert",
+            "Bank at the start"
+          ],
+          "cons": [
+            "Slower (planned 40,000 XP/h)",
+            "Marks drop to 20% at 80"
+          ],
+          "best_for": "Owners who dislike desert travel",
+          "facts": [
+            "F-1017",
+            "F-1018",
+            "F-4018"
+          ]
+        }
+      ],
+      "recommended": "A",
+      "recommendation_reason": "Pollnivneach is faster and its only failable obstacle has a known 4-damage hit, so it is at least as safe as Seers'."
+    },
+    {
+      "dp_id": "DP07",
+      "at_level": 77,
+      "until_level": 99,
+      "question": "Work toward the Hallowed Sepulchre (Sins of the Father), or stay on rooftops?",
+      "conditions": "Floor 4 needs 77 and Floor 5 87 since 12 Aug 2026 (boostable). Sins of the Father needs Woodcutting 62, Fletching 60, Crafting 56, Slayer 50, Attack 50 and Magic 49 plus five quests.",
+      "options": [
+        {
+          "option_id": "A",
+          "title": "Stay on rooftops (Pollnivneach / Rellekka, then Ardougne)",
+          "step_ids": [
+            "S10",
+            "S13",
+            "S14"
+          ],
+          "justification": "Reachable now, low failure damage, marks of grace for Graceful.",
+          "pros": [
+            "No new requirements",
+            "Known, small damage"
+          ],
+          "cons": [
+            "Lower XP/h than the Sepulchre (47,000-66,000 vs 73,000+)"
+          ],
+          "best_for": "This account today",
+          "facts": [
+            "F-1028",
+            "F-1035",
+            "F-1041"
+          ]
+        },
+        {
+          "option_id": "B",
+          "title": "Sins of the Father, then Sepulchre runs to Floor 4",
+          "step_ids": [
+            "S24",
+            "S25"
+          ],
+          "justification": "73,000-81,000 XP/h to Floor 4 plus a 6 x 15,000 XP tome, but it needs six skills raised and five quests first, and the wiki recommends 70+ Hitpoints.",
+          "pros": [
+            "Highest XP/h available in the 77-99 range",
+            "Tome adds 90,000 Agility XP"
+          ],
+          "cons": [
+            "Not reachable now (skills and five quests)",
+            "Trap damage undocumented; 70+ HP recommended (owner 48)",
+            "Darkmeyer Vyrewatch; no marks of grace"
+          ],
+          "best_for": "A long-term goal once the account's other skills are much higher",
+          "facts": [
+            "F-2100",
+            "F-2101",
+            "F-1058",
+            "F-3056",
+            "F-3057",
+            "F-3062"
+          ]
+        }
+      ],
+      "recommended": "A",
+      "recommendation_reason": "The Sepulchre is out of reach for this account in the 57-99 window without a large side project, and its danger at 48 HP is not fully documented."
+    },
+    {
+      "dp_id": "DP08",
+      "at_level": 80,
+      "until_level": 90,
+      "question": "At 80: Rellekka or stay on Pollnivneach?",
+      "options": [
+        {
+          "option_id": "A",
+          "title": "Stay on Pollnivneach to 90",
+          "step_ids": [
+            "S11"
+          ],
+          "justification": "Nothing can fail from 85, so the last five levels before Ardougne have no damage source on the course; known travel.",
+          "pros": [
+            "Zero course damage from 85",
+            "No new logistics"
+          ],
+          "cons": [
+            "Slightly slower (47,000-51,000 vs 50,000-55,052 XP/h)",
+            "Marks fall to 20% at 90"
+          ],
+          "best_for": "The safest route",
+          "facts": [
+            "F-4069",
+            "F-5370",
+            "F-1028"
+          ]
+        },
+        {
+          "option_id": "B",
+          "title": "The Fremennik Trials (if not done) and Rellekka",
+          "step_ids": [
+            "S12",
+            "S13"
+          ],
+          "justification": "Higher XP/h and marks; the tightrope fails only until 85 for 4 damage; the quest gives the owner quest-sourced Defence and the lyre teleport.",
+          "pros": [
+            "Faster",
+            "13-15.5 marks/h",
+            "Quest Defence 2,812.4 and the enchanted lyre"
+          ],
+          "cons": [
+            "No bank in Rellekka",
+            "Route from Camelot partly unresearched",
+            "Koschei forms 1-3 are not safe deaths"
+          ],
+          "best_for": "The balanced route",
+          "facts": [
+            "F-1035",
+            "F-3079",
+            "F-4086",
+            "F-4087",
+            "F-2038",
+            "F-5345"
+          ]
+        }
+      ],
+      "recommended": "B",
+      "recommendation_reason": "For the owner's balanced goal Rellekka is the faster course with the same small fail damage, and The Fremennik Trials doubles as quest Defence for the zerker. Choose A for the lowest-danger finish."
+    }
+  ],
+  "provenance": {
+    "agent": "route-strategist",
+    "started_at": "2026-11-20T17:03:00Z",
+    "finished_at": "2026-11-20T17:45:00Z",
+    "dispatch_ref": "dispatch/028-route-strategist.md",
+    "inputs": [
+      {
+        "path": "brief.json",
+        "sha256": "c27aa6bc9969f981aed9185637565c2792f58b80646cc531afa503e27f969389"
+      },
+      {
+        "path": "facts.json",
+        "sha256": "70fcb7eed3ab243ba3a64501f766da075bc69de64e8cdbc9fe39ed53f456fa12"
+      },
+      {
+        "path": "research/updates.json",
+        "sha256": "b600273a97297879bd2c38e663ed79bc8c55973cd793a7edf041690f2be988c5"
+      },
+      {
+        "path": "dispatch/028-route-strategist.md",
+        "sha256": "441677e882cad13be6a8b0b862bbc0f9071128acedf7972eb7d828ed4b822322"
+      },
+      {
+        "path": ".claude/agents/route-strategist.md",
+        "sha256": "c27530fbc7d7306a57641873236061293855d222162603191cbb832002c2a6a1"
+      },
+      {
+        "path": "schemas/plan.schema.json",
+        "sha256": "83e1a59a823f5199657483230a5f39febf3b254350a6290224045b72211b3837"
+      },
+      {
+        "path": "docs/05-danger-model.md",
+        "sha256": "206ab287dd2e6558e3a1633982a1a56df7dbba42239821d9cbb7c85163677d06"
+      }
+    ],
+    "actions": [
+      {
+        "kind": "read",
+        "detail": "Read the route-strategist charter and recorded its sha256 (prefix c27530fbc7d7 matches the dispatch).",
+        "target": ".claude/agents/route-strategist.md",
+        "outcome": "ok"
+      },
+      {
+        "kind": "verify",
+        "detail": "python3 tools/ledger.py verify agility-1-99-20261119",
+        "target": "jobs/agility-1-99-20261119/ledger.jsonl",
+        "outcome": "OK: ledger chain and all seals intact"
+      },
+      {
+        "kind": "read",
+        "detail": "Read brief.json (profile, zerker build: Defence cap 50, quests-only Defence; preferences; acceptance criteria), the plan schema, tools/xp.py simulate logic, the plan gate in tools/validate.py and docs/05-danger-model.md.",
+        "target": "brief.json; schemas/plan.schema.json; tools/xp.py; tools/validate.py; docs/05-danger-model.md",
+        "outcome": "ok"
+      },
+      {
+        "kind": "search",
+        "detail": "Dumped facts.json to a compact id/status/subject/attribute/value table in the scratchpad and filtered it by subject (rooftop courses, Sepulchre, Wyrm, Werewolf, Ape Atoll, Brimhaven, Pyramid, Wilderness, Prifddinas, Dorgesh-Kaan, Shayzien, every Agility-XP quest and its prerequisites, Hardcore Worlds rules, Graveyard, Graceful, consumables). Listed the 15 DISPUTED and 18 REJECTED facts so none is cited.",
+        "target": "facts.json",
+        "outcome": "801 facts reviewed by subject; non-usable facts excluded"
+      },
+      {
+        "kind": "search",
+        "detail": "Searched fact statements for secondary quest XP amounts (Thieving, Attack, Strength, Woodcutting, Prayer, Herblore, Crafting) to see which can be cited with an equal numeric value.",
+        "target": "facts.json",
+        "outcome": "Only The Writing's on the Wall Thieving 2,500 (F-0032) and Death Plateau Attack 3,000 (F-2026, dict) are citable; the rest sit in 0-valued Defence facts"
+      },
+      {
+        "kind": "read",
+        "detail": "Read research/updates.json items and upcoming_30d (Quest Month U-030/U-033/U-035, Summer Sweep Up U-019, Hardcore Worlds U-029/U-032, The Graveyard U-012/U-023/U-037).",
+        "target": "research/updates.json",
+        "outcome": "ok"
+      },
+      {
+        "kind": "compute",
+        "detail": "tools/xp.py: xp 24 = 7,028; xp 25 = 7,842; xp 34 = 20,224; level 9,528 = 26 (Thieving after The Writing's on the Wall); level 212,733 = 57; xp 60 = 273,742; xp 50 = 101,333; xp 51 = 111,945; level 2,812.4 = 16.",
+        "target": "tools/xp.py",
+        "outcome": "Thieving 25 for Creature of Fenkenstrain met after S01; Fremennik Trials Defence 16, under cap"
+      },
+      {
+        "kind": "write",
+        "detail": "Generated plan.json with a scratchpad builder script that also checks every cited fact is VERIFIED/VERIFIED_WITH_CAVEAT and every numeric ref equals its fact's numeric value.",
+        "target": "jobs/agility-1-99-20261119/plan.json",
+        "outcome": "26 steps, 3 routes, 8 decision points"
+      },
+      {
+        "kind": "verify",
+        "detail": "python3 tools/xp.py simulate agility-1-99-20261119 --out calc-draft.json",
+        "target": "jobs/agility-1-99-20261119/calc-draft.json",
+        "outcome": "All three routes reach 99 with no errors: safest 228.2 h, balanced 222.86 h, fastest 209.85 h (quest hours not counted). Defence ends at 1 (safest, fastest) and 16 (balanced, 2,812 XP)."
+      },
+      {
+        "kind": "verify",
+        "detail": "python3 tools/validate.py agility-1-99-20261119 plan",
+        "target": "jobs/agility-1-99-20261119/plan.json",
+        "outcome": "0 FAIL; WARN only for unsealed plan and 11 decision-point-only steps not on any route"
+      },
+      {
+        "kind": "request",
+        "detail": "RFIs raised in the final report: Colossal Wyrm post-rework per-lap XP; Death to the Dorgeshuun requirements; numeric facts for secondary quest XP; quest durations; Thieving training rates/danger for Death on the Isle.",
+        "target": "Director",
+        "outcome": "open"
+      }
+    ],
+    "decisions": [
+      {
+        "decision": "Safest route = The Writing's on the Wall, The Depths of Despair, Falador 57-60, Seers' 60-70, Pollnivneach 70-90, Ardougne 90-99.",
+        "reason": "Only quests with no documented damage source or a max-hit-3 fight; every course has small or no failure damage, and Pollnivneach cannot fail from 85. No Defence XP.",
+        "alternatives_considered": [
+          "Canifis 57-60 (undocumented fail damage, half the rate)",
+          "Rellekka 80-90 (fails until 85, no bank, route partly unresearched)",
+          "No quests at all (WotW raises the DS floor through NEW_CONTENT but has no damage source)"
+        ],
+        "refs": [
+          "F-1011",
+          "F-3075",
+          "F-4069",
+          "F-5370",
+          "F-3086"
+        ]
+      },
+      {
+        "decision": "Balanced route adds Icthlarin's Little Helper, A Tail of Two Cats, Underground Pass, Regicide and The Fremennik Trials at 57, and Rellekka at 80-90.",
+        "reason": "All their required fights are safespottable or prayer-blockable; the fixed XP lands at the slowest training; The Fremennik Trials gives the quest-sourced Defence the owner's zerker plan wants (Defence 16) and the lyre to Rellekka.",
+        "alternatives_considered": [
+          "Troll quests (Arrg and Troll generals hit 30-38 against 48 HP)",
+          "Recruitment Drive chain (1,000.5 XP for three quests, no-food fight)",
+          "Death on the Isle (needs Thieving 34)"
+        ],
+        "refs": [
+          "F-2053",
+          "F-2038",
+          "F-5018",
+          "F-5021"
+        ]
+      },
+      {
+        "decision": "Fastest route uses Creature of Fenkenstrain and Werewolf 60-90 at 55,000 XP/h.",
+        "reason": "The only open method meaningfully faster than Seers'/Pollnivneach/Rellekka; labelled as expected to exceed the cap because the deathslide can exceed current HP.",
+        "alternatives_considered": [
+          "Wilderness Agility Course (PvP live on Hardcore Worlds; never routed)",
+          "Ape Atoll (Monkey Madness I tunnel hazards, not faster)",
+          "Hallowed Sepulchre (Sins of the Father unreachable)",
+          "Colossal Wyrm (no verified per-lap XP)"
+        ],
+        "refs": [
+          "F-1065",
+          "F-2091",
+          "F-5366",
+          "F-2100",
+          "F-0025"
+        ]
+      },
+      {
+        "decision": "Rates set at the low end of each fact range (Werewolf at 55,000 inside 50,000-65,000).",
+        "reason": "Owner is semi-attentive and below the fail-free levels on most courses; Seers' caveat warns real rates while failing are lower.",
+        "alternatives_considered": [
+          "Mid-range values",
+          "Perfect-lap ceilings"
+        ],
+        "refs": [
+          "F-1017",
+          "F-1065"
+        ]
+      },
+      {
+        "decision": "Secondary-skill quest XP without a numeric fact is named in rationales but not carried as xp_rewards.",
+        "reason": "The plan gate requires each ref value to equal its fact's numeric value; those amounts exist only in statements of facts whose value is 0. None of them is Defence, so the cap tracking is complete.",
+        "alternatives_considered": [
+          "Citing the 0-valued Defence facts (would fail the gate)",
+          "Citing the same-quest Agility fact with the same number (semantically wrong for other skills except where the statement names them)"
+        ],
+        "refs": [
+          "F-2061",
+          "F-2045",
+          "F-2032",
+          "F-2010",
+          "F-2502",
+          "F-2094"
+        ]
+      },
+      {
+        "decision": "Hallowed Sepulchre and Sins of the Father appear only as a long-term decision-point option.",
+        "reason": "Sins of the Father needs Woodcutting 62, Fletching 60, Crafting 56, Slayer 50, Attack 50, Magic 49 and five quests; the owner cannot start it.",
+        "alternatives_considered": [
+          "Omitting the Sepulchre entirely"
+        ],
+        "refs": [
+          "F-2100",
+          "F-2101",
+          "F-3056"
+        ]
+      },
+      {
+        "decision": "The Graveyard is never a step; it is listed in assumptions as upcoming (25 Nov 2026).",
+        "reason": "Unreleased content must not be routed (brief), and the owner is far from its requirements.",
+        "alternatives_considered": [],
+        "refs": [
+          "F-0052",
+          "F-1113",
+          "F-2614"
+        ]
+      }
+    ],
+    "limitations": [
+      "No web access by design; every number comes from facts.json. Quest durations are not in the facts, so the calculator counts 0 hours for quest steps and route totals understate real time for quest-heavy routes.",
+      "Danger is not scored here (Risk Officer's job). Route placement assumes Underground Pass, Regicide, Icthlarin's Little Helper and The Fremennik Trials rate within the cap of 44; if not, DP02 option A is the fallback.",
+      "Several fail-damage figures are undocumented (Seers', Canifis, Ardougne, Crabclaw Caves, Sepulchre traps); open logistics RFIs on fail damage and the Rellekka route remain in facts.json.",
+      "Colossal Wyrm and Dorgesh-Kaan could not be routed for lack of verified per-lap XP (Wyrm) and verified quest requirements (Death to the Dorgeshuun).",
+      "The started_at timestamp is approximate (no clock read at session start); finished_at is set at write time."
+    ]
+  }
+}

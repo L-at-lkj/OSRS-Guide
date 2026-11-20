@@ -1,0 +1,1890 @@
+{
+  "generated_by": "tools/xp.py",
+  "plan_sha256": "6cc4bade59d9e2cd02653119a854f5df00e6c6af7d00872222c926173124203f",
+  "skill": "Agility",
+  "routes": {
+    "safest": {
+      "steps": [
+        {
+          "step_id": "S01",
+          "kind": "quest",
+          "start_xp": 212733,
+          "start_level": 57,
+          "actions": 0,
+          "hours": 0,
+          "supplies": [],
+          "secondary_xp": [],
+          "end_xp": 215233,
+          "end_level": 57,
+          "xp_gained": 2500,
+          "cum_hours": 0.0
+        },
+        {
+          "step_id": "S02",
+          "kind": "quest",
+          "start_xp": 215233,
+          "start_level": 57,
+          "actions": 0,
+          "hours": 0,
+          "supplies": [],
+          "secondary_xp": [],
+          "end_xp": 216733,
+          "end_level": 57,
+          "xp_gained": 1500,
+          "cum_hours": 0.0
+        },
+        {
+          "step_id": "S08",
+          "kind": "train",
+          "start_xp": 216733,
+          "start_level": 57,
+          "actions": 98,
+          "hours": 2.096,
+          "supplies": [],
+          "secondary_xp": [],
+          "end_xp": 274161,
+          "end_level": 60,
+          "xp_gained": 57428,
+          "cum_hours": 2.096
+        },
+        {
+          "step_id": "S09",
+          "kind": "train",
+          "start_xp": 274161,
+          "start_level": 60,
+          "actions": 814,
+          "hours": 11.587,
+          "supplies": [],
+          "secondary_xp": [],
+          "end_xp": 738141,
+          "end_level": 70,
+          "xp_gained": 463980,
+          "cum_hours": 13.683
+        },
+        {
+          "step_id": "S10",
+          "kind": "train",
+          "start_xp": 738141,
+          "start_level": 70,
+          "actions": 1403,
+          "hours": 26.552,
+          "supplies": [],
+          "secondary_xp": [],
+          "end_xp": 1986811,
+          "end_level": 80,
+          "xp_gained": 1248670,
+          "cum_hours": 40.234
+        },
+        {
+          "step_id": "S11",
+          "kind": "train",
+          "start_xp": 1986811,
+          "start_level": 80,
+          "actions": 3775,
+          "hours": 71.479,
+          "supplies": [],
+          "secondary_xp": [],
+          "end_xp": 5346561,
+          "end_level": 90,
+          "xp_gained": 3359750,
+          "cum_hours": 111.713
+        },
+        {
+          "step_id": "S14",
+          "kind": "train",
+          "start_xp": 5346561,
+          "start_level": 90,
+          "actions": 8648,
+          "hours": 116.483,
+          "supplies": [],
+          "secondary_xp": [],
+          "end_xp": 13034633,
+          "end_level": 99,
+          "xp_gained": 7688072,
+          "cum_hours": 228.196
+        }
+      ],
+      "levels": [
+        {
+          "level": 57,
+          "xp": 203254,
+          "xp_to_next": 21212,
+          "step_id": "S08",
+          "method": "Falador rooftop laps",
+          "actions_to_next": 14,
+          "hours_to_next": 0.284,
+          "cum_hours_at_next": 0.284
+        },
+        {
+          "level": 58,
+          "xp": 224466,
+          "xp_to_next": 23420,
+          "step_id": "S08",
+          "method": "Falador rooftop laps",
+          "actions_to_next": 40,
+          "hours_to_next": 0.861,
+          "cum_hours_at_next": 1.145
+        },
+        {
+          "level": 59,
+          "xp": 247886,
+          "xp_to_next": 25856,
+          "step_id": "S08",
+          "method": "Falador rooftop laps",
+          "actions_to_next": 45,
+          "hours_to_next": 0.951,
+          "cum_hours_at_next": 2.096
+        },
+        {
+          "level": 60,
+          "xp": 273742,
+          "xp_to_next": 28546,
+          "step_id": "S09",
+          "method": "Seers' rooftop laps, run back from the church",
+          "actions_to_next": 50,
+          "hours_to_next": 0.703,
+          "cum_hours_at_next": 2.799
+        },
+        {
+          "level": 61,
+          "xp": 302288,
+          "xp_to_next": 31516,
+          "step_id": "S09",
+          "method": "Seers' rooftop laps, run back from the church",
+          "actions_to_next": 56,
+          "hours_to_next": 0.788,
+          "cum_hours_at_next": 3.587
+        },
+        {
+          "level": 62,
+          "xp": 333804,
+          "xp_to_next": 34795,
+          "step_id": "S09",
+          "method": "Seers' rooftop laps, run back from the church",
+          "actions_to_next": 62,
+          "hours_to_next": 0.87,
+          "cum_hours_at_next": 4.457
+        },
+        {
+          "level": 63,
+          "xp": 368599,
+          "xp_to_next": 38416,
+          "step_id": "S09",
+          "method": "Seers' rooftop laps, run back from the church",
+          "actions_to_next": 68,
+          "hours_to_next": 0.96,
+          "cum_hours_at_next": 5.417
+        },
+        {
+          "level": 64,
+          "xp": 407015,
+          "xp_to_next": 42413,
+          "step_id": "S09",
+          "method": "Seers' rooftop laps, run back from the church",
+          "actions_to_next": 75,
+          "hours_to_next": 1.06,
+          "cum_hours_at_next": 6.478
+        },
+        {
+          "level": 65,
+          "xp": 449428,
+          "xp_to_next": 46826,
+          "step_id": "S09",
+          "method": "Seers' rooftop laps, run back from the church",
+          "actions_to_next": 83,
+          "hours_to_next": 1.171,
+          "cum_hours_at_next": 7.648
+        },
+        {
+          "level": 66,
+          "xp": 496254,
+          "xp_to_next": 51699,
+          "step_id": "S09",
+          "method": "Seers' rooftop laps, run back from the church",
+          "actions_to_next": 91,
+          "hours_to_next": 1.292,
+          "cum_hours_at_next": 8.941
+        },
+        {
+          "level": 67,
+          "xp": 547953,
+          "xp_to_next": 57079,
+          "step_id": "S09",
+          "method": "Seers' rooftop laps, run back from the church",
+          "actions_to_next": 101,
+          "hours_to_next": 1.427,
+          "cum_hours_at_next": 10.368
+        },
+        {
+          "level": 68,
+          "xp": 605032,
+          "xp_to_next": 63019,
+          "step_id": "S09",
+          "method": "Seers' rooftop laps, run back from the church",
+          "actions_to_next": 111,
+          "hours_to_next": 1.575,
+          "cum_hours_at_next": 11.943
+        },
+        {
+          "level": 69,
+          "xp": 668051,
+          "xp_to_next": 69576,
+          "step_id": "S09",
+          "method": "Seers' rooftop laps, run back from the church",
+          "actions_to_next": 123,
+          "hours_to_next": 1.739,
+          "cum_hours_at_next": 13.683
+        },
+        {
+          "level": 70,
+          "xp": 737627,
+          "xp_to_next": 76818,
+          "step_id": "S10",
+          "method": "Pollnivneach rooftop laps (no desert diary)",
+          "actions_to_next": 86,
+          "hours_to_next": 1.623,
+          "cum_hours_at_next": 15.306
+        },
+        {
+          "level": 71,
+          "xp": 814445,
+          "xp_to_next": 84812,
+          "step_id": "S10",
+          "method": "Pollnivneach rooftop laps (no desert diary)",
+          "actions_to_next": 96,
+          "hours_to_next": 1.805,
+          "cum_hours_at_next": 17.111
+        },
+        {
+          "level": 72,
+          "xp": 899257,
+          "xp_to_next": 93638,
+          "step_id": "S10",
+          "method": "Pollnivneach rooftop laps (no desert diary)",
+          "actions_to_next": 106,
+          "hours_to_next": 1.992,
+          "cum_hours_at_next": 19.103
+        },
+        {
+          "level": 73,
+          "xp": 992895,
+          "xp_to_next": 103383,
+          "step_id": "S10",
+          "method": "Pollnivneach rooftop laps (no desert diary)",
+          "actions_to_next": 117,
+          "hours_to_next": 2.2,
+          "cum_hours_at_next": 21.303
+        },
+        {
+          "level": 74,
+          "xp": 1096278,
+          "xp_to_next": 114143,
+          "step_id": "S10",
+          "method": "Pollnivneach rooftop laps (no desert diary)",
+          "actions_to_next": 129,
+          "hours_to_next": 2.429,
+          "cum_hours_at_next": 23.731
+        },
+        {
+          "level": 75,
+          "xp": 1210421,
+          "xp_to_next": 126022,
+          "step_id": "S10",
+          "method": "Pollnivneach rooftop laps (no desert diary)",
+          "actions_to_next": 142,
+          "hours_to_next": 2.681,
+          "cum_hours_at_next": 26.412
+        },
+        {
+          "level": 76,
+          "xp": 1336443,
+          "xp_to_next": 139138,
+          "step_id": "S10",
+          "method": "Pollnivneach rooftop laps (no desert diary)",
+          "actions_to_next": 157,
+          "hours_to_next": 2.96,
+          "cum_hours_at_next": 29.373
+        },
+        {
+          "level": 77,
+          "xp": 1475581,
+          "xp_to_next": 153619,
+          "step_id": "S10",
+          "method": "Pollnivneach rooftop laps (no desert diary)",
+          "actions_to_next": 173,
+          "hours_to_next": 3.268,
+          "cum_hours_at_next": 32.641
+        },
+        {
+          "level": 78,
+          "xp": 1629200,
+          "xp_to_next": 169608,
+          "step_id": "S10",
+          "method": "Pollnivneach rooftop laps (no desert diary)",
+          "actions_to_next": 191,
+          "hours_to_next": 3.609,
+          "cum_hours_at_next": 36.25
+        },
+        {
+          "level": 79,
+          "xp": 1798808,
+          "xp_to_next": 187260,
+          "step_id": "S10",
+          "method": "Pollnivneach rooftop laps (no desert diary)",
+          "actions_to_next": 211,
+          "hours_to_next": 3.984,
+          "cum_hours_at_next": 40.234
+        },
+        {
+          "level": 80,
+          "xp": 1986068,
+          "xp_to_next": 206750,
+          "step_id": "S11",
+          "method": "Pollnivneach rooftop laps (no desert diary)",
+          "actions_to_next": 232,
+          "hours_to_next": 4.383,
+          "cum_hours_at_next": 44.617
+        },
+        {
+          "level": 81,
+          "xp": 2192818,
+          "xp_to_next": 228269,
+          "step_id": "S11",
+          "method": "Pollnivneach rooftop laps (no desert diary)",
+          "actions_to_next": 257,
+          "hours_to_next": 4.857,
+          "cum_hours_at_next": 49.474
+        },
+        {
+          "level": 82,
+          "xp": 2421087,
+          "xp_to_next": 252027,
+          "step_id": "S11",
+          "method": "Pollnivneach rooftop laps (no desert diary)",
+          "actions_to_next": 284,
+          "hours_to_next": 5.362,
+          "cum_hours_at_next": 54.836
+        },
+        {
+          "level": 83,
+          "xp": 2673114,
+          "xp_to_next": 278259,
+          "step_id": "S11",
+          "method": "Pollnivneach rooftop laps (no desert diary)",
+          "actions_to_next": 313,
+          "hours_to_next": 5.92,
+          "cum_hours_at_next": 60.757
+        },
+        {
+          "level": 84,
+          "xp": 2951373,
+          "xp_to_next": 307221,
+          "step_id": "S11",
+          "method": "Pollnivneach rooftop laps (no desert diary)",
+          "actions_to_next": 346,
+          "hours_to_next": 6.537,
+          "cum_hours_at_next": 67.293
+        },
+        {
+          "level": 85,
+          "xp": 3258594,
+          "xp_to_next": 339198,
+          "step_id": "S11",
+          "method": "Pollnivneach rooftop laps (no desert diary)",
+          "actions_to_next": 382,
+          "hours_to_next": 7.217,
+          "cum_hours_at_next": 74.51
+        },
+        {
+          "level": 86,
+          "xp": 3597792,
+          "xp_to_next": 374502,
+          "step_id": "S11",
+          "method": "Pollnivneach rooftop laps (no desert diary)",
+          "actions_to_next": 421,
+          "hours_to_next": 7.968,
+          "cum_hours_at_next": 82.479
+        },
+        {
+          "level": 87,
+          "xp": 3972294,
+          "xp_to_next": 413482,
+          "step_id": "S11",
+          "method": "Pollnivneach rooftop laps (no desert diary)",
+          "actions_to_next": 465,
+          "hours_to_next": 8.797,
+          "cum_hours_at_next": 91.276
+        },
+        {
+          "level": 88,
+          "xp": 4385776,
+          "xp_to_next": 456519,
+          "step_id": "S11",
+          "method": "Pollnivneach rooftop laps (no desert diary)",
+          "actions_to_next": 513,
+          "hours_to_next": 9.713,
+          "cum_hours_at_next": 100.989
+        },
+        {
+          "level": 89,
+          "xp": 4842295,
+          "xp_to_next": 504037,
+          "step_id": "S11",
+          "method": "Pollnivneach rooftop laps (no desert diary)",
+          "actions_to_next": 567,
+          "hours_to_next": 10.724,
+          "cum_hours_at_next": 111.713
+        },
+        {
+          "level": 90,
+          "xp": 5346332,
+          "xp_to_next": 556499,
+          "step_id": "S14",
+          "method": "Ardougne rooftop laps",
+          "actions_to_next": 626,
+          "hours_to_next": 8.428,
+          "cum_hours_at_next": 120.142
+        },
+        {
+          "level": 91,
+          "xp": 5902831,
+          "xp_to_next": 614422,
+          "step_id": "S14",
+          "method": "Ardougne rooftop laps",
+          "actions_to_next": 692,
+          "hours_to_next": 9.309,
+          "cum_hours_at_next": 129.451
+        },
+        {
+          "level": 92,
+          "xp": 6517253,
+          "xp_to_next": 678376,
+          "step_id": "S14",
+          "method": "Ardougne rooftop laps",
+          "actions_to_next": 764,
+          "hours_to_next": 10.278,
+          "cum_hours_at_next": 139.73
+        },
+        {
+          "level": 93,
+          "xp": 7195629,
+          "xp_to_next": 748985,
+          "step_id": "S14",
+          "method": "Ardougne rooftop laps",
+          "actions_to_next": 843,
+          "hours_to_next": 11.348,
+          "cum_hours_at_next": 151.078
+        },
+        {
+          "level": 94,
+          "xp": 7944614,
+          "xp_to_next": 826944,
+          "step_id": "S14",
+          "method": "Ardougne rooftop laps",
+          "actions_to_next": 931,
+          "hours_to_next": 12.529,
+          "cum_hours_at_next": 163.607
+        },
+        {
+          "level": 95,
+          "xp": 8771558,
+          "xp_to_next": 913019,
+          "step_id": "S14",
+          "method": "Ardougne rooftop laps",
+          "actions_to_next": 1028,
+          "hours_to_next": 13.834,
+          "cum_hours_at_next": 177.441
+        },
+        {
+          "level": 96,
+          "xp": 9684577,
+          "xp_to_next": 1008052,
+          "step_id": "S14",
+          "method": "Ardougne rooftop laps",
+          "actions_to_next": 1134,
+          "hours_to_next": 15.274,
+          "cum_hours_at_next": 192.714
+        },
+        {
+          "level": 97,
+          "xp": 10692629,
+          "xp_to_next": 1112977,
+          "step_id": "S14",
+          "method": "Ardougne rooftop laps",
+          "actions_to_next": 1252,
+          "hours_to_next": 16.863,
+          "cum_hours_at_next": 209.578
+        },
+        {
+          "level": 98,
+          "xp": 11805606,
+          "xp_to_next": 1228825,
+          "step_id": "S14",
+          "method": "Ardougne rooftop laps",
+          "actions_to_next": 1383,
+          "hours_to_next": 18.619,
+          "cum_hours_at_next": 228.196
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "capped_skills": {
+        "Defence": {
+          "cap": 50,
+          "end_xp": 0,
+          "end_level": 1,
+          "headroom_xp": 111944,
+          "events": [
+            {
+              "step_id": "S01",
+              "skill": "Defence",
+              "xp": 0,
+              "total_xp": 0.0,
+              "level": 1
+            },
+            {
+              "step_id": "S02",
+              "skill": "Defence",
+              "xp": 0,
+              "total_xp": 0.0,
+              "level": 1
+            }
+          ]
+        }
+      },
+      "totals": {
+        "xp_end": 13034633,
+        "level_end": 99,
+        "hours": 228.2,
+        "actions": 14738,
+        "supplies": [],
+        "secondary_xp": [
+          {
+            "skill": "Defence",
+            "xp": 0
+          },
+          {
+            "skill": "Thieving",
+            "xp": 2500
+          }
+        ]
+      }
+    },
+    "balanced": {
+      "steps": [
+        {
+          "step_id": "S01",
+          "kind": "quest",
+          "start_xp": 212733,
+          "start_level": 57,
+          "actions": 0,
+          "hours": 0,
+          "supplies": [],
+          "secondary_xp": [],
+          "end_xp": 215233,
+          "end_level": 57,
+          "xp_gained": 2500,
+          "cum_hours": 0.0
+        },
+        {
+          "step_id": "S02",
+          "kind": "quest",
+          "start_xp": 215233,
+          "start_level": 57,
+          "actions": 0,
+          "hours": 0,
+          "supplies": [],
+          "secondary_xp": [],
+          "end_xp": 216733,
+          "end_level": 57,
+          "xp_gained": 1500,
+          "cum_hours": 0.0
+        },
+        {
+          "step_id": "S03",
+          "kind": "quest",
+          "start_xp": 216733,
+          "start_level": 57,
+          "actions": 0,
+          "hours": 0,
+          "supplies": [],
+          "secondary_xp": [],
+          "end_xp": 220733,
+          "end_level": 57,
+          "xp_gained": 4000,
+          "cum_hours": 0.0
+        },
+        {
+          "step_id": "S04",
+          "kind": "quest",
+          "start_xp": 220733,
+          "start_level": 57,
+          "actions": 0,
+          "hours": 0,
+          "supplies": [],
+          "secondary_xp": [],
+          "end_xp": 225733,
+          "end_level": 58,
+          "xp_gained": 5000,
+          "cum_hours": 0.0
+        },
+        {
+          "step_id": "S05",
+          "kind": "quest",
+          "start_xp": 225733,
+          "start_level": 58,
+          "actions": 0,
+          "hours": 0,
+          "supplies": [],
+          "secondary_xp": [],
+          "end_xp": 228733,
+          "end_level": 58,
+          "xp_gained": 3000,
+          "cum_hours": 0.0
+        },
+        {
+          "step_id": "S06",
+          "kind": "quest",
+          "start_xp": 228733,
+          "start_level": 58,
+          "actions": 0,
+          "hours": 0,
+          "supplies": [],
+          "secondary_xp": [],
+          "end_xp": 242483,
+          "end_level": 58,
+          "xp_gained": 13750,
+          "cum_hours": 0.0
+        },
+        {
+          "step_id": "S12",
+          "kind": "quest",
+          "start_xp": 242483,
+          "start_level": 58,
+          "actions": 0,
+          "hours": 0,
+          "supplies": [],
+          "secondary_xp": [],
+          "end_xp": 245295,
+          "end_level": 58,
+          "xp_gained": 2812,
+          "cum_hours": 0.0
+        },
+        {
+          "step_id": "S08",
+          "kind": "train",
+          "start_xp": 245295,
+          "start_level": 58,
+          "actions": 49,
+          "hours": 1.046,
+          "supplies": [],
+          "secondary_xp": [],
+          "end_xp": 274009,
+          "end_level": 60,
+          "xp_gained": 28714,
+          "cum_hours": 1.046
+        },
+        {
+          "step_id": "S09",
+          "kind": "train",
+          "start_xp": 274009,
+          "start_level": 60,
+          "actions": 814,
+          "hours": 11.59,
+          "supplies": [],
+          "secondary_xp": [],
+          "end_xp": 737989,
+          "end_level": 70,
+          "xp_gained": 463980,
+          "cum_hours": 12.636
+        },
+        {
+          "step_id": "S10",
+          "kind": "train",
+          "start_xp": 737989,
+          "start_level": 70,
+          "actions": 1403,
+          "hours": 26.555,
+          "supplies": [],
+          "secondary_xp": [],
+          "end_xp": 1986659,
+          "end_level": 80,
+          "xp_gained": 1248670,
+          "cum_hours": 39.191
+        },
+        {
+          "step_id": "S13",
+          "kind": "train",
+          "start_xp": 1986659,
+          "start_level": 80,
+          "actions": 4308,
+          "hours": 67.193,
+          "supplies": [],
+          "secondary_xp": [],
+          "end_xp": 5346899,
+          "end_level": 90,
+          "xp_gained": 3360240,
+          "cum_hours": 106.385
+        },
+        {
+          "step_id": "S14",
+          "kind": "train",
+          "start_xp": 5346899,
+          "start_level": 90,
+          "actions": 8648,
+          "hours": 116.478,
+          "supplies": [],
+          "secondary_xp": [],
+          "end_xp": 13034971,
+          "end_level": 99,
+          "xp_gained": 7688072,
+          "cum_hours": 222.862
+        }
+      ],
+      "levels": [
+        {
+          "level": 57,
+          "xp": 203254,
+          "xp_to_next": 21212,
+          "step_id": "S04",
+          "method": "A Tail of Two Cats (both lamps into Agility)",
+          "actions_to_next": 0,
+          "hours_to_next": 0.0,
+          "cum_hours_at_next": 0.0
+        },
+        {
+          "level": 58,
+          "xp": 224466,
+          "xp_to_next": 23420,
+          "step_id": "S08",
+          "method": "Falador rooftop laps",
+          "actions_to_next": 5,
+          "hours_to_next": 0.095,
+          "cum_hours_at_next": 0.095
+        },
+        {
+          "level": 59,
+          "xp": 247886,
+          "xp_to_next": 25856,
+          "step_id": "S08",
+          "method": "Falador rooftop laps",
+          "actions_to_next": 45,
+          "hours_to_next": 0.951,
+          "cum_hours_at_next": 1.046
+        },
+        {
+          "level": 60,
+          "xp": 273742,
+          "xp_to_next": 28546,
+          "step_id": "S09",
+          "method": "Seers' rooftop laps, run back from the church",
+          "actions_to_next": 50,
+          "hours_to_next": 0.707,
+          "cum_hours_at_next": 1.753
+        },
+        {
+          "level": 61,
+          "xp": 302288,
+          "xp_to_next": 31516,
+          "step_id": "S09",
+          "method": "Seers' rooftop laps, run back from the church",
+          "actions_to_next": 56,
+          "hours_to_next": 0.788,
+          "cum_hours_at_next": 2.541
+        },
+        {
+          "level": 62,
+          "xp": 333804,
+          "xp_to_next": 34795,
+          "step_id": "S09",
+          "method": "Seers' rooftop laps, run back from the church",
+          "actions_to_next": 62,
+          "hours_to_next": 0.87,
+          "cum_hours_at_next": 3.411
+        },
+        {
+          "level": 63,
+          "xp": 368599,
+          "xp_to_next": 38416,
+          "step_id": "S09",
+          "method": "Seers' rooftop laps, run back from the church",
+          "actions_to_next": 68,
+          "hours_to_next": 0.96,
+          "cum_hours_at_next": 4.371
+        },
+        {
+          "level": 64,
+          "xp": 407015,
+          "xp_to_next": 42413,
+          "step_id": "S09",
+          "method": "Seers' rooftop laps, run back from the church",
+          "actions_to_next": 75,
+          "hours_to_next": 1.06,
+          "cum_hours_at_next": 5.431
+        },
+        {
+          "level": 65,
+          "xp": 449428,
+          "xp_to_next": 46826,
+          "step_id": "S09",
+          "method": "Seers' rooftop laps, run back from the church",
+          "actions_to_next": 83,
+          "hours_to_next": 1.171,
+          "cum_hours_at_next": 6.602
+        },
+        {
+          "level": 66,
+          "xp": 496254,
+          "xp_to_next": 51699,
+          "step_id": "S09",
+          "method": "Seers' rooftop laps, run back from the church",
+          "actions_to_next": 91,
+          "hours_to_next": 1.292,
+          "cum_hours_at_next": 7.894
+        },
+        {
+          "level": 67,
+          "xp": 547953,
+          "xp_to_next": 57079,
+          "step_id": "S09",
+          "method": "Seers' rooftop laps, run back from the church",
+          "actions_to_next": 101,
+          "hours_to_next": 1.427,
+          "cum_hours_at_next": 9.321
+        },
+        {
+          "level": 68,
+          "xp": 605032,
+          "xp_to_next": 63019,
+          "step_id": "S09",
+          "method": "Seers' rooftop laps, run back from the church",
+          "actions_to_next": 111,
+          "hours_to_next": 1.575,
+          "cum_hours_at_next": 10.897
+        },
+        {
+          "level": 69,
+          "xp": 668051,
+          "xp_to_next": 69576,
+          "step_id": "S09",
+          "method": "Seers' rooftop laps, run back from the church",
+          "actions_to_next": 123,
+          "hours_to_next": 1.739,
+          "cum_hours_at_next": 12.636
+        },
+        {
+          "level": 70,
+          "xp": 737627,
+          "xp_to_next": 76818,
+          "step_id": "S10",
+          "method": "Pollnivneach rooftop laps (no desert diary)",
+          "actions_to_next": 86,
+          "hours_to_next": 1.627,
+          "cum_hours_at_next": 14.263
+        },
+        {
+          "level": 71,
+          "xp": 814445,
+          "xp_to_next": 84812,
+          "step_id": "S10",
+          "method": "Pollnivneach rooftop laps (no desert diary)",
+          "actions_to_next": 96,
+          "hours_to_next": 1.805,
+          "cum_hours_at_next": 16.067
+        },
+        {
+          "level": 72,
+          "xp": 899257,
+          "xp_to_next": 93638,
+          "step_id": "S10",
+          "method": "Pollnivneach rooftop laps (no desert diary)",
+          "actions_to_next": 106,
+          "hours_to_next": 1.992,
+          "cum_hours_at_next": 18.06
+        },
+        {
+          "level": 73,
+          "xp": 992895,
+          "xp_to_next": 103383,
+          "step_id": "S10",
+          "method": "Pollnivneach rooftop laps (no desert diary)",
+          "actions_to_next": 117,
+          "hours_to_next": 2.2,
+          "cum_hours_at_next": 20.259
+        },
+        {
+          "level": 74,
+          "xp": 1096278,
+          "xp_to_next": 114143,
+          "step_id": "S10",
+          "method": "Pollnivneach rooftop laps (no desert diary)",
+          "actions_to_next": 129,
+          "hours_to_next": 2.429,
+          "cum_hours_at_next": 22.688
+        },
+        {
+          "level": 75,
+          "xp": 1210421,
+          "xp_to_next": 126022,
+          "step_id": "S10",
+          "method": "Pollnivneach rooftop laps (no desert diary)",
+          "actions_to_next": 142,
+          "hours_to_next": 2.681,
+          "cum_hours_at_next": 25.369
+        },
+        {
+          "level": 76,
+          "xp": 1336443,
+          "xp_to_next": 139138,
+          "step_id": "S10",
+          "method": "Pollnivneach rooftop laps (no desert diary)",
+          "actions_to_next": 157,
+          "hours_to_next": 2.96,
+          "cum_hours_at_next": 28.33
+        },
+        {
+          "level": 77,
+          "xp": 1475581,
+          "xp_to_next": 153619,
+          "step_id": "S10",
+          "method": "Pollnivneach rooftop laps (no desert diary)",
+          "actions_to_next": 173,
+          "hours_to_next": 3.268,
+          "cum_hours_at_next": 31.598
+        },
+        {
+          "level": 78,
+          "xp": 1629200,
+          "xp_to_next": 169608,
+          "step_id": "S10",
+          "method": "Pollnivneach rooftop laps (no desert diary)",
+          "actions_to_next": 191,
+          "hours_to_next": 3.609,
+          "cum_hours_at_next": 35.207
+        },
+        {
+          "level": 79,
+          "xp": 1798808,
+          "xp_to_next": 187260,
+          "step_id": "S10",
+          "method": "Pollnivneach rooftop laps (no desert diary)",
+          "actions_to_next": 211,
+          "hours_to_next": 3.984,
+          "cum_hours_at_next": 39.191
+        },
+        {
+          "level": 80,
+          "xp": 1986068,
+          "xp_to_next": 206750,
+          "step_id": "S13",
+          "method": "Rellekka rooftop laps (no Fremennik diary)",
+          "actions_to_next": 265,
+          "hours_to_next": 4.123,
+          "cum_hours_at_next": 43.314
+        },
+        {
+          "level": 81,
+          "xp": 2192818,
+          "xp_to_next": 228269,
+          "step_id": "S13",
+          "method": "Rellekka rooftop laps (no Fremennik diary)",
+          "actions_to_next": 293,
+          "hours_to_next": 4.565,
+          "cum_hours_at_next": 47.88
+        },
+        {
+          "level": 82,
+          "xp": 2421087,
+          "xp_to_next": 252027,
+          "step_id": "S13",
+          "method": "Rellekka rooftop laps (no Fremennik diary)",
+          "actions_to_next": 324,
+          "hours_to_next": 5.041,
+          "cum_hours_at_next": 52.92
+        },
+        {
+          "level": 83,
+          "xp": 2673114,
+          "xp_to_next": 278259,
+          "step_id": "S13",
+          "method": "Rellekka rooftop laps (no Fremennik diary)",
+          "actions_to_next": 357,
+          "hours_to_next": 5.565,
+          "cum_hours_at_next": 58.485
+        },
+        {
+          "level": 84,
+          "xp": 2951373,
+          "xp_to_next": 307221,
+          "step_id": "S13",
+          "method": "Rellekka rooftop laps (no Fremennik diary)",
+          "actions_to_next": 394,
+          "hours_to_next": 6.144,
+          "cum_hours_at_next": 64.63
+        },
+        {
+          "level": 85,
+          "xp": 3258594,
+          "xp_to_next": 339198,
+          "step_id": "S13",
+          "method": "Rellekka rooftop laps (no Fremennik diary)",
+          "actions_to_next": 435,
+          "hours_to_next": 6.784,
+          "cum_hours_at_next": 71.414
+        },
+        {
+          "level": 86,
+          "xp": 3597792,
+          "xp_to_next": 374502,
+          "step_id": "S13",
+          "method": "Rellekka rooftop laps (no Fremennik diary)",
+          "actions_to_next": 481,
+          "hours_to_next": 7.49,
+          "cum_hours_at_next": 78.904
+        },
+        {
+          "level": 87,
+          "xp": 3972294,
+          "xp_to_next": 413482,
+          "step_id": "S13",
+          "method": "Rellekka rooftop laps (no Fremennik diary)",
+          "actions_to_next": 531,
+          "hours_to_next": 8.27,
+          "cum_hours_at_next": 87.173
+        },
+        {
+          "level": 88,
+          "xp": 4385776,
+          "xp_to_next": 456519,
+          "step_id": "S13",
+          "method": "Rellekka rooftop laps (no Fremennik diary)",
+          "actions_to_next": 586,
+          "hours_to_next": 9.13,
+          "cum_hours_at_next": 96.304
+        },
+        {
+          "level": 89,
+          "xp": 4842295,
+          "xp_to_next": 504037,
+          "step_id": "S13",
+          "method": "Rellekka rooftop laps (no Fremennik diary)",
+          "actions_to_next": 647,
+          "hours_to_next": 10.081,
+          "cum_hours_at_next": 106.385
+        },
+        {
+          "level": 90,
+          "xp": 5346332,
+          "xp_to_next": 556499,
+          "step_id": "S14",
+          "method": "Ardougne rooftop laps",
+          "actions_to_next": 626,
+          "hours_to_next": 8.423,
+          "cum_hours_at_next": 114.808
+        },
+        {
+          "level": 91,
+          "xp": 5902831,
+          "xp_to_next": 614422,
+          "step_id": "S14",
+          "method": "Ardougne rooftop laps",
+          "actions_to_next": 692,
+          "hours_to_next": 9.309,
+          "cum_hours_at_next": 124.117
+        },
+        {
+          "level": 92,
+          "xp": 6517253,
+          "xp_to_next": 678376,
+          "step_id": "S14",
+          "method": "Ardougne rooftop laps",
+          "actions_to_next": 764,
+          "hours_to_next": 10.278,
+          "cum_hours_at_next": 134.396
+        },
+        {
+          "level": 93,
+          "xp": 7195629,
+          "xp_to_next": 748985,
+          "step_id": "S14",
+          "method": "Ardougne rooftop laps",
+          "actions_to_next": 843,
+          "hours_to_next": 11.348,
+          "cum_hours_at_next": 145.744
+        },
+        {
+          "level": 94,
+          "xp": 7944614,
+          "xp_to_next": 826944,
+          "step_id": "S14",
+          "method": "Ardougne rooftop laps",
+          "actions_to_next": 931,
+          "hours_to_next": 12.529,
+          "cum_hours_at_next": 158.273
+        },
+        {
+          "level": 95,
+          "xp": 8771558,
+          "xp_to_next": 913019,
+          "step_id": "S14",
+          "method": "Ardougne rooftop laps",
+          "actions_to_next": 1028,
+          "hours_to_next": 13.834,
+          "cum_hours_at_next": 172.107
+        },
+        {
+          "level": 96,
+          "xp": 9684577,
+          "xp_to_next": 1008052,
+          "step_id": "S14",
+          "method": "Ardougne rooftop laps",
+          "actions_to_next": 1134,
+          "hours_to_next": 15.274,
+          "cum_hours_at_next": 187.38
+        },
+        {
+          "level": 97,
+          "xp": 10692629,
+          "xp_to_next": 1112977,
+          "step_id": "S14",
+          "method": "Ardougne rooftop laps",
+          "actions_to_next": 1252,
+          "hours_to_next": 16.863,
+          "cum_hours_at_next": 204.244
+        },
+        {
+          "level": 98,
+          "xp": 11805606,
+          "xp_to_next": 1228825,
+          "step_id": "S14",
+          "method": "Ardougne rooftop laps",
+          "actions_to_next": 1383,
+          "hours_to_next": 18.619,
+          "cum_hours_at_next": 222.862
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "capped_skills": {
+        "Defence": {
+          "cap": 50,
+          "end_xp": 2812,
+          "end_level": 16,
+          "headroom_xp": 109132,
+          "events": [
+            {
+              "step_id": "S01",
+              "skill": "Defence",
+              "xp": 0,
+              "total_xp": 0.0,
+              "level": 1
+            },
+            {
+              "step_id": "S02",
+              "skill": "Defence",
+              "xp": 0,
+              "total_xp": 0.0,
+              "level": 1
+            },
+            {
+              "step_id": "S03",
+              "skill": "Defence",
+              "xp": 0,
+              "total_xp": 0.0,
+              "level": 1
+            },
+            {
+              "step_id": "S04",
+              "skill": "Defence",
+              "xp": 0,
+              "total_xp": 0.0,
+              "level": 1
+            },
+            {
+              "step_id": "S05",
+              "skill": "Defence",
+              "xp": 0,
+              "total_xp": 0.0,
+              "level": 1
+            },
+            {
+              "step_id": "S06",
+              "skill": "Defence",
+              "xp": 0,
+              "total_xp": 0.0,
+              "level": 1
+            },
+            {
+              "step_id": "S12",
+              "skill": "Defence",
+              "xp": 2812.4,
+              "total_xp": 2812.4,
+              "level": 16
+            }
+          ]
+        }
+      },
+      "totals": {
+        "xp_end": 13034971,
+        "level_end": 99,
+        "hours": 222.86,
+        "actions": 15222,
+        "supplies": [],
+        "secondary_xp": [
+          {
+            "skill": "Defence",
+            "xp": 2812.4
+          },
+          {
+            "skill": "Thieving",
+            "xp": 2500
+          }
+        ]
+      }
+    },
+    "fastest": {
+      "steps": [
+        {
+          "step_id": "S01",
+          "kind": "quest",
+          "start_xp": 212733,
+          "start_level": 57,
+          "actions": 0,
+          "hours": 0,
+          "supplies": [],
+          "secondary_xp": [],
+          "end_xp": 215233,
+          "end_level": 57,
+          "xp_gained": 2500,
+          "cum_hours": 0.0
+        },
+        {
+          "step_id": "S02",
+          "kind": "quest",
+          "start_xp": 215233,
+          "start_level": 57,
+          "actions": 0,
+          "hours": 0,
+          "supplies": [],
+          "secondary_xp": [],
+          "end_xp": 216733,
+          "end_level": 57,
+          "xp_gained": 1500,
+          "cum_hours": 0.0
+        },
+        {
+          "step_id": "S03",
+          "kind": "quest",
+          "start_xp": 216733,
+          "start_level": 57,
+          "actions": 0,
+          "hours": 0,
+          "supplies": [],
+          "secondary_xp": [],
+          "end_xp": 220733,
+          "end_level": 57,
+          "xp_gained": 4000,
+          "cum_hours": 0.0
+        },
+        {
+          "step_id": "S04",
+          "kind": "quest",
+          "start_xp": 220733,
+          "start_level": 57,
+          "actions": 0,
+          "hours": 0,
+          "supplies": [],
+          "secondary_xp": [],
+          "end_xp": 225733,
+          "end_level": 58,
+          "xp_gained": 5000,
+          "cum_hours": 0.0
+        },
+        {
+          "step_id": "S05",
+          "kind": "quest",
+          "start_xp": 225733,
+          "start_level": 58,
+          "actions": 0,
+          "hours": 0,
+          "supplies": [],
+          "secondary_xp": [],
+          "end_xp": 228733,
+          "end_level": 58,
+          "xp_gained": 3000,
+          "cum_hours": 0.0
+        },
+        {
+          "step_id": "S06",
+          "kind": "quest",
+          "start_xp": 228733,
+          "start_level": 58,
+          "actions": 0,
+          "hours": 0,
+          "supplies": [],
+          "secondary_xp": [],
+          "end_xp": 242483,
+          "end_level": 58,
+          "xp_gained": 13750,
+          "cum_hours": 0.0
+        },
+        {
+          "step_id": "S08",
+          "kind": "train",
+          "start_xp": 242483,
+          "start_level": 58,
+          "actions": 54,
+          "hours": 1.149,
+          "supplies": [],
+          "secondary_xp": [],
+          "end_xp": 274127,
+          "end_level": 60,
+          "xp_gained": 31644,
+          "cum_hours": 1.149
+        },
+        {
+          "step_id": "S22",
+          "kind": "quest",
+          "start_xp": 274127,
+          "start_level": 60,
+          "actions": 0,
+          "hours": 0,
+          "supplies": [],
+          "secondary_xp": [],
+          "end_xp": 274127,
+          "end_level": 60,
+          "xp_gained": 0,
+          "cum_hours": 1.149
+        },
+        {
+          "step_id": "S23",
+          "kind": "train",
+          "start_xp": 274127,
+          "start_level": 60,
+          "actions": 6949,
+          "hours": 92.222,
+          "supplies": [],
+          "secondary_xp": [],
+          "end_xp": 5346897,
+          "end_level": 90,
+          "xp_gained": 5072770,
+          "cum_hours": 93.371
+        },
+        {
+          "step_id": "S14",
+          "kind": "train",
+          "start_xp": 5346897,
+          "start_level": 90,
+          "actions": 8648,
+          "hours": 116.478,
+          "supplies": [],
+          "secondary_xp": [],
+          "end_xp": 13034969,
+          "end_level": 99,
+          "xp_gained": 7688072,
+          "cum_hours": 209.849
+        }
+      ],
+      "levels": [
+        {
+          "level": 57,
+          "xp": 203254,
+          "xp_to_next": 21212,
+          "step_id": "S04",
+          "method": "A Tail of Two Cats (both lamps into Agility)",
+          "actions_to_next": 0,
+          "hours_to_next": 0.0,
+          "cum_hours_at_next": 0.0
+        },
+        {
+          "level": 58,
+          "xp": 224466,
+          "xp_to_next": 23420,
+          "step_id": "S08",
+          "method": "Falador rooftop laps",
+          "actions_to_next": 10,
+          "hours_to_next": 0.199,
+          "cum_hours_at_next": 0.199
+        },
+        {
+          "level": 59,
+          "xp": 247886,
+          "xp_to_next": 25856,
+          "step_id": "S08",
+          "method": "Falador rooftop laps",
+          "actions_to_next": 45,
+          "hours_to_next": 0.951,
+          "cum_hours_at_next": 1.149
+        },
+        {
+          "level": 60,
+          "xp": 273742,
+          "xp_to_next": 28546,
+          "step_id": "S23",
+          "method": "Werewolf laps, stick handed in",
+          "actions_to_next": 39,
+          "hours_to_next": 0.512,
+          "cum_hours_at_next": 1.661
+        },
+        {
+          "level": 61,
+          "xp": 302288,
+          "xp_to_next": 31516,
+          "step_id": "S23",
+          "method": "Werewolf laps, stick handed in",
+          "actions_to_next": 44,
+          "hours_to_next": 0.573,
+          "cum_hours_at_next": 2.234
+        },
+        {
+          "level": 62,
+          "xp": 333804,
+          "xp_to_next": 34795,
+          "step_id": "S23",
+          "method": "Werewolf laps, stick handed in",
+          "actions_to_next": 48,
+          "hours_to_next": 0.633,
+          "cum_hours_at_next": 2.867
+        },
+        {
+          "level": 63,
+          "xp": 368599,
+          "xp_to_next": 38416,
+          "step_id": "S23",
+          "method": "Werewolf laps, stick handed in",
+          "actions_to_next": 53,
+          "hours_to_next": 0.698,
+          "cum_hours_at_next": 3.565
+        },
+        {
+          "level": 64,
+          "xp": 407015,
+          "xp_to_next": 42413,
+          "step_id": "S23",
+          "method": "Werewolf laps, stick handed in",
+          "actions_to_next": 59,
+          "hours_to_next": 0.771,
+          "cum_hours_at_next": 4.337
+        },
+        {
+          "level": 65,
+          "xp": 449428,
+          "xp_to_next": 46826,
+          "step_id": "S23",
+          "method": "Werewolf laps, stick handed in",
+          "actions_to_next": 65,
+          "hours_to_next": 0.851,
+          "cum_hours_at_next": 5.188
+        },
+        {
+          "level": 66,
+          "xp": 496254,
+          "xp_to_next": 51699,
+          "step_id": "S23",
+          "method": "Werewolf laps, stick handed in",
+          "actions_to_next": 71,
+          "hours_to_next": 0.94,
+          "cum_hours_at_next": 6.128
+        },
+        {
+          "level": 67,
+          "xp": 547953,
+          "xp_to_next": 57079,
+          "step_id": "S23",
+          "method": "Werewolf laps, stick handed in",
+          "actions_to_next": 79,
+          "hours_to_next": 1.038,
+          "cum_hours_at_next": 7.166
+        },
+        {
+          "level": 68,
+          "xp": 605032,
+          "xp_to_next": 63019,
+          "step_id": "S23",
+          "method": "Werewolf laps, stick handed in",
+          "actions_to_next": 87,
+          "hours_to_next": 1.146,
+          "cum_hours_at_next": 8.311
+        },
+        {
+          "level": 69,
+          "xp": 668051,
+          "xp_to_next": 69576,
+          "step_id": "S23",
+          "method": "Werewolf laps, stick handed in",
+          "actions_to_next": 96,
+          "hours_to_next": 1.265,
+          "cum_hours_at_next": 9.577
+        },
+        {
+          "level": 70,
+          "xp": 737627,
+          "xp_to_next": 76818,
+          "step_id": "S23",
+          "method": "Werewolf laps, stick handed in",
+          "actions_to_next": 106,
+          "hours_to_next": 1.397,
+          "cum_hours_at_next": 10.973
+        },
+        {
+          "level": 71,
+          "xp": 814445,
+          "xp_to_next": 84812,
+          "step_id": "S23",
+          "method": "Werewolf laps, stick handed in",
+          "actions_to_next": 117,
+          "hours_to_next": 1.542,
+          "cum_hours_at_next": 12.515
+        },
+        {
+          "level": 72,
+          "xp": 899257,
+          "xp_to_next": 93638,
+          "step_id": "S23",
+          "method": "Werewolf laps, stick handed in",
+          "actions_to_next": 129,
+          "hours_to_next": 1.703,
+          "cum_hours_at_next": 14.218
+        },
+        {
+          "level": 73,
+          "xp": 992895,
+          "xp_to_next": 103383,
+          "step_id": "S23",
+          "method": "Werewolf laps, stick handed in",
+          "actions_to_next": 142,
+          "hours_to_next": 1.88,
+          "cum_hours_at_next": 16.097
+        },
+        {
+          "level": 74,
+          "xp": 1096278,
+          "xp_to_next": 114143,
+          "step_id": "S23",
+          "method": "Werewolf laps, stick handed in",
+          "actions_to_next": 157,
+          "hours_to_next": 2.075,
+          "cum_hours_at_next": 18.173
+        },
+        {
+          "level": 75,
+          "xp": 1210421,
+          "xp_to_next": 126022,
+          "step_id": "S23",
+          "method": "Werewolf laps, stick handed in",
+          "actions_to_next": 173,
+          "hours_to_next": 2.291,
+          "cum_hours_at_next": 20.464
+        },
+        {
+          "level": 76,
+          "xp": 1336443,
+          "xp_to_next": 139138,
+          "step_id": "S23",
+          "method": "Werewolf laps, stick handed in",
+          "actions_to_next": 191,
+          "hours_to_next": 2.53,
+          "cum_hours_at_next": 22.994
+        },
+        {
+          "level": 77,
+          "xp": 1475581,
+          "xp_to_next": 153619,
+          "step_id": "S23",
+          "method": "Werewolf laps, stick handed in",
+          "actions_to_next": 211,
+          "hours_to_next": 2.793,
+          "cum_hours_at_next": 25.787
+        },
+        {
+          "level": 78,
+          "xp": 1629200,
+          "xp_to_next": 169608,
+          "step_id": "S23",
+          "method": "Werewolf laps, stick handed in",
+          "actions_to_next": 233,
+          "hours_to_next": 3.084,
+          "cum_hours_at_next": 28.871
+        },
+        {
+          "level": 79,
+          "xp": 1798808,
+          "xp_to_next": 187260,
+          "step_id": "S23",
+          "method": "Werewolf laps, stick handed in",
+          "actions_to_next": 257,
+          "hours_to_next": 3.405,
+          "cum_hours_at_next": 32.275
+        },
+        {
+          "level": 80,
+          "xp": 1986068,
+          "xp_to_next": 206750,
+          "step_id": "S23",
+          "method": "Werewolf laps, stick handed in",
+          "actions_to_next": 284,
+          "hours_to_next": 3.759,
+          "cum_hours_at_next": 36.035
+        },
+        {
+          "level": 81,
+          "xp": 2192818,
+          "xp_to_next": 228269,
+          "step_id": "S23",
+          "method": "Werewolf laps, stick handed in",
+          "actions_to_next": 313,
+          "hours_to_next": 4.15,
+          "cum_hours_at_next": 40.185
+        },
+        {
+          "level": 82,
+          "xp": 2421087,
+          "xp_to_next": 252027,
+          "step_id": "S23",
+          "method": "Werewolf laps, stick handed in",
+          "actions_to_next": 346,
+          "hours_to_next": 4.582,
+          "cum_hours_at_next": 44.767
+        },
+        {
+          "level": 83,
+          "xp": 2673114,
+          "xp_to_next": 278259,
+          "step_id": "S23",
+          "method": "Werewolf laps, stick handed in",
+          "actions_to_next": 382,
+          "hours_to_next": 5.059,
+          "cum_hours_at_next": 49.826
+        },
+        {
+          "level": 84,
+          "xp": 2951373,
+          "xp_to_next": 307221,
+          "step_id": "S23",
+          "method": "Werewolf laps, stick handed in",
+          "actions_to_next": 421,
+          "hours_to_next": 5.586,
+          "cum_hours_at_next": 55.412
+        },
+        {
+          "level": 85,
+          "xp": 3258594,
+          "xp_to_next": 339198,
+          "step_id": "S23",
+          "method": "Werewolf laps, stick handed in",
+          "actions_to_next": 465,
+          "hours_to_next": 6.167,
+          "cum_hours_at_next": 61.58
+        },
+        {
+          "level": 86,
+          "xp": 3597792,
+          "xp_to_next": 374502,
+          "step_id": "S23",
+          "method": "Werewolf laps, stick handed in",
+          "actions_to_next": 514,
+          "hours_to_next": 6.809,
+          "cum_hours_at_next": 68.389
+        },
+        {
+          "level": 87,
+          "xp": 3972294,
+          "xp_to_next": 413482,
+          "step_id": "S23",
+          "method": "Werewolf laps, stick handed in",
+          "actions_to_next": 567,
+          "hours_to_next": 7.518,
+          "cum_hours_at_next": 75.906
+        },
+        {
+          "level": 88,
+          "xp": 4385776,
+          "xp_to_next": 456519,
+          "step_id": "S23",
+          "method": "Werewolf laps, stick handed in",
+          "actions_to_next": 626,
+          "hours_to_next": 8.3,
+          "cum_hours_at_next": 84.207
+        },
+        {
+          "level": 89,
+          "xp": 4842295,
+          "xp_to_next": 504037,
+          "step_id": "S23",
+          "method": "Werewolf laps, stick handed in",
+          "actions_to_next": 691,
+          "hours_to_next": 9.164,
+          "cum_hours_at_next": 93.371
+        },
+        {
+          "level": 90,
+          "xp": 5346332,
+          "xp_to_next": 556499,
+          "step_id": "S14",
+          "method": "Ardougne rooftop laps",
+          "actions_to_next": 626,
+          "hours_to_next": 8.423,
+          "cum_hours_at_next": 101.794
+        },
+        {
+          "level": 91,
+          "xp": 5902831,
+          "xp_to_next": 614422,
+          "step_id": "S14",
+          "method": "Ardougne rooftop laps",
+          "actions_to_next": 692,
+          "hours_to_next": 9.309,
+          "cum_hours_at_next": 111.104
+        },
+        {
+          "level": 92,
+          "xp": 6517253,
+          "xp_to_next": 678376,
+          "step_id": "S14",
+          "method": "Ardougne rooftop laps",
+          "actions_to_next": 764,
+          "hours_to_next": 10.278,
+          "cum_hours_at_next": 121.382
+        },
+        {
+          "level": 93,
+          "xp": 7195629,
+          "xp_to_next": 748985,
+          "step_id": "S14",
+          "method": "Ardougne rooftop laps",
+          "actions_to_next": 843,
+          "hours_to_next": 11.348,
+          "cum_hours_at_next": 132.73
+        },
+        {
+          "level": 94,
+          "xp": 7944614,
+          "xp_to_next": 826944,
+          "step_id": "S14",
+          "method": "Ardougne rooftop laps",
+          "actions_to_next": 931,
+          "hours_to_next": 12.529,
+          "cum_hours_at_next": 145.26
+        },
+        {
+          "level": 95,
+          "xp": 8771558,
+          "xp_to_next": 913019,
+          "step_id": "S14",
+          "method": "Ardougne rooftop laps",
+          "actions_to_next": 1028,
+          "hours_to_next": 13.834,
+          "cum_hours_at_next": 159.094
+        },
+        {
+          "level": 96,
+          "xp": 9684577,
+          "xp_to_next": 1008052,
+          "step_id": "S14",
+          "method": "Ardougne rooftop laps",
+          "actions_to_next": 1134,
+          "hours_to_next": 15.274,
+          "cum_hours_at_next": 174.367
+        },
+        {
+          "level": 97,
+          "xp": 10692629,
+          "xp_to_next": 1112977,
+          "step_id": "S14",
+          "method": "Ardougne rooftop laps",
+          "actions_to_next": 1252,
+          "hours_to_next": 16.863,
+          "cum_hours_at_next": 191.23
+        },
+        {
+          "level": 98,
+          "xp": 11805606,
+          "xp_to_next": 1228825,
+          "step_id": "S14",
+          "method": "Ardougne rooftop laps",
+          "actions_to_next": 1383,
+          "hours_to_next": 18.619,
+          "cum_hours_at_next": 209.849
+        }
+      ],
+      "errors": [],
+      "warnings": [],
+      "capped_skills": {
+        "Defence": {
+          "cap": 50,
+          "end_xp": 0,
+          "end_level": 1,
+          "headroom_xp": 111944,
+          "events": [
+            {
+              "step_id": "S01",
+              "skill": "Defence",
+              "xp": 0,
+              "total_xp": 0.0,
+              "level": 1
+            },
+            {
+              "step_id": "S02",
+              "skill": "Defence",
+              "xp": 0,
+              "total_xp": 0.0,
+              "level": 1
+            },
+            {
+              "step_id": "S03",
+              "skill": "Defence",
+              "xp": 0,
+              "total_xp": 0.0,
+              "level": 1
+            },
+            {
+              "step_id": "S04",
+              "skill": "Defence",
+              "xp": 0,
+              "total_xp": 0.0,
+              "level": 1
+            },
+            {
+              "step_id": "S05",
+              "skill": "Defence",
+              "xp": 0,
+              "total_xp": 0.0,
+              "level": 1
+            },
+            {
+              "step_id": "S06",
+              "skill": "Defence",
+              "xp": 0,
+              "total_xp": 0.0,
+              "level": 1
+            },
+            {
+              "step_id": "S22",
+              "skill": "Defence",
+              "xp": 0,
+              "total_xp": 0.0,
+              "level": 1
+            }
+          ]
+        }
+      },
+      "totals": {
+        "xp_end": 13034969,
+        "level_end": 99,
+        "hours": 209.85,
+        "actions": 15651,
+        "supplies": [],
+        "secondary_xp": [
+          {
+            "skill": "Defence",
+            "xp": 0
+          },
+          {
+            "skill": "Thieving",
+            "xp": 2500
+          }
+        ]
+      }
+    }
+  }
+}
