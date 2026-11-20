@@ -45,7 +45,7 @@ DONE WHEN: <the gate command that must pass>
 - Seal each research file with its desk's role.
 
 ## Stage 3: verification → facts.json
-- Dispatch **fact-verifier** with all the sealed research files. For big jobs (over 100 claims), dispatch **one verifier instance per desk in parallel**. Each writes `facts-parts/<desk>.json` within its fact-id range (updates 0001-0199, methods 0200-0399, quests 0400-0599, threats 0600-0799, logistics 0800-0899, rfi 0900-0999). Seal each part with `--author fact-verifier`, then run `python3 tools/merge_facts.py <job>` and seal facts.json with `--author system`.
+- Dispatch **fact-verifier** with all the sealed research files. For big jobs (over 100 claims), dispatch **one verifier instance per desk in parallel**. Each writes `facts-parts/<desk>.json` within its fact-id range (updates 0001-0999, methods 1000-1999, quests 2000-2999, threats 3000-3999, logistics 4000-4999, rfi 5000-5999). Seal each part with `--author fact-verifier`, then run `python3 tools/merge_facts.py <job>` and seal facts.json with `--author system`.
 - Gate: `python3 tools/validate.py <job> facts`. Seal with `--author fact-verifier` (single instance) or `system` (merged).
 - **RFI loop:** for each `rfi` entry, dispatch the named desk to write `research/claims-rfi-NN.json`, seal it, then unseal facts.json ("adjudicate RFI NN") and re-dispatch the verifier to add the new facts. Allow at most 3 loops, then report the gap to the owner.
 

@@ -190,13 +190,22 @@ def facts_index(job):
     return {f["fact_id"]: f for f in load_json(p)["facts"]} if p.exists() else {}
 
 
-def g_facts(job, r):
-    fx = _load(job, "facts.json", r, "facts")
+PART_FILES = {"updates": "research/updates.json", "methods": "research/claims-methods.json",
+              "quests": "research/claims-quests.json", "threats": "research/claims-threats.json",
+              "logistics": "research/claims-logistics.json"}
+
+
+def g_facts(job, r, part=None):
+    rel = f"facts-parts/{part}.json" if part else "facts.json"
+    fx = _load(job, rel, r, "facts")
     if not fx:
         return
-    _sealed(job, "facts.json", r, required=False)
-    check_provenance(job, "facts.json", fx, r, "fact-verifier")
+    _sealed(job, rel, r, required=False)
+    check_provenance(job, rel, fx, r, "fact-verifier")
     claims = all_claims(job, Report())
+    if part:
+        src = PART_FILES.get(part)
+        claims = {k: v for k, v in claims.items() if (v["_file"] == src if src else v["_file"].startswith("research/claims-rfi-"))}
     entries = ledger.read_entries(job)
     seal_time = {}
     for e in entries:
@@ -514,9 +523,13 @@ def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("job")
     p.add_argument("stage", choices=list(STAGES))
+    p.add_argument("--part", help="facts stage only: check facts-parts/<desk>.json against that desk's claims")
     a = p.parse_args()
     r = Report()
-    STAGES[a.stage](a.job, r)
+    if a.stage == "facts" and a.part:
+        g_facts(a.job, r, a.part)
+    else:
+        STAGES[a.stage](a.job, r)
     r.print()
     sys.exit(1 if r.fails else 0)
 

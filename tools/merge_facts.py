@@ -4,8 +4,8 @@
 Large jobs run several fact-verifier instances in parallel, one per research
 desk, each writing jobs/<job>/facts-parts/<desk>.json with its own fact-id
 range, so the merge never renumbers anything:
-    updates 0001-0199 · methods 0200-0399 · quests 0400-0599
-    threats 0600-0799 · logistics 0800-0899 · rfi 0900-0999
+    updates 0001-0999 · methods 1000-1999 · quests 2000-2999
+    threats 3000-3999 · logistics 4000-4999 · rfi 5000-5999
 Every part must be sealed (author fact-verifier) before merging. The output
 is sealed by `system`.
 
@@ -21,8 +21,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import die, job_dir, load_json, now_iso, save_json, sha256_file, validate_against  # noqa: E402
 import ledger  # noqa: E402
 
-RANGES = {"updates": (1, 199), "methods": (200, 399), "quests": (400, 599), "threats": (600, 799),
-          "logistics": (800, 899), "rfi": (900, 999)}
+RANGES = {"updates": (1, 999), "methods": (1000, 1999), "quests": (2000, 2999), "threats": (3000, 3999),
+          "logistics": (4000, 4999), "rfi": (5000, 5999)}
 
 
 def main():
