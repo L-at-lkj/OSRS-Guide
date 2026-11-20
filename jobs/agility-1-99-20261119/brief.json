@@ -1,0 +1,602 @@
+{
+  "job_id": "agility-1-99-20261119",
+  "request": "Agility 1-99 guide for my Hardcore Worlds character (standard account: trading and HW GE allowed). Detailed level-by-level, consider all quests and content released in the past 12 months, danger score on every suggestion. Follow-up from the owner (verbatim): \"note that i am following a zerker style build using quests for all defense4 exp at this stage ensure that is considered and  next step suggestions can be provided with multiple options along with justification to assist me throughout my journey\" Further owner messages (verbatim): \"my full completed quest list as of now\" [screenshots], \"50 defence\", [skills tab screenshot]. Further owner message (verbatim, ledger seq 29): \"ensure when checking hiscores you use the hardcore worlds hiscores as normal hiscores do not show hardcore world progress\".",
+  "guide_type": "skill_training",
+  "scope": {
+    "skill": "Agility",
+    "from_level": 57,
+    "to_level": 99,
+    "items": [
+      "Level-by-level Agility training methods from 57 to 99",
+      "Quests that award Agility XP or unlock Agility methods, including quests released in the recency window (Quest Month, November 2026, included)",
+      "Content released in the recency window that affects Agility training (courses, shortcuts, rewards, QoL)",
+      "A Danger Score on every suggested method, quest, step and alternative",
+      "Next-step decision points: at each meaningful fork, 2+ options with justification, all respecting the zerker build constraints"
+    ],
+    "notes": "The owner's character is already Agility 57 (owner's skills-tab screenshot, ledger seq 25), so the routes start at 57; a generic 1-99 guide can be a separate job. Owner wants a detailed level-by-level route. Trading and the Hardcore Worlds Grand Exchange are allowed (standard account on Hardcore Worlds), so purchasable supplies and gear may be suggested; the Hardcore Worlds economy is separate from the main game. Unreleased or announced-only content must not be routed and belongs only under 'upcoming'. Game-content research is out of scope for intake and belongs to the research desks. Account name given by the owner: \"hcmbtw\" (verbatim: \"name is hcmbtw\"); the Hardcore Worlds hiscores board (m=hiscore_oldschool_hardcore_mains) record for \"hcmbtw\" is this character and matches the owner's skills-tab screenshot on all 24 skills (Agility 57, 212,733 XP, looked up 2026-11-19T22:01:42Z). An earlier note said the hiscores record was a different character: that was wrong, because those lookups used the normal board, which does not show Hardcore Worlds progress. Build: the owner follows a zerker-style build with a Defence cap of 50 and Defence XP from quests only at this stage; see profile.build. The owner also asked for next-step suggestions with multiple justified options."
+  },
+  "game_mode": {
+    "world_type": "hardcore_worlds",
+    "account_type": "standard",
+    "membership": "member",
+    "death_ruleset": "hardcore_worlds"
+  },
+  "profile": {
+    "stats": {
+      "Attack": 44,
+      "Strength": 32,
+      "Defence": 1,
+      "Ranged": 56,
+      "Prayer": 44,
+      "Magic": 44,
+      "Runecraft": 5,
+      "Construction": 23,
+      "Hitpoints": 48,
+      "Agility": 57,
+      "Herblore": 1,
+      "Thieving": 24,
+      "Crafting": 21,
+      "Fletching": 9,
+      "Slayer": 20,
+      "Hunter": 9,
+      "Mining": 42,
+      "Smithing": 31,
+      "Fishing": 25,
+      "Cooking": 23,
+      "Firemaking": 30,
+      "Woodcutting": 40,
+      "Farming": 5,
+      "Sailing": 30
+    },
+    "stats_source": "hiscores",
+    "stats_verified_at": "2026-11-19T22:01:42Z",
+    "skill_xp": {
+      "Agility": 212733,
+      "Defence": 0
+    },
+    "skill_xp_source": "Hardcore Worlds hiscores (board hardcore_worlds, m=hiscore_oldschool_hardcore_mains), retrieved 2026-11-19T22:01:42Z. Hiscores refresh on logout; in-game XP may be slightly higher if the owner has trained since the last logout.",
+    "quests_completed": [
+      "Animal Magnetism",
+      "Biohazard",
+      "Children of the Sun",
+      "Client of Kourend",
+      "Cook's Assistant",
+      "Current Affairs",
+      "Daddy's Home",
+      "Ernest the Chicken",
+      "Fight Arena",
+      "Gertrude's Cat",
+      "Ghosts Ahoy",
+      "Goblin Diplomacy",
+      "The Grand Tree",
+      "Hazeel Cult",
+      "The Ides of Milk",
+      "The Knight's Sword",
+      "Learning the Ropes",
+      "The Lost Tribe",
+      "Misthalin Mystery",
+      "Monk's Friend",
+      "Mudfoot's Big Adventure",
+      "Observatory Quest",
+      "Pandemonium",
+      "Plague City",
+      "A Porcine of Interest",
+      "Priest in Peril",
+      "Prying Times",
+      "The Restless Ghost",
+      "Rune Mysteries",
+      "Sea Slug",
+      "Sheep Shearer",
+      "Tree Gnome Village",
+      "Vampyre Slayer",
+      "Waterfall Quest",
+      "Witch's House",
+      "X Marks the Spot"
+    ],
+    "diaries": [],
+    "unlocks": [],
+    "bank_notes": "Unknown. The owner gave no bank information. Quests come from the owner's quest-list screenshots (hiscores do not list quests); achievement diaries and other unlocks were not supplied (WikiSync returned no data for \"hcmbtw\", HTTP 400) and are treated as none.",
+    "gp_budget": null,
+    "build": {
+      "archetype": "zerker",
+      "skill_caps": {
+        "Defence": 50
+      },
+      "xp_rules": [
+        "Defence XP only from quest rewards at this stage (current Defence is 1; all Defence XP at this stage comes from quests)",
+        "Never train Defence directly or choose Defence for an XP lamp or other choosable XP reward",
+        "Never use a combat style that gives Defence XP (e.g. defensive, or controlled/shared melee styles; longrange ranged or defensive-casting magic)",
+        "Total Defence XP from all quest rewards used must keep Defence at or below the cap (50); the XP engine tracks this on every route"
+      ],
+      "lamp_policy": "never Defence",
+      "confirmed": true
+    }
+  },
+  "preferences": {
+    "risk_appetite": "standard",
+    "optimise_for": "balanced",
+    "attention": "semi",
+    "session_minutes": null,
+    "exclusions": []
+  },
+  "assumptions": [
+    {
+      "text": "Account type is standard (trading and the Hardcore Worlds GE allowed) on Hardcore Worlds, membership: member. Owner stated: \"Standard (trades/GE)\" on Hardcore Worlds; member.",
+      "confirmed": true
+    },
+    {
+      "text": "Risk appetite is standard with a Danger Score cap of 44. Owner stated: \"Standard, cap 44\".",
+      "confirmed": true
+    },
+    {
+      "text": "Death rules follow the Hardcore Worlds ruleset (Hardcore Group Ironman death ruleset), which is stricter than HCIM; deaths normally considered safe for HCIM may end the run.",
+      "confirmed": true
+    },
+    {
+      "text": "The account name is \"hcmbtw\". Owner stated: \"name is hcmbtw\".",
+      "confirmed": true
+    },
+    {
+      "text": "Stats are verified against the Hardcore Worlds hiscores (board hardcore_worlds, m=hiscore_oldschool_hardcore_mains), looked up 2026-11-19T22:01:42Z: the record for 'hcmbtw' is this character and all 24 skill levels match the owner's skills-tab screenshot (ledger seq 25). Quests come from the owner's quest-list screenshots. Correction: an earlier version of this brief said the 'hcmbtw' hiscores record is a different (main-game) character. That was wrong: those lookups used the normal hiscores board, which does not show Hardcore Worlds progress.",
+      "confirmed": true
+    },
+    {
+      "text": "Screenshot vs Hardcore Worlds hiscores: no differences. All 24 levels are equal (Attack 44, Strength 32, Defence 1, Ranged 56, Prayer 44, Magic 44, Runecraft 5, Construction 23, Hitpoints 48, Agility 57, Herblore 1, Thieving 24, Crafting 21, Fletching 9, Slayer 20, Hunter 9, Mining 42, Smithing 31, Fishing 25, Cooking 23, Firemaking 30, Woodcutting 40, Farming 5, Sailing 30). The Director's earlier probe (ledger seq 29) saw Hitpoints 47 and Ranged 53 on this board; intake's lookup at 22:01:42Z shows Hitpoints 48 (91,355 XP) and Ranged 56 (189,084 XP), consistent with the hiscores having refreshed after a logout. profile.stats uses these levels.",
+      "confirmed": true
+    },
+    {
+      "text": "Starting Agility XP is 212,733 (Hardcore Worlds hiscores, 2026-11-19T22:01:42Z); Defence XP is 0. Hiscores refresh on logout, so in-game Agility XP may be slightly higher if the owner has trained Agility since their last logout. The XP engine starts from 212,733.",
+      "confirmed": false
+    },
+    {
+      "text": "No achievement diaries or other unlocks are completed. The owner supplied quests and skills only; WikiSync returned no data for \"hcmbtw\" (HTTP 400). Treated as none, which is pessimistic.",
+      "confirmed": false
+    },
+    {
+      "text": "Optimise for 'balanced' (a balance of XP rate, safety and cost). Asked once; the owner did not answer, so this company default stands.",
+      "confirmed": false
+    },
+    {
+      "text": "Attention style is 'semi' (semi-attentive play), no fixed session length. Asked once; the owner did not answer, so this default stands.",
+      "confirmed": false
+    },
+    {
+      "text": "No GP budget; the guide should note approximate costs of bought supplies rather than assume a budget. Asked once; the owner did not answer.",
+      "confirmed": false
+    },
+    {
+      "text": "No exclusions (no methods, areas or quests ruled out by the owner). Asked once; the owner did not answer.",
+      "confirmed": false
+    },
+    {
+      "text": "The account follows a zerker-style build, and at this stage all Defence XP comes from quests. Owner stated (verbatim): \"i am following a zerker style build using quests for all defense4 exp at this stage\" (\"defense4\" read as a typo for \"defence\").",
+      "confirmed": true
+    },
+    {
+      "text": "Defence cap is 50. Owner stated (verbatim): \"50 defence\". Current Defence is 1 (owner's skills-tab screenshot); all Defence XP at this stage comes from quests.",
+      "confirmed": true
+    },
+    {
+      "text": "Lamps and other choosable XP rewards must never be spent on Defence, and no combat style that gives Defence XP may be used. This follows from the owner's \"quests for all defense exp\" and was specified by the Director's dispatch; the owner did not state it in these words.",
+      "confirmed": false
+    }
+  ],
+  "open_questions": [
+    "Have you completed any achievement diaries (or other unlocks relevant to Agility, e.g. shortcuts or rewards) on this character? You sent quests and skills only, so diaries are treated as none.",
+    "\"At this stage\" Defence XP comes only from quests: is there a point (e.g. a level or milestone) after which you plan to change this? Until told otherwise, the guide will never use Defence XP outside quest rewards."
+  ],
+  "acceptance_criteria": [
+    "Every Agility level from 57 to 98 is covered by at least one recommended method (no level gaps), with level requirements met at the point of use given the owner-stated stats and quests.",
+    "Every suggested step, method, quest and alternative carries a residual Danger Score per docs/05-danger-model.md, scored for the Hardcore Worlds death ruleset at the profile's Hitpoints.",
+    "The recommended (safest) route keeps every step at or below the owner's cap of 44, unless no alternative exists and the owner explicitly accepts that step; steps above the cap are flagged.",
+    "Every quest released in the recency window (2025-11-19 to 2026-11-19) that gives Agility XP or unlocks an Agility method is evaluated and either included in the route or rejected with a stated reason; November 2026 Quest Month quests are explicitly covered.",
+    "Content under 30 days old is marked as volatile, and unreleased or announced-only content is listed only under 'upcoming', never in the route.",
+    "No step relies on an activity reported unsafe on Hardcore Worlds being a safe death; any such activity is flagged with its Hardcore Worlds danger.",
+    "Requirements of each method/quest (skills, quests, items) are stated and checked against the profile; XP figures and levels are recomputed by the calc toolchain.",
+    "All factual statements trace to verified fact IDs from pinned T1/T2 sources; nothing is taken from docs/07 leads without verification.",
+    "No route pushes Defence above the build cap of 50 (tracked by the XP engine).",
+    "Every quest used lists its Defence XP so the cap can be tracked.",
+    "The guide offers next-step decision points with 2+ justified options at each meaningful fork."
+  ],
+  "recency_window": {
+    "from": "2025-11-19",
+    "to": "2026-11-19"
+  },
+  "provenance": {
+    "agent": "intake-officer",
+    "started_at": "2026-11-19T22:01:30Z",
+    "finished_at": "2026-11-19T22:03:30Z",
+    "dispatch_ref": "dispatch/010-intake-officer.md",
+    "inputs": [
+      {
+        "path": "dispatch/010-intake-officer.md",
+        "sha256": "3d196299196c8d385ca46dc858e29d0cd364341fa86db85ffdfbbf338b9c8167"
+      },
+      {
+        "path": ".claude/agents/intake-officer.md",
+        "sha256": "0fa00eeaea62ac23ed10cddb8286069239361731ec40a174fc822e295946c6b0"
+      },
+      {
+        "path": "schemas/brief.schema.json",
+        "sha256": "4f20cc7c70b08353daef9ff8496fca8e80b67bfc7f555d26869dd494a870c255"
+      },
+      {
+        "path": "tools/validate.py",
+        "sha256": "99cb395821b56fc9aff2efeb2eeb4edeb1f888f8d5c069122709f3ab73f402e8"
+      },
+      {
+        "path": "tools/hiscores.py",
+        "sha256": "9b8780bdbc646049749a84d036ae3fc2db3e870b370c32baa789bf5ee2642591"
+      },
+      {
+        "path": "docs/07-hardcore-worlds-baseline.md",
+        "sha256": "75a2a4abff833d60dce05ec9a0c7ceda54f682c275e3edf73dfa4fe04f79ecf1"
+      }
+    ],
+    "actions": [
+      {
+        "kind": "read",
+        "detail": "[v1 run 2026-11-19T21:50Z, carried over, not re-run] Re-read the regenerated intake-officer charter including the company constitution",
+        "target": ".claude/agents/intake-officer.md",
+        "outcome": "sha256 ab15cd882b02140bff266ffe82f6ea1b2a84288866ebc024ef5d5830eaa3942d (differs from 8ce86f4b... recorded in the previous brief, as expected after regeneration)"
+      },
+      {
+        "kind": "verify",
+        "detail": "[v1 run 2026-11-19T21:50Z, carried over, not re-run] python3 tools/ledger.py verify agility-1-99-20261119",
+        "target": "jobs/agility-1-99-20261119/ledger.jsonl",
+        "outcome": "OK: ledger chain and all seals intact; WARN unsealed brief.json (my own draft, being revised)"
+      },
+      {
+        "kind": "read",
+        "detail": "[v1 run 2026-11-19T21:50Z, carried over, not re-run] Read the dispatch and confirmed its sha256 matches the ledger seal (seq 6); read ledger events seq 3-7 (owner answer 'name is hcmbtw'; Director probe note)",
+        "target": "dispatch/002-intake-officer.md",
+        "outcome": "sha256 aaf1a693c4f2db12825e00cec7c453deb41d90805755db6cf555896fff7aefc6 matches seal"
+      },
+      {
+        "kind": "read",
+        "detail": "[v1 run 2026-11-19T21:50Z, carried over, not re-run] Read my previous unsealed brief (as my own draft to revise), the brief schema, tools/hiscores.py (docstring: Hardcore Worlds hiscores endpoint unconfirmed, passable via --suffix), and the provenance/brief checks in tools/validate.py",
+        "target": "jobs/agility-1-99-20261119/brief.json; schemas/brief.schema.json; tools/hiscores.py; tools/validate.py",
+        "outcome": "Company files may be listed as provenance inputs (checked against current hashes); grep of docs/07 for 'hiscore' found nothing on a Hardcore Worlds hiscores endpoint"
+      },
+      {
+        "kind": "fetch",
+        "detail": "[WRONG BOARD, SUPERSEDED] [v1 run 2026-11-19T21:50Z, carried over, not re-run] python3 tools/hiscores.py lookup hcmbtw --mode normal",
+        "target": "https://secure.runescape.com/m=hiscore_oldschool/index_lite.json?player=hcmbtw",
+        "outcome": "200, retrieved 2026-11-19T21:50:35+00:00: every skill level 1 except Hitpoints 10 (24 skills incl. Sailing) -- Superseded: this is the normal (main-game) board, which does not show Hardcore Worlds progress; it is not evidence about this character. See the hardcore_worlds lookup of 2026-11-19T22:01:42Z."
+      },
+      {
+        "kind": "fetch",
+        "detail": "[v1 run 2026-11-19T21:50Z, carried over, not re-run] python3 tools/hiscores.py lookup hcmbtw --mode hardcore_ironman",
+        "target": "https://secure.runescape.com/m=hiscore_oldschool_hardcore_ironman/index_lite.json?player=hcmbtw",
+        "outcome": "HTTP 404 Not Found (no record) (not a Hardcore Worlds board; retained only as evidence about account type)"
+      },
+      {
+        "kind": "fetch",
+        "detail": "[v1 run 2026-11-19T21:50Z, carried over, not re-run] python3 tools/hiscores.py lookup hcmbtw --mode ironman",
+        "target": "https://secure.runescape.com/m=hiscore_oldschool_ironman/index_lite.json?player=hcmbtw",
+        "outcome": "HTTP 404 Not Found (no record) (not a Hardcore Worlds board; retained only as evidence about account type)"
+      },
+      {
+        "kind": "fetch",
+        "detail": "[v1 run 2026-11-19T21:50Z, carried over, not re-run] python3 tools/hiscores.py wikisync hcmbtw (profile STANDARD)",
+        "target": "https://sync.runescape.wiki/runelite/player/hcmbtw/STANDARD",
+        "outcome": "HTTP 400 Bad Request (no WikiSync data; quests and diaries not available)"
+      },
+      {
+        "kind": "fetch",
+        "detail": "[WRONG BOARD, SUPERSEDED] [v1 run 2026-11-19T21:50Z, carried over, not re-run] Re-fetched the same normal-mode endpoint with python3 urllib to inspect the raw rank/XP fields that tools/hiscores.py discards",
+        "target": "https://secure.runescape.com/m=hiscore_oldschool/index_lite.json?player=hcmbtw",
+        "outcome": "Overall level 33, 1,154 XP, rank -1; 0 of 25 skill rows ranked; every skill 0 XP except Hitpoints 1,154 XP; no activity/boss scores above -1 -- Superseded: this is the normal (main-game) board, which does not show Hardcore Worlds progress; it is not evidence about this character. See the hardcore_worlds lookup of 2026-11-19T22:01:42Z."
+      },
+      {
+        "kind": "decide",
+        "detail": "[SUPERSEDED] [v1 run 2026-11-19T21:50Z, carried over, not re-run] Did not guess a Hardcore Worlds hiscores --suffix",
+        "outcome": "The endpoint is unconfirmed per the tool docstring and is for the Patch Sentinel to confirm; guessing would be inventing -- Superseded: the board is now confirmed (docs/07, ledger seq 29) and is the hiscores.py default."
+      },
+      {
+        "kind": "write",
+        "detail": "[WRONG BOARD, SUPERSEDED] [v1 run 2026-11-19T21:50Z, carried over, not re-run] Rewrote the requirements brief with hiscores stats, revised assumptions and open questions (those stats came from the normal board and were later replaced)",
+        "target": "jobs/agility-1-99-20261119/brief.json"
+      },
+      {
+        "kind": "verify",
+        "detail": "[v1 run 2026-11-19T21:50Z, carried over, not re-run] python3 tools/validate.py agility-1-99-20261119 brief",
+        "target": "jobs/agility-1-99-20261119/brief.json",
+        "outcome": "0 fail, 2 warn (not yet sealed; 6 unconfirmed assumptions)"
+      },
+      {
+        "kind": "verify",
+        "detail": "[v2 run 2026-11-19T21:55Z, carried over, not re-run] python3 tools/ledger.py verify agility-1-99-20261119",
+        "target": "jobs/agility-1-99-20261119/ledger.jsonl",
+        "outcome": "OK: ledger chain and all seals intact"
+      },
+      {
+        "kind": "read",
+        "detail": "[v2 run 2026-11-19T21:55Z, carried over, not re-run] Re-read the regenerated intake-officer charter (sha256 d0ba11d70208...) including step 4 Build constraints, and the updated brief schema with profile.build",
+        "target": ".claude/agents/intake-officer.md; schemas/brief.schema.json"
+      },
+      {
+        "kind": "read",
+        "detail": "[v2 run 2026-11-19T21:55Z, carried over, not re-run] Read dispatch 008 and confirmed its sha256 matches the ledger seal (seq 22); read ledger events seq 20-23 (owner's verbatim zerker message; brief unsealed at seq 21)",
+        "target": "dispatch/008-intake-officer.md",
+        "outcome": "sha256 a2f80f12... matches seal"
+      },
+      {
+        "kind": "read",
+        "detail": "[v2 run 2026-11-19T21:55Z, carried over, not re-run] Read my previous brief (v1) and confirmed its sha256 matches its seal (seq 9) before revising",
+        "target": "jobs/agility-1-99-20261119/brief.json",
+        "outcome": "sha256 dfabd8f3db7e... matches seal"
+      },
+      {
+        "kind": "read",
+        "detail": "[v2 run 2026-11-19T21:55Z, carried over, not re-run] Read the input-check section of tools/validate.py to see how provenance inputs are checked",
+        "target": "tools/validate.py"
+      },
+      {
+        "kind": "write",
+        "detail": "[v2 run 2026-11-19T21:55Z, carried over, not re-run] Revised the brief: added profile.build (zerker, Defence cap 45, xp_rules, lamp_policy), 3 acceptance criteria, 3 assumptions, 2 open questions, a decision-point scope item; all v1 content kept",
+        "target": "jobs/agility-1-99-20261119/brief.json"
+      },
+      {
+        "kind": "verify",
+        "detail": "[v2 run 2026-11-19T21:55Z, carried over, not re-run] python3 tools/validate.py agility-1-99-20261119 brief",
+        "target": "jobs/agility-1-99-20261119/brief.json",
+        "outcome": "0 fail, 2 warn (not yet sealed; 8 unconfirmed assumptions)"
+      },
+      {
+        "kind": "read",
+        "detail": "[v3 run 2026-11-19T21:59Z, carried over, not re-run] Read the intake-officer charter (incl. company constitution)",
+        "target": ".claude/agents/intake-officer.md",
+        "outcome": "sha256 d0ba11d70208782c29b8ee90739943fd873d09407e72b09a9c81ac31f1a73273"
+      },
+      {
+        "kind": "verify",
+        "detail": "[v3 run 2026-11-19T21:59Z, carried over, not re-run] python3 tools/ledger.py verify agility-1-99-20261119",
+        "target": "jobs/agility-1-99-20261119/ledger.jsonl",
+        "outcome": "OK: ledger chain and all seals intact"
+      },
+      {
+        "kind": "read",
+        "detail": "[v3 run 2026-11-19T21:59Z, carried over, not re-run] Read dispatch 009 and confirmed its sha256 matches the ledger seal (seq 26); ran python3 tools/ledger.py status",
+        "target": "dispatch/009-intake-officer.md",
+        "outcome": "sha256 34ae8644... matches seal"
+      },
+      {
+        "kind": "read",
+        "detail": "[v3 run 2026-11-19T21:59Z, carried over, not re-run] Read ledger entries seq 22-27, including the owner-data decision entry seq 25 (author director; transcription of the owner's quest-list and skills-tab screenshots, verbatim '50 defence', Director decision on scope 57-99)",
+        "target": "jobs/agility-1-99-20261119/ledger.jsonl#seq=25",
+        "outcome": "seq 25 entry_hash a3a48be0ba05e16aac2d9e887515a4f369bce942d21e668dea4737b305fa30d4; chain verified"
+      },
+      {
+        "kind": "read",
+        "detail": "[v3 run 2026-11-19T21:59Z, carried over, not re-run] Read my own unsealed draft brief (v2, from dispatch 008) as the base to revise, plus the brief schema and the provenance/brief checks in tools/validate.py",
+        "target": "jobs/agility-1-99-20261119/brief.json; schemas/brief.schema.json; tools/validate.py",
+        "outcome": "draft sha256 c210b1b065a08ce3145d0b838451fbb57d5f5cd52b2d8d9083b65a8e740fa7f6 (unsealed, my own work; not listed as an input because only sealed job files may be inputs)"
+      },
+      {
+        "kind": "compute",
+        "detail": "[v3 run 2026-11-19T21:59Z, carried over, not re-run] Mapped the 24 skills-tab abbreviations in seq 25 to schema skill names (Att=Attack, Str=Strength, Def=Defence, Rng=Ranged, Pray=Prayer, Mag=Magic, RC=Runecraft, Con=Construction, HP=Hitpoints, Agi=Agility, Herb=Herblore, Thiev=Thieving, Craft=Crafting, Fletch=Fletching, Slay=Slayer, Hunt=Hunter, Min=Mining, Smith=Smithing, Fish=Fishing, Cook=Cooking, FM=Firemaking, WC=Woodcutting, Farm=Farming, Sail=Sailing) and counted the quest list",
+        "outcome": "24 skills; 36 distinct quest names copied exactly as written in seq 25"
+      },
+      {
+        "kind": "write",
+        "detail": "[v3 run 2026-11-19T21:59Z, carried over, not re-run] Revised the brief per dispatch 009: owner-stated stats and quests, Defence cap 50 confirmed, scope Agility 57-99 with notes, acceptance criteria 57-98, hiscores-stat assumption and its open question replaced; other preferences and assumptions kept",
+        "target": "jobs/agility-1-99-20261119/brief.json"
+      },
+      {
+        "kind": "verify",
+        "detail": "[v3 run 2026-11-19T21:59Z, carried over, not re-run] python3 tools/validate.py agility-1-99-20261119 brief",
+        "target": "jobs/agility-1-99-20261119/brief.json",
+        "outcome": "0 fail, 3 warn (not yet sealed; stats user-stated; 6 unconfirmed assumptions)"
+      },
+      {
+        "kind": "read",
+        "detail": "Re-read the updated intake-officer charter (incl. step 3: default board Hardcore Worlds; record target-skill XP; screenshot may be newer than hiscores) and the company constitution",
+        "target": ".claude/agents/intake-officer.md",
+        "outcome": "sha256 0fa00eeaea62ac23ed10cddb8286069239361731ec40a174fc822e295946c6b0 (matches the dispatch's prefix 0fa00eeaea62)"
+      },
+      {
+        "kind": "verify",
+        "detail": "python3 tools/ledger.py verify agility-1-99-20261119",
+        "target": "jobs/agility-1-99-20261119/ledger.jsonl",
+        "outcome": "OK: ledger chain and all seals intact"
+      },
+      {
+        "kind": "read",
+        "detail": "Read dispatch 010 and confirmed its sha256 matches the ledger seal (seq 30; dispatch event seq 31)",
+        "target": "dispatch/010-intake-officer.md",
+        "outcome": "sha256 3d196299... matches seal"
+      },
+      {
+        "kind": "read",
+        "detail": "Read ledger seq 25 (owner screenshot transcription, entry_hash a3a48be0...) and seq 29 (owner verbatim hiscores instruction; Director probe of the HW board; governance change, entry_hash fd2b91cc...)",
+        "target": "jobs/agility-1-99-20261119/ledger.jsonl#seq=25,29",
+        "outcome": "chain verified"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/hiscores.py lookup hcmbtw (default board hardcore_worlds)",
+        "target": "https://secure.runescape.com/m=hiscore_oldschool_hardcore_mains/index_lite.json?player=hcmbtw",
+        "outcome": "200, source official_hiscores, board hardcore_worlds, retrieved 2026-11-19T22:01:42+00:00. Levels/XP: Attack 44/60,904; Defence 1/0; Strength 32/17,720; Hitpoints 48/91,355; Ranged 56/189,084; Prayer 44/56,096; Magic 44/61,040; Cooking 23/6,469; Woodcutting 40/40,790; Fletching 9/1,000; Fishing 25/8,576; Firemaking 30/13,420; Crafting 21/5,075; Smithing 31/16,432; Mining 42/46,210; Herblore 1/0; Agility 57/212,733; Thieving 24/7,554; Slayer 20/4,544; Farming 5/500; Runecraft 5/500; Hunter 9/1,000; Construction 23/6,632; Sailing 30/13,922"
+      },
+      {
+        "kind": "read",
+        "detail": "Read tools/hiscores.py --help, the hiscores line in docs/07, the brief schema, my own unsealed draft brief (base to revise) and the provenance/brief checks in tools/validate.py",
+        "target": "tools/hiscores.py; docs/07-hardcore-worlds-baseline.md; schemas/brief.schema.json; jobs/agility-1-99-20261119/brief.json; tools/validate.py",
+        "outcome": "draft sha256 58a8dd1f00566a491e4624705ce0dd3ca23b43fcb8192245b95a38aac2448f9f (unsealed, my own work; not an input)"
+      },
+      {
+        "kind": "fetch",
+        "detail": "Re-ran python3 tools/hiscores.py lookup hcmbtw, saving the JSON to my scratchpad, for the consistency check below",
+        "target": "https://secure.runescape.com/m=hiscore_oldschool_hardcore_mains/index_lite.json?player=hcmbtw",
+        "outcome": "retrieved 2026-11-19T22:01:54+00:00; identical levels and XP to the 22:01:42 lookup"
+      },
+      {
+        "kind": "compute",
+        "detail": "Recomputed each skill's level from its hiscores XP with the standard OSRS XP formula, and compared every hiscores level with the seq 25 screenshot transcription",
+        "outcome": "24/24 hiscores levels consistent with their XP; 24/24 equal to the screenshot; 0 differences"
+      },
+      {
+        "kind": "write",
+        "detail": "Revised the brief per dispatch 010 (stats_source hiscores, stats_verified_at, profile.skill_xp, corrected the 'different character' statement, old lookups marked wrong board)",
+        "target": "jobs/agility-1-99-20261119/brief.json"
+      },
+      {
+        "kind": "verify",
+        "detail": "python3 tools/validate.py agility-1-99-20261119 brief",
+        "target": "jobs/agility-1-99-20261119/brief.json",
+        "outcome": "0 fail, 2 warn (brief not yet sealed; 7 unconfirmed assumptions)"
+      }
+    ],
+    "decisions": [
+      {
+        "decision": "guide_type = skill_training; scope Agility 57-99 (was 1-99)",
+        "reason": "Dispatch 009 item 4 and the Director's decision in ledger seq 25: the owner's character is already Agility 57, so the routes start at 57; a generic 1-99 guide can be a separate job.",
+        "alternatives_considered": [
+          "keep 1-99 (rejected by the Director's decision; levels 1-56 are already done)",
+          "account_progression",
+          "quest_route"
+        ]
+      },
+      {
+        "decision": "world_type and death_ruleset = hardcore_worlds; account_type = standard; membership = member (unchanged)",
+        "reason": "Charter step 2 and the owner's verbatim answers (\"Standard (trades/GE)\" on Hardcore Worlds; member). The 404s on the ironman and hardcore ironman hiscores are consistent with a standard account. The Hardcore Worlds board (hardcore_mains) record for 'hcmbtw' confirms this is a Hardcore Worlds main (non-ironman) character.",
+        "alternatives_considered": [
+          "death_ruleset hcgim (rejected: charter mandates hardcore_worlds for this mode)"
+        ]
+      },
+      {
+        "decision": "[SUPERSEDED by the decision below] stats_source = user_stated, stats_verified_at = null, profile.stats = exactly the 24 levels in ledger seq 25 (supersedes the hiscores-derived stats)",
+        "reason": "Dispatch 009 item 1. The owner's skills-tab screenshot was transcribed by the Director into ledger seq 25. The 'hcmbtw' main-game hiscores record (all 1s) contradicts the 36 completed quests and is a different character, so it is not used. -- Correction (dispatch 010): the 'different character' conclusion was wrong. It rested on the NORMAL board (m=hiscore_oldschool), which does not show Hardcore Worlds progress.",
+        "alternatives_considered": [
+          "keep hiscores stats (rejected: different character)",
+          "assumed_minimum (rejected: owner supplied actual levels)"
+        ]
+      },
+      {
+        "decision": "quests_completed = the 36 quest names in ledger seq 25, exactly as written; diaries and unlocks left empty",
+        "reason": "Dispatch 009 item 2. The owner supplied quests but no diaries or unlocks; the charter forbids inventing completions, so diaries/unlocks stay empty with an unconfirmed assumption and an open question.",
+        "alternatives_considered": [
+          "normalise quest names to wiki titles (rejected: dispatch says exactly as written)"
+        ]
+      },
+      {
+        "decision": "optimise_for balanced, attention semi, no GP budget, no exclusions kept as unconfirmed assumptions and removed from open_questions",
+        "reason": "Dispatch item 3 and ledger seq 4: the owner saw these questions once and did not answer; keep defaults.",
+        "alternatives_considered": [
+          "re-ask the owner (rejected by the dispatch)",
+          "optimise_for safety"
+        ]
+      },
+      {
+        "decision": "Company reference files read (charter, schema, tools/hiscores.py, docs/07) are now listed under provenance inputs",
+        "reason": "Constitution rule 1 requires recording the sha256 of every input, with company files by project path; tools/validate.py checks company-file inputs against current hashes. This corrects the previous brief, which recorded them only as read actions.",
+        "alternatives_considered": [
+          "list only the sealed dispatch (previous approach)"
+        ]
+      },
+      {
+        "decision": "The Director's reachability probe (ledger seq 5) was not used as evidence",
+        "reason": "Dispatch item 4 and the minimal-trust rule; all lookups above were run independently by intake.",
+        "alternatives_considered": []
+      },
+      {
+        "decision": "profile.build = zerker, skill_caps {Defence: 50}, lamp_policy 'never Defence', confirmed true; cap assumption marked confirmed and its open question removed",
+        "reason": "Dispatch 009 item 3; owner stated (verbatim) \"50 defence\" (ledger seq 25). Current Defence is 1 and all Defence XP at this stage comes from quests; the cumulative-quest-XP rule now names cap 50.",
+        "alternatives_considered": [
+          "keep 45 (rejected: owner gave 50)"
+        ]
+      },
+      {
+        "decision": "xp_rules include an explicit cumulative-quest-XP rule in addition to the three dispatch examples",
+        "reason": "Quest Defence XP is the only permitted source, so the cap can only be breached through quest rewards; stating it makes acceptance criteria 9-10 checkable. No game data (quest XP values) was researched or asserted.",
+        "alternatives_considered": [
+          "only the three dispatch examples"
+        ]
+      },
+      {
+        "decision": "Combat-style rule examples name style categories (defensive, controlled/shared melee, longrange, defensive casting) without XP figures",
+        "reason": "Clarifies 'a combat style that gives Defence XP' for later roles; any exact XP split is a game fact for the research desks to verify, not intake.",
+        "alternatives_considered": [
+          "leave the rule fully generic"
+        ]
+      },
+      {
+        "decision": "Earlier runs' actions kept and labelled as carried over; decisions superseded by owner data rewritten",
+        "reason": "The v1 WikiSync lookup remains the evidence that WikiSync has no data. (The v1 normal-board lookups were later found to be the wrong board; see the dispatch 010 decisions.) no lookups were re-run in this revision.",
+        "alternatives_considered": [
+          "drop earlier actions (rejected: would remove evidence for the hiscores decision)",
+          "re-run lookups (not requested)"
+        ]
+      },
+      {
+        "decision": "Owner's \"defense4\" read as \"defence\"",
+        "reason": "Typo; the sentence only makes sense as Defence XP. Recorded verbatim in the request and assumption.",
+        "alternatives_considered": []
+      },
+      {
+        "decision": "Ledger seq 25 recorded under actions (with its entry_hash), not under provenance.inputs",
+        "reason": "The ledger is not a sealed file, so tools/validate.py would reject it as an input; seq 25 is protected by the verified hash chain and is named as a sealed input by dispatch 009.",
+        "alternatives_considered": [
+          "list ledger.jsonl as an input (rejected: validator FAIL, file is never sealed)"
+        ]
+      },
+      {
+        "decision": "Hiscores open question replaced; quests/diaries question narrowed to diaries and unlocks; Defence-cap question removed; 'at this stage' question kept",
+        "reason": "Dispatch 009 items 1 and 3; quests are now supplied but diaries and unlocks are still unknown.",
+        "alternatives_considered": [
+          "drop the diaries question entirely (rejected: still unknown and affects shortcut/reward options)"
+        ]
+      },
+      {
+        "decision": "Acceptance criterion 1 now covers Agility 57-98; criterion 9 names cap 50; build and decision-point criteria kept",
+        "reason": "Dispatch 009 item 5.",
+        "alternatives_considered": []
+      },
+      {
+        "decision": "Owner's latest messages appended verbatim to the request field",
+        "reason": "Keeps the request record complete; the screenshots themselves were not seen by intake, only the Director's transcription.",
+        "alternatives_considered": [
+          "leave request unchanged"
+        ]
+      },
+      {
+        "decision": "stats_source = hiscores; stats_verified_at = 2026-11-19T22:01:42Z; profile.stats unchanged (screenshot levels, ledger seq 25)",
+        "reason": "Dispatch 010 items 1-2 and charter step 3: the Hardcore Worlds board record for 'hcmbtw' matches the screenshot on all 24 skills, so the stats are verified by hiscores. No skill is higher on the screenshot, so no screenshot-over-hiscores substitution was needed.",
+        "alternatives_considered": [
+          "keep user_stated (rejected: all 24 levels now independently verified)",
+          "list HP 47 / Ranged 53 differences as in the dispatch example (rejected: my lookup shows 48 and 56; inventing a difference would be a defect)"
+        ]
+      },
+      {
+        "decision": "profile.skill_xp = {Agility: 212733, Defence: 0}, with skill_xp_source naming the board and lookup time",
+        "reason": "Dispatch 010 item 3 and charter step 3: the XP engine starts from the exact target-skill XP; Defence XP is tracked against the build cap of 50. The note on possible in-game XP above the hiscores value is kept as an unconfirmed assumption.",
+        "alternatives_considered": [
+          "record XP for all 24 skills (not requested; full list kept in provenance)"
+        ]
+      },
+      {
+        "decision": "Statement that the 'hcmbtw' hiscores record is a different character removed from scope.notes and assumptions and replaced by a correction; old normal-board lookups kept in provenance marked '[WRONG BOARD, SUPERSEDED]'",
+        "reason": "Dispatch 010 item 4 and the owner's verbatim instruction (ledger seq 29): normal hiscores do not show Hardcore Worlds progress.",
+        "alternatives_considered": [
+          "delete the old lookups (rejected: dispatch says keep them; audit trail)"
+        ]
+      },
+      {
+        "decision": "Company files read in this run (tools/hiscores.py, docs/07) added to provenance inputs; dispatch 009 input replaced by dispatch 010",
+        "reason": "Constitution rule 1: record the sha256 of every input actually used in this run.",
+        "alternatives_considered": []
+      }
+    ],
+    "limitations": [
+      "Quests are the Director's transcription of the owner's screenshots (ledger seq 25); intake did not see the screenshots, and quests could not be verified independently (hiscores do not list quests; WikiSync returned HTTP 400). Skill levels are verified against the Hardcore Worlds hiscores.",
+      "Skill names were mapped from the skills-tab abbreviations in seq 25 (e.g. RC=Runecraft, Con=Construction, Sail=Sailing); the mapping is unambiguous but is intake's reading.",
+      "Achievement diaries and other unlocks are unknown and treated as none (open question).",
+      "optimise_for, attention, GP budget and exclusions are not confirmed by the owner.",
+      "\"At this stage\" implies the quest-only Defence rule may change later; the brief treats it as in force for the whole guide until the owner says otherwise.",
+      "Quest Defence XP values and quest-name accuracy against the wiki were not researched; they are for the research desks and the XP engine.",
+      "Hiscores refresh on logout: the Agility XP of 212,733 is the value at the owner's last logout and may be slightly lower than in-game XP.",
+      "The Hardcore Worlds hiscores board name is recorded in docs/07 as confirmed by a live lookup on 2026-11-19 (originally from an OSRS Tools post); intake relied on the company tool's default board."
+    ]
+  }
+}

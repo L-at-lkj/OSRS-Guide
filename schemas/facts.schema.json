@@ -1,0 +1,338 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Verified fact ledger (fact-verifier)",
+  "type": "object",
+  "definitions": {
+    "source": {
+      "type": "object",
+      "required": [
+        "tier",
+        "title",
+        "url",
+        "retrieved"
+      ],
+      "properties": {
+        "tier": {
+          "enum": [
+            "T1",
+            "T2",
+            "T3",
+            "T4"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "pattern": "^https?://"
+        },
+        "revid": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "retrieved": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}"
+        },
+        "published": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "quote": {
+          "type": "string",
+          "maxLength": 600
+        },
+        "fetched_by": {
+          "type": "string"
+        }
+      }
+    },
+    "claim": {
+      "type": "object",
+      "required": [
+        "claim_id",
+        "subject",
+        "attribute",
+        "value",
+        "statement",
+        "sources",
+        "confidence"
+      ],
+      "properties": {
+        "claim_id": {
+          "type": "string",
+          "pattern": "^C-[A-Z]{3,5}-\\d{3,4}$"
+        },
+        "subject": {
+          "type": "string",
+          "minLength": 2
+        },
+        "attribute": {
+          "type": "string",
+          "minLength": 2
+        },
+        "value": {},
+        "unit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "statement": {
+          "type": "string",
+          "minLength": 5
+        },
+        "scope": {
+          "type": "object"
+        },
+        "released": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sources": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/source"
+          }
+        },
+        "confidence": {
+          "enum": [
+            "high",
+            "medium",
+            "low"
+          ]
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "fact": {
+      "type": "object",
+      "required": [
+        "fact_id",
+        "claim_id",
+        "subject",
+        "attribute",
+        "value",
+        "statement",
+        "status",
+        "sources",
+        "verified_at",
+        "independent"
+      ],
+      "properties": {
+        "fact_id": {
+          "type": "string",
+          "pattern": "^F-\\d{4}$"
+        },
+        "claim_id": {
+          "type": "string"
+        },
+        "subject": {
+          "type": "string"
+        },
+        "attribute": {
+          "type": "string"
+        },
+        "value": {},
+        "unit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "statement": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "VERIFIED",
+            "VERIFIED_WITH_CAVEAT",
+            "DISPUTED",
+            "REJECTED",
+            "STALE"
+          ]
+        },
+        "caveat": {
+          "type": "string"
+        },
+        "sources": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/source"
+          }
+        },
+        "verified_at": {
+          "type": "string"
+        },
+        "independent": {
+          "type": "boolean"
+        },
+        "released": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "new_content": {
+          "type": "boolean"
+        },
+        "researcher_value": {}
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "agent",
+        "started_at",
+        "finished_at",
+        "inputs",
+        "actions",
+        "decisions",
+        "limitations"
+      ],
+      "properties": {
+        "agent": {
+          "type": "string"
+        },
+        "started_at": {
+          "type": "string"
+        },
+        "finished_at": {
+          "type": "string"
+        },
+        "dispatch_ref": {
+          "type": "string",
+          "description": "dispatch/NNN-<agent>.md file this work answers"
+        },
+        "inputs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "path",
+              "sha256"
+            ],
+            "properties": {
+              "path": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            }
+          }
+        },
+        "actions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "kind",
+              "detail"
+            ],
+            "properties": {
+              "kind": {
+                "enum": [
+                  "search",
+                  "fetch",
+                  "read",
+                  "compute",
+                  "write",
+                  "verify",
+                  "decide",
+                  "request"
+                ]
+              },
+              "detail": {
+                "type": "string"
+              },
+              "target": {
+                "type": "string"
+              },
+              "outcome": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "decisions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "decision",
+              "reason"
+            ],
+            "properties": {
+              "decision": {
+                "type": "string"
+              },
+              "reason": {
+                "type": "string"
+              },
+              "alternatives_considered": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "refs": {
+                "type": "array"
+              }
+            }
+          }
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "as_of",
+    "facts",
+    "rfi",
+    "provenance"
+  ],
+  "properties": {
+    "as_of": {
+      "type": "string"
+    },
+    "facts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/fact"
+      }
+    },
+    "rfi": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "question",
+          "desk"
+        ]
+      }
+    },
+    "provenance": {
+      "$ref": "#/definitions/provenance"
+    }
+  }
+}

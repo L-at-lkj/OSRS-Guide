@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="content-sha256" content="__CONTENT_SHA256__">
+<meta name="release-status" content="__RELEASE_STATE__">
+<title>__TITLE__</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap">
+<style>
+:root{
+  --bg:#efe6cf; --bg2:#e6dbbe; --card:#fbf6e8; --ink:#2a2116; --muted:#6d5f45; --line:#cdbd96;
+  --gold:#9a7425; --gold-soft:#e9d7a3; --accent:#7b2d12; --shadow:0 1px 2px rgba(60,40,10,.12),0 4px 14px rgba(60,40,10,.08);
+  --t-safe:#2e7d32; --t-low:#5f8f1e; --t-mod:#a87400; --t-high:#c25400; --t-sev:#b3261e; --t-crit:#5b1b78;
+  --chip:#efe3c2; --ok:#2e7d32; --bad:#b3261e; --warnbg:#fff1d6; --badbg:#fde4e1;
+}
+:root:not([data-theme="light"]){color-scheme:light}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#15120e; --bg2:#1c1813; --card:#221d16; --ink:#efe5cf; --muted:#ad9e80; --line:#3d3426;
+    --gold:#d6b25e; --gold-soft:#4a3d22; --accent:#e58f6a; --shadow:0 1px 2px rgba(0,0,0,.5),0 6px 18px rgba(0,0,0,.35);
+    --t-safe:#6fcf73; --t-low:#b5d65a; --t-mod:#f0c040; --t-high:#ff9a4d; --t-sev:#ff6f61; --t-crit:#c99bff;
+    --chip:#2d261c; --ok:#6fcf73; --bad:#ff6f61; --warnbg:#3a2e14; --badbg:#3d1d1a; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15120e; --bg2:#1c1813; --card:#221d16; --ink:#efe5cf; --muted:#ad9e80; --line:#3d3426;
+  --gold:#d6b25e; --gold-soft:#4a3d22; --accent:#e58f6a; --shadow:0 1px 2px rgba(0,0,0,.5),0 6px 18px rgba(0,0,0,.35);
+  --t-safe:#6fcf73; --t-low:#b5d65a; --t-mod:#f0c040; --t-high:#ff9a4d; --t-sev:#ff6f61; --t-crit:#c99bff;
+  --chip:#2d261c; --ok:#6fcf73; --bad:#ff6f61; --warnbg:#3a2e14; --badbg:#3d1d1a; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink)}
+body{font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2,h3{font-family:Cinzel,Georgia,"Times New Roman",serif;letter-spacing:.02em;margin:.2em 0 .4em}
+h1{font-size:clamp(24px,4vw,36px)} h2{font-size:20px} h3{font-size:16px}
+a{color:var(--accent)} code{font-size:12px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+.draft{background:repeating-linear-gradient(-45deg,var(--badbg),var(--badbg) 14px,var(--warnbg) 14px,var(--warnbg) 28px);
+  border-bottom:2px solid var(--bad);color:var(--ink);padding:10px 0;font-weight:600}
+.draft b{color:var(--bad)}
+header.hero{padding:22px 0 10px;border-bottom:1px solid var(--line);background:linear-gradient(var(--bg2),var(--bg))}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+.chip{background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:2px 10px;font-size:12.5px;white-space:nowrap}
+.chip.hw{border-color:var(--bad);color:var(--bad);font-weight:700}
+.controls{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);padding:8px 0}
+.controls .wrap{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{background:var(--card);color:var(--ink);border:0;border-right:1px solid var(--line);padding:6px 12px;font:inherit;cursor:pointer}
+.seg button:last-child{border-right:0}
+.seg button[aria-pressed="true"]{background:var(--gold);color:#fff;font-weight:600}
+label.ctl{display:flex;gap:6px;align-items:center;font-size:13px;color:var(--muted)}
+input,select{font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:6px;padding:5px 8px}
+input[type=number]{width:96px}
+.btn{font:inherit;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:5px 10px;cursor:pointer}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:14px 0}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;box-shadow:var(--shadow)}
+.tile .k{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.tile .v{font-size:22px;font-weight:700;font-variant-numeric:tabular-nums}
+.bar{display:flex;height:22px;border-radius:6px;overflow:hidden;border:1px solid var(--line);position:relative;margin:6px 0 2px}
+.bar span{display:block;height:100%;min-width:2px;border-right:1px solid var(--card)}
+.bar .you{position:absolute;top:-4px;bottom:-4px;width:3px;background:var(--ink);border-radius:2px}
+.barlbl{display:flex;justify-content:space-between;font-size:11px;color:var(--muted)}
+nav.tabs{display:flex;flex-wrap:wrap;gap:4px;margin:16px 0 0;border-bottom:1px solid var(--line)}
+nav.tabs button{background:transparent;border:1px solid transparent;border-bottom:0;color:var(--muted);font:inherit;padding:8px 12px;cursor:pointer;border-radius:8px 8px 0 0}
+nav.tabs button[aria-selected="true"]{background:var(--card);border-color:var(--line);color:var(--ink);font-weight:600;margin-bottom:-1px}
+section.panel{padding:14px 0 40px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);margin:12px 0;overflow:hidden}
+.card.done{opacity:.6}
+.card.over{border-color:var(--bad)}
+.card .hd{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border-bottom:1px solid var(--line)}
+.card .hd .n{font-family:Cinzel,Georgia,serif;font-weight:700;color:var(--gold);min-width:36px}
+.card .hd .ttl{flex:1;min-width:0}
+.card .hd .ttl h3{margin:0}
+.card .hd .sub{font-size:13px;color:var(--muted)}
+.card .bd{padding:12px 14px;display:grid;gap:12px}
+.ribbon{background:var(--badbg);color:var(--bad);font-weight:600;padding:6px 14px;font-size:13px}
+.ribbon.new{background:var(--warnbg);color:var(--ink)}
+.stats{display:flex;flex-wrap:wrap;gap:8px}
+.stat{background:var(--bg2);border-radius:8px;padding:4px 10px;font-size:13px}
+.stat b{font-variant-numeric:tabular-nums}
+.ds{display:inline-flex;flex-direction:column;align-items:center;border-radius:10px;padding:4px 10px;color:#fff;min-width:74px;text-align:center}
+.ds .num{font-size:20px;font-weight:800;line-height:1.1}
+.ds .lbl{font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+.ds small{font-size:10.5px;opacity:.9}
+.Safe{background:var(--t-safe)} .Low{background:var(--t-low)} .Moderate{background:var(--t-mod)}
+.High{background:var(--t-high)} .Severe{background:var(--t-sev)} .Critical{background:var(--t-crit)}
+:root[data-theme="dark"] .ds, :root:not([data-theme="light"]) .ds{color:#fff}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .ds{color:#120f0a}}
+:root[data-theme="dark"] .ds{color:#120f0a}
+ul.req{list-style:none;padding:0;margin:0;display:grid;gap:3px}
+ul.req li::before{content:"\25CB  ";color:var(--muted)}
+ul.req li.met::before{content:"\2714  ";color:var(--ok)}
+ul.req li.unmet::before{content:"\2716  ";color:var(--bad)}
+ol.steps{margin:0;padding-left:20px} ol.steps li{margin:3px 0}
+.warn{background:var(--warnbg);border-left:4px solid var(--t-high);padding:8px 10px;border-radius:6px}
+.tip{background:var(--bg2);border-left:4px solid var(--gold);padding:8px 10px;border-radius:6px}
+details.danger{border:1px solid var(--line);border-radius:10px;padding:0}
+details.danger>summary{cursor:pointer;padding:8px 12px;font-weight:600;list-style:none}
+details.danger>summary::-webkit-details-marker{display:none}
+details.danger>summary::before{content:"\25B8  "} details.danger[open]>summary::before{content:"\25BE  "}
+details.danger .in{padding:0 12px 12px;display:grid;gap:10px}
+.factors{display:grid;grid-template-columns:minmax(110px,max-content) 1fr;gap:4px 10px;font-size:13px;align-items:center}
+.fbar{position:relative;height:12px;background:var(--bg2);border-radius:6px;overflow:hidden}
+.fbar i{position:absolute;left:0;top:0;bottom:0;background:var(--t-high);opacity:.35}
+.fbar b{position:absolute;left:0;top:3px;height:6px;background:var(--t-sev);border-radius:3px}
+.fnote{grid-column:2;color:var(--muted);font-size:12px;margin-top:-3px}
+.flag{display:inline-block;font-size:11.5px;border:1px solid var(--bad);color:var(--bad);border-radius:4px;padding:0 6px;margin:2px 4px 2px 0;font-weight:600}
+.hwc{font-weight:700} .hwc.UNSAFE_DEATH{color:var(--bad)} .hwc.SAFE_DEATH{color:var(--ok)} .hwc.NO_DEATH_POSSIBLE{color:var(--ok)}
+.factref{font-size:11.5px;border:1px solid var(--line);border-radius:4px;padding:0 5px;margin:0 3px 3px 0;display:inline-block;text-decoration:none;color:var(--muted)}
+table.t{width:100%;border-collapse:collapse;font-size:13.5px;background:var(--card)}
+table.t th,table.t td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+table.t th{font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);position:sticky;top:52px;background:var(--card)}
+table.t td.num{text-align:right;font-variant-numeric:tabular-nums}
+table.t tr.cur td{background:var(--gold-soft)}
+table.t tr.qrow td{font-style:italic}
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:10px}
+.status{font-weight:700;font-size:12px} .status.VERIFIED{color:var(--ok)} .status.VERIFIED_WITH_CAVEAT{color:var(--t-mod)}
+.status.DISPUTED,.status.REJECTED,.status.STALE{color:var(--bad)}
+.muted{color:var(--muted)} .small{font-size:12.5px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+.legend{display:flex;flex-wrap:wrap;gap:6px}
+.legend .ds{min-width:0;padding:2px 8px}
+.legend .ds .num{font-size:13px}
+.next{background:var(--card);border:2px solid var(--gold);border-radius:12px;padding:12px 14px;margin:12px 0;box-shadow:var(--shadow)}
+.next h2{margin-top:0}
+.opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}
+.opt{border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--bg2);display:grid;gap:6px;align-content:start}
+.opt.rec{border:2px solid var(--ok)}
+.opt .top{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+.opt ul{margin:0;padding-left:18px;font-size:13px}
+.badge{display:inline-block;font-size:11px;font-weight:700;border-radius:4px;padding:1px 6px;background:var(--ok);color:var(--card)}
+.badge.over{background:var(--bad)}
+.capbar{height:8px;background:var(--bg2);border-radius:4px;overflow:hidden;margin-top:4px}.capbar i{display:block;height:100%;background:var(--t-mod)}
+.FAIL{color:var(--bad);font-weight:700} .WARN{color:var(--t-mod);font-weight:600} .OK{color:var(--ok)}
+footer{border-top:1px solid var(--line);padding:16px 0 40px;color:var(--muted);font-size:12.5px}
+@media (max-width:640px){.card .hd{flex-wrap:wrap}.factors{grid-template-columns:1fr}.fnote{grid-column:1}table.t th{top:0}}
+@media print{.controls,nav.tabs,.btn{display:none}section.panel[hidden]{display:block!important}.card{break-inside:avoid;box-shadow:none}}
+</style>
+</head>
+<body>
+<div id="draft" class="draft" hidden><div class="wrap"><b>NOT RELEASED.</b> <span id="draftWhy"></span> This page has not passed QA sign-off. Do not follow it on a one-life account.</div></div>
+<header class="hero"><div class="wrap">
+  <h1 id="title"></h1>
+  <div id="subtitle" class="muted"></div>
+  <div class="chips" id="chips"></div>
+</div></header>
+
+<div class="controls"><div class="wrap">
+  <div class="seg" id="routeSeg" role="group" aria-label="Route"></div>
+  <label class="ctl">Danger cap
+    <select id="cap"><option value="cautious">Cautious (24)</option><option value="standard">Standard (44)</option><option value="bold">Bold (64)</option></select></label>
+  <label class="ctl">My level <input id="mylvl" type="number" min="1" max="99" inputmode="numeric"></label>
+  <label class="ctl">or XP <input id="myxp" type="number" min="0" max="200000000" inputmode="numeric"></label>
+  <label class="ctl"><input id="hideDone" type="checkbox"> Hide done</label>
+  <button class="btn" id="theme" type="button" title="Toggle light/dark">◐</button>
+</div></div>
+
+<main class="wrap">
+  <div class="tiles" id="tiles"></div>
+  <div><div class="bar" id="bar" aria-label="Route timeline coloured by danger"></div><div class="barlbl" id="barlbl"></div></div>
+  <nav class="tabs" role="tablist" id="tabs"></nav>
+  <section class="panel" id="p-route"></section>
+  <section class="panel" id="p-decisions" hidden></section>
+  <section class="panel" id="p-levels" hidden></section>
+  <section class="panel" id="p-quests" hidden></section>
+  <section class="panel" id="p-danger" hidden></section>
+  <section class="panel" id="p-new" hidden></section>
+  <section class="panel" id="p-supplies" hidden></section>
+  <section class="panel" id="p-sources" hidden></section>
+  <section class="panel" id="p-audit" hidden></section>
+</main>
+<footer><div class="wrap" id="foot"></div></footer>
+
+<script type="application/json" id="guide-data">__GUIDE_DATA__</script>
+<script type="application/json" id="audit-data">__AUDIT_DATA__</script>
+<script>
+"use strict";
+const G = JSON.parse(document.getElementById('guide-data').textContent);
+const A = JSON.parse(document.getElementById('audit-data').textContent);
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmt = n => (n == null || isNaN(n)) ? '—' : Number(n).toLocaleString('en-GB', {maximumFractionDigits: 1});
+const hrs = h => h == null ? '—' : (h < 1 ? Math.round(h * 60) + ' min' : fmt(Math.round(h * 10) / 10) + ' h');
+const CONTENT_HASH = document.querySelector('meta[name=content-sha256]').content;
+const STORE = 'osrsguide:' + G.job + ':' + CONTENT_HASH.slice(0, 16);
+const store = {
+  get(){ try { return JSON.parse(localStorage.getItem(STORE) || '{}'); } catch(e){ return {}; } },
+  set(v){ try { localStorage.setItem(STORE, JSON.stringify(v)); } catch(e){} }
+};
+let S = Object.assign({route: (G.routes.find(r => r.route_id === 'safest') || G.routes[0]).route_id,
+  cap: G.meta.risk_appetite, done: {}, xp: null, tab: 'route', hideDone: false, theme: null}, store.get());
+const save = () => store.set(S);
+if (S.theme) document.documentElement.dataset.theme = S.theme;
+
+// XP table (same formula as tools/xp.py)
+const XP = [0, 0]; { let p = 0; for (let l = 1; l < 100; l++){ p += Math.floor(l + 300 * Math.pow(2, l / 7)); XP.push(Math.floor(p / 4)); } }
+const lvlFor = xp => { let l = 1; for (let i = 2; i < 100; i++){ if (xp >= XP[i]) l = i; else break; } return l; };
+const TIERS = G.danger_model.tiers;
+const tierOf = ds => { let n = TIERS[0][1]; for (const [lo, name] of TIERS) if (ds >= lo) n = name; return n; };
+const capVal = () => G.danger_model.caps[S.cap];
+const route = () => G.routes.find(r => r.route_id === S.route);
+const stepById = id => G.steps.find(s => s.step_id === id);
+const factById = id => G.facts.find(f => f.fact_id === id);
+const factVal = f => { if (!f) return '?'; const v = (f.value && typeof f.value === 'object' && 'value' in f.value) ? f.value.value : f.value;
+  return (typeof v === 'number' ? fmt(v) : (typeof v === 'object' ? JSON.stringify(v) : v)) + (f.unit ? ' ' + f.unit : ''); };
+
+function tokens(text, step){
+  const c = route().calc[step.step_id] || {};
+  return esc(text).replace(/\{\{\s*([^}]+?)\s*\}\}/g, (m, t) => {
+    if (t.startsWith('step.')) { const k = t.slice(5); const v = c[k]; return k === 'hours' ? hrs(v) : fmt(v); }
+    if (t.startsWith('fact:')) { const f = factById(t.slice(5)); return `<a class="factref" href="#${t.slice(5)}" data-fact="${t.slice(5)}">${esc(factVal(f))}</a>`; }
+    if (t.startsWith('risk.')) { const k = t.slice(5); const r = step.risk;
+      if (k === 'min_hitpoints') return fmt(r.preconditions?.min_hitpoints);
+      if (k === 'residual_ds') return r.score.residual_ds; if (k === 'inherent_ds') return r.score.inherent_ds; if (k === 'tier') return r.score.residual_tier; }
+    return m;
+  }).replace(/`([^`]+)`/g, '<code>$1</code>');
+}
+const dsBadge = (sc, big = true) => `<span class="ds ${sc.residual_tier}" title="Inherent ${sc.inherent_ds} (${sc.inherent_tier}) → residual ${sc.residual_ds} after mandatory mitigations">
+  <span class="num">${sc.residual_ds}</span><span class="lbl">${sc.residual_tier}</span>${big ? `<small>raw ${sc.inherent_ds}</small>` : ''}</span>`;
+
+function reqMet(req){
+  const p = G.meta.profile || {}; const stats = p.stats || {};
+  if (req.type === 'skill' && req.skill && req.level){
+    if (req.skill === G.meta.skill) return null;
+    return stats[req.skill] == null ? null : stats[req.skill] >= req.level;
+  }
+  if (req.type === 'quest' && req.name) return (p.quests_completed || []).includes(req.name) ? true : null;
+  return null;
+}
+function reqText(r){
+  if (r.type === 'skill') return `${esc(r.skill)} ${r.level}${r.boostable === false ? ' (not boostable)' : r.boostable ? ' (boostable)' : ''}`;
+  return esc(r.name || r.type);
+}
+
+function header(){
+  document.title = G.meta.title;
+  $('#title').textContent = G.meta.title;
+  $('#subtitle').textContent = G.meta.subtitle || '';
+  const gm = G.meta.game_mode;
+  const chips = [
+    gm.world_type === 'hardcore_worlds' ? '<span class="chip hw">Hardcore Worlds · one life</span>' : `<span class="chip">${esc(gm.world_type)}</span>`,
+    `<span class="chip">${esc(gm.account_type)} · ${esc(gm.membership)}</span>`,
+    ...(G.meta.profile.build ? [`<span class="chip hw" title="${esc((G.meta.profile.build.xp_rules || []).join(' · '))}">Build: ${esc(G.meta.profile.build.archetype)} · ${Object.entries(G.meta.profile.build.skill_caps || {}).map(([k, v]) => esc(k) + ' ≤ ' + v).join(', ')}</span>`] : []),
+    `<span class="chip">${esc(G.meta.skill)} ${G.meta.from_level} → ${G.meta.to_level}</span>`,
+    `<span class="chip">Facts verified ${esc(G.meta.facts_as_of)}</span>`,
+    `<span class="chip">Game updates checked to ${esc(G.meta.updates_as_of)}</span>`,
+    `<span class="chip">Recency window ${esc(G.meta.recency_window.from)} → ${esc(G.meta.recency_window.to)}</span>`,
+  ];
+  $('#chips').innerHTML = chips.join('');
+  const rel = A.release || {};
+  if (!rel.released){ $('#draft').hidden = false; $('#draftWhy').textContent = (rel.reasons || []).join('; ') + '.'; }
+  $('#routeSeg').innerHTML = G.routes.map(r => `<button type="button" data-route="${r.route_id}" aria-pressed="${r.route_id === S.route}" title="${esc(r.intent)}">${esc(r.label)}</button>`).join('');
+  $('#cap').value = S.cap;
+  $('#foot').innerHTML = `Guide job <code>${esc(G.job)}</code> · content hash <code>${CONTENT_HASH.slice(0, 16)}…</code> · assembled ${esc(G.assembled_at)}.
+    Every number on this page was computed by the company's deterministic tools from verified facts; see the Sources and Audit tabs. Not affiliated with Jagex.`;
+}
+
+function currentXP(){ return S.xp != null ? S.xp : null; }
+
+function tiles(){
+  const r = route(); const t = r.totals; const cap = capVal();
+  const over = r.step_ids.filter(id => stepById(id).risk.score.residual_ds > cap);
+  const doneN = r.step_ids.filter(id => S.done[id]).length;
+  let remaining = '—';
+  const xp = currentXP();
+  if (xp != null){
+    let h = 0; for (const id of r.step_ids){ const c = r.calc[id]; if (!c) continue;
+      if (c.end_xp <= xp) continue; const span = c.end_xp - c.start_xp || 1; const frac = Math.min(1, (c.end_xp - Math.max(xp, c.start_xp)) / span); h += (c.hours || 0) * frac; }
+    remaining = hrs(h);
+  }
+  $('#tiles').innerHTML = [
+    ['Route', esc(r.label)], ['Total time', hrs(t.hours)], ['Time left', remaining], ['Actions', fmt(t.actions)],
+    ['Worst danger', `<span class="ds ${r.worst_residual_tier}" style="padding:0 8px"><span class="num" style="font-size:16px">${r.worst_residual_ds}</span></span> ${esc(r.worst_residual_tier)}`],
+    ['Above your cap', `<span style="color:${over.length ? 'var(--bad)' : 'var(--ok)'}">${over.length}</span> step${over.length === 1 ? '' : 's'}`],
+    ['Progress', `${doneN}/${r.step_ids.length}`],
+  ].map(([k, v]) => `<div class="tile"><div class="k">${k}</div><div class="v">${v}</div></div>`).join('');
+  // timeline
+  const from = G.meta.from_level, to = G.meta.to_level, span = Math.max(1, XP[to] - XP[from]);
+  const segs = r.step_ids.map(id => { const c = r.calc[id], s = stepById(id); if (!c || c.xp_gained <= 0) return '';
+    const w = Math.max(0.4, 100 * c.xp_gained / span);
+    return `<span class="${s.risk.score.residual_tier}" style="width:${w}%" title="${esc(s.title)}: ${c.start_level}→${c.end_level}, DS ${s.risk.score.residual_ds}"></span>`; }).join('');
+  const you = xp != null ? `<i class="you" style="left:${Math.min(100, Math.max(0, 100 * (xp - XP[from]) / span))}%" title="You"></i>` : '';
+  $('#bar').innerHTML = segs + you;
+  $('#barlbl').innerHTML = `<span>Lv ${from}</span><span class="small">width = share of XP · colour = residual danger</span><span>Lv ${to}</span>`;
+}
+
+function factorRows(sc, risk){
+  const names = {lethality:'Lethality', pvp:'PvP exposure', escape:'Escape difficulty', attention:'Attention needed', disconnect:'Disconnect risk',
+    unpredictability:'Unpredictability', exposure:'Time exposed', knowledge:'Knowledge gap'};
+  return G.danger_model.factors.map(f => {
+    const raw = sc.factors[f], res = sc.residual_factors[f], rat = risk.factors[f] || {};
+    return `<div>${names[f]} <span class="muted small">${raw}${res !== raw ? '→' + res : ''}/5</span></div>
+      <div class="fbar" title="${esc(G.danger_model.anchors[f][raw])}"><i style="width:${raw * 20}%"></i><b style="width:${res * 20}%"></b></div>
+      <div class="fnote">${esc(rat.rationale || '')} ${(rat.facts || []).map(id => `<a class="factref" href="#${id}" data-fact="${id}">${id}</a>`).join('')}</div>`;
+  }).join('');
+}
+
+function stepCard(s, idx){
+  const r = route(); const c = r.calc[s.step_id] || {}; const sc = s.risk.score; const risk = s.risk; const pr = s.prose || {};
+  const cap = capVal(); const over = sc.residual_ds > cap; const done = !!S.done[s.step_id];
+  const xp = currentXP(); const here = xp != null && c.start_xp <= xp && xp < c.end_xp;
+  if (S.hideDone && done) return '';
+  const lv = (c.start_level != null) ? `Lv ${c.start_level} → ${c.end_level}` : '';
+  const newU = (s.update_refs || []).map(u => G.updates.find(x => x.update_id === u)).filter(Boolean);
+  const stats = [];
+  if (s.kind === 'train'){
+    stats.push(`<span class="stat">XP/action <b>${fmt(s.xp_per_action?.value)}</b></span>`, `<span class="stat">XP/h ≈ <b>${fmt(s.xp_per_hour?.value)}</b></span>`,
+      `<span class="stat">Actions <b>${fmt(c.actions)}</b></span>`, `<span class="stat">Time ≈ <b>${hrs(c.hours)}</b></span>`);
+  }
+  if (c.xp_gained) stats.push(`<span class="stat">${esc(G.meta.skill)} XP <b>+${fmt(c.xp_gained)}</b></span>`);
+  (c.supplies || []).forEach(x => stats.push(`<span class="stat">${esc(x.item)} <b>×${fmt(x.qty)}</b></span>`));
+  (c.secondary_xp || []).forEach(x => stats.push(`<span class="stat">${esc(x.skill)} XP <b>+${fmt(x.xp)}</b></span>`));
+  (s.xp_rewards || []).filter(x => x.skill !== G.meta.skill).forEach(x => stats.push(`<span class="stat">${esc(x.skill)} XP <b>+${fmt(x.xp.value)}</b></span>`));
+  const reqs = (s.requirements || []).map(q => { const m = reqMet(q); return `<li class="${m === true ? 'met' : m === false ? 'unmet' : ''}">${reqText(q)} <a class="factref" href="#${q.fact}" data-fact="${q.fact}">${q.fact}</a></li>`; }).join('');
+  const pre = risk.preconditions || {};
+  return `<article class="card ${done ? 'done' : ''} ${over ? 'over' : ''}" id="card-${s.step_id}" ${here ? 'style="outline:3px solid var(--gold)"' : ''}>
+    ${over ? `<div class="ribbon">Above your danger cap (${cap}). ${r.route_id !== 'safest' ? 'The Safest route avoids or replaces this step.' : 'There is no safer alternative: read the prep card, and only go ahead if you accept this risk knowingly.'}</div>` : ''}
+    ${newU.length ? `<div class="ribbon new">New in the last 12 months: ${newU.map(u => esc(u.title) + ' (' + esc(u.date) + ')').join(', ')}</div>` : ''}
+    <div class="hd"><div class="n">${idx + 1}</div>
+      <div class="ttl"><h3>${esc(s.title)}</h3><div class="sub">${esc(lv)}${s.method ? ' · ' + esc(s.method) : ''}${s.location ? ' · ' + esc(s.location) : ''} · <span class="muted">${esc(s.kind)}</span></div></div>
+      ${dsBadge(sc)}
+      <label class="ctl" title="Mark done"><input type="checkbox" data-done="${s.step_id}" ${done ? 'checked' : ''}> done</label>
+    </div>
+    <div class="bd">
+      ${stats.length ? `<div class="stats">${stats.join('')}</div>` : ''}
+      ${pr.summary ? `<div>${tokens(pr.summary, s)}</div>` : ''}
+      ${reqs ? `<div><b>Requirements</b><ul class="req">${reqs}</ul></div>` : ''}
+      ${(s.gear || []).length || (s.inventory || []).length ? `<div class="grid2">${(s.gear || []).length ? `<div><b>Gear</b><ul>${s.gear.map(g => `<li>${esc(g)}</li>`).join('')}</ul></div>` : ''}${(s.inventory || []).length ? `<div><b>Inventory</b><ul>${s.inventory.map(g => `<li>${esc(g)}</li>`).join('')}</ul></div>` : ''}</div>` : ''}
+      ${(pr.instructions || []).length ? `<div><b>Do this</b><ol class="steps">${pr.instructions.map(t => `<li>${tokens(t, s)}</li>`).join('')}</ol></div>` : ''}
+      ${(pr.warnings || []).map(t => `<div class="warn">${tokens(t, s)}</div>`).join('')}
+      ${(pr.tips || []).map(t => `<div class="tip">${tokens(t, s)}</div>`).join('')}
+      <details class="danger" ${over ? 'open' : ''}><summary>Danger assessment · ${sc.residual_ds} ${esc(sc.residual_tier)} <span class="muted small">(raw ${sc.inherent_ds}${sc.floor_by ? ', floor from ' + esc(sc.floor_by) : ''})</span></summary><div class="in">
+        <div>Hardcore Worlds death rule: <span class="hwc ${risk.hw_death_classification.status}">${esc(risk.hw_death_classification.status.replace(/_/g, ' '))}</span> — ${esc(risk.hw_death_classification.note)}</div>
+        ${(sc.flags || []).length ? `<div>${sc.flags.map(f => `<span class="flag" title="floor ${G.danger_model.flags[f]}">${esc(f.replace(/_/g, ' '))}</span>`).join('')}</div>` : ''}
+        <div class="factors">${factorRows(sc, risk)}</div>
+        ${(risk.mitigations || []).length ? `<div><b>Mitigations</b> <span class="muted small">(mandatory ones are already counted in the residual score)</span><ul>${risk.mitigations.map(m => `<li>${m.mandatory ? '<b>Must:</b> ' : 'Optional: '}${esc(m.action)} ${(m.facts || []).map(id => `<a class="factref" href="#${id}" data-fact="${id}">${id}</a>`).join('')}</li>`).join('')}</ul></div>` : ''}
+        <div class="grid2"><div><b>Before you start</b><ul>
+          ${pre.min_hitpoints ? `<li>Hitpoints at least <b>${pre.min_hitpoints}</b></li>` : ''}${pre.min_combat ? `<li>Combat level at least <b>${pre.min_combat}</b></li>` : ''}
+          ${pre.food ? `<li>Food: ${esc(pre.food)}</li>` : ''}${(pre.required_items || []).map(i => `<li>${esc(i)}</li>`).join('')}</ul></div>
+          <div><b>Stop immediately if</b><ul>${(pre.stop_conditions || []).map(i => `<li>${esc(i)}</li>`).join('') || '<li class="muted">—</li>'}</ul></div></div>
+        <div class="warn"><b>Bail-out plan:</b> ${esc(risk.bailout)}</div>
+      </div></details>
+      ${s.rationale ? `<div class="small muted"><b>Why this step:</b> ${esc(s.rationale)}${s.why_not_faster ? ' <b>Why not faster:</b> ' + esc(s.why_not_faster) : ''}</div>` : ''}
+      <div class="small">${(s.facts || []).map(id => `<a class="factref" href="#${id}" data-fact="${id}">${id}</a>`).join('')}</div>
+    </div></article>`;
+}
+
+function myLevel(){
+  const xp = currentXP(); if (xp != null) return lvlFor(xp);
+  return (G.meta.profile.stats || {})[G.meta.skill] || G.meta.from_level;
+}
+function nextPanel(){
+  const dps = G.decision_points || []; if (!dps.length) return '';
+  const L = myLevel(); const cap = capVal();
+  const active = dps.filter(d => d.at_level <= L && L < (d.until_level || 100));
+  const upcoming = dps.filter(d => d.at_level > L).sort((a, b) => a.at_level - b.at_level).slice(0, 1);
+  const show = (active.length ? active : upcoming);
+  if (!show.length) return '';
+  const capInfo = Object.entries((G.capped_skills || {})[S.route] || {}).map(([sk, c]) =>
+    `<div class="small">${esc(sk)} on this route: reaches level <b>${c.end_level}</b> of cap <b>${c.cap}</b> (headroom ${fmt(c.headroom_xp)} XP)
+     <div class="capbar"><i style="width:${Math.min(100, 100 * c.end_level / c.cap)}%"></i></div></div>`).join('');
+  return `<div class="next"><h2>What next? <span class="muted small">at ${esc(G.meta.skill)} ${L}</span></h2>` + show.map(d => {
+    const opts = d.options.map(o => { const over = o.worst_residual_ds > cap;
+      return `<div class="opt ${o.option_id === d.recommended ? 'rec' : ''}"><div class="top"><div><b>${esc(o.option_id)}. ${esc(o.title)}</b>
+        ${o.option_id === d.recommended ? ' <span class="badge">Recommended</span>' : ''}${over ? ' <span class="badge over">Above your cap</span>' : ''}</div>
+        <span class="ds ${o.worst_residual_tier}" style="min-width:0;padding:2px 8px"><span class="num" style="font-size:14px">${o.worst_residual_ds}</span><span class="lbl">${o.worst_residual_tier}</span></span></div>
+        <div class="small muted">≈ ${hrs(o.hours)}${o.best_for ? ' · best for: ' + esc(o.best_for) : ''}</div>
+        <div>${esc(o.justification)}</div>
+        ${o.pros.length ? `<div><b class="small">For</b><ul>${o.pros.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>` : ''}
+        ${o.cons.length ? `<div><b class="small">Against</b><ul>${o.cons.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>` : ''}
+        <div class="small">${o.step_ids.map(id => `<a href="#card-${id}" data-goto="${id}">${esc((stepById(id) || {}).title || id)}</a>`).join(' → ')}</div></div>`; }).join('');
+    return `<p><b>${esc(d.question)}</b>${d.conditions ? ` <span class="muted small">(${esc(d.conditions)})</span>` : ''}</p><div class="opts">${opts}</div>
+      ${d.recommendation_reason ? `<p class="small"><b>Why ${esc(d.recommended)}:</b> ${esc(d.recommendation_reason)}</p>` : ''}`;
+  }).join('') + capInfo + `<p class="small muted">Enter your level or XP in the bar above and these options follow you. All decision points are listed in the Decisions tab.</p></div>`;
+}
+function pDecisions(){
+  const dps = G.decision_points || [];
+  $('#p-decisions').innerHTML = dps.length ? dps.map(d => `<div class="card"><div class="hd"><div class="ttl"><h3>${esc(d.dp_id)} · from level ${d.at_level}${d.until_level ? ' to ' + d.until_level : ''}</h3><div class="sub">${esc(d.question)}</div></div></div>
+    <div class="bd"><div class="opts">${d.options.map(o => `<div class="opt ${o.option_id === d.recommended ? 'rec' : ''}"><div class="top"><b>${esc(o.option_id)}. ${esc(o.title)}</b>${dsBadge({residual_ds: o.worst_residual_ds, residual_tier: o.worst_residual_tier, inherent_ds: ''}, false)}</div>
+      <div class="small muted">≈ ${hrs(o.hours)}</div><div>${esc(o.justification)}</div></div>`).join('')}</div>
+    ${d.recommendation_reason ? `<p class="small"><b>Recommended ${esc(d.recommended)}:</b> ${esc(d.recommendation_reason)}</p>` : ''}</div></div>`).join('') : '<p>No decision points in this guide.</p>';
+}
+
+function pRoute(){
+  const r = route();
+  $('#p-route').innerHTML = nextPanel() + `<p>${esc(G.intro)}</p><p class="muted small">${esc(r.intent)}</p>` +
+    r.step_ids.map((id, i) => stepCard(stepById(id), i)).join('') + (G.outro ? `<p>${esc(G.outro)}</p>` : '');
+}
+
+function pLevels(){
+  const r = route(); const xp = currentXP(); const cur = xp != null ? lvlFor(xp) : null;
+  $('#p-levels').innerHTML = `<p class="muted small">Every level of this route, computed by the company's deterministic XP calculator. Actions are counted from where the previous level ended.</p>
+  <div class="scroll"><table class="t"><thead><tr><th>Level</th><th>Total XP</th><th>XP to next</th><th>Actions to next</th><th>Time to next</th><th>Method / source</th><th>Danger</th><th>Elapsed</th></tr></thead><tbody>` +
+  r.levels.map(L => { const s = stepById(L.step_id); const sc = s.risk.score;
+    return `<tr class="${L.level === cur ? 'cur' : ''} ${L.actions_to_next === 0 ? 'qrow' : ''}"><td class="num">${L.level}</td><td class="num">${fmt(L.xp)}</td><td class="num">${fmt(L.xp_to_next)}</td>
+      <td class="num">${L.actions_to_next ? fmt(L.actions_to_next) : 'reward'}</td><td class="num">${L.actions_to_next ? hrs(L.hours_to_next) : '—'}</td>
+      <td><a href="#card-${L.step_id}" data-goto="${L.step_id}">${esc(L.method)}</a></td><td><span class="ds ${sc.residual_tier}" style="padding:0 6px;min-width:0"><span class="num" style="font-size:12px">${sc.residual_ds}</span></span></td><td class="num">${hrs(L.cum_hours_at_next)}</td></tr>`; }).join('') +
+  `</tbody></table></div>`;
+}
+
+function pQuests(){
+  const qs = G.steps.filter(s => s.kind !== 'train');
+  $('#p-quests').innerHTML = `<p class="muted small">Quests, unlocks and rewards on any route. Quests released in the last 12 months are marked.</p>` + (qs.length ? qs.map(s => {
+    const inRoutes = G.routes.filter(r => r.step_ids.includes(s.step_id)).map(r => r.label).join(', ');
+    const rew = (s.xp_rewards || []).map(x => `${esc(x.skill)} +${fmt(x.xp.value)}`).concat((s.lamp_rewards || []).map(l => `${l.count || 1}× lamp ${l.xp ? fmt(l.xp.value) : ''} → ${esc(l.chosen_skill || 'choice')}`));
+    const isNew = (s.update_refs || []).length;
+    return `<div class="card"><div class="hd"><div class="ttl"><h3>${esc(s.title)} ${isNew ? '<span class="chip hw" style="margin-left:6px">NEW</span>' : ''}</h3>
+      <div class="sub">Used in: ${esc(inRoutes) || '—'}</div></div>${dsBadge(s.risk.score, false)}</div>
+      <div class="bd"><div><b>Rewards:</b> ${rew.join(' · ') || '—'}</div>
+      <div><b>Requirements</b><ul class="req">${(s.requirements || []).map(q => { const m = reqMet(q); return `<li class="${m === true ? 'met' : m === false ? 'unmet' : ''}">${reqText(q)}</li>`; }).join('') || '<li>None</li>'}</ul></div>
+      <div class="small"><b>Death rule:</b> <span class="hwc ${s.risk.hw_death_classification.status}">${esc(s.risk.hw_death_classification.status.replace(/_/g, ' '))}</span> · <b>Bail-out:</b> ${esc(s.risk.bailout)}</div></div></div>`;
+  }).join('') : '<p>No quests on these routes.</p>');
+}
+
+function pDanger(){
+  const rows = [...G.steps].sort((a, b) => b.risk.score.residual_ds - a.risk.score.residual_ds);
+  $('#p-danger').innerHTML = `<h2>How danger is scored</h2>
+   <p class="small">The Risk Officer rates eight factors from 0 to 5 and cites a verified fact for each one. The company's danger engine turns the ratings into a 0–100 score, so a score can't be adjusted by hand.
+   <b>Raw</b> is the danger with no precautions. <b>Residual</b> is what remains after the mandatory mitigations, and can never fall below 30% of raw. Hazard flags such as Wilderness or one-shot potential set a minimum score.</p>
+   <div class="legend">${TIERS.map(([lo, n], i) => `<span class="ds ${n}"><span class="num">${lo}${TIERS[i + 1] ? '–' + (TIERS[i + 1][0] - 1) : '+'}</span><span class="lbl">${n}</span></span>`).join('')}</div>
+   <p class="small">Your cap: <b>${capVal()}</b> (${esc(S.cap)}). Steps above it are marked on every route. On Hardcore Worlds, almost every death ends the run, including in activities that are "safe" for a Hardcore Ironman.</p>
+   ${G.risk_rules.length ? `<h3>Standing safety rules</h3><ul>${G.risk_rules.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}
+   <h2>Risk register</h2><div class="scroll"><table class="t"><thead><tr><th>Step</th><th>Residual</th><th>Raw</th><th>Flags</th><th>Death rule</th><th>Routes</th></tr></thead><tbody>` +
+   rows.map(s => `<tr><td><a href="#card-${s.step_id}" data-goto="${s.step_id}">${esc(s.title)}</a></td><td>${dsBadge(s.risk.score, false)}</td><td class="num">${s.risk.score.inherent_ds}</td>
+     <td>${(s.risk.score.flags || []).map(f => `<span class="flag">${esc(f.replace(/_/g, ' '))}</span>`).join('')}</td>
+     <td><span class="hwc ${s.risk.hw_death_classification.status}">${esc(s.risk.hw_death_classification.status.replace(/_/g, ' '))}</span></td>
+     <td class="small">${G.routes.filter(r => r.step_ids.includes(s.step_id)).map(r => esc(r.label)).join(', ')}</td></tr>`).join('') + `</tbody></table></div>
+   <h2>Red-team findings</h2>${G.redteam.length ? `<div class="scroll"><table class="t"><thead><tr><th>ID</th><th>Severity</th><th>Scenario</th><th>Status</th><th>Resolution</th></tr></thead><tbody>${G.redteam.map(f => `<tr><td>${esc(f.finding_id)}</td><td>${esc(f.severity)}</td><td>${esc(f.scenario)}</td><td>${esc(f.status)}</td><td>${esc(f.resolution || f.recommendation)}</td></tr>`).join('')}</tbody></table></div>` : '<p>None.</p>'}`;
+}
+
+function pNew(){
+  $('#p-new').innerHTML = `<p class="small">The Patch Sentinel swept every game update from <b>${esc(G.meta.recency_window.from)}</b> to <b>${esc(G.meta.recency_window.to)}</b>. These are the ones that affect this guide.</p>` +
+    (G.updates.length ? G.updates.map(u => `<div class="card"><div class="hd"><div class="ttl"><h3>${esc(u.title)}</h3><div class="sub">${esc(u.date)} · ${u.kinds.map(esc).join(', ')} · relevance ${esc(u.relevance)}</div></div></div>
+      <div class="bd"><div>${esc(u.summary)}</div></div></div>`).join('') : '<p>No relevant updates.</p>') +
+    (G.upcoming.length ? `<h2>Coming soon (may change this guide)</h2><ul>${G.upcoming.map(u => `<li>${esc(typeof u === 'string' ? u : (u.title + (u.date ? ' — ' + u.date : '') + (u.note ? ': ' + u.note : '')))}</li>`).join('')}</ul>` : '');
+}
+
+function pSupplies(){
+  const r = route();
+  $('#p-supplies').innerHTML = `<h2>Supplies for the ${esc(r.label)} route</h2>` +
+    (r.totals.supplies.length ? `<div class="scroll"><table class="t"><thead><tr><th>Item</th><th>Quantity</th></tr></thead><tbody>${r.totals.supplies.map(x => `<tr><td>${esc(x.item)}</td><td class="num">${fmt(x.qty)}</td></tr>`).join('')}</tbody></table></div>` : '<p>No consumables tracked for this route.</p>') +
+    (r.totals.secondary_xp.length ? `<h2>Bonus XP in other skills</h2><ul>${r.totals.secondary_xp.map(x => `<li>${esc(x.skill)}: +${fmt(x.xp)}</li>`).join('')}</ul>` : '') +
+    (G.assumptions.length ? `<h2>Assumptions</h2><ul>${G.assumptions.map(a => `<li>${esc(a)}</li>`).join('')}</ul>` : '');
+}
+
+function pSources(){
+  $('#p-sources').innerHTML = `<p class="small">Every fact the guide relies on. A researcher found each one, and a separate verifier confirmed it from an independent fetch. Wiki links point at the exact page revision that was checked.</p>
+  <div class="scroll"><table class="t"><thead><tr><th>ID</th><th>Fact</th><th>Value</th><th>Status</th><th>Sources</th></tr></thead><tbody>` +
+  G.facts.map(f => `<tr id="${f.fact_id}"><td><code>${f.fact_id}</code></td><td>${esc(f.statement)}${f.caveat ? `<div class="small muted">Caveat: ${esc(f.caveat)}</div>` : ''}</td>
+    <td>${esc(factVal(f))}</td><td><span class="status ${f.status}">${esc(f.status.replace(/_/g, ' '))}</span><div class="small muted">${esc(f.verified_at)}</div></td>
+    <td class="small">${f.sources.map(s => `<div><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a> <span class="muted">${s.tier}${s.revid ? ' · rev ' + s.revid : ''}</span></div>`).join('')}</td></tr>`).join('') +
+  `</tbody></table></div>`;
+}
+
+function pAudit(){
+  const rel = A.release || {};
+  const agents = Object.entries(A.agents || {});
+  $('#p-audit').innerHTML = `<h2>Release status</h2><p>${rel.released ? `<span class="OK">RELEASED</span>: QA approved this exact content (${esc(rel.approved_at)}).` : `<span class="FAIL">NOT RELEASED</span>: ${esc((rel.reasons || []).join('; '))}`}</p>
+  <h2>Integrity cross-check</h2><p class="small muted">Compares what agents <i>said</i> they did (provenance) with what the independent Sentry hook <i>saw</i> them do, and checks the hash-chained ledgers.</p>
+  <div class="scroll"><table class="t"><tbody>${(A.crosscheck || []).map(c => `<tr><td class="${c.level}">${c.level}</td><td>${esc(c.message)}</td></tr>`).join('') || '<tr><td>No checks recorded.</td></tr>'}</tbody></table></div>
+  <h2>Who did what</h2><div class="scroll"><table class="t"><thead><tr><th>Agent</th><th>Tool calls</th><th>Blocked</th><th>Tools used</th></tr></thead><tbody>${agents.map(([r, v]) => `<tr><td>${esc(r)}</td><td class="num">${v.tool_calls}</td><td class="num">${v.blocked}</td><td class="small">${esc(Object.entries(v.tools).map(([t, n]) => t + '×' + n).join(', '))}</td></tr>`).join('') || '<tr><td colspan="4">No observations.</td></tr>'}</tbody></table></div>
+  <h2>Provenance by artifact</h2>${Object.entries(A.provenance || {}).map(([f, p]) => `<details class="danger"><summary>${esc(f)} — ${esc(p?.agent || 'none')}</summary><div class="in">${p ? `
+    <div class="small">${esc(p.started_at)} → ${esc(p.finished_at)}</div>
+    <div><b>Actions</b><ol class="steps">${p.actions.map(a => `<li><b>${esc(a.kind)}</b>: ${esc(a.detail)}${a.target ? ` <code>${esc(a.target)}</code>` : ''}${a.outcome ? ' → ' + esc(a.outcome) : ''}</li>`).join('')}</ol></div>
+    <div><b>Decisions</b><ul>${p.decisions.map(d => `<li><b>${esc(d.decision)}</b>: ${esc(d.reason)}</li>`).join('') || '<li>—</li>'}</ul></div>
+    <div><b>Limitations</b><ul>${p.limitations.map(l => `<li>${esc(l)}</li>`).join('') || '<li>—</li>'}</ul></div>` : ''}</div></details>`).join('')}
+  <h2>Chain of custody (ledger)</h2><div class="scroll"><table class="t"><thead><tr><th>#</th><th>Time</th><th>Event</th><th>Artifact</th><th>By</th><th>Hash</th><th>Note</th></tr></thead><tbody>${(A.ledger || []).map(e => `<tr><td class="num">${e.seq}</td><td class="small"><code>${esc(e.ts)}</code></td><td>${esc(e.event)}${e.decision ? ' (' + esc(e.decision) + ')' : ''}</td><td>${esc(e.path || '')}</td><td>${esc(e.author)}</td><td><code>${esc((e.sha256 || '').slice(0, 12))}</code></td><td class="small">${esc(e.note || '')}</td></tr>`).join('')}</tbody></table></div>
+  <p class="small muted">The full audit (every tool call, blocked attempts, archived agent transcripts) is in <code>jobs/${esc(G.job)}/audit.html</code>.</p>`;
+}
+
+const TABS = [['route', 'Route'], ['decisions', 'Decisions'], ['levels', 'Level by level'], ['quests', 'Quests & unlocks'], ['danger', 'Danger register'], ['new', 'What\'s new'], ['supplies', 'Supplies'], ['sources', 'Sources'], ['audit', 'Audit trail']];
+function tabs(){
+  $('#tabs').innerHTML = TABS.map(([k, l]) => `<button role="tab" data-tab="${k}" aria-selected="${S.tab === k}">${l}</button>`).join('');
+  TABS.forEach(([k]) => { $('#p-' + k).hidden = S.tab !== k; });
+}
+function render(){
+  tiles(); tabs();
+  ({route: pRoute, decisions: pDecisions, levels: pLevels, quests: pQuests, danger: pDanger, new: pNew, supplies: pSupplies, sources: pSources, audit: pAudit})[S.tab]();
+  document.querySelectorAll('#routeSeg button').forEach(b => b.setAttribute('aria-pressed', b.dataset.route === S.route));
+}
+document.addEventListener('click', e => {
+  const t = e.target.closest('[data-tab]'); if (t){ S.tab = t.dataset.tab; save(); render(); return; }
+  const r = e.target.closest('[data-route]'); if (r){ S.route = r.dataset.route; save(); render(); return; }
+  const f = e.target.closest('[data-fact]'); if (f){ e.preventDefault(); S.tab = 'sources'; save(); render(); const row = document.getElementById(f.dataset.fact); if (row){ row.scrollIntoView({block: 'center'}); row.querySelectorAll('td').forEach(td => td.style.background = 'var(--gold-soft)'); } return; }
+  const g = e.target.closest('[data-goto]'); if (g){ e.preventDefault(); S.tab = 'route'; save(); render(); document.getElementById('card-' + g.dataset.goto)?.scrollIntoView({block: 'start'}); }
+});
+document.addEventListener('change', e => {
+  const d = e.target.closest('[data-done]'); if (d){ S.done[d.dataset.done] = d.checked; save(); render(); }
+});
+$('#cap').onchange = e => { S.cap = e.target.value; save(); render(); };
+$('#hideDone').checked = !!S.hideDone; $('#hideDone').onchange = e => { S.hideDone = e.target.checked; save(); render(); };
+$('#mylvl').oninput = e => { const l = Math.max(1, Math.min(99, parseInt(e.target.value || '0', 10))); if (!e.target.value){ S.xp = null; } else { S.xp = XP[l]; $('#myxp').value = ''; } save(); render(); };
+$('#myxp').oninput = e => { const x = parseInt(e.target.value || '', 10); S.xp = isNaN(x) ? null : x; if (!isNaN(x)) $('#mylvl').value = lvlFor(x); save(); render(); };
+if (S.xp != null){ $('#mylvl').value = lvlFor(S.xp); }
+$('#theme').onclick = () => { const dark = matchMedia('(prefers-color-scheme: dark)').matches; const cur = document.documentElement.dataset.theme || (dark ? 'dark' : 'light');
+  S.theme = cur === 'dark' ? 'light' : 'dark'; document.documentElement.dataset.theme = S.theme; save(); };
+header(); render();
+</script>
+</body>
+</html>
