@@ -240,20 +240,31 @@ def assess(entry: dict, lad: dict | None = None) -> dict:
     if inherent >= 25:
         residual = max(residual, math.ceil(0.3 * inherent))
     lad = lad if lad is not None else ladder()
-    g_inh, _ = calibrate(inherent, lad)
-    g_res, near = calibrate(residual, lad)
     cal = load_calibration()
     cap = int(((cal or {}).get("wilderness_premium") or {}).get("cap", 99))
     wl = entry.get("wilderness_level")
+    g_inh, near_inh = calibrate(inherent, lad)
+    g_res, near = calibrate(residual, lad)
     p_inh, p_res = premium(flags, cal, wl), premium(rflags, cal, wl)
-    if lad["calibrated"] and (p_inh or p_res):
+    if lad["calibrated"]:
+        # Anchors are rated WITHOUT precautions, so the headline (comparable to the ladder) is the
+        # unmitigated score; the residual is "with full prep" on the same mapping. (RT-04)
         g_inh = min(cap, g_inh + p_inh) if p_inh else g_inh
         g_res = min(cap, g_res + p_res) if p_res else g_res
+        # Flag floors are minimums on the PUBLISHED scale, applied after calibration. (RT-03)
+        f_inh = max([FLAG_FLOORS.get(f, 0) for f in flags] + [0])
+        f_res = max([FLAG_FLOORS.get(f, 0) for f in rflags] + [0])
+        g_inh, g_res = max(g_inh, f_inh), max(g_res, f_res)
+        # Only the ceiling anchor is 100. (RT-06)
+        g_inh, g_res = min(g_inh, 99), min(g_res, 99)
+        g_res = min(g_res, g_inh)
+        near = near_inh
     return {"step_id": entry["step_id"],
             # published (game-relative) scores
             "inherent_ds": g_inh, "inherent_tier": tier(g_inh), "residual_ds": g_res, "residual_tier": tier(g_res),
             "comparable_to": near, "calibrated": lad["calibrated"], "calibration_version": lad.get("version"),
-            "wilderness_premium": p_res if lad["calibrated"] else 0,
+            "wilderness_premium": p_inh if lad["calibrated"] else 0,
+            "headline_ds": g_inh, "headline_tier": tier(g_inh),
             # model internals, kept for audit
             "model_inherent": inherent, "model_residual": residual,
             "floor_by": floor_by, "residual_floor_by": rfloor_by, "factors": v, "residual_factors": rv,

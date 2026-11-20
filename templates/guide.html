@@ -225,8 +225,8 @@ function tokens(text, step){
     return m;
   }).replace(/`([^`]+)`/g, '<code>$1</code>');
 }
-const dsBadge = (sc, big = true) => `<span class="ds ${sc.residual_tier}" title="Game-relative danger (The Fractured Archive = 100). Without precautions ${sc.inherent_ds} (${sc.inherent_tier}); with the mandatory precautions ${sc.residual_ds}.${sc.comparable_to && sc.comparable_to.length ? ' Comparable to: ' + sc.comparable_to.join(' / ') : ''}${sc.calibrated === false ? ' [uncalibrated]' : ''}">
-  <span class="num">${sc.residual_ds}</span><span class="lbl">${sc.residual_tier}</span>${big ? `<small>raw ${sc.inherent_ds}${sc.calibrated === false ? '*' : ''}</small>` : ''}</span>`;
+const dsBadge = (sc, big = true) => `<span class="ds ${sc.residual_tier}" title="Game-relative danger (The Fractured Archive = 100), compared like-for-like with the reference ladder (no precautions): ${sc.inherent_ds} (${sc.inherent_tier}). With the full prep card: ${sc.residual_ds}.${sc.comparable_to && sc.comparable_to.length ? ' Comparable to: ' + sc.comparable_to.join(' / ') : ''}${sc.calibrated === false ? ' [uncalibrated]' : ''}">
+  <span class="num">${sc.inherent_ds}</span><span class="lbl">${sc.inherent_tier}</span>${big ? `<small>with prep ${sc.residual_ds}${sc.calibrated === false ? '*' : ''}</small>` : ''}</span>`;
 const necBadge = n => n ? `<span class="nec ${esc(n.class)}" title="${esc(n.why)}">${esc(n.class)}</span>` : '';
 
 function reqMet(req){

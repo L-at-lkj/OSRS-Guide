@@ -23,7 +23,7 @@ import danger  # noqa: E402
 import ledger  # noqa: E402
 
 GOOD = {"VERIFIED", "VERIFIED_WITH_CAVEAT"}
-COMPANY_FILES = ("docs/", "schemas/", ".claude/", "tools/", "templates/")
+COMPANY_FILES = ("docs/", "schemas/", ".claude/", "tools/", "templates/", "policy/", "profiles/")
 DESK_PREFIX = {"methods": "MTH", "quests": "QST", "threats": "THR", "logistics": "LOG", "updates": "UPD", "rfi": "RFI"}
 RESEARCH_FILES = ["research/updates.json", "research/claims-methods.json", "research/claims-quests.json",
                   "research/claims-threats.json", "research/claims-logistics.json"]
@@ -417,13 +417,15 @@ def g_risk(job, r):
             r.fail(f"risk {e['step_id']}: VETOED by risk officer ({e.get('veto_basis', 'danger')}): {e.get('verdict_reason', '')}")
         if s["residual_tier"] in ("Critical", "Extreme") and e["step_id"] not in accepted and not informed:
             r.fail(f"risk {e['step_id']}: residual {s['residual_tier']} ({s['residual_ds']}) needs the user's explicit acceptance")
-        if s["residual_ds"] >= danger.PREP_CARD_FROM:
+        if any(f in ("WILDERNESS", "DEEP_WILDERNESS", "PVP_HOTSPOT") for f in e["flags"]) and not e.get("wilderness_level"):
+            r.fail(f"risk {e['step_id']}: Wilderness step without wilderness_level (needed for the owner's tiered premium)")
+        if s["inherent_ds"] >= danger.PREP_CARD_FROM:
             pre = e.get("preconditions", {})
             missing = [k for k, ok in (("mitigations", e["mitigations"]), ("stop_conditions", pre.get("stop_conditions")),
                                        ("min_hitpoints", pre.get("min_hitpoints")), ("bailout", e.get("bailout")),
                                        ("necessity", e.get("necessity"))) if not ok]
             if missing:
-                r.fail(f"risk {e['step_id']}: score {s['residual_ds']} needs a complete prep card; missing {missing}")
+                r.fail(f"risk {e['step_id']}: score {s['inherent_ds']} (unmitigated) needs a complete prep card; missing {missing}")
     cap = danger.APPETITE_CAPS[risk["risk_appetite"]]
     for rt in plan["routes"]:
         worst = max((scores[s]["residual_ds"] for s in rt["step_ids"] if s in scores), default=0)

@@ -1,6 +1,6 @@
 {
   "version": "2026-11-20-approved-r2",
-  "status": "approved by owner 2026-11-20 (with wilderness premium +25)",
+  "status": "approved by owner 2026-11-20 (tiered Wilderness premium by depth; replaces the flat +25)",
   "basis": "Each anchor is rated with the 8-factor model for a TYPICAL account that attempts that content (content-appropriate stats and gear). A guide step is rated for the OWNER's account. So a published score reads: 'this is as dangerous for you as <anchor> is for a typical player doing it'.",
   "scale_ceiling": "The Fractured Archive at solo/duo scale = 100 (owner decisions: agility job ledger seq 131; calibration job ledger).",
   "process": "Calibration job (/osrs-calibrate): threat-analyst researches each anchor -> fact-verifier verifies -> risk-officer rates factors (status 'rated') -> red-team challenges ordering -> owner approves positions (status 'approved'). Re-run quarterly or after major content releases.",
@@ -1962,5 +1962,6 @@
     },
     "cap": 99,
     "owner_decision": "to more accurately reflect the danger add at most, 20 for deep wildy (level 30+), 15 for anything level 20+, 10 for anything 14+ and only 5 if something in wildy below level 14+ (2026-11-20; replaces the flat +25)"
-  }
+  },
+  "publishing": "Headline = unmitigated score mapped on the ladder (like-for-like with anchors, which are rated without precautions); 'with prep' = residual on the same mapping. Flag floors are applied on the published scale after calibration. Only the ceiling anchor is 100."
 }
