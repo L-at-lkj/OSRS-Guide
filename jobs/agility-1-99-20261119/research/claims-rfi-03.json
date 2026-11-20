@@ -1,0 +1,1774 @@
+{
+ "desk": "rfi",
+ "as_of": "2026-11-20",
+ "claims": [
+  {
+   "claim_id": "C-RFI-101",
+   "subject": "Death Plateau",
+   "attribute": "skill_requirements",
+   "value": {
+    "skills": {},
+    "quests": [],
+    "listed_requirements": "none (the Quest details box has no requirements field)",
+    "items": [
+     "60 coins (bring 1,000 for the dice with Harold)",
+     "10 unnoted bread",
+     "10 unnoted cooked trout",
+     "Iron bar",
+     "Asgarnian ale"
+    ]
+   },
+   "unit": null,
+   "statement": "Death Plateau has no skill or quest requirements: its Quest details box lists no requirements field. It needs 60+ coins (1,000 recommended), 10 bread, 10 cooked trout, an iron bar and an Asgarnian ale.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Death Plateau",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15382205",
+     "revid": 15382205,
+     "retrieved": "2026-11-20T12:05:51Z",
+     "quote": "|items = * 60 [[coins]] (bring 1000 for the gambling dice with Harold part) *10 unnoted [[bread]] *10 unnoted cooked [[trout]] *[[Iron bar]] *[[Asgarnian ale]] (can be found on the bar at the pub in [[Burthorpe]])",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": null,
+   "notes": "The iron bar can be bought (standard HW account) or smelted (Mining 15 + Smithing 15; owner 42/31). The ironman list also names an iron bar spawn in level 18 Wilderness: do not route that option on Hardcore Worlds. Same revision as F-2026, which already settled 'no listed requirements'.",
+   "scope": {
+    "owner": "meets all requirements"
+   }
+  },
+  {
+   "claim_id": "C-RFI-102",
+   "subject": "Death Plateau",
+   "attribute": "agility_xp_reward",
+   "value": 0,
+   "unit": "xp",
+   "statement": "Death Plateau gives no Agility XP. Its only XP reward is 3,000 Attack XP, and it is not a row in the wiki's Agility quest-reward table.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Death Plateau",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15382205",
+     "revid": 15382205,
+     "retrieved": "2026-11-20T12:05:51Z",
+     "quote": "|rewards = *{{SCP|Attack|3,000}} [[Attack]] [[experience]] *[[Steel claws]] *The ability to make [[claws]] *Ability to purchase and wear [[climbing boots]] from [[Tenzing]]",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Quest experience rewards",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+     "revid": 15408569,
+     "retrieved": "2026-11-20T12:05:32Z",
+     "quote": "==={{plink|Agility|pic=Agility icon}}=== (27 data rows, Recruitment Drive ... Secrets of the North; Death Plateau is not among them)",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": null,
+   "notes": "Defence XP is 0, already settled as F-2026 (VERIFIED_WITH_CAVEAT); not re-claimed. Death Plateau gates Troll Stronghold (2,000 Agility XP, F-2022) and Troll Romance (8,000, F-2031)."
+  },
+  {
+   "claim_id": "C-RFI-103",
+   "subject": "Death Plateau",
+   "attribute": "combat_encounters",
+   "value": {
+    "required_kills": "none (no kills field)",
+    "hazard": "trolls on the normal (northern) path attack; the secret path is not attacked",
+    "npc_levels": "unknown, no source",
+    "instance_or_cutscene": "open world (Burthorpe / Death Plateau paths)",
+    "can_leave_or_teleport": "not stated (open world)",
+    "required": false
+   },
+   "unit": null,
+   "statement": "Death Plateau has no required fights. Trolls attack only on the normal northern path, which a warning sign marks; the walkthrough routes the player along Tenzing's secret path, where the trolls do not attack.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Death Plateau",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15382205",
+     "revid": 15382205,
+     "retrieved": "2026-11-20T12:05:51Z",
+     "quote": "A wounded soldier marks the dangerous route towards the north. '''{{Colour|red|Warning}}:''' ''If you head north, a warning sign will tell you that Death Plateau is dangerous and you will be attacked by trolls. Do not go this way! Head back south-west.''",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Death Plateau",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15382205",
+     "revid": 15382205,
+     "retrieved": "2026-11-20T12:05:51Z",
+     "quote": "You may get a popup message saying that you'll be assailed by trolls if you continue while walking along the secret path. Ignore it, as the trolls will only attack if you're on the normal path.",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "medium",
+   "released": null,
+   "notes": "The levels and max hits of the trolls on the northern path were not on the quest page (gap). The Threat desk should rate the wrong-path risk."
+  },
+  {
+   "claim_id": "C-RFI-104",
+   "subject": "Mourning's End Part I",
+   "attribute": "skill_requirements",
+   "value": {
+    "Ranged": {
+     "req": 60,
+     "boostable": false,
+     "needed_to_start": true,
+     "owner": 56
+    },
+    "Thieving": {
+     "req": 50,
+     "boostable": false,
+     "needed_to_start": true,
+     "owner": 24
+    },
+    "other": "defeat a level 11 enemy with combat stats set to 20 each",
+    "quests": [
+     "Roving Elves",
+     "Regicide",
+     "Underground Pass",
+     "Biohazard (done)",
+     "Plague City (done)",
+     "Waterfall Quest (done)",
+     "Big Chompy Bird Hunting",
+     "Sheep Herder"
+    ]
+   },
+   "unit": null,
+   "statement": "Mourning's End Part I needs Ranged 60 and Thieving 50, neither boostable and both needed to start. The owner lacks both (Ranged 56, Thieving 24).",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Mourning's End Part I",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15366066",
+     "revid": 15366066,
+     "retrieved": "2026-11-20T12:06:05Z",
+     "quote": "|requirements = *{{SCP|Ranged|60|link=yes}} {{Boostable|no}} {{Questreqstart|yes}} *{{SCP|Thieving|50|link=yes}} {{Boostable|no}} {{Questreqstart|yes}} *The ability to defeat a level 11 enemy with your combat stats set to 20 each.",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": null,
+   "notes": "These are also the effective skill gates of Mourning's End Part II (60,000 Agility XP), whose own infobox lists no skills (F-2548)."
+  },
+  {
+   "claim_id": "C-RFI-105",
+   "subject": "Mourning's End Part I",
+   "attribute": "combat_encounter:Mourner",
+   "value": {
+    "npc": "Mourner",
+    "combat_level": 11,
+    "mechanic": "all combat skills, including Hitpoints, are set to 20 for the fight",
+    "max_hit": "unknown, no source",
+    "instance_or_cutscene": "not stated",
+    "can_leave_or_teleport": "not stated",
+    "required": true
+   },
+   "unit": null,
+   "statement": "Mourning's End Part I's one listed kill is a level 11 Mourner, fought with all combat skills (Hitpoints included) set to 20.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Mourning's End Part I",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15366066",
+     "revid": 15366066,
+     "retrieved": "2026-11-20T12:06:05Z",
+     "quote": "|kills = [[Mourner]] ''(level 11) (will decrease all combat skills to 20, including [[Hitpoints]])''",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "medium",
+   "released": null,
+   "notes": "Hitpoints is temporarily set to 20 (owner has 48). Whether Defence 1 is raised to 20 for the fight, and whether this gives any XP, is not stated; quest rewards contain no Defence XP (see Defence claim). Threat desk should rate."
+  },
+  {
+   "claim_id": "C-RFI-106",
+   "subject": "Roving Elves",
+   "attribute": "skill_requirements",
+   "value": {
+    "Agility": {
+     "req": 56,
+     "boostable": true,
+     "needed_to_start": false,
+     "note": "not needed if travelling by charter ship to the elven woods",
+     "owner": 57
+    },
+    "other": "defeat a level 84 enemy unarmed, with heavy item restrictions",
+    "quests": [
+     "Regicide",
+     "Underground Pass",
+     "Biohazard (done)",
+     "Plague City (done)",
+     "Waterfall Quest (done)"
+    ]
+   },
+   "unit": null,
+   "statement": "Roving Elves needs Agility 56 (boostable, not needed to start, and avoidable by charter ship to the elven woods) plus Regicide and Waterfall Quest. The owner has Agility 57.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Roving Elves",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15401434",
+     "revid": 15401434,
+     "retrieved": "2026-11-20T12:06:06Z",
+     "quote": "* {{SCP|Agility|56|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}, unless travelling with a [[charter ship]] to the elven woods",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": null
+  },
+  {
+   "claim_id": "C-RFI-107",
+   "subject": "Roving Elves",
+   "attribute": "combat_encounter:Moss Guardian",
+   "value": {
+    "npc": "Moss Guardian",
+    "combat_level": 84,
+    "restrictions": "Glarial's Tomb restricted items (unarmed melee is the simple way; Magic exceptions listed)",
+    "flinchable": true,
+    "prayer_advice": "Protect from Melee recommended",
+    "max_hit": "unknown, no source",
+    "instance_or_cutscene": "Glarial's Tomb (not stated as instance)",
+    "can_leave_or_teleport": "not stated",
+    "required": true
+   },
+   "unit": null,
+   "statement": "Roving Elves requires killing a level 84 Moss Guardian in Glarial's Tomb with restricted items (unarmed melee is the simplest way). It can be flinched, and Protect from Melee is recommended.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Roving Elves",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15401434",
+     "revid": 15401434,
+     "retrieved": "2026-11-20T12:06:06Z",
+     "quote": "* [[Moss Guardian]] ''(level 84)'' (has to be killed with [[Glarial's Tomb#Restricted items|restricted items]], can be [[flinched]])",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Roving Elves",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15401434",
+     "revid": 15401434,
+     "retrieved": "2026-11-20T12:06:06Z",
+     "quote": "As the Moss Guardian does physical damage, or unavoidable magical damage if the physical damage doesn't land, it is recommended to pray [[Protect from Melee]].",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "medium",
+   "released": null,
+   "notes": "Build hazard for a Defence-1, Strength-32, HP-48 account: an unarmed fight against a level 84. The Threat desk must rate this before routing Mourning's End Part I/II."
+  },
+  {
+   "claim_id": "C-RFI-108",
+   "subject": "Big Chompy Bird Hunting",
+   "attribute": "skill_requirements",
+   "value": {
+    "Fletching": {
+     "req": 5,
+     "boostable": true,
+     "needed_to_start": false,
+     "owner": 9
+    },
+    "Cooking": {
+     "req": 30,
+     "boostable": true,
+     "needed_to_start": false,
+     "owner": 23
+    },
+    "Ranged": {
+     "req": 30,
+     "boostable": false,
+     "needed_to_start": false,
+     "owner": 56
+    },
+    "other": "defend against level 64 wolves and level 53 ogres"
+   },
+   "unit": null,
+   "statement": "Big Chompy Bird Hunting needs Fletching 5 (boostable), Cooking 30 (boostable) and Ranged 30 (not boostable); none is needed to start. The owner lacks only Cooking (23).",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Big Chompy Bird Hunting",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15367289",
+     "revid": 15367289,
+     "retrieved": "2026-11-20T12:06:07Z",
+     "quote": "|requirements = * {{SCP|Fletching|5|link=yes}} {{Boostable|yes}} {{Questreqstart|no}} * {{SCP|Cooking|30|link=yes}} {{Boostable|yes}} {{Questreqstart|no}} * {{SCP|Ranged|30|link=yes}} {{Boostable|no}} {{Questreqstart|no}}",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": null
+  },
+  {
+   "claim_id": "C-RFI-109",
+   "subject": "Big Chompy Bird Hunting",
+   "attribute": "combat_encounters_roster",
+   "value": [
+    "Chompy bird (level 6), required",
+    "Wolves (level 64), optional: only for 4 wolf bones, which can be brought instead",
+    "Ogres (level 53): the requirements say you must be able to defend against them"
+   ],
+   "unit": null,
+   "statement": "Big Chompy Bird Hunting's only required kill is a level 6 chompy bird. Level 64 wolves are optional (for wolf bones), and the requirements mention level 53 ogres.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Big Chompy Bird Hunting",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15367289",
+     "revid": 15367289,
+     "retrieved": "2026-11-20T12:06:07Z",
+     "quote": "|kills = * [[Chompy bird]] ''(level 6)'' * [[Wolf|Wolves]] ''(level 64)'' (optional)",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Big Chompy Bird Hunting",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15367289",
+     "revid": 15367289,
+     "retrieved": "2026-11-20T12:06:07Z",
+     "quote": "{{Needed|[[chisel]], [[axe]], [[knife]], 100 [[feathers]], 4 [[wolf bones]] (or combat equipment to kill level 64 wolves)",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "medium",
+   "released": null,
+   "notes": "Max hits, aggression and instance status not researched (gap)."
+  },
+  {
+   "claim_id": "C-RFI-110",
+   "subject": "Roving Elves",
+   "attribute": "defence_xp_reward",
+   "value": 0,
+   "unit": "xp",
+   "statement": "Roving Elves gives no fixed Defence XP: its rewards box lists no Defence XP and it is not in the wiki's fixed-Defence table. Chain: Mourning's End Part I/II, Song of the Elves.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Roving Elves",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15401434",
+     "revid": 15401434,
+     "retrieved": "2026-11-20T12:06:06Z",
+     "quote": "|rewards = *{{SCP|Strength|10,000}} [[Strength]] [[experience]] *Ability to wield the [[Crystal shield]] and the [[Crystal bow]]",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Quest experience rewards",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+     "revid": 15408569,
+     "retrieved": "2026-11-20T12:05:32Z",
+     "quote": "==={{plink|Defence|pic=Defence icon}}=== (13 data rows: A Soul's Bane ... King's Ransom; this quest is not among them)",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": null
+  },
+  {
+   "claim_id": "C-RFI-111",
+   "subject": "Mourning's End Part I",
+   "attribute": "defence_xp_reward",
+   "value": 0,
+   "unit": "xp",
+   "statement": "Mourning's End Part I gives no fixed Defence XP: its rewards box lists no Defence XP and it is not in the wiki's fixed-Defence table. Chain: Mourning's End Part II, Song of the Elves.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Mourning's End Part I",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15366066",
+     "revid": 15366066,
+     "retrieved": "2026-11-20T12:06:05Z",
+     "quote": "|rewards = *{{SCP|Thieving|40,000}} [[Thieving]] experience *{{SCP|Hitpoints|25,000}} [[Hitpoints]] experience",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Quest experience rewards",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+     "revid": 15408569,
+     "retrieved": "2026-11-20T12:05:32Z",
+     "quote": "==={{plink|Defence|pic=Defence icon}}=== (13 data rows: A Soul's Bane ... King's Ransom; this quest is not among them)",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": null
+  },
+  {
+   "claim_id": "C-RFI-112",
+   "subject": "Big Chompy Bird Hunting",
+   "attribute": "defence_xp_reward",
+   "value": 0,
+   "unit": "xp",
+   "statement": "Big Chompy Bird Hunting gives no fixed Defence XP: its rewards box lists no Defence XP and it is not in the wiki's fixed-Defence table. Chain: Mourning's End Part I/II, Zogre Flesh Eaters, Rum Deal, Cabin Fever.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Big Chompy Bird Hunting",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15367289",
+     "revid": 15367289,
+     "retrieved": "2026-11-20T12:06:07Z",
+     "quote": "*{{SCP|Fletching|262|link=yes}} [[experience]] *{{SCP|Cooking|1,470|link=yes}} experience *{{SCP|Ranged|735|link=yes}} experience",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Quest experience rewards",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+     "revid": 15408569,
+     "retrieved": "2026-11-20T12:05:32Z",
+     "quote": "==={{plink|Defence|pic=Defence icon}}=== (13 data rows: A Soul's Bane ... King's Ransom; this quest is not among them)",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": null
+  },
+  {
+   "claim_id": "C-RFI-113",
+   "subject": "Sheep Herder",
+   "attribute": "defence_xp_reward",
+   "value": 0,
+   "unit": "xp",
+   "statement": "Sheep Herder gives no fixed Defence XP: its rewards box lists no Defence XP and it is not in the wiki's fixed-Defence table. Chain: Mourning's End Part I/II.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Sheep Herder",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15395515",
+     "revid": 15395515,
+     "retrieved": "2026-11-20T12:06:08Z",
+     "quote": "|rewards = *3,100 [[coins]] *{{SCP|Hunter|1,000|link=yes}} experience *Ability to [[goat hunting|hunt goats]] on [[Wyrmscraig]]",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Quest experience rewards",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+     "revid": 15408569,
+     "retrieved": "2026-11-20T12:05:32Z",
+     "quote": "==={{plink|Defence|pic=Defence icon}}=== (13 data rows: A Soul's Bane ... King's Ransom; this quest is not among them)",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T1",
+     "title": "Update:Quest Month Kick Off, TFA Tweaks & More",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396686",
+     "revid": 15396686,
+     "retrieved": "2026-11-20T12:08:39Z",
+     "quote": "| Sheep Herder | 1,000 Hunter XP",
+     "fetched_by": "quest-archivist (rfi-03)",
+     "published": "2026-11-03"
+    }
+   ],
+   "confidence": "high",
+   "released": "2026-11-03",
+   "notes": "NEW_CONTENT: the 1,000 Hunter XP was added on 2026-11-03 (Jagex: 'Sheep Herder | 1,000 Hunter XP'); no Defence was added."
+  },
+  {
+   "claim_id": "C-RFI-114",
+   "subject": "Making History",
+   "attribute": "defence_xp_reward",
+   "value": 0,
+   "unit": "xp",
+   "statement": "Making History gives no fixed Defence XP: its rewards box lists no Defence XP and it is not in the wiki's fixed-Defence table. Chain: Song of the Elves.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Making History",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15315243",
+     "revid": 15315243,
+     "retrieved": "2026-11-20T12:06:36Z",
+     "quote": "|rewards = *{{SCP|Crafting|1,000}} [[Crafting]] experience *{{SCP|Prayer|1,000}} [[Prayer]] experience",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Quest experience rewards",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+     "revid": 15408569,
+     "retrieved": "2026-11-20T12:05:32Z",
+     "quote": "==={{plink|Defence|pic=Defence icon}}=== (13 data rows: A Soul's Bane ... King's Ransom; this quest is not among them)",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": null,
+   "notes": "Choosable: a Varrock Museum antique lamp (1,000 XP in any skill of at least level 20) is claimable after completion; it must not go to Defence (while Defence is below 20 it cannot)."
+  },
+  {
+   "claim_id": "C-RFI-115",
+   "subject": "Nature Spirit",
+   "attribute": "defence_xp_reward",
+   "value": 2000,
+   "unit": "xp",
+   "statement": "Nature Spirit gives a fixed 2,000 Defence XP on completion (quest rewards box; also a row of the wiki's fixed-Defence table). Chain: In Search of the Myreque -> In Aid of the Myreque -> Darkness of Hallowvale (7,000 Agility XP); also Fairytale I/II.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Nature Spirit",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15372142",
+     "revid": 15372142,
+     "retrieved": "2026-11-20T12:06:09Z",
+     "quote": "*{{SCP|Defence|2,000}} [[Defence]] experience",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Quest experience rewards",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+     "revid": 15408569,
+     "retrieved": "2026-11-20T12:05:32Z",
+     "quote": "|[[Nature Spirit]] |Yes||{{+=|defence|2,000|echo=2}}|| -",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": null
+  },
+  {
+   "claim_id": "C-RFI-116",
+   "subject": "In Search of the Myreque",
+   "attribute": "defence_xp_reward",
+   "value": 600,
+   "unit": "xp",
+   "statement": "In Search of the Myreque gives a fixed 600 Defence XP on completion (quest rewards box; also a row of the wiki's fixed-Defence table). Chain: In Aid of the Myreque -> Darkness of Hallowvale.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "In Search of the Myreque",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15399379",
+     "revid": 15399379,
+     "retrieved": "2026-11-20T12:06:10Z",
+     "quote": "*{{SCP|Defence|600}} [[Defence]] experience",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Quest experience rewards",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+     "revid": 15408569,
+     "retrieved": "2026-11-20T12:05:32Z",
+     "quote": "|[[In Search of the Myreque]] |Yes||{{+=|defence|600|echo=2}}|| -",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": null
+  },
+  {
+   "claim_id": "C-RFI-117",
+   "subject": "In Aid of the Myreque",
+   "attribute": "defence_xp_reward",
+   "value": 2000,
+   "unit": "xp",
+   "statement": "In Aid of the Myreque gives a fixed 2,000 Defence XP on completion (quest rewards box; also a row of the wiki's fixed-Defence table). Chain: Darkness of Hallowvale.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "In Aid of the Myreque",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15381138",
+     "revid": 15381138,
+     "retrieved": "2026-11-20T12:06:11Z",
+     "quote": "*{{SCP|Defence|2,000}} [[Defence]] experience",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Quest experience rewards",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+     "revid": 15408569,
+     "retrieved": "2026-11-20T12:05:32Z",
+     "quote": "|[[In Aid of the Myreque]] |Yes||{{+=|defence|2,000|echo=2}}|| -",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": null
+  },
+  {
+   "claim_id": "C-RFI-118",
+   "subject": "What Lies Below",
+   "attribute": "defence_xp_reward",
+   "value": 2000,
+   "unit": "xp",
+   "statement": "What Lies Below gives a fixed 2,000 Defence XP on completion (quest rewards box; also a row of the wiki's fixed-Defence table). Chain: Defender of Varrock -> The Curse of Arrav (40,000 Agility XP).",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "What Lies Below",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15373739",
+     "revid": 15373739,
+     "retrieved": "2026-11-20T12:06:12Z",
+     "quote": "*{{SCP|Defence|2,000}} [[Defence]] experience",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Quest experience rewards",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+     "revid": 15408569,
+     "retrieved": "2026-11-20T12:05:32Z",
+     "quote": "|[[What Lies Below]] |Yes||{{+=|defence|2,000|echo=2}}|| -",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "What Lies Below",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15373739",
+     "revid": 15373739,
+     "retrieved": "2026-11-20T12:06:12Z",
+     "quote": "'''[[Defence]] [[combat pures|pures]] may choose to stop the quest here to avoid gaining defence experience'''.",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": null,
+   "notes": "Requires Runecraft 35 (not boostable, needed to start; owner 5). The page notes Defence pures may stop before the end to avoid the Defence XP, but completion is needed for Defender of Varrock."
+  },
+  {
+   "claim_id": "C-RFI-119",
+   "subject": "Lost City",
+   "attribute": "defence_xp_reward",
+   "value": 0,
+   "unit": "xp",
+   "statement": "Lost City gives no fixed Defence XP: its rewards box lists no Defence XP and it is not in the wiki's fixed-Defence table. Chain: Fairytale I/II, Heroes' Quest, Throne of Miscellania, Royal Trouble.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Lost City",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15398217",
+     "revid": 15398217,
+     "retrieved": "2026-11-20T12:06:37Z",
+     "quote": "*{{SCP|Woodcutting|1,500|link=yes}} experience *{{SCP|Crafting|1,500|link=yes}} experience",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Quest experience rewards",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+     "revid": 15408569,
+     "retrieved": "2026-11-20T12:05:32Z",
+     "quote": "==={{plink|Defence|pic=Defence icon}}=== (13 data rows: A Soul's Bane ... King's Ransom; this quest is not among them)",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": "2026-11-03",
+   "notes": "NEW_CONTENT: the Woodcutting and Crafting XP were added on 2026-11-03 (Jagex table); no Defence."
+  },
+  {
+   "claim_id": "C-RFI-120",
+   "subject": "Fairytale I - Growing Pains",
+   "attribute": "defence_xp_reward",
+   "value": 0,
+   "unit": "xp",
+   "statement": "Fairytale I - Growing Pains gives no fixed Defence XP: its rewards box lists no Defence XP and it is not in the wiki's fixed-Defence table. Chain: Fairytale II (Agility-usable lamp, F-2577).",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Fairytale I - Growing Pains",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404992",
+     "revid": 15404992,
+     "retrieved": "2026-11-20T12:06:38Z",
+     "quote": "|rewards = *[[Magic secateurs]] ... *{{SCP|Farming|3,500}} [[Farming]] experience *{{SCP|Attack|2,000}} [[Attack]] experience *{{SCP|Magic|1,000}} [[Magic]] experience",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Quest experience rewards",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+     "revid": 15408569,
+     "retrieved": "2026-11-20T12:05:32Z",
+     "quote": "==={{plink|Defence|pic=Defence icon}}=== (13 data rows: A Soul's Bane ... King's Ransom; this quest is not among them)",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": null
+  },
+  {
+   "claim_id": "C-RFI-121",
+   "subject": "Throne of Miscellania",
+   "attribute": "defence_xp_reward",
+   "value": 0,
+   "unit": "xp",
+   "statement": "Throne of Miscellania gives no fixed Defence XP: its rewards box lists no Defence XP and it is not in the wiki's fixed-Defence table. Chain: Royal Trouble (5,000 Agility XP).",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Throne of Miscellania",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403898",
+     "revid": 15403898,
+     "retrieved": "2026-11-20T12:06:39Z",
+     "quote": "*{{SCP|Woodcutting|1,000|link=yes}} experience *{{SCP|Mining|1,000|link=yes}} experience *{{SCP|Fishing|1,000|link=yes}} experience *{{SCP|Farming|1,000|link=yes}} experience",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Quest experience rewards",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+     "revid": 15408569,
+     "retrieved": "2026-11-20T12:05:32Z",
+     "quote": "==={{plink|Defence|pic=Defence icon}}=== (13 data rows: A Soul's Bane ... King's Ransom; this quest is not among them)",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": "2026-11-03",
+   "notes": "NEW_CONTENT: these XP rewards were added on 2026-11-03; no Defence."
+  },
+  {
+   "claim_id": "C-RFI-122",
+   "subject": "Heroes' Quest",
+   "attribute": "defence_xp_reward",
+   "value": 3075,
+   "unit": "xp",
+   "statement": "Heroes' Quest gives a fixed 3,075 Defence XP on completion (quest rewards box; also a row of the wiki's fixed-Defence table). Chain: Throne of Miscellania -> Royal Trouble; Legends' Quest; Dragon Slayer II.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Heroes' Quest",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15385698",
+     "revid": 15385698,
+     "retrieved": "2026-11-20T12:06:40Z",
+     "quote": "*{{SCP|Defence|3,075}} [[Defence]] experience",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Quest experience rewards",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+     "revid": 15408569,
+     "retrieved": "2026-11-20T12:05:32Z",
+     "quote": "|[[Heroes' Quest]] |Yes||{{+=|defence|3,075|echo=2}}|| -",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": null,
+   "notes": "Heroes' Quest also needs a partner (see the Shield of Arrav claims)."
+  },
+  {
+   "claim_id": "C-RFI-123",
+   "subject": "Shield of Arrav",
+   "attribute": "defence_xp_reward",
+   "value": 0,
+   "unit": "xp",
+   "statement": "Shield of Arrav gives no fixed Defence XP: its rewards box lists no Defence XP and it is not in the wiki's fixed-Defence table. Chain: Heroes' Quest, Defender of Varrock.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Shield of Arrav",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403890",
+     "revid": 15403890,
+     "retrieved": "2026-11-20T12:06:43Z",
+     "quote": "*Ability to claim 5 [[Kudos]] and an [[Antique lamp (Varrock Museum)#Shield of Arrav|Antique lamp]] rewarding 1,000 XP in any skill of at least level 20 ... *An [[Antique lamp (Shield of Arrav)|antique lamp]], giving 500 XP in a skill of the player's choice",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Quest experience rewards",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+     "revid": 15408569,
+     "retrieved": "2026-11-20T12:05:32Z",
+     "quote": "==={{plink|Defence|pic=Defence icon}}=== (13 data rows: A Soul's Bane ... King's Ransom; this quest is not among them)",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": null,
+   "notes": "Fixed Defence XP is 0, but both lamps are choosable (500 XP any skill; 1,000 XP any skill at level 20+): they must not go to Defence (lamp policy). Lamps settled as F-2078."
+  },
+  {
+   "claim_id": "C-RFI-124",
+   "subject": "Merlin's Crystal",
+   "attribute": "defence_xp_reward",
+   "value": 0,
+   "unit": "xp",
+   "statement": "Merlin's Crystal gives no fixed Defence XP: its rewards box lists no Defence XP and it is not in the wiki's fixed-Defence table. Chain: Heroes' Quest -> Throne of Miscellania -> Royal Trouble.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Merlin's Crystal",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15393586",
+     "revid": 15393586,
+     "retrieved": "2026-11-20T12:06:41Z",
+     "quote": "*{{SCP|Firemaking|1,000|link=yes}} experience",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Quest experience rewards",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+     "revid": 15408569,
+     "retrieved": "2026-11-20T12:05:32Z",
+     "quote": "==={{plink|Defence|pic=Defence icon}}=== (13 data rows: A Soul's Bane ... King's Ransom; this quest is not among them)",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": "2026-11-03",
+   "notes": "Choosable: Varrock Museum antique lamp (1,000 XP, any skill at level 20+); must not go to Defence. The 1,000 Firemaking XP was added 2026-11-03."
+  },
+  {
+   "claim_id": "C-RFI-125",
+   "subject": "Dragon Slayer I",
+   "attribute": "defence_xp_reward",
+   "value": 18650,
+   "unit": "xp",
+   "statement": "Dragon Slayer I gives a fixed 18,650 Defence XP on completion (quest rewards box; also a row of the wiki's fixed-Defence table). Chain: Heroes' Quest -> Throne of Miscellania -> Royal Trouble; Legends' Quest; Dragon Slayer II.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Dragon Slayer I",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15405352",
+     "revid": 15405352,
+     "retrieved": "2026-11-20T12:06:42Z",
+     "quote": "*{{SCP|Defence|18,650}} [[Defence]] experience",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Quest experience rewards",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+     "revid": 15408569,
+     "retrieved": "2026-11-20T12:05:32Z",
+     "quote": "|[[Dragon Slayer I]] |No||{{+=|defence|18,650|echo=2}}|| -",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": null
+  },
+  {
+   "claim_id": "C-RFI-126",
+   "subject": "Pirate's Treasure",
+   "attribute": "defence_xp_reward",
+   "value": 0,
+   "unit": "xp",
+   "statement": "Pirate's Treasure gives no fixed Defence XP: its rewards box lists no Defence XP and it is not in the wiki's fixed-Defence table. Chain: Cabin Fever (7,000 Agility XP).",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Pirate's Treasure",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402136",
+     "revid": 15402136,
+     "retrieved": "2026-11-20T12:07:31Z",
+     "quote": "*{{SCP|Cooking|800|link=yes}} experience",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Quest experience rewards",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+     "revid": 15408569,
+     "retrieved": "2026-11-20T12:05:32Z",
+     "quote": "==={{plink|Defence|pic=Defence icon}}=== (13 data rows: A Soul's Bane ... King's Ransom; this quest is not among them)",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": "2026-11-03",
+   "notes": "NEW_CONTENT: the 800 Cooking XP was added 2026-11-03; no Defence."
+  },
+  {
+   "claim_id": "C-RFI-127",
+   "subject": "Rum Deal",
+   "attribute": "defence_xp_reward",
+   "value": 0,
+   "unit": "xp",
+   "statement": "Rum Deal gives no fixed Defence XP: its rewards box lists no Defence XP and it is not in the wiki's fixed-Defence table. Chain: Cabin Fever.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Rum Deal",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375150",
+     "revid": 15375150,
+     "retrieved": "2026-11-20T12:07:32Z",
+     "quote": "*{{SCP|Fishing|7,000}} [[Fishing]] experience *{{SCP|Prayer|7,000}} [[Prayer]] experience *{{SCP|Farming|7,000}} [[Farming]] experience",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Quest experience rewards",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+     "revid": 15408569,
+     "retrieved": "2026-11-20T12:05:32Z",
+     "quote": "==={{plink|Defence|pic=Defence icon}}=== (13 data rows: A Soul's Bane ... King's Ransom; this quest is not among them)",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": null,
+   "notes": "Rum Deal's own requirements (Crafting 42, Farming 40, Prayer 47, Fishing 50 boostable; Slayer 42 not boostable, needed to start) and a level 150 Evil spirit (safespottable) gate Cabin Fever."
+  },
+  {
+   "claim_id": "C-RFI-128",
+   "subject": "Zogre Flesh Eaters",
+   "attribute": "defence_xp_reward",
+   "value": 0,
+   "unit": "xp",
+   "statement": "Zogre Flesh Eaters gives no fixed Defence XP: its rewards box lists no Defence XP and it is not in the wiki's fixed-Defence table. Chain: Rum Deal -> Cabin Fever.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Zogre Flesh Eaters",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15395522",
+     "revid": 15395522,
+     "retrieved": "2026-11-20T12:07:33Z",
+     "quote": "*{{SCP|Fletching|2,000|link=yes}} experience *{{SCP|Ranged|2,000|link=yes}} experience *{{SCP|Herblore|2,000|link=yes}} experience",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Quest experience rewards",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+     "revid": 15408569,
+     "retrieved": "2026-11-20T12:05:32Z",
+     "quote": "==={{plink|Defence|pic=Defence icon}}=== (13 data rows: A Soul's Bane ... King's Ransom; this quest is not among them)",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": null
+  },
+  {
+   "claim_id": "C-RFI-129",
+   "subject": "Jungle Potion",
+   "attribute": "defence_xp_reward",
+   "value": 0,
+   "unit": "xp",
+   "statement": "Jungle Potion gives no fixed Defence XP: its rewards box lists no Defence XP and it is not in the wiki's fixed-Defence table. Chain: Zogre Flesh Eaters -> Rum Deal -> Cabin Fever; One Small Favour.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Jungle Potion",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15390159",
+     "revid": 15390159,
+     "retrieved": "2026-11-20T12:07:34Z",
+     "quote": "|rewards = *{{SCP|Herblore|775}} [[Herblore]] [[experience]]",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Quest experience rewards",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+     "revid": 15408569,
+     "retrieved": "2026-11-20T12:05:32Z",
+     "quote": "==={{plink|Defence|pic=Defence icon}}=== (13 data rows: A Soul's Bane ... King's Ransom; this quest is not among them)",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": null
+  },
+  {
+   "claim_id": "C-RFI-130",
+   "subject": "Twilight's Promise",
+   "attribute": "defence_xp_reward",
+   "value": 0,
+   "unit": "xp",
+   "statement": "Twilight's Promise gives no fixed Defence XP: its rewards box lists no Defence XP and it is not in the wiki's fixed-Defence table. Chain: The Heart of Darkness (8,000 Agility XP).",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Twilight's Promise",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15391672",
+     "revid": 15391672,
+     "retrieved": "2026-11-20T12:07:35Z",
+     "quote": "* {{SCP|Thieving|3,000|link=yes}} experience",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Quest experience rewards",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+     "revid": 15408569,
+     "retrieved": "2026-11-20T12:05:32Z",
+     "quote": "==={{plink|Defence|pic=Defence icon}}=== (13 data rows: A Soul's Bane ... King's Ransom; this quest is not among them)",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": null
+  },
+  {
+   "claim_id": "C-RFI-131",
+   "subject": "Another Slice of H.A.M.",
+   "attribute": "defence_xp_reward",
+   "value": 0,
+   "unit": "xp",
+   "statement": "Another Slice of H.A.M. gives no fixed Defence XP: its rewards box lists no Defence XP and it is not in the wiki's fixed-Defence table. Chain: Land of the Goblins (8,000 Agility XP).",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Another Slice of H.A.M.",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15292360",
+     "revid": 15292360,
+     "retrieved": "2026-11-20T12:07:36Z",
+     "quote": "*{{SCP|Mining|3,000|link=yes}} [[experience]] *{{SCP|Prayer|3,000|link=yes}} experience",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Quest experience rewards",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+     "revid": 15408569,
+     "retrieved": "2026-11-20T12:05:32Z",
+     "quote": "==={{plink|Defence|pic=Defence icon}}=== (13 data rows: A Soul's Bane ... King's Ransom; this quest is not among them)",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": null
+  },
+  {
+   "claim_id": "C-RFI-132",
+   "subject": "Death to the Dorgeshuun",
+   "attribute": "defence_xp_reward",
+   "value": 0,
+   "unit": "xp",
+   "statement": "Death to the Dorgeshuun gives no fixed Defence XP: its rewards box lists no Defence XP and it is not in the wiki's fixed-Defence table. Chain: Another Slice of H.A.M. -> Land of the Goblins.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Death to the Dorgeshuun",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396862",
+     "revid": 15396862,
+     "retrieved": "2026-11-20T12:07:37Z",
+     "quote": "*{{SCP|Thieving|2,000}} [[Thieving]] experience *{{SCP|Ranged|2,000}} [[Ranged]] experience",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Quest experience rewards",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+     "revid": 15408569,
+     "retrieved": "2026-11-20T12:05:32Z",
+     "quote": "==={{plink|Defence|pic=Defence icon}}=== (13 data rows: A Soul's Bane ... King's Ransom; this quest is not among them)",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": null
+  },
+  {
+   "claim_id": "C-RFI-133",
+   "subject": "The Giant Dwarf",
+   "attribute": "defence_xp_reward",
+   "value": 0,
+   "unit": "xp",
+   "statement": "The Giant Dwarf gives no fixed Defence XP: its rewards box lists no Defence XP and it is not in the wiki's fixed-Defence table. Chain: Another Slice of H.A.M. -> Land of the Goblins.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "The Giant Dwarf",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375425",
+     "revid": 15375425,
+     "retrieved": "2026-11-20T12:07:38Z",
+     "quote": "*{{SCP|Mining|2,500}} [[Mining]] experience *{{SCP|Smithing|2,500}} [[Smithing]] experience *{{SCP|Crafting|2,500}} [[Crafting]] experience *{{SCP|Magic|1,500}} [[Magic]] experience",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Quest experience rewards",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+     "revid": 15408569,
+     "retrieved": "2026-11-20T12:05:32Z",
+     "quote": "==={{plink|Defence|pic=Defence icon}}=== (13 data rows: A Soul's Bane ... King's Ransom; this quest is not among them)",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": null
+  },
+  {
+   "claim_id": "C-RFI-134",
+   "subject": "The Dig Site",
+   "attribute": "defence_xp_reward",
+   "value": 0,
+   "unit": "xp",
+   "statement": "The Dig Site gives no fixed Defence XP: its rewards box lists no Defence XP and it is not in the wiki's fixed-Defence table. Chain: Another Slice of H.A.M. -> Land of the Goblins.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "The Dig Site",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15398587",
+     "revid": 15398587,
+     "retrieved": "2026-11-20T12:07:39Z",
+     "quote": "*{{SCP|Mining|15,300}} [[Mining]] [[experience]] *{{SCP|Herblore|2,000}} [[Herblore]] experience",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Quest experience rewards",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+     "revid": 15408569,
+     "retrieved": "2026-11-20T12:05:32Z",
+     "quote": "==={{plink|Defence|pic=Defence icon}}=== (13 data rows: A Soul's Bane ... King's Ransom; this quest is not among them)",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": null
+  },
+  {
+   "claim_id": "C-RFI-135",
+   "subject": "Fishing Contest",
+   "attribute": "defence_xp_reward",
+   "value": 0,
+   "unit": "xp",
+   "statement": "Fishing Contest gives no fixed Defence XP: its rewards box lists no Defence XP and it is not in the wiki's fixed-Defence table. Chain: Land of the Goblins.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Fishing Contest",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15302643",
+     "revid": 15302643,
+     "retrieved": "2026-11-20T12:07:40Z",
+     "quote": "*{{SCP|Fishing|2,437}} [[Fishing]] [[experience]]",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Quest experience rewards",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+     "revid": 15408569,
+     "retrieved": "2026-11-20T12:05:32Z",
+     "quote": "==={{plink|Defence|pic=Defence icon}}=== (13 data rows: A Soul's Bane ... King's Ransom; this quest is not among them)",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": null
+  },
+  {
+   "claim_id": "C-RFI-136",
+   "subject": "Agility-XP quest prerequisite chains",
+   "attribute": "fixed_defence_xp_chain_totals",
+   "value": {
+    "Troll Stronghold / Troll Romance (Death Plateau)": 0,
+    "Underground Pass / Regicide / Mourning's End Part I-II (Roving Elves, Big Chompy, Sheep Herder)": 0,
+    "Song of the Elves extra (Making History)": 0,
+    "Darkness of Hallowvale (Nature Spirit, In Search of / In Aid of the Myreque)": 4600,
+    "Royal Trouble (The Fremennik Trials 2,812.4 [F-2038], Heroes' Quest, Dragon Slayer I)": 24537.4,
+    "Cabin Fever (Pirate's Treasure, Rum Deal, Zogre Flesh Eaters, Big Chompy, Jungle Potion)": 0,
+    "The Heart of Darkness (Twilight's Promise)": 0,
+    "Land of the Goblins (Another Slice of H.A.M., Death to the Dorgeshuun, The Giant Dwarf, The Dig Site, Fishing Contest)": 0,
+    "Fairytale I/II (Lost City, Nature Spirit)": 2000,
+    "Myreque + Royal Trouble chains together": 29137.4,
+    "plus What Lies Below": 31137.4,
+    "levels (tools/xp.py)": {
+     "4600": 20,
+     "24537.4": 35,
+     "29137.4": 37,
+     "31137.4": 38
+    },
+    "cap": "Defence 51 = 111,945 XP"
+   },
+   "unit": "xp",
+   "statement": "Fixed Defence XP in the not-yet-done prerequisite chains: 0 for the Troll, Elf (to Mourning's End Part II and Song of the Elves), Cabin Fever, Heart of Darkness and Land of the Goblins chains; 4,600 for the Myreque chain (Defence 20); 24,537.4 for the Royal Trouble chain (Defence 35); 31,137.4 for all of these plus What Lies Below (Defence 38), well under the 111,945 XP of Defence 51.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Quest experience rewards",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+     "revid": 15408569,
+     "retrieved": "2026-11-20T12:05:32Z",
+     "quote": "|[[Nature Spirit]] |Yes||{{+=|defence|2,000|echo=2}} ... |[[In Search of the Myreque]] |Yes||{{+=|defence|600|echo=2}} ... |[[In Aid of the Myreque]] |Yes||{{+=|defence|2,000|echo=2}} ... |[[Heroes' Quest]] |Yes||{{+=|defence|3,075|echo=2}} ... |[[Dragon Slayer I]] |No||{{+=|defence|18,650|echo=2}}",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": null,
+   "notes": "Computed with python3 and tools/xp.py level from the per-quest claims above and F-2038 (The Fremennik Trials 2,812.4). Fixed rewards only: choosable lamps (Shield of Arrav 500 + museum lamps, Black Knights' Fortress and Demon Slayer combat lamps, Tourist Trap choice excludes Defence) and optional training (Monkey Madness I Daero, F-2085) are excluded and must never go to Defence. Chains of Curse of Arrav (Defender of Varrock beyond What Lies Below), Dragon Slayer II and Recipe for Disaster were not checked line by line here.",
+   "scope": {
+    "build": "zerker, Defence cap 50 (Defence 51 = 111,945 XP per tools/xp.py)"
+   }
+  },
+  {
+   "claim_id": "C-RFI-137",
+   "subject": "Quest experience rewards",
+   "attribute": "agility_table_row_count",
+   "value": 27,
+   "unit": "quests",
+   "statement": "The wiki's fixed-Agility-XP table (rev 15408569) has 27 data rows; 25 use the {{+=|agility|...}} summing template, while Recruitment Drive (1,000.5) and Death on the Isle (7,500, Agility 32) are written as plain numbers. Excluding The Grand Tree (done), 26 Agility-XP quests remain for the owner, Death on the Isle among them.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Quest experience rewards",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+     "revid": 15408569,
+     "retrieved": "2026-11-20T12:05:32Z",
+     "quote": "|- data-rowid=\"Death on the Isle\" |[[Death on the Isle]] |Yes||7,500 |{{SCP|Agility|32|sort=yes}} |Two low-level enemies with no equipment",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Quest experience rewards",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+     "revid": 15408569,
+     "retrieved": "2026-11-20T12:05:32Z",
+     "quote": "|- data-rowid=\"Recruitment Drive\" |[[Recruitment Drive]] |Yes||1,000.5|| -",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": null,
+   "notes": "Counted data-rowid lines between the Agility heading and the Total row (27) and rows using {{+=|agility (25). This explains F-2002 (DISPUTED: 26 vs 27): the two plain-number rows are easy to miss. Death on the Isle's Agility XP (7,500), Defence XP (0) and requirements (Thieving 34 and Agility 32, not boostable; Children of the Sun) are already VERIFIED as F-2501, F-2502 and F-2503 and are not re-claimed."
+  },
+  {
+   "claim_id": "C-RFI-138",
+   "subject": "Shield of Arrav",
+   "attribute": "partner_requirement",
+   "value": {
+    "needs_partner": true,
+    "partner_gang": "must pick the opposing gang",
+    "partner_already_done": "may help only if they chose to obtain extra certificate halves before completing",
+    "finding_partner": "official chat-channel 'OSRS SOA'",
+    "trade_needed": false,
+    "trade_free_method": "use the key and certificate halves on the partner"
+   },
+   "unit": null,
+   "statement": "Shield of Arrav cannot be fully completed alone: it needs a partner who picks the opposing gang. The key and certificate halves can be used on the partner instead of traded. The wiki points to the official chat-channel 'OSRS SOA' to find one.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Shield of Arrav",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403890",
+     "revid": 15403890,
+     "retrieved": "2026-11-20T12:06:43Z",
+     "quote": "During this quest, you must choose one of two gangs to join. In order to fully complete it, you '''must have a partner''', and they must pick the '''opposing''' gang.",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Shield of Arrav",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403890",
+     "revid": 15403890,
+     "retrieved": "2026-11-20T12:06:43Z",
+     "quote": "It is possible to avoid the trade interface by '''using''' the key and certificate halves obtained during the quest on your partner, allowing the quest to be completed by [[ironmen]] and players with new account [[Account#New account trade restrictions|trade restrictions]].",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": null,
+   "notes": "The page warns of scams because items change hands with a stranger."
+  },
+  {
+   "claim_id": "C-RFI-139",
+   "subject": "Hardcore Worlds",
+   "attribute": "partner_pool",
+   "value": {
+    "separate_servers": true,
+    "can_trade_with_other_players": true,
+    "group_pvm": true,
+    "implication": "a Shield of Arrav / Heroes' Quest partner must be another Hardcore Worlds character (inference)"
+   },
+   "unit": null,
+   "statement": "Hardcore Worlds run on separate servers but its characters are main accounts that can trade with other players and do group PvM. So a quest partner has to be another Hardcore Worlds player on a Hardcore world.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Hardcore Worlds",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+     "revid": 15404671,
+     "retrieved": "2026-11-20T12:06:59Z",
+     "quote": "They run on a separate set of [[server]]s than the standard worlds. ... Players on Hardcore Worlds are still [[main account]]s, therefore they can still [[trade]] with other players, use the [[Grand Exchange]], or participate in group [[Monster killing|PvM]], unlike in other modes such as [[Ironman Mode|ironman]].",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "medium",
+   "released": null,
+   "notes": "That a main-game character cannot partner a Hardcore Worlds character is inferred from 'separate set of servers'; no source says so outright. Whether the 'OSRS SOA' chat-channel or the Grouping interface reaches Hardcore Worlds players is unknown (gap)."
+  },
+  {
+   "claim_id": "C-RFI-140",
+   "subject": "Hardcore Worlds",
+   "attribute": "partner_quests_completed_in_mode",
+   "value": {
+    "quest_cape_first": "2026-11-16",
+    "dragon_slayer_ii_first": "2026-11-12",
+    "implication": "Shield of Arrav and Heroes' Quest (both partner quests) have been completed on Hardcore Worlds by at least one player"
+   },
+   "unit": null,
+   "statement": "Hardcore Worlds' world-first records list a Quest Cape on 16 November 2026 and Dragon Slayer II on 12 November 2026. A Quest Cape needs every quest, including Shield of Arrav and Heroes' Quest, so partner quests have been completed in this mode.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Hardcore Worlds/Records",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409918",
+     "revid": 15409918,
+     "retrieved": "2026-11-20T12:07:03Z",
+     "quote": "| First to obtain a [[Quest point cape|Quest Cape]] <!-- Confirmed through crowdsource data --> | ... | 16 November 2026",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Hardcore Worlds/Records",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409918",
+     "revid": 15409918,
+     "retrieved": "2026-11-20T12:07:03Z",
+     "quote": "| First to complete [[Dragon Slayer II]] <!-- Confirmed through crowdsource data --> | ... | 12 November 2026",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "medium",
+   "released": "2026-11-04",
+   "notes": "NEW_CONTENT (Hardcore Worlds launched 2026-11-04; the records page was edited 2026-11-20). Crowdsourced records; they show partners can be found, not how easily. Player names deliberately omitted. A Quest Cape implying every quest is general game knowledge, not quoted here."
+  },
+  {
+   "claim_id": "C-RFI-141",
+   "subject": "Heroes' Quest",
+   "attribute": "partner_requirement",
+   "value": {
+    "needs_partner": true,
+    "partner_gang": "opposite gang to yours from Shield of Arrav",
+    "finding_partner": "Grouping interface, Shield of Arrav category, or chat-channel 'Osrs Soa'"
+   },
+   "unit": null,
+   "statement": "Heroes' Quest also needs another player, from the opposite Shield of Arrav gang. So the Royal Trouble chain (5,000 Agility XP) needs a partner twice.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Heroes' Quest",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15385698",
+     "revid": 15385698,
+     "retrieved": "2026-11-20T12:06:40Z",
+     "quote": "'''Note:''' This quest requires another player to complete. Players may use the [[Grouping]] interface's \"Join\" button on the Shield of Arrav category to enter a [[chat-channel]] for finding a partner.",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Heroes' Quest",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15385698",
+     "revid": 15385698,
+     "retrieved": "2026-11-20T12:06:40Z",
+     "quote": "|requirements = * A partner",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "high",
+   "released": null,
+   "notes": "Heroes' Quest also needs 55 QP, Cooking 53, Fishing 53, Herblore 25, Mining 50 (all boostable; QP needed to start) and lists kills of the Ice Queen (level 111, unless you have ice gloves), the Entrana firebird (2), Jailer (47, optional) and Grip (22, Phoenix only)."
+  },
+  {
+   "claim_id": "C-RFI-142",
+   "subject": "Shield of Arrav",
+   "attribute": "alternative_quests_with_same_unlock",
+   "value": {
+    "required_for": [
+     "Heroes' Quest",
+     "Defender of Varrock",
+     "Ethically Acquired Antiquities"
+    ],
+    "alternatives": "none listed",
+    "agility_routes_blocked_without_it": [
+     "Royal Trouble (via Throne of Miscellania <- Heroes' Quest)",
+     "The Curse of Arrav (via Defender of Varrock)"
+    ],
+    "lamps_lost": "500 XP quest lamp + 1,000 XP museum lamp (F-2078)"
+   },
+   "unit": null,
+   "statement": "No alternative quest replaces Shield of Arrav: Heroes' Quest, Defender of Varrock and Ethically Acquired Antiquities require it by name. Without a partner, the owner loses Royal Trouble (5,000 Agility XP) and The Curse of Arrav (40,000) chains and Shield of Arrav's 500 + 1,000 XP lamps.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Shield of Arrav",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403890",
+     "revid": 15403890,
+     "retrieved": "2026-11-20T12:06:43Z",
+     "quote": "Completion of Shield of Arrav is required for the following: * [[Heroes' Quest]] * [[Defender of Varrock]] * [[Ethically Acquired Antiquities]]",
+     "fetched_by": "quest-archivist (rfi-03)"
+    },
+    {
+     "tier": "T2",
+     "title": "Throne of Miscellania",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403898",
+     "revid": 15403898,
+     "retrieved": "2026-11-20T12:06:39Z",
+     "quote": "|requirements = * Completion of the following quests: ** [[Heroes' Quest]] *** [[Shield of Arrav]] *** [[Lost City]] *** [[Merlin's Crystal]] *** [[Dragon Slayer I]] ** [[The Fremennik Trials]]",
+     "fetched_by": "quest-archivist (rfi-03)"
+    }
+   ],
+   "confidence": "medium",
+   "released": null,
+   "notes": "'No alternative' means the requirement lists name Shield of Arrav and the wiki offers no substitute; I found no source for an alternative. All other Agility-XP chains in this file (Troll, Elf, Myreque, Cabin Fever, Heart of Darkness, Land of the Goblins) do not need Shield of Arrav."
+  }
+ ],
+ "gaps": [
+  "Death Plateau: levels, max hits and aggression of the trolls on the normal (northern) path: unknown, no source (the quest page does not give them).",
+  "Mourning's End Part I Mourner, Roving Elves Moss Guardian, Big Chompy wolves/ogres: max hits, instance status and whether you can teleport out: unknown, no source (not on the quest pages fetched). Mourning's End Part I: whether Defence 1 is raised to 20 during the Mourner fight: unknown, no source.",
+  "Shield of Arrav / Heroes' Quest on Hardcore Worlds: whether the 'OSRS SOA' chat-channel or the Grouping interface reaches Hardcore Worlds players, and how easy a partner is to find: unknown, no source. Whether a second account owned by the same player may act as partner under Hardcore Worlds rules: unknown, no source.",
+  "Combat-encounter rosters for the other chain quests (Lost City Tree spirit 101, Fairytale I Tanglefoot 111, Heroes' Quest Ice Queen 111, Dragon Slayer I Elvarg 83, Merlin's Crystal Sir Mordred 39, Rum Deal Evil spirit 150, Zogre Flesh Eaters Slash Bash 111, In Search of the Myreque Skeleton Hellhound 97, In Aid of the Myreque Gadderanks 35 and Vampyre Juvinates, Nature Spirit 3 Ghasts 30, Twilight's Promise Knight of Varlamore 81, Another Slice of H.A.M. Sigmund 64, Death to the Dorgeshuun Sigmund 50) were seen in the kills fields but not made into claims: the Threat desk should take them.",
+  "Defence exposure of the Curse of Arrav (Defender of Varrock beyond What Lies Below), Dragon Slayer II and Recipe for Disaster prerequisite webs was not checked quest by quest here: these quests are far above the owner's levels.",
+  "Settled elsewhere and not re-claimed: Regicide skill requirements (F-2055), Underground Pass (F-2046), A Taste of Hope (F-2569), Death Plateau Defence 0 (F-2026), Death on the Isle Agility XP and requirements (F-2501, F-2503)."
+ ],
+ "leads_not_used": [
+  {
+   "lead": "WebSearch 'OSRS Hardcore Worlds Shield of Arrav partner'",
+   "reason": "Results were generic SoA guides (T4) and a wiki page already fetched; none covered Hardcore Worlds. One guide suggests a second account as partner; not used (no T1/T2 basis on HW rules)."
+  }
+ ],
+ "provenance": {
+  "agent": "quest-archivist",
+  "started_at": "2026-11-20T12:04:30Z",
+  "finished_at": "2026-11-20T12:11:43Z",
+  "dispatch_ref": "dispatch/024-quest-archivist.md",
+  "inputs": [
+   {
+    "path": ".claude/agents/quest-archivist.md",
+    "sha256": "1f0ae6c3de21a296d57725eae12c2dfd21bc1337ea61cfb9f76c5bc6c8437c74"
+   },
+   {
+    "path": "dispatch/024-quest-archivist.md",
+    "sha256": "1f52313ed00d7d9342b1aa584040cdd1bd17d39c0d47b1ef59f13fa38e0474a1"
+   },
+   {
+    "path": "brief.json",
+    "sha256": "c27aa6bc9969f981aed9185637565c2792f58b80646cc531afa503e27f969389"
+   },
+   {
+    "path": "facts-parts/quests-a.json",
+    "sha256": "7e1fbbc8535bd03015d86fe252003ec61ae953b3f105f373a8aed4ba9e70518e"
+   },
+   {
+    "path": "facts-parts/quests-b.json",
+    "sha256": "9db503bb8bd52333f2837bcc644bf394f5e2de371dccc9bbadf54c4a55e9ea01"
+   },
+   {
+    "path": "facts-parts/threats.json",
+    "sha256": "2276ca6c6cc74d5924fb0a9ba0463b0b5f52c565017e8bffbf465ff08ebbda68"
+   },
+   {
+    "path": "facts-parts/methods.json",
+    "sha256": "32bec49569f6161a639dfb11166b0c8faeb118a1e31056250dfb8c546c25cafd"
+   },
+   {
+    "path": "facts-parts/logistics.json",
+    "sha256": "1080f8994e6eec8911f7e35b71e369f955518a5424e074227dcb750fa2ff5650"
+   },
+   {
+    "path": "facts-parts/updates.json",
+    "sha256": "fbe229573fd32a1253f33fbd9466bded1173ac44109948f8096738c87e3e37cf"
+   },
+   {
+    "path": "research/claims-rfi-01.json",
+    "sha256": "15f58309cf8e264dac779e6d1bd3d3395cdb24268daa29d0ef1fe22f05a8cf52"
+   },
+   {
+    "path": "research/claims-quests.json",
+    "sha256": "b20b420503e983c7912ce0909fb9c244aaaacc82a568116d295274c6ada03dea"
+   },
+   {
+    "path": "docs/07-hardcore-worlds-baseline.md",
+    "sha256": "8108c4460dbecdbdac501880220d2ad6ab93ed6ed611a99bb9532debb5e72c01"
+   }
+  ],
+  "actions": [
+   {
+    "kind": "read",
+    "detail": "Read charter and recorded its sha256",
+    "target": ".claude/agents/quest-archivist.md"
+   },
+   {
+    "kind": "verify",
+    "detail": "python3 tools/ledger.py verify agility-1-99-20261119",
+    "outcome": "OK: ledger chain and all seals intact"
+   },
+   {
+    "kind": "verify",
+    "detail": "Dispatch 024 sha256 matches ledger seal seq 88",
+    "target": "dispatch/024-quest-archivist.md",
+    "outcome": "match"
+   },
+   {
+    "kind": "read",
+    "detail": "Read schemas/claims.schema.json, brief.json (owner stats and 36 completed quests), docs/07 (grep trade/partner/world)"
+   },
+   {
+    "kind": "read",
+    "detail": "Grepped facts-parts/*.json, research/claims-rfi-01.json and research/claims-quests.json for every quest in scope, plus the rfi lists in quests-a/quests-b, to avoid re-researching settled items",
+    "outcome": "Settled: F-2001 Defence table, F-2026 Death Plateau Defence 0, F-2046/F-2055/F-2569 requirements, F-2501-F-2503 Death on the Isle"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py page \"Death Plateau\"",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15382205",
+    "outcome": "revid 15382205"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py page \"Mourning's End Part I\"",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15366066",
+    "outcome": "revid 15366066"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py page \"Roving Elves\"",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15401434",
+    "outcome": "revid 15401434"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py page \"Big Chompy Bird Hunting\"",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15367289",
+    "outcome": "revid 15367289"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py page \"Sheep Herder\"",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15395515",
+    "outcome": "revid 15395515"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py page \"Nature Spirit\"",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15372142",
+    "outcome": "revid 15372142"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py page \"In Search of the Myreque\"",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15399379",
+    "outcome": "revid 15399379"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py page \"In Aid of the Myreque\"",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15381138",
+    "outcome": "revid 15381138"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py page \"What Lies Below\"",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15373739",
+    "outcome": "revid 15373739"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py page \"Making History\"",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15315243",
+    "outcome": "revid 15315243"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py page \"Lost City\"",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15398217",
+    "outcome": "revid 15398217"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py page \"Fairytale I - Growing Pains\"",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15404992",
+    "outcome": "revid 15404992"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py page \"Throne of Miscellania\"",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15403898",
+    "outcome": "revid 15403898"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py page \"Heroes' Quest\"",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15385698",
+    "outcome": "revid 15385698"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py page \"Merlin's Crystal\"",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15393586",
+    "outcome": "revid 15393586"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py page \"Dragon Slayer I\"",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15405352",
+    "outcome": "revid 15405352"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py page \"Shield of Arrav\"",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15403890",
+    "outcome": "revid 15403890"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py page \"Hardcore Worlds\"",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+    "outcome": "revid 15404671"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py page \"Hardcore Worlds/Records\"",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15409918",
+    "outcome": "revid 15409918"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py page \"Pirate's Treasure\"",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15402136",
+    "outcome": "revid 15402136"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py page \"Rum Deal\"",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15375150",
+    "outcome": "revid 15375150"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py page \"Zogre Flesh Eaters\"",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15395522",
+    "outcome": "revid 15395522"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py page \"Jungle Potion\"",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15390159",
+    "outcome": "revid 15390159"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py page \"Twilight's Promise\"",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15391672",
+    "outcome": "revid 15391672"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py page \"Another Slice of H.A.M.\"",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15292360",
+    "outcome": "revid 15292360"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py page \"Death to the Dorgeshuun\"",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15396862",
+    "outcome": "revid 15396862"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py page \"The Giant Dwarf\"",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15375425",
+    "outcome": "revid 15375425"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py page \"The Dig Site\"",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15398587",
+    "outcome": "revid 15398587"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py page \"Fishing Contest\"",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15302643",
+    "outcome": "revid 15302643"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py page \"Quest experience rewards\"",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+    "outcome": "revid 15408569"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py rev 15396686 (Jagex post: quest XP rewards added 2026-11-03)",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15396686",
+    "outcome": "chain quests got non-Defence XP; Shield of Arrav a 500 XP lamp"
+   },
+   {
+    "kind": "read",
+    "detail": "Parsed the cached wikitext (cache/wiki/*@<revid>.wikitext) of the fetched quests with a scratchpad script that prints the Quest details requirements/kills fields and the Quest rewards block"
+   },
+   {
+    "kind": "search",
+    "detail": "WebSearch: OSRS Hardcore Worlds Shield of Arrav partner",
+    "outcome": "T4 leads only; nothing Hardcore-Worlds-specific"
+   },
+   {
+    "kind": "compute",
+    "detail": "Counted data-rowid rows (27) and {{+=|agility rows (25) in the Agility table of rev 15408569 with sed/grep"
+   },
+   {
+    "kind": "compute",
+    "detail": "python3 arithmetic for chain Defence totals (4,600; 24,537.4; 29,137.4; 31,137.4) and python3 tools/xp.py level for each (20, 35, 37, 38); tools/xp.py xp 51 = 111,945"
+   },
+   {
+    "kind": "write",
+    "detail": "Wrote research/claims-rfi-03.json via a scratchpad generator script",
+    "target": "jobs/agility-1-99-20261119/research/claims-rfi-03.json"
+   },
+   {
+    "kind": "verify",
+    "detail": "python3 tools/validate.py agility-1-99-20261119 research"
+   }
+  ],
+  "decisions": [
+   {
+    "decision": "Did not re-claim Death on the Isle's Agility XP, Defence XP or requirements; added only the Agility-table row-count claim",
+    "reason": "F-2501, F-2502 and F-2503 are VERIFIED; the dispatch forbids re-researching settled facts. The open item was F-2002 (row count), which the count claim resolves.",
+    "alternatives_considered": [
+     "re-fetch the Death on the Isle page and duplicate the claims"
+    ],
+    "refs": [
+     "F-2002",
+     "F-2501",
+     "F-2503"
+    ]
+   },
+   {
+    "decision": "Skipped Regicide, Underground Pass and A Taste of Hope requirement claims and Death Plateau's Defence claim",
+    "reason": "Already settled as F-2055, F-2046, F-2569 and F-2026.",
+    "alternatives_considered": [
+     "restate them"
+    ],
+    "refs": [
+     "F-2055",
+     "F-2046",
+     "F-2569",
+     "F-2026"
+    ]
+   },
+   {
+    "decision": "Scope of Task 2: chains behind the mid-level Agility-XP quests (Troll, Elf to Mourning's End II and Song of the Elves, Myreque, Fairytale, Royal Trouble, Cabin Fever, Heart of Darkness, Land of the Goblins) plus What Lies Below as named in the dispatch",
+    "reason": "These are the chains the owner can plausibly reach; the high-level quests' webs (Curse of Arrav, DS2, RFD) are listed as gaps.",
+    "alternatives_considered": [
+     "every prerequisite of all 27 Agility quests (100+ quests)"
+    ]
+   },
+   {
+    "decision": "Cite each Defence value from the quest's own rewards box plus the fixed-Defence table (presence or absence)",
+    "reason": "Charter step 1 asks for the table cross-checked against each quest's own page.",
+    "alternatives_considered": [
+     "table only"
+    ]
+   },
+   {
+    "decision": "Shield of Arrav feasibility rated medium confidence from the wiki's Hardcore Worlds and Records pages, not a yes/no ruling",
+    "reason": "No T1 source addresses partners on Hardcore Worlds; records show it has been done, not how easily.",
+    "alternatives_considered": [
+     "use T4 guides",
+     "declare it infeasible"
+    ]
+   },
+   {
+    "decision": "Omitted player names from the records claim",
+    "reason": "Not needed for the fact; private individuals.",
+    "alternatives_considered": [
+     "quote names"
+    ]
+   }
+  ],
+  "limitations": [
+   "All game-content sources are OSRS Wiki revisions (T2) plus one Jagex post copy (T1); no in-game check.",
+   "Hardcore Worlds is 16 days old: partner availability and the records page are volatile.",
+   "Encounter details for chain quests other than Death Plateau, Mourning's End Part I, Roving Elves and Big Chompy Bird Hunting are not claimed (see gaps).",
+   "Chain Defence totals cover fixed rewards only; choosable lamps and optional training are policy items for the planners."
+  ]
+ }
+}
