@@ -43,6 +43,7 @@ def main():
     pidx = {s["step_id"]: s for s in prose["steps"]}
     ridx = {e["step_id"]: e for e in risk["entries"]}
     cap = danger.APPETITE_CAPS[risk["risk_appetite"]]
+    lad = danger.ladder()
 
     used = set()
     steps = []
@@ -59,7 +60,7 @@ def main():
         for m in re_["mitigations"]:
             used.update(m.get("facts", []))
         used.update(re_["hw_death_classification"].get("facts", []))
-        steps.append({**st, "prose": pidx.get(st["step_id"]), "risk": {**re_, "score": danger.assess(re_)}})
+        steps.append({**st, "prose": pidx.get(st["step_id"]), "risk": {**re_, "score": danger.assess(re_, lad)}})
 
     routes = []
     for rt in plan["routes"]:
@@ -110,7 +111,10 @@ def main():
         "risk_rules": risk.get("general_rules", []),
         "assumptions": plan["assumptions"] + [x["text"] for x in brief.get("assumptions", [])],
         "danger_model": {"tiers": danger.TIERS, "caps": danger.APPETITE_CAPS, "flags": danger.FLAG_FLOORS,
-                         "anchors": danger.ANCHORS, "factors": danger.FACTORS},
+                         "anchors": danger.ANCHORS, "factors": danger.FACTORS, "prep_card_from": danger.PREP_CARD_FROM,
+                         "ladder": {k: lad[k] for k in ("calibrated", "version", "anchors", "conflicts")},
+                         "ladder_proposed": [{"activity": a["activity"], "position": a["position"], "status": a["status"]}
+                                             for a in (danger.load_calibration() or {}).get("anchors", [])]},
     }
     save_json(d / "content.json", content)
     print(f"content.json assembled: {len(steps)} steps, {len(routes)} routes, {len(content['facts'])} facts")

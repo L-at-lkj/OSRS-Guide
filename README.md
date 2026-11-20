@@ -1,12 +1,13 @@
-# OSRS Guide Company
+# OSRS Companion
 
-A minimal-trust, multi-agent "company" built on Claude Code. It produces **immersive, interactive HTML guides for Old School RuneScape Hardcore Worlds**:
+A daily companion for an Old School RuneScape **Hardcore Worlds** journey, run by a minimal-trust multi-agent company on Claude Code. Open it every day with `/osrs-today`. Its core output is **immersive, interactive HTML guides**:
 - level-by-level routes that account for everything released in the last 12 months;
 - a **Danger Score on every step**;
 - next-step decision points with justified options;
 - an audit trail of everything every agent did.
 
 ```
+/osrs-today                                   ← daily check-in: progress, news, where you are, next decision
 /osrs-guide Agility 57-99 for hcmbtw          ← produce a guide
 /osrs-refresh agility-1-99-20261119           ← re-check a released guide after game updates
 ```
@@ -51,7 +52,7 @@ audit/actions.jsonl           Sentry's hash-chained log of every action
 ```
 
 ## Your account defaults
-Hardcore Worlds · standard account (HW GE) · member · zerker build (**Defence cap 50**, Defence XP from quests only, no lamps into Defence) · danger cap **44** · hiscores board `hiscore_oldschool_hardcore_mains`.
+Hardcore Worlds · standard account (HW GE) · member · zerker build (**Defence cap 50**, Defence XP from quests only, no lamps into Defence) · danger policy **informed** (game-relative index, The Fractured Archive = 100) · hiscores board `hiscore_oldschool_hardcore_mains`.
 
 ## Auditing
 Start with `docs/09-audit-guide.md`. In short:

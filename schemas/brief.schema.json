@@ -197,7 +197,8 @@
           "enum": [
             "cautious",
             "standard",
-            "bold"
+            "bold",
+            "informed"
           ]
         },
         "optimise_for": {

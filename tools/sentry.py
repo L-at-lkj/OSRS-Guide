@@ -78,7 +78,7 @@ TOOL_SCOPE = {
     "guide-author": set(), "experience-designer": {"render.py", "browser_check.mjs"},
     "qa-auditor": {"validate.py", "ledger.py", "wiki.py", "browser_check.mjs", "audit.py", "danger.py", "xp.py"},
     "director": {"ledger.py", "xp.py", "assemble.py", "render.py", "validate.py", "audit.py",
-                 "danger.py", "hiscores.py", "browser_check.mjs", "merge_facts.py"},
+                 "danger.py", "hiscores.py", "browser_check.mjs", "merge_facts.py", "companion.py"},
 }
 READ_ONLY_CMDS = {"ls", "cat", "head", "tail", "wc", "grep", "rg", "diff", "sha256sum", "jq", "pwd", "date", "stat", "file", "tree"}
 

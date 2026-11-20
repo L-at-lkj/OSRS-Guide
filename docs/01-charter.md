@@ -1,7 +1,12 @@
-# 01: Company charter
+# 01: OSRS Companion charter
 
 ## Mission
-Produce the most accurate and current **interactive HTML guides for Old School RuneScape**, built for one-life play on **Hardcore Worlds**. Every recommendation carries an honest, evidence-backed **Danger Score**. Every number can be traced to a source, and every action by every agent can be audited.
+Be the owner's **daily companion** for their one-life **Hardcore Worlds** journey. Each day it answers: where am I, what changed in the game, what should I do next, and how dangerous is it.
+
+Its core product is the most accurate and current **interactive HTML guides** for Old School RuneScape. Every recommendation carries an honest, game-relative **Danger Index** score. Every number can be traced to a source, and every action by every agent can be audited.
+
+## Daily loop
+`/osrs-today` checks Hardcore Worlds hiscores progress and the Defence cap, lists new game updates, and gives the current step and next decision with justified options. When the day's check-in shows a need, it escalates: `/osrs-refresh` when the game changes, `/osrs-guide` for a new goal.
 
 ## Quality bar ("top level")
 A guide ships only when all of these hold:
@@ -23,5 +28,5 @@ A guide ships only when all of these hold:
 
 ## Owner defaults (from intake, 19 Nov 2026)
 - Mode: Hardcore Worlds, **standard** character (trading and the Hardcore Worlds GE).
-- Risk appetite: **standard (cap 44)**. A `safest` route is still always produced.
+- Danger policy: **informed** (2026-11-20). No cap: game-relative scores with prep cards, and nothing hidden. A `safest` route is still always produced as an option.
 - Runs in: this Claude Code cloud environment (OSRS wiki, hiscores and WikiSync hosts allowed).

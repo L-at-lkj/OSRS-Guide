@@ -134,6 +134,13 @@ table.t tr.qrow td{font-style:italic}
 .badge{display:inline-block;font-size:11px;font-weight:700;border-radius:4px;padding:1px 6px;background:var(--ok);color:var(--card)}
 .badge.over{background:var(--bad)}
 .capbar{height:8px;background:var(--bg2);border-radius:4px;overflow:hidden;margin-top:4px}.capbar i{display:block;height:100%;background:var(--t-mod)}
+.nec{display:inline-block;font-size:11px;font-weight:700;border-radius:4px;padding:1px 6px;border:1px solid var(--gold);color:var(--gold);margin-left:6px}
+.nec.gateway,.nec.required{background:var(--gold);color:var(--card)}
+.cmp{font-size:11.5px;color:var(--muted)}
+.ladder{position:relative;border-left:3px solid var(--line);margin:8px 0 8px 8px;padding-left:14px;display:grid;gap:4px}
+.ladder .rung{display:flex;gap:8px;align-items:center;font-size:13px}
+.ladder .rung.mine{font-weight:700}
+.ladder .rung .pos{font-variant-numeric:tabular-nums;min-width:30px;text-align:right}
 .FAIL{color:var(--bad);font-weight:700} .WARN{color:var(--t-mod);font-weight:600} .OK{color:var(--ok)}
 footer{border-top:1px solid var(--line);padding:16px 0 40px;color:var(--muted);font-size:12.5px}
 @media (max-width:640px){.card .hd{flex-wrap:wrap}.factors{grid-template-columns:1fr}.fnote{grid-column:1}table.t th{top:0}}
@@ -151,7 +158,7 @@ footer{border-top:1px solid var(--line);padding:16px 0 40px;color:var(--muted);f
 <div class="controls"><div class="wrap">
   <div class="seg" id="routeSeg" role="group" aria-label="Route"></div>
   <label class="ctl">Danger cap
-    <select id="cap"><option value="cautious">Cautious (24)</option><option value="standard">Standard (44)</option><option value="bold">Bold (64)</option></select></label>
+    <select id="cap"><option value="cautious">Cautious (24)</option><option value="standard">Standard (44)</option><option value="bold">Bold (64)</option><option value="informed">Informed (no cap)</option></select></label>
   <label class="ctl">My level <input id="mylvl" type="number" min="1" max="99" inputmode="numeric"></label>
   <label class="ctl">or XP <input id="myxp" type="number" min="0" max="200000000" inputmode="numeric"></label>
   <label class="ctl"><input id="hideDone" type="checkbox"> Hide done</label>
@@ -218,8 +225,9 @@ function tokens(text, step){
     return m;
   }).replace(/`([^`]+)`/g, '<code>$1</code>');
 }
-const dsBadge = (sc, big = true) => `<span class="ds ${sc.residual_tier}" title="Inherent ${sc.inherent_ds} (${sc.inherent_tier}) → residual ${sc.residual_ds} after mandatory mitigations">
-  <span class="num">${sc.residual_ds}</span><span class="lbl">${sc.residual_tier}</span>${big ? `<small>raw ${sc.inherent_ds}</small>` : ''}</span>`;
+const dsBadge = (sc, big = true) => `<span class="ds ${sc.residual_tier}" title="Game-relative danger (The Fractured Archive = 100). Without precautions ${sc.inherent_ds} (${sc.inherent_tier}); with the mandatory precautions ${sc.residual_ds}.${sc.comparable_to && sc.comparable_to.length ? ' Comparable to: ' + sc.comparable_to.join(' / ') : ''}${sc.calibrated === false ? ' [uncalibrated]' : ''}">
+  <span class="num">${sc.residual_ds}</span><span class="lbl">${sc.residual_tier}</span>${big ? `<small>raw ${sc.inherent_ds}${sc.calibrated === false ? '*' : ''}</small>` : ''}</span>`;
+const necBadge = n => n ? `<span class="nec ${esc(n.class)}" title="${esc(n.why)}">${esc(n.class)}</span>` : '';
 
 function reqMet(req){
   const p = G.meta.profile || {}; const stats = p.stats || {};
@@ -320,7 +328,8 @@ function stepCard(s, idx){
     ${over ? `<div class="ribbon">Above your danger cap (${cap}). ${r.route_id !== 'safest' ? 'The Safest route avoids or replaces this step.' : 'There is no safer alternative: read the prep card, and only go ahead if you accept this risk knowingly.'}</div>` : ''}
     ${newU.length ? `<div class="ribbon new">New in the last 12 months: ${newU.map(u => esc(u.title) + ' (' + esc(u.date) + ')').join(', ')}</div>` : ''}
     <div class="hd"><div class="n">${idx + 1}</div>
-      <div class="ttl"><h3>${esc(s.title)}</h3><div class="sub">${esc(lv)}${s.method ? ' · ' + esc(s.method) : ''}${s.location ? ' · ' + esc(s.location) : ''} · <span class="muted">${esc(s.kind)}</span></div></div>
+      <div class="ttl"><h3>${esc(s.title)}${necBadge(s.risk.necessity)}</h3><div class="sub">${esc(lv)}${s.method ? ' · ' + esc(s.method) : ''}${s.location ? ' · ' + esc(s.location) : ''} · <span class="muted">${esc(s.kind)}</span></div>
+      ${(sc.comparable_to || []).length ? `<div class="cmp">Danger comparable to: ${sc.comparable_to.map(esc).join(' / ')}</div>` : ''}</div>
       ${dsBadge(sc)}
       <label class="ctl" title="Mark done"><input type="checkbox" data-done="${s.step_id}" ${done ? 'checked' : ''}> done</label>
     </div>
@@ -333,6 +342,7 @@ function stepCard(s, idx){
       ${(pr.warnings || []).map(t => `<div class="warn">${tokens(t, s)}</div>`).join('')}
       ${(pr.tips || []).map(t => `<div class="tip">${tokens(t, s)}</div>`).join('')}
       <details class="danger" ${over ? 'open' : ''}><summary>Danger assessment · ${sc.residual_ds} ${esc(sc.residual_tier)} <span class="muted small">(raw ${sc.inherent_ds}${sc.floor_by ? ', floor from ' + esc(sc.floor_by) : ''})</span></summary><div class="in">
+        ${risk.necessity ? `<div><b>Why it's worth it:</b> ${necBadge(risk.necessity)} ${esc(risk.necessity.why)}${(risk.necessity.unlocks || []).length ? ' <span class="muted">Unlocks: ' + risk.necessity.unlocks.map(esc).join(', ') + '</span>' : ''}${(risk.necessity.safer_alternatives || []).length ? '<div class="small muted">Safer alternatives: ' + risk.necessity.safer_alternatives.map(esc).join('; ') + '</div>' : ''}</div>` : ''}
         <div>Hardcore Worlds death rule: <span class="hwc ${risk.hw_death_classification.status}">${esc(risk.hw_death_classification.status.replace(/_/g, ' '))}</span> — ${esc(risk.hw_death_classification.note)}</div>
         ${(sc.flags || []).length ? `<div>${sc.flags.map(f => `<span class="flag" title="floor ${G.danger_model.flags[f]}">${esc(f.replace(/_/g, ' '))}</span>`).join('')}</div>` : ''}
         <div class="factors">${factorRows(sc, risk)}</div>
@@ -417,11 +427,17 @@ function pQuests(){
 
 function pDanger(){
   const rows = [...G.steps].sort((a, b) => b.risk.score.residual_ds - a.risk.score.residual_ds);
-  $('#p-danger').innerHTML = `<h2>How danger is scored</h2>
+  const L = G.danger_model.ladder || {}; const prop = G.danger_model.ladder_proposed || [];
+  const rungs = (L.calibrated ? L.anchors.map(a => ({activity: a.activity, position: a.position})) : prop).slice().sort((a, b) => b.position - a.position);
+  const mine = [...G.steps].map(s => ({activity: s.title, position: s.risk.score.residual_ds, mine: true}));
+  const ladderHtml = `<h2>Where this guide sits in the whole game</h2>
+   <p class="small">${L.calibrated ? 'Scores are game-relative: the most dangerous content in the game (The Fractured Archive, hardest mode) is 100, and each reference activity is placed by the company\'s calibration board.' : '<b>Calibration pending.</b> The reference ladder below is a proposal. Until the calibration job rates and approves it, scores come straight from the danger model (marked *) and may sit higher than their final game-relative position.'}</p>
+   <div class="ladder">${[...rungs, ...mine].sort((a, b) => b.position - a.position).map(r => `<div class="rung ${r.mine ? 'mine' : ''}"><span class="pos">${r.position}</span><span>${r.mine ? '▶ ' : ''}${esc(r.activity)}</span></div>`).join('')}</div>`;
+  $('#p-danger').innerHTML = ladderHtml + `<h2>How danger is scored</h2>
    <p class="small">The Risk Officer rates eight factors from 0 to 5 and cites a verified fact for each one. The company's danger engine turns the ratings into a 0–100 score, so a score can't be adjusted by hand.
    <b>Raw</b> is the danger with no precautions. <b>Residual</b> is what remains after the mandatory mitigations, and can never fall below 30% of raw. Hazard flags such as Wilderness or one-shot potential set a minimum score.</p>
    <div class="legend">${TIERS.map(([lo, n], i) => `<span class="ds ${n}"><span class="num">${lo}${TIERS[i + 1] ? '–' + (TIERS[i + 1][0] - 1) : '+'}</span><span class="lbl">${n}</span></span>`).join('')}</div>
-   <p class="small">Your cap: <b>${capVal()}</b> (${esc(S.cap)}). Steps above it are marked on every route. On Hardcore Worlds, almost every death ends the run, including in activities that are "safe" for a Hardcore Ironman.</p>
+   <p class="small">${S.cap === 'informed' ? 'Mode: <b>Informed</b>. Nothing is hidden or blocked; every step from ' + G.danger_model.prep_card_from + ' up carries a full prep card. ' : 'Your cap: <b>' + capVal() + '</b> (' + esc(S.cap) + '). '} ${S.cap === 'informed' ? '' : 'Steps above it are marked on every route. '}On Hardcore Worlds, almost every death ends the run, including in activities that are "safe" for a Hardcore Ironman.</p>
    ${G.risk_rules.length ? `<h3>Standing safety rules</h3><ul>${G.risk_rules.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}
    <h2>Risk register</h2><div class="scroll"><table class="t"><thead><tr><th>Step</th><th>Residual</th><th>Raw</th><th>Flags</th><th>Death rule</th><th>Routes</th></tr></thead><tbody>` +
    rows.map(s => `<tr><td><a href="#card-${s.step_id}" data-goto="${s.step_id}">${esc(s.title)}</a></td><td>${dsBadge(s.risk.score, false)}</td><td class="num">${s.risk.score.inherent_ds}</td>

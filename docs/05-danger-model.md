@@ -1,4 +1,8 @@
-# 05: Danger model (Danger Score, DS 0–100)
+# 05: Danger model: the Gielinor Danger Index (0–100)
+
+> **Owner policy (2026-11-20):** "design the danger rating based around all activity in the game with … the fractured archives being maximum danger, i am not risk averse just wish to be aware, you cannot avoid much of the dangerous content despite the danger due to crucial upgrades obtained."
+>
+> So the index is **game-relative**: The Fractured Archive (hardest mode) = 100. It is also **informational**: danger never hides content. It drives preparation instead, through prep cards and necessity labels.
 
 On Hardcore Worlds the cost of a death is fixed and total: the run ends. So the Danger Score estimates **how likely this step is to get you killed**, considering who you are at that point (your HP and level), how long you'll be exposed, and how well-understood the hazard is.
 
@@ -41,7 +45,21 @@ DS = min(100, round(100 · T/5 · (0.35 + 0.13·C) · (0.80 + 0.04·exposure) + 
 - **No perfect mitigation:** when raw ≥ 25, residual is never below 30% of raw.
 - The guide shows both. Routes are judged on **residual**, so the guide always prints the mitigations it relied on.
 
-## 5. Tiers and caps
+## 5. Game-relative calibration
+The formula above gives a **model score**. `tools/danger.py` places it on the **reference ladder** in `policy/danger-calibration.json`. The ladder holds about 27 anchors from across the game, each rated for a *typical account that attempts it*: The Fractured Archive 100, Inferno, Colosseum, raids, Wilderness bosses, Jad, Barrows, quest bosses, Agility courses, AFK skilling at 0. The mapping is monotone piecewise-linear between rated anchors. A published score therefore means "as dangerous for **you** as <anchor> is for a typical player doing it", and the guide prints the nearest anchors ("comparable to").
+
+The board (/osrs-calibrate) researches, verifies, rates, challenges and gets the owner to approve the ladder. Until at least 6 anchors, including the top one, are rated, scores are published **uncalibrated** and marked with an asterisk.
+
+## 6. Necessity and prep cards
+Every step carries a **necessity** label:
+- **required**: you can't reach the goal without it.
+- **gateway**: it unlocks a crucial upgrade; the label names the upgrade.
+- **efficiency**: faster, but avoidable.
+- **optional**.
+
+Each label comes with why, and the safer alternatives. From score **45** up, a **complete prep card** is mandatory: mitigations, minimum HP, stop conditions, bail-out plan and necessity.
+
+## 7. Tiers and modes
 | Tier | DS | Meaning |
 |---|---|---|
 | Safe | 0–9 | nothing here should kill you |
@@ -49,16 +67,18 @@ DS = min(100, round(100 · T/5 · (0.35 + 0.13·C) · (0.80 + 0.04·exposure) + 
 | Moderate | 25–44 | real hazard; precautions and stop conditions matter |
 | High | 45–64 | experienced players with full prep only |
 | Severe | 65–84 | a plausible death; avoid unless essential |
-| Critical | 85–100 | run-ending risk; never on a default route |
+| Extreme | 85–100 | top-end PvM: The Fractured Archive, Inferno, Colosseum, expert raids |
 
-Owner caps: **cautious 24 · standard 44 (your default) · bold 64**.
+Modes: **informed (your default: no cap, full awareness)** · cautious 24 · standard 44 · bold 64.
+- In **informed** mode nothing is gated. The Risk Officer may veto only with a `veto_basis`: unverifiable mechanic, insufficient facts for a prep card, broken hard constraint (e.g. the Defence cap), or dominated without benefit.
+- In capped modes the rules below apply.
 - The `safest` route must stay under the cap, unless no alternative exists and **you** accept the step.
 - Any Critical residual needs your recorded acceptance on any route.
 - The guide marks steps above the cap with a red ribbon. You can change the cap in the guide and the page re-evaluates instantly.
 
-## 6. Hardcore Worlds death classification (per step)
+## 8. Hardcore Worlds death classification (per step)
 `UNSAFE_DEATH` is the default. `SAFE_DEATH` needs a verified fact from the official Hardcore Worlds rules. `NO_DEATH_POSSIBLE` only when there is no damage source at all. Activities that are safe deaths for HCIM but **unsafe on Hardcore Worlds** get the `HW_UNSAFE_ACTIVITY` flag, so nobody carries HCIM habits over.
 
-## 7. Worked examples (illustrative)
+## 9. Worked examples (illustrative, model scores before calibration)
 - Rooftop course at low level, failures deal a few damage, HP 10, hours of exposure. L=2, A=2, E=3 → `100·0.4·0.61·0.92 ≈ 22` → **Low**. With "keep HP ≥ 7, eat early" (L −1): `100·0.2·0.61·0.92 ≈ 11` → **Low**.
 - A Wilderness course (level 50+ wildy): L=4, P=5, X=5, A=3, E=4 → `100·1.0·1.0·0.96 = 96` → **Critical** (DEEP_WILDERNESS floor 65 is exceeded anyway).

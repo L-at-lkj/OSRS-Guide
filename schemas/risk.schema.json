@@ -217,6 +217,53 @@
         },
         "verdict_reason": {
           "type": "string"
+        },
+        "necessity": {
+          "type": "object",
+          "required": [
+            "class",
+            "why"
+          ],
+          "properties": {
+            "class": {
+              "enum": [
+                "optional",
+                "efficiency",
+                "gateway",
+                "required"
+              ]
+            },
+            "why": {
+              "type": "string",
+              "minLength": 10
+            },
+            "unlocks": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "safer_alternatives": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "facts": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "veto_basis": {
+          "enum": [
+            "unverifiable_mechanic",
+            "insufficient_facts_for_prep",
+            "breaks_hard_constraint",
+            "dominated_without_benefit"
+          ]
         }
       }
     },
@@ -349,7 +396,8 @@
       "enum": [
         "cautious",
         "standard",
-        "bold"
+        "bold",
+        "informed"
       ]
     },
     "entries": {

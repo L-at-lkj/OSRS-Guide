@@ -1,0 +1,117 @@
+{
+  "rsn": "hcmbtw",
+  "updated": "2026-11-20",
+  "game_mode": {
+    "world_type": "hardcore_worlds",
+    "account_type": "standard",
+    "membership": "member",
+    "death_ruleset": "hardcore_worlds"
+  },
+  "hiscores_board": "hardcore_worlds (m=hiscore_oldschool_hardcore_mains)",
+  "build": {
+    "archetype": "zerker",
+    "skill_caps": {
+      "Defence": 50
+    },
+    "xp_rules": [
+      "Defence XP only from quest rewards at this stage (current Defence is 1; all Defence XP at this stage comes from quests)",
+      "Never train Defence directly or choose Defence for an XP lamp or other choosable XP reward",
+      "Never use a combat style that gives Defence XP (e.g. defensive, or controlled/shared melee styles; longrange ranged or defensive-casting magic)",
+      "Total Defence XP from all quest rewards used must keep Defence at or below the cap (50); the XP engine tracks this on every route"
+    ],
+    "lamp_policy": "never Defence",
+    "confirmed": true
+  },
+  "danger_policy": {
+    "appetite": "informed",
+    "note": "Owner is not risk-averse and wants awareness: game-relative Danger Index (The Fractured Archive = 100); nothing hidden; prep cards for 45+ (ledger agility-1-99-20261119 seq 131)."
+  },
+  "stats": {
+    "Attack": 44,
+    "Strength": 32,
+    "Defence": 1,
+    "Ranged": 56,
+    "Prayer": 44,
+    "Magic": 44,
+    "Runecraft": 5,
+    "Construction": 23,
+    "Hitpoints": 48,
+    "Agility": 57,
+    "Herblore": 1,
+    "Thieving": 24,
+    "Crafting": 21,
+    "Fletching": 9,
+    "Slayer": 20,
+    "Hunter": 9,
+    "Mining": 42,
+    "Smithing": 31,
+    "Fishing": 25,
+    "Cooking": 23,
+    "Firemaking": 30,
+    "Woodcutting": 40,
+    "Farming": 5,
+    "Sailing": 30
+  },
+  "skill_xp": {
+    "Agility": 212733,
+    "Defence": 0
+  },
+  "quests_completed": [
+    "Animal Magnetism",
+    "Biohazard",
+    "Children of the Sun",
+    "Client of Kourend",
+    "Cook's Assistant",
+    "Current Affairs",
+    "Daddy's Home",
+    "Ernest the Chicken",
+    "Fight Arena",
+    "Gertrude's Cat",
+    "Ghosts Ahoy",
+    "Goblin Diplomacy",
+    "The Grand Tree",
+    "Hazeel Cult",
+    "The Ides of Milk",
+    "The Knight's Sword",
+    "Learning the Ropes",
+    "The Lost Tribe",
+    "Misthalin Mystery",
+    "Monk's Friend",
+    "Mudfoot's Big Adventure",
+    "Observatory Quest",
+    "Pandemonium",
+    "Plague City",
+    "A Porcine of Interest",
+    "Priest in Peril",
+    "Prying Times",
+    "The Restless Ghost",
+    "Rune Mysteries",
+    "Sea Slug",
+    "Sheep Shearer",
+    "Tree Gnome Village",
+    "Vampyre Slayer",
+    "Waterfall Quest",
+    "Witch's House",
+    "X Marks the Spot"
+  ],
+  "facts_about_owner": [
+    "House portal: Rimmington; set house teleports to land Outside (POH death is run-ending on HW).",
+    "Completed-quest XP lamps already used (Ernest the Chicken, Mudfoot's Big Adventure).",
+    "Combat level 45 (2026-11-20)."
+  ],
+  "accepted_risks": [
+    {
+      "job": "agility-1-99-20261119",
+      "steps": [
+        "S05 Underground Pass",
+        "S06 Regicide",
+        "S12 The Fremennik Trials",
+        "S16 Troll Stronghold"
+      ]
+    }
+  ],
+  "active_guides": [
+    "agility-1-99-20261119"
+  ],
+  "snapshots": []
+}

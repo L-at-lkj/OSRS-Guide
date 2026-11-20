@@ -1,0 +1,279 @@
+{
+  "version": "2026-11-20-proposed",
+  "status": "proposed",
+  "basis": "Each anchor is rated with the 8-factor model for a TYPICAL account that attempts that content (content-appropriate stats and gear). A guide step is rated for the OWNER's account. So a published score reads: 'this is as dangerous for you as <anchor> is for a typical player doing it'.",
+  "scale_ceiling": "The Fractured Archive (hardest mode) = 100, by owner instruction (ledger seq 131).",
+  "process": "Calibration job (/osrs-calibrate): threat-analyst researches each anchor -> fact-verifier verifies -> risk-officer rates factors (status 'rated') -> red-team challenges ordering -> owner approves positions (status 'approved'). Re-run quarterly or after major content releases.",
+  "anchors": [
+    {
+      "id": "tfa-max",
+      "activity": "The Fractured Archive (hardest mode)",
+      "position": 100,
+      "proposed_position": 100,
+      "rationale": "Owner-designated ceiling: the most dangerous content in the game.",
+      "status": "proposed",
+      "flags": [],
+      "facts": []
+    },
+    {
+      "id": "inferno",
+      "activity": "The Inferno",
+      "position": 96,
+      "proposed_position": 96,
+      "rationale": "Long no-escape wave content; prayer/tick precision; HW-unsafe list.",
+      "status": "proposed",
+      "flags": [],
+      "facts": []
+    },
+    {
+      "id": "colosseum",
+      "activity": "Fortis Colosseum",
+      "position": 95,
+      "proposed_position": 95,
+      "rationale": "Wave PvM with modifiers; no escape mid-wave.",
+      "status": "proposed",
+      "flags": [],
+      "facts": []
+    },
+    {
+      "id": "toa-expert",
+      "activity": "Tombs of Amascut, expert (500+ invocation)",
+      "position": 92,
+      "proposed_position": 92,
+      "rationale": "Raid, invocation-scaled lethality.",
+      "status": "proposed",
+      "flags": [],
+      "facts": []
+    },
+    {
+      "id": "tob-hm",
+      "activity": "Theatre of Blood: Hard Mode",
+      "position": 90,
+      "proposed_position": 90,
+      "rationale": "Raid, mechanics, no mid-room escape.",
+      "status": "proposed",
+      "flags": [],
+      "facts": []
+    },
+    {
+      "id": "cox-cm",
+      "activity": "Chambers of Xeric: Challenge Mode",
+      "position": 87,
+      "proposed_position": 87,
+      "rationale": "Raid; CoX is on the HW-unsafe list.",
+      "status": "proposed",
+      "flags": [],
+      "facts": []
+    },
+    {
+      "id": "phosani",
+      "activity": "Phosani's Nightmare",
+      "position": 85,
+      "proposed_position": 85,
+      "rationale": "Solo boss, high damage, instance.",
+      "status": "proposed",
+      "flags": [],
+      "facts": []
+    },
+    {
+      "id": "cg",
+      "activity": "Corrupted Gauntlet",
+      "position": 82,
+      "proposed_position": 82,
+      "rationale": "No food/gear brought in; instance; prayer switching.",
+      "status": "proposed",
+      "flags": [],
+      "facts": []
+    },
+    {
+      "id": "dt2-awakened",
+      "activity": "Desert Treasure II awakened bosses",
+      "position": 80,
+      "proposed_position": 80,
+      "rationale": "Upgraded bosses, one-shot mechanics.",
+      "status": "proposed",
+      "flags": [],
+      "facts": []
+    },
+    {
+      "id": "revs-pvp",
+      "activity": "Revenant Caves (deep Wilderness, PvP hotspot)",
+      "position": 78,
+      "proposed_position": 78,
+      "rationale": "Skulled PvP hotspot; teleblock; multi.",
+      "status": "proposed",
+      "flags": [],
+      "facts": []
+    },
+    {
+      "id": "toa-150",
+      "activity": "Tombs of Amascut (entry/normal ~150)",
+      "position": 70,
+      "proposed_position": 70,
+      "rationale": "Learner-raid baseline.",
+      "status": "proposed",
+      "flags": [],
+      "facts": []
+    },
+    {
+      "id": "zulrah",
+      "activity": "Zulrah (learner)",
+      "position": 66,
+      "proposed_position": 66,
+      "rationale": "Rotations, venom, instance.",
+      "status": "proposed",
+      "flags": [],
+      "facts": []
+    },
+    {
+      "id": "vorkath",
+      "activity": "Vorkath (learner)",
+      "position": 64,
+      "proposed_position": 64,
+      "rationale": "Acid/fireball one-shot mechanics if mishandled.",
+      "status": "proposed",
+      "flags": [],
+      "facts": []
+    },
+    {
+      "id": "jad",
+      "activity": "TzHaar Fight Cave (Jad)",
+      "position": 62,
+      "proposed_position": 62,
+      "rationale": "Long waves; HW-unsafe list (safe for HCIM).",
+      "status": "proposed",
+      "flags": [],
+      "facts": []
+    },
+    {
+      "id": "wildy-boss",
+      "activity": "Wilderness bosses (singles, e.g. Artio/Calvar'ion)",
+      "position": 60,
+      "proposed_position": 60,
+      "rationale": "PvP exposure plus boss damage.",
+      "status": "proposed",
+      "flags": [],
+      "facts": []
+    },
+    {
+      "id": "barrows-low",
+      "activity": "Barrows (mid-level account)",
+      "position": 50,
+      "proposed_position": 50,
+      "rationale": "Prayer drain, multiple brothers.",
+      "status": "proposed",
+      "flags": [],
+      "facts": []
+    },
+    {
+      "id": "quest-boss-mid",
+      "activity": "Mid-level quest boss (e.g. Elvarg at ~40 combat)",
+      "position": 48,
+      "proposed_position": 48,
+      "rationale": "Locked fight, burst damage.",
+      "status": "proposed",
+      "flags": [],
+      "facts": []
+    },
+    {
+      "id": "wildy-course",
+      "activity": "Wilderness Agility Course (level 50+ Wilderness)",
+      "position": 46,
+      "proposed_position": 46,
+      "rationale": "PvP exposure, deep Wilderness.",
+      "status": "proposed",
+      "flags": [],
+      "facts": []
+    },
+    {
+      "id": "werewolf",
+      "activity": "Werewolf Agility Course (deathslide)",
+      "position": 40,
+      "proposed_position": 40,
+      "rationale": "One large fall hit, otherwise controlled.",
+      "status": "proposed",
+      "flags": [],
+      "facts": []
+    },
+    {
+      "id": "sepulchre-high",
+      "activity": "Hallowed Sepulchre (floors 4-5)",
+      "position": 38,
+      "proposed_position": 38,
+      "rationale": "Traps, projectiles, fast reactions.",
+      "status": "proposed",
+      "flags": [],
+      "facts": []
+    },
+    {
+      "id": "slayer-mid",
+      "activity": "Mid-level Slayer task (e.g. Kalphites, Dagannoth)",
+      "position": 32,
+      "proposed_position": 32,
+      "rationale": "Sustained damage, controllable.",
+      "status": "proposed",
+      "flags": [],
+      "facts": []
+    },
+    {
+      "id": "ape-atoll",
+      "activity": "Ape Atoll Agility Course",
+      "position": 26,
+      "proposed_position": 26,
+      "rationale": "Aggressive monkeys, poison.",
+      "status": "proposed",
+      "flags": [],
+      "facts": []
+    },
+    {
+      "id": "brimhaven",
+      "activity": "Brimhaven Agility Arena",
+      "position": 20,
+      "proposed_position": 20,
+      "rationale": "Traps, low damage.",
+      "status": "proposed",
+      "flags": [],
+      "facts": []
+    },
+    {
+      "id": "rooftop-lowhp",
+      "activity": "Rooftop course at low Hitpoints",
+      "position": 14,
+      "proposed_position": 14,
+      "rationale": "Small fall damage vs low HP.",
+      "status": "proposed",
+      "flags": [],
+      "facts": []
+    },
+    {
+      "id": "wintertodt-low",
+      "activity": "Wintertodt at low Hitpoints",
+      "position": 12,
+      "proposed_position": 12,
+      "rationale": "Chip damage, AFK-able with food.",
+      "status": "proposed",
+      "flags": [],
+      "facts": []
+    },
+    {
+      "id": "rooftop",
+      "activity": "Rooftop course at normal Hitpoints / Colossal Wyrm (no-fail)",
+      "position": 6,
+      "proposed_position": 6,
+      "rationale": "Trivial damage.",
+      "status": "proposed",
+      "flags": [],
+      "facts": []
+    },
+    {
+      "id": "afk-safe",
+      "activity": "AFK skilling in a safe area (e.g. banking, fishing in a safe zone)",
+      "position": 0,
+      "proposed_position": 0,
+      "rationale": "No damage source.",
+      "status": "proposed",
+      "flags": [],
+      "facts": []
+    }
+  ]
+}

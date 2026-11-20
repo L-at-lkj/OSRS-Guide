@@ -373,6 +373,12 @@ def g_risk(job, r):
         if st["step_id"] not in by_step:
             r.fail(f"risk: step {st['step_id']} has no danger assessment")
     hw = brief and brief["game_mode"]["world_type"] == "hardcore_worlds"
+    informed = risk["risk_appetite"] == "informed"
+    lad = danger.ladder()
+    if not lad["calibrated"]:
+        r.warn("danger scores are UNCALIBRATED (no approved game-relative ladder yet; run /osrs-calibrate)")
+    for c in lad["conflicts"]:
+        r.warn(f"calibration ordering conflict: {c}")
     entries = ledger.read_entries(job)
     accepted = {e["ref"] for e in entries if e["event"] == "accept_risk"}
     scores = {}
@@ -384,7 +390,7 @@ def g_risk(job, r):
             r.warn(f"risk {e['step_id']}: rated but no longer in the plan{note}")
             continue
         try:
-            s = danger.assess(e)
+            s = danger.assess(e, lad)
         except ValueError as exc:
             r.fail(f"risk {e['step_id']}: {exc}")
             continue
@@ -406,14 +412,23 @@ def g_risk(job, r):
         if hw and "HW_UNSAFE_ACTIVITY" in e["flags"] and hwc["status"] == "SAFE_DEATH":
             r.fail(f"risk {e['step_id']}: flagged HW_UNSAFE_ACTIVITY yet classified SAFE_DEATH")
         if e["verdict"] == "veto":
-            r.fail(f"risk {e['step_id']}: VETOED by risk officer: {e.get('verdict_reason', '')}")
-        if s["residual_tier"] == "Critical" and e["step_id"] not in accepted:
-            r.fail(f"risk {e['step_id']}: residual Critical ({s['residual_ds']}) needs the user's explicit acceptance")
+            if informed and not e.get("veto_basis"):
+                r.fail(f"risk {e['step_id']}: veto without veto_basis; in informed mode danger alone never vetoes")
+            r.fail(f"risk {e['step_id']}: VETOED by risk officer ({e.get('veto_basis', 'danger')}): {e.get('verdict_reason', '')}")
+        if s["residual_tier"] in ("Critical", "Extreme") and e["step_id"] not in accepted and not informed:
+            r.fail(f"risk {e['step_id']}: residual {s['residual_tier']} ({s['residual_ds']}) needs the user's explicit acceptance")
+        if s["residual_ds"] >= danger.PREP_CARD_FROM:
+            pre = e.get("preconditions", {})
+            missing = [k for k, ok in (("mitigations", e["mitigations"]), ("stop_conditions", pre.get("stop_conditions")),
+                                       ("min_hitpoints", pre.get("min_hitpoints")), ("bailout", e.get("bailout")),
+                                       ("necessity", e.get("necessity"))) if not ok]
+            if missing:
+                r.fail(f"risk {e['step_id']}: score {s['residual_ds']} needs a complete prep card; missing {missing}")
     cap = danger.APPETITE_CAPS[risk["risk_appetite"]]
     for rt in plan["routes"]:
         worst = max((scores[s]["residual_ds"] for s in rt["step_ids"] if s in scores), default=0)
         over = [s for s in rt["step_ids"] if s in scores and scores[s]["residual_ds"] > cap]
-        if rt["route_id"] == "safest" and over:
+        if rt["route_id"] == "safest" and over and not informed:
             unaccepted = [s for s in over if s not in accepted]
             if unaccepted:
                 r.fail(f"safest route has step(s) above the {risk['risk_appetite']} cap {cap} with no accepted risk: {unaccepted}")

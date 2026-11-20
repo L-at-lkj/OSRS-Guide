@@ -16,9 +16,22 @@ mitigation per factor) and keeps flags unless a mitigation removes them with
 evidence. Residual can never drop below 30% of inherent when inherent >= 25
 (no mitigation is perfect).
 
+GAME-RELATIVE CALIBRATION (Gielinor Danger Index)
+  The model score above ("raw model DS") is then placed on a ladder of
+  reference activities from across the whole game (policy/danger-calibration.json).
+  The most dangerous content in the game (The Fractured Archive, hardest mode)
+  is pinned at 100. Each rated anchor contributes a point (its raw model DS ->
+  its board-approved position); the mapping between points is monotone
+  piecewise-linear. A step's published score is therefore "how dangerous this
+  is for YOU, on a scale where the hardest content in the game is 100", plus
+  the nearest reference activities. Until enough anchors are rated
+  (MIN_ANCHORS, including the top anchor), scores are published uncalibrated
+  and labelled as such.
+
 Commands
-  score <job>            print inherent/residual DS for every risk entry
-  explain                print the factor anchors, flags and tiers
+  score <job>            print raw and game-relative scores for every risk entry
+  explain                print the factor anchors, flags, tiers and calibration
+  ladder                 print the calibration ladder (anchor raw -> position)
 """
 from __future__ import annotations
 
@@ -72,8 +85,12 @@ FLAG_FLOORS = {
     "QUEST_BOSS": 0,
 }
 
-TIERS = [(0, "Safe"), (10, "Low"), (25, "Moderate"), (45, "High"), (65, "Severe"), (85, "Critical")]
-APPETITE_CAPS = {"cautious": 24, "standard": 44, "bold": 64}
+TIERS = [(0, "Safe"), (10, "Low"), (25, "Moderate"), (45, "High"), (65, "Severe"), (85, "Extreme")]
+# informed = awareness only: no cap gates content; high-danger steps must carry a full prep card instead.
+APPETITE_CAPS = {"cautious": 24, "standard": 44, "bold": 64, "informed": 100}
+PREP_CARD_FROM = 45   # game-relative score from which a complete prep card is mandatory
+MIN_ANCHORS = 6
+CALIBRATION = Path(__file__).resolve().parent.parent / "policy" / "danger-calibration.json"
 
 
 def tier(ds: int) -> str:
@@ -114,7 +131,58 @@ def apply_floors(score: float, flags: list[str]) -> tuple[int, str | None]:
     return (max(s, floor), why if floor > s else None)
 
 
-def assess(entry: dict) -> dict:
+def load_calibration() -> dict | None:
+    if not CALIBRATION.exists():
+        return None
+    return json.loads(CALIBRATION.read_text(encoding="utf-8"))
+
+
+def ladder(cal: dict | None = None) -> dict:
+    """Rated anchors -> monotone (raw, position) points. Reports ordering conflicts."""
+    cal = cal if cal is not None else load_calibration()
+    out = {"calibrated": False, "points": [], "conflicts": [], "anchors": [], "version": None}
+    if not cal:
+        return out
+    out["version"] = cal.get("version")
+    rated = []
+    for a in cal.get("anchors", []):
+        if a.get("status") not in ("rated", "approved") or "factors" not in a:
+            continue
+        raw, _ = apply_floors(raw_score(factor_values(a["factors"])), a.get("flags", []))
+        rated.append({"id": a["id"], "activity": a["activity"], "position": a["position"], "raw": raw})
+    rated.sort(key=lambda x: (x["position"], x["raw"]))
+    for lo, hi in zip(rated, rated[1:]):
+        if hi["raw"] < lo["raw"]:
+            out["conflicts"].append(f"{hi['activity']} (pos {hi['position']}, raw {hi['raw']}) rates below "
+                                    f"{lo['activity']} (pos {lo['position']}, raw {lo['raw']})")
+    # monotone points: position ascending, raw forced non-decreasing (running max)
+    pts, best = [(0, 0)], 0
+    for a in rated:
+        best = max(best, a["raw"])
+        pts.append((best, a["position"]))
+    out["points"] = pts
+    out["anchors"] = rated
+    top = [a for a in cal.get("anchors", []) if a.get("position") == 100 and a.get("status") in ("rated", "approved")]
+    out["calibrated"] = len(rated) >= MIN_ANCHORS and bool(top)
+    return out
+
+
+def calibrate(raw: int, lad: dict) -> tuple[int, list[str]]:
+    """Map a raw model DS onto the game-relative ladder; returns (score, nearest anchors)."""
+    if not lad["calibrated"]:
+        return raw, []
+    pts = lad["points"]
+    if raw >= pts[-1][0]:
+        return 100 if raw > pts[-1][0] else pts[-1][1], [lad["anchors"][-1]["activity"]]
+    for (r0, p0), (r1, p1) in zip(pts, pts[1:]):
+        if r0 <= raw <= r1:
+            pos = p0 if r1 == r0 else p0 + (p1 - p0) * (raw - r0) / (r1 - r0)
+            near = sorted(lad["anchors"], key=lambda a: abs(a["raw"] - raw))[:2]
+            return round(pos), [a["activity"] for a in near]
+    return raw, []
+
+
+def assess(entry: dict, lad: dict | None = None) -> dict:
     v = factor_values(entry["factors"])
     flags = list(entry.get("flags", []))
     inherent, floor_by = apply_floors(raw_score(v), flags)
@@ -134,15 +202,23 @@ def assess(entry: dict) -> dict:
     residual, rfloor_by = apply_floors(raw_score(rv), rflags)
     if inherent >= 25:
         residual = max(residual, math.ceil(0.3 * inherent))
-    return {"step_id": entry["step_id"], "inherent_ds": inherent, "inherent_tier": tier(inherent),
-            "residual_ds": residual, "residual_tier": tier(residual), "floor_by": floor_by,
-            "residual_floor_by": rfloor_by, "factors": v, "residual_factors": rv,
-            "flags": flags, "residual_flags": rflags}
+    lad = lad if lad is not None else ladder()
+    g_inh, _ = calibrate(inherent, lad)
+    g_res, near = calibrate(residual, lad)
+    return {"step_id": entry["step_id"],
+            # published (game-relative) scores
+            "inherent_ds": g_inh, "inherent_tier": tier(g_inh), "residual_ds": g_res, "residual_tier": tier(g_res),
+            "comparable_to": near, "calibrated": lad["calibrated"], "calibration_version": lad.get("version"),
+            # model internals, kept for audit
+            "model_inherent": inherent, "model_residual": residual,
+            "floor_by": floor_by, "residual_floor_by": rfloor_by, "factors": v, "residual_factors": rv,
+            "flags": flags, "residual_flags": rflags, "necessity": entry.get("necessity")}
 
 
 def score_job(job: str) -> list[dict]:
     risk = load_json(job_dir(job) / "risk.json")
-    return [assess(e) for e in risk["entries"]]
+    lad = ladder()
+    return [assess(e, lad) for e in risk["entries"]]
 
 
 def main():
@@ -150,17 +226,30 @@ def main():
     sp = p.add_subparsers(dest="cmd", required=True)
     s = sp.add_parser("score"); s.add_argument("job"); s.add_argument("--appetite", choices=list(APPETITE_CAPS))
     sp.add_parser("explain")
+    sp.add_parser("ladder")
     a = p.parse_args()
     if a.cmd == "explain":
+        lad = ladder()
         print(json.dumps({"anchors": ANCHORS, "flag_floors": FLAG_FLOORS, "tiers": TIERS,
-                          "appetite_caps": APPETITE_CAPS}, indent=2))
+                          "appetite_caps": APPETITE_CAPS, "prep_card_from": PREP_CARD_FROM,
+                          "calibrated": lad["calibrated"], "calibration_version": lad["version"]}, indent=2))
+        return
+    if a.cmd == "ladder":
+        lad = ladder()
+        print(f"calibration {lad['version']}: {'CALIBRATED' if lad['calibrated'] else 'NOT CALIBRATED (scores published raw)'}")
+        for an in lad["anchors"]:
+            print(f"  pos {an['position']:3d}  raw {an['raw']:3d}  {an['activity']}")
+        for c in lad["conflicts"]:
+            print("  CONFLICT " + c)
         return
     cap = APPETITE_CAPS.get(a.appetite) if a.appetite else None
     for r in score_job(a.job):
         over = f"  ABOVE {a.appetite.upper()} CAP {cap}" if cap is not None and r["residual_ds"] > cap else ""
         fl = f" floor:{r['floor_by']}" if r["floor_by"] else ""
-        print(f"{r['step_id']:8s} inherent {r['inherent_ds']:3d} {r['inherent_tier']:9s} -> residual "
-              f"{r['residual_ds']:3d} {r['residual_tier']:9s}{fl}{over}")
+        near = f"  ~ {', '.join(r['comparable_to'])}" if r["comparable_to"] else ""
+        print(f"{r['step_id']:8s} raw {r['inherent_ds']:3d} {r['inherent_tier']:9s} -> residual "
+              f"{r['residual_ds']:3d} {r['residual_tier']:9s}{fl}{over}{near}"
+              f"{'' if r['calibrated'] else '  [uncalibrated]'}")
 
 
 if __name__ == "__main__":
