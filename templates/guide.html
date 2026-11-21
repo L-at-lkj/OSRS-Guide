@@ -374,10 +374,10 @@ function nextPanel(){
     `<div class="small">${esc(sk)} on this route: reaches level <b>${c.end_level}</b> of cap <b>${c.cap}</b> (headroom ${fmt(c.headroom_xp)} XP)
      <div class="capbar"><i style="width:${Math.min(100, 100 * c.end_level / c.cap)}%"></i></div></div>`).join('');
   return `<div class="next"><h2>What next? <span class="muted small">at ${esc(G.meta.skill)} ${L}</span></h2>` + show.map(d => {
-    const opts = d.options.map(o => { const over = o.worst_residual_ds > cap;
+    const opts = d.options.map(o => { const over = S.cap !== 'informed' && o.worst_residual_ds > cap;
       return `<div class="opt ${o.option_id === d.recommended ? 'rec' : ''}"><div class="top"><div><b>${esc(o.option_id)}. ${esc(o.title)}</b>
         ${o.option_id === d.recommended ? ' <span class="badge">Recommended</span>' : ''}${over ? ' <span class="badge over">Above your cap</span>' : ''}</div>
-        <span class="ds ${o.worst_residual_tier}" style="min-width:0;padding:2px 8px"><span class="num" style="font-size:14px">${o.worst_residual_ds}</span><span class="lbl">${o.worst_residual_tier}</span></span></div>
+        <span class="ds ${o.worst_headline_tier || o.worst_residual_tier}" style="min-width:0;padding:2px 8px" title="Worst step in this option: ${o.worst_headline_ds ?? ''} without prep, ${o.worst_residual_ds} with the full prep card"><span class="num" style="font-size:14px">${o.worst_headline_ds ?? o.worst_residual_ds}</span><span class="lbl">${o.worst_headline_tier || o.worst_residual_tier}</span><small>with prep ${o.worst_residual_ds}</small></span></div>
         <div class="small muted">≈ ${hrs(o.hours)}${o.best_for ? ' · best for: ' + esc(o.best_for) : ''}</div>
         <div>${esc(o.justification)}</div>
         ${o.pros.length ? `<div><b class="small">For</b><ul>${o.pros.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>` : ''}
@@ -390,8 +390,10 @@ function nextPanel(){
 function pDecisions(){
   const dps = G.decision_points || [];
   $('#p-decisions').innerHTML = dps.length ? dps.map(d => `<div class="card"><div class="hd"><div class="ttl"><h3>${esc(d.dp_id)} · from level ${d.at_level}${d.until_level ? ' to ' + d.until_level : ''}</h3><div class="sub">${esc(d.question)}</div></div></div>
-    <div class="bd"><div class="opts">${d.options.map(o => `<div class="opt ${o.option_id === d.recommended ? 'rec' : ''}"><div class="top"><b>${esc(o.option_id)}. ${esc(o.title)}</b>${dsBadge({residual_ds: o.worst_residual_ds, residual_tier: o.worst_residual_tier, inherent_ds: ''}, false)}</div>
+    <div class="bd"><div class="opts">${d.options.map(o => `<div class="opt ${o.option_id === d.recommended ? 'rec' : ''}"><div class="top"><b>${esc(o.option_id)}. ${esc(o.title)}</b>${dsBadge({residual_ds: o.worst_residual_ds, residual_tier: o.worst_residual_tier, inherent_ds: o.worst_headline_ds ?? ''}, false)}</div>
       <div class="small muted">≈ ${hrs(o.hours)}</div><div>${esc(o.justification)}</div></div>`).join('')}</div>
+    ${(() => { const off = [...new Set(d.options.flatMap(o => o.step_ids))].filter(id => !route().step_ids.includes(id) && stepById(id));
+      return off.length ? `<details class="danger"><summary>Step cards for options not on the ${esc(route().label)} route (${off.length})</summary><div class="in">${off.map((id, i) => stepCard(stepById(id), i)).join('')}</div></details>` : ''; })()}
     ${d.recommendation_reason ? `<p class="small"><b>Recommended ${esc(d.recommended)}:</b> ${esc(d.recommendation_reason)}</p>` : ''}</div></div>`).join('') : '<p>No decision points in this guide.</p>';
 }
 
@@ -502,7 +504,9 @@ document.addEventListener('click', e => {
   const t = e.target.closest('[data-tab]'); if (t){ S.tab = t.dataset.tab; save(); render(); return; }
   const r = e.target.closest('[data-route]'); if (r){ S.route = r.dataset.route; save(); render(); return; }
   const f = e.target.closest('[data-fact]'); if (f){ e.preventDefault(); S.tab = 'sources'; save(); render(); const row = document.getElementById(f.dataset.fact); if (row){ row.scrollIntoView({block: 'center'}); row.querySelectorAll('td').forEach(td => td.style.background = 'var(--gold-soft)'); } return; }
-  const g = e.target.closest('[data-goto]'); if (g){ e.preventDefault(); S.tab = 'route'; save(); render(); document.getElementById('card-' + g.dataset.goto)?.scrollIntoView({block: 'start'}); }
+  const g = e.target.closest('[data-goto]'); if (g){ e.preventDefault(); const onRoute = route().step_ids.includes(g.dataset.goto);
+    S.tab = onRoute ? 'route' : 'decisions'; save(); render();
+    const el = document.getElementById('card-' + g.dataset.goto); if (el){ el.closest('details')?.setAttribute('open', ''); el.scrollIntoView({block: 'start'}); } }
 });
 document.addEventListener('change', e => {
   const d = e.target.closest('[data-done]'); if (d){ S.done[d.dataset.done] = d.checked; save(); render(); }
