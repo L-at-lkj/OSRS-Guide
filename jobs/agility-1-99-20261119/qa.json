@@ -1,0 +1,1209 @@
+{
+ "content_sha256": "955b342734184b0dc9ae8263c0df8c72f83d4d52ea5ef539b96e2d779636f9e7",
+ "job": "agility-1-99-20261119",
+ "audited_at": "2026-11-21",
+ "checks": [
+  {
+   "check": "1. ledger verify",
+   "result": "pass",
+   "detail": "OK: ledger chain and all seals intact. Unsealed: calc-draft.json (known harmless) and guide.html (draft render, embeds current content hash)."
+  },
+  {
+   "check": "2. validate release",
+   "result": "pass",
+   "detail": "0 FAIL, 58 WARN. WARNs reviewed: company files changed since earlier agents read them (governance edits to danger.py/validate.py/docs, self-disclosed in ledger seq 151/176); 10 off-route steps; 5 ladder ordering conflicts (RT-05/RT-15); S23/S24 vetoed and removed; RT-16/RT-17 open (low); calc-draft.json/guide.html unsealed; no QA approval yet. None indicates misreported work. Scores reproduce exactly: python3 tools/danger.py score matches every headline/with-prep pair in content.json."
+  },
+  {
+   "check": "3. audit crosscheck",
+   "result": "warn",
+   "detail": "No Sentry observations (hook not attached this session; known and disclosed). What could be checked: 41 dispatch files, each sealed and each with a matching dispatch event; dispatch/041 text is identical to the prompt QA received. Provenance present with inputs/actions/decisions/limitations on every agent artifact (calc.json is tool-generated, generated_by + plan_numeric_sha256). Self-disclosed deviations: dispatch combat-level correction (seq 49), docs/07 seed correction (seq 56), plan numeric hash correction (seq 177), two usage-limit resumes, Director governance edits to tools/danger.py and validate.py mid-job (seq 151, 176). Without Sentry, agents' self-reported fetches cannot be independently confirmed; QA's own live spot-checks are the substitute evidence."
+  },
+  {
+   "check": "4. live fact spot-checks",
+   "result": "pass",
+   "detail": "83 of 255 content facts (33%): all 50 facts behind any factor rating >=4, all 25 new_content facts (68 unique), 12 random (seed 20261121) and 3 S12/S17-critical facts; plus 2 cited-but-unshipped facts. Every source re-fetched live with tools/wiki.py on 2026-11-21: 83/83 match, 0 mismatch, 0 unreachable. Only one source page has a newer live revision (Troll Stronghold 15410562, image markup only)."
+  },
+  {
+   "check": "5. browser check",
+   "result": "pass",
+   "detail": "node tools/browser_check.mjs: ALL PASS (desktop and mobile, all 9 tabs, both routes, progress persistence, no horizontal scroll). Screens in jobs/agility-1-99-20261119/screens."
+  },
+  {
+   "check": "6. read as the owner",
+   "result": "fail",
+   "detail": "Every route step says what to do, what can kill you and when to stop; the badge shows headline and with-prep together (template dsBadge; DP badges too); Q-01/Q-02 are disclosed in the intro; S05 Iban temple gate (48/48, Protect from Melee does not block spikes, stun -> eat to full, two-stun stop) is on card and prose; S17 has Protect from Melee on the run and states the run window cannot be closed (S17-M4, prose warning 1). FAIL: S12's rendered 'Why this step' text (plan.json S12 rationale, shown by the template) still says 'do not wear the escape crystal in the duel ...; if carried, keep it in the inventory only', which contradicts the corrected card ('BANK it', stop condition: never enter with the crystal worn or in the inventory). The owner reads two opposite instructions on the highest with-prep step of the Balanced route; following the rationale recreates the RT-16 reset loop through run-ending forms 1-3."
+  },
+  {
+   "check": "7. red team",
+   "result": "fail",
+   "detail": "No open critical/high (RT-01..RT-04 fixed). RT-16 (low, open): the S12 risk card is fixed (S12-M6, required_items, stop_conditions[0], bailout, prose instructions[5] and warnings[1], and the general risk rule's Koschei exception all say bank the crystal), but it is NOT effectively resolved in the shipped guide because the S12 rationale still says to carry it (see check 6). Accepted risks: S05, S06, S12, S16, S17 have accept_risk entries (seq 123-126, 159, 160). RT-05, RT-07 and RT-15 are marked accepted_by_user but have no accept_risk entry; the red team cites the owner's ladder approval (calibration-20261120 seq 16, 23:23 UTC) and tier decision (seq 17, 23:27), both made before those findings existed (red-team 034, 23:43). RT-17 (low, docs/CLI labels) open, non-blocking."
+  },
+  {
+   "check": "8. recency",
+   "result": "pass",
+   "detail": "updates_as_of 2026-11-20T02:20Z (within 2 days of 2026-11-21). Live re-check: every Update page since 2026-10-25 and the newest Quests category members. Quest Month quests all accounted for: The Writing's on the Wall (S01), A Shell of a Friend and The Birds and the Wasps (U-033), Rag and Bone Man III and A New Leaf (U-035), The Chosen Commander (announced; wiki infobox says 2027), The Graveyard (upcoming 25 Nov, still the live release date; never a step). An Existential Crisis is listed in Quests but its page says unreleased. One post newer than the sweep, 'Gielinor Gazette - November 2026' (created 2026-11-20T11:16Z), is a newsletter with no Agility or game change (grep)."
+  },
+  {
+   "check": "extra: fact traceability in the rendered guide",
+   "result": "warn",
+   "detail": "39 fact IDs cited in content.json are not shipped in content.json facts (their links lead nowhere), including F-5010 (S12-H1 Koschei prayer drain), F-0003/F-3012 (random-event deaths, hazards and risk_rules), F-3016/F-3020 (escape-crystal rule), F-2107/F-2109/F-2546/F-2552 (necessity), F-4079 (a rationale). All exist in sealed facts.json (F-5010 and F-3016 re-verified live). tools/assemble.py collects facts from steps, factors, mitigations, hw classification and options but not from hazards, necessity, risk_rules, assumptions, rationale or why_not_faster. F-1048 (DISPUTED) is cited only in an assumption that says it is disputed and not used."
+  }
+ ],
+ "spot_checks": [
+  {
+   "fact_id": "F-0001",
+   "result": "match",
+   "selected_because": "new_content",
+   "live_revisions_checked": [
+    "Update:Hardcore Worlds Are Coming On November 4th live unchanged",
+    "Update:Hardcore Worlds - OUT TODAY live unchanged",
+    "Hardcore Worlds live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-0004",
+   "result": "match",
+   "selected_because": "new_content",
+   "live_revisions_checked": [
+    "Update:Hardcore Worlds - OUT TODAY live unchanged",
+    "Update:Hardcore Worlds Are Coming On November 4th live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-0015",
+   "result": "match",
+   "selected_because": "factor>=4 new_content",
+   "live_revisions_checked": [
+    "Update:Hardcore Worlds - OUT TODAY live unchanged",
+    "Hardcore Worlds live unchanged",
+    "Escape crystal live unchanged"
+   ],
+   "note": "Infobox fields / linked text found after markup normalisation: Escape crystal quote present with [[Wilderness#...|few items]] link markup",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-0029",
+   "result": "match",
+   "selected_because": "new_content",
+   "live_revisions_checked": [
+    "Update:Quest Month Kick Off, TFA Tweaks & More live unchanged",
+    "Troll Stronghold live changed"
+   ],
+   "note": "All quoted segments found in the live revision; live revision changed for Troll Stronghold (15395347 -> 15410562: reward-scroll image zoom markup only; quoted text unchanged)",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-0032",
+   "result": "match",
+   "selected_because": "new_content",
+   "live_revisions_checked": [
+    "Update:Quest Month Kick Off, TFA Tweaks & More live unchanged",
+    "The Writing's on the Wall live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-0033",
+   "result": "match",
+   "selected_because": "new_content",
+   "live_revisions_checked": [
+    "The Writing's on the Wall live unchanged",
+    "Update:Quest Month Kick Off, TFA Tweaks & More live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-0034",
+   "result": "match",
+   "selected_because": "new_content",
+   "live_revisions_checked": [
+    "The Writing's on the Wall live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-1058",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Agility training live unchanged",
+    "Hallowed Sepulchre live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-2003",
+   "result": "match",
+   "selected_because": "new_content",
+   "live_revisions_checked": [
+    "The Writing's on the Wall live unchanged",
+    "Update:Quest Month Kick Off, TFA Tweaks & More live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-2004",
+   "result": "match",
+   "selected_because": "new_content",
+   "live_revisions_checked": [
+    "The Writing's on the Wall live unchanged",
+    "Quest experience rewards live unchanged",
+    "Update:Quest Month Kick Off, TFA Tweaks & More live unchanged"
+   ],
+   "note": "Infobox fields / linked text found after markup normalisation: Defence section of Quest experience rewards lists no row for The Writing's on the Wall (absence confirmed)",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-2005",
+   "result": "match",
+   "selected_because": "factor>=4 new_content",
+   "live_revisions_checked": [
+    "The Writing's on the Wall live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-2006",
+   "result": "match",
+   "selected_because": "factor>=4 new_content",
+   "live_revisions_checked": [
+    "The Writing's on the Wall live unchanged",
+    "Quests/Release dates live unchanged",
+    "Update:Quest Month Kick Off, TFA Tweaks & More live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-2007",
+   "result": "match",
+   "selected_because": "factor>=4 new_content",
+   "live_revisions_checked": [
+    "The Writing's on the Wall live unchanged",
+    "Quest experience rewards live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-2015",
+   "result": "match",
+   "selected_because": "factor>=4 new_content",
+   "live_revisions_checked": [
+    "Black Knights' Fortress live unchanged",
+    "Update:Quest Month Kick Off, TFA Tweaks & More live unchanged",
+    "Module:SkillChoice live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-2016",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Druidic Ritual live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-2021",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Sand Snake live unchanged",
+    "The Depths of Despair live unchanged"
+   ],
+   "note": "Infobox fields / linked text found after markup normalisation",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-2022",
+   "result": "match",
+   "selected_because": "new_content",
+   "live_revisions_checked": [
+    "Troll Stronghold live changed",
+    "Update:Quest Month Kick Off, TFA Tweaks & More live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision; live revision changed for Troll Stronghold (15395347 -> 15410562: reward-scroll image zoom markup only; quoted text unchanged)",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-2029",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Troll general live unchanged",
+    "Troll Stronghold live changed"
+   ],
+   "note": "Infobox fields / linked text found after markup normalisation; live revision changed for Troll Stronghold (15395347 -> 15410562: reward-scroll image zoom markup only; quoted text unchanged)",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-2036",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Arrg live unchanged",
+    "Troll Romance live unchanged"
+   ],
+   "note": "Infobox fields / linked text found after markup normalisation",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-2041",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Koschei the deathless live unchanged",
+    "Koschei the deathless live unchanged",
+    "The Fremennik Trials live unchanged"
+   ],
+   "note": "Infobox fields / linked text found after markup normalisation",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-2064",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Icthlarin's Little Helper live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-2066",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Apparition live unchanged",
+    "Icthlarin's Little Helper live unchanged"
+   ],
+   "note": "Infobox fields / linked text found after markup normalisation",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-3018",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Escape crystal live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-3021",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Logout button live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-3022",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Logout button live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-3056",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Hallowed Sepulchre live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-3057",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Hallowed Sepulchre live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-3058",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Hallowed Sepulchre live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-3062",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Vyrewatch Sentinel live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-3086",
+   "result": "match",
+   "selected_because": "new_content",
+   "live_revisions_checked": [
+    "The Writing's on the Wall live unchanged",
+    "Quest experience rewards live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-3088",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Troll Stronghold live changed",
+    "Troll general live unchanged"
+   ],
+   "note": "Infobox fields / linked text found after markup normalisation: Troll Stronghold sentence present with [[troll generals]] link markup; live revision changed for Troll Stronghold (15395347 -> 15410562: reward-scroll image zoom markup only; quoted text unchanged)",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-3089",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Arrg live unchanged",
+    "Troll Romance live unchanged",
+    "Quest experience rewards live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-4047",
+   "result": "match",
+   "selected_because": "new_content",
+   "live_revisions_checked": [
+    "Hallowed Sepulchre live unchanged",
+    "Hardcore Worlds live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5001",
+   "result": "match",
+   "selected_because": "new_content",
+   "live_revisions_checked": [
+    "Update:Hardcore Worlds Are Coming On November 4th live unchanged",
+    "Update:Hardcore Worlds - OUT TODAY live unchanged",
+    "Koschei the deathless live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5002",
+   "result": "match",
+   "selected_because": "factor>=4 new_content",
+   "live_revisions_checked": [
+    "Update:Hardcore Worlds Are Coming On November 4th live unchanged",
+    "Update:Hardcore Worlds - OUT TODAY live unchanged",
+    "The Fremennik Trials live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5003",
+   "result": "match",
+   "selected_because": "new_content",
+   "live_revisions_checked": [
+    "Update:Hardcore Worlds Are Coming On November 4th live unchanged",
+    "Troll Romance live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5004",
+   "result": "match",
+   "selected_because": "new_content",
+   "live_revisions_checked": [
+    "Update:Hardcore Worlds Are Coming On November 4th live unchanged",
+    "Sir Leye live unchanged",
+    "Recruitment Drive live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5007",
+   "result": "match",
+   "selected_because": "new_content",
+   "live_revisions_checked": [
+    "Update:Hardcore Worlds Are Coming On November 4th live unchanged",
+    "Group Ironman Mode live unchanged",
+    "Hardcore Worlds live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5009",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Koschei the deathless live unchanged",
+    "Koschei the deathless live unchanged",
+    "The Fremennik Trials live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5011",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "The Fremennik Trials live unchanged",
+    "The Fremennik Trials live unchanged",
+    "Koschei the deathless live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5013",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "The Draugen live unchanged",
+    "The Fremennik Trials live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5014",
+   "result": "match",
+   "selected_because": "new_content",
+   "live_revisions_checked": [
+    "The Writing's on the Wall live unchanged",
+    "The Writing's on the Wall live unchanged",
+    "The Writing's on the Wall live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5015",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Sir Leye live unchanged",
+    "Recruitment Drive live unchanged",
+    "Recruitment Drive live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5016",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Sand Snake live unchanged",
+    "The Depths of Despair live unchanged",
+    "The Depths of Despair live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5017",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Dad live unchanged",
+    "Troll Stronghold live changed",
+    "Troll arena live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision; live revision changed for Troll Stronghold (15395347 -> 15410562: reward-scroll image zoom markup only; quoted text unchanged)",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5018",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Troll general live unchanged",
+    "Troll Stronghold live changed"
+   ],
+   "note": "All quoted segments found in the live revision; live revision changed for Troll Stronghold (15395347 -> 15410562: reward-scroll image zoom markup only; quoted text unchanged)",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5021",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Arrg live unchanged",
+    "Troll Romance live unchanged",
+    "Troll Romance live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5024",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Kalrag live unchanged",
+    "Blessed spider live unchanged",
+    "Underground Pass live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5026",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Underground Pass live unchanged",
+    "Underground Pass live unchanged",
+    "Bridge (Iban's Lair) live unchanged",
+    "Underground Pass live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5027",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Tyras guard live unchanged",
+    "Regicide live unchanged",
+    "Regicide live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5028",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Regicide live unchanged",
+    "Regicide live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5029",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Possessed Priest live unchanged",
+    "Icthlarin's Little Helper live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5030",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Icthlarin's Little Helper live unchanged",
+    "Icthlarin's Little Helper live unchanged",
+    "Apparition live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5037",
+   "result": "match",
+   "selected_because": "factor>=4 new_content",
+   "live_revisions_checked": [
+    "Death on the Isle live unchanged",
+    "Death on the Isle live unchanged",
+    "Update:Hardcore Worlds Are Coming On November 4th live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5343",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Fremennik Slayer Dungeon live unchanged",
+    "Log balance (Fremennik Province) live unchanged",
+    "Camelot teleport (tablet) live unchanged",
+    "Rellekka Rooftop Course live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5345",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Keldagrim live unchanged",
+    "The Giant Dwarf live unchanged",
+    "Keldagrim entrance mine live unchanged",
+    "Barbarian Outpost live unchanged",
+    "Lighthouse live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5360",
+   "result": "match",
+   "selected_because": "new_content",
+   "live_revisions_checked": [
+    "Update:Hardcore Worlds Are Coming On November 4th live unchanged",
+    "Update:Hardcore Worlds - OUT TODAY live unchanged",
+    "Hardcore Worlds live unchanged",
+    "Hallowed Sepulchre live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5362",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Naiatli live unchanged",
+    "Prop sword (Death on the Isle) live unchanged",
+    "Death on the Isle live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5366",
+   "result": "match",
+   "selected_because": "new_content",
+   "live_revisions_checked": [
+    "Update:The Reaper's Raffle - Hardcore Worlds live unchanged",
+    "Update:Hardcore Worlds Are Coming On November 4th live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5367",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Seers' Village Rooftop Course live unchanged",
+    "Gap (Seers' Village Rooftop Course) live unchanged",
+    "Tightrope (Seers' Village Rooftop Course) live unchanged",
+    "Agility live unchanged"
+   ],
+   "note": "Infobox fields / linked text found after markup normalisation: Seers' course text present; table 'Yes (until 79)' x2 confirmed",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5368",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Ardougne Rooftop Course live unchanged",
+    "Gap (Ardougne Rooftop Course) live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5369",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Gap (Canifis Rooftop Course) live unchanged",
+    "Canifis Rooftop Course live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5374",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Thrower Troll live unchanged",
+    "Death Plateau (location) live unchanged"
+   ],
+   "note": "Infobox fields / linked text found after markup normalisation",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5375",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Death Plateau live unchanged",
+    "Rock (Troll) live unchanged",
+    "Stick live unchanged",
+    "Pee Hat live unchanged",
+    "Kraka live unchanged"
+   ],
+   "note": "Infobox fields / linked text found after markup normalisation",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5379",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Rope swing (Underground Pass, north) live unchanged",
+    "Bridge (Iban's Lair) live unchanged",
+    "Underground Pass (dungeon) live unchanged",
+    "Ledge (Underground Pass) live unchanged",
+    "Swamp (Underground Pass) live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5380",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Underground Pass (dungeon) live unchanged",
+    "Blessed spider live unchanged",
+    "Giant bat live unchanged",
+    "Zombie live unchanged",
+    "Regicide live unchanged"
+   ],
+   "note": "Infobox fields / linked text found after markup normalisation: Blessed spider sentence present with [[aggressiveness|aggressive]] link markup",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5384",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "The Depths of Despair live unchanged",
+    "Stepping stone (Crabclaw Caves) live unchanged",
+    "Rocks (Crabclaw Caves) live unchanged"
+   ],
+   "note": "Infobox fields / linked text found after markup normalisation",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5386",
+   "result": "match",
+   "selected_because": "factor>=4",
+   "live_revisions_checked": [
+    "Escape crystal live unchanged",
+    "Escape crystal live unchanged",
+    "Update:Hardcore Worlds Are Coming On November 4th live unchanged",
+    "Hallowed Sepulchre live unchanged"
+   ],
+   "note": "Infobox fields / linked text found after markup normalisation: Hallowed Sepulchre page has no escape crystal line (absence confirmed by grep)",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-0019",
+   "result": "match",
+   "selected_because": "random",
+   "live_revisions_checked": [
+    "Update:Summer Sweep Up - Agility & Chambers of Xeric Changes live unchanged",
+    "Hallowed Sepulchre live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-1015",
+   "result": "match",
+   "selected_because": "random",
+   "live_revisions_checked": [
+    "Seers' Village Rooftop Course live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-1018",
+   "result": "match",
+   "selected_because": "random",
+   "live_revisions_checked": [
+    "Seers' Village Rooftop Course live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-1054",
+   "result": "match",
+   "selected_because": "random",
+   "live_revisions_checked": [
+    "Hallowed Sepulchre live unchanged",
+    "Agility training live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-1057",
+   "result": "match",
+   "selected_because": "random",
+   "live_revisions_checked": [
+    "Agility training live unchanged",
+    "Hallowed Sepulchre live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-1060",
+   "result": "match",
+   "selected_because": "random",
+   "live_revisions_checked": [
+    "Hallowed Sepulchre live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-2044",
+   "result": "match",
+   "selected_because": "random",
+   "live_revisions_checked": [
+    "Underground Pass live unchanged",
+    "Quest experience rewards live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-2061",
+   "result": "match",
+   "selected_because": "random",
+   "live_revisions_checked": [
+    "Icthlarin's Little Helper live unchanged",
+    "Quest experience rewards live unchanged"
+   ],
+   "note": "Infobox fields / linked text found after markup normalisation: Defence section of Quest experience rewards lists no row for Icthlarin's Little Helper (absence confirmed)",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-2067",
+   "result": "match",
+   "selected_because": "random",
+   "live_revisions_checked": [
+    "A Tail of Two Cats live unchanged",
+    "Module:SkillChoice live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-2071",
+   "result": "match",
+   "selected_because": "random",
+   "live_revisions_checked": [
+    "A Tail of Two Cats live unchanged"
+   ],
+   "note": "Infobox fields / linked text found after markup normalisation: A Tail of Two Cats has no |kills = field (absence confirmed)",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-4026",
+   "result": "match",
+   "selected_because": "random",
+   "live_revisions_checked": [
+    "Mark of Grace live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-4081",
+   "result": "match",
+   "selected_because": "random",
+   "live_revisions_checked": [
+    "Magic carpet live unchanged",
+    "Pollnivneach live unchanged"
+   ],
+   "note": "All quoted segments found in the live revision",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5012",
+   "result": "match",
+   "selected_because": "S12 bailout (trap/regenerate, reset to form 1)",
+   "note": "Fremennik Trials 15396092 and Koschei 15387641 live, unchanged; quotes found",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-3017",
+   "result": "match",
+   "selected_because": "S12-M6 / S17-M6 crystal trigger",
+   "note": "Escape crystal 15409296 and HW announcement 15379410 live, unchanged; quotes found",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-4062",
+   "result": "match",
+   "selected_because": "monkfish heal used in every eat rule",
+   "note": "Monkfish 15183439 live, unchanged; quote found",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-5010",
+   "result": "match",
+   "selected_because": "cited by S12-H1 but NOT shipped in content.json facts",
+   "note": "Fremennik Trials 15396092 and Koschei 15387641 live, unchanged; quotes found (facts.json, sealed)",
+   "checked_at": "2026-11-21"
+  },
+  {
+   "fact_id": "F-3016",
+   "result": "match",
+   "selected_because": "cited by risk_rules escape-crystal rule but NOT shipped",
+   "note": "HW OUT TODAY 15397724 and Escape crystal 15409296 live, unchanged; quotes found (external-link markup) (facts.json, sealed)",
+   "checked_at": "2026-11-21"
+  }
+ ],
+ "decision": "reject",
+ "reasons": [
+  "R1 (check 6/7, owner safety): S12 'Why this step' (plan.json steps S12 rationale, rendered by the template) says 'if carried, keep it [the escape crystal] in the inventory only', contradicting the corrected S12 card, which says BANK it before the Koschei duel. RT-16 is therefore not effectively resolved in the guide the owner reads. Fix: route-strategist text-only edit of the S12 rationale to match the card (bank the escape crystal before the duel; never a ring of life), then re-assemble; a red-team re-test of RT-16 or QA re-check closes it.",
+  "R2 (check 7, charter: every accepted risk has a ledger accept_risk entry): RT-05, RT-07 and RT-15 are marked accepted_by_user without accept_risk entries; the owner approvals cited predate the findings. Fix: Director asks the owner about these three ladder findings and records the answers verbatim with accept_risk, or routes them back as open (none affects a route step: no step enters the Wilderness, and the compression over-states rather than under-states mid-band scores).",
+  "Not blocking, fix in the same pass if possible: tools/assemble.py does not ship 39 cited fact IDs (e.g. F-5010 on S12-H1, F-0003/F-3012 random-event deaths), so their links in the guide are dead. This is a governance change for the Director."
+ ],
+ "provenance": {
+  "agent": "qa-auditor",
+  "started_at": "2026-11-21T03:41:07Z",
+  "finished_at": "2026-11-21T03:49:26Z",
+  "dispatch_ref": "dispatch/041-qa-auditor.md",
+  "inputs": [
+   {
+    "path": ".claude/agents/qa-auditor.md",
+    "sha256": "7a7a5782e6eaee1bb6f93e07520ae5edfb17c70c4be0221e052ca8d701854886"
+   },
+   {
+    "path": "dispatch/041-qa-auditor.md",
+    "sha256": "5d40946973905e5e150982b201676370e4e83d2bb39823064dbe8dcc7ad5e493"
+   },
+   {
+    "path": "dispatch/040-risk-officer.md",
+    "sha256": "4db94fee1354927ffb4924f7d079ecf58a662097d8af30ec96c54df9beb9c3ca"
+   },
+   {
+    "path": "content.json",
+    "sha256": "955b342734184b0dc9ae8263c0df8c72f83d4d52ea5ef539b96e2d779636f9e7"
+   },
+   {
+    "path": "guide.html",
+    "sha256": "416fa2342134ec79fb5a929241aca6dbc90219b62ef912f0337031135da1fafc"
+   },
+   {
+    "path": "redteam.json",
+    "sha256": "43a7dc9c7b0d3e35ce4ce54cb52fd4c49fb409b2833541939d5f65c34140fff3"
+   },
+   {
+    "path": "risk.json",
+    "sha256": "74bbfca5c25eaba0f88aac5fddf412c2392bd7d7607cde0239ceaf3b5b701d12"
+   },
+   {
+    "path": "plan.json",
+    "sha256": "f343604e839c966d5699f2669a4cd6e2d7ef6456e16647f22fdfbcde7f5d5780"
+   },
+   {
+    "path": "facts.json",
+    "sha256": "70fcb7eed3ab243ba3a64501f766da075bc69de64e8cdbc9fe39ed53f456fa12"
+   },
+   {
+    "path": "calc.json",
+    "sha256": "36391dcc75e537051ab5c6a4d69510cb54854d08ce05066a8a028c5cac817c76"
+   },
+   {
+    "path": "calc-review.json",
+    "sha256": "92b02588de0064ff013ce0f1e77789e25040ff06311ccd511b8176593cbeaa1b"
+   },
+   {
+    "path": "prose.json",
+    "sha256": "d86d39bb663df04dcb056607aa87c408f313b58fb5422f7dd29e753a99568028"
+   },
+   {
+    "path": "brief.json",
+    "sha256": "c27aa6bc9969f981aed9185637565c2792f58b80646cc531afa503e27f969389"
+   },
+   {
+    "path": "research/updates.json",
+    "sha256": "b600273a97297879bd2c38e663ed79bc8c55973cd793a7edf041690f2be988c5"
+   },
+   {
+    "path": "ledger.jsonl",
+    "sha256": "db31407886a3a47d10a87fdac2c230d83efca9afd0b8a73267dc4a3ee1c1c299"
+   },
+   {
+    "path": "jobs/calibration-20261120/ledger.jsonl",
+    "sha256": "6873810ea50db2e5d908c814f8ed16423cf567b7d88a3c07f73edb28111b4415"
+   },
+   {
+    "path": "schemas/qa.schema.json",
+    "sha256": "c57c4dceb5a22a6bea51b03f79254d7e0a6981858b4568557810c580d1fa5e17"
+   },
+   {
+    "path": "templates/guide.html",
+    "sha256": "500e40ac55e4e4544a61ce5e6e1013dd6c3d27fe04bd6472ce6650fa7604dc7f"
+   },
+   {
+    "path": "tools/assemble.py",
+    "sha256": "a5bb595d947aa3489de5f90474f3110f4d670e7caf13b22da47b979a2d356f01"
+   },
+   {
+    "path": "tools/danger.py",
+    "sha256": "773d0185f241c5e0ebb8e692851429eb8affc4a66a09aa59e1fe8e3c052efe1e"
+   },
+   {
+    "path": "tools/wiki.py",
+    "sha256": "d30b82d5ff286da0f957e4f478f7259dfb6a522311d9f758c28c7ede9e3d1526"
+   },
+   {
+    "path": "tools/browser_check.mjs",
+    "sha256": "ff7e17d4e21787e518380705e3f4dade289c606b6f08401be44dbe8915c68dc8"
+   },
+   {
+    "path": "tools/validate.py",
+    "sha256": "3daca665c57209831c45eef81b344f951a90dc9a7411c8074930664a9eff5ee0"
+   },
+   {
+    "path": "tools/audit.py",
+    "sha256": "623e1a8628c8cdbf602618baa6a6c687b13767ee0b20c2f64cdfd751912c3739"
+   },
+   {
+    "path": "tools/ledger.py",
+    "sha256": "06420ea24e40fb2fb78709b36710a9cbed97969efaafb4696f0988aba8e87442"
+   },
+   {
+    "path": "policy/danger-calibration.json",
+    "sha256": "15870680b0d7c5b918a4662fa4938dd147a368bd279358a49538ca26175037f2"
+   }
+  ],
+  "actions": [
+   {
+    "kind": "read",
+    "detail": "Read QA charter (sha256 7a7a5782...) and dispatch 041; confirmed dispatch file text equals the received prompt."
+   },
+   {
+    "kind": "verify",
+    "detail": "python3 tools/ledger.py verify agility-1-99-20261119",
+    "outcome": "OK; WARN unsealed calc-draft.json, guide.html"
+   },
+   {
+    "kind": "verify",
+    "detail": "python3 tools/validate.py agility-1-99-20261119 release",
+    "outcome": "0 fail, 58 warn"
+   },
+   {
+    "kind": "verify",
+    "detail": "python3 tools/audit.py crosscheck agility-1-99-20261119",
+    "outcome": "WARN no Sentry observations; ledger unsealed-file warns"
+   },
+   {
+    "kind": "compute",
+    "detail": "Ledger vs dispatch/ cross-check: 41 files, 41 seals, 41 dispatch events; provenance completeness of 13 artifacts; list of self-disclosed corrections/deviations"
+   },
+   {
+    "kind": "compute",
+    "detail": "python3 tools/danger.py score agility-1-99-20261119; compared with content.json scores",
+    "outcome": "identical for all 23 steps"
+   },
+   {
+    "kind": "compute",
+    "detail": "Sample: all facts behind factor scores >=4 (50) + new_content (25) = 68 unique, + 12 random (seed 20261121) + F-5012/F-3017/F-4062 + unshipped F-5010/F-3016"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py page <title> --full for 79 live wiki pages (plus Monkfish, Fremennik Trials, Koschei, Escape crystal and two update pages for the extra checks) (latest revisions) behind the sampled facts; quotes matched segment by segment against live wikitext; residual misses grepped by hand",
+    "target": "https://oldschool.runescape.wiki/api.php",
+    "outcome": "85/85 match; only Troll Stronghold has a newer revision (15410562, image markup)"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py new-pages --ns Update --since 2026-10-25; category Quests --newest 15; page 'An Existential Crisis'; page 'Update:Gielinor Gazette - November 2026' (rev 15410302); page 'The Graveyard'",
+    "outcome": "no unaccounted Agility-relevant release; Graveyard still 25 Nov 2026"
+   },
+   {
+    "kind": "verify",
+    "detail": "node tools/browser_check.mjs jobs/agility-1-99-20261119/guide.html --shots jobs/agility-1-99-20261119/screens",
+    "outcome": "ALL PASS"
+   },
+   {
+    "kind": "read",
+    "detail": "Read content.json intro, S05, S12, S17 cards and prose, decision points, risk_rules, redteam findings; grepped guide.html and templates/guide.html for rendered rationale and score badges"
+   },
+   {
+    "kind": "compute",
+    "detail": "Listed fact IDs cited in content.json but absent from content.json facts",
+    "outcome": "39 unshipped (all present in facts.json)"
+   },
+   {
+    "kind": "write",
+    "detail": "Wrote jobs/agility-1-99-20261119/qa.json (not sealed)"
+   }
+  ],
+  "decisions": [
+   {
+    "decision": "Reject",
+    "reason": "Checks 6 and 7 fail: the shipped S12 text contradicts the corrected card on the escape crystal (RT-16 not effectively resolved), and three accepted_by_user red-team findings lack accept_risk entries.",
+    "alternatives_considered": [
+     "Approve with a note: rejected, the charter allows approve only if no check fails, and the contradiction is on the Balanced route's highest with-prep step",
+     "Treat RT-05/07/15 as covered by the ladder approval: rejected, that approval predates the findings"
+    ]
+   },
+   {
+    "decision": "Count markup-only differences (link/infobox formatting, whitespace) as match",
+    "reason": "The live revision ids equal the pinned ids (except Troll Stronghold, whose diff is image markup only), so the text is the one the verifier saw; every value was found in the live wikitext."
+   },
+   {
+    "decision": "Treat the 39 unshipped cited facts as a WARN, not a fail",
+    "reason": "Each is in the sealed, verified facts.json (two re-verified live); the defect is dead links in the guide (assembler scope), not an unsupported claim."
+   },
+   {
+    "decision": "Do not judge whether content is too dangerous; judge honesty only",
+    "reason": "Owner's informed danger policy (dispatch 041). Scores reproduce from danger.py, and S12/S17 state their unclosable windows plainly."
+   }
+  ],
+  "limitations": [
+   "No Sentry observations exist for this job, so other agents' self-reported fetches could not be checked against observed tool calls; live re-fetches are the substitute.",
+   "Spot-checks confirm that each quoted source text is still on the live page; they do not re-derive computed values (e.g. 83.6% bridge success) beyond what the quotes state.",
+   "Only wiki sources were re-fetched (every source of the sampled facts is on oldschool.runescape.wiki).",
+   "S12-H5 road hazards and the Sinclair log balance remain unresearched by design; QA did not research them (not an authoring role).",
+   "Not every off-route step card was read in full; route steps, S05, S12 and S17 were."
+  ]
+ }
+}

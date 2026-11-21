@@ -11,6 +11,8 @@ Refuses to run if any input is unsealed or differs from its seal.
 from __future__ import annotations
 
 import argparse
+import json
+import re
 import sys
 from pathlib import Path
 
@@ -110,7 +112,9 @@ def main():
         "steps": steps,
         "decision_points": dps,
         "capped_skills": {rid: calc["routes"][rid].get("capped_skills", {}) for rid in calc["routes"]},
-        "facts": [fidx[f] for f in sorted(used) if f in fidx],
+        # every fact id cited anywhere in the shipped artifacts (QA finding: 39 cited facts were missing)
+        "facts": [fidx[f] for f in sorted(used | set(re.findall(r"F-\d{4}", json.dumps([plan, risk, prose, dps]))))
+                  if f in fidx],
         "updates": upd_items,
         "upcoming": updates.get("upcoming_30d", []),
         "redteam": redteam["findings"],
