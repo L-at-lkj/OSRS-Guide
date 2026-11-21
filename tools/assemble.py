@@ -66,7 +66,11 @@ def main():
     for rt in plan["routes"]:
         c = calc["routes"][rt["route_id"]]
         worst = max((danger.assess(ridx[s])["residual_ds"] for s in rt["step_ids"]), default=0)
-        routes.append({**rt, "totals": c["totals"], "levels": c["levels"],
+        # Q-10: per-level labels always come from the sealed plan, never from calc's copy
+        pidx_steps = {st["step_id"]: st for st in plan["steps"]}
+        levels = [{**L, "method": pidx_steps[L["step_id"]].get("method") or pidx_steps[L["step_id"]]["title"]}
+                  for L in c["levels"]]
+        routes.append({**rt, "totals": c["totals"], "levels": levels,
                        "calc": {s["step_id"]: s for s in c["steps"]},
                        "worst_residual_ds": worst, "worst_residual_tier": danger.tier(worst),
                        "steps_over_cap": [s for s in rt["step_ids"] if danger.assess(ridx[s])["residual_ds"] > cap]})
