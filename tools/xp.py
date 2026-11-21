@@ -31,7 +31,18 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import die, job_dir, load_json, save_json, sha256_file  # noqa: E402
+from common import canonical_json, die, job_dir, load_json, save_json, sha256_bytes, sha256_file  # noqa: E402
+
+NUMERIC_KEYS = ("step_id", "kind", "until_level", "min_level", "xp_per_action", "xp_per_hour", "est_hours",
+                "supplies_per_action", "secondary_xp_per_action", "xp_rewards", "lamp_rewards", "requirements")
+
+
+def plan_numeric_sha256(plan: dict) -> str:
+    """Hash of only what the calculation depends on, so prose/rationale edits don't invalidate calc."""
+    proj = {"target": plan["target"], "start_xp": plan.get("start_xp"),
+            "routes": [{"route_id": r["route_id"], "step_ids": r["step_ids"]} for r in plan["routes"]],
+            "steps": [{k: s.get(k) for k in NUMERIC_KEYS if k in s} for s in plan["steps"]]}
+    return sha256_bytes(canonical_json(proj).encode())
 
 MAX_LEVEL = 126  # virtual levels; 99 is the cap for real levels
 MAX_XP = 200_000_000
@@ -201,7 +212,7 @@ def cmd_simulate(a):
     plan_path = d / "plan.json"
     plan = load_json(plan_path)
     brief = load_json(d / "brief.json") if (d / "brief.json").exists() else None
-    result = {"generated_by": "tools/xp.py", "plan_sha256": sha256_file(plan_path),
+    result = {"generated_by": "tools/xp.py", "plan_numeric_sha256": plan_numeric_sha256(plan),
               "skill": plan["target"]["skill"], "routes": {}}
     n_err = 0
     for route in plan["routes"]:

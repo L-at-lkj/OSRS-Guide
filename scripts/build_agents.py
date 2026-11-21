@@ -242,7 +242,7 @@ AGENTS["quant"] = dict(
 `tools/xp.py` computes; you check that what it computed makes sense and matches the plan's intent.
 
 ## Checks (record each one in `sanity_checks`)
-1. `calc.json.plan_sha256` equals the sealed plan's hash.
+1. `calc.json.plan_numeric_sha256` equals `tools/xp.py`'s numeric hash of the sealed plan (prose-only plan edits don't change it).
 2. No route errors. Every level from start to goal is covered on every route.
 3. Every route reaches the goal level; overshoot is only the remainder of a whole action.
 4. Plausibility: total hours per route against the facts' XP/h ranges. Flag any step whose hours look implausible (e.g. under 1 minute or over 200 hours) for the strategist to review.

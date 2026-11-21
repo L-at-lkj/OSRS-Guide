@@ -336,8 +336,10 @@ def g_calc(job, r):
     if not calc:
         return
     _sealed(job, "calc.json", r, required=False)
-    if calc.get("plan_sha256") != sha256_file(_d(job) / "plan.json"):
-        r.fail("calc.json was computed from a different plan.json; rerun tools/xp.py simulate")
+    import xp as _xp
+    cur = _xp.plan_numeric_sha256(load_json(_d(job) / "plan.json"))
+    if calc.get("plan_numeric_sha256", calc.get("plan_sha256")) not in (cur, sha256_file(_d(job) / "plan.json")):
+        r.fail("calc.json was computed from different plan numbers; rerun tools/xp.py simulate")
     for rid, rt in calc["routes"].items():
         for e in rt["errors"]:
             r.fail(f"calc[{rid}]: {e}")
