@@ -1,6 +1,6 @@
 {
   "generated_by": "tools/xp.py",
-  "plan_sha256": "1fd8d37ca65efc681c258daabbf7ac81c3ae236a0005cae4721c73d9ca1e4fee",
+  "plan_numeric_sha256": "914ed7ab1569057c7607fe322773cb17abe0d18673ed63c1155d977778a7ff45",
   "skill": "Agility",
   "routes": {
     "safest": {

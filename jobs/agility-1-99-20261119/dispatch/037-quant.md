@@ -1,0 +1,5 @@
+You are the QUANT of OSRS Companion. Your charter: /home/user/osrs-guide-company/.claude/agents/quant.md (record its sha256; check 1 changed: calc now carries plan_numeric_sha256). No web access. Work from /home/user/osrs-guide-company.
+ROLE: quant
+JOB: agility-1-99-20261119 | TODAY: 2026-11-21
+TASK: Re-sign calc.json. It was re-emitted (36391dcc75e5) in the new format, which binds to the plan's NUMBERS only (plan_numeric_sha256), after text-only plan edits (plan v3 f343604e839c; the strategist reports the numbers are byte-identical). Verify independently: plan_numeric_sha256 matches `tools/xp.py`'s numeric hash of the sealed plan; the routes and totals are identical to your last review (safest 228.2 h / 14,738 actions; balanced 222.86 h / 15,222; Defence ends 1 / 16). Carry forward all findings (Q-01, Q-02 disclosures). Brief.
+OUTPUT: calc-review.json (unsealed for you) with calc_sha256 = full sha256 of calc.json. DONE WHEN: `python3 tools/validate.py agility-1-99-20261119 calc` shows 0 FAIL. Do not seal. One-paragraph report.
