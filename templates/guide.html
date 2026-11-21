@@ -229,10 +229,10 @@ const dsBadge = (sc, big = true) => `<span class="ds ${sc.residual_tier}" title=
   <span class="num">${sc.inherent_ds}</span><span class="lbl">${sc.inherent_tier}</span>${big ? `<small>with prep ${sc.residual_ds}${sc.calibrated === false ? '*' : ''}</small>` : ''}</span>`;
 const necBadge = n => n ? `<span class="nec ${esc(n.class)}" title="${esc(n.why)}">${esc(n.class)}</span>` : '';
 
-function reqMet(req){
+function reqMet(req, step){
   const p = G.meta.profile || {}; const stats = p.stats || {};
   if (req.type === 'skill' && req.skill && req.level){
-    if (req.skill === G.meta.skill) return null;
+    if (req.skill === G.meta.skill){ const c = step && route().calc[step.step_id]; return c ? c.start_level >= req.level : null; }
     return stats[req.skill] == null ? null : stats[req.skill] >= req.level;
   }
   if (req.type === 'quest' && req.name) return (p.quests_completed || []).includes(req.name) ? true : null;
@@ -322,7 +322,7 @@ function stepCard(s, idx){
   (c.supplies || []).forEach(x => stats.push(`<span class="stat">${esc(x.item)} <b>×${fmt(x.qty)}</b></span>`));
   (c.secondary_xp || []).forEach(x => stats.push(`<span class="stat">${esc(x.skill)} XP <b>+${fmt(x.xp)}</b></span>`));
   (s.xp_rewards || []).filter(x => x.skill !== G.meta.skill).forEach(x => stats.push(`<span class="stat">${esc(x.skill)} XP <b>+${fmt(x.xp.value)}</b></span>`));
-  const reqs = (s.requirements || []).map(q => { const m = reqMet(q); return `<li class="${m === true ? 'met' : m === false ? 'unmet' : ''}">${reqText(q)} <a class="factref" href="#${q.fact}" data-fact="${q.fact}">${q.fact}</a></li>`; }).join('');
+  const reqs = (s.requirements || []).map(q => { const m = reqMet(q, s); return `<li class="${m === true ? 'met' : m === false ? 'unmet' : ''}">${reqText(q)} <a class="factref" href="#${q.fact}" data-fact="${q.fact}">${q.fact}</a></li>`; }).join('');
   const pre = risk.preconditions || {};
   return `<article class="card ${done ? 'done' : ''} ${over ? 'over' : ''}" id="card-${s.step_id}" ${here ? 'style="outline:3px solid var(--gold)"' : ''}>
     ${over ? `<div class="ribbon">Above your danger cap (${cap}). ${r.route_id !== 'safest' ? 'The Safest route avoids or replaces this step.' : 'There is no safer alternative: read the prep card, and only go ahead if you accept this risk knowingly.'}</div>` : ''}
