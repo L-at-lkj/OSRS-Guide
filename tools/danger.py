@@ -304,7 +304,7 @@ def main():
         over = f"  ABOVE {a.appetite.upper()} CAP {cap}" if cap is not None and r["residual_ds"] > cap else ""
         fl = f" floor:{r['floor_by']}" if r["floor_by"] else ""
         near = f"  ~ {', '.join(r['comparable_to'])}" if r["comparable_to"] else ""
-        print(f"{r['step_id']:8s} raw {r['inherent_ds']:3d} {r['inherent_tier']:9s} -> residual "
+        print(f"{r['step_id']:8s} headline {r['inherent_ds']:3d} {r['inherent_tier']:9s} -> with prep "
               f"{r['residual_ds']:3d} {r['residual_tier']:9s}{fl}{over}{near}"
               f"{'' if r['calibrated'] else '  [uncalibrated]'}")
 

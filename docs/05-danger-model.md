@@ -39,7 +39,15 @@ DS = min(100, round(100 · T/5 · (0.35 + 0.13·C) · (0.80 + 0.04·exposure) + 
 | DEEP_WILDERNESS | 65 | NEW_CONTENT (<30 days) | 25 |
 | HW_UNSAFE_ACTIVITY | 10 | informational: POISON_OR_VENOM, AGGRESSIVE_NPCS_ON_ROUTE, LOW_HP_SKILLING_DAMAGE, TELEPORT_RESTRICTED, QUEST_BOSS | 0 |
 
-## 4. Raw vs residual
+## 4. Raw vs residual (model scores) and what gets published
+**Published scores (since 2026-11-21, red-team RT-03/04/06):**
+- The **headline** is the *unmitigated* model score mapped onto the ladder. That's like-for-like with the anchors, which are also rated without precautions.
+- **"With prep"** is the residual on the same mapping, and is never shown without the headline beside it.
+- Flag floors apply to the *published* scale, after calibration.
+- Only The Fractured Archive is 100; everything else is capped at 99.
+- The prep-card gate (45+) uses the headline.
+
+The model-level definitions below still apply before calibration.
 - **Raw DS**: the step with no precautions.
 - **Residual DS**: after the **mandatory** mitigations. Each mitigation can lower a factor by at most 3 and must cite evidence that it works. A flag is removed only by a mitigation that cites facts.
 - **No perfect mitigation:** when raw ≥ 25, residual is never below 30% of raw.
@@ -69,7 +77,7 @@ Every step carries a **necessity** label:
 - **efficiency**: faster, but avoidable.
 - **optional**.
 
-Each label comes with why, and the safer alternatives. From score **45** up, a **complete prep card** is mandatory: mitigations, minimum HP, stop conditions, bail-out plan and necessity.
+Each label comes with why, and the safer alternatives. From a **headline** score of **45** up, a **complete prep card** is mandatory: mitigations, minimum HP, stop conditions, bail-out plan and necessity.
 
 ## 7. Tiers and modes
 | Tier | DS | Meaning |
