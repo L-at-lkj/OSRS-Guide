@@ -1,16 +1,16 @@
 {
   "schema": "osrs-guide-content/1",
   "job": "agility-1-99-20261119",
-  "assembled_at": "2026-11-21T03:40:06+00:00",
+  "assembled_at": "2026-11-21T06:07:52+00:00",
   "inputs": {
     "brief.json": "c27aa6bc9969f981aed9185637565c2792f58b80646cc531afa503e27f969389",
     "research/updates.json": "b600273a97297879bd2c38e663ed79bc8c55973cd793a7edf041690f2be988c5",
     "facts.json": "70fcb7eed3ab243ba3a64501f766da075bc69de64e8cdbc9fe39ed53f456fa12",
-    "plan.json": "f343604e839c966d5699f2669a4cd6e2d7ef6456e16647f22fdfbcde7f5d5780",
+    "plan.json": "5a0296c74446ee83ad3266581aa39a11f9316ef8042fdf1866471c483658672a",
     "calc.json": "36391dcc75e537051ab5c6a4d69510cb54854d08ce05066a8a028c5cac817c76",
     "calc-review.json": "92b02588de0064ff013ce0f1e77789e25040ff06311ccd511b8176593cbeaa1b",
     "risk.json": "74bbfca5c25eaba0f88aac5fddf412c2392bd7d7607cde0239ceaf3b5b701d12",
-    "redteam.json": "43a7dc9c7b0d3e35ce4ce54cb52fd4c49fb409b2833541939d5f65c34140fff3",
+    "redteam.json": "d0b23e5dd9ddfb3d22547248a12651601c8abdad304e35c46d126b7fcbbc1eb1",
     "prose.json": "d86d39bb663df04dcb056607aa87c408f313b58fb5422f7dd29e753a99568028"
   },
   "meta": {
@@ -4575,7 +4575,7 @@
         "F-0004",
         "F-4086"
       ],
-      "rationale": "2,812.4 Agility XP plus 2,812.4 Defence XP that cannot be declined (F-2038): this is exactly the quest-sourced Defence the owner's zerker plan wants, taking Defence from 1 to 16 (tools/xp.py), far under the 50 cap. No hard skill requirements if the lyre is taken as a drop from the level 48 citizens (max hit 6, non-aggressive, F-5383). Fights: Draugen (max 7) and Koschei (max 3/5/7, then 1); only Koschei's 4th form is a safe death on Hardcore Worlds (F-0004/F-3014), forms 1-3 are run-ending. Placed in the 57 quest block so its Agility XP lands during the slowest training, and so the enchanted lyre (Rellekka teleport, F-4086) is ready when Rellekka opens at 80. Duel prep (risk.json S12): no ring of life at Koschei (it sends you to your respawn point and restarts the fight at form 1, so worn into form 4 it resets the fight every time; F-5011), and do not wear the escape crystal in the duel (it would reset the fight the same way); if carried, keep it in the inventory only. Neither is an exit from forms 1-3.",
+      "rationale": "2,812.4 Agility XP plus 2,812.4 Defence XP that cannot be declined (F-2038): this is exactly the quest-sourced Defence the owner's zerker plan wants, taking Defence from 1 to 16 (tools/xp.py), far under the 50 cap. No hard skill requirements if the lyre is taken as a drop from the level 48 citizens (max hit 6, non-aggressive, F-5383). Fights: Draugen (max 7) and Koschei (max 3/5/7, then 1); only Koschei's 4th form is a safe death on Hardcore Worlds (F-0004/F-3014), forms 1-3 are run-ending. Placed in the 57 quest block so its Agility XP lands during the slowest training, and so the enchanted lyre (Rellekka teleport, F-4086) is ready when Rellekka opens at 80. Duel prep (risk.json S12): no ring of life at Koschei (it sends you to your respawn point and restarts the fight at form 1, so worn into form 4 it resets the fight every time; F-5011), and BANK the escape crystal before the duel: do not take it into the instance, worn or carried (worn, it resets the fight the same way; carried, it can fire if you stand still in the fourth form and restart the fight at form 1; risk.json S12-M6). Carry it only for the road, the Draugen and the citizens. Neither the ring nor the crystal is an exit from forms 1-3.",
       "prose": {
         "step_id": "S12",
         "summary": "Danger first: Koschei's first three forms are run-ending on Hardcore Worlds and have no documented exit; only his fourth form is a safe death. In return you get {{step.xp_gained}} Agility XP, the quest Defence your zerker plan wants, and the enchanted lyre that makes Rellekka practical.",
@@ -8201,7 +8201,7 @@
           ],
           "cons": [
             "Hours of questing that the calculator does not count (no verified quest durations)",
-            "Underground Pass traps up to 24 and spider pile-ups; Icthlarin flashbacks block teleports; Koschei forms 1-3 are not safe deaths (no ring of life, and no worn escape crystal, in the duel: either resets the fight)"
+            "Underground Pass traps up to 24 and spider pile-ups; Icthlarin flashbacks block teleports; Koschei forms 1-3 are not safe deaths (never wear a ring of life in the duel, and bank the escape crystal before it: worn, it resets the fight; carried, it can fire if you stand still in the fourth form)"
           ],
           "best_for": "The balanced route and the owner's quest-based zerker build",
           "facts": [
@@ -8646,7 +8646,7 @@
           "cons": [
             "No bank in Rellekka",
             "Route from Camelot partly unresearched",
-            "Koschei forms 1-3 are not safe deaths (no ring of life, and no worn escape crystal, in the duel: either resets the fight)"
+            "Koschei forms 1-3 are not safe deaths (never wear a ring of life in the duel, and bank the escape crystal before it: worn, it resets the fight; carried, it can fire if you stand still in the fourth form)"
           ],
           "best_for": "The balanced route",
           "facts": [
@@ -8801,6 +8801,51 @@
       "new_content": true
     },
     {
+      "fact_id": "F-0003",
+      "claim_id": "C-UPD-003",
+      "subject": "Hardcore Worlds",
+      "attribute": "random_events_death_status",
+      "value": "unsafe",
+      "statement": "A death caused by a Random Event is an official death on Hardcore Worlds, including during long semi-AFK Agility sessions.",
+      "status": "VERIFIED",
+      "caveat": "New content (launched 4 Nov 2026). Listed by the 4 Nov and 22 Oct T1 posts and the wiki.",
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds - OUT TODAY",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+          "revid": 15397724,
+          "retrieved": "2026-11-20",
+          "published": "2026-11-04",
+          "quote": "* Random Events",
+          "fetched_by": "fact-verifier (updates instance)"
+        },
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds Are Coming On November 4th",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410",
+          "revid": 15379410,
+          "retrieved": "2026-11-20",
+          "published": "2026-10-22",
+          "quote": "* Random Events",
+          "fetched_by": "fact-verifier (updates instance)"
+        },
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-20",
+          "quote": "* [[Random Event]]",
+          "fetched_by": "fact-verifier (updates instance)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:10:00Z",
+      "independent": true,
+      "released": "2026-11-04",
+      "new_content": true
+    },
+    {
       "fact_id": "F-0004",
       "claim_id": "C-UPD-004",
       "subject": "Hardcore Worlds",
@@ -8845,6 +8890,41 @@
       "new_content": true
     },
     {
+      "fact_id": "F-0010",
+      "claim_id": "C-UPD-010",
+      "subject": "Hardcore Worlds",
+      "attribute": "trading_and_grand_exchange",
+      "value": "allowed (not an Ironman mode)",
+      "statement": "Hardcore Worlds characters are not Ironmen, so they can trade and have full access to the Grand Exchange.",
+      "status": "VERIFIED",
+      "caveat": "New content (launched 4 Nov 2026).",
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds - OUT TODAY",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+          "revid": 15397724,
+          "retrieved": "2026-11-20",
+          "published": "2026-11-04",
+          "quote": "For starter's you are not any form of Ironman, which means trading is allowed along with full access to the Grand Exchange.",
+          "fetched_by": "fact-verifier (updates instance)"
+        },
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-20",
+          "quote": "Players on Hardcore Worlds are still [[main account]]s, therefore they can still [[trade]] with other players, use the [[Grand Exchange]], or participate in group [[Monster killing|PvM]], unlike in other modes such as [[Ironman Mode|ironman]].",
+          "fetched_by": "fact-verifier (updates instance)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:10:00Z",
+      "independent": true,
+      "released": "2026-11-04",
+      "new_content": true
+    },
+    {
       "fact_id": "F-0015",
       "claim_id": "C-UPD-015",
       "subject": "Escape crystal (Hardcore Worlds)",
@@ -8880,6 +8960,41 @@
           "revid": 15409296,
           "retrieved": "2026-11-20",
           "quote": "For example, if players configure the timer to 30 seconds, they will automatically be teleported away from the aforementioned activities upon taking damage after being inactive for at least 30 seconds. ... The crystal will '''NOT''' activate while the player is moving. ... It is one of the few items whose teleports will work up to level 30 Wilderness",
+          "fetched_by": "fact-verifier (updates instance)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:10:00Z",
+      "independent": true,
+      "released": "2026-11-04",
+      "new_content": true
+    },
+    {
+      "fact_id": "F-0017",
+      "claim_id": "C-UPD-017",
+      "subject": "Hardcore Worlds",
+      "attribute": "release_date",
+      "value": "2026-11-04",
+      "statement": "Hardcore Worlds, a members-only mode, was released on 4 November 2026 at 11:00 UTC. It is under 30 days old, so its rules and economy count as volatile.",
+      "status": "VERIFIED",
+      "caveat": "New content (16 days old at verification). The 11:00 UTC time is from the wiki only; the T1 post's date header gives 04 November 2026.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-20",
+          "quote": "It was released on [[4 November]] [[2026]] at 11:00 AM {{Wp|UTC}}.",
+          "fetched_by": "fact-verifier (updates instance)"
+        },
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds - OUT TODAY",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+          "revid": 15397724,
+          "retrieved": "2026-11-20",
+          "published": "2026-11-04",
+          "quote": "{{Update|date=04 November 2026|url=https://secure.runescape.com/m=news/hardcore-worlds--out-today?oldschool=1|category=game|rev=05 November 2026}}",
           "fetched_by": "fact-verifier (updates instance)"
         }
       ],
@@ -9028,6 +9143,31 @@
       "new_content": false
     },
     {
+      "fact_id": "F-0025",
+      "claim_id": "C-UPD-027",
+      "subject": "Colossal Wyrm Agility Course",
+      "attribute": "wiki_page_status",
+      "value": "flagged obsolete for durations, XP, termites and bone shards since the 12 Aug 2026 change",
+      "statement": "The wiki's Colossal Wyrm Agility Course page (current revision 15388138) is tagged obsolete for course durations, XP, termites and bone shards. Its per-lap XP (633 basic, 1053.6 advanced) and lap times (1:07.80, 1:22.80) must not be used to compute post-change rates.",
+      "status": "VERIFIED",
+      "caveat": "Status of a wiki page; re-check before release QA in case the page is updated.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Colossal Wyrm Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15388138",
+          "revid": 15388138,
+          "retrieved": "2026-11-20",
+          "quote": "{{Obsolete|Changes to course durations, experience, termites, and bone shards.|update=Update:Summer Sweep Up - Agility & Chambers of Xeric Changes}}",
+          "fetched_by": "fact-verifier (updates instance)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:10:00Z",
+      "independent": true,
+      "released": "2026-08-12",
+      "new_content": false
+    },
+    {
       "fact_id": "F-0029",
       "claim_id": "C-UPD-032",
       "subject": "Troll Stronghold",
@@ -9162,6 +9302,50 @@
       "verified_at": "2026-11-20T07:10:00Z",
       "independent": true,
       "released": "2026-11-03",
+      "new_content": true
+    },
+    {
+      "fact_id": "F-0052",
+      "claim_id": "C-UPD-070",
+      "subject": "The Graveyard",
+      "attribute": "release_date",
+      "value": "2026-11-25",
+      "statement": "The Graveyard (Master) is scheduled for release on 25 Nov 2026, within the next 30 days. It is unreleased and must not be a route step.",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "caveat": "UPCOMING, not released. No T1 post states the date: the 18 Nov T1 post says 'coming next week'; the exact date was added to the wiki at 2026-11-20T00:57-00:59Z citing the 19 Nov 2026 Q&A livestream at 1:12:27 ('The Graveyard launches next Wednesday'), which is consistent with Wednesday 25 Nov 2026. The Graveyard and Quest Month pages were edited by the same editor in the same minute, so they are one source, not two. Release dates can slip; route_use: never as a step.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "The Graveyard",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409628",
+          "revid": 15409628,
+          "retrieved": "2026-11-20",
+          "quote": "'''The Graveyard''' is an [[Upcoming updates|upcoming]] quest, scheduled for release on [[25 November]] [[2026]].",
+          "fetched_by": "fact-verifier (updates instance)"
+        },
+        {
+          "tier": "T2",
+          "title": "Upcoming updates",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409626",
+          "revid": 15409626,
+          "retrieved": "2026-11-20",
+          "quote": "{{CiteVideo|author=Old School RuneScape|title=WEEKLY Q&A's ARE BACK!!! OSRS Weekly Q&A November 19th 2026 |...|timestamp=1:12:27|date=19 November 2026|site=YouTube|notes=\"The Graveyard launches next Wednesday\"|name=}}",
+          "fetched_by": "fact-verifier (updates instance)"
+        },
+        {
+          "tier": "T1",
+          "title": "Update:Quest Month Week 3 & TFA Practice Mode",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406871",
+          "revid": 15406871,
+          "retrieved": "2026-11-20",
+          "published": "2026-11-18",
+          "quote": "That's right, The Graveyard quest is coming next week! See you next week for our next Fremennik quest, bringing a new Agility course!",
+          "fetched_by": "fact-verifier (updates instance)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:10:00Z",
+      "independent": true,
+      "released": null,
       "new_content": true
     },
     {
@@ -10381,6 +10565,66 @@
       "new_content": false
     },
     {
+      "fact_id": "F-1048",
+      "claim_id": "C-MTH-048",
+      "subject": "Colossal Wyrm Agility Course",
+      "attribute": "xp_per_lap",
+      "value": {
+        "basic": {
+          "course_page_prose": 633,
+          "course_page_obstacle_table_sum": 601.6,
+          "agility_skill_page": 504.1
+        },
+        "advanced": {
+          "course_page_prose": 1053.6,
+          "course_page_obstacle_table_sum": 1053.6,
+          "agility_skill_page": 749.6
+        }
+      },
+      "researcher_value": {
+        "basic": 633,
+        "advanced": 1053.6
+      },
+      "unit": "Agility XP per lap",
+      "statement": "Post-12-August-2026 Wyrm XP per lap is unconfirmed. The course page (flagged {{Obsolete}} for the 12 Aug 2026 changes) states 633 basic / 1,053.6 advanced, but its own basic obstacle table sums to 601.6 (7 x 37.2 + 341.2); the advanced table sums to 1,053.6. The Agility skill page still gives the pre-rework 504.1 / 749.6. Jagex's T1 notes give no per-lap numbers.",
+      "status": "DISPUTED",
+      "caveat": "Not marked STALE: the course page has not changed since the researcher's revid 15388138 (it is still the current revision), so the researcher's figure is what the page says. It is DISPUTED because sources disagree (prose vs table vs skill page) and the page is self-flagged out of date. Planners must not compute laps from per-lap XP; use the XP/hour fact F-1049.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Colossal Wyrm Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15388138",
+          "revid": 15388138,
+          "retrieved": "2026-11-20",
+          "quote": "{{Obsolete|Changes to course durations, experience, termites, and bone shards.|update=Update:Summer Sweep Up - Agility & Chambers of Xeric Changes}} ... granting a total of 633 experience for basic lap completion, and 1053.6 experience for advanced lap completion. ... |{{+=|xp|341.2|echo=2}}",
+          "fetched_by": "fact-verifier (methods)"
+        },
+        {
+          "tier": "T2",
+          "title": "Agility",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15405162",
+          "revid": 15405162,
+          "retrieved": "2026-11-20",
+          "quote": "The regular course consists of six obstacles and gives 504.1 experience per lap. ... The Advanced course consists of six obstacles and gives 749.6 experience per lap.",
+          "fetched_by": "fact-verifier (methods)"
+        },
+        {
+          "tier": "T1",
+          "title": "Update:Summer Sweep Up - Agility & Chambers of Xeric Changes",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15303824",
+          "revid": 15303824,
+          "retrieved": "2026-11-20",
+          "published": "2026-08-12",
+          "quote": "Increased XP, Bone shards and Termites to match so that it's roughly the same XP/hr and termites/hr but fewer inputs/hr",
+          "fetched_by": "fact-verifier (methods)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:10:00Z",
+      "independent": true,
+      "released": "2026-08-12",
+      "new_content": false
+    },
+    {
       "fact_id": "F-1054",
       "claim_id": "C-MTH-054",
       "subject": "Hallowed Sepulchre",
@@ -10682,6 +10926,380 @@
           "revid": 15387544,
           "retrieved": "2026-11-20",
           "quote": "In order to receive [[hallowed marks]], the [[Coffin (Hallowed Sepulchre)|coffins]] must be looted",
+          "fetched_by": "fact-verifier (methods)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:10:00Z",
+      "independent": true,
+      "released": null,
+      "new_content": false
+    },
+    {
+      "fact_id": "F-1063",
+      "claim_id": "C-MTH-063",
+      "subject": "Werewolf Agility Course",
+      "attribute": "requirement_quest",
+      "value": {
+        "quest": "Creature of Fenkenstrain",
+        "item": "Ring of Charos (worn)"
+      },
+      "unit": null,
+      "statement": "The Werewolf course needs Creature of Fenkenstrain (not done by the owner), and a Ring of Charos must be worn to use the entrance trapdoor.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Werewolf Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15315234",
+          "revid": 15315234,
+          "retrieved": "2026-11-20",
+          "quote": "To access the Agility course, the player has to wear a [[Ring of Charos]] to be allowed to climb-down the [[trapdoor (Werewolf Agility Course)|entrance]]",
+          "fetched_by": "fact-verifier (methods)"
+        },
+        {
+          "tier": "T2",
+          "title": "Agility",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15405162",
+          "revid": 15405162,
+          "retrieved": "2026-11-20",
+          "quote": "The Werewolf Agility Course requires level 60 Agility and completion of {{SCP|Quest}} [[Creature of Fenkenstrain]] to access. To get to the course, players need to be wearing a [[Ring of Charos]].",
+          "fetched_by": "fact-verifier (methods)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:10:00Z",
+      "independent": true,
+      "released": null,
+      "new_content": false
+    },
+    {
+      "fact_id": "F-1065",
+      "claim_id": "C-MTH-065",
+      "subject": "Werewolf Agility Course",
+      "attribute": "xp_per_hour_range",
+      "value": {
+        "lower_levels": {
+          "low": 50000,
+          "high": 65000
+        },
+        "level_80_plus": {
+          "high": 68600
+        }
+      },
+      "unit": "Agility XP/hour",
+      "statement": "Werewolf gives about 50,000-55,000 XP/h at lower levels per the training page (the course page says 60,000-65,000, and elsewhere 'up to 60,000'), and up to 67,000-68,600 XP/h from level 80.",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "caveat": "High concentration and timing; stick handed in every lap; the 94 laps/h maximum needs 80+ Agility. Sources disagree on low-level rates (training page 50-55k; course page 60-65k in the intro but 'up to 60,000' in its rates section); the range spans them. Fails on the deathslide (F-1066) cut the rate and are dangerous at the owner's 48 HP.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Agility training",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875",
+          "revid": 15369875,
+          "retrieved": "2026-11-20",
+          "quote": "With good concentration and timing, players can gain up to around 50,000–55,000 experience per hour at lower levels and 67,000–68,000 experience per hour at higher levels.",
+          "fetched_by": "fact-verifier (methods)"
+        },
+        {
+          "tier": "T2",
+          "title": "Werewolf Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15315234",
+          "revid": 15315234,
+          "retrieved": "2026-11-20",
+          "quote": "At lower Agility levels expect to get around 60,000–65,000 Agility experience per hour ... At level 80 and higher expect to be able to complete a maximum of 94 laps per hour ... resulting in 68,600 Agility experience per hour. At lower Agility levels expect to get up to 60,000",
+          "fetched_by": "fact-verifier (methods)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:10:00Z",
+      "independent": true,
+      "released": null,
+      "new_content": false
+    },
+    {
+      "fact_id": "F-1066",
+      "claim_id": "C-MTH-066",
+      "subject": "Werewolf Agility Course",
+      "attribute": "failure_damage",
+      "value": {
+        "obstacle": "Deathslide",
+        "damage": "upwards of 30, not scaled to Hitpoints",
+        "never_fail": "80 Agility and 80 Strength with weight 2 kg or lower"
+      },
+      "unit": null,
+      "statement": "The deathslide is the only failable Werewolf obstacle; a fall can deal 30+ damage that does not scale with Hitpoints, and it cannot be failed with 80 Agility, 80 Strength and 2 kg or less carried.",
+      "status": "VERIFIED",
+      "caveat": "Danger-critical; confirmed on two separate wiki pages and backed by a cited Mod Ash statement for the never-fail rule. No exact max hit is published ('upwards of 30'). The owner has 48 Hitpoints and 32 Strength, so the never-fail condition is far off.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Werewolf Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15315234",
+          "revid": 15315234,
+          "retrieved": "2026-11-20",
+          "quote": "This is the only failable obstacle of the course. A fall can deal upwards of 30 damage and does NOT scale with [[Hitpoints]], so players with low HP are at risk of [[death]]. ... With level 80 in Agility and [[Strength]] and a weight of 2 kg or lower, this obstacle will never be failed.",
+          "fetched_by": "fact-verifier (methods)"
+        },
+        {
+          "tier": "T2",
+          "title": "Agility",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15405162",
+          "revid": 15405162,
+          "retrieved": "2026-11-20",
+          "quote": "The only failable obstacle on this course is the notorious deathslide, which can hit over 30 damage.",
+          "fetched_by": "fact-verifier (methods)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:10:00Z",
+      "independent": true,
+      "released": null,
+      "new_content": false
+    },
+    {
+      "fact_id": "F-1068",
+      "claim_id": "C-MTH-068",
+      "subject": "Werewolf Agility Course",
+      "attribute": "location",
+      "value": "Near Canifis, south of Fenkenstrain's Castle; Fenkenstrain's Castle Teleport (Arceuus) then run south",
+      "unit": null,
+      "statement": "The Werewolf course is near Canifis, south of Fenkenstrain's Castle; one route is Fenkenstrain's Castle Teleport (Arceuus spellbook) and a run south.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Werewolf Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15315234",
+          "revid": 15315234,
+          "retrieved": "2026-11-20",
+          "quote": "|north = Fenkenstrain's Castle |west = Canifis ... *Use [[Fenkenstrain's Castle Teleport]] ([[Arceuus spells]]) and run south.",
+          "fetched_by": "fact-verifier (methods)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:10:00Z",
+      "independent": true,
+      "released": null,
+      "new_content": false
+    },
+    {
+      "fact_id": "F-1070",
+      "claim_id": "C-MTH-070",
+      "subject": "Wilderness Agility Course",
+      "attribute": "location",
+      "value": {
+        "wilderness_levels": "50-56",
+        "combat_area": "singles-plus, player killers can attack at any time"
+      },
+      "unit": null,
+      "statement": "The Wilderness course sits in Wilderness levels 50-56 in a singles-plus combat area where player killers can attack at any time, even mid-combat; level 18 and 25 skeletons roam the course and the dungeon below.",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "caveat": "Main-game description. Wilderness levels 50-56 come from one wiki infobox only (no second source found); the Agility training page independently describes it as deep Wilderness with a good chance of player killers. Whether Hardcore Worlds has PvP in the Wilderness was NOT verified (threat desk). At combat 45 the level 18/25 skeletons are below the aggression threshold question, which is the threat desk's to rule on.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Wilderness Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15351989",
+          "revid": 15351989,
+          "retrieved": "2026-11-20",
+          "quote": "|wilderness = 50-56 ... '''{{Colour|Red|The entire course is dangerous}}''', taking place in a [[singles-plus combat]] area that allows [[player killers]] to attack at any time ... multiple level 18 and 25 [[skeleton]]s roaming the course and underground respectively that will attack any player near them.",
+          "fetched_by": "fact-verifier (methods)"
+        },
+        {
+          "tier": "T2",
+          "title": "Agility training",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369875",
+          "revid": 15369875,
+          "retrieved": "2026-11-20",
+          "quote": "Because this method involves the deep [[Wilderness]], players should keep the risk to the minimum as there is a good chance of encountering [[player killing|player killers]].",
+          "fetched_by": "fact-verifier (methods)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:10:00Z",
+      "independent": true,
+      "released": null,
+      "new_content": false
+    },
+    {
+      "fact_id": "F-1113",
+      "claim_id": "C-MTH-113",
+      "subject": "The Graveyard (quest) Agility course",
+      "attribute": "release_status",
+      "value": {
+        "status": "unreleased",
+        "scheduled_release": "2026-11-25"
+      },
+      "unit": null,
+      "statement": "The Graveyard is not yet released; it is scheduled for 25 November 2026 (Jagex 18 Nov 2026: 'coming next week') and unlocks a new Agility course. Do not route it.",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "caveat": "UPCOMING ONLY, not routable. The date comes from the wiki (revision of 2026-11-20; the 2026-11-19 revision said 'last week of November'); Jagex's T1 post says only 'next week', consistent with 25 Nov. Dates and details can still slip.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "The Graveyard",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409628",
+          "revid": 15409628,
+          "retrieved": "2026-11-20",
+          "quote": "'''The Graveyard''' is an [[Upcoming updates|upcoming]] quest, scheduled for release on [[25 November]] [[2026]].",
+          "fetched_by": "fact-verifier (methods)"
+        },
+        {
+          "tier": "T1",
+          "title": "Update:Quest Month Week 3 & TFA Practice Mode",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406871",
+          "revid": 15406871,
+          "retrieved": "2026-11-20",
+          "published": "2026-11-18",
+          "quote": "That's right, The Graveyard quest is coming next week! See you next week for our next Fremennik quest, bringing a new Agility course!",
+          "fetched_by": "fact-verifier (methods)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:10:00Z",
+      "independent": true,
+      "released": null,
+      "new_content": true
+    },
+    {
+      "fact_id": "F-1115",
+      "claim_id": "C-MTH-115",
+      "subject": "The Graveyard (quest) Agility course",
+      "attribute": "xp_per_hour_range",
+      "value": {
+        "high_intensity": {
+          "low": 65000,
+          "high": 75000
+        },
+        "low_intensity": {
+          "low": 55000,
+          "high": 60000
+        },
+        "marks_per_hour_high_intensity": "30+",
+        "marks_per_hour_low_intensity": {
+          "low": 14,
+          "high": 15
+        }
+      },
+      "unit": "Agility XP/hour (announced)",
+      "statement": "Jagex announced 65,000-75,000 XP/h (30+ marks/h) for the high-intensity Graveyard route, assuming tick-perfect play, and about 55,000-60,000 XP/h (14-15 marks/h) for the slower route.",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "caveat": "Pre-release developer estimates, UPCOMING ONLY. Jagex says the high end assumes tick-perfect play and real rates will be lower for most players ('comparable to Ardougne rooftops'). The low-intensity figures were flagged 'subject to change', and the 18 Sept follow-up said the AFK option might get reduced XP.",
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:The Graveyard - Rewards Blog",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15363564",
+          "revid": 15363564,
+          "retrieved": "2026-11-20",
+          "published": "2026-09-14",
+          "quote": "At the top end, you can expect to achieve 65,000 - 75,000 Agility XP per hour. ... You'll also see 30+ Marks of Grace per hour at the top end ... '''Please note these rates are subject to change, especially with our feedback from Sept 18th.''' If you're taking the slower route, you can expect around 55,000 - 60,000 Agility XP per hour. ... approximately 14-15 Marks of Grace per hour",
+          "fetched_by": "fact-verifier (methods)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:10:00Z",
+      "independent": true,
+      "released": null,
+      "new_content": true
+    },
+    {
+      "fact_id": "F-1116",
+      "claim_id": "C-MTH-116",
+      "subject": "Summer pie",
+      "attribute": "boost_amount",
+      "value": {
+        "agility_boost_per_bite": 5,
+        "bites": 2,
+        "heal_total": 22,
+        "run_energy_restored": "10%"
+      },
+      "unit": "Agility levels",
+      "statement": "Each bite of a summer pie (two bites) boosts Agility by +5 and heals 11 (22 total), and the pie restores 10% run energy.",
+      "status": "VERIFIED",
+      "caveat": "Whether a second bite stacks above +5 was not verified; plan on +5.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Summer pie",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15369837",
+          "revid": 15369837,
+          "retrieved": "2026-11-20",
+          "quote": "'''Summer pie''' is a type of [[pie]] that restores 22 [[Hitpoints]] in total, 2 bites each healing for 11. It also restores 10% [[run energy]], and grants a +5 [[temporary skill boost]] to [[Agility]] per bite.",
+          "fetched_by": "fact-verifier (methods)"
+        },
+        {
+          "tier": "T2",
+          "title": "Brimhaven Agility Arena",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15371976",
+          "revid": 15371976,
+          "retrieved": "2026-11-20",
+          "quote": "**[[Summer pie]]s are recommended, as those restore run energy and boost the Agility stat by +5",
+          "fetched_by": "fact-verifier (methods)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:10:00Z",
+      "independent": true,
+      "released": null,
+      "new_content": false
+    },
+    {
+      "fact_id": "F-1121",
+      "claim_id": "C-MTH-121",
+      "subject": "Graceful outfit",
+      "attribute": "cost_and_vendor",
+      "value": {
+        "marks_of_grace": 260,
+        "vendor": "Grace, Rogues' Den beneath The Toad and Chicken, Burthorpe"
+      },
+      "unit": null,
+      "statement": "A full Graceful set costs 260 marks of grace from Grace in the Rogues' Den beneath The Toad and Chicken in Burthorpe.",
+      "status": "VERIFIED",
+      "caveat": "I re-summed piece prices: 35+55+60+30+40+40 = 260. The Graveyard rewards blog (14 Sep 2026, T1) proposed a Graceful rework (one-time unlock, GP for duplicates); the current Graceful page (revision of 16 Nov 2026) still shows the 260-mark system, so it has not shipped as of today. Risk of visiting the Rogues' Den on Hardcore Worlds is for the threat desk.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Graceful outfit",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403851",
+          "revid": 15403851,
+          "retrieved": "2026-11-20",
+          "quote": "can be bought from [[Grace]] found in the [[Rogues' Den]] beneath [[The Toad and Chicken]] in [[Burthorpe]]. ... Buying the entire set costs 260 marks.",
+          "fetched_by": "fact-verifier (methods)"
+        },
+        {
+          "tier": "T2",
+          "title": "Rooftop Agility Courses",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15337972",
+          "revid": 15337972,
+          "retrieved": "2026-11-20",
+          "quote": "Buying the full [[graceful outfit]] costs 260 marks of grace.",
+          "fetched_by": "fact-verifier (methods)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:10:00Z",
+      "independent": true,
+      "released": null,
+      "new_content": false
+    },
+    {
+      "fact_id": "F-1123",
+      "claim_id": "C-MTH-123",
+      "subject": "Agility (general mechanics)",
+      "attribute": "weight_effect_on_success",
+      "value": "Weight does not affect success chance on most obstacles (exception: Werewolf deathslide)",
+      "unit": null,
+      "statement": "Weight does not affect obstacle success chance on most courses; the Werewolf deathslide is a coded exception.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Agility",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15405162",
+          "revid": 15405162,
+          "retrieved": "2026-11-20",
+          "quote": "[[Weight]] does '''not''' affect the chance of success for most obstacles. ... However, there are a few obstacles which were differently coded for certain quests and activities, such as the Zip line from the [[Werewolf Agility Course]].",
+          "fetched_by": "fact-verifier (methods)"
+        },
+        {
+          "tier": "T2",
+          "title": "Werewolf Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15315234",
+          "revid": 15315234,
+          "retrieved": "2026-11-20",
+          "quote": "This is one of the very few Agility obstacles where the player's weight does affect the success rate of the obstacle.",
           "fetched_by": "fact-verifier (methods)"
         }
       ],
@@ -12821,6 +13439,138 @@
       "new_content": false
     },
     {
+      "fact_id": "F-2085",
+      "claim_id": "C-QST-085",
+      "subject": "Monkey Madness I",
+      "attribute": "defence_xp_reward",
+      "value": {
+        "if_daero_training_declined": 0,
+        "if_accepted_focus_att_def": 35000,
+        "if_accepted_focus_str_hp": 20000
+      },
+      "unit": "xp",
+      "statement": "Monkey Madness I's only Defence XP comes from Daero's optional training after the quest: 35,000 to Attack and Defence and 20,000 to Strength and Hitpoints, or the reverse. Since 30 November 2022 you can return to Ape Atoll without accepting the training. A zerker can therefore take 0 Defence XP. If the training is accepted, Defence gets at least 20,000 (35,000 = level 39 by tools/xp.py).",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "caveat": "Build-critical: the route must say to decline (ignore) Daero's training. Declining means heavy ballistae cannot be used later, which does not affect Agility. Confirmed by a Jagex T1 post.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Monkey Madness I",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374574",
+          "revid": 15374574,
+          "retrieved": "2026-11-20T07:08:13Z",
+          "quote": "'''Note:''' while it was previously impossible to return to Ape Atoll after quest completion without receiving experience from Daero, an [[Update:The Garden of Death & More#Poll 77 Changes|update]] in November 2022 now allows the training to be ignored before returning.",
+          "fetched_by": "fact-verifier (quests A)"
+        },
+        {
+          "tier": "T1",
+          "title": "Update:The Garden of Death & More",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=14399190",
+          "revid": 14399190,
+          "retrieved": "2026-11-20T07:08:21Z",
+          "published": "2022-11-30",
+          "quote": "'''Poll 77 Changes''' * Players can now get back to Ape Atoll without accepting Daero's Training, after completing Monkey Madness I.",
+          "fetched_by": "fact-verifier (quests A)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:11:39Z",
+      "independent": true,
+      "released": null,
+      "new_content": false
+    },
+    {
+      "fact_id": "F-2091",
+      "claim_id": "C-QST-091",
+      "subject": "Werewolf Agility Course",
+      "attribute": "hazard_deathslide",
+      "value": "can hit over 30 damage",
+      "statement": "On the Werewolf Agility Course the deathslide is the only obstacle that can be failed. A fall can deal over 30 damage, which does not scale with Hitpoints, and it is the only Agility obstacle that can deal damage past the player's Hitpoints. Higher Agility and Strength and lower weight improve success; with Agility and Strength 80+ and weight 2 kg or less it never fails.",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "caveat": "Danger-critical for a 48-HP Hardcore Worlds character: a deathslide fail can kill. The owner's Strength is 32 (far from 80). No head-slot item may be worn on the deathslide. The Threat desk must rate this before routing.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Werewolf Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15315234",
+          "revid": 15315234,
+          "retrieved": "2026-11-20T07:08:46Z",
+          "quote": "The deathslide is the only obstacle that can be failed by the player, which can hit over 30 damage. ... A fall can deal upwards of 30 damage and does NOT scale with [[Hitpoints]], so players with low HP are at risk of [[death]]. ... *The deathslide is the only agility obstacle that can do damage past the player's [[Hitpoints]].",
+          "fetched_by": "fact-verifier (quests A)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:11:39Z",
+      "independent": true,
+      "released": null,
+      "new_content": false
+    },
+    {
+      "fact_id": "F-2092",
+      "claim_id": "C-QST-092",
+      "subject": "Creature of Fenkenstrain",
+      "attribute": "ring_of_charos_reward",
+      "value": true,
+      "statement": "Creature of Fenkenstrain rewards the Ring of Charos, which gives access to the Werewolf Agility Course.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Creature of Fenkenstrain",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15385731",
+          "revid": 15385731,
+          "retrieved": "2026-11-20T07:08:57Z",
+          "quote": "*The [[Ring of Charos]], which allows access to the [[Werewolf Agility Course]], and, when activated during [[Garden of Tranquillity]], reduced cost to many transport links.",
+          "fetched_by": "fact-verifier (quests A)"
+        },
+        {
+          "tier": "T2",
+          "title": "Werewolf Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15315234",
+          "revid": 15315234,
+          "retrieved": "2026-11-20T07:08:46Z",
+          "quote": "*Wear a [[Ring of Charos]] to access the course.",
+          "fetched_by": "fact-verifier (quests A)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:11:39Z",
+      "independent": true,
+      "released": null,
+      "new_content": false
+    },
+    {
+      "fact_id": "F-2095",
+      "claim_id": "C-QST-095",
+      "subject": "Creature of Fenkenstrain",
+      "attribute": "agility_xp_reward",
+      "value": 0,
+      "unit": "xp",
+      "statement": "Creature of Fenkenstrain gives no Agility XP; its value is access to the Werewolf course. It is not in the Agility XP table.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Creature of Fenkenstrain",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15385731",
+          "revid": 15385731,
+          "retrieved": "2026-11-20T07:08:57Z",
+          "quote": "|rewards = *{{SCP|Thieving|1,000}} [[Thieving]] experience",
+          "fetched_by": "fact-verifier (quests A)"
+        },
+        {
+          "tier": "T2",
+          "title": "Quest experience rewards",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+          "revid": 15408569,
+          "retrieved": "2026-11-20T07:03:34Z",
+          "quote": "Agility table (27 rows) does not include Creature of Fenkenstrain",
+          "fetched_by": "fact-verifier (quests A)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:11:39Z",
+      "independent": true,
+      "released": null,
+      "new_content": false
+    },
+    {
       "fact_id": "F-2099",
       "claim_id": "C-QST-099",
       "subject": "Hallowed Sepulchre",
@@ -12988,6 +13738,163 @@
       "new_content": false
     },
     {
+      "fact_id": "F-2105",
+      "claim_id": "C-QST-105",
+      "subject": "Sins of the Father",
+      "attribute": "combat_encounters_roster",
+      "value": [
+        "Kroy 133",
+        "Nail beast 143 and 67 (x2)",
+        "Vampyre Juvinate 119 (x2)",
+        "Mutated Bloodveld 123",
+        "Damien Leucurte 204",
+        "Vanstrom Klause 459"
+      ],
+      "statement": "Sins of the Father's listed kills are Kroy (133), nail beasts (143, and 67 twice), two Vampyre Juvinates (119), a Mutated Bloodveld (123), Damien Leucurte (204) and Vanstrom Klause (459).",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "caveat": "Roster only. Max hits and instance status were not researched because the quest is far out of reach (Combat 95 recommended).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Sins of the Father",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15380480",
+          "revid": 15380480,
+          "retrieved": "2026-11-20T07:09:18Z",
+          "quote": "|kills = *[[Kroy]] (level 133) *[[Nail beast]] (level 143 & 67 twice) *[[Vampyre Juvinate#Level 119|Vampyre Juvinate]] (level 119) twice *[[Mutated Bloodveld]] (level 123) *[[Damien Leucurte]] (level 204) *[[Vanstrom Klause]] (level 459)",
+          "fetched_by": "fact-verifier (quests A)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:11:39Z",
+      "independent": true,
+      "released": null,
+      "new_content": false
+    },
+    {
+      "fact_id": "F-2107",
+      "claim_id": "C-QST-107",
+      "subject": "Song of the Elves",
+      "attribute": "agility_xp_reward",
+      "value": 40000,
+      "unit": "xp",
+      "statement": "Song of the Elves rewards 40,000 Agility XP on completion (fixed, not a lamp).",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Song of the Elves",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15386173",
+          "revid": 15386173,
+          "retrieved": "2026-11-20T07:09:32Z",
+          "quote": "*{{SCP|Agility|40,000|link=yes}} experience",
+          "fetched_by": "fact-verifier (quests A)"
+        },
+        {
+          "tier": "T2",
+          "title": "Quest experience rewards",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+          "revid": 15408569,
+          "retrieved": "2026-11-20T07:03:34Z",
+          "quote": "|[[Song of the Elves]] |Yes||{{+=|agility|40,000|echo=2}}||{{SCP|Agility|70|sort=yes}}",
+          "fetched_by": "fact-verifier (quests A)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:11:39Z",
+      "independent": true,
+      "released": null,
+      "new_content": false
+    },
+    {
+      "fact_id": "F-2109",
+      "claim_id": "C-QST-109",
+      "subject": "Song of the Elves",
+      "attribute": "skill_requirements_vs_owner",
+      "value": {
+        "Agility": [
+          70,
+          57
+        ],
+        "Construction": [
+          70,
+          23
+        ],
+        "Farming": [
+          70,
+          5
+        ],
+        "Herblore": [
+          70,
+          1
+        ],
+        "Hunter": [
+          70,
+          9
+        ],
+        "Mining": [
+          70,
+          42
+        ],
+        "Smithing": [
+          70,
+          31
+        ],
+        "Woodcutting": [
+          70,
+          40
+        ]
+      },
+      "statement": "Song of the Elves needs level 70 (not boostable) in Agility, Construction, Farming, Herblore, Hunter, Mining, Smithing and Woodcutting. The owner meets none of these.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Song of the Elves",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15386173",
+          "revid": 15386173,
+          "retrieved": "2026-11-20T07:09:32Z",
+          "quote": "|requirements = *{{SCP|Agility|70|link=yes}} {{Boostable|no}} *{{SCP|Construction|70|link=yes}} {{Boostable|no}} *{{SCP|Farming|70|link=yes}} {{Boostable|no}} *{{SCP|Herblore|70|link=yes}} {{Boostable|no}} *{{SCP|Hunter|70|link=yes}} {{Boostable|no}} *{{SCP|Mining|70|link=yes}} {{Boostable|no}} *{{SCP|Smithing|70|link=yes}} {{Boostable|no}} *{{SCP|Woodcutting|70|link=yes}} {{Boostable|no}}",
+          "fetched_by": "fact-verifier (quests A)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:11:39Z",
+      "independent": true,
+      "released": null,
+      "new_content": false
+    },
+    {
+      "fact_id": "F-2129",
+      "claim_id": "C-QST-129",
+      "subject": "Darkness of Hallowvale",
+      "attribute": "agility_xp_reward",
+      "value": 7000,
+      "unit": "xp",
+      "statement": "Darkness of Hallowvale rewards 7,000 Agility XP on completion (fixed, not a lamp).",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Darkness of Hallowvale",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15355656",
+          "revid": 15355656,
+          "retrieved": "2026-11-20T07:10:03Z",
+          "quote": "*{{SCP|Agility|7,000}} [[Agility]] [[experience]]",
+          "fetched_by": "fact-verifier (quests A)"
+        },
+        {
+          "tier": "T2",
+          "title": "Quest experience rewards",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+          "revid": 15408569,
+          "retrieved": "2026-11-20T07:03:34Z",
+          "quote": "|[[Darkness of Hallowvale]] |Yes||{{+=|agility|7,000|echo=2}}||{{SCP|Agility|26|sort=yes}}",
+          "fetched_by": "fact-verifier (quests A)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:11:39Z",
+      "independent": true,
+      "released": null,
+      "new_content": false
+    },
+    {
       "fact_id": "F-2132",
       "claim_id": "C-QST-132",
       "subject": "Darkness of Hallowvale",
@@ -13022,6 +13929,45 @@
       "verified_at": "2026-11-20T07:11:39Z",
       "independent": true,
       "released": null,
+      "new_content": false
+    },
+    {
+      "fact_id": "F-2500",
+      "claim_id": "C-QST-135",
+      "subject": "Darkness of Hallowvale",
+      "attribute": "agility_usable_lamp",
+      "value": {
+        "tome_uses": 3,
+        "xp_each": 2000,
+        "min_skill_level": 30
+      },
+      "unit": "xp",
+      "statement": "Darkness of Hallowvale's tome of experience grants 2,000 XP to any three skills at level 30 or over (the same skill may be chosen), i.e. up to 6,000 Agility XP on top of the fixed 7,000 Agility XP.",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "caveat": "Zerker build: the prerequisite chain (In Aid of the Myreque <- In Search of the Myreque <- Nature Spirit) carries fixed Defence XP of 2,000 + 600 + 2,000 = 4,600 per the wiki Quest experience rewards Defence table; none of those three are in the owner's quest list. The quest itself also needs Strength 40 and Crafting 32 (both unboostable) and Mining 20; the owner has Strength 32 and Crafting 21. The tome must never be read into Defence.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Darkness of Hallowvale",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15355656",
+          "revid": 15355656,
+          "retrieved": "2026-11-20",
+          "quote": "*[[Tome of Experience (Darkness of Hallowvale)|Tome of experience]], granting 2,000 experience to any three skills of the player's choosing (level 30 or over). Can be the same skill.",
+          "fetched_by": "fact-verifier"
+        },
+        {
+          "tier": "T2",
+          "title": "Quest experience rewards",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+          "revid": 15408569,
+          "retrieved": "2026-11-20",
+          "quote": "|[[Nature Spirit]]\n|Yes||{{+=|defence|2,000|echo=2}}|| -",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-20T07:10:01Z",
+      "independent": true,
+      "released": "2006-09-04",
       "new_content": false
     },
     {
@@ -13157,6 +14103,207 @@
       "new_content": false
     },
     {
+      "fact_id": "F-2546",
+      "claim_id": "C-QST-181",
+      "subject": "Mourning's End Part II",
+      "attribute": "agility_xp_reward",
+      "value": 60000,
+      "unit": "xp",
+      "statement": "Mourning's End Part II rewards a fixed 60,000 Agility XP (its only XP reward).",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Mourning's End Part II",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15351344",
+          "revid": 15351344,
+          "retrieved": "2026-11-20",
+          "quote": "* {{SCP|Agility|60,000}} [[Agility]] [[experience]]",
+          "fetched_by": "fact-verifier"
+        },
+        {
+          "tier": "T2",
+          "title": "Quest experience rewards",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+          "revid": 15408569,
+          "retrieved": "2026-11-20",
+          "quote": "|[[Mourning's End Part II]]\n|Yes||{{+=|agility|60,000|echo=2}}||{{SCP|Agility|56|sort=yes}}",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-20T07:10:01Z",
+      "independent": true,
+      "released": "2005-10-17",
+      "new_content": false
+    },
+    {
+      "fact_id": "F-2552",
+      "claim_id": "C-QST-187",
+      "subject": "Monkey Madness II",
+      "attribute": "agility_xp_reward",
+      "value": 60000,
+      "unit": "xp",
+      "statement": "Monkey Madness II rewards a fixed 60,000 Agility XP.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Monkey Madness II",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374569",
+          "revid": 15374569,
+          "retrieved": "2026-11-20",
+          "quote": "*{{SCP|Agility|60,000}} [[Agility]] experience",
+          "fetched_by": "fact-verifier"
+        },
+        {
+          "tier": "T2",
+          "title": "Quest experience rewards",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+          "revid": 15408569,
+          "retrieved": "2026-11-20",
+          "quote": "|[[Monkey Madness II]]\n|Yes||{{+=|agility|60,000|echo=2}}||{{SCP|Agility|55|sort=yes}}",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-20T07:10:01Z",
+      "independent": true,
+      "released": "2016-05-06",
+      "new_content": false
+    },
+    {
+      "fact_id": "F-2611",
+      "claim_id": "C-QST-246",
+      "subject": "The Graveyard",
+      "attribute": "release_status",
+      "value": {
+        "status": "unreleased",
+        "scheduled": "2026-11-25"
+      },
+      "unit": null,
+      "statement": "As of 2026-11-20, The Graveyard is unreleased (the wiki page is tagged Future Content) and scheduled for 2026-11-25. Jagex's 18 November post says it is 'coming next week'. It must not be routed; list it under 'upcoming' only.",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "caveat": "Release dates can slip. Re-check on or after 2026-11-25 before any routing.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "The Graveyard",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409628",
+          "revid": 15409628,
+          "retrieved": "2026-11-20",
+          "quote": "'''The Graveyard''' is an [[Upcoming updates|upcoming]] quest, scheduled for release on [[25 November]] [[2026]].",
+          "fetched_by": "fact-verifier"
+        },
+        {
+          "tier": "T1",
+          "title": "Update:Quest Month Week 3 & TFA Practice Mode",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406871",
+          "revid": 15406871,
+          "retrieved": "2026-11-20",
+          "quote": "That's right, The Graveyard quest is coming next week! See you next week for our next Fremennik quest, bringing a new Agility course!",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-20T07:10:01Z",
+      "independent": true,
+      "released": null,
+      "new_content": true
+    },
+    {
+      "fact_id": "F-2614",
+      "claim_id": "C-QST-249",
+      "subject": "The Graveyard",
+      "attribute": "announced_requirements",
+      "value": {
+        "Sailing": [
+          65,
+          30
+        ],
+        "Agility": [
+          65,
+          57
+        ],
+        "Woodcutting": [
+          56,
+          40
+        ],
+        "Fletching": [
+          54,
+          9
+        ],
+        "quests": [
+          "The Fremennik Exiles",
+          "Olaf's Quest",
+          "Pandemonium (done)"
+        ]
+      },
+      "unit": null,
+      "statement": "The Graveyard's announced requirements are Sailing 65, Agility 65, Woodcutting 56 and Fletching 54, plus The Fremennik Exiles, Olaf's Quest and Pandemonium (done); the owner meets none of the skills. The chain includes The Fremennik Trials (2,812.4), Heroes' Quest (3,075), Dragon Slayer I (18,650) and Olaf's Quest (12,000) fixed Defence XP, 36,537.4 in total (about Defence 39).",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "caveat": "Unreleased; requirements may change at release. Boostability is not stated. The Defence total (xp.py level 36537 = 39) is within the cap of 50 on its own but must be added to every other Defence source on the route.",
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Summer Campfire 2026",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15220685",
+          "revid": 15220685,
+          "retrieved": "2026-11-20",
+          "quote": "Requirements\n* Completion of: Olaf's Quest, The Fremennik Exiles, Pandemonium\n* Level 65 Sailing\n* Level 65 Agility\n* Level 56 Woodcutting\n* Level 54 Fletching",
+          "fetched_by": "fact-verifier"
+        },
+        {
+          "tier": "T2",
+          "title": "Quest experience rewards",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+          "revid": 15408569,
+          "retrieved": "2026-11-20",
+          "quote": "|[[Olaf's Quest]]\n|Yes||{{+=|defence|12,000|echo=2}}|| -",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-20T07:10:01Z",
+      "independent": true,
+      "released": null,
+      "new_content": true
+    },
+    {
+      "fact_id": "F-2615",
+      "claim_id": "C-QST-250",
+      "subject": "The Graveyard",
+      "attribute": "announced_defence_exposure",
+      "value": {
+        "fixed_defence_xp": 0,
+        "lamps": "2 x 75,000 XP in Attack, Strength, Defence, Hitpoints or Prayer (choosable)"
+      },
+      "unit": null,
+      "statement": "The Graveyard announces no fixed Defence XP; its two 75,000 XP lamps can go to Attack, Strength, Defence, Hitpoints or Prayer and must not go to Defence for this build.",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "caveat": "Unreleased; reward details may change at release.",
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Summer Campfire 2026",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15220685",
+          "revid": 15220685,
+          "retrieved": "2026-11-20",
+          "quote": "* 10,000 Fletching XP\n* 2 Lamps offering 75,000 XP in Attack, Strength, Defence, Hitpoints, or Prayer.",
+          "fetched_by": "fact-verifier"
+        },
+        {
+          "tier": "T2",
+          "title": "The Graveyard",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409628",
+          "revid": 15409628,
+          "retrieved": "2026-11-20",
+          "quote": "*2 lamps offering 75,000 XP in Attack, Strength, Defence, Hitpoints, or Prayer",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-20T07:10:01Z",
+      "independent": true,
+      "released": null,
+      "new_content": true
+    },
+    {
       "fact_id": "F-2619",
       "claim_id": "C-QST-254",
       "subject": "Seers' Village Rooftop Course",
@@ -13245,6 +14392,49 @@
       "new_content": false
     },
     {
+      "fact_id": "F-3001",
+      "claim_id": "C-THR-001",
+      "subject": "Hardcore Worlds",
+      "attribute": "hw_death_ruleset",
+      "value": "Hardcore Group Ironman death ruleset",
+      "unit": null,
+      "statement": "Hardcore Worlds use the Hardcore Group Ironman death ruleset; Jagex says to expect 99% of deaths to count. Confirmed in both Jagex posts (22 Oct and 4 Nov 2026) and the wiki page.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds Are Coming On November 4th",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410",
+          "revid": 15379410,
+          "retrieved": "2026-11-20T02:23:03Z",
+          "published": "2026-10-22",
+          "quote": "Hardcore worlds will use the [...] Hardcore Group Ironman ruleset for death which is much less forgiving! [...] you should go in with the expectation that 99% of deaths will land you right back in Death's office",
+          "fetched_by": "fact-verifier (threats)"
+        },
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds - OUT TODAY",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+          "revid": 15397724,
+          "retrieved": "2026-11-20T02:23:04Z",
+          "published": "2026-11-04",
+          "quote": "we're following the Death Rules from [...] Hardcore Group Ironman which means some deaths you might think are safe like the Fight Caves, Inferno and even Barbarian Assault are no longer",
+          "fetched_by": "fact-verifier (threats)"
+        },
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-20T02:23:13Z",
+          "quote": "Hardcore Worlds follows the same death ruleset as [[Group_Ironman_Mode#Hardcore_Group_Ironman|Hardcore Group Ironman]].",
+          "fetched_by": "fact-verifier (threats)"
+        }
+      ],
+      "verified_at": "2026-11-20T02:23:14Z",
+      "independent": true
+    },
+    {
       "fact_id": "F-3003",
       "claim_id": "C-THR-003",
       "subject": "Hallowed Sepulchre",
@@ -13313,6 +14503,168 @@
       "independent": true
     },
     {
+      "fact_id": "F-3006",
+      "claim_id": "C-THR-006",
+      "subject": "Werewolf Agility Course",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "The Werewolf Agility Course is not on the T1 safe list, so a death there (for example a deathslide fall) is an official death on Hardcore Worlds.",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "caveat": "This is derived by exclusion from the complete T1 safe list. The course page itself warns that a deathslide fall can cause death at low HP.",
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds - OUT TODAY",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+          "revid": 15397724,
+          "retrieved": "2026-11-20T02:23:04Z",
+          "published": "2026-11-04",
+          "quote": "That doesn't mean there aren't exceptions though as the following minigames are safe:",
+          "fetched_by": "fact-verifier (threats)"
+        },
+        {
+          "tier": "T2",
+          "title": "Werewolf Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15315234",
+          "revid": 15315234,
+          "retrieved": "2026-11-20T07:03:31Z",
+          "quote": "A fall can deal upwards of 30 damage and does NOT scale with [[Hitpoints]], so players with low HP are at risk of [[death]].",
+          "fetched_by": "fact-verifier (threats)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:03:32Z",
+      "independent": true
+    },
+    {
+      "fact_id": "F-3011",
+      "claim_id": "C-THR-011",
+      "subject": "Wilderness Agility Course",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "A death at the Wilderness Agility Course, to a player killer or to a monster, is an official death on Hardcore Worlds. PvP deaths follow the normal Wilderness item rules, and Jagex says PK deaths make characters 'sit permanently'.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds Are Coming On November 4th",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410",
+          "revid": 15379410,
+          "retrieved": "2026-11-20T02:23:03Z",
+          "published": "2026-10-22",
+          "quote": "For those of you PKing out there for added risk, death proceeds as normal in the Wilderness so you'll receive the same items you'd usually get in the main game. The Wilderness is even more dangerous than ever before, as you'll be making characters sit ''permanently''.",
+          "fetched_by": "fact-verifier (threats)"
+        },
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-20T02:23:13Z",
+          "quote": "For most deaths the player will keep 3 items (or 4 if [[Protect Item]] is enabled). As for [[PvP]] deaths, all of the usual rules within the [[Wilderness]] apply.",
+          "fetched_by": "fact-verifier (threats)"
+        }
+      ],
+      "verified_at": "2026-11-20T02:23:15Z",
+      "independent": true
+    },
+    {
+      "fact_id": "F-3012",
+      "claim_id": "C-THR-012",
+      "subject": "Random events",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "A death inside a Random Event is an official death on Hardcore Worlds. Both Jagex posts list 'Random Events' as unsafe, which is a T1 confirmation the researcher did not cite. This matters for long Agility sessions.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds Are Coming On November 4th",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410",
+          "revid": 15379410,
+          "retrieved": "2026-11-20T02:23:03Z",
+          "published": "2026-10-22",
+          "quote": "Here's the full list of UNSAFE activities that are usually safe in Hardcore Ironman: [...] * Random Events",
+          "fetched_by": "fact-verifier (threats)"
+        },
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds - OUT TODAY",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+          "revid": 15397724,
+          "retrieved": "2026-11-20T02:23:04Z",
+          "published": "2026-11-04",
+          "quote": "* Random Events",
+          "fetched_by": "fact-verifier (threats)"
+        },
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-20T02:23:13Z",
+          "quote": "* [[Random Event]]",
+          "fetched_by": "fact-verifier (threats)"
+        },
+        {
+          "tier": "T2",
+          "title": "Group Ironman Mode",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15401984",
+          "revid": 15401984,
+          "retrieved": "2026-11-20T02:23:16Z",
+          "quote": "* [[Random Event]]",
+          "fetched_by": "fact-verifier (threats)"
+        }
+      ],
+      "verified_at": "2026-11-20T02:23:17Z",
+      "independent": true
+    },
+    {
+      "fact_id": "F-3013",
+      "claim_id": "C-THR-013",
+      "subject": "Player-owned house",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "A death inside a player-owned house is an official death on Hardcore Worlds. This matters if the POH pool or POH fairy ring is used between laps.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds Are Coming On November 4th",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410",
+          "revid": 15379410,
+          "retrieved": "2026-11-20T02:23:03Z",
+          "published": "2026-10-22",
+          "quote": "* Within the Player-owned House ''(PoH)''",
+          "fetched_by": "fact-verifier (threats)"
+        },
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds - OUT TODAY",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+          "revid": 15397724,
+          "retrieved": "2026-11-20T02:23:04Z",
+          "published": "2026-11-04",
+          "quote": "* Within the Player-owned House ''(PoH)''",
+          "fetched_by": "fact-verifier (threats)"
+        },
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-20T02:23:13Z",
+          "quote": "* Death within a [[player-owned house]]",
+          "fetched_by": "fact-verifier (threats)"
+        }
+      ],
+      "verified_at": "2026-11-20T02:23:15Z",
+      "independent": true
+    },
+    {
       "fact_id": "F-3014",
       "claim_id": "C-THR-014",
       "subject": "The Fremennik Trials (Agility XP quest)",
@@ -13344,6 +14696,39 @@
         }
       ],
       "verified_at": "2026-11-20T02:23:15Z",
+      "independent": true
+    },
+    {
+      "fact_id": "F-3016",
+      "claim_id": "C-THR-016",
+      "subject": "Escape crystal",
+      "attribute": "escape_item_availability",
+      "value": "1 free at start; 10,000 coins each from Death, Rick (Wizards' Tower) or the Mysterious Stranger",
+      "unit": null,
+      "statement": "Every Hardcore Worlds character starts with one escape crystal. More cost 10,000 coins each from Death, Rick (Wizards' Tower) or the Mysterious Stranger (Ver Sinhaza).",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds - OUT TODAY",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+          "revid": 15397724,
+          "retrieved": "2026-11-20T02:23:04Z",
+          "published": "2026-11-04",
+          "quote": "First is that you can buy Escape Crystals from him for 10,000 coins. [...] Luckily for you, starting on Hardcore Worlds gives you one for free!",
+          "fetched_by": "fact-verifier (threats)"
+        },
+        {
+          "tier": "T2",
+          "title": "Escape crystal",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409296",
+          "revid": 15409296,
+          "retrieved": "2026-11-20T02:23:31Z",
+          "quote": "It can be purchased for 10,000 coins from [[Death]] in any of the [[Death's Office]]s, [[Rick (Wizards' Tower)|Rick]] on the {{FloorNumber|uk=1}} of the [[Wizards' Tower]], and the [[Mysterious Stranger]] in [[Ver Sinhaza]].",
+          "fetched_by": "fact-verifier (threats)"
+        }
+      ],
+      "verified_at": "2026-11-20T02:23:32Z",
       "independent": true
     },
     {
@@ -13407,6 +14792,50 @@
       "independent": true
     },
     {
+      "fact_id": "F-3020",
+      "claim_id": "C-THR-020",
+      "subject": "Escape crystal",
+      "attribute": "status_effect_clearing",
+      "value": "clears poison, burn and other status effects when activated (announced)",
+      "unit": null,
+      "statement": "Jagex announced (22 Oct 2026) that escape crystals would clear poison, burn and other status effects when activated.",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "caveat": "Only the announcement is verified. It is worded as an intention ('we'd let'). The item page changelog (rev 15409296) records only the 3 Nov 2026 price cut and the Death shop. The 3 Nov T1 patch notes (Update:Quest Month Kick Off, TFA Tweaks & More, rev 15396686) do not mention status clearing. Do not rely on the crystal to cure poison or burn.",
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds Are Coming On November 4th",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379410",
+          "revid": 15379410,
+          "retrieved": "2026-11-20T02:23:03Z",
+          "published": "2026-10-22",
+          "quote": "Finally, we'd let the Crystals clear poison, burn or any other status effects if activated",
+          "fetched_by": "fact-verifier (threats)"
+        },
+        {
+          "tier": "T2",
+          "title": "Escape crystal",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15409296",
+          "revid": 15409296,
+          "retrieved": "2026-11-20T02:23:31Z",
+          "quote": "|date = 3 November 2026 |update = Quest Month Kick Off, TFA Tweaks & More |change = * The item's [[value]] was decreased from 75,000 to 10,000. * The item can now be bought from [[Death (NPC)|Death]].",
+          "fetched_by": "fact-verifier (threats)"
+        },
+        {
+          "tier": "T1",
+          "title": "Update:Quest Month Kick Off, TFA Tweaks & More",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396686",
+          "revid": 15396686,
+          "retrieved": "2026-11-20T02:23:40Z",
+          "published": "2026-11-03",
+          "quote": "(searched for Escape/crystal/poison/burn/status: no escape-crystal status-clearing change found)",
+          "fetched_by": "fact-verifier (threats)"
+        }
+      ],
+      "verified_at": "2026-11-20T02:23:41Z",
+      "independent": true
+    },
+    {
       "fact_id": "F-3021",
       "claim_id": "C-THR-021",
       "subject": "Disconnect during combat",
@@ -13455,6 +14884,61 @@
         }
       ],
       "verified_at": "2026-11-20T02:23:34Z",
+      "independent": true
+    },
+    {
+      "fact_id": "F-3023",
+      "claim_id": "C-THR-023",
+      "subject": "Wilderness Agility Course",
+      "attribute": "disconnect_behaviour",
+      "value": "x-logging does not work in singles-plus combat",
+      "unit": null,
+      "statement": "X-logging (closing the client to escape a PKer) does not work in singles-plus combat areas, and the Wilderness Agility Course is one of them.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Logout button",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15034464",
+          "revid": 15034464,
+          "retrieved": "2026-11-20T02:23:33Z",
+          "quote": "X-logging is done to escape a potential [[PvP]] scenario in [[Single-way combat]]; this will not work in [[Singles-plus combat]].",
+          "fetched_by": "fact-verifier (threats)"
+        },
+        {
+          "tier": "T2",
+          "title": "Singles-plus combat",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15000253",
+          "revid": 15000253,
+          "retrieved": "2026-11-20T02:23:35Z",
+          "quote": "Currently, the only singles-plus combat areas are: * the [[Revenant Caves]] * the [[Wilderness Agility Course]]",
+          "fetched_by": "fact-verifier (threats)"
+        }
+      ],
+      "verified_at": "2026-11-20T02:23:36Z",
+      "independent": true
+    },
+    {
+      "fact_id": "F-3024",
+      "claim_id": "C-THR-024",
+      "subject": "Owner's character (brief stats)",
+      "attribute": "combat_level",
+      "value": 45,
+      "unit": null,
+      "statement": "My own recomputation from the brief's stats (Def 1, HP 48, Prayer 44, Atk 44, Str 32, Ranged 56, Magic 44) gives base = (1+48+22)/4 = 17.75. Ranged = 0.325 x floor(56 x 1.5) = 0.325 x 84 = 27.3, melee = 0.325 x 76 = 24.7, magic = 0.325 x 66 = 21.45. Combat = floor(17.75 + 27.3) = floor(45.05) = 45. This matches the Director's correction (ledger seq 49).",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Combat level",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15383889",
+          "revid": 15383889,
+          "retrieved": "2026-11-20T02:23:51Z",
+          "quote": "\\text{Final} &= \\lfloor \\text{Base} + \\textrm{max}(\\text{Melee}, \\text{Range}, \\text{Mage}) \\rfloor",
+          "fetched_by": "fact-verifier (threats)"
+        }
+      ],
+      "verified_at": "2026-11-20T02:23:52Z",
       "independent": true
     },
     {
@@ -13692,6 +15176,205 @@
         }
       ],
       "verified_at": "2026-11-20T07:03:04Z",
+      "independent": true
+    },
+    {
+      "fact_id": "F-3063",
+      "claim_id": "C-THR-063",
+      "subject": "Sins of the Father (Sepulchre unlock)",
+      "attribute": "quest_fight_max_hit",
+      "value": {
+        "npc": "Vanstrom Klause (vampyre form)",
+        "combat": 459,
+        "max_hit": 24,
+        "max_hit_special": "40+ ('Stare into darkness'); blood orb up to 40; enrage-phase lightning up to 40",
+        "style": "Magic",
+        "hits_through_prayer": true
+      },
+      "unit": null,
+      "statement": "Sins of the Father ends with Vanstrom Klause (level 459). His standard Magic attack hits up to 24, but the quest walkthrough documents specials of 40+ ('Stare into darkness'), a blood orb (up to 40), and enrage-phase lightning (up to 40), which hits through prayers with 100% accuracy. Each can take 83% or more of the owner's 48 HP. The quest recommends combat 95.",
+      "status": "DISPUTED",
+      "researcher_value": {
+        "npc": "Vanstrom Klause (vampyre form)",
+        "combat": 459,
+        "max_hit": 24,
+        "style": "Magic"
+      },
+      "caveat": "The researcher gave only the infobox max hit of 24, labelled '(Standard)' on the page. The quest page shows the real maximum damage per hit is about 40 or more. Use the higher figure for any danger scoring.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Vanstrom Klause",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403542",
+          "revid": 15403542,
+          "retrieved": "2026-11-20T07:03:05Z",
+          "quote": "|combat = 459 [...] |max hit = 24 (Standard) |aggressive = Yes [...] |attack style = [[Magic]]",
+          "fetched_by": "fact-verifier (threats)"
+        },
+        {
+          "tier": "T2",
+          "title": "Sins of the Father",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15380480",
+          "revid": 15380480,
+          "retrieved": "2026-11-20T07:02:47Z",
+          "quote": "#{{overhead|Stare into darkness!}} - Vanstrom will turn your screen dark and you will be hit upwards of 40+ damage. [...] If the player steps into the 3x3 area of the blood orb they will take up to 40 damage [...] a delayed lightning attack which will strike for up to 40 damage.",
+          "fetched_by": "fact-verifier (threats)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:03:06Z",
+      "independent": true
+    },
+    {
+      "fact_id": "F-3064",
+      "claim_id": "C-THR-064",
+      "subject": "Sins of the Father (Sepulchre unlock)",
+      "attribute": "quest_fight_max_hit",
+      "value": {
+        "npc": "Damien Leucurte",
+        "combat": 204,
+        "max_hit": 20,
+        "poisonous": true
+      },
+      "unit": null,
+      "statement": "Sins of the Father also requires killing Damien Leucurte (level 204, max hit 20, Ranged and Magic, poisonous).",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Damien Leucurte",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374322",
+          "revid": 15374322,
+          "retrieved": "2026-11-20T07:03:22Z",
+          "quote": "|combat = 204 [...] |max hit = 20 |aggressive = Yes |poisonous = Yes |attack style = [[Ranged]], [[Magic]]",
+          "fetched_by": "fact-verifier (threats)"
+        },
+        {
+          "tier": "T2",
+          "title": "Sins of the Father",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15380480",
+          "revid": 15380480,
+          "retrieved": "2026-11-20T07:02:47Z",
+          "quote": "*[[Damien Leucurte]] (level 204)",
+          "fetched_by": "fact-verifier (threats)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:03:23Z",
+      "independent": true
+    },
+    {
+      "fact_id": "F-3065",
+      "claim_id": "C-THR-065",
+      "subject": "Sins of the Father (Sepulchre unlock)",
+      "attribute": "quest_fight_max_hit",
+      "value": {
+        "npc": "Kroy",
+        "combat": 133,
+        "max_hit": 15
+      },
+      "unit": null,
+      "statement": "Sins of the Father requires killing Kroy (level 133, max hit 15, Magic and Melee).",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Kroy",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15344384",
+          "revid": 15344384,
+          "retrieved": "2026-11-20T07:03:25Z",
+          "quote": "|combat = 133 [...] |max hit = 15 |aggressive = Yes [...] |attack style = [[Magic]], [[Melee]]",
+          "fetched_by": "fact-verifier (threats)"
+        },
+        {
+          "tier": "T2",
+          "title": "Sins of the Father",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15380480",
+          "revid": 15380480,
+          "retrieved": "2026-11-20T07:02:47Z",
+          "quote": "|kills = *[[Kroy]] (level 133)",
+          "fetched_by": "fact-verifier (threats)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:03:26Z",
+      "independent": true
+    },
+    {
+      "fact_id": "F-3067",
+      "claim_id": "C-THR-067",
+      "subject": "Werewolf Agility Course: deathslide",
+      "attribute": "failure_damage",
+      "value": "upwards of 30 damage, does not scale with Hitpoints; can exceed current HP",
+      "unit": "hitpoints",
+      "statement": "A deathslide fall can deal over 30 damage. It does not scale with HP, and the deathslide is the only Agility obstacle that can deal damage past the player's current HP, so a fall can kill.",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "caveat": "The exact maximum is not documented: the wiki says only 'upwards of 30' and 'over 30', and the zip line page (rev 15333943) gives no figure. Do not assume that more than 30 HP is safe. Treat every attempt as potentially lethal for a 48 HP character until a maximum is sourced. No T1/T3 second source was found (a web search turned up T4 sites only).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Werewolf Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15315234",
+          "revid": 15315234,
+          "retrieved": "2026-11-20T07:03:31Z",
+          "quote": "A fall can deal upwards of 30 damage and does NOT scale with [[Hitpoints]], so players with low HP are at risk of [[death]]. [...] *The deathslide is the only agility obstacle that can do damage past the player's [[Hitpoints]].",
+          "fetched_by": "fact-verifier (threats)"
+        },
+        {
+          "tier": "T2",
+          "title": "Zip line (Werewolf Agility Course)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15333943",
+          "revid": 15333943,
+          "retrieved": "2026-11-20T07:06:56Z",
+          "quote": "An Agility level of 60 is required to pass it, granting the player 200 Agility experience, or less when falling off the obstacle earlier.",
+          "fetched_by": "fact-verifier (threats)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:06:57Z",
+      "independent": true
+    },
+    {
+      "fact_id": "F-3068",
+      "claim_id": "C-THR-068",
+      "subject": "Werewolf Agility Course: deathslide",
+      "attribute": "failure_level_threshold",
+      "value": "never fails with Agility 80, Strength 80 and weight <= 2 kg; success also depends on weight (best at 0 kg); no head-slot item allowed",
+      "unit": null,
+      "statement": "Deathslide success depends on Agility, Strength and weight (best at 0 kg or below). It never fails at 80 Agility, 80 Strength and 2 kg or less, which the owner (Strength 32) is far from. No head-slot item may be worn.",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "caveat": "The Jagex quote cited on the page says 'over 80' and 'under 2kg', while the wiki text says '80' and '2 kg or lower'. Use the stricter reading (81+ and below 2 kg) for guaranteed success.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Werewolf Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15315234",
+          "revid": 15315234,
+          "retrieved": "2026-11-20T07:03:31Z",
+          "quote": "With level 80 in Agility and [[Strength]] and a weight of 2 kg or lower, this obstacle will never be failed.{{CiteTwitter|author=Mod Ash|[...]|quote=If your Agility and Strength are over 80 and your carried weight is under 2kg, it looks like the code will indeed do that.}} [...] *No item may be worn in the [[head slot]] when attempting the deathslide.",
+          "fetched_by": "fact-verifier (threats)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:03:32Z",
+      "independent": true
+    },
+    {
+      "fact_id": "F-3069",
+      "claim_id": "C-THR-069",
+      "subject": "Werewolf Agility Course",
+      "attribute": "disconnect_behaviour",
+      "value": "may be placed back at the entrance (inside the trapdoor); stick removed",
+      "unit": null,
+      "statement": "On logout the player may be put back at the entrance inside the trapdoor, and any stick already picked up is removed.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Werewolf Agility Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15315234",
+          "revid": 15315234,
+          "retrieved": "2026-11-20T07:03:31Z",
+          "quote": "Upon logout, the player may be placed back at the entrance (through the trapdoor, not outside) and the stick will disappear from the inventory if the stick was previously obtained.",
+          "fetched_by": "fact-verifier (threats)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:03:32Z",
       "independent": true
     },
     {
@@ -14218,6 +15901,52 @@
       "independent": true
     },
     {
+      "fact_id": "F-3092",
+      "claim_id": "C-THR-092",
+      "subject": "Darkness of Hallowvale",
+      "attribute": "quest_fight_max_hit",
+      "value": {
+        "npc": "Vanstrom Klause",
+        "combat": 169,
+        "max_hit": 16
+      },
+      "unit": null,
+      "statement": "Darkness of Hallowvale (7,000 Agility XP; needed for Sins of the Father) requires facing Vanstrom Klause (level 169, max hit 16, melee only). He cannot be damaged and must be survived for 5 attacks. The pairing of max hit 16 with level 169 is confirmed within the same infobox block (update 'Myreque Pt III - Darkness of Hallowvale').",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "caveat": "Five hits at 16 is 80, more than the owner's 48 HP; the quest page says 'it is very possible to die'. Protect from Melee stops all damage. The owner has Prayer 44, which is enough for it (43).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Vanstrom Klause",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403542",
+          "revid": 15403542,
+          "retrieved": "2026-11-20T07:03:05Z",
+          "quote": "|update = Myreque Pt III - Darkness of Hallowvale [...] |combat = 169 [...] |max hit = 16 |aggressive = Yes [...] |attack style = [[Melee]]",
+          "fetched_by": "fact-verifier (threats)"
+        },
+        {
+          "tier": "T2",
+          "title": "Darkness of Hallowvale",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15355656",
+          "revid": 15355656,
+          "retrieved": "2026-11-20T07:06:38Z",
+          "quote": "Vanstrom Klause (level 169) needs to be fought until he has attacked you 5 times (whether he hits or misses), and it is very possible to die. [...] Vanstrom only uses melee, so [[Protect from Melee]] will stop all damage",
+          "fetched_by": "fact-verifier (threats)"
+        },
+        {
+          "tier": "T2",
+          "title": "Quest experience rewards",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408569",
+          "revid": 15408569,
+          "retrieved": "2026-11-20T07:05:17Z",
+          "quote": "|[[Darkness of Hallowvale]] |Yes||{{+=|agility|7,000|echo=2}}||{{SCP|Agility|26|sort=yes}} |[[Vanstrom Klause]] ''(level 169)''",
+          "fetched_by": "fact-verifier (threats)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:06:39Z",
+      "independent": true
+    },
+    {
       "fact_id": "F-3096",
       "claim_id": "C-THR-096",
       "subject": "Recruitment Drive",
@@ -14288,6 +16017,151 @@
       ],
       "verified_at": "2026-11-20T07:06:30Z",
       "independent": true
+    },
+    {
+      "fact_id": "F-4001",
+      "claim_id": "C-LOG-001",
+      "subject": "Hardcore Worlds economy",
+      "attribute": "economy_separate",
+      "value": true,
+      "unit": null,
+      "statement": "Hardcore Worlds have a completely separate economy from the main game: items can only be bought and sold within Hardcore Worlds, though trading and the Grand Exchange are allowed.",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds - OUT TODAY",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+          "revid": 15397724,
+          "retrieved": "2026-11-20T02:22:50Z",
+          "quote": "Hardcore Worlds have a completely separate economy from the main game which means items from these worlds can only be bought and sold within them.",
+          "fetched_by": "fact-verifier (logistics instance, dispatch 017)"
+        },
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-20T02:22:52Z",
+          "quote": "Players on Hardcore Worlds are still [[main account]]s, therefore they can still [[trade]] with other players, use the [[Grand Exchange]], or participate in group [[Monster killing|PvM]], unlike in other modes such as [[Ironman Mode|ironman]].",
+          "fetched_by": "fact-verifier (logistics instance, dispatch 017)"
+        }
+      ],
+      "verified_at": "2026-11-20T02:25:30Z",
+      "independent": true,
+      "released": "2026-11-04",
+      "new_content": true,
+      "caveat": "Hardcore Worlds launched 4 Nov 2026 (16 days before today): new content, wiki pages change daily; re-check before release. Jagex post (T1) and wiki (T2) agree. Cited revision re-fetched and the current revision fetched the same day: the current revision is the cited one (no change)."
+    },
+    {
+      "fact_id": "F-4003",
+      "claim_id": "C-LOG-003",
+      "subject": "Hardcore Worlds",
+      "attribute": "unsafe_activity",
+      "value": [
+        "Nightmare Zone",
+        "Death within a player-owned house",
+        "Rogues' Den (maze)"
+      ],
+      "unit": null,
+      "statement": "On Hardcore Worlds, dying in Nightmare Zone, within a player-owned house, or in the Rogues' Den maze is an official (run-ending) death. Relevant to logistics because Nightmare Zone is the only source of scrolls of redirection, Grace's shop is in the Rogues' Den, and house teleports lead to a POH.",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-20T02:22:52Z",
+          "quote": "* [[Nightmare Zone]]",
+          "fetched_by": "fact-verifier (logistics instance, dispatch 017)"
+        },
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-20T02:22:52Z",
+          "quote": "* Death within a [[player-owned house]]",
+          "fetched_by": "fact-verifier (logistics instance, dispatch 017)"
+        },
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-20T02:22:52Z",
+          "quote": "* [[Rogues' Den]] (maze)",
+          "fetched_by": "fact-verifier (logistics instance, dispatch 017)"
+        },
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-20T02:22:52Z",
+          "quote": "Hardcore Worlds follows the same death ruleset as [[Group_Ironman_Mode#Hardcore_Group_Ironman|Hardcore Group Ironman]].",
+          "fetched_by": "fact-verifier (logistics instance, dispatch 017)"
+        },
+        {
+          "tier": "T2",
+          "title": "Rogues' Den",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379507",
+          "revid": 15379507,
+          "retrieved": "2026-11-20T02:23:29Z",
+          "quote": "death is safe for all players except for [[Group Ironman Mode#Hardcore Group Ironman|Hardcore Group Ironmen]].",
+          "fetched_by": "fact-verifier (logistics instance, dispatch 017)"
+        }
+      ],
+      "verified_at": "2026-11-20T02:25:30Z",
+      "independent": true,
+      "released": "2026-11-04",
+      "new_content": true,
+      "caveat": "Hardcore Worlds launched 4 Nov 2026 (16 days before today): new content, wiki pages change daily; re-check before release. Second confirmation for the maze: the Rogues' Den page says maze death is unsafe for Hardcore Group Ironmen, whose ruleset Hardcore Worlds uses. Hazard rating belongs to the Threat desk. Cited revision re-fetched and the current revision fetched the same day: the current revision is the cited one (no change)."
+    },
+    {
+      "fact_id": "F-4016",
+      "claim_id": "C-LOG-016",
+      "subject": "Rogues' Den",
+      "attribute": "shop_and_bank_outside_maze",
+      "value": true,
+      "unit": null,
+      "statement": "Grace's shop and the Rogues' Den bank (Emerald Benedict) are outside the maze; buying graceful does not require entering the maze (which needs 50 Agility and 50 Thieving and is an unsafe death on Hardcore Worlds).",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Rogues' Den",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379507",
+          "revid": 15379507,
+          "retrieved": "2026-11-20T02:23:29Z",
+          "quote": "Outside of the maze there are several shops, a fire next to a bank, and four wall safes with a chance to provide [[uncut gem]]s up to [[diamond]] or 20 to 40 [[coins]] when cracked open.",
+          "fetched_by": "fact-verifier (logistics instance, dispatch 017)"
+        },
+        {
+          "tier": "T2",
+          "title": "Rogues' Den",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379507",
+          "revid": 15379507,
+          "retrieved": "2026-11-20T02:23:29Z",
+          "quote": "[[Emerald Benedict]] runs the [[bank]]. He stands one tile away from an everlasting [[fire]], making him one of the three closest banks to a [[Cooking]] location other than the range in the [[Myths' Guild]] and the [[sulphur vent]] in [[Mor Ul Rek]].",
+          "fetched_by": "fact-verifier (logistics instance, dispatch 017)"
+        },
+        {
+          "tier": "T2",
+          "title": "Rogues' Den",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379507",
+          "revid": 15379507,
+          "retrieved": "2026-11-20T02:23:29Z",
+          "quote": "Entering the maze requires level 50{{Boostable|no}} in both Thieving and Agility, and no items can be brought or worn inside.",
+          "fetched_by": "fact-verifier (logistics instance, dispatch 017)"
+        }
+      ],
+      "verified_at": "2026-11-20T02:25:30Z",
+      "independent": true,
+      "released": null,
+      "new_content": false,
+      "caveat": "Maze is UNSAFE on Hardcore Worlds (see C-LOG-003); the shop and bank do not require entering it. Cited revision re-fetched and the current revision fetched the same day: the current revision is the cited one (no change)."
     },
     {
       "fact_id": "F-4017",
@@ -14512,6 +16386,32 @@
       "independent": true,
       "released": null,
       "new_content": false
+    },
+    {
+      "fact_id": "F-4033",
+      "claim_id": "C-LOG-033",
+      "subject": "Rooftop Agility Courses",
+      "attribute": "consumable_per_hour_stamina",
+      "value": 0,
+      "unit": "doses/hour",
+      "statement": "Rooftop courses need no stamina potions for normal training: obstacle energy restoration makes continuous running typically possible.",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Rooftop Agility Courses",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15337972",
+          "revid": 15337972,
+          "retrieved": "2026-11-20T02:23:19Z",
+          "quote": "Passing an obstacle on a rooftop course actively restores 1–2% run energy, meaning it is typically possible to run around rooftop courses continually.",
+          "fetched_by": "fact-verifier (logistics instance, dispatch 017)"
+        }
+      ],
+      "verified_at": "2026-11-20T02:25:30Z",
+      "independent": true,
+      "released": null,
+      "new_content": false,
+      "caveat": "'Typically': heavy inventories, repeated fails or walking back after a fall may still drain energy; carry a small energy reserve near course minimums. Zero is an inference from 'typically possible', not a measured consumption figure. Cited revision re-fetched and the current revision fetched the same day: the current revision is the cited one (no change)."
     },
     {
       "fact_id": "F-4042",
@@ -14759,6 +16659,32 @@
       "caveat": "Jagex post (T1, 12 Aug 2026) confirmed by current wiki (T2). Inside the recency window, older than 30 days. Cited revision re-fetched and the current revision fetched the same day: the current revision is the cited one (no change)."
     },
     {
+      "fact_id": "F-4052",
+      "claim_id": "C-LOG-052",
+      "subject": "Rooftop Agility Courses",
+      "attribute": "requirement_boostable",
+      "value": true,
+      "unit": null,
+      "statement": "Rooftop course Agility requirements are boostable, e.g. Seers' (60) is usable from 55 with a summer pie, Pollnivneach (70) from 65, Rellekka (80) from 75, Ardougne (90) from 85.",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Rooftop Agility Courses",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15337972",
+          "revid": 15337972,
+          "retrieved": "2026-11-20T02:23:19Z",
+          "quote": "There are nine courses in total, each requiring 10 more [[Agility]] levels than the last, with the exception of the Draynor course which can be run from levels 1-20. The agility requirement is boostable.",
+          "fetched_by": "fact-verifier (logistics instance, dispatch 017)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:10:00Z",
+      "independent": true,
+      "released": null,
+      "new_content": false,
+      "caveat": "Level examples (55/65/75/85) are arithmetic from the +5 summer pie; the Ardougne page independently confirms pies from 85. Fail rates are higher while boosted below the real requirement. Owner (57) can enter Seers' now with a pie. Cited revision re-fetched and the current revision fetched the same day: the current revision is the cited one (no change)."
+    },
+    {
       "fact_id": "F-4057",
       "claim_id": "C-LOG-057",
       "subject": "Ardougne Rooftop Course",
@@ -14788,6 +16714,56 @@
       "new_content": false
     },
     {
+      "fact_id": "F-4060",
+      "claim_id": "C-LOG-060",
+      "subject": "Lobster",
+      "attribute": "heal",
+      "value": 12,
+      "unit": "Hitpoints",
+      "statement": "Lobster heals 12 Hitpoints.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Lobster",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15183358",
+          "revid": 15183358,
+          "retrieved": "2026-11-20T07:04:17Z",
+          "quote": "'''Lobster''' is a type of [[fish]] that restores 12 [[Hitpoints]] when eaten.",
+          "fetched_by": "fact-verifier (logistics instance, dispatch 017)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:10:00Z",
+      "independent": true,
+      "released": null,
+      "new_content": false
+    },
+    {
+      "fact_id": "F-4061",
+      "claim_id": "C-LOG-061",
+      "subject": "Swordfish",
+      "attribute": "heal",
+      "value": 14,
+      "unit": "Hitpoints",
+      "statement": "Swordfish heals 14 Hitpoints.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Swordfish",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15183520",
+          "revid": 15183520,
+          "retrieved": "2026-11-20T07:04:19Z",
+          "quote": "'''Swordfish''' is a type of [[fish]] that restores 14 [[Hitpoints]] when eaten.",
+          "fetched_by": "fact-verifier (logistics instance, dispatch 017)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:10:00Z",
+      "independent": true,
+      "released": null,
+      "new_content": false
+    },
+    {
       "fact_id": "F-4062",
       "claim_id": "C-LOG-062",
       "subject": "Monkfish",
@@ -14804,6 +16780,56 @@
           "revid": 15183439,
           "retrieved": "2026-11-20T07:04:21Z",
           "quote": "'''Monkfish''' is a type of [[fish]] that restores 16 [[Hitpoints]] when eaten.",
+          "fetched_by": "fact-verifier (logistics instance, dispatch 017)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:10:00Z",
+      "independent": true,
+      "released": null,
+      "new_content": false
+    },
+    {
+      "fact_id": "F-4063",
+      "claim_id": "C-LOG-063",
+      "subject": "Tuna",
+      "attribute": "heal",
+      "value": 10,
+      "unit": "Hitpoints",
+      "statement": "Tuna heals 10 Hitpoints.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Tuna",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15358604",
+          "revid": 15358604,
+          "retrieved": "2026-11-20T07:04:28Z",
+          "quote": "'''Tuna''' is a type of [[fish]] that restores 10 [[Hitpoints]] when eaten.",
+          "fetched_by": "fact-verifier (logistics instance, dispatch 017)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:10:00Z",
+      "independent": true,
+      "released": null,
+      "new_content": false
+    },
+    {
+      "fact_id": "F-4065",
+      "claim_id": "C-LOG-065",
+      "subject": "Cake",
+      "attribute": "heal",
+      "value": 12,
+      "unit": "Hitpoints",
+      "statement": "Cake heals 12 Hitpoints in 3 bites of 4, so it is good for topping up small fail damage.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Cake",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15360719",
+          "revid": 15360719,
+          "retrieved": "2026-11-20T07:04:32Z",
+          "quote": "'''Cake''' is a type of [[food]] that restores 12 [[Hitpoints]] in total, 3 bites each healing for 4.",
           "fetched_by": "fact-verifier (logistics instance, dispatch 017)"
         }
       ],
@@ -15155,6 +17181,40 @@
       "released": null,
       "new_content": false,
       "caveat": "The Pollnivneach town page adds the Max cape POH-portal option (not available to the owner). Fairy ring BIQ lands near Shantay Pass, not in town. House teleport into a POH: POH deaths are UNSAFE on Hardcore Worlds. Cited revision re-fetched and the current revision fetched the same day: the current revision is the cited one (no change)."
+    },
+    {
+      "fact_id": "F-4079",
+      "claim_id": "C-LOG-079",
+      "subject": "Pollnivneach teleport",
+      "attribute": "item_source",
+      "value": "untradeable; made from a teleport-to-house tablet plus a scroll of redirection at 20 Construction",
+      "unit": null,
+      "statement": "The Pollnivneach teleport tablet is untradeable and made by using a scroll of redirection on a teleport-to-house tablet at 20 Construction (owner has 23).",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Pollnivneach teleport",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15309321",
+          "revid": 15309321,
+          "retrieved": "2026-11-20T07:02:51Z",
+          "quote": "|tradeable = No",
+          "fetched_by": "fact-verifier (logistics instance, dispatch 017)"
+        },
+        {
+          "tier": "T2",
+          "title": "Pollnivneach teleport",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15309321",
+          "revid": 15309321,
+          "retrieved": "2026-11-20T07:02:51Z",
+          "quote": "It can be created at level 20 [[Construction]] by using a [[scroll of redirection]] on a [[teleport to house]] tablet.",
+          "fetched_by": "fact-verifier (logistics instance, dispatch 017)"
+        }
+      ],
+      "verified_at": "2026-11-20T07:10:00Z",
+      "independent": true,
+      "released": null,
+      "new_content": false
     },
     {
       "fact_id": "F-4080",
@@ -15908,6 +17968,43 @@
           "revid": 15396092,
           "retrieved": "2026-11-20",
           "quote": "The fourth form is the hardest. He will hit once every game tick, but can only hit for 1 damage at a time.",
+          "fetched_by": "fact-verifier rfi-01"
+        }
+      ],
+      "verified_at": "2026-11-20T12:05:47Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5010",
+      "claim_id": "C-RFI-010",
+      "subject": "Koschei the deathless, form 4",
+      "attribute": "prayer_drain",
+      "value": {
+        "on_form_start": "all prayer points",
+        "ongoing": "1-2 points per second"
+      },
+      "unit": null,
+      "statement": "When Koschei's 4th form starts he drains all your prayer points, then keeps draining them by 1-2 every second, so protection prayers cannot be relied on in form 4.",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "caveat": "Single source for the exact rates (Fremennik Trials walkthrough). The Koschei page change log (6 February 2014: 'Koschei now keeps it drained') supports the drain but gives no numbers.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "The Fremennik Trials",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396092",
+          "revid": 15396092,
+          "retrieved": "2026-11-20",
+          "quote": "In this form, Koschei will quickly drop your prayer points in intervals of 1-2 every second and will drop all of your prayer points as soon as the form starts.",
+          "fetched_by": "fact-verifier rfi-01"
+        },
+        {
+          "tier": "T2",
+          "title": "Koschei the deathless",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15387641",
+          "revid": 15387641,
+          "retrieved": "2026-11-20",
+          "quote": "|change = After Koschei the Deathless drained your prayer in [[Fremennik Trials]], players could simply restore it and re-activate their prayers. Koschei now keeps it drained.",
           "fetched_by": "fact-verifier rfi-01"
         }
       ],
@@ -17312,6 +19409,30 @@
       "released": null
     },
     {
+      "fact_id": "F-5352",
+      "claim_id": "C-RFI-211",
+      "subject": "Poison chalice",
+      "attribute": "self_damage_hazard",
+      "value": "1/32 chance to take up to 49 damage (owner has 48 HP); only 9/32 chance of the +1 Thieving boost",
+      "unit": "damage",
+      "statement": "HAZARD: the GE-tradeable poison chalice gives the +1 Thieving boost on only 9/32 (~28.1%) of drinks; 1/32 (~3.13%) deals up to 49 damage and lowers Attack, Strength and Defence by 1-3, and 2/32 deal 5% of max HP. With 48 Hitpoints the owner could die from one drink. Do not route it on Hardcore Worlds.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Poison chalice",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375239",
+          "revid": 15375239,
+          "retrieved": "2026-11-20",
+          "quote": "|''You feel a lot better.''||Heals by 15% of total [[Hitpoints]]; [[Thieving]] goes up by 1||9/32<br>(~28.1%) ... |''That tasted very dodgy. You feel very ill.''||Take up to 49 damage; Attack, Strength, and Defence go down by 1-3||1/32<br>(~3.13%)",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-20T12:23:16Z",
+      "independent": true,
+      "released": null
+    },
+    {
       "fact_id": "F-5355",
       "claim_id": "C-RFI-214",
       "subject": "Seers' Village Rooftop Course",
@@ -17426,6 +19547,67 @@
         }
       ],
       "verified_at": "2026-11-20T12:23:42Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5358",
+      "claim_id": "C-RFI-217",
+      "subject": "Teleport to House (spell and tablet)",
+      "attribute": "landing_inside_vs_outside",
+      "value": "default lands INSIDE the house next to the exit portal; right-click 'Outside' (spell and tablet) or the house-settings toggle lands OUTSIDE by the Rimmington portal",
+      "unit": null,
+      "statement": "Teleport to House (spell, Magic 40) and the GE-tradeable house tablet land inside the player-owned house next to the exit portal by default. Both have right-click 'Inside' and 'Outside' options (the tablet also 'Group'); left-click follows the inside/outside setting in house options, and the default can also be Building Mode (still inside). A POH death is unsafe on Hardcore Worlds, so set house options to Outside and use right-click 'Outside' to land by the house portal.",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "caveat": "Mechanic confirmed. 'By the Rimmington portal' assumes the owner's house is in Rimmington, which comes from the dispatch, not from the sealed brief or a game source. The wiki's remark that a POH death keeps items is main-game behaviour; on Hardcore Worlds a death in a POH is an official death (Jagex launch post).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Teleport to House",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15365995",
+          "revid": 15365995,
+          "retrieved": "2026-11-20",
+          "quote": "'''Teleport to House''', also known as 'House Teleport', teleports the caster inside their [[player-owned house]], right next to the exit portal (or within the house), regardless of the 'location' of the house ... |change = * The Teleport to house spell and tablet now have right-click options to teleport either inside or outside of the house.",
+          "fetched_by": "fact-verifier"
+        },
+        {
+          "tier": "T1",
+          "title": "Update:Tournament World, Mobile Enhancements and Theatre of Blood Tweaks",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=14285389",
+          "revid": 14285389,
+          "retrieved": "2026-11-20",
+          "quote": "The Teleport to House and Teleport to house tabs now have right-click options for you to teleport inside and outside of your house. The left-click option will continue to respect the option you have selected in your house settings menu.",
+          "fetched_by": "fact-verifier"
+        },
+        {
+          "tier": "T2",
+          "title": "Teleport to house (tablet)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15185086",
+          "revid": 15185086,
+          "retrieved": "2026-11-20",
+          "quote": "|tradeable = Yes ... |options = Break, Inside, Outside, Group, Drop ... |exchange = Yes",
+          "fetched_by": "fact-verifier"
+        },
+        {
+          "tier": "T2",
+          "title": "Portal (Player-owned house)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404301",
+          "revid": 15404301,
+          "retrieved": "2026-11-20",
+          "quote": "At level 40 [[Magic]], players can use the [[Teleport to House]] spell to teleport directly into the player's own house. ... In the house options screen, players can choose whether the house teleports land the player in the house itself or outside the portal.",
+          "fetched_by": "fact-verifier"
+        },
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds - OUT TODAY",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+          "revid": 15397724,
+          "retrieved": "2026-11-20",
+          "quote": "we're following the Death Rules from Hardcore Group Ironman which means some deaths you might think are safe ... are no longer: ... * Within the Player-owned House ''(PoH)''",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-20T12:23:50Z",
       "independent": true,
       "released": null
     },
@@ -18981,8 +21163,8 @@
         "python3 tools/danger.py score: S16 inherent 94 Extreme, S24 inherent 94, S17 inherent 84"
       ],
       "recommendation": "Calibration board: resolve the five conflicts before calling the ladder approved (re-rate the anchors or let the model separate them, e.g. stop disconnect alone from saturating C); add anchors in the 52-84 band (mid-level quest bosses at low HP, Troll-type quest fights) so steps like S16/S17 have real neighbours; publish the inherent score with its comparables too, so 'Extreme' on a quest is visibly anchored.",
-      "status": "accepted_by_user",
-      "resolution": "Unchanged in substance: python3 tools/danger.py ladder still shows the 5 CONFLICT lines and the mid-band compression; S16 and S24 headlines (94) still list The Fractured Archive as nearest comparable. The calibration job's ledger records the 5 ordering conflicts (jobs/calibration-20261120 ledger seq 14) before the owner's verbatim ladder approval (seq 16, 'other than that, perfect'; version r2 after seq 17), and dispatch 038 states the owner approved the ladder with these known limitations and the board accepts them. Accepted as a documented limitation; re-check at the next calibration."
+      "status": "open",
+      "resolution": "re-opened by owner; scheduled for the next calibration revision; no route step of this guide is affected"
     },
     {
       "finding_id": "RT-06",
@@ -19010,8 +21192,8 @@
         "docs/05 section 5 (premium after calibration; flag fallback)"
       ],
       "recommendation": "Director: ask the owner whether the premium was meant to apply to anchors whose positions already include PvP (if yes, record that revs = Inferno is intended; if no, re-base those anchors). Tool/policy owner: make the fallback conservative (missing wilderness_level with any Wilderness flag -> require the level, or assume the deepest tier), compute the premium from inherent flags, and fix the stale status string.",
-      "status": "accepted_by_user",
-      "resolution": "Mechanical parts fixed: tools/validate.py now FAILs any Wilderness-flagged step without wilderness_level (so the least-conservative level-1 fallback can no longer apply silently to guide steps), the headline premium is computed from the unmitigated flags, and the policy status string now reads 'tiered Wilderness premium by depth'. The double count with PvP-priced anchors remains by owner choice: the owner set the tiered premium after seeing its effect on those anchors (jobs/calibration-20261120 ledger seq 17: 'Revenant Caves 17-40 -> +20 = 96 ... Wilderness course 50-56 -> +20 = 66'). The residual premium still follows residual flags, but the residual is capped at the headline and a flag can only be removed by a fact-cited mitigation. No step in this guide enters the Wilderness."
+      "status": "open",
+      "resolution": "re-opened by owner; scheduled for the next calibration revision; no route step of this guide is affected"
     },
     {
       "finding_id": "RT-08",
@@ -19128,8 +21310,8 @@
         "F-0001 (Jagex 4 Nov post names the Fight Caves among deaths that are no longer safe)"
       ],
       "recommendation": "Calibration board: record why Jad is below Zulrah/Vorkath learners and ToA 150, or move it; re-check at the next calibration.",
-      "status": "accepted_by_user",
-      "resolution": "Unchanged: Jad still sits at 62 below Vorkath learner (64), Zulrah learner (66) and ToA 150 (70), and Vorkath/Jad is one of the 5 conflicts. Part of the ladder the owner approved with its known ordering conflicts (jobs/calibration-20261120 ledger seq 14 then seq 16; dispatch 038). Accepted as a documented limitation; the board should record its rationale at the next calibration."
+      "status": "open",
+      "resolution": "re-opened by owner; scheduled for the next calibration revision; no route step of this guide is affected"
     },
     {
       "finding_id": "RT-16",
@@ -19144,7 +21326,8 @@
         "F-5011, F-0015 (teleport to respawn point; fight restarts at form 1)"
       ],
       "recommendation": "Risk Officer: either tell the owner to bank the escape crystal for the Koschei duel (it is uncredited there), or add 'keep walking in form 4 if the crystal is in your inventory' to the S12 bailout and stop conditions so the card says the same thing in every place. Not blocking: the outcome is a reset, not a death, and form 1 is the lowest-hitting form.",
-      "status": "open"
+      "status": "fixed",
+      "resolution": "Re-tested (dispatch 043) against sealed risk.json 74bbfca5c25e and plan.json v4 5a0296c74446: the card and the plan now say the same thing everywhere. risk.json S12-M6 says BANK the escape crystal before the Koschei duel, worn or carried (F-0015, F-5011, F-3017, F-5009); S12 required_items and the first stop condition say the same; the bailout's form-4 text says standing still is safe only because the crystal is banked and to keep walking if it is found in the inventory anyway (F-3018); the escape-crystal general rule makes the duel an explicit bank-it exception. plan.json S12 rationale, prerequisite_checklist escape-crystal item and DP02-B/DP08-B cons all say bank it before the duel, with both reasons; no text in risk.json or plan.json still tells the player to carry or keep it in the inventory for the duel. No new problem: the bank visit is the one the card already requires to restock food before the duel (no bank in Rellekka, F-4087/F-5345), and the crystal was never credited on the road, so banking it removes no counted protection. Note for assembly: content.json (assembled before plan v4) still carries the old S12 rationale 'if carried, keep it in the inventory only' and must be re-assembled."
     },
     {
       "finding_id": "RT-17",

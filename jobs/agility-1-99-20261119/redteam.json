@@ -1,556 +1,630 @@
 {
-  "attack_surface": [
-    "1 Prerequisite traps: every routed and decision-point quest's requirements checked against brief.profile (quests, skills, items); the lyre path for S12 (F-2039/F-5383); Thieving 24 forcing the Berry/Twig fights in S16 (F-5019/F-5377); Shantay/carpet travel items for S10.",
-    "2 Travel deaths: Pollnivneach carpet route and crocodiles (F-1032, F-4084), the Camelot-to-Rellekka road on the first trip before the lyre exists (F-5343, F-5345), Trollheim thrower trolls and Death Plateau paths (F-5374, F-5375, F-5376), desert travel for S03/S04, the East Ardougne Wilderness lever (F-4091).",
-    "3 Low-HP skilling: fail damage at 48 HP on Falador (F-1011), Canifis (F-3071), Seers' (F-3074/F-5367), Pollnivneach (F-3075), Rellekka (F-3079), Ardougne (F-3080/F-5368); Underground Pass bridges, traps and Iban's spikes (F-5026, F-5379); Isafdar traps (F-5028); Sepulchre traps (F-3057).",
-    "4 Disconnect and AFK: every step flagged DISCONNECT_FATAL (S03, S06, S12, S15, S16, S17) checked against the 60 s in-combat DC timer (F-3021) and 16-tick logout rule (F-3022); escape-crystal auto-teleport as a DC mitigation (F-3016, Escape crystal rev 15409296).",
-    "5 Death-rule traps: Koschei forms 1-3 vs form 4 (F-0004, F-3014, F-5001, F-5002); Arrg (F-5003); Sepulchre (F-3003, F-3061); random events (F-0003, F-3012) re-read against the current Random events page (rev 15407277); POH and NMZ teleport routes (F-4078, F-4080).",
-    "6 Stale facts: wiki Update namespace scanned for pages created 2026-11-15 onward; Update:Quest Month Week 3 & TFA Practice Mode (rev 15406871) and Update:Gielinor Gazette - November 2026 (rev 15410302) grepped; page histories of 23 cited pages compared with the revisions cited in facts.json; web searches for Hardcore Worlds hotfixes and HW deaths at these activities (T4 leads only).",
-    "7 Quest fights: Underground Pass (demons, paladins, Kalrag, Iban's temple), Regicide (Tyras guard, Isafdar), The Fremennik Trials (Draugen, Koschei, lyre citizens), Death Plateau, Troll Stronghold (Dad, generals, Berry/Twig), Troll Romance (Arrg), Icthlarin's Little Helper flashbacks.",
-    "8 Mitigation optimism: every mitigation on S05, S06, S12, S15, S16, S17, S25 and the rooftop steps re-read for whether it actually lowers the factor it claims, and whether the prep card closes the documented killing window.",
-    "9 Calibration sanity: policy/danger-calibration.json anchors re-scored with tools/danger.py (ladder points, isotonic plateau, conflicts, Wilderness premium); every guide step's published inherent/residual score compared with its model score, its flag floors, the ladder anchors it is compared to, and the risk officer's own verdict text."
-  ],
-  "findings": [
-    {
-      "finding_id": "RT-01",
-      "severity": "high",
-      "step_id": "S17",
-      "scenario": "Owner picks DP03 option C and follows the S17 prep card literally: talks to Arrg at 48/48 HP with Protect from Missiles on and runs from the arena centre to the safespot. Arrg 'primarily uses' his 38 melee (F-3089 quote) and that attack is NOT blocked by Protect from Missiles, so the prayer the card mandates protects against the less likely attack during the only phase where melee can reach. At Defence 1 a 38 lands from full HP: 48 -> 10. The card's rule is 'eat whenever HP is 30 or lower' and 'if a hit of 30+ lands before you reach the safespot, eat at once, then keep moving', with food described only as 'best healing food you have (16+)'. One ordinary food (owner Cooking 23) takes 10 HP to roughly 20-30, and the next attack 4 ticks later (attack speed 4, F-5021) is either another 38 melee (kills) or a 30 ranged that can occasionally pass prayer (kills at 30 or less). The card also sets the eat threshold at 30, which is wrong while melee can still reach: at 31-38 HP a single 38 kills. The risk officer's own verdict concedes 'no verified mitigation closes' the window, yet the step is approved and offered as option C with a card that implies it is survivable. The run's length and whether a teleport works in the arena are both undocumented (F-2036 caveat, bailout text), so the number of attacks taken during the run is unbounded by any fact.",
-      "evidence": [
-        "F-5021 (Arrg max 38 slash / 30 ranged, attack speed 4, attacks at once on arrival, you take hits reaching either safespot)",
-        "F-3089 (melee is the primary attack; ranged 'significantly' more accurate; both occasionally pass protection prayers)",
-        "F-2036 (not a safe death; teleport out of arena not stated)",
-        "F-5003 (run-ending on Hardcore Worlds)",
-        "F-3021 (60 s in-combat disconnect timer)",
-        "risk.json S17 mitigations S17-M1..M4, preconditions.stop_conditions and verdict_reason ('no verified mitigation closes it')",
-        "brief.json profile: Hitpoints 48, Defence 1, Cooking 23"
-      ],
-      "recommendation": "Risk Officer: rewrite the S17 run phase. (1) While Arrg can still reach in melee, the eat threshold must be 38, not 30, and a single eat must be able to lift HP from 10 to 39+: require a combo-eat capable of 29+ healing in one tick-window (e.g. a hard food plus a cooked karambwan, buyable on the HW GE) and state the minimum heal per food, or state honestly that the card cannot survive two max hits and that option C relies on hit RNG during the run. (2) Decide which prayer to hold during the run from evidence (melee primary but inaccurate vs ranged accurate) and say why; switching to Protect from Missiles only once at the melee safespot is the documented logic. (3) Raise an RFI for the run length in ticks and arena teleport behaviour, and for whether an escape crystal configured to the minimum inactivity timer fires in the arena (it does not fire while moving, so it does not cover the run itself). (4) Route Strategist: DP03 option C must quote the unclosed window in its cons, not only 'most dangerous required fight'.",
-      "status": "fixed",
-      "resolution": "Re-tested 2026-11-21 on risk.json v3 (6302e5ce2c6b) and plan.json v3 (f343604e839c). S17-M1 now orders Protect from Melee on before talking to Arrg and through the run (his primary 38 melee), S17-M2 switches to Protect from Missiles only at the safespot; S17-M3 sets the run eat threshold at 38 and 34 at the safespot with a 16-heal minimum (F-4062); S17-M4 prints the honest limit (48 -> 18 -> 34 -> 4 on two max ranged hits with one eat; arithmetic checked; no verified combo-eat, run length undocumented) and a stop condition requires accepting that a correctly prepared player can die in the run. Knowledge raised to 4; RFIs for run length, arena teleport and escape crystal named. Plan DP03 option C pros now say Protect from Melee for the run and its cons quote the unclosable window (risk.json S17-M4). Published 88 headline / 55 with prep, the highest with-prep score in the plan. The remaining run-phase risk was accepted by the owner on the corrected card: ledger seq 160 (accept_risk S17, 'Keep as option (informed)')."
-    },
-    {
-      "finding_id": "RT-02",
-      "severity": "high",
-      "step_id": "S12",
-      "scenario": "On the default (balanced) route the owner obeys the S12 prep card, which lists a ring of life as a required item and mitigation S12-M1 'Wear a ring of life in the Koschei fight'. The wiki the card itself cites says the opposite: 'Do not wear a ring of life as you will be teleported back to your spawn point. You will need to fight him again at his first phase.' Form 4 hits 1 HP every tick and ends the fight only at 1 HP (F-5002, F-5009); a ring of life worn into form 4 fires as soon as HP falls below 10% (about 4 HP at 48 max), so the owner is teleported out and Koschei resets to form 1 every time. A literal follower cannot finish the quest while obeying the card, and every retry re-exposes him to forms 1-3, the only run-ending phases (F-5001), with no armour. The mitigation is also credited with escape -2, which drops the step's residual; that credit is invalid for form 4 and overstated for forms 1-3 (the ring cannot save from a hit that kills outright).",
-      "evidence": [
-        "F-5011 (quote: 'Do not wear a [[ring of life]] as you will be teleported back to your spawn point. You will need to fight him again at his first phase.'; The Fremennik Trials rev 15396092)",
-        "F-2041 (same quote; jewellery allowed)",
-        "F-5002 (form 4 ends the fight at 1 HP; only phase that is safe on HW)",
-        "F-5009 (form 4 hits 1 every tick)",
-        "F-5001, F-3014 (forms 1-3 are run-ending on Hardcore Worlds)",
-        "risk.json S12-M1 (reduces escape 2), S12 preconditions.required_items ['ring of life', ...], bailout ('the ring of life is the documented exit')",
-        "plan.json DP02 recommended B and DP08 recommended B (S12 is on the recommended balanced route)"
-      ],
-      "recommendation": "Risk Officer: replace S12-M1. Either drop the ring of life, or state precisely 'wear it for forms 1-3 only and unequip it the moment form 4 begins' and justify that from a fact; re-rate escape without the -2 credit until then. Re-check the bailout text. Consider (with an RFI on scope inside the instance) an escape crystal configured to a short inactivity timer as the disconnect mitigation for forms 2-3, noting the ring-slot conflict. Owner acceptance at ledger seq 125 was given on the old score and card; the Director should show him the corrected card.",
-      "status": "fixed",
-      "resolution": "Re-tested on risk.json v3. S12-M1 now bans the ring of life and a worn escape crystal in the Koschei instance (F-5011, F-0015), its escape credit is gone and escape is rated 5 (locked fight, no exit); required_items say 'NO ring of life'; stop conditions and bailout no longer call the ring an exit and describe the only documented de-escalation (trapping Koschei; 10-minute reset). Plan v3 S12 rationale and DP08 cons carry the same rule. The DISCONNECT_FATAL floor now holds the with-prep score at 45 (headline 55). The owner re-confirmed S12 on the corrected card: ledger seq 159 (accept_risk S12, 'Keep it (informed)'), superseding the seq 125 acceptance given on the old card. See new RT-16 for a residual form-4 wording issue introduced by the optional crystal mitigation S12-M6."
-    },
-    {
-      "finding_id": "RT-03",
-      "severity": "high",
-      "step_id": null,
-      "scenario": "LADDER: hazard-flag floors are applied to the MODEL score before calibration (tools/danger.py assess(): apply_floors, then calibrate), so the published game-relative score falls below the floor that docs/05 section 3 promises 'whatever the factors say'. Published residuals that break their own retained flags: S12 The Fremennik Trials 20 with DISCONNECT_FATAL (floor 45); S17 Troll Romance 32 with DISCONNECT_FATAL (floor 45); S25 Hallowed Sepulchre 21 with UNVERIFIED_MECHANIC (floor 45); S01 The Writing's on the Wall 11 and S12 with NEW_CONTENT (floor 25); S10, S11, S13 at 7, tier 'Safe' ('nothing here should kill you'), with HW_UNSAFE_ACTIVITY (floor 10). Side effect: validate.py's prep-card gate uses the published residual (>= PREP_CARD_FROM 45), so after calibration no approved step in this guide triggers the mandatory complete prep card; only the vetoed S23 (86) and S24 (55) do. The owner's informed policy depends on prep cards appearing exactly where danger is real.",
-      "evidence": [
-        "tools/danger.py assess(): floors applied to model score, then calibrate(); FLAG_FLOORS; PREP_CARD_FROM = 45",
-        "tools/validate.py g_risk: 'if s[\"residual_ds\"] >= danger.PREP_CARD_FROM' uses the published residual",
-        "docs/05-danger-model.md section 3 ('minimum DS whatever the factors say') and section 6 ('From score 45 up, a complete prep card is mandatory')",
-        "python3 tools/danger.py score agility-1-99-20261119 (2026-11-20T23:3xZ): S12 model residual 45 (floor DISCONNECT_FATAL) -> published 20; S17 52 -> 32; S25 48 -> 21; S01 25 -> 11; S10/S11/S13 18 -> 7"
-      ],
-      "recommendation": "Owner of tools/danger.py and docs/05 (governance change, owner decision): apply flag floors to the published game-relative score (after calibration and premium), or map the floors onto the ladder explicitly, and make the prep-card gate use the same published-with-floors score. Until then the Director should not release scores for S01, S10, S11, S12, S13, S17, S25 as computed. Re-run danger.py score and re-check which steps need a full prep card.",
-      "status": "fixed",
-      "resolution": "Re-tested tools/danger.py (87d237df6949): flag floors are now applied on the published scale after calibration and premium (assess(): f_inh/f_res). python3 tools/danger.py score now gives S12 with prep 45 (DISCONNECT_FATAL), S17 55, S25 45 (UNVERIFIED_MECHANIC), S01 25 (NEW_CONTENT), S10/S11/S13 10 (HW_UNSAFE_ACTIVITY): no published score is below a retained flag's floor. The prep-card gate in tools/validate.py now keys on the unmitigated headline (inherent_ds >= 45), so S03, S05, S06, S12, S15, S16, S17, S25 require a complete card; validate.py risk passes with 0 FAIL."
-    },
-    {
-      "finding_id": "RT-04",
-      "severity": "high",
-      "step_id": null,
-      "scenario": "LADDER: anchors are rated INHERENT (no credit for the counters a typical player uses) but guide steps are published as RESIDUAL (after mitigations) on the same raw->position mapping, so every mitigated guide step is deflated relative to its comparables. The ladder's own rationales say so: Vorkath 'inherent one-shot, no credit for antifire/prayer'; Elvarg 'one-shot without the shield'. Results the owner will see: S05 Underground Pass and S06 Regicide (24-damage bridge falls into aggressive Soulless, Kalrag stun among spiders, forced Tyras guard) published 20 Low, 'comparable to Ape Atoll Agility Course / Rooftop course at low Hitpoints'; S16 Troll Stronghold 33 and S17 Arrg 32 Moderate, 'comparable to a mid-level Slayer task', below the 'Mid-level quest boss (Elvarg)' anchor at 48 even though two Arrg/general hits kill a 48-HP Defence-1 player; S25 Sepulchre published 21, below the ladder's own Sepulchre anchor (38) although the owner has 48 HP against the recommended 70. The risk officer's verdict texts (computed with an older danger.py, see RT-15) still say S05/S06 'Residual 47 (High)', S16 '54 (High)', S17 '52 (High)', S25 '48 (High)', so the guide would print two contradictory tiers for the same step. This is exactly the 'dangerous quest scored like a rooftop' failure.",
-      "evidence": [
-        "policy/danger-calibration.json basis ('rated ... for a TYPICAL account that attempts that content') and anchor rationales vorkath ('no credit for antifire/prayer') and quest-boss-mid ('one-shot without the shield')",
-        "docs/05 section 4 ('Routes are judged on residual') and section 5 (mapping)",
-        "python3 tools/danger.py score / ladder output: S05 47->20, S06 47->20, S16 54->33, S17 52->32, S25 48->21; anchor sepulchre-high pos 38, quest-boss-mid pos 48",
-        "risk.json verdict_reason for S05, S06, S16, S17, S25",
-        "F-5018, F-5021 (38 max hits), F-5026/F-5379 (bridge 24), F-5024 (Kalrag stun), F-3056 (70+ HP recommended)"
-      ],
-      "recommendation": "Calibration board / owner: calibrate like with like. Either (a) rate each anchor's residual too (with the standard counters a typical attempter uses) and map guide residuals on the residual ladder, or (b) calibrate the inherent score and derive the published residual by the model's mitigation ratio, with the RT-03 floors applied. Risk Officer: re-issue verdict texts with the published numbers. Until fixed, the guide should print the model tier next to the calibrated one for every quest step.",
-      "status": "fixed",
-      "resolution": "Re-tested: the headline is now the unmitigated calibrated score, like-for-like with the anchors (which are rated without precautions); 'with prep' is the residual on the same mapping (policy/danger-calibration.json 'publishing'). Headlines now read S05 55 High, S06 55 High, S16 94 Extreme, S17 88 Extreme, S25 79 Severe, against Elvarg 48 and Sepulchre 38. Every risk.json verdict text now quotes the published numbers (checked all 25 entries against danger.py score: e.g. S12 '55/45', S17 '88/55'). Residual note, not blocking: the 'with prep' number is still read off the unmitigated ladder, so the guide must always print it next to the headline and the prep card, never alone (the policy publishing rule says this)."
-    },
-    {
-      "finding_id": "RT-05",
-      "severity": "medium",
-      "step_id": null,
-      "scenario": "LADDER: the isotonic fit collapses most of the mid-ladder. Ladder points include (66, 54.8) and (82, 54.8): every model score from 66 to 82 publishes as ~55, so Zulrah learner (pos 66), ToA entry/normal (70), Barrows (50), Werewolf (49), Elvarg (48) and the Wilderness Agility Course (46) become indistinguishable, and the fit has cliffs of +17 published points for model 63->66 and +18 for 82->84. Cause: model saturation (T5 with any C factor of 5, typically disconnect 5) puts Jad, the Inferno, the Colosseum, ToB HM and the Revenant Caves all at raw 94, and the ladder was approved with five unresolved ordering conflicts that validate.py itself warns about. In the guide, S16 Troll Stronghold inherent publishes 94 'Extreme' and S24 94, above Phosani's Nightmare (87) and ToA expert (88): a quest scored like a top-end raid. A one-step change in any factor near these cliffs moves a published score by 0 or by ~17 points.",
-      "evidence": [
-        "python3 tools/danger.py ladder: points [(63,38.0),(66,54.8),(82,54.8),(84,73.0),(92,84.3),(94,84.3)...]; 5 CONFLICT lines",
-        "policy/danger-calibration.json anchor rationales jad ('the clearest saturation case'), revs-pvp, phosani, toa-expert ('ordering concern')",
-        "python3 tools/danger.py score: S16 inherent 94 Extreme, S24 inherent 94, S17 inherent 84"
-      ],
-      "recommendation": "Calibration board: resolve the five conflicts before calling the ladder approved (re-rate the anchors or let the model separate them, e.g. stop disconnect alone from saturating C); add anchors in the 52-84 band (mid-level quest bosses at low HP, Troll-type quest fights) so steps like S16/S17 have real neighbours; publish the inherent score with its comparables too, so 'Extreme' on a quest is visibly anchored.",
-      "status": "accepted_by_user",
-      "resolution": "Unchanged in substance: python3 tools/danger.py ladder still shows the 5 CONFLICT lines and the mid-band compression; S16 and S24 headlines (94) still list The Fractured Archive as nearest comparable. The calibration job's ledger records the 5 ordering conflicts (jobs/calibration-20261120 ledger seq 14) before the owner's verbatim ladder approval (seq 16, 'other than that, perfect'; version r2 after seq 17), and dispatch 038 states the owner approved the ladder with these known limitations and the board accepts them. Accepted as a documented limitation; re-check at the next calibration."
-    },
-    {
-      "finding_id": "RT-06",
-      "severity": "medium",
-      "step_id": null,
-      "scenario": "LADDER: the same activity sits in two places. The ladder's Werewolf Agility Course anchor is position 49 ('Re-rate (likely about 40) if a maximum is ever sourced'), but the guide's S23 Werewolf step publishes inherent 100 (equal to The Fractured Archive) and residual 86 'comparable to The Inferno, Fortis Colosseum'. docs/05 says scores are capped at 99 'so The Fractured Archive stays the only 100', but that cap only exists inside the Wilderness premium; calibrate() returns 100 for any model score of 100. An Agility course scored as the hardest raid in the game is implausible, even with the unpublished deathslide maximum. S23 is vetoed and removed from the plan, but it is still in risk.json and described in plan assumptions as 'Long-term next step 1', so its numbers can surface in the guide.",
-      "evidence": [
-        "policy/danger-calibration.json anchor werewolf (position 49, raw 82)",
-        "python3 tools/danger.py score: S23 raw 100 Extreme -> residual 86 ~ The Inferno, Fortis Colosseum",
-        "tools/danger.py calibrate() and premium cap; docs/05 section 5 ('Scores are capped at 99, so The Fractured Archive stays the only 100')",
-        "F-2091, F-3067 (fall over 30, maximum unpublished)"
-      ],
-      "recommendation": "Tool owner: cap every non-TFA published score at 99, not only Wilderness ones. Risk Officer and calibration board: reconcile S23 with the werewolf anchor (the step should land near its own anchor, adjusted for the owner's HP and Strength) or explain the 37-point gap in the step.",
-      "status": "fixed",
-      "resolution": "Re-tested: assess() now caps every non-ceiling published score at 99 (S23 99/86, previously 100). The reconciliation of S23 with the Werewolf anchor (49) is moot for this guide: S23 is vetoed, removed from the plan, and its risk.json verdict is marked 'HISTORY ONLY ... its numbers must not be published'. If S23 is ever re-rated (veto lift), the 50-point gap to its own anchor must be explained."
-    },
-    {
-      "finding_id": "RT-07",
-      "severity": "medium",
-      "step_id": null,
-      "scenario": "LADDER: the Wilderness premium is added on top of board positions that already price in PvP, so it double-counts. revs-pvp was placed at 76 because it is 'a designed PK hotspot with teleblock'; +20 publishes it at 96, level with the Inferno and above ToB Hard Mode (92), ToA expert (88) and Phosani (87). The Wilderness Agility Course (46, 'deep-Wilderness PvP with no teleport') publishes 66, above Jad (62) and Zulrah learner (66 tie). Also: (a) the fallback treats a step flagged only WILDERNESS as level 1 (+5), the least conservative choice, so a step missing its wilderness_level and DEEP flag in level 50 gets +5 instead of +20; (b) the premium follows residual flags, so a mitigation that removes the WILDERNESS flag also removes the premium; (c) the policy's status line still says 'with wilderness premium +25' although the owner replaced it with tiers. No step in this guide enters the Wilderness, so nothing in the route is affected today.",
-      "evidence": [
-        "policy/danger-calibration.json anchors revs-pvp (position 76, rationale), wildy-course (46), wilderness_premium (tiers, flag_fallback WILDERNESS: 1, owner_decision), status string",
-        "python3 tools/danger.py ladder: 'Revenant Caves ... (+20 Wilderness -> 96)', 'Wilderness Agility Course ... (+20 Wilderness -> 66)'",
-        "docs/05 section 5 (premium after calibration; flag fallback)"
-      ],
-      "recommendation": "Director: ask the owner whether the premium was meant to apply to anchors whose positions already include PvP (if yes, record that revs = Inferno is intended; if no, re-base those anchors). Tool/policy owner: make the fallback conservative (missing wilderness_level with any Wilderness flag -> require the level, or assume the deepest tier), compute the premium from inherent flags, and fix the stale status string.",
-      "status": "accepted_by_user",
-      "resolution": "Mechanical parts fixed: tools/validate.py now FAILs any Wilderness-flagged step without wilderness_level (so the least-conservative level-1 fallback can no longer apply silently to guide steps), the headline premium is computed from the unmitigated flags, and the policy status string now reads 'tiered Wilderness premium by depth'. The double count with PvP-priced anchors remains by owner choice: the owner set the tiered premium after seeing its effect on those anchors (jobs/calibration-20261120 ledger seq 17: 'Revenant Caves 17-40 -> +20 = 96 ... Wilderness course 50-56 -> +20 = 66'). The residual premium still follows residual flags, but the residual is capped at the headline and a flag can only be removed by a fact-cited mitigation. No step in this guide enters the Wilderness."
-    },
-    {
-      "finding_id": "RT-08",
-      "severity": "medium",
-      "step_id": "S05",
-      "scenario": "Underground Pass, Iban's temple: entering the temple triggers red spikes near the entrance that 'rapidly deal around 5 to 8 damage each and can't be blocked with prayers. They also stun you and teleport you back to the entrance, so make sure you run in with plenty of health.' The S05 prep card gates HP at 40+ only for bridge jumps, the rope swing and Kalrag; the only general stop condition is 'teleport out if HP < 25 and food is gone'. A literal follower arriving at the temple after the Kalrag corridor at, say, 26-30 HP with food left can be stunned through several spike hits, sent back to the entrance and try again without eating. Spike damage is not reduced by Protect from Melee, the prayer the card relies on at that stage.",
-      "evidence": [
-        "Underground Pass rev 15392817 line 313 (red spikes, 5-8 each, rapid, not blocked by prayer, stun, teleport to entrance; 'run in with plenty of health'): https://oldschool.runescape.wiki/w/index.php?oldid=15392817",
-        "F-5026 (same, as summarised in facts.json)",
-        "risk.json S05-M1 and preconditions.stop_conditions"
-      ],
-      "recommendation": "Risk Officer: add an explicit gate 'enter Iban's temple at full HP; after any spike stun, eat back to full before re-entering', and add the spikes to S05-M1's list. Also say that Protect from Melee does not help there.",
-      "status": "fixed",
-      "resolution": "Re-tested on risk.json v3: new S05-M5 'Iban's temple gate' (enter only at 48/48, run in, Protect from Melee does not block the spikes, eat to full after any stun before retrying) plus stop conditions 'Never enter Iban's temple below 48/48 HP' and 'teleport out after two consecutive stuns or under 6 food'. Matches the wiki line cited (Underground Pass rev 15392817)."
-    },
-    {
-      "finding_id": "RT-09",
-      "severity": "medium",
-      "step_id": "S12",
-      "scenario": "Default route, first trip to Rellekka: S13-M1 bans the Camelot road ('travel only by enchanted lyre'), but the lyre only exists after S12 is complete. S12 itself (lyre farming, the Draugen hunt, every trial) has to be reached by the Camelot tablet and the 'very long run' north, whose NPCs are unresearched (F-5343 caveat; S12-H4). The only road rule in S12 is 'do not attempt the log balance'. The aggressive level 69 Draugen roams the same province (F-5013) and the quest makes the owner criss-cross it several times at Defence 1. The danger of the step that makes Rellekka safe is rated without knowing what is on the road to it.",
-      "evidence": [
-        "F-5343 (route qualitative; 'NPCs along the road were not researched')",
-        "F-5342, F-4086 (no other teleport available to the owner before S12)",
-        "F-5013 (Draugen aggressive, roams the Fremennik Province)",
-        "risk.json S12-H4, S12-M4, S13-M1"
-      ],
-      "recommendation": "Threat desk RFI on the Camelot-to-Rellekka road (aggressive NPCs and their max hits at combat 45). Risk Officer: add the road to the S12 prep card with a minimum HP and the rule to teleport away if the Draugen engages outside the hunt; until then keep knowledge at 4 for S12 and say so in the guide.",
-      "status": "fixed",
-      "resolution": "Re-tested on risk.json v3: new hazard S12-H5 and mitigation S12-M4 put the Camelot road on the S12 card (48/48 HP, two Camelot tablets, stay on the road, no log balance, teleport below 35 HP or on two attackers, teleport if the Draugen engages outside the hunt, report attackers); lethality raised 3 -> 4 and knowledge kept at 4 'until the road RFI is answered'; no factor credit for the road. The road itself is still unresearched (RFI open); the owner accepted S12 with that stated on the card: ledger seq 159 ('unresearched Camelot road')."
-    },
-    {
-      "finding_id": "RT-10",
-      "severity": "medium",
-      "step_id": "S14",
-      "scenario": "About 128 hours of the default route (Seers' S09, Ardougne S14) are spent failing obstacles whose damage no source publishes. The risk entries set lethality 3 'conservative up to ~25% HP' and assert 'a rooftop fail cannot exceed current HP'; neither has a source. The second claim rests on the Werewolf page line that the deathslide is the only obstacle that can deal damage past the player's Hitpoints (F-2091), but F-3075 shows the Pollnivneach stall formula floor(HP/17 + 2) deals 2 damage at 2 HP, which is lethal, so 'cannot exceed current HP' is not a safe general rule. The obstacle pages Gap/Tightrope (Seers') and Gap (Ardougne) were re-read: still no damage figure. With the cards' stop conditions (stop below 20 HP; re-rate if a fail deals more than 12) a death needs a surprise, but the lethality score is a guess presented as conservative.",
-      "evidence": [
-        "F-3074, F-5367 (Seers' fails until 79, no damage figure)",
-        "F-3080, F-5368 (Ardougne fails until 95, no damage figure)",
-        "F-3075 (Pollnivneach formula lethal at 2 HP or less)",
-        "F-2091 (Werewolf-only 'damage past Hitpoints' wording)",
-        "Gap (Seers' Village Rooftop Course) rev 15334119, Tightrope (Seers' Village Rooftop Course) rev 15359414, Gap (Ardougne Rooftop Course) rev 15334145: grep for damage/fail/fall/hitpoint, no figures",
-        "risk.json S09, S14 factors.lethality rationale; calc.json hours"
-      ],
-      "recommendation": "Raise an RFI for a T3 source (or an owner in-game observation log) of Seers' and Ardougne fail damage. Until then keep knowledge 4, drop the 'cannot exceed current HP' sentence, and keep the 20-HP stop and 'never below 10 HP on any failable obstacle' rule on every rooftop card (S07, S08, S09, S14, S26).",
-      "status": "fixed",
-      "resolution": "Re-tested on risk.json v3: the 'a rooftop fail cannot exceed current HP' claim and F-2091 are gone from S07, S09, S14, S26; each lethality rationale now says 'conservative rating, not a sourced bound'; knowledge stays 4; the general rule sets eat at 30, never attempt a failable obstacle below 20 HP, re-rate after any fail above 12, and never attempt the Pollnivneach stall below 10 HP (F-3075). The fail-damage RFI (T3 source or owner observation log) is still unanswered, which is disclosed."
-    },
-    {
-      "finding_id": "RT-11",
-      "severity": "medium",
-      "step_id": null,
-      "scenario": "Disconnect mitigation not used: every Hardcore Worlds character starts with an escape crystal (F-3016), and the current wiki says it can be configured to auto-teleport on taking damage after 2-300 s of inactivity. A disconnect produces exactly that condition. The plan lists the crystal in its checklist, but no DISCONNECT_FATAL step (S06 Tyras guard, S12 Koschei forms 2-3, S16 generals, S17 Arrg) credits or even mentions it, while those steps rate disconnect at 4-5 or remove the flag by prayer alone. Limits: it does not fire while the player is moving (so it does not cover the Arrg run), its scope inside the Koschei instance and the Troll arena is undocumented, and worn it shares the ring slot (RT-02).",
-      "evidence": [
-        "F-3016 (one free escape crystal on Hardcore Worlds)",
-        "Escape crystal rev 15409296 line 36 ('auto-activate upon taking damage (including zeros) after a specified time of inactivity (ranging from 2 to 300 seconds)') and line 38 ('will NOT activate while the player is moving'): https://oldschool.runescape.wiki/w/index.php?oldid=15409296",
-        "F-5386 (scope in some activities undocumented)",
-        "plan.json prerequisite_checklist (escape crystal); risk.json S06, S12, S16, S17 disconnect factors"
-      ],
-      "recommendation": "Risk Officer: evaluate a configured escape crystal (short inactivity timer, carried or worn) as a disconnect mitigation on S06, S12 (forms 1-3), S16 and S17, with an RFI on whether it works in the Koschei instance and the Troll arena. Do not credit it for moving phases.",
-      "status": "fixed",
-      "resolution": "Re-tested on risk.json v3: the escape crystal is now evaluated on S06, S12 (M6), S16 and S17 (M6) and in a general rule (short inactivity timer, F-3017; does not fire while moving, F-3018; scope undocumented, F-5386; never worn in the Koschei duel, F-0015/F-5011). It is honestly not credited anywhere because its scope in these instances and open-world fights is undocumented, and disconnect stays rated 5 on the fights. This is the recommended outcome until the scope RFI is answered."
-    },
-    {
-      "finding_id": "RT-12",
-      "severity": "low",
-      "step_id": null,
-      "scenario": "Random events: the plan's mitigation ('long rooftop sessions should be broken up and HP kept high') and the rooftop factor rationales ('random events' as unpredictability) aim at the wrong mechanism. The current wiki says random events can be dismissed or ignored and disappear after a minute; aggressive random events were removed in 2014 'without a risk of dying'. The realistic Hardcore Worlds trap is different: accepting a teleporting event while in a dangerous place (Underground Pass, Trollheim, Isafdar, Darkmeyer) returns the player to the same tile among the same aggressive monsters, or to Lumbridge if the tile became blocked; and an event interface opened mid-fight costs attention. HP level does not mitigate either.",
-      "evidence": [
-        "F-0003, F-3012 (random events are unsafe deaths on Hardcore Worlds)",
-        "Random events rev 15407277 line 5 (dismiss or ignore; disappears after a minute), line 16 (returned to the same tile, or Lumbridge if blocked), line 277 (2014 update removed aggressive randoms, optional 'without a risk of dying'): https://oldschool.runescape.wiki/w/index.php?oldid=15407277",
-        "plan.json assumptions ('Random events ... HP kept high')"
-      ],
-      "recommendation": "Route Strategist / Risk Officer: replace the advice with 'always dismiss random events; never accept a teleporting event during a quest step or in a dangerous area', and do not use random events to raise rooftop unpredictability unless a source shows a damage path.",
-      "status": "fixed",
-      "resolution": "Re-tested: risk.json general rule and plan.json v3 assumption now say to dismiss random events in quest steps and dangerous areas (Underground Pass, Isafdar, Trollheim, the Rellekka road, Darkmeyer), never accept a teleporting event there, dismiss them on rooftops too, and that HP level does not change this risk; the per-step stop conditions repeat it. The risk rule correctly labels the Random events rev 15407277 reading as the Red Team's and 'not yet a verified fact'."
-    },
-    {
-      "finding_id": "RT-13",
-      "severity": "low",
-      "step_id": null,
-      "scenario": "Defence cap tracking across quest chains: plan assumption says 'only The Fremennik Trials adds Defence on any route', but DP07 option B (the long-term Sepulchre goal) requires Sins of the Father's chain, whose Nature Spirit (2,000), In Search of the Myreque (600) and In Aid of the Myreque (2,000) add 4,600 forced Defence XP (F-2101, F-2132). With The Fremennik Trials that is 7,412.4 XP = Defence 24 (tools/xp.py), still under the cap of 50, but the plan does not show it. Separately, S19's lamp skill_choices omit Defence although F-2015 says the lamps take any combat skill: if the guide renders choices from that list, the owner never sees the Defence trap the rationale warns about.",
-      "evidence": [
-        "F-2101, F-2132 (4,600 fixed Defence in the Sins of the Father chain)",
-        "F-2038 (2,812.4 Defence from The Fremennik Trials)",
-        "python3 tools/xp.py level 7412.4 -> 24",
-        "F-2015 (Black Knights' Fortress lamps: any combat skill including Prayer)",
-        "plan.json assumptions (Defence line), DP07 option B, S19 lamp_rewards.skill_choices"
-      ],
-      "recommendation": "Route Strategist: add the 4,600 chain Defence to DP07 option B's conditions (Defence 24 with S12); list Defence in S19's choices with an explicit 'never' marker.",
-      "status": "fixed",
-      "resolution": "Re-tested plan.json v3: the Defence assumption and DP07 option B (justification and cons) now carry the 4,600 forced Defence XP of the Sins of the Father chain (F-2101, F-2132), Defence about 24 with The Fremennik Trials (7,412.4 XP; tools/xp.py), under the cap of 50; S19 lamp skill_choices now include 'Defence: never (zerker cap)', chosen_skill stays Prayer. Process note, not blocking: the ledger (seq 164) calls the plan numbers 'byte-identical', but the S19 skill_choices edit sits inside lamp_rewards, a numeric key, so plan_numeric_sha256 changed (v2 f10d8458e30a -> v3 914ed7ab1569); calc.json was re-emitted against the v3 hash and the chosen skill and XP are unchanged, so no number moved."
-    },
-    {
-      "finding_id": "RT-14",
-      "severity": "low",
-      "step_id": null,
-      "scenario": "Process: risk.json (sealed 7a177fd58bbd) records as inputs plan.json 6cc4bade59d9, calc.json 313257a6f2ab, docs/05 3bebd2f7cae5 and tools/danger.py 15c98e6335d8, none of which is the current version (plan 1fd8d37ca65e, calc 660fe306d6f2, docs/05 c18afe9968a2, danger.py 805ef381ecfe). Its verdict texts quote model scores from that older engine (e.g. 'Residual 47 (High)'), while the current engine publishes 20. The 23-step plan was re-cut after the rating (S22-S24 removed, S25 reframed as a long-term goal, DP03 C kept) without a re-rating pass, so nobody has checked the risk entries against the plan the owner will follow.",
-      "evidence": [
-        "risk.json provenance.inputs",
-        "ledger seq 136 (risk sealed), 137-143 (plan and calc revised and resealed after it)",
-        "sha256 of current tools/danger.py and docs/05-danger-model.md"
-      ],
-      "recommendation": "Director: after the fixes above, re-dispatch the Risk Officer against the sealed plan 1fd8d37ca65e and current danger.py so verdict texts and published scores agree.",
-      "status": "fixed",
-      "resolution": "Re-tested: risk.json v3 provenance now records the current tools/danger.py (87d237df6949), policy (15870680b0d7), docs/05 (c18afe9968a2) and plan v2 (1fd8d37ca65e); every verdict text and both route verdicts quote the scores danger.py now publishes. plan.json v3 (f343604e839c) was cut after risk v3 as text-only corrections that align the plan to risk v3 (diffed against v2: only text fields and the S19 skill_choices string changed), and calc.json was re-emitted against it (36391dcc75e5) with unchanged numbers, so the risk entries match the plan the owner will follow."
-    },
-    {
-      "finding_id": "RT-15",
-      "severity": "low",
-      "step_id": null,
-      "scenario": "LADDER: ordering of learner content around Jad. TzHaar Fight Cave (Jad) sits at 62, below Zulrah learner (66), Vorkath learner (64) and ToA entry/normal ~150 (70). The Fight Caves are explicitly an unsafe death on Hardcore Worlds (Jagex names them), the model itself rates Jad 94 (with the Inferno) and calls it 'the clearest saturation case', and a typical first attempt combines over an hour of waves with a one-shot finale. Placing Jad below a learner Zulrah and a mid-level raid is a judgement call that the board should defend explicitly, because quest bosses and Barrows are pinned just below it.",
-      "evidence": [
-        "policy/danger-calibration.json anchors jad (62, raw 94), zulrah (66), vorkath (64), toa-150 (70)",
-        "F-0001 (Jagex 4 Nov post names the Fight Caves among deaths that are no longer safe)"
-      ],
-      "recommendation": "Calibration board: record why Jad is below Zulrah/Vorkath learners and ToA 150, or move it; re-check at the next calibration.",
-      "status": "accepted_by_user",
-      "resolution": "Unchanged: Jad still sits at 62 below Vorkath learner (64), Zulrah learner (66) and ToA 150 (70), and Vorkath/Jad is one of the 5 conflicts. Part of the ladder the owner approved with its known ordering conflicts (jobs/calibration-20261120 ledger seq 14 then seq 16; dispatch 038). Accepted as a documented limitation; the board should record its rationale at the next calibration."
-    },
-    {
-      "finding_id": "RT-16",
-      "severity": "low",
-      "step_id": "S12",
-      "scenario": "New with the RT-11 fix (S12-M6). A literal follower who carries the escape crystal in the inventory, set to a short inactivity timer as M6 suggests, reaches Koschei's form 4 and obeys the bailout text 'Form 4: do not resist; let him take you to 1 HP'. Form 4 hits 1 every tick (F-5009), so a player who stands still takes damage after the inactivity time and the crystal fires (F-3017): he is teleported out and the fight restarts at form 1 (F-5011, F-0015), which re-exposes him to the run-ending forms 1-3. M6 itself says 'keep walking' in form 4 so it cannot fire, but the bailout and stop conditions do not, and the crystal earns no credit anywhere in the duel, so carrying it adds a reset loop and no counted protection.",
-      "evidence": [
-        "risk.json S12-M6 and S12 bailout ('Form 4: do not resist')",
-        "F-3017 (fires on damage after 2-300 s of inactivity)",
-        "F-3018 (does not fire while moving)",
-        "F-5009 (form 4 hits 1 every tick)",
-        "F-5011, F-0015 (teleport to respawn point; fight restarts at form 1)"
-      ],
-      "recommendation": "Risk Officer: either tell the owner to bank the escape crystal for the Koschei duel (it is uncredited there), or add 'keep walking in form 4 if the crystal is in your inventory' to the S12 bailout and stop conditions so the card says the same thing in every place. Not blocking: the outcome is a reset, not a death, and form 1 is the lowest-hitting form.",
-      "status": "open"
-    },
-    {
-      "finding_id": "RT-17",
-      "severity": "low",
-      "step_id": null,
-      "scenario": "New with the RT-03/RT-04 engine fix. python3 tools/danger.py score prints the calibrated unmitigated headline under the label 'raw' (e.g. 'S05 raw 55 High'), while docs/05 section 4 defines 'Raw DS' as the model score before calibration (S05's model score is 70) and section 6 says only 'from score 45 up' without saying that the prep-card gate now uses the unmitigated headline. Section 4 still says 'Routes are judged on residual' without naming the new headline. A writer or QA agent reading docs/05 and the CLI could print the wrong scale or the residual as the headline. The rule is recorded correctly only in policy/danger-calibration.json 'publishing'.",
-      "evidence": [
-        "python3 tools/danger.py score agility-1-99-20261119 output labels",
-        "tools/danger.py assess() returns model_inherent 70 vs inherent_ds 55 for S05",
-        "docs/05-danger-model.md sections 4 and 6 (sha256 c18afe9968a2, unchanged since before the fix)",
-        "policy/danger-calibration.json 'publishing'",
-        "tools/validate.py g_risk prep-card gate on inherent_ds"
-      ],
-      "recommendation": "Director (governance mode): relabel the CLI columns 'headline' / 'with prep' and update docs/05 sections 4-6 to say the headline is the unmitigated calibrated score, the with-prep score is the residual on the same mapping, floors apply on the published scale, and the prep card is mandatory from a headline of 45.",
-      "status": "open"
-    }
-  ],
-  "provenance": {
-    "agent": "red-team",
-    "started_at": "2026-11-21T03:22:00Z",
-    "finished_at": "2026-11-21T03:40:00Z",
-    "dispatch_ref": "dispatch/038-red-team.md",
-    "inputs": [
-      {
-        "path": ".claude/agents/red-team.md",
-        "sha256": "1b889c868cb35bd7d12dbdaf74274529e89f645fa12989dda6f507aedc3a6c2d"
-      },
-      {
-        "path": "dispatch/038-red-team.md",
-        "sha256": "0eb608b788192a8c57cf02c7fb00ebb3760a2b71cd65c41c0c3fb8ec6ed888e4"
-      },
-      {
-        "path": "redteam.json",
-        "sha256": "c70e15dbfd18540357cd255ebe7607540c0e64d18fecac9dc216d1951996c527"
-      },
-      {
-        "path": "brief.json",
-        "sha256": "c27aa6bc9969f981aed9185637565c2792f58b80646cc531afa503e27f969389"
-      },
-      {
-        "path": "facts.json",
-        "sha256": "70fcb7eed3ab243ba3a64501f766da075bc69de64e8cdbc9fe39ed53f456fa12"
-      },
-      {
-        "path": "plan.json",
-        "sha256": "f343604e839c966d5699f2669a4cd6e2d7ef6456e16647f22fdfbcde7f5d5780"
-      },
-      {
-        "path": "calc.json",
-        "sha256": "36391dcc75e537051ab5c6a4d69510cb54854d08ce05066a8a028c5cac817c76"
-      },
-      {
-        "path": "risk.json",
-        "sha256": "6302e5ce2c6b72e279f457e33937a2e171bd2670610d12d913e2e1a063b82eda"
-      },
-      {
-        "path": "policy/danger-calibration.json",
-        "sha256": "15870680b0d7c5b918a4662fa4938dd147a368bd279358a49538ca26175037f2"
-      },
-      {
-        "path": "profiles/hcmbtw.json",
-        "sha256": "afaba37c1285692cca4547edf9927f6d748d61caf665799c4bdf8c1263d4bc77"
-      },
-      {
-        "path": "docs/05-danger-model.md",
-        "sha256": "c18afe9968a23878a13e7da4e730fde5fe15a443be27f819d5da3b304dcecffe"
-      },
-      {
-        "path": "docs/07-hardcore-worlds-baseline.md",
-        "sha256": "8108c4460dbecdbdac501880220d2ad6ab93ed6ed611a99bb9532debb5e72c01"
-      },
-      {
-        "path": "schemas/redteam.schema.json",
-        "sha256": "2ed555d214f6e5d73fb7fda2d32252c3589efa6ad7536a9a81d89de8c2bf61ef"
-      },
-      {
-        "path": "tools/danger.py",
-        "sha256": "87d237df6949741c631d39332bd8cb02964ffc743b35c037e47f2f0acf71c371"
-      },
-      {
-        "path": "tools/validate.py",
-        "sha256": "3daca665c57209831c45eef81b344f951a90dc9a7411c8074930664a9eff5ee0"
-      },
-      {
-        "path": "tools/xp.py",
-        "sha256": "c54c4837d331ef2c4396115d82a56a6a93d4010b175c392d2120d8fb2647aceb"
-      }
-    ],
-    "actions": [
-      {
-        "kind": "verify",
-        "detail": "sha256sum of charter (prefix 1b889c868cb3 matches dispatch) and all inputs; python3 tools/ledger.py verify agility-1-99-20261119",
-        "outcome": "OK: ledger chain and seals intact; sealed hashes match dispatch (brief c27aa6bc9969, facts 70fcb7eed3ab, plan 1fd8d37ca65e, calc 660fe306d6f2, risk 7a177fd58bbd); calc-draft.json unsealed and not used"
-      },
-      {
-        "kind": "read",
-        "detail": "CLAUDE.md, docs/05, docs/07, schemas/redteam.schema.json, brief.json, profiles/hcmbtw.json, plan.json (routes, 23 steps, 7 DPs, assumptions, checklist), risk.json (26 entries), ~110 facts in facts.json, policy/danger-calibration.json (27 anchors), tools/danger.py, tools/validate.py (g_risk, g_redteam, check_provenance)"
-      },
-      {
-        "kind": "compute",
-        "detail": "python3 tools/danger.py ladder; python3 tools/danger.py score agility-1-99-20261119; danger.assess() internals (model inherent/residual, floors, residual flags) and ladder points for every step",
-        "outcome": "plateau (66..82 -> 54.8), 5 ordering conflicts, published residuals below flag floors on S01, S10, S11, S12, S13, S17, S25"
-      },
-      {
-        "kind": "compute",
-        "detail": "python3 tools/xp.py level 7412.4 / 2812.4 / 94167",
-        "outcome": "24 / 16 / 49"
-      },
-      {
-        "kind": "fetch",
-        "detail": "python3 tools/wiki.py new-pages --ns Update --since 2026-11-15",
-        "outcome": "6 Update pages; none changes the facts used"
-      },
-      {
-        "kind": "fetch",
-        "detail": "wiki.py page Update:Quest Month Week 3 & TFA Practice Mode (grep HW/agility/quest terms)",
-        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15406871",
-        "outcome": "HW changes only to death broadcasts, Death's Office trading and CA fixes; nothing on Agility, these quests or death rules"
-      },
-      {
-        "kind": "fetch",
-        "detail": "wiki.py page Update:Gielinor Gazette - November 2026 (grep)",
-        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15410302",
-        "outcome": "no relevant change"
-      },
-      {
-        "kind": "fetch",
-        "detail": "wiki.py history (limit 1-3) for 23 pages: Troll Romance, Arrg, Koschei the deathless, The Fremennik Trials, Troll Stronghold, Troll general, Underground Pass, Regicide, Hardcore Worlds, Random events, The Writing's on the Wall, Escape crystal, Pollnivneach/Rellekka/Ardougne/Seers'/Falador rooftop courses, Hallowed Sepulchre, Death Plateau, Icthlarin's Little Helper, The Depths of Despair, Pollnivneach, Group Ironman Mode",
-        "outcome": "every cited revision is still the latest except Random events (15407277, list edit) and Escape crystal (15409296 is cited and latest); no post-verification content change found"
-      },
-      {
-        "kind": "fetch",
-        "detail": "wiki.py page Random events (grep dangerous/aggressive/dismiss/teleport)",
-        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15407277",
-        "outcome": "RT-12 evidence"
-      },
-      {
-        "kind": "fetch",
-        "detail": "wiki.py page Escape crystal (grep inactivity/activate)",
-        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15409296",
-        "outcome": "RT-11 evidence"
-      },
-      {
-        "kind": "fetch",
-        "detail": "wiki.py rev 15392817 (Underground Pass) grep spikes/claw/teleport; cached text lines 150-152, 261, 277, 313",
-        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15392817",
-        "outcome": "RT-08 evidence"
-      },
-      {
-        "kind": "fetch",
-        "detail": "wiki.py page Gap (Seers' Village Rooftop Course), Tightrope (Seers' Village Rooftop Course), Gap (Ardougne Rooftop Course), Ardougne Rooftop Course, Seers' Village Rooftop Course, Rooftop Agility Courses (grep damage/fail)",
-        "outcome": "no fail-damage figure anywhere (RT-10)"
-      },
-      {
-        "kind": "search",
-        "detail": "WebSearch 'OSRS Hardcore Worlds hotfix November 2026'",
-        "outcome": "T4/T2 leads only; latest hotfix reported 16 Nov (F2P world, Death's Office); nothing on these activities"
-      },
-      {
-        "kind": "search",
-        "detail": "WebSearch on the 'accidentally killing players' GamesRadar story; WebFetch of gamesradar.com failed (host not allowed)",
-        "outcome": "search summary places it in early October 2026 (main-game PvP tutor bug), before Hardcore Worlds; not used"
-      },
-      {
-        "kind": "search",
-        "detail": "WebSearch 'hardcore worlds death Arrg OR Underground Pass OR Troll Stronghold OR rooftop osrs reddit'",
-        "outcome": "no reports of HW deaths at these activities found; no lead to confirm"
-      },
-      {
-        "kind": "write",
-        "detail": "jobs/agility-1-99-20261119/redteam.json (15 findings, RT-01..RT-15)"
-      },
-      {
-        "kind": "verify",
-        "detail": "python3 tools/validate.py agility-1-99-20261119 redteam"
-      },
-      {
-        "kind": "verify",
-        "detail": "RE-TEST (dispatch 038): python3 tools/ledger.py verify agility-1-99-20261119",
-        "outcome": "OK: chain and all seals intact (WARN unsealed calc-draft.json, not used)"
-      },
-      {
-        "kind": "read",
-        "detail": "Ledger entries seq 131-173 (risk v3 seal, owner accept_risk S12 seq 159 and S17 seq 160, plan v3 and calc re-emit) and jobs/calibration-20261120/ledger.jsonl owner decisions (seq 7, 14, 16, 17)",
-        "target": "jobs/agility-1-99-20261119/ledger.jsonl",
-        "outcome": "S12/S17 re-confirmed on corrected cards; ladder approved after the 5 conflicts were reported; tiered premium set by the owner with the anchor effects stated"
-      },
-      {
-        "kind": "compute",
-        "detail": "python3 tools/danger.py score agility-1-99-20261119 and python3 tools/danger.py ladder",
-        "outcome": "Floors hold on the published scale (S12 45, S17 55, S25 45, S01 25, S10/S11/S13 10); S23 capped 99; 5 conflicts unchanged"
-      },
-      {
-        "kind": "read",
-        "detail": "tools/danger.py assess()/premium()/calibrate()/main() and tools/validate.py g_risk/g_redteam/check_provenance",
-        "target": "tools/danger.py",
-        "outcome": "Headline = unmitigated calibrated; floors after calibration; cap 99; prep gate on inherent_ds; wilderness_level now required"
-      },
-      {
-        "kind": "read",
-        "detail": "risk.json v3 entries S05, S06, S07, S09, S12, S14, S15, S16, S17, S26, general_rules, route_verdicts, provenance.inputs; compared every verdict_reason with danger.py scores",
-        "target": "risk.json",
-        "outcome": "RT-01, 02, 08-12, 14 addressed"
-      },
-      {
-        "kind": "read",
-        "detail": "plan.json v3 assumptions, DP03, DP07, S12 and S19; facts F-0015, F-3016-F-3018, F-5386, F-4062, F-5026, F-2091, F-3075",
-        "target": "plan.json",
-        "outcome": "RT-12, RT-13 and DP03 C corrections present"
-      },
-      {
-        "kind": "compute",
-        "detail": "git show of plan.json at 5bb0a2a (v2) and aad18ba (v3) into the scratchpad; structural diff and tools/xp.py plan_numeric_sha256 of each",
-        "outcome": "Only text fields plus S19 skill_choices changed; numeric hash v2 f10d8458e30a vs v3 914ed7ab1569 (lamp_rewards is a numeric key); no number moved"
-      },
-      {
-        "kind": "read",
-        "detail": "docs/05-danger-model.md sections 2-7",
-        "target": "docs/05-danger-model.md",
-        "outcome": "Not updated for the engine fix (RT-17)"
-      },
-      {
-        "kind": "write",
-        "detail": "jobs/agility-1-99-20261119/redteam.json: statuses for RT-01..RT-15, new low findings RT-16, RT-17, provenance updated"
-      },
-      {
-        "kind": "verify",
-        "detail": "python3 tools/validate.py agility-1-99-20261119 redteam"
-      }
-    ],
-    "decisions": [
-      {
-        "decision": "No finding rated critical.",
-        "reason": "Charter: critical = plausible death on the default route. The worst killing windows (Arrg run, Troll generals) are decision-point options (DP03 recommends A). On the recommended balanced route the defects found (ring of life loop, deflated scores, missing temple HP gate, unresearched Rellekka road) raise risk but each needs a further mistake or bad luck to kill, so they are high/medium.",
-        "alternatives_considered": [
-          "Rate RT-04 critical because it understates the default-route quests S05/S06/S12",
-          "Rate RT-01 critical because the owner is informed and may pick option C"
-        ]
-      },
-      {
-        "decision": "Ladder findings carry step_id null and scenarios starting 'LADDER:' (RT-03..RT-07, RT-15), as dispatched; RT-11..RT-14 are cross-step and also use step_id null.",
-        "reason": "Dispatch instruction; they affect many steps or the policy itself."
-      },
-      {
-        "decision": "RT-01 states that two hits can be 38 + 38 (melee twice), not only 38 + 30.",
-        "reason": "F-3089 says melee is his primary attack and the card's Protect from Missiles does not block it; the dispatch's 38 + 30 case is the lesser one.",
-        "alternatives_considered": [
-          "Keep the dispatch's 38 + 30 framing only"
-        ]
-      },
-      {
-        "decision": "No hotfix or change newer than facts.verified_at was found; this is reported under actions, not as a finding.",
-        "reason": "All cited wiki revisions are current and the 18-20 Nov Update pages contain nothing relevant."
-      },
-      {
-        "decision": "Recorded policy/danger-calibration.json and profiles/hcmbtw.json as inputs although validate.py's COMPANY_FILES list does not include policy/ or profiles/.",
-        "reason": "Constitution rule 6 requires every input; honest provenance outranks a clean gate. The Director is told that validate.py will flag them as unsealed.",
-        "alternatives_considered": [
-          "Omit them to avoid a provenance failure"
-        ]
-      },
-      {
-        "decision": "RT-01 and RT-02 set to fixed (card defects corrected), with the owner's re-acceptance of the remaining risk cited in the resolution, rather than accepted_by_user.",
-        "reason": "The findings were defects in the prep cards (wrong prayer, a mitigation that resets the fight); those defects are corrected. What remains (the unclosable Arrg run window; no exit in Koschei forms 1-3) is the step's inherent risk, which the owner accepted on the corrected cards (ledger seq 159, 160).",
-        "alternatives_considered": [
-          "accepted_by_user for both",
-          "keep open until the run-length and instance RFIs are answered"
-        ],
-        "refs": [
-          "ledger seq 159",
-          "ledger seq 160"
-        ]
-      },
-      {
-        "decision": "RT-05, RT-07 and RT-15 set to accepted_by_user citing the calibration job's ledger.",
-        "reason": "The ladder content did not change; the owner's approval (calibration ledger seq 16) followed the Director's report of the 5 conflicts (seq 14), and the tiered premium (seq 17) was set with its effect on the PvP anchors stated. The acceptance that it covered the conflicts explicitly rests on dispatch 038's statement; the owner's verbatim words do not name them.",
-        "alternatives_considered": [
-          "rejected (the issues are real)",
-          "open (medium/low would not block, but the owner has decided)"
-        ],
-        "refs": [
-          "jobs/calibration-20261120/ledger.jsonl seq 14, 16, 17"
-        ]
-      },
-      {
-        "decision": "Added only two new findings, both low (RT-16 S12 crystal form-4 wording; RT-17 docs/CLI labels).",
-        "reason": "Dispatch: add new findings only if a fix introduced a new problem. Both arise directly from the fixes (S12-M6, the engine change); neither can plausibly cause a death on its own.",
-        "alternatives_considered": [
-          "RT-16 medium because a reset re-exposes forms 1-3",
-          "fold RT-17 into RT-04's resolution"
-        ]
-      }
-    ],
-    "limitations": [
-      "Re-test only (dispatch 038: re-check the evidence, no re-research): no new web or wiki fetches; the wiki revisions cited in v1 were not re-read.",
-      "No game client: the Arrg run length, arena teleport behaviour, escape crystal scope in the Koschei instance and Troll arena, and rooftop fail damage remain untested and are still open RFIs owned by other roles.",
-      "The acceptance of the ladder conflicts (RT-05, RT-15) relies on the Director's statement in dispatch 038 together with the calibration ledger order (seq 14 before seq 16); the owner's verbatim approval does not mention the conflicts.",
-      "Steps S18-S21 and S24 were reviewed only for prerequisites, Defence and scoring in v1 and were not re-reviewed fight-by-fight here."
-    ]
+ "attack_surface": [
+  "1 Prerequisite traps: every routed and decision-point quest's requirements checked against brief.profile (quests, skills, items); the lyre path for S12 (F-2039/F-5383); Thieving 24 forcing the Berry/Twig fights in S16 (F-5019/F-5377); Shantay/carpet travel items for S10.",
+  "2 Travel deaths: Pollnivneach carpet route and crocodiles (F-1032, F-4084), the Camelot-to-Rellekka road on the first trip before the lyre exists (F-5343, F-5345), Trollheim thrower trolls and Death Plateau paths (F-5374, F-5375, F-5376), desert travel for S03/S04, the East Ardougne Wilderness lever (F-4091).",
+  "3 Low-HP skilling: fail damage at 48 HP on Falador (F-1011), Canifis (F-3071), Seers' (F-3074/F-5367), Pollnivneach (F-3075), Rellekka (F-3079), Ardougne (F-3080/F-5368); Underground Pass bridges, traps and Iban's spikes (F-5026, F-5379); Isafdar traps (F-5028); Sepulchre traps (F-3057).",
+  "4 Disconnect and AFK: every step flagged DISCONNECT_FATAL (S03, S06, S12, S15, S16, S17) checked against the 60 s in-combat DC timer (F-3021) and 16-tick logout rule (F-3022); escape-crystal auto-teleport as a DC mitigation (F-3016, Escape crystal rev 15409296).",
+  "5 Death-rule traps: Koschei forms 1-3 vs form 4 (F-0004, F-3014, F-5001, F-5002); Arrg (F-5003); Sepulchre (F-3003, F-3061); random events (F-0003, F-3012) re-read against the current Random events page (rev 15407277); POH and NMZ teleport routes (F-4078, F-4080).",
+  "6 Stale facts: wiki Update namespace scanned for pages created 2026-11-15 onward; Update:Quest Month Week 3 & TFA Practice Mode (rev 15406871) and Update:Gielinor Gazette - November 2026 (rev 15410302) grepped; page histories of 23 cited pages compared with the revisions cited in facts.json; web searches for Hardcore Worlds hotfixes and HW deaths at these activities (T4 leads only).",
+  "7 Quest fights: Underground Pass (demons, paladins, Kalrag, Iban's temple), Regicide (Tyras guard, Isafdar), The Fremennik Trials (Draugen, Koschei, lyre citizens), Death Plateau, Troll Stronghold (Dad, generals, Berry/Twig), Troll Romance (Arrg), Icthlarin's Little Helper flashbacks.",
+  "8 Mitigation optimism: every mitigation on S05, S06, S12, S15, S16, S17, S25 and the rooftop steps re-read for whether it actually lowers the factor it claims, and whether the prep card closes the documented killing window.",
+  "9 Calibration sanity: policy/danger-calibration.json anchors re-scored with tools/danger.py (ladder points, isotonic plateau, conflicts, Wilderness premium); every guide step's published inherent/residual score compared with its model score, its flag floors, the ladder anchors it is compared to, and the risk officer's own verdict text."
+ ],
+ "findings": [
+  {
+   "finding_id": "RT-01",
+   "severity": "high",
+   "step_id": "S17",
+   "scenario": "Owner picks DP03 option C and follows the S17 prep card literally: talks to Arrg at 48/48 HP with Protect from Missiles on and runs from the arena centre to the safespot. Arrg 'primarily uses' his 38 melee (F-3089 quote) and that attack is NOT blocked by Protect from Missiles, so the prayer the card mandates protects against the less likely attack during the only phase where melee can reach. At Defence 1 a 38 lands from full HP: 48 -> 10. The card's rule is 'eat whenever HP is 30 or lower' and 'if a hit of 30+ lands before you reach the safespot, eat at once, then keep moving', with food described only as 'best healing food you have (16+)'. One ordinary food (owner Cooking 23) takes 10 HP to roughly 20-30, and the next attack 4 ticks later (attack speed 4, F-5021) is either another 38 melee (kills) or a 30 ranged that can occasionally pass prayer (kills at 30 or less). The card also sets the eat threshold at 30, which is wrong while melee can still reach: at 31-38 HP a single 38 kills. The risk officer's own verdict concedes 'no verified mitigation closes' the window, yet the step is approved and offered as option C with a card that implies it is survivable. The run's length and whether a teleport works in the arena are both undocumented (F-2036 caveat, bailout text), so the number of attacks taken during the run is unbounded by any fact.",
+   "evidence": [
+    "F-5021 (Arrg max 38 slash / 30 ranged, attack speed 4, attacks at once on arrival, you take hits reaching either safespot)",
+    "F-3089 (melee is the primary attack; ranged 'significantly' more accurate; both occasionally pass protection prayers)",
+    "F-2036 (not a safe death; teleport out of arena not stated)",
+    "F-5003 (run-ending on Hardcore Worlds)",
+    "F-3021 (60 s in-combat disconnect timer)",
+    "risk.json S17 mitigations S17-M1..M4, preconditions.stop_conditions and verdict_reason ('no verified mitigation closes it')",
+    "brief.json profile: Hitpoints 48, Defence 1, Cooking 23"
+   ],
+   "recommendation": "Risk Officer: rewrite the S17 run phase. (1) While Arrg can still reach in melee, the eat threshold must be 38, not 30, and a single eat must be able to lift HP from 10 to 39+: require a combo-eat capable of 29+ healing in one tick-window (e.g. a hard food plus a cooked karambwan, buyable on the HW GE) and state the minimum heal per food, or state honestly that the card cannot survive two max hits and that option C relies on hit RNG during the run. (2) Decide which prayer to hold during the run from evidence (melee primary but inaccurate vs ranged accurate) and say why; switching to Protect from Missiles only once at the melee safespot is the documented logic. (3) Raise an RFI for the run length in ticks and arena teleport behaviour, and for whether an escape crystal configured to the minimum inactivity timer fires in the arena (it does not fire while moving, so it does not cover the run itself). (4) Route Strategist: DP03 option C must quote the unclosed window in its cons, not only 'most dangerous required fight'.",
+   "status": "fixed",
+   "resolution": "Re-tested 2026-11-21 on risk.json v3 (6302e5ce2c6b) and plan.json v3 (f343604e839c). S17-M1 now orders Protect from Melee on before talking to Arrg and through the run (his primary 38 melee), S17-M2 switches to Protect from Missiles only at the safespot; S17-M3 sets the run eat threshold at 38 and 34 at the safespot with a 16-heal minimum (F-4062); S17-M4 prints the honest limit (48 -> 18 -> 34 -> 4 on two max ranged hits with one eat; arithmetic checked; no verified combo-eat, run length undocumented) and a stop condition requires accepting that a correctly prepared player can die in the run. Knowledge raised to 4; RFIs for run length, arena teleport and escape crystal named. Plan DP03 option C pros now say Protect from Melee for the run and its cons quote the unclosable window (risk.json S17-M4). Published 88 headline / 55 with prep, the highest with-prep score in the plan. The remaining run-phase risk was accepted by the owner on the corrected card: ledger seq 160 (accept_risk S17, 'Keep as option (informed)')."
+  },
+  {
+   "finding_id": "RT-02",
+   "severity": "high",
+   "step_id": "S12",
+   "scenario": "On the default (balanced) route the owner obeys the S12 prep card, which lists a ring of life as a required item and mitigation S12-M1 'Wear a ring of life in the Koschei fight'. The wiki the card itself cites says the opposite: 'Do not wear a ring of life as you will be teleported back to your spawn point. You will need to fight him again at his first phase.' Form 4 hits 1 HP every tick and ends the fight only at 1 HP (F-5002, F-5009); a ring of life worn into form 4 fires as soon as HP falls below 10% (about 4 HP at 48 max), so the owner is teleported out and Koschei resets to form 1 every time. A literal follower cannot finish the quest while obeying the card, and every retry re-exposes him to forms 1-3, the only run-ending phases (F-5001), with no armour. The mitigation is also credited with escape -2, which drops the step's residual; that credit is invalid for form 4 and overstated for forms 1-3 (the ring cannot save from a hit that kills outright).",
+   "evidence": [
+    "F-5011 (quote: 'Do not wear a [[ring of life]] as you will be teleported back to your spawn point. You will need to fight him again at his first phase.'; The Fremennik Trials rev 15396092)",
+    "F-2041 (same quote; jewellery allowed)",
+    "F-5002 (form 4 ends the fight at 1 HP; only phase that is safe on HW)",
+    "F-5009 (form 4 hits 1 every tick)",
+    "F-5001, F-3014 (forms 1-3 are run-ending on Hardcore Worlds)",
+    "risk.json S12-M1 (reduces escape 2), S12 preconditions.required_items ['ring of life', ...], bailout ('the ring of life is the documented exit')",
+    "plan.json DP02 recommended B and DP08 recommended B (S12 is on the recommended balanced route)"
+   ],
+   "recommendation": "Risk Officer: replace S12-M1. Either drop the ring of life, or state precisely 'wear it for forms 1-3 only and unequip it the moment form 4 begins' and justify that from a fact; re-rate escape without the -2 credit until then. Re-check the bailout text. Consider (with an RFI on scope inside the instance) an escape crystal configured to a short inactivity timer as the disconnect mitigation for forms 2-3, noting the ring-slot conflict. Owner acceptance at ledger seq 125 was given on the old score and card; the Director should show him the corrected card.",
+   "status": "fixed",
+   "resolution": "Re-tested on risk.json v3. S12-M1 now bans the ring of life and a worn escape crystal in the Koschei instance (F-5011, F-0015), its escape credit is gone and escape is rated 5 (locked fight, no exit); required_items say 'NO ring of life'; stop conditions and bailout no longer call the ring an exit and describe the only documented de-escalation (trapping Koschei; 10-minute reset). Plan v3 S12 rationale and DP08 cons carry the same rule. The DISCONNECT_FATAL floor now holds the with-prep score at 45 (headline 55). The owner re-confirmed S12 on the corrected card: ledger seq 159 (accept_risk S12, 'Keep it (informed)'), superseding the seq 125 acceptance given on the old card. See new RT-16 for a residual form-4 wording issue introduced by the optional crystal mitigation S12-M6."
+  },
+  {
+   "finding_id": "RT-03",
+   "severity": "high",
+   "step_id": null,
+   "scenario": "LADDER: hazard-flag floors are applied to the MODEL score before calibration (tools/danger.py assess(): apply_floors, then calibrate), so the published game-relative score falls below the floor that docs/05 section 3 promises 'whatever the factors say'. Published residuals that break their own retained flags: S12 The Fremennik Trials 20 with DISCONNECT_FATAL (floor 45); S17 Troll Romance 32 with DISCONNECT_FATAL (floor 45); S25 Hallowed Sepulchre 21 with UNVERIFIED_MECHANIC (floor 45); S01 The Writing's on the Wall 11 and S12 with NEW_CONTENT (floor 25); S10, S11, S13 at 7, tier 'Safe' ('nothing here should kill you'), with HW_UNSAFE_ACTIVITY (floor 10). Side effect: validate.py's prep-card gate uses the published residual (>= PREP_CARD_FROM 45), so after calibration no approved step in this guide triggers the mandatory complete prep card; only the vetoed S23 (86) and S24 (55) do. The owner's informed policy depends on prep cards appearing exactly where danger is real.",
+   "evidence": [
+    "tools/danger.py assess(): floors applied to model score, then calibrate(); FLAG_FLOORS; PREP_CARD_FROM = 45",
+    "tools/validate.py g_risk: 'if s[\"residual_ds\"] >= danger.PREP_CARD_FROM' uses the published residual",
+    "docs/05-danger-model.md section 3 ('minimum DS whatever the factors say') and section 6 ('From score 45 up, a complete prep card is mandatory')",
+    "python3 tools/danger.py score agility-1-99-20261119 (2026-11-20T23:3xZ): S12 model residual 45 (floor DISCONNECT_FATAL) -> published 20; S17 52 -> 32; S25 48 -> 21; S01 25 -> 11; S10/S11/S13 18 -> 7"
+   ],
+   "recommendation": "Owner of tools/danger.py and docs/05 (governance change, owner decision): apply flag floors to the published game-relative score (after calibration and premium), or map the floors onto the ladder explicitly, and make the prep-card gate use the same published-with-floors score. Until then the Director should not release scores for S01, S10, S11, S12, S13, S17, S25 as computed. Re-run danger.py score and re-check which steps need a full prep card.",
+   "status": "fixed",
+   "resolution": "Re-tested tools/danger.py (87d237df6949): flag floors are now applied on the published scale after calibration and premium (assess(): f_inh/f_res). python3 tools/danger.py score now gives S12 with prep 45 (DISCONNECT_FATAL), S17 55, S25 45 (UNVERIFIED_MECHANIC), S01 25 (NEW_CONTENT), S10/S11/S13 10 (HW_UNSAFE_ACTIVITY): no published score is below a retained flag's floor. The prep-card gate in tools/validate.py now keys on the unmitigated headline (inherent_ds >= 45), so S03, S05, S06, S12, S15, S16, S17, S25 require a complete card; validate.py risk passes with 0 FAIL."
+  },
+  {
+   "finding_id": "RT-04",
+   "severity": "high",
+   "step_id": null,
+   "scenario": "LADDER: anchors are rated INHERENT (no credit for the counters a typical player uses) but guide steps are published as RESIDUAL (after mitigations) on the same raw->position mapping, so every mitigated guide step is deflated relative to its comparables. The ladder's own rationales say so: Vorkath 'inherent one-shot, no credit for antifire/prayer'; Elvarg 'one-shot without the shield'. Results the owner will see: S05 Underground Pass and S06 Regicide (24-damage bridge falls into aggressive Soulless, Kalrag stun among spiders, forced Tyras guard) published 20 Low, 'comparable to Ape Atoll Agility Course / Rooftop course at low Hitpoints'; S16 Troll Stronghold 33 and S17 Arrg 32 Moderate, 'comparable to a mid-level Slayer task', below the 'Mid-level quest boss (Elvarg)' anchor at 48 even though two Arrg/general hits kill a 48-HP Defence-1 player; S25 Sepulchre published 21, below the ladder's own Sepulchre anchor (38) although the owner has 48 HP against the recommended 70. The risk officer's verdict texts (computed with an older danger.py, see RT-15) still say S05/S06 'Residual 47 (High)', S16 '54 (High)', S17 '52 (High)', S25 '48 (High)', so the guide would print two contradictory tiers for the same step. This is exactly the 'dangerous quest scored like a rooftop' failure.",
+   "evidence": [
+    "policy/danger-calibration.json basis ('rated ... for a TYPICAL account that attempts that content') and anchor rationales vorkath ('no credit for antifire/prayer') and quest-boss-mid ('one-shot without the shield')",
+    "docs/05 section 4 ('Routes are judged on residual') and section 5 (mapping)",
+    "python3 tools/danger.py score / ladder output: S05 47->20, S06 47->20, S16 54->33, S17 52->32, S25 48->21; anchor sepulchre-high pos 38, quest-boss-mid pos 48",
+    "risk.json verdict_reason for S05, S06, S16, S17, S25",
+    "F-5018, F-5021 (38 max hits), F-5026/F-5379 (bridge 24), F-5024 (Kalrag stun), F-3056 (70+ HP recommended)"
+   ],
+   "recommendation": "Calibration board / owner: calibrate like with like. Either (a) rate each anchor's residual too (with the standard counters a typical attempter uses) and map guide residuals on the residual ladder, or (b) calibrate the inherent score and derive the published residual by the model's mitigation ratio, with the RT-03 floors applied. Risk Officer: re-issue verdict texts with the published numbers. Until fixed, the guide should print the model tier next to the calibrated one for every quest step.",
+   "status": "fixed",
+   "resolution": "Re-tested: the headline is now the unmitigated calibrated score, like-for-like with the anchors (which are rated without precautions); 'with prep' is the residual on the same mapping (policy/danger-calibration.json 'publishing'). Headlines now read S05 55 High, S06 55 High, S16 94 Extreme, S17 88 Extreme, S25 79 Severe, against Elvarg 48 and Sepulchre 38. Every risk.json verdict text now quotes the published numbers (checked all 25 entries against danger.py score: e.g. S12 '55/45', S17 '88/55'). Residual note, not blocking: the 'with prep' number is still read off the unmitigated ladder, so the guide must always print it next to the headline and the prep card, never alone (the policy publishing rule says this)."
+  },
+  {
+   "finding_id": "RT-05",
+   "severity": "medium",
+   "step_id": null,
+   "scenario": "LADDER: the isotonic fit collapses most of the mid-ladder. Ladder points include (66, 54.8) and (82, 54.8): every model score from 66 to 82 publishes as ~55, so Zulrah learner (pos 66), ToA entry/normal (70), Barrows (50), Werewolf (49), Elvarg (48) and the Wilderness Agility Course (46) become indistinguishable, and the fit has cliffs of +17 published points for model 63->66 and +18 for 82->84. Cause: model saturation (T5 with any C factor of 5, typically disconnect 5) puts Jad, the Inferno, the Colosseum, ToB HM and the Revenant Caves all at raw 94, and the ladder was approved with five unresolved ordering conflicts that validate.py itself warns about. In the guide, S16 Troll Stronghold inherent publishes 94 'Extreme' and S24 94, above Phosani's Nightmare (87) and ToA expert (88): a quest scored like a top-end raid. A one-step change in any factor near these cliffs moves a published score by 0 or by ~17 points.",
+   "evidence": [
+    "python3 tools/danger.py ladder: points [(63,38.0),(66,54.8),(82,54.8),(84,73.0),(92,84.3),(94,84.3)...]; 5 CONFLICT lines",
+    "policy/danger-calibration.json anchor rationales jad ('the clearest saturation case'), revs-pvp, phosani, toa-expert ('ordering concern')",
+    "python3 tools/danger.py score: S16 inherent 94 Extreme, S24 inherent 94, S17 inherent 84"
+   ],
+   "recommendation": "Calibration board: resolve the five conflicts before calling the ladder approved (re-rate the anchors or let the model separate them, e.g. stop disconnect alone from saturating C); add anchors in the 52-84 band (mid-level quest bosses at low HP, Troll-type quest fights) so steps like S16/S17 have real neighbours; publish the inherent score with its comparables too, so 'Extreme' on a quest is visibly anchored.",
+   "status": "open",
+   "resolution": "re-opened by owner; scheduled for the next calibration revision; no route step of this guide is affected"
+  },
+  {
+   "finding_id": "RT-06",
+   "severity": "medium",
+   "step_id": null,
+   "scenario": "LADDER: the same activity sits in two places. The ladder's Werewolf Agility Course anchor is position 49 ('Re-rate (likely about 40) if a maximum is ever sourced'), but the guide's S23 Werewolf step publishes inherent 100 (equal to The Fractured Archive) and residual 86 'comparable to The Inferno, Fortis Colosseum'. docs/05 says scores are capped at 99 'so The Fractured Archive stays the only 100', but that cap only exists inside the Wilderness premium; calibrate() returns 100 for any model score of 100. An Agility course scored as the hardest raid in the game is implausible, even with the unpublished deathslide maximum. S23 is vetoed and removed from the plan, but it is still in risk.json and described in plan assumptions as 'Long-term next step 1', so its numbers can surface in the guide.",
+   "evidence": [
+    "policy/danger-calibration.json anchor werewolf (position 49, raw 82)",
+    "python3 tools/danger.py score: S23 raw 100 Extreme -> residual 86 ~ The Inferno, Fortis Colosseum",
+    "tools/danger.py calibrate() and premium cap; docs/05 section 5 ('Scores are capped at 99, so The Fractured Archive stays the only 100')",
+    "F-2091, F-3067 (fall over 30, maximum unpublished)"
+   ],
+   "recommendation": "Tool owner: cap every non-TFA published score at 99, not only Wilderness ones. Risk Officer and calibration board: reconcile S23 with the werewolf anchor (the step should land near its own anchor, adjusted for the owner's HP and Strength) or explain the 37-point gap in the step.",
+   "status": "fixed",
+   "resolution": "Re-tested: assess() now caps every non-ceiling published score at 99 (S23 99/86, previously 100). The reconciliation of S23 with the Werewolf anchor (49) is moot for this guide: S23 is vetoed, removed from the plan, and its risk.json verdict is marked 'HISTORY ONLY ... its numbers must not be published'. If S23 is ever re-rated (veto lift), the 50-point gap to its own anchor must be explained."
+  },
+  {
+   "finding_id": "RT-07",
+   "severity": "medium",
+   "step_id": null,
+   "scenario": "LADDER: the Wilderness premium is added on top of board positions that already price in PvP, so it double-counts. revs-pvp was placed at 76 because it is 'a designed PK hotspot with teleblock'; +20 publishes it at 96, level with the Inferno and above ToB Hard Mode (92), ToA expert (88) and Phosani (87). The Wilderness Agility Course (46, 'deep-Wilderness PvP with no teleport') publishes 66, above Jad (62) and Zulrah learner (66 tie). Also: (a) the fallback treats a step flagged only WILDERNESS as level 1 (+5), the least conservative choice, so a step missing its wilderness_level and DEEP flag in level 50 gets +5 instead of +20; (b) the premium follows residual flags, so a mitigation that removes the WILDERNESS flag also removes the premium; (c) the policy's status line still says 'with wilderness premium +25' although the owner replaced it with tiers. No step in this guide enters the Wilderness, so nothing in the route is affected today.",
+   "evidence": [
+    "policy/danger-calibration.json anchors revs-pvp (position 76, rationale), wildy-course (46), wilderness_premium (tiers, flag_fallback WILDERNESS: 1, owner_decision), status string",
+    "python3 tools/danger.py ladder: 'Revenant Caves ... (+20 Wilderness -> 96)', 'Wilderness Agility Course ... (+20 Wilderness -> 66)'",
+    "docs/05 section 5 (premium after calibration; flag fallback)"
+   ],
+   "recommendation": "Director: ask the owner whether the premium was meant to apply to anchors whose positions already include PvP (if yes, record that revs = Inferno is intended; if no, re-base those anchors). Tool/policy owner: make the fallback conservative (missing wilderness_level with any Wilderness flag -> require the level, or assume the deepest tier), compute the premium from inherent flags, and fix the stale status string.",
+   "status": "open",
+   "resolution": "re-opened by owner; scheduled for the next calibration revision; no route step of this guide is affected"
+  },
+  {
+   "finding_id": "RT-08",
+   "severity": "medium",
+   "step_id": "S05",
+   "scenario": "Underground Pass, Iban's temple: entering the temple triggers red spikes near the entrance that 'rapidly deal around 5 to 8 damage each and can't be blocked with prayers. They also stun you and teleport you back to the entrance, so make sure you run in with plenty of health.' The S05 prep card gates HP at 40+ only for bridge jumps, the rope swing and Kalrag; the only general stop condition is 'teleport out if HP < 25 and food is gone'. A literal follower arriving at the temple after the Kalrag corridor at, say, 26-30 HP with food left can be stunned through several spike hits, sent back to the entrance and try again without eating. Spike damage is not reduced by Protect from Melee, the prayer the card relies on at that stage.",
+   "evidence": [
+    "Underground Pass rev 15392817 line 313 (red spikes, 5-8 each, rapid, not blocked by prayer, stun, teleport to entrance; 'run in with plenty of health'): https://oldschool.runescape.wiki/w/index.php?oldid=15392817",
+    "F-5026 (same, as summarised in facts.json)",
+    "risk.json S05-M1 and preconditions.stop_conditions"
+   ],
+   "recommendation": "Risk Officer: add an explicit gate 'enter Iban's temple at full HP; after any spike stun, eat back to full before re-entering', and add the spikes to S05-M1's list. Also say that Protect from Melee does not help there.",
+   "status": "fixed",
+   "resolution": "Re-tested on risk.json v3: new S05-M5 'Iban's temple gate' (enter only at 48/48, run in, Protect from Melee does not block the spikes, eat to full after any stun before retrying) plus stop conditions 'Never enter Iban's temple below 48/48 HP' and 'teleport out after two consecutive stuns or under 6 food'. Matches the wiki line cited (Underground Pass rev 15392817)."
+  },
+  {
+   "finding_id": "RT-09",
+   "severity": "medium",
+   "step_id": "S12",
+   "scenario": "Default route, first trip to Rellekka: S13-M1 bans the Camelot road ('travel only by enchanted lyre'), but the lyre only exists after S12 is complete. S12 itself (lyre farming, the Draugen hunt, every trial) has to be reached by the Camelot tablet and the 'very long run' north, whose NPCs are unresearched (F-5343 caveat; S12-H4). The only road rule in S12 is 'do not attempt the log balance'. The aggressive level 69 Draugen roams the same province (F-5013) and the quest makes the owner criss-cross it several times at Defence 1. The danger of the step that makes Rellekka safe is rated without knowing what is on the road to it.",
+   "evidence": [
+    "F-5343 (route qualitative; 'NPCs along the road were not researched')",
+    "F-5342, F-4086 (no other teleport available to the owner before S12)",
+    "F-5013 (Draugen aggressive, roams the Fremennik Province)",
+    "risk.json S12-H4, S12-M4, S13-M1"
+   ],
+   "recommendation": "Threat desk RFI on the Camelot-to-Rellekka road (aggressive NPCs and their max hits at combat 45). Risk Officer: add the road to the S12 prep card with a minimum HP and the rule to teleport away if the Draugen engages outside the hunt; until then keep knowledge at 4 for S12 and say so in the guide.",
+   "status": "fixed",
+   "resolution": "Re-tested on risk.json v3: new hazard S12-H5 and mitigation S12-M4 put the Camelot road on the S12 card (48/48 HP, two Camelot tablets, stay on the road, no log balance, teleport below 35 HP or on two attackers, teleport if the Draugen engages outside the hunt, report attackers); lethality raised 3 -> 4 and knowledge kept at 4 'until the road RFI is answered'; no factor credit for the road. The road itself is still unresearched (RFI open); the owner accepted S12 with that stated on the card: ledger seq 159 ('unresearched Camelot road')."
+  },
+  {
+   "finding_id": "RT-10",
+   "severity": "medium",
+   "step_id": "S14",
+   "scenario": "About 128 hours of the default route (Seers' S09, Ardougne S14) are spent failing obstacles whose damage no source publishes. The risk entries set lethality 3 'conservative up to ~25% HP' and assert 'a rooftop fail cannot exceed current HP'; neither has a source. The second claim rests on the Werewolf page line that the deathslide is the only obstacle that can deal damage past the player's Hitpoints (F-2091), but F-3075 shows the Pollnivneach stall formula floor(HP/17 + 2) deals 2 damage at 2 HP, which is lethal, so 'cannot exceed current HP' is not a safe general rule. The obstacle pages Gap/Tightrope (Seers') and Gap (Ardougne) were re-read: still no damage figure. With the cards' stop conditions (stop below 20 HP; re-rate if a fail deals more than 12) a death needs a surprise, but the lethality score is a guess presented as conservative.",
+   "evidence": [
+    "F-3074, F-5367 (Seers' fails until 79, no damage figure)",
+    "F-3080, F-5368 (Ardougne fails until 95, no damage figure)",
+    "F-3075 (Pollnivneach formula lethal at 2 HP or less)",
+    "F-2091 (Werewolf-only 'damage past Hitpoints' wording)",
+    "Gap (Seers' Village Rooftop Course) rev 15334119, Tightrope (Seers' Village Rooftop Course) rev 15359414, Gap (Ardougne Rooftop Course) rev 15334145: grep for damage/fail/fall/hitpoint, no figures",
+    "risk.json S09, S14 factors.lethality rationale; calc.json hours"
+   ],
+   "recommendation": "Raise an RFI for a T3 source (or an owner in-game observation log) of Seers' and Ardougne fail damage. Until then keep knowledge 4, drop the 'cannot exceed current HP' sentence, and keep the 20-HP stop and 'never below 10 HP on any failable obstacle' rule on every rooftop card (S07, S08, S09, S14, S26).",
+   "status": "fixed",
+   "resolution": "Re-tested on risk.json v3: the 'a rooftop fail cannot exceed current HP' claim and F-2091 are gone from S07, S09, S14, S26; each lethality rationale now says 'conservative rating, not a sourced bound'; knowledge stays 4; the general rule sets eat at 30, never attempt a failable obstacle below 20 HP, re-rate after any fail above 12, and never attempt the Pollnivneach stall below 10 HP (F-3075). The fail-damage RFI (T3 source or owner observation log) is still unanswered, which is disclosed."
+  },
+  {
+   "finding_id": "RT-11",
+   "severity": "medium",
+   "step_id": null,
+   "scenario": "Disconnect mitigation not used: every Hardcore Worlds character starts with an escape crystal (F-3016), and the current wiki says it can be configured to auto-teleport on taking damage after 2-300 s of inactivity. A disconnect produces exactly that condition. The plan lists the crystal in its checklist, but no DISCONNECT_FATAL step (S06 Tyras guard, S12 Koschei forms 2-3, S16 generals, S17 Arrg) credits or even mentions it, while those steps rate disconnect at 4-5 or remove the flag by prayer alone. Limits: it does not fire while the player is moving (so it does not cover the Arrg run), its scope inside the Koschei instance and the Troll arena is undocumented, and worn it shares the ring slot (RT-02).",
+   "evidence": [
+    "F-3016 (one free escape crystal on Hardcore Worlds)",
+    "Escape crystal rev 15409296 line 36 ('auto-activate upon taking damage (including zeros) after a specified time of inactivity (ranging from 2 to 300 seconds)') and line 38 ('will NOT activate while the player is moving'): https://oldschool.runescape.wiki/w/index.php?oldid=15409296",
+    "F-5386 (scope in some activities undocumented)",
+    "plan.json prerequisite_checklist (escape crystal); risk.json S06, S12, S16, S17 disconnect factors"
+   ],
+   "recommendation": "Risk Officer: evaluate a configured escape crystal (short inactivity timer, carried or worn) as a disconnect mitigation on S06, S12 (forms 1-3), S16 and S17, with an RFI on whether it works in the Koschei instance and the Troll arena. Do not credit it for moving phases.",
+   "status": "fixed",
+   "resolution": "Re-tested on risk.json v3: the escape crystal is now evaluated on S06, S12 (M6), S16 and S17 (M6) and in a general rule (short inactivity timer, F-3017; does not fire while moving, F-3018; scope undocumented, F-5386; never worn in the Koschei duel, F-0015/F-5011). It is honestly not credited anywhere because its scope in these instances and open-world fights is undocumented, and disconnect stays rated 5 on the fights. This is the recommended outcome until the scope RFI is answered."
+  },
+  {
+   "finding_id": "RT-12",
+   "severity": "low",
+   "step_id": null,
+   "scenario": "Random events: the plan's mitigation ('long rooftop sessions should be broken up and HP kept high') and the rooftop factor rationales ('random events' as unpredictability) aim at the wrong mechanism. The current wiki says random events can be dismissed or ignored and disappear after a minute; aggressive random events were removed in 2014 'without a risk of dying'. The realistic Hardcore Worlds trap is different: accepting a teleporting event while in a dangerous place (Underground Pass, Trollheim, Isafdar, Darkmeyer) returns the player to the same tile among the same aggressive monsters, or to Lumbridge if the tile became blocked; and an event interface opened mid-fight costs attention. HP level does not mitigate either.",
+   "evidence": [
+    "F-0003, F-3012 (random events are unsafe deaths on Hardcore Worlds)",
+    "Random events rev 15407277 line 5 (dismiss or ignore; disappears after a minute), line 16 (returned to the same tile, or Lumbridge if blocked), line 277 (2014 update removed aggressive randoms, optional 'without a risk of dying'): https://oldschool.runescape.wiki/w/index.php?oldid=15407277",
+    "plan.json assumptions ('Random events ... HP kept high')"
+   ],
+   "recommendation": "Route Strategist / Risk Officer: replace the advice with 'always dismiss random events; never accept a teleporting event during a quest step or in a dangerous area', and do not use random events to raise rooftop unpredictability unless a source shows a damage path.",
+   "status": "fixed",
+   "resolution": "Re-tested: risk.json general rule and plan.json v3 assumption now say to dismiss random events in quest steps and dangerous areas (Underground Pass, Isafdar, Trollheim, the Rellekka road, Darkmeyer), never accept a teleporting event there, dismiss them on rooftops too, and that HP level does not change this risk; the per-step stop conditions repeat it. The risk rule correctly labels the Random events rev 15407277 reading as the Red Team's and 'not yet a verified fact'."
+  },
+  {
+   "finding_id": "RT-13",
+   "severity": "low",
+   "step_id": null,
+   "scenario": "Defence cap tracking across quest chains: plan assumption says 'only The Fremennik Trials adds Defence on any route', but DP07 option B (the long-term Sepulchre goal) requires Sins of the Father's chain, whose Nature Spirit (2,000), In Search of the Myreque (600) and In Aid of the Myreque (2,000) add 4,600 forced Defence XP (F-2101, F-2132). With The Fremennik Trials that is 7,412.4 XP = Defence 24 (tools/xp.py), still under the cap of 50, but the plan does not show it. Separately, S19's lamp skill_choices omit Defence although F-2015 says the lamps take any combat skill: if the guide renders choices from that list, the owner never sees the Defence trap the rationale warns about.",
+   "evidence": [
+    "F-2101, F-2132 (4,600 fixed Defence in the Sins of the Father chain)",
+    "F-2038 (2,812.4 Defence from The Fremennik Trials)",
+    "python3 tools/xp.py level 7412.4 -> 24",
+    "F-2015 (Black Knights' Fortress lamps: any combat skill including Prayer)",
+    "plan.json assumptions (Defence line), DP07 option B, S19 lamp_rewards.skill_choices"
+   ],
+   "recommendation": "Route Strategist: add the 4,600 chain Defence to DP07 option B's conditions (Defence 24 with S12); list Defence in S19's choices with an explicit 'never' marker.",
+   "status": "fixed",
+   "resolution": "Re-tested plan.json v3: the Defence assumption and DP07 option B (justification and cons) now carry the 4,600 forced Defence XP of the Sins of the Father chain (F-2101, F-2132), Defence about 24 with The Fremennik Trials (7,412.4 XP; tools/xp.py), under the cap of 50; S19 lamp skill_choices now include 'Defence: never (zerker cap)', chosen_skill stays Prayer. Process note, not blocking: the ledger (seq 164) calls the plan numbers 'byte-identical', but the S19 skill_choices edit sits inside lamp_rewards, a numeric key, so plan_numeric_sha256 changed (v2 f10d8458e30a -> v3 914ed7ab1569); calc.json was re-emitted against the v3 hash and the chosen skill and XP are unchanged, so no number moved."
+  },
+  {
+   "finding_id": "RT-14",
+   "severity": "low",
+   "step_id": null,
+   "scenario": "Process: risk.json (sealed 7a177fd58bbd) records as inputs plan.json 6cc4bade59d9, calc.json 313257a6f2ab, docs/05 3bebd2f7cae5 and tools/danger.py 15c98e6335d8, none of which is the current version (plan 1fd8d37ca65e, calc 660fe306d6f2, docs/05 c18afe9968a2, danger.py 805ef381ecfe). Its verdict texts quote model scores from that older engine (e.g. 'Residual 47 (High)'), while the current engine publishes 20. The 23-step plan was re-cut after the rating (S22-S24 removed, S25 reframed as a long-term goal, DP03 C kept) without a re-rating pass, so nobody has checked the risk entries against the plan the owner will follow.",
+   "evidence": [
+    "risk.json provenance.inputs",
+    "ledger seq 136 (risk sealed), 137-143 (plan and calc revised and resealed after it)",
+    "sha256 of current tools/danger.py and docs/05-danger-model.md"
+   ],
+   "recommendation": "Director: after the fixes above, re-dispatch the Risk Officer against the sealed plan 1fd8d37ca65e and current danger.py so verdict texts and published scores agree.",
+   "status": "fixed",
+   "resolution": "Re-tested: risk.json v3 provenance now records the current tools/danger.py (87d237df6949), policy (15870680b0d7), docs/05 (c18afe9968a2) and plan v2 (1fd8d37ca65e); every verdict text and both route verdicts quote the scores danger.py now publishes. plan.json v3 (f343604e839c) was cut after risk v3 as text-only corrections that align the plan to risk v3 (diffed against v2: only text fields and the S19 skill_choices string changed), and calc.json was re-emitted against it (36391dcc75e5) with unchanged numbers, so the risk entries match the plan the owner will follow."
+  },
+  {
+   "finding_id": "RT-15",
+   "severity": "low",
+   "step_id": null,
+   "scenario": "LADDER: ordering of learner content around Jad. TzHaar Fight Cave (Jad) sits at 62, below Zulrah learner (66), Vorkath learner (64) and ToA entry/normal ~150 (70). The Fight Caves are explicitly an unsafe death on Hardcore Worlds (Jagex names them), the model itself rates Jad 94 (with the Inferno) and calls it 'the clearest saturation case', and a typical first attempt combines over an hour of waves with a one-shot finale. Placing Jad below a learner Zulrah and a mid-level raid is a judgement call that the board should defend explicitly, because quest bosses and Barrows are pinned just below it.",
+   "evidence": [
+    "policy/danger-calibration.json anchors jad (62, raw 94), zulrah (66), vorkath (64), toa-150 (70)",
+    "F-0001 (Jagex 4 Nov post names the Fight Caves among deaths that are no longer safe)"
+   ],
+   "recommendation": "Calibration board: record why Jad is below Zulrah/Vorkath learners and ToA 150, or move it; re-check at the next calibration.",
+   "status": "open",
+   "resolution": "re-opened by owner; scheduled for the next calibration revision; no route step of this guide is affected"
+  },
+  {
+   "finding_id": "RT-16",
+   "severity": "low",
+   "step_id": "S12",
+   "scenario": "New with the RT-11 fix (S12-M6). A literal follower who carries the escape crystal in the inventory, set to a short inactivity timer as M6 suggests, reaches Koschei's form 4 and obeys the bailout text 'Form 4: do not resist; let him take you to 1 HP'. Form 4 hits 1 every tick (F-5009), so a player who stands still takes damage after the inactivity time and the crystal fires (F-3017): he is teleported out and the fight restarts at form 1 (F-5011, F-0015), which re-exposes him to the run-ending forms 1-3. M6 itself says 'keep walking' in form 4 so it cannot fire, but the bailout and stop conditions do not, and the crystal earns no credit anywhere in the duel, so carrying it adds a reset loop and no counted protection.",
+   "evidence": [
+    "risk.json S12-M6 and S12 bailout ('Form 4: do not resist')",
+    "F-3017 (fires on damage after 2-300 s of inactivity)",
+    "F-3018 (does not fire while moving)",
+    "F-5009 (form 4 hits 1 every tick)",
+    "F-5011, F-0015 (teleport to respawn point; fight restarts at form 1)"
+   ],
+   "recommendation": "Risk Officer: either tell the owner to bank the escape crystal for the Koschei duel (it is uncredited there), or add 'keep walking in form 4 if the crystal is in your inventory' to the S12 bailout and stop conditions so the card says the same thing in every place. Not blocking: the outcome is a reset, not a death, and form 1 is the lowest-hitting form.",
+   "status": "fixed",
+   "resolution": "Re-tested (dispatch 043) against sealed risk.json 74bbfca5c25e and plan.json v4 5a0296c74446: the card and the plan now say the same thing everywhere. risk.json S12-M6 says BANK the escape crystal before the Koschei duel, worn or carried (F-0015, F-5011, F-3017, F-5009); S12 required_items and the first stop condition say the same; the bailout's form-4 text says standing still is safe only because the crystal is banked and to keep walking if it is found in the inventory anyway (F-3018); the escape-crystal general rule makes the duel an explicit bank-it exception. plan.json S12 rationale, prerequisite_checklist escape-crystal item and DP02-B/DP08-B cons all say bank it before the duel, with both reasons; no text in risk.json or plan.json still tells the player to carry or keep it in the inventory for the duel. No new problem: the bank visit is the one the card already requires to restock food before the duel (no bank in Rellekka, F-4087/F-5345), and the crystal was never credited on the road, so banking it removes no counted protection. Note for assembly: content.json (assembled before plan v4) still carries the old S12 rationale 'if carried, keep it in the inventory only' and must be re-assembled."
+  },
+  {
+   "finding_id": "RT-17",
+   "severity": "low",
+   "step_id": null,
+   "scenario": "New with the RT-03/RT-04 engine fix. python3 tools/danger.py score prints the calibrated unmitigated headline under the label 'raw' (e.g. 'S05 raw 55 High'), while docs/05 section 4 defines 'Raw DS' as the model score before calibration (S05's model score is 70) and section 6 says only 'from score 45 up' without saying that the prep-card gate now uses the unmitigated headline. Section 4 still says 'Routes are judged on residual' without naming the new headline. A writer or QA agent reading docs/05 and the CLI could print the wrong scale or the residual as the headline. The rule is recorded correctly only in policy/danger-calibration.json 'publishing'.",
+   "evidence": [
+    "python3 tools/danger.py score agility-1-99-20261119 output labels",
+    "tools/danger.py assess() returns model_inherent 70 vs inherent_ds 55 for S05",
+    "docs/05-danger-model.md sections 4 and 6 (sha256 c18afe9968a2, unchanged since before the fix)",
+    "policy/danger-calibration.json 'publishing'",
+    "tools/validate.py g_risk prep-card gate on inherent_ds"
+   ],
+   "recommendation": "Director (governance mode): relabel the CLI columns 'headline' / 'with prep' and update docs/05 sections 4-6 to say the headline is the unmitigated calibrated score, the with-prep score is the residual on the same mapping, floors apply on the published scale, and the prep card is mandatory from a headline of 45.",
+   "status": "open"
   }
+ ],
+ "provenance": {
+  "agent": "red-team",
+  "started_at": "2026-11-21T06:08:00Z",
+  "finished_at": "2026-11-21T06:15:00Z",
+  "dispatch_ref": "dispatch/043-red-team.md",
+  "inputs": [
+   {
+    "path": ".claude/agents/red-team.md",
+    "sha256": "1b889c868cb35bd7d12dbdaf74274529e89f645fa12989dda6f507aedc3a6c2d"
+   },
+   {
+    "path": "dispatch/038-red-team.md",
+    "sha256": "0eb608b788192a8c57cf02c7fb00ebb3760a2b71cd65c41c0c3fb8ec6ed888e4"
+   },
+   {
+    "path": "redteam.json",
+    "sha256": "43a7dc9c7b0d3e35ce4ce54cb52fd4c49fb409b2833541939d5f65c34140fff3"
+   },
+   {
+    "path": "brief.json",
+    "sha256": "c27aa6bc9969f981aed9185637565c2792f58b80646cc531afa503e27f969389"
+   },
+   {
+    "path": "facts.json",
+    "sha256": "70fcb7eed3ab243ba3a64501f766da075bc69de64e8cdbc9fe39ed53f456fa12"
+   },
+   {
+    "path": "plan.json",
+    "sha256": "5a0296c74446ee83ad3266581aa39a11f9316ef8042fdf1866471c483658672a"
+   },
+   {
+    "path": "calc.json",
+    "sha256": "36391dcc75e537051ab5c6a4d69510cb54854d08ce05066a8a028c5cac817c76"
+   },
+   {
+    "path": "risk.json",
+    "sha256": "74bbfca5c25eaba0f88aac5fddf412c2392bd7d7607cde0239ceaf3b5b701d12"
+   },
+   {
+    "path": "policy/danger-calibration.json",
+    "sha256": "15870680b0d7c5b918a4662fa4938dd147a368bd279358a49538ca26175037f2"
+   },
+   {
+    "path": "profiles/hcmbtw.json",
+    "sha256": "afaba37c1285692cca4547edf9927f6d748d61caf665799c4bdf8c1263d4bc77"
+   },
+   {
+    "path": "docs/05-danger-model.md",
+    "sha256": "c18afe9968a23878a13e7da4e730fde5fe15a443be27f819d5da3b304dcecffe"
+   },
+   {
+    "path": "docs/07-hardcore-worlds-baseline.md",
+    "sha256": "8108c4460dbecdbdac501880220d2ad6ab93ed6ed611a99bb9532debb5e72c01"
+   },
+   {
+    "path": "schemas/redteam.schema.json",
+    "sha256": "2ed555d214f6e5d73fb7fda2d32252c3589efa6ad7536a9a81d89de8c2bf61ef"
+   },
+   {
+    "path": "tools/danger.py",
+    "sha256": "87d237df6949741c631d39332bd8cb02964ffc743b35c037e47f2f0acf71c371"
+   },
+   {
+    "path": "tools/validate.py",
+    "sha256": "3daca665c57209831c45eef81b344f951a90dc9a7411c8074930664a9eff5ee0"
+   },
+   {
+    "path": "tools/xp.py",
+    "sha256": "c54c4837d331ef2c4396115d82a56a6a93d4010b175c392d2120d8fb2647aceb"
+   },
+   {
+    "path": "dispatch/043-red-team.md",
+    "sha256": "ec691c70e869d33e3c175c90c1cb58c1a0abcdd773e3778db82aebb0c6cf83dc"
+   },
+   {
+    "path": "qa.json",
+    "sha256": "85490413f4708371589984a898ec05f1d45aded8b8cb53fdcdbcf730d460dbaf"
+   },
+   {
+    "path": "content.json",
+    "sha256": "955b342734184b0dc9ae8263c0df8c72f83d4d52ea5ef539b96e2d779636f9e7"
+   },
+   {
+    "path": "prose.json",
+    "sha256": "d86d39bb663df04dcb056607aa87c408f313b58fb5422f7dd29e753a99568028"
+   }
+  ],
+  "actions": [
+   {
+    "kind": "verify",
+    "detail": "sha256sum of charter (prefix 1b889c868cb3 matches dispatch) and all inputs; python3 tools/ledger.py verify agility-1-99-20261119",
+    "outcome": "OK: ledger chain and seals intact; sealed hashes match dispatch (brief c27aa6bc9969, facts 70fcb7eed3ab, plan 1fd8d37ca65e, calc 660fe306d6f2, risk 7a177fd58bbd); calc-draft.json unsealed and not used"
+   },
+   {
+    "kind": "read",
+    "detail": "CLAUDE.md, docs/05, docs/07, schemas/redteam.schema.json, brief.json, profiles/hcmbtw.json, plan.json (routes, 23 steps, 7 DPs, assumptions, checklist), risk.json (26 entries), ~110 facts in facts.json, policy/danger-calibration.json (27 anchors), tools/danger.py, tools/validate.py (g_risk, g_redteam, check_provenance)"
+   },
+   {
+    "kind": "compute",
+    "detail": "python3 tools/danger.py ladder; python3 tools/danger.py score agility-1-99-20261119; danger.assess() internals (model inherent/residual, floors, residual flags) and ladder points for every step",
+    "outcome": "plateau (66..82 -> 54.8), 5 ordering conflicts, published residuals below flag floors on S01, S10, S11, S12, S13, S17, S25"
+   },
+   {
+    "kind": "compute",
+    "detail": "python3 tools/xp.py level 7412.4 / 2812.4 / 94167",
+    "outcome": "24 / 16 / 49"
+   },
+   {
+    "kind": "fetch",
+    "detail": "python3 tools/wiki.py new-pages --ns Update --since 2026-11-15",
+    "outcome": "6 Update pages; none changes the facts used"
+   },
+   {
+    "kind": "fetch",
+    "detail": "wiki.py page Update:Quest Month Week 3 & TFA Practice Mode (grep HW/agility/quest terms)",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15406871",
+    "outcome": "HW changes only to death broadcasts, Death's Office trading and CA fixes; nothing on Agility, these quests or death rules"
+   },
+   {
+    "kind": "fetch",
+    "detail": "wiki.py page Update:Gielinor Gazette - November 2026 (grep)",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15410302",
+    "outcome": "no relevant change"
+   },
+   {
+    "kind": "fetch",
+    "detail": "wiki.py history (limit 1-3) for 23 pages: Troll Romance, Arrg, Koschei the deathless, The Fremennik Trials, Troll Stronghold, Troll general, Underground Pass, Regicide, Hardcore Worlds, Random events, The Writing's on the Wall, Escape crystal, Pollnivneach/Rellekka/Ardougne/Seers'/Falador rooftop courses, Hallowed Sepulchre, Death Plateau, Icthlarin's Little Helper, The Depths of Despair, Pollnivneach, Group Ironman Mode",
+    "outcome": "every cited revision is still the latest except Random events (15407277, list edit) and Escape crystal (15409296 is cited and latest); no post-verification content change found"
+   },
+   {
+    "kind": "fetch",
+    "detail": "wiki.py page Random events (grep dangerous/aggressive/dismiss/teleport)",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15407277",
+    "outcome": "RT-12 evidence"
+   },
+   {
+    "kind": "fetch",
+    "detail": "wiki.py page Escape crystal (grep inactivity/activate)",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15409296",
+    "outcome": "RT-11 evidence"
+   },
+   {
+    "kind": "fetch",
+    "detail": "wiki.py rev 15392817 (Underground Pass) grep spikes/claw/teleport; cached text lines 150-152, 261, 277, 313",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15392817",
+    "outcome": "RT-08 evidence"
+   },
+   {
+    "kind": "fetch",
+    "detail": "wiki.py page Gap (Seers' Village Rooftop Course), Tightrope (Seers' Village Rooftop Course), Gap (Ardougne Rooftop Course), Ardougne Rooftop Course, Seers' Village Rooftop Course, Rooftop Agility Courses (grep damage/fail)",
+    "outcome": "no fail-damage figure anywhere (RT-10)"
+   },
+   {
+    "kind": "search",
+    "detail": "WebSearch 'OSRS Hardcore Worlds hotfix November 2026'",
+    "outcome": "T4/T2 leads only; latest hotfix reported 16 Nov (F2P world, Death's Office); nothing on these activities"
+   },
+   {
+    "kind": "search",
+    "detail": "WebSearch on the 'accidentally killing players' GamesRadar story; WebFetch of gamesradar.com failed (host not allowed)",
+    "outcome": "search summary places it in early October 2026 (main-game PvP tutor bug), before Hardcore Worlds; not used"
+   },
+   {
+    "kind": "search",
+    "detail": "WebSearch 'hardcore worlds death Arrg OR Underground Pass OR Troll Stronghold OR rooftop osrs reddit'",
+    "outcome": "no reports of HW deaths at these activities found; no lead to confirm"
+   },
+   {
+    "kind": "write",
+    "detail": "jobs/agility-1-99-20261119/redteam.json (15 findings, RT-01..RT-15)"
+   },
+   {
+    "kind": "verify",
+    "detail": "python3 tools/validate.py agility-1-99-20261119 redteam"
+   },
+   {
+    "kind": "verify",
+    "detail": "RE-TEST (dispatch 038): python3 tools/ledger.py verify agility-1-99-20261119",
+    "outcome": "OK: chain and all seals intact (WARN unsealed calc-draft.json, not used)"
+   },
+   {
+    "kind": "read",
+    "detail": "Ledger entries seq 131-173 (risk v3 seal, owner accept_risk S12 seq 159 and S17 seq 160, plan v3 and calc re-emit) and jobs/calibration-20261120/ledger.jsonl owner decisions (seq 7, 14, 16, 17)",
+    "target": "jobs/agility-1-99-20261119/ledger.jsonl",
+    "outcome": "S12/S17 re-confirmed on corrected cards; ladder approved after the 5 conflicts were reported; tiered premium set by the owner with the anchor effects stated"
+   },
+   {
+    "kind": "compute",
+    "detail": "python3 tools/danger.py score agility-1-99-20261119 and python3 tools/danger.py ladder",
+    "outcome": "Floors hold on the published scale (S12 45, S17 55, S25 45, S01 25, S10/S11/S13 10); S23 capped 99; 5 conflicts unchanged"
+   },
+   {
+    "kind": "read",
+    "detail": "tools/danger.py assess()/premium()/calibrate()/main() and tools/validate.py g_risk/g_redteam/check_provenance",
+    "target": "tools/danger.py",
+    "outcome": "Headline = unmitigated calibrated; floors after calibration; cap 99; prep gate on inherent_ds; wilderness_level now required"
+   },
+   {
+    "kind": "read",
+    "detail": "risk.json v3 entries S05, S06, S07, S09, S12, S14, S15, S16, S17, S26, general_rules, route_verdicts, provenance.inputs; compared every verdict_reason with danger.py scores",
+    "target": "risk.json",
+    "outcome": "RT-01, 02, 08-12, 14 addressed"
+   },
+   {
+    "kind": "read",
+    "detail": "plan.json v3 assumptions, DP03, DP07, S12 and S19; facts F-0015, F-3016-F-3018, F-5386, F-4062, F-5026, F-2091, F-3075",
+    "target": "plan.json",
+    "outcome": "RT-12, RT-13 and DP03 C corrections present"
+   },
+   {
+    "kind": "compute",
+    "detail": "git show of plan.json at 5bb0a2a (v2) and aad18ba (v3) into the scratchpad; structural diff and tools/xp.py plan_numeric_sha256 of each",
+    "outcome": "Only text fields plus S19 skill_choices changed; numeric hash v2 f10d8458e30a vs v3 914ed7ab1569 (lamp_rewards is a numeric key); no number moved"
+   },
+   {
+    "kind": "read",
+    "detail": "docs/05-danger-model.md sections 2-7",
+    "target": "docs/05-danger-model.md",
+    "outcome": "Not updated for the engine fix (RT-17)"
+   },
+   {
+    "kind": "write",
+    "detail": "jobs/agility-1-99-20261119/redteam.json: statuses for RT-01..RT-15, new low findings RT-16, RT-17, provenance updated"
+   },
+   {
+    "kind": "verify",
+    "detail": "python3 tools/validate.py agility-1-99-20261119 redteam"
+   },
+   {
+    "kind": "verify",
+    "detail": "RE-TEST (dispatch 043): sha256sum of charter (1b889c868cb3) and inputs; python3 tools/ledger.py verify agility-1-99-20261119",
+    "outcome": "OK: chain and all seals intact (WARN unsealed calc-draft.json, guide.html; not used); plan.json 5a0296c74446 sealed seq 199, risk.json 74bbfca5c25e sealed seq 187"
+   },
+   {
+    "kind": "read",
+    "detail": "Ledger seq 159-202: QA sign seq 191 (R1, R2), return seq 192, owner decision seq 194 ('Re-open all three' on RT-05/07/15), route-strategist 042 return seq 198",
+    "target": "jobs/agility-1-99-20261119/ledger.jsonl",
+    "outcome": "Owner decision confirmed verbatim; RT-05/07/15 set to open"
+   },
+   {
+    "kind": "read",
+    "detail": "grep -i crystal over risk.json (S12-M6, required_items, stop_conditions, bailout, general_rules) and plan.json (S12 rationale, prerequisite_checklist, DP02-B, DP08-B); grep 'keep walking|keep it in the inventory' over risk.json, plan.json, prose.json, content.json",
+    "target": "risk.json, plan.json",
+    "outcome": "Bank-it wording consistent in all places; old 'keep it in the inventory only' text survives only in content.json S12 rationale (pre-v4 assembly)"
+   },
+   {
+    "kind": "read",
+    "detail": "facts.json search for Rellekka bank facts (F-4087, F-5345) to check whether 'bank it before the duel' adds a new trip",
+    "target": "facts.json",
+    "outcome": "No bank in Rellekka; the card already requires a bank visit before the duel to restock food, so no new trip or hazard"
+   },
+   {
+    "kind": "write",
+    "detail": "jobs/agility-1-99-20261119/redteam.json: RT-05, RT-07, RT-15 -> open (owner re-open); RT-16 -> fixed; provenance updated; no new findings"
+   },
+   {
+    "kind": "verify",
+    "detail": "python3 tools/validate.py agility-1-99-20261119 redteam"
+   }
+  ],
+  "decisions": [
+   {
+    "decision": "No finding rated critical.",
+    "reason": "Charter: critical = plausible death on the default route. The worst killing windows (Arrg run, Troll generals) are decision-point options (DP03 recommends A). On the recommended balanced route the defects found (ring of life loop, deflated scores, missing temple HP gate, unresearched Rellekka road) raise risk but each needs a further mistake or bad luck to kill, so they are high/medium.",
+    "alternatives_considered": [
+     "Rate RT-04 critical because it understates the default-route quests S05/S06/S12",
+     "Rate RT-01 critical because the owner is informed and may pick option C"
+    ]
+   },
+   {
+    "decision": "Ladder findings carry step_id null and scenarios starting 'LADDER:' (RT-03..RT-07, RT-15), as dispatched; RT-11..RT-14 are cross-step and also use step_id null.",
+    "reason": "Dispatch instruction; they affect many steps or the policy itself."
+   },
+   {
+    "decision": "RT-01 states that two hits can be 38 + 38 (melee twice), not only 38 + 30.",
+    "reason": "F-3089 says melee is his primary attack and the card's Protect from Missiles does not block it; the dispatch's 38 + 30 case is the lesser one.",
+    "alternatives_considered": [
+     "Keep the dispatch's 38 + 30 framing only"
+    ]
+   },
+   {
+    "decision": "No hotfix or change newer than facts.verified_at was found; this is reported under actions, not as a finding.",
+    "reason": "All cited wiki revisions are current and the 18-20 Nov Update pages contain nothing relevant."
+   },
+   {
+    "decision": "Recorded policy/danger-calibration.json and profiles/hcmbtw.json as inputs although validate.py's COMPANY_FILES list does not include policy/ or profiles/.",
+    "reason": "Constitution rule 6 requires every input; honest provenance outranks a clean gate. The Director is told that validate.py will flag them as unsealed.",
+    "alternatives_considered": [
+     "Omit them to avoid a provenance failure"
+    ]
+   },
+   {
+    "decision": "RT-01 and RT-02 set to fixed (card defects corrected), with the owner's re-acceptance of the remaining risk cited in the resolution, rather than accepted_by_user.",
+    "reason": "The findings were defects in the prep cards (wrong prayer, a mitigation that resets the fight); those defects are corrected. What remains (the unclosable Arrg run window; no exit in Koschei forms 1-3) is the step's inherent risk, which the owner accepted on the corrected cards (ledger seq 159, 160).",
+    "alternatives_considered": [
+     "accepted_by_user for both",
+     "keep open until the run-length and instance RFIs are answered"
+    ],
+    "refs": [
+     "ledger seq 159",
+     "ledger seq 160"
+    ]
+   },
+   {
+    "decision": "RT-05, RT-07 and RT-15 set to accepted_by_user citing the calibration job's ledger.",
+    "reason": "The ladder content did not change; the owner's approval (calibration ledger seq 16) followed the Director's report of the 5 conflicts (seq 14), and the tiered premium (seq 17) was set with its effect on the PvP anchors stated. The acceptance that it covered the conflicts explicitly rests on dispatch 038's statement; the owner's verbatim words do not name them.",
+    "alternatives_considered": [
+     "rejected (the issues are real)",
+     "open (medium/low would not block, but the owner has decided)"
+    ],
+    "refs": [
+     "jobs/calibration-20261120/ledger.jsonl seq 14, 16, 17"
+    ]
+   },
+   {
+    "decision": "Added only two new findings, both low (RT-16 S12 crystal form-4 wording; RT-17 docs/CLI labels).",
+    "reason": "Dispatch: add new findings only if a fix introduced a new problem. Both arise directly from the fixes (S12-M6, the engine change); neither can plausibly cause a death on its own.",
+    "alternatives_considered": [
+     "RT-16 medium because a reset re-exposes forms 1-3",
+     "fold RT-17 into RT-04's resolution"
+    ]
+   },
+   {
+    "decision": "RT-05, RT-07, RT-15 set to open with the dispatched resolution text; the earlier accepted_by_user decision is superseded.",
+    "reason": "QA R2 (ledger seq 191): no accept_risk entry covered them; the owner then decided verbatim 'Re-open all three' (ledger seq 194). Severity and content unchanged.",
+    "alternatives_considered": [
+     "keep accepted_by_user (rejected: no owner acceptance exists)"
+    ],
+    "refs": [
+     "ledger seq 191",
+     "ledger seq 194"
+    ]
+   },
+   {
+    "decision": "RT-16 set to fixed, not open.",
+    "reason": "Every risk.json and plan.json location that gives escape-crystal guidance for the Koschei duel now says bank it, and the form-4 bailout covers the carried-by-mistake case; the stale content.json rationale is an assembly artifact that will be regenerated from plan v4, not a defect in the owning files.",
+    "alternatives_considered": [
+     "keep open until content.json is re-assembled (rejected: content.json is downstream output, and QA checks the assembled guide)"
+    ]
+   },
+   {
+    "decision": "No new finding added.",
+    "reason": "Checked whether the bank-it rule creates a new trip or removes protection: the bank visit already exists for food (F-4087, F-5345) and the crystal was never credited.",
+    "alternatives_considered": [
+     "low finding on losing uncredited crystal cover on the road back (rejected: no counted protection lost)"
+    ]
+   }
+  ],
+  "limitations": [
+   "Re-test only (dispatch 038: re-check the evidence, no re-research): no new web or wiki fetches; the wiki revisions cited in v1 were not re-read.",
+   "No game client: the Arrg run length, arena teleport behaviour, escape crystal scope in the Koschei instance and Troll arena, and rooftop fail damage remain untested and are still open RFIs owned by other roles.",
+   "The acceptance of the ladder conflicts (RT-05, RT-15) relies on the Director's statement in dispatch 038 together with the calibration ledger order (seq 14 before seq 16); the owner's verbatim approval does not mention the conflicts.",
+   "Steps S18-S21 and S24 were reviewed only for prerequisites, Defence and scoring in v1 and were not re-reviewed fight-by-fight here.",
+   "Re-test 043 only: no web or wiki fetches; docs/05-danger-model.md and tools/danger.py changed since the earlier runs read them and were not re-read here (validate WARNs), as dispatch 043 concerns only RT-05/07/15/16."
+  ]
+ }
 }
