@@ -614,7 +614,7 @@
         "F-0004",
         "F-4086"
       ],
-      "rationale": "2,812.4 Agility XP plus 2,812.4 Defence XP that cannot be declined (F-2038): this is exactly the quest-sourced Defence the owner's zerker plan wants, taking Defence from 1 to 16 (tools/xp.py), far under the 50 cap. No hard skill requirements if the lyre is taken as a drop from the level 48 citizens (max hit 6, non-aggressive, F-5383). Fights: Draugen (max 7) and Koschei (max 3/5/7, then 1); only Koschei's 4th form is a safe death on Hardcore Worlds (F-0004/F-3014), forms 1-3 are run-ending. Placed in the 57 quest block so its Agility XP lands during the slowest training, and so the enchanted lyre (Rellekka teleport, F-4086) is ready when Rellekka opens at 80. Duel prep (risk.json S12): no ring of life at Koschei (it sends you to your respawn point and restarts the fight at form 1, so worn into form 4 it resets the fight every time; F-5011), and do not wear the escape crystal in the duel (it would reset the fight the same way); if carried, keep it in the inventory only. Neither is an exit from forms 1-3."
+      "rationale": "2,812.4 Agility XP plus 2,812.4 Defence XP that cannot be declined (F-2038): this is exactly the quest-sourced Defence the owner's zerker plan wants, taking Defence from 1 to 16 (tools/xp.py), far under the 50 cap. No hard skill requirements if the lyre is taken as a drop from the level 48 citizens (max hit 6, non-aggressive, F-5383). Fights: Draugen (max 7) and Koschei (max 3/5/7, then 1); only Koschei's 4th form is a safe death on Hardcore Worlds (F-0004/F-3014), forms 1-3 are run-ending. Placed in the 57 quest block so its Agility XP lands during the slowest training, and so the enchanted lyre (Rellekka teleport, F-4086) is ready when Rellekka opens at 80. Duel prep (risk.json S12): no ring of life at Koschei (it sends you to your respawn point and restarts the fight at form 1, so worn into form 4 it resets the fight every time; F-5011), and BANK the escape crystal before the duel: do not take it into the instance, worn or carried (worn, it resets the fight the same way; carried, it can fire if you stand still in the fourth form and restart the fight at form 1; risk.json S12-M6). Carry it only for the road, the Draugen and the citizens. Neither the ring nor the crystal is an exit from forms 1-3."
     },
     {
       "step_id": "S13",
@@ -1162,7 +1162,7 @@
       "fact": "F-5355"
     },
     {
-      "item": "Escape crystal: one free at start, more for 10,000 coins (does not activate while moving); never wear it in the Koschei duel (S12): it would reset the fight",
+      "item": "Escape crystal: one free at start, more for 10,000 coins (does not activate while moving); BANK it before the Koschei duel (S12) and never take it in, worn or carried: worn, it resets the fight; carried, it can fire if you stand still in the fourth form",
       "fact": "F-3016"
     },
     {
@@ -1282,7 +1282,7 @@
           ],
           "cons": [
             "Hours of questing that the calculator does not count (no verified quest durations)",
-            "Underground Pass traps up to 24 and spider pile-ups; Icthlarin flashbacks block teleports; Koschei forms 1-3 are not safe deaths (no ring of life, and no worn escape crystal, in the duel: either resets the fight)"
+            "Underground Pass traps up to 24 and spider pile-ups; Icthlarin flashbacks block teleports; Koschei forms 1-3 are not safe deaths (never wear a ring of life in the duel, and bank the escape crystal before it: worn, it resets the fight; carried, it can fire if you stand still in the fourth form)"
           ],
           "best_for": "The balanced route and the owner's quest-based zerker build",
           "facts": [
@@ -1649,7 +1649,7 @@
           "cons": [
             "No bank in Rellekka",
             "Route from Camelot partly unresearched",
-            "Koschei forms 1-3 are not safe deaths (no ring of life, and no worn escape crystal, in the duel: either resets the fight)"
+            "Koschei forms 1-3 are not safe deaths (never wear a ring of life in the duel, and bank the escape crystal before it: worn, it resets the fight; carried, it can fire if you stand still in the fourth form)"
           ],
           "best_for": "The balanced route",
           "facts": [
@@ -1668,17 +1668,21 @@
   ],
   "provenance": {
     "agent": "route-strategist",
-    "started_at": "2026-11-21T03:18:00Z",
-    "finished_at": "2026-11-21T03:24:00Z",
-    "dispatch_ref": "dispatch/036-route-strategist.md",
+    "started_at": "2026-11-21T06:04:00Z",
+    "finished_at": "2026-11-21T06:15:00Z",
+    "dispatch_ref": "dispatch/042-route-strategist.md",
     "inputs": [
       {
         "path": "plan.json",
-        "sha256": "1fd8d37ca65efc681c258daabbf7ac81c3ae236a0005cae4721c73d9ca1e4fee"
+        "sha256": "f343604e839c966d5699f2669a4cd6e2d7ef6456e16647f22fdfbcde7f5d5780"
       },
       {
         "path": "risk.json",
-        "sha256": "6302e5ce2c6b72e279f457e33937a2e171bd2670610d12d913e2e1a063b82eda"
+        "sha256": "74bbfca5c25eaba0f88aac5fddf412c2392bd7d7607cde0239ceaf3b5b701d12"
+      },
+      {
+        "path": "qa.json",
+        "sha256": "85490413f4708371589984a898ec05f1d45aded8b8cb53fdcdbcf730d460dbaf"
       },
       {
         "path": "facts.json",
@@ -1693,8 +1697,12 @@
         "sha256": "b600273a97297879bd2c38e663ed79bc8c55973cd793a7edf041690f2be988c5"
       },
       {
-        "path": "dispatch/036-route-strategist.md",
-        "sha256": "9b27f32058bcb903823db83a00fd94ea05529061c477836944b598d527b05c07"
+        "path": "calc.json",
+        "sha256": "36391dcc75e537051ab5c6a4d69510cb54854d08ce05066a8a028c5cac817c76"
+      },
+      {
+        "path": "dispatch/042-route-strategist.md",
+        "sha256": "643dd0a0c9f4e4257dd613e94f2b2fe179c28c7f53ab9118fb266e532e587b82"
       },
       {
         "path": ".claude/agents/route-strategist.md",
@@ -1710,94 +1718,88 @@
         "kind": "verify",
         "detail": "python3 tools/ledger.py verify agility-1-99-20261119",
         "target": "jobs/agility-1-99-20261119/ledger.jsonl",
-        "outcome": "OK: chain and all seals intact; plan.json unsealed by the Director at seq 161 (content still the sealed v2 1fd8d37ca65e, sealed seq 141); risk.json sealed 6302e5ce2c6b; dispatch 036 sealed 9b27f32058bc (seq 162); owner re-confirmations of S12 (seq 159) and S17 (seq 160) present"
+        "outcome": "OK: chain and all seals intact (WARN only for unsealed calc-draft.json and guide.html). plan.json unsealed by the Director at seq 195; its content is still the version sealed at seq 165 (f343604e839c). risk.json sealed 74bbfca5c25e; qa.json sealed 85490413f470 (seq 193); dispatch 042 sealed 643dd0a0c9f4 (seq 196, dispatch event seq 197)."
       },
       {
         "kind": "read",
-        "detail": "Read the charter, dispatch 036, plan.json v2, the lamp_rewards part of schemas/plan.schema.json, and the lamp handling in tools/xp.py (only chosen_skill is used, so adding a text entry to skill_choices cannot change the calculation).",
-        "target": ".claude/agents/route-strategist.md",
-        "outcome": "ok"
-      },
-      {
-        "kind": "read",
-        "detail": "Read risk.json entries S12 (M1, M6, H2, stop conditions), S17 (M1-M4, H1-H3, stop conditions), S19 (M2, H2), S24-H4/S24-M3 (4,600 chain Defence XP), the random-events general rule and the Risk Officer's 'Route Strategist items' note.",
-        "target": "jobs/agility-1-99-20261119/risk.json",
-        "outcome": "ok"
+        "detail": "Read the charter, dispatch 042, qa.json checks 6-7 (finding R1, RT-16) and the QA reject signature (ledger seq 191).",
+        "target": "jobs/agility-1-99-20261119/qa.json",
+        "outcome": "R1: S12 rationale says 'if carried, keep it in the inventory only', contradicting the corrected S12 card."
       },
       {
         "kind": "search",
-        "detail": "Checked status and statement of every fact newly quoted in text: F-0003, F-3012, F-5011, F-5021, F-3089, F-2015, F-2038, F-2101, F-2132.",
-        "target": "facts.json",
-        "outcome": "All VERIFIED or VERIFIED_WITH_CAVEAT; F-5011 states the ring-of-life respawn/restart; F-2132 gives the chain's Defence XP 2,000/600/2,000; F-5021 gives 38 slash melee / 30 ranged"
+        "detail": "python3 walk over every string in plan.json (and risk.json for the target wording) matching /crystal|ring of life|koschei/i.",
+        "target": "jobs/agility-1-99-20261119/plan.json",
+        "outcome": "Guidance text on the escape crystal at Koschei found in 4 fields: steps[S12].rationale, prerequisite_checklist[4].item (F-3016), DP02 option B cons[1], DP08 option B cons[2]. Other hits: S12 requirement 'Fight Koschei with no armour, weapons or spells' (no crystal advice; frozen) and provenance history. risk.json wording taken from S12-M6, S12 required_items[3], stop_conditions[0], bailout and general_rules[4]."
       },
       {
-        "kind": "compute",
-        "detail": "python3 tools/xp.py level 7412.4 / level 2812.4 / level 4600",
-        "target": "tools/xp.py",
-        "outcome": "24 / 16 / 20: Fremennik Trials plus the Sins of the Father chain = Defence 24"
+        "kind": "search",
+        "detail": "Checked status and statement of F-0015, F-3017, F-3018, F-5009, F-5011, F-5386 in facts.json (the facts behind the card's bank-it rule).",
+        "target": "facts.json",
+        "outcome": "All VERIFIED or VERIFIED_WITH_CAVEAT; F-3017 inactivity trigger 2-300 s; F-5009 form 4 hits 1 every tick; F-5011 ring of life restarts the fight at form 1."
       },
       {
         "kind": "write",
-        "detail": "Edited a scratchpad copy of v2 with a script that changes only text fields and asserts that every non-text field (step ids, routes, xp_rewards, lamp xp/count/chosen_skill, requirements, facts lists, option step_ids/facts, all numbers) is identical to v2. Text changed: DP03 C pros[2] (Protect from Melee before talking to Arrg and on the run, Protect from Missiles only at the safespot) and a new DP03 C con (run cannot be made fully safe); S17 rationale (same prayer order); S19 skill_choices + 'Defence: never (zerker cap)' and S19 rationale; DP07 B justification + con (4,600 forced Defence XP, Defence about 24, cap 50); Defence assumption (long-term headroom); random-events assumption (dismiss events in dangerous areas, never accept a teleporting event there); S12 rationale, prerequisite checklist escape-crystal item, DP02 B and DP08 B Koschei cons (no ring of life, no worn escape crystal in the duel).",
+        "detail": "Scratchpad python script (edit042.py) on plan.json: exact single-occurrence string replacements in the 4 fields, then a full-tree diff asserting that only those 4 strings changed outside provenance (all ids, routes, numbers, requirements, lamp fields, facts lists and option step_ids identical); written back with json indent 2 (byte-identical round-trip confirmed first). Provenance replaced with this run's block.",
         "target": "jobs/agility-1-99-20261119/plan.json",
-        "outcome": "13 text fields changed; invariant assertions passed"
+        "outcome": "4 text fields changed; invariant assertions passed."
+      },
+      {
+        "kind": "compute",
+        "detail": "python3 tools/xp.py simulate agility-1-99-20261119 --out calc-draft.json, before and after the edit.",
+        "target": "tools/xp.py",
+        "outcome": "Identical before and after: safest 99, 228.2 h, 14738 actions OK; balanced 99, 222.86 h, 15222 actions OK; calc-draft.json sha256 equal to sealed calc.json (36391dcc75e5)."
+      },
+      {
+        "kind": "verify",
+        "detail": "python3 tools/validate.py agility-1-99-20261119 plan and ... calc",
+        "target": "tools/validate.py",
+        "outcome": "plan: 0 fail, 11 warn (10 steps not used by any route, as before; plan.json not sealed, expected). calc: 0 fail, 0 warn (safest 99 / 228.2 h, balanced 99 / 222.86 h)."
       }
     ],
     "decisions": [
       {
-        "decision": "S19: Defence shown as an extra skill_choices entry 'Defence: never (zerker cap)'; chosen_skill stays Prayer.",
-        "reason": "Dispatch item 2 and risk.json S19-H2 require Defence to be visible with a never marker. tools/xp.py reads only chosen_skill, so the calculation is unaffected.",
+        "decision": "S12 rationale: 'do not wear the escape crystal ...; if carried, keep it in the inventory only' replaced by 'BANK the escape crystal before the duel: do not take it into the instance, worn or carried', with both reasons (worn resets the fight; carried can fire if you stand still in the fourth form) and 'carry it only for the road, the Draugen and the citizens'.",
+        "reason": "QA R1 and dispatch 042: the rationale must match the corrected card (risk.json S12-M6, required_items[3], stop_conditions[0]). The road/Draugen/citizens carry clause is the card's own exception, so the general escape-crystal rule is not contradicted.",
         "alternatives_considered": [
-          "Mention it only in the rationale (rejected: the risk card asks for the lamp choice list itself to show it)"
+          "Delete the crystal sentence entirely (rejected: the owner reads this text and needs the explicit bank-it instruction)",
+          "Cite F-0015/F-3017/F-5009 inline (rejected: they are not in S12's facts list, which the dispatch freezes; the card is cited as risk.json S12-M6 instead)"
         ],
         "refs": [
-          "risk.json S19-H2",
-          "F-2015"
+          "qa.json R1",
+          "risk.json S12-M6",
+          "F-5011"
         ]
       },
       {
-        "decision": "Random-events assumption rewritten; the 'keep HP high / break sessions' advice removed.",
-        "reason": "Dispatch item 4 and the risk.json general rule: the real risk is accepting a teleporting event in a dangerous area, and HP level does not change it. The plan held no literal 'events can attack' wording; the only random-event text was this assumption. The teleport-return detail is not a verified fact, so it is not stated.",
+        "decision": "Prerequisite checklist escape-crystal item and the DP02 B / DP08 B Koschei cons changed from 'never wear it / no worn escape crystal' to 'bank it before the duel; worn it resets the fight, carried it can fire if you stand still in the fourth form'; the ring-of-life ban is kept, worded 'never wear a ring of life in the duel'.",
+        "reason": "Dispatch 042 asks for every place that tells the owner to carry, wear or keep the crystal at Koschei to say bank it; the old wording implied carrying was fine.",
         "alternatives_considered": [
-          "Keep the HP advice alongside (rejected: risk.json says HP does not change this risk)"
+          "Leave the cons as 'no worn crystal' since they do not say carry (rejected: by omission they permit carrying, which the card forbids)"
         ],
         "refs": [
-          "F-0003",
-          "F-3012",
-          "risk.json general_rules"
+          "risk.json S12-M6",
+          "risk.json general_rules[4]",
+          "F-3016"
         ]
       },
       {
-        "decision": "Koschei duel rule added to S12 and also to the escape-crystal checklist item and the DP02 B / DP08 B cons that mention Koschei.",
-        "reason": "Dispatch item 5; every place the owner meets S12 or the escape crystal should carry the 'no ring of life, no worn crystal' rule (risk.json S12-M1, S12-H2). Requirements were not edited (numbers/requirements frozen by dispatch).",
+        "decision": "Historical provenance text from run 036 (which described the then-rule 'no worn escape crystal') is not carried forward as guidance; this block replaces it and points to the sealed seq 165 version for that history.",
+        "reason": "Provenance is a record, not owner-facing advice; keeping the old run's block would leave the obsolete wording in the artifact without context.",
         "alternatives_considered": [
-          "Edit the S12 requirement text (rejected: dispatch forbids requirement changes)"
+          "Append run 042 entries to the run 036 block (rejected: previous runs on this plan each wrote a fresh block with a pointer to the prior sealed version)"
         ],
         "refs": [
-          "F-5011",
-          "risk.json S12-M1"
-        ]
-      },
-      {
-        "decision": "DP07 B 4,600 Defence note placed in its justification and cons and in the Defence assumption, without adding facts to the option's facts list.",
-        "reason": "Dispatch forbids fact changes; F-2101 is already cited on the option and F-2132 (VERIFIED) is quoted in the text. Defence 24 comes from tools/xp.py, not mental arithmetic.",
-        "alternatives_considered": [
-          "Edit DP07 conditions (kept to the option the dispatch names)"
-        ],
-        "refs": [
-          "F-2101",
-          "F-2132",
-          "F-2038",
-          "risk.json S24-H4"
+          "ledger seq 165"
         ]
       }
     ],
     "limitations": [
-      "Text-only revision of plan v2 (sealed 1fd8d37ca65e, seq 141); the full v2 build history (dispatch 032) is in that sealed version's provenance.",
+      "Text-only revision of the plan sealed at ledger seq 165 (f343604e839c); the run 036 provenance (and through it the v2 build history, sealed 1fd8d37ca65e at seq 141) is in that sealed version.",
       "No web access by design. Quest durations are not in the facts, so the calculator counts 0 hours for quest steps and the balanced total understates its real time.",
-      "The DP03 C safety statements (prayer order, unclosable run window) follow the Risk Officer's card; the run's length in ticks is undocumented (risk.json S17-H2).",
-      "Whether a teleport or escape crystal works inside the Koschei instance or the Troll arena is undocumented (risk.json S12-M6, S17-H3).",
-      "Open RFIs from v2 remain: Colossal Wyrm post-rework per-lap XP, Death to the Dorgeshuun requirements, secondary quest XP as numeric facts, quest durations, Thieving training for Death on the Isle, Sins of the Father fights."
+      "Whether a teleport or escape crystal works inside the Koschei instance or the Troll arena is undocumented (risk.json S12-M6, S17-H3); the bank-it rule does not depend on it.",
+      "S12's requirement text 'Fight Koschei with no armour, weapons or spells' was not edited (requirements frozen); it gives no crystal advice and does not contradict the card.",
+      "Open RFIs from earlier runs remain: Colossal Wyrm post-rework per-lap XP, Death to the Dorgeshuun requirements, secondary quest XP as numeric facts, quest durations, Thieving training for Death on the Isle, Sins of the Father fights."
     ]
   }
 }
