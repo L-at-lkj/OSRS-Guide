@@ -1,17 +1,17 @@
 {
   "schema": "osrs-guide-content/1",
   "job": "agility-1-99-20261119",
-  "assembled_at": "2026-11-22T03:46:19+00:00",
+  "assembled_at": "2026-11-22T04:05:03+00:00",
   "inputs": {
     "brief.json": "c27aa6bc9969f981aed9185637565c2792f58b80646cc531afa503e27f969389",
     "research/updates.json": "b600273a97297879bd2c38e663ed79bc8c55973cd793a7edf041690f2be988c5",
-    "facts.json": "81096ceb8f4ecb2b8eb72d9ef82ddacebae6cbe1f553791883184fee4f2098ec",
+    "facts.json": "ee4e1728c0b9c2fe9d1078dd7fd9d8529680f4bb800ca2b0beb56a7c7059006c",
     "plan.json": "bbbbe6e9e60a09ad7d25a790fa4dedf91e0ffb5946fbc04f7f29eb1ebf0b75ee",
     "calc.json": "b8d7b9c7b5e6951c027355e1bd9552abb472173c7db64a545b0da22e9b7a9909",
     "calc-review.json": "006290bc6b5541342f9322094a5eb7afa068fef0574aa2ec5196ad1e54faa8cd",
-    "risk.json": "74bbfca5c25eaba0f88aac5fddf412c2392bd7d7607cde0239ceaf3b5b701d12",
+    "risk.json": "aa1c62d493dfdaaffa207514bbea522ce469872a6cd0df67643bd5de8559efbd",
     "redteam.json": "d0b23e5dd9ddfb3d22547248a12651601c8abdad304e35c46d126b7fcbbc1eb1",
-    "prose.json": "06d70a89428d9cbea821decb473c17f1fd4ab2eaf8c0f5f3316799e5e10e256a"
+    "prose.json": "7e8b1b257c2c88d62e2f5ac276c910751faa66602feaeba73b97d6a1f4d98e54"
   },
   "meta": {
     "title": "Agility 57–99 · Hardcore Worlds edition",
@@ -134,11 +134,11 @@
   },
   "intro": [
     "Hardcore Worlds: almost every death ends the run, including many that are safe for a Hardcore Ironman. Each step lists what can kill you and how to prepare.",
-    "Danger badge: the big number is the score without prep; 'with prep' is what the prep card buys. The Fractured Archive = one hundred, the top of the scale.",
+    "Danger badge: big number = danger with prep on the whole-game scale (The Fractured Archive = one hundred). Quests use official difficulty. 'If unprepared' is in the danger card.",
     "Route hours exclude all quest time; no verified source gives quest durations.",
     "Balanced is not faster than Safest. Choose it for its quests (lyre to Rellekka, Tirannwn, quest Defence), not for speed.",
     "Standing rules: Defence only from quests; Ranged on Rapid or Accurate; dismiss every random event; no AFK, player-owned house, Nightmare Zone, Rogues' Den maze, poison chalice or Wilderness.",
-    "Profit is at the Hardcore Worlds GE mid price, assuming every mark is sold, before any GE tax; the Graceful outfit ({{fact:F-4004}} marks) is not deducted."
+    "Profit is at the Hardcore Worlds GE mid price, assuming every mark is sold, before any GE tax; the Graceful outfit ({{fact:F-4004}}) is not deducted."
   ],
   "outro": [
     "Werewolf Agility Course is blocked: the deathslide's maximum fall damage is unpublished. It lifts when Agility and Strength pass the never-fail point, or a source publishes the maximum.",
@@ -741,8 +741,8 @@
           "cum_hours": 228.196
         }
       },
-      "worst_residual_ds": 25,
-      "worst_residual_tier": "Moderate",
+      "worst_residual_ds": 17,
+      "worst_residual_tier": "Low",
       "steps_over_cap": []
     },
     {
@@ -1414,8 +1414,8 @@
           "cum_hours": 222.862
         }
       },
-      "worst_residual_ds": 45,
-      "worst_residual_tier": "High",
+      "worst_residual_ds": 23,
+      "worst_residual_tier": "Low",
       "steps_over_cap": []
     }
   ],
@@ -1502,7 +1502,7 @@
           "Any death here is official and run-ending; no Hardcore Worlds safe exception covers this quest."
         ],
         "tips": [
-          "Headline {{risk.inherent_ds}}, with prep {{risk.residual_ds}} ({{risk.tier}}). Held up by the new-content floor, not by known damage."
+          "Danger {{risk.residual_ds}} ({{risk.tier}}) with prep; {{risk.inherent_ds}} if unprepared. Held up by the new-content floor, not by known damage."
         ]
       },
       "risk": {
@@ -1649,21 +1649,26 @@
         },
         "verdict": "approve_with_conditions",
         "verdict_reason": "Held at the NEW_CONTENT floor: no documented damage, but the quest is under 30 days old, so the re-read of the walkthrough before starting is mandatory.",
+        "quest_difficulty": "Intermediate",
+        "quest_difficulty_fact": "F-5950",
+        "below_recommended": false,
+        "recommended_note": "No recommended combat or stats listed (F-5951); nothing to be below.",
         "score": {
           "step_id": "S01",
-          "inherent_ds": 25,
-          "inherent_tier": "Moderate",
-          "residual_ds": 25,
-          "residual_tier": "Moderate",
+          "headline_ds": 10,
+          "headline_tier": "Low",
+          "quest_tier": "Intermediate",
+          "quest_note": "meets recommended stats",
+          "inherent_ds": 20,
+          "inherent_tier": "Low",
+          "residual_ds": 10,
+          "residual_tier": "Low",
           "comparable_to": [
-            "Ape Atoll Agility Course",
-            "Rooftop course at low Hitpoints"
+            "Intermediate quest"
           ],
           "calibrated": true,
-          "calibration_version": "2026-11-20-approved-r2",
+          "calibration_version": "2026-11-22-r3",
           "wilderness_premium": 0,
-          "headline_ds": 25,
-          "headline_tier": "Moderate",
           "model_inherent": 43,
           "model_residual": 25,
           "floor_by": null,
@@ -1916,21 +1921,26 @@
         },
         "verdict": "approve",
         "verdict_reason": "Low danger with a documented safespot; the snake's damage is small and the only unknown is obstacle fall damage, covered by the full-HP rule.",
+        "quest_difficulty": "Intermediate",
+        "quest_difficulty_fact": "F-5952",
+        "below_recommended": false,
+        "recommended_note": "Recommended combat 15 (F-5953); owner combat 57 meets it.",
         "score": {
           "step_id": "S02",
+          "headline_ds": 10,
+          "headline_tier": "Low",
+          "quest_tier": "Intermediate",
+          "quest_note": "meets recommended stats",
           "inherent_ds": 18,
           "inherent_tier": "Low",
-          "residual_ds": 9,
-          "residual_tier": "Safe",
+          "residual_ds": 10,
+          "residual_tier": "Low",
           "comparable_to": [
-            "Ape Atoll Agility Course",
-            "Rooftop course at low Hitpoints"
+            "Intermediate quest"
           ],
           "calibrated": true,
-          "calibration_version": "2026-11-20-approved-r2",
+          "calibration_version": "2026-11-22-r3",
           "wilderness_premium": 0,
-          "headline_ds": 18,
-          "headline_tier": "Low",
           "model_inherent": 39,
           "model_residual": 21,
           "floor_by": null,
@@ -2029,7 +2039,7 @@
           "Stop: when the quest completes, then go on to A Tail of Two Cats."
         ],
         "warnings": [
-          "Headline {{risk.inherent_ds}}, with prep {{risk.residual_ds}} ({{risk.tier}}). No teleport works during a flashback. A disconnect with no prayer up is what kills; the correct protection prayer fully protects.",
+          "Danger {{risk.residual_ds}} ({{risk.tier}}) with prep; {{risk.inherent_ds}} if unprepared. No teleport works during a flashback. A disconnect with no prayer up is what kills; the correct protection prayer fully protects.",
           "Mandatory: enter each flashback at full HP and full prayer with food. If prayer or HP falls to the card's lines, walk back toward the entrance, or log out once unhit long enough.",
           "Stop conditions: do not start a flashback with prayer under the card's line; leave if HP falls to the card's line; never start the pit jump before examining the jar.",
           "Mandatory: desert travel by carpet with waterskins only. The River Elid and the area north of Sophanem mean heat and aggressive crocodiles.",
@@ -2232,21 +2242,26 @@
         },
         "verdict": "approve_with_conditions",
         "verdict_reason": "High unmitigated because a disconnect inside a teleport-blocked flashback without prayer is likely fatal; with the correct protection prayer held through each fight (which the guardian facts say gives full protection) it drops to Low. Full prep card applies.",
+        "quest_difficulty": "Intermediate",
+        "quest_difficulty_fact": "F-5954",
+        "below_recommended": false,
+        "recommended_note": "Recommended combat 50 and Agility 35 (F-5955); owner combat 57, Agility 57 meets both.",
         "score": {
           "step_id": "S03",
-          "inherent_ds": 45,
-          "inherent_tier": "High",
-          "residual_ds": 18,
+          "headline_ds": 10,
+          "headline_tier": "Low",
+          "quest_tier": "Intermediate",
+          "quest_note": "meets recommended stats",
+          "inherent_ds": 20,
+          "inherent_tier": "Low",
+          "residual_ds": 10,
           "residual_tier": "Low",
           "comparable_to": [
-            "Hallowed Sepulchre (floors 4-5)",
-            "Zulrah (learner)"
+            "Intermediate quest"
           ],
           "calibrated": true,
-          "calibration_version": "2026-11-20-approved-r2",
+          "calibration_version": "2026-11-22-r3",
           "wilderness_premium": 0,
-          "headline_ds": 45,
-          "headline_tier": "High",
           "model_inherent": 63,
           "model_residual": 40,
           "floor_by": null,
@@ -2488,21 +2503,26 @@
         },
         "verdict": "approve",
         "verdict_reason": "Low: no required fights; the only damage is desert travel, removed by carpet travel with waterskins.",
+        "quest_difficulty": "Intermediate",
+        "quest_difficulty_fact": "F-5956",
+        "below_recommended": false,
+        "recommended_note": "No recommended combat or stats listed (F-5957); nothing to be below.",
         "score": {
           "step_id": "S04",
+          "headline_ds": 10,
+          "headline_tier": "Low",
+          "quest_tier": "Intermediate",
+          "quest_note": "meets recommended stats",
           "inherent_ds": 17,
           "inherent_tier": "Low",
-          "residual_ds": 7,
-          "residual_tier": "Safe",
+          "residual_ds": 10,
+          "residual_tier": "Low",
           "comparable_to": [
-            "Wintertodt at low Hitpoints",
-            "Ape Atoll Agility Course"
+            "Intermediate quest"
           ],
           "calibrated": true,
-          "calibration_version": "2026-11-20-approved-r2",
+          "calibration_version": "2026-11-22-r3",
           "wilderness_premium": 0,
-          "headline_ds": 17,
-          "headline_tier": "Low",
           "model_inherent": 38,
           "model_residual": 17,
           "floor_by": null,
@@ -2620,7 +2640,7 @@
           "Stop: when the quest completes, or teleport out when a stop condition below is met."
         ],
         "warnings": [
-          "Headline {{risk.inherent_ds}}, with prep {{risk.residual_ds}} ({{risk.tier}}). Worth it as the gate to Regicide, the largest Agility reward available today, and later the elf chain toward Prifddinas.",
+          "Danger {{risk.residual_ds}} ({{risk.tier}}) with prep; {{risk.inherent_ds}} if unprepared. Your combat is below the recommended level. Worth it as the gate to Regicide, the largest Agility reward available today, and later the elf chain toward Prifddinas.",
           "Mandatory: never jump a bridge or take the rope swing below {{risk.min_hitpoints}} HP. A failed jump hits hard and lands you among aggressive Soulless.",
           "Mandatory: Iban HP gate. Protect from Melee does nothing against the temple spikes. Enter only at full HP and never retry hurt; after any spike stun, eat to full first.",
           "Stop condition: if the spikes stun you back to the entrance twice in a row, or food is below the card's temple reserve, teleport out and restock.",
@@ -2850,21 +2870,26 @@
         },
         "verdict": "approve_with_conditions",
         "verdict_reason": "High unmitigated: bridge falls up to 24 against 48 HP, spider pile-ups and Iban's through-prayer spikes keep lethality at 'up to 50% HP' even with prep, so the full prep card (now with the Iban's temple full-HP gate) applies. The owner accepted it under the previous capped policy (ledger seq 123); under the informed policy no acceptance is needed and the record stands. It is the gate to Regicide and the elf chain. Safer alternative in the plan: DP02 option A (skip).",
+        "quest_difficulty": "Experienced",
+        "quest_difficulty_fact": "F-5958",
+        "below_recommended": true,
+        "recommended_note": "Recommended combat 60, Agility 50+, Prayer 43 (F-5959); owner combat 57 is BELOW 60 (Agility 57, Prayer 46 meet theirs). Thieving 50 is for an optional shortcut and is ignored.",
         "score": {
           "step_id": "S05",
-          "inherent_ds": 55,
-          "inherent_tier": "High",
-          "residual_ds": 20,
+          "headline_ds": 23,
+          "headline_tier": "Low",
+          "quest_tier": "Experienced",
+          "quest_note": "below the quest's recommended stats",
+          "inherent_ds": 33,
+          "inherent_tier": "Moderate",
+          "residual_ds": 23,
           "residual_tier": "Low",
           "comparable_to": [
-            "Zulrah (learner)",
-            "Wilderness Agility Course (level 50+ Wilderness)"
+            "Experienced quest"
           ],
           "calibrated": true,
-          "calibration_version": "2026-11-20-approved-r2",
+          "calibration_version": "2026-11-22-r3",
           "wilderness_premium": 0,
-          "headline_ds": 55,
-          "headline_tier": "High",
           "model_inherent": 70,
           "model_residual": 47,
           "floor_by": null,
@@ -2989,7 +3014,7 @@
           "Stop: when the quest completes."
         ],
         "warnings": [
-          "Headline {{risk.inherent_ds}}, with prep {{risk.residual_ds}} ({{risk.tier}}). A disconnect as the Tyras guard engages is the killer; Protect from Melee, documented to stop this guard, removes it.",
+          "Danger {{risk.residual_ds}} ({{risk.tier}}) with prep; {{risk.inherent_ds}} if unprepared. Your combat is below the recommended level. A disconnect as the Tyras guard engages is the killer; Protect from Melee, documented to stop this guard, removes it.",
           "Mandatory: never climb through the dense forest with prayer under the card's line.",
           "Mandatory: never jump a Pass bridge below the card's HP line. Stop condition: teleport out if HP is at the card's line and food is gone.",
           "Bail-out: if the guard is hitting you, keep Protect from Melee on and walk to the mushroom safespot; if prayer runs low, teleport immediately.",
@@ -3197,21 +3222,26 @@
         },
         "verdict": "approve_with_conditions",
         "verdict_reason": "High unmitigated: a disconnect as the Tyras guard engages is likely fatal and the Pass traversal and traps keep lethality at 'up to 50% HP'; Protect from Melee (documented for this guard) is what removes the disconnect floor. Full prep card applies. The owner accepted it under the previous capped policy (ledger seq 124); under the informed policy no acceptance is needed and the record stands. DP02 option A is the safer alternative.",
+        "quest_difficulty": "Experienced",
+        "quest_difficulty_fact": "F-5960",
+        "below_recommended": true,
+        "recommended_note": "Recommended combat 60 (F-5961); owner combat 57 is BELOW it.",
         "score": {
           "step_id": "S06",
-          "inherent_ds": 55,
-          "inherent_tier": "High",
-          "residual_ds": 20,
+          "headline_ds": 23,
+          "headline_tier": "Low",
+          "quest_tier": "Experienced",
+          "quest_note": "below the quest's recommended stats",
+          "inherent_ds": 33,
+          "inherent_tier": "Moderate",
+          "residual_ds": 23,
           "residual_tier": "Low",
           "comparable_to": [
-            "Mid-level quest boss (e.g. Elvarg at ~40 combat)",
-            "Tombs of Amascut (entry/normal ~150)"
+            "Experienced quest"
           ],
           "calibrated": true,
-          "calibration_version": "2026-11-20-approved-r2",
+          "calibration_version": "2026-11-22-r3",
           "wilderness_premium": 0,
-          "headline_ds": 55,
-          "headline_tier": "High",
           "model_inherent": 80,
           "model_residual": 47,
           "floor_by": null,
@@ -3497,6 +3527,10 @@
         "verdict_reason": "Low, with unpublished fail damage held down by the conservative 30/20 HP rule. Not on any route; DP01 option B only.",
         "score": {
           "step_id": "S07",
+          "headline_ds": 16,
+          "headline_tier": "Low",
+          "quest_tier": null,
+          "quest_note": null,
           "inherent_ds": 21,
           "inherent_tier": "Low",
           "residual_ds": 16,
@@ -3506,10 +3540,8 @@
             "Rooftop course at low Hitpoints"
           ],
           "calibrated": true,
-          "calibration_version": "2026-11-20-approved-r2",
+          "calibration_version": "2026-11-22-r3",
           "wilderness_premium": 0,
-          "headline_ds": 21,
-          "headline_tier": "Low",
           "model_inherent": 49,
           "model_residual": 35,
           "floor_by": null,
@@ -3758,6 +3790,10 @@
         "verdict_reason": "Low, with documented small damage (3-8 against 48 HP).",
         "score": {
           "step_id": "S08",
+          "headline_ds": 12,
+          "headline_tier": "Low",
+          "quest_tier": null,
+          "quest_note": null,
           "inherent_ds": 17,
           "inherent_tier": "Low",
           "residual_ds": 12,
@@ -3767,10 +3803,8 @@
             "Ape Atoll Agility Course"
           ],
           "calibrated": true,
-          "calibration_version": "2026-11-20-approved-r2",
+          "calibration_version": "2026-11-22-r3",
           "wilderness_premium": 0,
-          "headline_ds": 17,
-          "headline_tier": "Low",
           "model_inherent": 38,
           "model_residual": 26,
           "floor_by": null,
@@ -4046,6 +4080,10 @@
         "verdict_reason": "Moderate unmitigated with unpublished fail damage (RFI open), held down by the conservative 30/20 HP rule and the re-rating trigger.",
         "score": {
           "step_id": "S09",
+          "headline_ds": 16,
+          "headline_tier": "Low",
+          "quest_tier": null,
+          "quest_note": null,
           "inherent_ds": 28,
           "inherent_tier": "Moderate",
           "residual_ds": 16,
@@ -4055,10 +4093,8 @@
             "Ape Atoll Agility Course"
           ],
           "calibrated": true,
-          "calibration_version": "2026-11-20-approved-r2",
+          "calibration_version": "2026-11-22-r3",
           "wilderness_premium": 0,
-          "headline_ds": 28,
-          "headline_tier": "Moderate",
           "model_inherent": 51,
           "model_residual": 36,
           "floor_by": null,
@@ -4366,6 +4402,10 @@
         "verdict_reason": "Low: quantified 4-damage stall fails; the travel hazards are removed by carpet-only travel.",
         "score": {
           "step_id": "S10",
+          "headline_ds": 10,
+          "headline_tier": "Low",
+          "quest_tier": null,
+          "quest_note": null,
           "inherent_ds": 20,
           "inherent_tier": "Low",
           "residual_ds": 10,
@@ -4375,10 +4415,8 @@
             "Rooftop course at low Hitpoints"
           ],
           "calibrated": true,
-          "calibration_version": "2026-11-20-approved-r2",
+          "calibration_version": "2026-11-22-r3",
           "wilderness_premium": 0,
-          "headline_ds": 20,
-          "headline_tier": "Low",
           "model_inherent": 47,
           "model_residual": 18,
           "floor_by": null,
@@ -4671,6 +4709,10 @@
         "verdict_reason": "Low. Safest 80-90 option: no course damage from 85.",
         "score": {
           "step_id": "S11",
+          "headline_ds": 10,
+          "headline_tier": "Low",
+          "quest_tier": null,
+          "quest_note": null,
           "inherent_ds": 20,
           "inherent_tier": "Low",
           "residual_ds": 10,
@@ -4680,10 +4722,8 @@
             "Rooftop course at low Hitpoints"
           ],
           "calibrated": true,
-          "calibration_version": "2026-11-20-approved-r2",
+          "calibration_version": "2026-11-22-r3",
           "wilderness_premium": 0,
-          "headline_ds": 20,
-          "headline_tier": "Low",
           "model_inherent": 47,
           "model_residual": 18,
           "floor_by": null,
@@ -4800,7 +4840,7 @@
           "Stop: when the quest completes. Keep the enchanted lyre charged for Rellekka."
         ],
         "warnings": [
-          "Headline {{risk.inherent_ds}}, with prep {{risk.residual_ds}} ({{risk.tier}}). Highest with-prep score on the Balanced route. The first three forms have no documented exit, and a disconnect in the second or third is likely fatal.",
+          "Danger {{risk.residual_ds}} ({{risk.tier}}) with prep; {{risk.inherent_ds}} if unprepared. The first three forms have no documented exit, and a disconnect in the second or third is likely fatal.",
           "Mandatory: bank the escape crystal before the duel. Worn, it acts like a ring of life and resets the fight to the first form; carried, it can fire if you stand still in the fourth.",
           "Never wear a ring of life in the duel. It sends you to your respawn point and restarts the fight at the first form; it is not an exit.",
           "Mandatory: start every form at full HP ({{risk.min_hitpoints}}), eat at the card's eat line, and trap Koschei whenever you need to eat and regenerate.",
@@ -5074,21 +5114,26 @@
         },
         "verdict": "approve_with_conditions",
         "verdict_reason": "Card CHANGED MATERIALLY since the owner's acceptance (ledger seq 125): the ring of life is removed (the cited wiki says it resets Koschei to form 1, so the quest could never be finished, and every retry repeats the run-ending forms 1-3), its escape credit is gone, escape is now rated as a locked fight with no exit, and lethality is raised for the unresearched Camelot road. The honest card: in forms 1-3 there is no exit, a death is run-ending, and the only control is food, full HP before each form, trapping Koschei and a stable connection; a disconnect in forms 2-3 is likely fatal and no verified mitigation covers it, so the DISCONNECT_FATAL floor holds the score with prep. Under the informed policy no acceptance is required, but the Director should show the owner the corrected card. Safer alternative in the plan: DP08 option A (Pollnivneach to 90, S11).",
+        "quest_difficulty": "Intermediate",
+        "quest_difficulty_fact": "F-5962",
+        "below_recommended": false,
+        "recommended_note": "Recommended combat 40 and Agility 48 (F-5963); owner combat 57, Agility 57 meets both.",
         "score": {
           "step_id": "S12",
-          "inherent_ds": 55,
-          "inherent_tier": "High",
-          "residual_ds": 45,
-          "residual_tier": "High",
+          "headline_ds": 10,
+          "headline_tier": "Low",
+          "quest_tier": "Intermediate",
+          "quest_note": "meets recommended stats",
+          "inherent_ds": 20,
+          "inherent_tier": "Low",
+          "residual_ds": 10,
+          "residual_tier": "Low",
           "comparable_to": [
-            "Barrows (mid-level account)",
-            "Werewolf Agility Course (deathslide)"
+            "Intermediate quest"
           ],
           "calibrated": true,
-          "calibration_version": "2026-11-20-approved-r2",
+          "calibration_version": "2026-11-22-r3",
           "wilderness_premium": 0,
-          "headline_ds": 55,
-          "headline_tier": "High",
           "model_inherent": 82,
           "model_residual": 63,
           "floor_by": null,
@@ -5381,6 +5426,10 @@
         "verdict_reason": "Low with the lyre from S12. Without the lyre the Camelot road is unresearched; then follow S12's road rules or ask for a re-rating.",
         "score": {
           "step_id": "S13",
+          "headline_ds": 10,
+          "headline_tier": "Low",
+          "quest_tier": null,
+          "quest_note": null,
           "inherent_ds": 28,
           "inherent_tier": "Moderate",
           "residual_ds": 10,
@@ -5390,10 +5439,8 @@
             "Ape Atoll Agility Course"
           ],
           "calibrated": true,
-          "calibration_version": "2026-11-20-approved-r2",
+          "calibration_version": "2026-11-22-r3",
           "wilderness_premium": 0,
-          "headline_ds": 28,
-          "headline_tier": "Moderate",
           "model_inherent": 51,
           "model_residual": 18,
           "floor_by": null,
@@ -5526,7 +5573,7 @@
           "Longest exposure in the guide. Dismiss every random event and never go AFK; take a break every hour."
         ],
         "tips": [
-          "Headline {{risk.inherent_ds}} is the highest on the Safest route from unpublished fail damage over the most hours, not from anything that hits hard.",
+          "Danger {{risk.residual_ds}} ({{risk.tier}}) with prep; {{risk.inherent_ds}} if unprepared. Rated from unpublished fail damage over the most hours, not from anything that hits hard.",
           "Profit: about {{step.hours}} of laps; marks sell as amylase crystals on the Hardcore Worlds GE."
         ]
       },
@@ -5682,6 +5729,10 @@
         "verdict_reason": "Moderate unmitigated: unpublished fail damage over the longest exposure of the guide (RFI open); the conservative 30/20 HP rule and the re-rating trigger keep it Low with prep.",
         "score": {
           "step_id": "S14",
+          "headline_ds": 17,
+          "headline_tier": "Low",
+          "quest_tier": null,
+          "quest_note": null,
           "inherent_ds": 32,
           "inherent_tier": "Moderate",
           "residual_ds": 17,
@@ -5691,10 +5742,8 @@
             "Ape Atoll Agility Course"
           ],
           "calibrated": true,
-          "calibration_version": "2026-11-20-approved-r2",
+          "calibration_version": "2026-11-22-r3",
           "wilderness_premium": 0,
-          "headline_ds": 32,
-          "headline_tier": "Moderate",
           "model_inherent": 52,
           "model_residual": 38,
           "floor_by": null,
@@ -5798,7 +5847,7 @@
           "Stop: at quest completion; leave by games necklace."
         ],
         "warnings": [
-          "Headline {{risk.inherent_ds}}: the northern path is multi-combat with thrower trolls whose attacks always hit, and a disconnect there is likely fatal. On the secret path with prep it is {{risk.residual_ds}} ({{risk.tier}}).",
+          "Danger {{risk.residual_ds}} ({{risk.tier}}) with prep; {{risk.inherent_ds}} if unprepared. Avoid the northern path: multi-combat thrower trolls always hit, and a disconnect there is likely fatal.",
           "Mandatory: use only the secret path from Tenzing's house.",
           "Mandatory: if any thrower troll engages, turn on Protect from Missiles and leave.",
           "Stop conditions: turn back if you see a warning sign (you are on the normal path); leave if two or more trolls engage.",
@@ -5960,21 +6009,26 @@
         },
         "verdict": "approve_with_conditions",
         "verdict_reason": "High unmitigated (multi-combat always-hitting trolls on the normal path); Low with prep, but only on the secret path. Its only purpose here is the gate to S16/S17, which carry higher scores (shown on those steps).",
+        "quest_difficulty": "Novice",
+        "quest_difficulty_fact": "F-5964",
+        "below_recommended": false,
+        "recommended_note": "No recommended combat or stats listed (F-5965); nothing to be below.",
         "score": {
           "step_id": "S15",
-          "inherent_ds": 55,
-          "inherent_tier": "High",
-          "residual_ds": 15,
-          "residual_tier": "Low",
+          "headline_ds": 5,
+          "headline_tier": "Safe",
+          "quest_tier": "Novice",
+          "quest_note": "meets recommended stats",
+          "inherent_ds": 15,
+          "inherent_tier": "Low",
+          "residual_ds": 5,
+          "residual_tier": "Safe",
           "comparable_to": [
-            "Wilderness Agility Course (level 50+ Wilderness)",
-            "Tombs of Amascut (entry/normal ~150)"
+            "Novice quest"
           ],
           "calibrated": true,
-          "calibration_version": "2026-11-20-approved-r2",
+          "calibration_version": "2026-11-22-r3",
           "wilderness_premium": 0,
-          "headline_ds": 55,
-          "headline_tier": "High",
           "model_inherent": 76,
           "model_residual": 32,
           "floor_by": null,
@@ -6094,7 +6148,7 @@
           "Stop: at quest completion, or at any stop condition below."
         ],
         "warnings": [
-          "Headline {{risk.inherent_ds}}, with prep {{risk.residual_ds}} ({{risk.tier}}). Optional for Agility alone; decision point `DP03` option A skips it. Worth it for the quest and the gate to Troll Romance.",
+          "Danger {{risk.residual_ds}} ({{risk.tier}}) with prep; {{risk.inherent_ds}} if unprepared. Optional for Agility alone; decision point `DP03` option A skips it. Worth it for the quest and the gate to Troll Romance.",
           "Mandatory: never enter the generals' room without Protect from Melee on, full prayer and full HP ({{risk.min_hitpoints}}).",
           "Mandatory: in the generals' room, eat whenever HP is at or below a general's maximum hit (the card's eat line). Below it, one hit can kill.",
           "Stop conditions: leave if two generals attack; leave the room and teleport if food or prayer falls to the card's lines.",
@@ -6319,21 +6373,26 @@
         },
         "verdict": "approve_with_conditions",
         "verdict_reason": "Extreme unmitigated for 2,000 Agility XP: the generals' 38 max hits against 48 HP at Defence 1, several aggressive attackers and a likely-fatal disconnect. The prep card (safespots, Protect from Melee, eat at 38, leave on two attackers) is what brings it down to Moderate with prep. The old 'teleport out below 30 HP' rule was corrected to 'eat at 38', because one 38 kills at 38 or less. The owner accepted it under the previous capped policy (ledger seq 126); under the informed policy no acceptance is needed and the record stands. For the Agility goal alone it is optional (DP03 option A skips it).",
+        "quest_difficulty": "Intermediate",
+        "quest_difficulty_fact": "F-5966",
+        "below_recommended": false,
+        "recommended_note": "Recommended combat 50, Prayer 43, Thieving 30, Agility 47 (F-5967); owner 57, 46, 34, 57 meets all.",
         "score": {
           "step_id": "S16",
-          "inherent_ds": 94,
-          "inherent_tier": "Extreme",
-          "residual_ds": 33,
-          "residual_tier": "Moderate",
+          "headline_ds": 10,
+          "headline_tier": "Low",
+          "quest_tier": "Intermediate",
+          "quest_note": "meets recommended stats",
+          "inherent_ds": 20,
+          "inherent_tier": "Low",
+          "residual_ds": 10,
+          "residual_tier": "Low",
           "comparable_to": [
-            "The Fractured Archive (solo/duo scale)",
-            "Tombs of Amascut, expert (500+ invocation)"
+            "Intermediate quest"
           ],
           "calibrated": true,
-          "calibration_version": "2026-11-20-approved-r2",
+          "calibration_version": "2026-11-22-r3",
           "wilderness_premium": 0,
-          "headline_ds": 94,
-          "headline_tier": "Extreme",
           "model_inherent": 98,
           "model_residual": 54,
           "floor_by": null,
@@ -6446,7 +6505,7 @@
         "warnings": [
           "The run window cannot be closed. With Protect from Melee on, two maximum ranged hits and one monkfish leave you almost dead from full HP; a third hit, or melee through the prayer, kills.",
           "No verified food heals more, no combo-eating is verified, and the run's length is undocumented.",
-          "Headline {{risk.inherent_ds}}, with prep {{risk.residual_ds}} ({{risk.tier}}). Highest with-prep score in this plan. A death here is run-ending and not a safe death even for Hardcore Ironmen.",
+          "Danger {{risk.residual_ds}} ({{risk.tier}}) with prep; {{risk.inherent_ds}} if unprepared. A death here is run-ending and not a safe death even for Hardcore Ironmen.",
           "Stop condition before starting: do not start unless you accept that the run can kill a prepared player, or if Troll Stronghold showed you cannot hold a protection prayer and eat under fire.",
           "Mandatory: talk to Arrg at full HP ({{risk.min_hitpoints}}), full prayer, Protect from Melee already on and a full inventory of monkfish-class food.",
           "Mandatory: start only on a stable connection. A disconnect leaves you in combat for up to a minute, and during the run both his attacks can reach you.",
@@ -6661,21 +6720,26 @@
         },
         "verdict": "approve_with_conditions",
         "verdict_reason": "Approved with conditions under the informed policy; no veto basis applies (the fight is documented, a prep card is written from verified facts, no hard constraint is broken, and it is not dominated: 4,000 Strength XP and a quest). Corrected card: Protect from Melee for the run (his primary 38 melee), Protect from Missiles only at the safespot; eat at 38 during the run and at 34 at the safespot; 16-heal food minimum. Stated plainly: the run window CANNOT be closed with verified facts. Two ranged max hits with one eat leave 4 HP, and any through-prayer 38 after the first hit kills; there is no verified combo-eat. Whether the run is survived depends on hit RNG. Extreme unmitigated and still High with prep, the highest with-prep score of any plan step. RFIs: run length, arena teleport, escape crystal in the arena.",
+        "quest_difficulty": "Intermediate",
+        "quest_difficulty_fact": "F-5968",
+        "below_recommended": false,
+        "recommended_note": "Recommended combat 50 (F-5969); owner combat 57 meets it.",
         "score": {
           "step_id": "S17",
-          "inherent_ds": 88,
-          "inherent_tier": "Extreme",
-          "residual_ds": 55,
-          "residual_tier": "High",
+          "headline_ds": 10,
+          "headline_tier": "Low",
+          "quest_tier": "Intermediate",
+          "quest_note": "meets recommended stats",
+          "inherent_ds": 20,
+          "inherent_tier": "Low",
+          "residual_ds": 10,
+          "residual_tier": "Low",
           "comparable_to": [
-            "Tombs of Amascut, expert (500+ invocation)",
-            "Phosani's Nightmare"
+            "Intermediate quest"
           ],
           "calibrated": true,
-          "calibration_version": "2026-11-20-approved-r2",
+          "calibration_version": "2026-11-22-r3",
           "wilderness_premium": 0,
-          "headline_ds": 88,
-          "headline_tier": "Extreme",
           "model_inherent": 96,
           "model_residual": 78,
           "floor_by": null,
@@ -6889,21 +6953,26 @@
         },
         "verdict": "approve_with_conditions",
         "verdict_reason": "Low: unknown max hits on the dungeon route, rated conservatively. DP04 option B only; poor Agility value.",
+        "quest_difficulty": "Novice",
+        "quest_difficulty_fact": "F-5970",
+        "below_recommended": false,
+        "recommended_note": "Recommended combat 10 (F-5971); owner combat 57 meets it.",
         "score": {
           "step_id": "S18",
-          "inherent_ds": 20,
+          "headline_ds": 5,
+          "headline_tier": "Safe",
+          "quest_tier": "Novice",
+          "quest_note": "meets recommended stats",
+          "inherent_ds": 15,
           "inherent_tier": "Low",
-          "residual_ds": 16,
-          "residual_tier": "Low",
+          "residual_ds": 5,
+          "residual_tier": "Safe",
           "comparable_to": [
-            "Ape Atoll Agility Course",
-            "Rooftop course at low Hitpoints"
+            "Novice quest"
           ],
           "calibrated": true,
-          "calibration_version": "2026-11-20-approved-r2",
+          "calibration_version": "2026-11-22-r3",
           "wilderness_premium": 0,
-          "headline_ds": 20,
-          "headline_tier": "Low",
           "model_inherent": 47,
           "model_residual": 34,
           "floor_by": null,
@@ -7148,21 +7217,26 @@
         },
         "verdict": "approve_with_conditions",
         "verdict_reason": "Low: unknown knight max hits, rated conservatively. DP04 option B only. The lamps' Defence option is a build trap and must be shown as 'never'.",
+        "quest_difficulty": "Intermediate",
+        "quest_difficulty_fact": "F-5972",
+        "below_recommended": false,
+        "recommended_note": "Recommended combat 15 (F-5973); owner combat 57 meets it.",
         "score": {
           "step_id": "S19",
+          "headline_ds": 10,
+          "headline_tier": "Low",
+          "quest_tier": "Intermediate",
+          "quest_note": "meets recommended stats",
           "inherent_ds": 20,
           "inherent_tier": "Low",
-          "residual_ds": 16,
+          "residual_ds": 10,
           "residual_tier": "Low",
           "comparable_to": [
-            "Ape Atoll Agility Course",
-            "Rooftop course at low Hitpoints"
+            "Intermediate quest"
           ],
           "calibrated": true,
-          "calibration_version": "2026-11-20-approved-r2",
+          "calibration_version": "2026-11-22-r3",
           "wilderness_premium": 0,
-          "headline_ds": 20,
-          "headline_tier": "Low",
           "model_inherent": 47,
           "model_residual": 34,
           "floor_by": null,
@@ -7389,21 +7463,26 @@
         },
         "verdict": "approve_with_conditions",
         "verdict_reason": "Low: max hit 3 with a portal exit; the risk is the no-food rule. DP04 option B only.",
+        "quest_difficulty": "Novice",
+        "quest_difficulty_fact": "F-5974",
+        "below_recommended": false,
+        "recommended_note": "Recommended combat 10 and Strength 5 (F-5975); owner combat 57, Strength 39 meets both.",
         "score": {
           "step_id": "S20",
-          "inherent_ds": 17,
+          "headline_ds": 5,
+          "headline_tier": "Safe",
+          "quest_tier": "Novice",
+          "quest_note": "meets recommended stats",
+          "inherent_ds": 15,
           "inherent_tier": "Low",
-          "residual_ds": 9,
+          "residual_ds": 5,
           "residual_tier": "Safe",
           "comparable_to": [
-            "Wintertodt at low Hitpoints",
-            "Ape Atoll Agility Course"
+            "Novice quest"
           ],
           "calibrated": true,
-          "calibration_version": "2026-11-20-approved-r2",
+          "calibration_version": "2026-11-22-r3",
           "wilderness_premium": 0,
-          "headline_ds": 17,
-          "headline_tier": "Low",
           "model_inherent": 37,
           "model_residual": 21,
           "floor_by": null,
@@ -7643,21 +7722,26 @@
         },
         "verdict": "approve_with_conditions",
         "verdict_reason": "Low for the quest itself (scripted fights, small max hit). Reaching Thieving 34 is a separate activity that this register has not rated; it needs its own rating before it is suggested.",
+        "quest_difficulty": "Intermediate",
+        "quest_difficulty_fact": "F-5976",
+        "below_recommended": false,
+        "recommended_note": "Recommended combat 40 (F-5977); owner combat 57 meets it.",
         "score": {
           "step_id": "S21",
+          "headline_ds": 10,
+          "headline_tier": "Low",
+          "quest_tier": "Intermediate",
+          "quest_note": "meets recommended stats",
           "inherent_ds": 16,
           "inherent_tier": "Low",
-          "residual_ds": 9,
-          "residual_tier": "Safe",
+          "residual_ds": 10,
+          "residual_tier": "Low",
           "comparable_to": [
-            "Wintertodt at low Hitpoints",
-            "Brimhaven Agility Arena"
+            "Intermediate quest"
           ],
           "calibrated": true,
-          "calibration_version": "2026-11-20-approved-r2",
+          "calibration_version": "2026-11-22-r3",
           "wilderness_premium": 0,
-          "headline_ds": 16,
-          "headline_tier": "Low",
           "model_inherent": 34,
           "model_residual": 21,
           "floor_by": null,
@@ -7772,7 +7856,7 @@
           "Stop: at the card's floor HP line. The exit plan is stop, eat, then move; never teleport."
         ],
         "warnings": [
-          "Headline {{risk.inherent_ds}}, with prep {{risk.residual_ds}} ({{risk.tier}}). Rated at your current Hitpoints and re-rated when it becomes reachable.",
+          "Danger {{risk.residual_ds}} ({{risk.tier}}) with prep; {{risk.inherent_ds}} if unprepared. Rated at your current Hitpoints and re-rated when it becomes reachable.",
           "Mandatory: do not enter below {{risk.min_hitpoints}} Hitpoints, the wiki's recommendation and the only verified trap-damage guidance. Train Hitpoints first.",
           "Mandatory: buy the hallowed ring first and wear it every run. It negates trap damage, not portal-frame or grapple failures.",
           "Mandatory: never cross Darkmeyer without vyre noble robes unless you arrive by crystal shard; the Vyrewatch Sentinels are aggressive.",
@@ -8018,6 +8102,10 @@
         "verdict_reason": "Long-term goal only (DP07 option B). Severe unmitigated at the owner's 48 HP: undocumented trap damage (UNVERIFIED_MECHANIC floor), tick-precise floors and the bulk of the grind. Approved with conditions because verified facts still say how to survive it (70+ HP per the wiki, the hallowed ring negates trap damage, traps hurt when you run into them and send you back, Vyrewatch avoided by robes or shard). Conditions: Sins of the Father first (vetoed pending research), Hitpoints 70+ (owner 48), and the chain's 4,600 forced Defence XP tracked (Defence 24, under 50). Re-rate at the owner's stats when it becomes reachable.",
         "score": {
           "step_id": "S25",
+          "headline_ds": 45,
+          "headline_tier": "High",
+          "quest_tier": null,
+          "quest_note": null,
           "inherent_ds": 79,
           "inherent_tier": "Severe",
           "residual_ds": 45,
@@ -8027,10 +8115,8 @@
             "Desert Treasure II awakened bosses"
           ],
           "calibrated": true,
-          "calibration_version": "2026-11-20-approved-r2",
+          "calibration_version": "2026-11-22-r3",
           "wilderness_premium": 0,
-          "headline_ds": 79,
-          "headline_tier": "Severe",
           "model_inherent": 88,
           "model_residual": 48,
           "floor_by": null,
@@ -8288,6 +8374,10 @@
         "verdict_reason": "Moderate unmitigated with unpublished fail damage; Pollnivneach (S10) is the safer choice for 70-80.",
         "score": {
           "step_id": "S26",
+          "headline_ds": 16,
+          "headline_tier": "Low",
+          "quest_tier": null,
+          "quest_note": null,
           "inherent_ds": 28,
           "inherent_tier": "Moderate",
           "residual_ds": 16,
@@ -8297,10 +8387,8 @@
             "Ape Atoll Agility Course"
           ],
           "calibrated": true,
-          "calibration_version": "2026-11-20-approved-r2",
+          "calibration_version": "2026-11-22-r3",
           "wilderness_premium": 0,
-          "headline_ds": 28,
-          "headline_tier": "Moderate",
           "model_inherent": 51,
           "model_residual": 36,
           "floor_by": null,
@@ -8456,10 +8544,10 @@
             "F-5016"
           ],
           "profit_note": "No direct profit: quest steps carry none (marks come from the rooftop laps that follow).",
-          "worst_residual_ds": 25,
-          "worst_residual_tier": "Moderate",
-          "worst_headline_ds": 25,
-          "worst_headline_tier": "Moderate",
+          "worst_residual_ds": 10,
+          "worst_residual_tier": "Low",
+          "worst_headline_ds": 20,
+          "worst_headline_tier": "Low",
           "hours": 0,
           "over_cap": false
         },
@@ -8495,10 +8583,10 @@
             "F-3014"
           ],
           "profit_note": "No direct profit: quest steps carry none (marks come from the rooftop laps that follow).",
-          "worst_residual_ds": 45,
-          "worst_residual_tier": "High",
-          "worst_headline_ds": 55,
-          "worst_headline_tier": "High",
+          "worst_residual_ds": 23,
+          "worst_residual_tier": "Low",
+          "worst_headline_ds": 33,
+          "worst_headline_tier": "Moderate",
           "hours": 0,
           "over_cap": false
         },
@@ -8593,10 +8681,10 @@
             "F-5376"
           ],
           "profit_note": "No direct profit: quest steps carry none (marks come from the rooftop laps that follow).",
-          "worst_residual_ds": 33,
-          "worst_residual_tier": "Moderate",
-          "worst_headline_ds": 94,
-          "worst_headline_tier": "Extreme",
+          "worst_residual_ds": 10,
+          "worst_residual_tier": "Low",
+          "worst_headline_ds": 20,
+          "worst_headline_tier": "Low",
           "hours": 0,
           "over_cap": false
         },
@@ -8629,10 +8717,10 @@
             "F-2032"
           ],
           "profit_note": "No direct profit: quest steps carry none (marks come from the rooftop laps that follow).",
-          "worst_residual_ds": 55,
-          "worst_residual_tier": "High",
-          "worst_headline_ds": 94,
-          "worst_headline_tier": "Extreme",
+          "worst_residual_ds": 10,
+          "worst_residual_tier": "Low",
+          "worst_headline_ds": 20,
+          "worst_headline_tier": "Low",
           "hours": 0,
           "over_cap": false
         }
@@ -8699,7 +8787,7 @@
             "F-5015"
           ],
           "profit_note": "No direct profit: quest steps carry none (marks come from the rooftop laps that follow).",
-          "worst_residual_ds": 16,
+          "worst_residual_ds": 10,
           "worst_residual_tier": "Low",
           "worst_headline_ds": 20,
           "worst_headline_tier": "Low",
@@ -8730,8 +8818,8 @@
             "F-5363"
           ],
           "profit_note": "No direct profit: quest steps carry none (marks come from the rooftop laps that follow).",
-          "worst_residual_ds": 9,
-          "worst_residual_tier": "Safe",
+          "worst_residual_ds": 10,
+          "worst_residual_tier": "Low",
           "worst_headline_ds": 16,
           "worst_headline_tier": "Low",
           "hours": 0,
@@ -8953,10 +9041,10 @@
             "F-5345"
           ],
           "profit_note": "Rooftop income at the low end of the mark range: Rellekka Rooftop Course 13 marks/h; marks are converted to amylase crystals and sold on the HW GE.",
-          "worst_residual_ds": 45,
-          "worst_residual_tier": "High",
-          "worst_headline_ds": 55,
-          "worst_headline_tier": "High",
+          "worst_residual_ds": 10,
+          "worst_residual_tier": "Low",
+          "worst_headline_ds": 28,
+          "worst_headline_tier": "Moderate",
           "hours": 67.19,
           "over_cap": false
         }
@@ -21278,6 +21366,747 @@
       "verified_at": "2026-11-22T04:00:00Z",
       "independent": true,
       "released": "2014-07-03"
+    },
+    {
+      "fact_id": "F-5950",
+      "claim_id": "C-RFI-501",
+      "subject": "The Writing's on the Wall",
+      "attribute": "quest_difficulty",
+      "value": "Intermediate",
+      "unit": null,
+      "statement": "The official quest difficulty of The Writing's on the Wall is Intermediate.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "The Writing's on the Wall",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404622",
+          "revid": 15404622,
+          "retrieved": "2026-11-22",
+          "quote": "|difficulty = Intermediate",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5951",
+      "claim_id": "C-RFI-502",
+      "subject": "The Writing's on the Wall",
+      "attribute": "recommended_stats",
+      "value": {
+        "combat": null,
+        "stats": []
+      },
+      "unit": null,
+      "statement": "The Writing's on the Wall: The wiki lists no recommended combat level or skill levels; the recommended field is only inventory/teleport advice.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "The Writing's on the Wall",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404622",
+          "revid": 15404622,
+          "retrieved": "2026-11-22",
+          "quote": "|recommended = * Several empty inventory slots\n* Stamina or energy potions",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5952",
+      "claim_id": "C-RFI-503",
+      "subject": "The Depths of Despair",
+      "attribute": "quest_difficulty",
+      "value": "Intermediate",
+      "unit": null,
+      "statement": "The official quest difficulty of The Depths of Despair is Intermediate.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "The Depths of Despair",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15365598",
+          "revid": 15365598,
+          "retrieved": "2026-11-22",
+          "quote": "|difficulty = Intermediate",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5953",
+      "claim_id": "C-RFI-504",
+      "subject": "The Depths of Despair",
+      "attribute": "recommended_stats",
+      "value": {
+        "combat": 15,
+        "stats": []
+      },
+      "unit": null,
+      "statement": "The Depths of Despair: Recommended: Combat level 15.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "The Depths of Despair",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15365598",
+          "revid": 15365598,
+          "retrieved": "2026-11-22",
+          "quote": "|recommended = *{{SCP|Combat|15|link=yes}}",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5954",
+      "claim_id": "C-RFI-505",
+      "subject": "Icthlarin's Little Helper",
+      "attribute": "quest_difficulty",
+      "value": "Intermediate",
+      "unit": null,
+      "statement": "The official quest difficulty of Icthlarin's Little Helper is Intermediate.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Icthlarin's Little Helper",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15401465",
+          "revid": 15401465,
+          "retrieved": "2026-11-22",
+          "quote": "|difficulty = Intermediate",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5955",
+      "claim_id": "C-RFI-506",
+      "subject": "Icthlarin's Little Helper",
+      "attribute": "recommended_stats",
+      "value": {
+        "combat": 50,
+        "stats": [
+          "Agility 35"
+        ]
+      },
+      "unit": null,
+      "statement": "Icthlarin's Little Helper: Recommended: Combat level 50 and Agility 35.",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Icthlarin's Little Helper",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15401465",
+          "revid": 15401465,
+          "retrieved": "2026-11-22",
+          "quote": "|recommended = * {{SCP|Combat|50|link=yes}}\n* {{SCP|Agility|35}} [[Agility]] to jump over the pit in the pyramid",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null,
+      "caveat": "Combat 50 and Agility 35 both confirmed; the Agility 35 line is scoped 'to jump over the pit in the pyramid (higher agility helps even more)', so it is a minimum comfortable level for that obstacle only."
+    },
+    {
+      "fact_id": "F-5956",
+      "claim_id": "C-RFI-507",
+      "subject": "A Tail of Two Cats",
+      "attribute": "quest_difficulty",
+      "value": "Intermediate",
+      "unit": null,
+      "statement": "The official quest difficulty of A Tail of Two Cats is Intermediate.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "A Tail of Two Cats",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15394232",
+          "revid": 15394232,
+          "retrieved": "2026-11-22",
+          "quote": "|difficulty = Intermediate",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5957",
+      "claim_id": "C-RFI-508",
+      "subject": "A Tail of Two Cats",
+      "attribute": "recommended_stats",
+      "value": {
+        "combat": null,
+        "stats": []
+      },
+      "unit": null,
+      "statement": "A Tail of Two Cats: The wiki lists no recommended combat level or skill levels; only travel and desert-supply advice (a fairy ring route mentions 62 Agility as a requirement of that route, not a quest recommendation).",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "A Tail of Two Cats",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15394232",
+          "revid": 15394232,
+          "retrieved": "2026-11-22",
+          "quote": "|recommended = *Fast travel to Burthorpe ([[games necklace]] or [[Burthorpe Games Room]] [[minigame]] teleport)",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null,
+      "caveat": "Confirmed no combat or skill recommendation in the |recommended field. The only Agility mention (62, fairy ring route needing partial Beneath Cursed Sands) is a requirement of an optional travel route, not a quest recommendation."
+    },
+    {
+      "fact_id": "F-5958",
+      "claim_id": "C-RFI-509",
+      "subject": "Underground Pass",
+      "attribute": "quest_difficulty",
+      "value": "Experienced",
+      "unit": null,
+      "statement": "The official quest difficulty of Underground Pass is Experienced.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Underground Pass",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15392817",
+          "revid": 15392817,
+          "retrieved": "2026-11-22",
+          "quote": "|difficulty = Experienced",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5959",
+      "claim_id": "C-RFI-510",
+      "subject": "Underground Pass",
+      "attribute": "recommended_stats",
+      "value": {
+        "combat": 60,
+        "stats": [
+          "Agility 50+",
+          "Thieving 50",
+          "Prayer 43"
+        ]
+      },
+      "unit": null,
+      "statement": "Underground Pass: Recommended: Combat 60, Agility 50+, Thieving 50 (shortcut), Prayer 43 (Protect from Melee); combat 79 stops Blessed spiders being aggressive.",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Underground Pass",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15392817",
+          "revid": 15392817,
+          "retrieved": "2026-11-22",
+          "quote": "|recommended = * [[Plank]] (obtainable during quest)\n* {{SCP|Combat|60|link=yes}}\n* {{SCP|Agility|50+|link=yes}} to reduce the risk of failing obstacles.\n* {{SCP|Thieving|50|link=yes}} for a helpful shortcut.",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null,
+      "caveat": "All four stats confirmed in the |recommended field. Agility 50+ is a floor ('+' kept); Thieving 50 is for an optional shortcut; Prayer 43 is the alternative to armour for Protect from Melee. Combat 79 (stops Blessed spiders being aggressive) is a separate line and is not part of the stats value."
+    },
+    {
+      "fact_id": "F-5960",
+      "claim_id": "C-RFI-511",
+      "subject": "Regicide",
+      "attribute": "quest_difficulty",
+      "value": "Experienced",
+      "unit": null,
+      "statement": "The official quest difficulty of Regicide is Experienced.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Regicide",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396547",
+          "revid": 15396547,
+          "retrieved": "2026-11-22",
+          "quote": "|difficulty = Experienced",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5961",
+      "claim_id": "C-RFI-512",
+      "subject": "Regicide",
+      "attribute": "recommended_stats",
+      "value": {
+        "combat": 60,
+        "stats": []
+      },
+      "unit": null,
+      "statement": "Regicide: Recommended: Combat level 60.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Regicide",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396547",
+          "revid": 15396547,
+          "retrieved": "2026-11-22",
+          "quote": "|recommended = * {{SCP|Combat|60|link=yes}}",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5962",
+      "claim_id": "C-RFI-513",
+      "subject": "The Fremennik Trials",
+      "attribute": "quest_difficulty",
+      "value": "Intermediate",
+      "unit": null,
+      "statement": "The official quest difficulty of The Fremennik Trials is Intermediate.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "The Fremennik Trials",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15411210",
+          "revid": 15411210,
+          "retrieved": "2026-11-22",
+          "quote": "|difficulty = Intermediate",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5963",
+      "claim_id": "C-RFI-514",
+      "subject": "The Fremennik Trials",
+      "attribute": "recommended_stats",
+      "value": {
+        "combat": 40,
+        "stats": [
+          "Agility 48"
+        ]
+      },
+      "unit": null,
+      "statement": "The Fremennik Trials: Recommended: Combat level 40 and Agility 48 (when locating the Draugen).",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "The Fremennik Trials",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15411210",
+          "revid": 15411210,
+          "retrieved": "2026-11-22",
+          "quote": "|recommended = * {{SCP|Combat|40|link=yes}}\n* {{SCP|Agility|48|link=yes}} (when locating the [[Draugen]])",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5964",
+      "claim_id": "C-RFI-515",
+      "subject": "Death Plateau",
+      "attribute": "quest_difficulty",
+      "value": "Novice",
+      "unit": null,
+      "statement": "The official quest difficulty of Death Plateau is Novice.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Death Plateau",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15382205",
+          "revid": 15382205,
+          "retrieved": "2026-11-22",
+          "quote": "|difficulty = Novice",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5965",
+      "claim_id": "C-RFI-516",
+      "subject": "Death Plateau",
+      "attribute": "recommended_stats",
+      "value": {
+        "combat": null,
+        "stats": []
+      },
+      "unit": null,
+      "statement": "Death Plateau: The wiki lists no recommended combat level or skill levels; only items (Blurberry special, teleports, energy).",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Death Plateau",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15382205",
+          "revid": 15382205,
+          "retrieved": "2026-11-22",
+          "quote": "|recommended = *[[Premade blurb' sp.]] or [[Blurberry special]] (optional, but strongly recommended, as it trivialises the dice betting segment)",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5966",
+      "claim_id": "C-RFI-517",
+      "subject": "Troll Stronghold",
+      "attribute": "quest_difficulty",
+      "value": "Intermediate",
+      "unit": null,
+      "statement": "The official quest difficulty of Troll Stronghold is Intermediate.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Troll Stronghold",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15410562",
+          "revid": 15410562,
+          "retrieved": "2026-11-22",
+          "quote": "|difficulty = Intermediate",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5967",
+      "claim_id": "C-RFI-518",
+      "subject": "Troll Stronghold",
+      "attribute": "recommended_stats",
+      "value": {
+        "combat": 50,
+        "stats": [
+          "Prayer 43",
+          "Thieving 30",
+          "Agility 47"
+        ]
+      },
+      "unit": null,
+      "statement": "Troll Stronghold: Recommended: Combat 50, Prayer 43, Thieving 30 (boostable), and Agility 47 (requirement line says 47 is recommended; 15 required).",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Troll Stronghold",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15410562",
+          "revid": 15410562,
+          "retrieved": "2026-11-22",
+          "quote": "|recommended = * {{SCP|Combat|50|link=yes}}\n*{{SCP|Prayer|43|link=yes}} for [[Protect from Melee]] and [[Protect from Missiles]]\n*At least {{SCP|Thieving|30|link=yes}} {{Boostable|yes}} to prevent a fight with two level 71 guards",
+          "fetched_by": "fact-verifier"
+        },
+        {
+          "tier": "T2",
+          "title": "Troll Stronghold",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15410562",
+          "revid": 15410562,
+          "retrieved": "2026-11-22",
+          "quote": "* {{SCP|Agility|15|link=yes}} {{Boostable|yes}} {{Questreqstart|no}} (47 is recommended)",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null,
+      "caveat": "Combat 50, Prayer 43 and Thieving 30 are in the |recommended field. Agility 47 is NOT in that field: it comes from the |requirements line 'Agility 15 ... (47 is recommended)', so it is a recommendation stated in the requirements field. Thieving 30 is boostable."
+    },
+    {
+      "fact_id": "F-5968",
+      "claim_id": "C-RFI-519",
+      "subject": "Troll Romance",
+      "attribute": "quest_difficulty",
+      "value": "Intermediate",
+      "unit": null,
+      "statement": "The official quest difficulty of Troll Romance is Intermediate.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Troll Romance",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375194",
+          "revid": 15375194,
+          "retrieved": "2026-11-22",
+          "quote": "|difficulty = Intermediate",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5969",
+      "claim_id": "C-RFI-520",
+      "subject": "Troll Romance",
+      "attribute": "recommended_stats",
+      "value": {
+        "combat": 50,
+        "stats": []
+      },
+      "unit": null,
+      "statement": "Troll Romance: Recommended: Combat level 50.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Troll Romance",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375194",
+          "revid": 15375194,
+          "retrieved": "2026-11-22",
+          "quote": "|recommended = * {{SCP|Combat|50|link=yes}}",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5970",
+      "claim_id": "C-RFI-521",
+      "subject": "Druidic Ritual",
+      "attribute": "quest_difficulty",
+      "value": "Novice",
+      "unit": null,
+      "statement": "The official quest difficulty of Druidic Ritual is Novice.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Druidic Ritual",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15405943",
+          "revid": 15405943,
+          "retrieved": "2026-11-22",
+          "quote": "|difficulty = Novice",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5971",
+      "claim_id": "C-RFI-522",
+      "subject": "Druidic Ritual",
+      "attribute": "recommended_stats",
+      "value": {
+        "combat": 10,
+        "stats": []
+      },
+      "unit": null,
+      "statement": "Druidic Ritual: Recommended: Combat level 10.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Druidic Ritual",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15405943",
+          "revid": 15405943,
+          "retrieved": "2026-11-22",
+          "quote": "|recommended = \n*{{SCP|Combat|10|link=yes}}",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5972",
+      "claim_id": "C-RFI-523",
+      "subject": "Black Knights' Fortress",
+      "attribute": "quest_difficulty",
+      "value": "Intermediate",
+      "unit": null,
+      "statement": "The official quest difficulty of Black Knights' Fortress is Intermediate.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Black Knights' Fortress",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403019",
+          "revid": 15403019,
+          "retrieved": "2026-11-22",
+          "quote": "|difficulty = Intermediate",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5973",
+      "claim_id": "C-RFI-524",
+      "subject": "Black Knights' Fortress",
+      "attribute": "recommended_stats",
+      "value": {
+        "combat": 15,
+        "stats": []
+      },
+      "unit": null,
+      "statement": "Black Knights' Fortress: Recommended: Combat level 15.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Black Knights' Fortress",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403019",
+          "revid": 15403019,
+          "retrieved": "2026-11-22",
+          "quote": "|recommended = * {{SCP|Combat|15|link=yes}}",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5974",
+      "claim_id": "C-RFI-525",
+      "subject": "Recruitment Drive",
+      "attribute": "quest_difficulty",
+      "value": "Novice",
+      "unit": null,
+      "statement": "The official quest difficulty of Recruitment Drive is Novice.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Recruitment Drive",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15395322",
+          "revid": 15395322,
+          "retrieved": "2026-11-22",
+          "quote": "|difficulty = Novice",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5975",
+      "claim_id": "C-RFI-526",
+      "subject": "Recruitment Drive",
+      "attribute": "recommended_stats",
+      "value": {
+        "combat": 10,
+        "stats": [
+          "Strength 5"
+        ]
+      },
+      "unit": null,
+      "statement": "Recruitment Drive: Recommended: Combat level 10 and Strength 5.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Recruitment Drive",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15395322",
+          "revid": 15395322,
+          "retrieved": "2026-11-22",
+          "quote": "|recommended = *{{SCP|Combat|10|link=yes}}\n*{{SCP|Strength|5|link=yes}}",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5976",
+      "claim_id": "C-RFI-527",
+      "subject": "Death on the Isle",
+      "attribute": "quest_difficulty",
+      "value": "Intermediate",
+      "unit": null,
+      "statement": "The official quest difficulty of Death on the Isle is Intermediate.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Death on the Isle",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375163",
+          "revid": 15375163,
+          "retrieved": "2026-11-22",
+          "quote": "|difficulty = Intermediate",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5977",
+      "claim_id": "C-RFI-528",
+      "subject": "Death on the Isle",
+      "attribute": "recommended_stats",
+      "value": {
+        "combat": 40,
+        "stats": []
+      },
+      "unit": null,
+      "statement": "Death on the Isle: Recommended: Combat level 40.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Death on the Isle",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375163",
+          "revid": 15375163,
+          "retrieved": "2026-11-22",
+          "quote": "|recommended =*{{SCP|Combat|40}}",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
     }
   ],
   "updates": [
@@ -22199,7 +23028,7 @@
     "prep_card_from": 45,
     "ladder": {
       "calibrated": true,
-      "version": "2026-11-20-approved-r2",
+      "version": "2026-11-22-r3",
       "anchors": [
         {
           "id": "afk-safe",
