@@ -12,6 +12,8 @@ What `today` does:
      only: anything relevant is routed to the Patch Sentinel (/osrs-refresh).
   4. For each active guide: current step and route position, the next decision
      point with its options and danger scores, and the levels to go.
+  5. Position in the wiki's Optimal quest guide: next quests with their quest-tier
+     danger, and the Defence-cap projection (tools/oqg.py).
 Writes nothing except the snapshot appended to the profile.
 """
 from __future__ import annotations
@@ -127,6 +129,12 @@ def cmd_today(a):
         print("   -> if any touch your guides, run /osrs-refresh <job> (the Patch Sentinel decides relevance)")
     for line in where(prof):
         print(line)
+    try:
+        import oqg
+        for line in oqg.status_lines(a.rsn, prof):
+            print(line)
+    except (Exception, SystemExit) as exc:
+        print(f"(optimal quest guide unavailable: {exc})")
     prof["updated"] = today()
     save_json(pf, prof)
 
