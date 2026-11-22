@@ -173,5 +173,12 @@
         "Sailing": 13922
       }
     }
-  ]
+  ],
+  "oqg": {
+    "through": "Death to the Dorgeshuun",
+    "skipped": [],
+    "done": [],
+    "marked": "2026-11-22",
+    "source": "owner"
+  }
 }
