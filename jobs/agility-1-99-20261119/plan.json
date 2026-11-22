@@ -397,7 +397,28 @@
         "F-4092",
         "F-4093"
       ],
-      "rationale": "Alternative first course (DP01 option B). One failable gap until 64 (damage undocumented, F-3071); the best mark rate of the low courses (16-18/h, never penalised, F-4024) for an early Graceful start; free Ectophial teleport nearby (F-4093). About half Falador's XP rate, so it is not on any route."
+      "rationale": "Alternative first course (DP01 option B). One failable gap until 64 (damage undocumented, F-3071); the best mark rate of the low courses (16-18/h, never penalised, F-4024) for an early Graceful start; free Ectophial teleport nearby (F-4093). About half Falador's XP rate, so it is not on any route.",
+      "income_per_hour": [
+        {
+          "item": "Mark of grace",
+          "qty": {
+            "value": 16,
+            "fact": "F-1005"
+          },
+          "convert": {
+            "to_item": "Amylase crystal",
+            "per_unit": {
+              "value": 100,
+              "fact": "F-5901"
+            },
+            "divide_by": {
+              "value": 10,
+              "fact": "F-4027"
+            }
+          },
+          "note": "marks -> amylase packs (10 marks each) -> 100 crystals each, sold on the HW GE"
+        }
+      ]
     },
     {
       "step_id": "S08",
@@ -434,7 +455,28 @@
         "F-1014"
       ],
       "rationale": "Best open course for 57-60: the next course up (Seers') needs 60. Failure damage is known and small (Hand Holds, 3-8, until 66, F-1011/F-4072) against 48 Hitpoints; city location, no aggressive monsters noted. Rate set at the low end of the fact range (fails still happen below 66).",
-      "why_not_faster": "Seers' can be entered from 55 with a summer-pie boost (F-4052), but boosted laps fail more (caveat on F-4052) and need a pie supply; Wilderness Agility Course (52+) is faster with tickets but is deep-Wilderness PvP on Hardcore Worlds (F-5366, F-1070), so it is never routed."
+      "why_not_faster": "Seers' can be entered from 55 with a summer-pie boost (F-4052), but boosted laps fail more (caveat on F-4052) and need a pie supply; Wilderness Agility Course (52+) is faster with tickets but is deep-Wilderness PvP on Hardcore Worlds (F-5366, F-1070), so it is never routed.",
+      "income_per_hour": [
+        {
+          "item": "Mark of grace",
+          "qty": {
+            "value": 9.7,
+            "fact": "F-1012"
+          },
+          "convert": {
+            "to_item": "Amylase crystal",
+            "per_unit": {
+              "value": 100,
+              "fact": "F-5901"
+            },
+            "divide_by": {
+              "value": 10,
+              "fact": "F-4027"
+            }
+          },
+          "note": "marks -> amylase packs (10 marks each) -> 100 crystals each, sold on the HW GE"
+        }
+      ]
     },
     {
       "step_id": "S09",
@@ -481,7 +523,28 @@
         "F-4025"
       ],
       "rationale": "Standard 60-70 course: bank at the start (F-4075), two failable obstacles until 79 with undocumented damage (F-3074), Rapid Heal and the church altar at the end for HP (F-5355). Planned at the no-teleport rate because the hard Kandarin diary is impossible for this zerker (Piety task needs Defence 70, F-1021/F-2621), so the Seers' bank teleport never applies; Camelot tablets land at Camelot (F-5347). Marks here buy Graceful (a full set is roughly 18.8-23.6 hours of Seers' laps, F-4025).",
-      "why_not_faster": "The Werewolf Agility Course (after Creature of Fenkenstrain) gives 50,000+ XP/h, but it is not in this plan: the Risk Officer keeps its veto on an unverifiable mechanic, not on danger. The deathslide fall can hit over 30, does not scale with Hitpoints and can exceed current HP (F-2091/F-3067), and its maximum is unpublished, so no safe-HP rule can be written. It returns when the veto lifts (see assumptions). The Hallowed Sepulchre needs Sins of the Father, which the owner cannot start (F-2100), and opens only at 77."
+      "why_not_faster": "The Werewolf Agility Course (after Creature of Fenkenstrain) gives 50,000+ XP/h, but it is not in this plan: the Risk Officer keeps its veto on an unverifiable mechanic, not on danger. The deathslide fall can hit over 30, does not scale with Hitpoints and can exceed current HP (F-2091/F-3067), and its maximum is unpublished, so no safe-HP rule can be written. It returns when the veto lifts (see assumptions). The Hallowed Sepulchre needs Sins of the Father, which the owner cannot start (F-2100), and opens only at 77.",
+      "income_per_hour": [
+        {
+          "item": "Mark of grace",
+          "qty": {
+            "value": 11,
+            "fact": "F-4020"
+          },
+          "convert": {
+            "to_item": "Amylase crystal",
+            "per_unit": {
+              "value": 100,
+              "fact": "F-5901"
+            },
+            "divide_by": {
+              "value": 10,
+              "fact": "F-4027"
+            }
+          },
+          "note": "marks -> amylase packs (10 marks each) -> 100 crystals each, sold on the HW GE"
+        }
+      ]
     },
     {
       "step_id": "S10",
@@ -525,7 +588,28 @@
         "F-5370"
       ],
       "rationale": "Fastest open rooftop at 70. Only the market stall can be failed (floor(HP/17+2) = 4 at 48 HP, F-3075) and nothing fails from 85 (F-4069). No desert heat in town (F-3076); town NPCs are not aggressive to combat 45 (jackals only to 42 or below, F-3077). Reach it by Ali Morrisane's carpet from Shantay Pass (F-1032); never walk south of town (aggressive level-63 crocodiles, F-4084). The redirected Pollnivneach tablet needs a Nightmare Zone scroll (F-4079/F-4080), and NMZ is unsafe on Hardcore Worlds, so do not use it.",
-      "why_not_faster": "Werewolf (50,000+ XP/h) is vetoed until its deathslide maximum is published or the never-fail stats are reached (see assumptions); Dorgesh-Kaan (50,000-63,000) fails even at 99 for about 10 damage and its quest requirements are not in the verified facts; Seers' is slower (40,000)."
+      "why_not_faster": "Werewolf (50,000+ XP/h) is vetoed until its deathslide maximum is published or the never-fail stats are reached (see assumptions); Dorgesh-Kaan (50,000-63,000) fails even at 99 for about 10 damage and its quest requirements are not in the verified facts; Seers' is slower (40,000).",
+      "income_per_hour": [
+        {
+          "item": "Mark of grace",
+          "qty": {
+            "value": 13,
+            "fact": "F-4021"
+          },
+          "convert": {
+            "to_item": "Amylase crystal",
+            "per_unit": {
+              "value": 100,
+              "fact": "F-5901"
+            },
+            "divide_by": {
+              "value": 10,
+              "fact": "F-4027"
+            }
+          },
+          "note": "marks -> amylase packs (10 marks each) -> 100 crystals each, sold on the HW GE"
+        }
+      ]
     },
     {
       "step_id": "S11",
@@ -563,7 +647,28 @@
         "F-1014"
       ],
       "rationale": "Safest course for 80-90: from 85 no Pollnivneach obstacle can fail (F-4069/F-5370), so the course itself has no damage source for the last five levels before Ardougne. Mark rate falls to 20% at 90 (F-4018), when the route moves on anyway.",
-      "why_not_faster": "Rellekka (80+) is slightly faster (50,000-55,052 XP/h vs 47,000-51,000) but its tightrope fails until 85, it has no bank, and the run there is not fully researched (F-5345); the difference does not justify extra uncertainty on the safest route."
+      "why_not_faster": "Rellekka (80+) is slightly faster (50,000-55,052 XP/h vs 47,000-51,000) but its tightrope fails until 85, it has no bank, and the run there is not fully researched (F-5345); the difference does not justify extra uncertainty on the safest route.",
+      "income_per_hour": [
+        {
+          "item": "Mark of grace",
+          "qty": {
+            "value": 13,
+            "fact": "F-4021"
+          },
+          "convert": {
+            "to_item": "Amylase crystal",
+            "per_unit": {
+              "value": 100,
+              "fact": "F-5901"
+            },
+            "divide_by": {
+              "value": 10,
+              "fact": "F-4027"
+            }
+          },
+          "note": "marks -> amylase packs (10 marks each) -> 100 crystals each, sold on the HW GE"
+        }
+      ]
     },
     {
       "step_id": "S12",
@@ -655,7 +760,28 @@
         "F-5343",
         "F-5345"
       ],
-      "rationale": "Fastest open course for 80-90 on the balanced route. Only the first tightrope fails, until 85, for floor(HP x 0.10) = 4 at 48 HP (F-3079/F-4070). Rellekka has no bank (F-4087); bring what you need. With The Fremennik Trials done (S12) the enchanted lyre teleports here (F-4086); otherwise a Camelot tablet and a long run north (F-5343)."
+      "rationale": "Fastest open course for 80-90 on the balanced route. Only the first tightrope fails, until 85, for floor(HP x 0.10) = 4 at 48 HP (F-3079/F-4070). Rellekka has no bank (F-4087); bring what you need. With The Fremennik Trials done (S12) the enchanted lyre teleports here (F-4086); otherwise a Camelot tablet and a long run north (F-5343).",
+      "income_per_hour": [
+        {
+          "item": "Mark of grace",
+          "qty": {
+            "value": 13,
+            "fact": "F-4022"
+          },
+          "convert": {
+            "to_item": "Amylase crystal",
+            "per_unit": {
+              "value": 100,
+              "fact": "F-5901"
+            },
+            "divide_by": {
+              "value": 10,
+              "fact": "F-4027"
+            }
+          },
+          "note": "marks -> amylase packs (10 marks each) -> 100 crystals each, sold on the HW GE"
+        }
+      ]
     },
     {
       "step_id": "S14",
@@ -700,7 +826,28 @@
         "F-5357"
       ],
       "rationale": "The best rooftop course and the finish for every route. Gaps 1 and 2 fail until 95 (damage undocumented, F-3080); church altar for Rapid Heal and market food nearby (F-5357). Marks stack on one tile (F-4026), so missed marks are not lost. Do not touch the Wilderness lever in East Ardougne (F-4091).",
-      "why_not_faster": "The Hallowed Sepulchre floors 4-5 (73,000-98,500 XP/h) need Sins of the Father, which is out of reach and pending research (DP07 option B is the long-term goal); Werewolf's 80+ ceiling (68,600) barely beats Ardougne and the course stays vetoed until its deathslide maximum is published or the never-fail stats are reached."
+      "why_not_faster": "The Hallowed Sepulchre floors 4-5 (73,000-98,500 XP/h) need Sins of the Father, which is out of reach and pending research (DP07 option B is the long-term goal); Werewolf's 80+ ceiling (68,600) barely beats Ardougne and the course stays vetoed until its deathslide maximum is published or the never-fail stats are reached.",
+      "income_per_hour": [
+        {
+          "item": "Mark of grace",
+          "qty": {
+            "value": 16,
+            "fact": "F-4023"
+          },
+          "convert": {
+            "to_item": "Amylase crystal",
+            "per_unit": {
+              "value": 100,
+              "fact": "F-5901"
+            },
+            "divide_by": {
+              "value": 10,
+              "fact": "F-4027"
+            }
+          },
+          "note": "marks -> amylase packs (10 marks each) -> 100 crystals each, sold on the HW GE"
+        }
+      ]
     },
     {
       "step_id": "S15",
@@ -1121,7 +1268,28 @@
         "F-5355",
         "F-4018"
       ],
-      "rationale": "DP06 option B: keep the familiar course with the bank at the start instead of travelling to the desert. Fails stop at 79 (F-1018) and marks drop to 20% at 80 (F-4018). Planned at the same 40,000 XP/h as 60-70 (the fact's range is for 60-70; later laps are faster once fails stop, so this is conservative)."
+      "rationale": "DP06 option B: keep the familiar course with the bank at the start instead of travelling to the desert. Fails stop at 79 (F-1018) and marks drop to 20% at 80 (F-4018). Planned at the same 40,000 XP/h as 60-70 (the fact's range is for 60-70; later laps are faster once fails stop, so this is conservative).",
+      "income_per_hour": [
+        {
+          "item": "Mark of grace",
+          "qty": {
+            "value": 11,
+            "fact": "F-4020"
+          },
+          "convert": {
+            "to_item": "Amylase crystal",
+            "per_unit": {
+              "value": 100,
+              "fact": "F-5901"
+            },
+            "divide_by": {
+              "value": 10,
+              "fact": "F-4027"
+            }
+          },
+          "note": "marks -> amylase packs (10 marks each) -> 100 crystals each, sold on the HW GE"
+        }
+      ]
     }
   ],
   "assumptions": [
@@ -1142,7 +1310,9 @@
     "Content under 30 days old in this plan: The Writing's on the Wall (3 Nov 2026), Troll Stronghold's new 2,000 XP, Black Knights' Fortress lamps (3 Nov 2026) and the Hardcore Worlds rules (4 Nov 2026). Treat them as volatile.",
     "Long-term next step 1 (vetoed, removed from steps): Werewolf Agility Course, 60-90 (former S23; 50,000-65,000 XP/h at lower levels, F-1065), with Creature of Fenkenstrain (former S22), which gives no Agility XP (F-2095) and only unlocks the course (Ring of Charos, F-1063/F-2092). Veto basis: unverifiable_mechanic, not danger. The deathslide fall's maximum damage is unpublished: it can hit over 30, does not scale with Hitpoints and can exceed current HP (F-2091, F-3067), so the guide cannot say at what HP a fall is survivable. The veto lifts when EITHER (A) the owner has Agility 81+, Strength 81+ and carries under 2 kg (the Risk Officer's lift condition; F-3068 gives the never-fail point as Agility 80, Strength 80, 2 kg or less; owner Strength 32), OR (B) a source publishes the deathslide maximum and the Risk Officer re-rates the step with a minimum-HP rule above it. Then re-add both steps and re-run the calculator.",
     "Long-term next step 2 (vetoed, removed from steps): Sins of the Father (former S24), the only way into the Hallowed Sepulchre (F-1054; S25, DP07 option B) and the source of a 6 x 15,000 XP tome that can all go to Agility (F-2102). Veto basis: insufficient_facts_for_prep, not danger. Its fights (F-2105) were not researched for max hits and teleport/instance rules, and the final boss's maximum is disputed, so no bail-out can be written from verified facts. It needs Woodcutting 62, Fletching 60, Crafting 56, Agility 52, Attack 50, Slayer 50 and Magic 49, none boostable (F-2100), plus A Taste of Hope and its prerequisite quests (F-2101). The veto lifts when, as the owner nears those requirements, an RFI researches its fights and the Risk Officer completes its prep card and re-rates it at the owner's stats then. The Sepulchre also needs 70+ Hitpoints (recommended, F-3056).",
-    "Danger scores are game-relative (The Fractured Archive = 100; Wilderness premium by deepest level reached: +20 at level 30+, +15 at 20-29, +10 at 14-19, +5 below 14; scores capped at 99). The owner replaced the earlier flat Wilderness +25 with these tiers on 2026-11-20 (docs/05-danger-model.md, policy/danger-calibration.json). No step in this plan enters the Wilderness."
+    "Danger scores are game-relative (The Fractured Archive = 100; Wilderness premium by deepest level reached: +20 at level 30+, +15 at 20-29, +10 at 14-19, +5 below 14; scores capped at 99). The owner replaced the earlier flat Wilderness +25 with these tiers on 2026-11-20 (docs/05-danger-model.md, policy/danger-calibration.json). No step in this plan enters the Wilderness.",
+    "Profit uses live Hardcore Worlds GE prices (prices.runescape.wiki/osrs-hc), snapshot 2026-11-22; marks are converted to amylase crystals; quest steps carry no profit.",
+    "Marks of grace per hour use the LOW end of each course's fact range (as for XP/h): Canifis 16 (F-1005), Falador 9.7 (F-1012), Seers' 11 (F-4020), Pollnivneach 13 (F-4021), Rellekka 13 (F-4022), Ardougne 16 (F-4023). Amylase pack = 10 marks (F-4027), 100 crystals (F-5901). F-5901 and F-5902 are main-game wiki flags; Hardcore Worlds mapping unchecked. Packs are untradeable (F-5903), so only crystals are sold. The Hallowed Sepulchre (S25) has no marks-of-grace fact, so it carries no income; no food or supply costs are modelled because no fact gives a per-action quantity."
   ],
   "prerequisite_checklist": [
     {
@@ -1199,7 +1369,8 @@
             "F-1010",
             "F-1011",
             "F-1012"
-          ]
+          ],
+          "profit_note": "Falador earns the fewest marks per hour (low end 9.7/h) but reaches Seers' sooner."
         },
         {
           "option_id": "B",
@@ -1225,7 +1396,8 @@
             "F-3071",
             "F-4019",
             "F-4093"
-          ]
+          ],
+          "profit_note": "Canifis earns more marks per hour (low end 16/h) but at about half the XP rate; marks sell as amylase crystals on the HW GE."
         }
       ],
       "recommended": "A",
@@ -1260,7 +1432,8 @@
             "F-2007",
             "F-2017",
             "F-5016"
-          ]
+          ],
+          "profit_note": "No direct profit: quest steps carry none (marks come from the rooftop laps that follow)."
         },
         {
           "option_id": "B",
@@ -1292,7 +1465,8 @@
             "F-5030",
             "F-2038",
             "F-3014"
-          ]
+          ],
+          "profit_note": "No direct profit: quest steps carry none (marks come from the rooftop laps that follow)."
         },
         {
           "option_id": "C",
@@ -1312,7 +1486,8 @@
           "best_for": "Pure Agility focus",
           "facts": [
             "F-1010"
-          ]
+          ],
+          "profit_note": "Rooftop income at the low end of the mark range: Falador Rooftop Course 9.7 marks/h; marks are converted to amylase crystals and sold on the HW GE."
         }
       ],
       "recommended": "B",
@@ -1344,7 +1519,8 @@
             "F-5018",
             "F-5021",
             "F-1017"
-          ]
+          ],
+          "profit_note": "Rooftop income at the low end of the mark range: Seers' Village Rooftop Course 11 marks/h; marks are converted to amylase crystals and sold on the HW GE."
         },
         {
           "option_id": "B",
@@ -1369,7 +1545,8 @@
             "F-5018",
             "F-5019",
             "F-5376"
-          ]
+          ],
+          "profit_note": "No direct profit: quest steps carry none (marks come from the rooftop laps that follow)."
         },
         {
           "option_id": "C",
@@ -1398,7 +1575,8 @@
             "F-5003",
             "F-5021",
             "F-2032"
-          ]
+          ],
+          "profit_note": "No direct profit: quest steps carry none (marks come from the rooftop laps that follow)."
         }
       ],
       "recommended": "A",
@@ -1428,7 +1606,8 @@
           "facts": [
             "F-2012",
             "F-2503"
-          ]
+          ],
+          "profit_note": "Rooftop income at the low end of the mark range: Falador Rooftop Course 9.7 marks/h; marks are converted to amylase crystals and sold on the HW GE."
         },
         {
           "option_id": "B",
@@ -1454,7 +1633,8 @@
             "F-2016",
             "F-5004",
             "F-5015"
-          ]
+          ],
+          "profit_note": "No direct profit: quest steps carry none (marks come from the rooftop laps that follow)."
         },
         {
           "option_id": "C",
@@ -1478,7 +1658,8 @@
             "F-5037",
             "F-5361",
             "F-5363"
-          ]
+          ],
+          "profit_note": "No direct profit: quest steps carry none (marks come from the rooftop laps that follow)."
         }
       ],
       "recommended": "A",
@@ -1514,7 +1695,8 @@
             "F-4069",
             "F-1032",
             "F-4084"
-          ]
+          ],
+          "profit_note": "Rooftop income at the low end of the mark range: Pollnivneach Rooftop Course 13 marks/h; marks are converted to amylase crystals and sold on the HW GE."
         },
         {
           "option_id": "B",
@@ -1536,7 +1718,8 @@
             "F-1017",
             "F-1018",
             "F-4018"
-          ]
+          ],
+          "profit_note": "Rooftop income at the low end of the mark range: Seers' Village Rooftop Course 11 marks/h; marks are converted to amylase crystals and sold on the HW GE."
         }
       ],
       "recommended": "A",
@@ -1570,7 +1753,8 @@
             "F-1028",
             "F-1035",
             "F-1041"
-          ]
+          ],
+          "profit_note": "Rooftop income at the low end of the mark range: Pollnivneach Rooftop Course 13 marks/h, Rellekka Rooftop Course 13 marks/h, Ardougne Rooftop Course 16 marks/h; marks are converted to amylase crystals and sold on the HW GE."
         },
         {
           "option_id": "B",
@@ -1599,7 +1783,8 @@
             "F-3062",
             "F-1054",
             "F-2102"
-          ]
+          ],
+          "profit_note": "Rooftop steps earn marks of grace, sold as amylase crystals on the HW GE (see each step's income); quest steps carry no profit."
         }
       ],
       "recommended": "A",
@@ -1631,7 +1816,8 @@
             "F-4069",
             "F-5370",
             "F-1028"
-          ]
+          ],
+          "profit_note": "Rooftop income at the low end of the mark range: Pollnivneach Rooftop Course 13 marks/h; marks are converted to amylase crystals and sold on the HW GE."
         },
         {
           "option_id": "B",
@@ -1659,7 +1845,8 @@
             "F-4087",
             "F-2038",
             "F-5345"
-          ]
+          ],
+          "profit_note": "Rooftop income at the low end of the mark range: Rellekka Rooftop Course 13 marks/h; marks are converted to amylase crystals and sold on the HW GE."
         }
       ],
       "recommended": "B",
@@ -1668,49 +1855,29 @@
   ],
   "provenance": {
     "agent": "route-strategist",
-    "started_at": "2026-11-21T06:04:00Z",
-    "finished_at": "2026-11-21T06:15:00Z",
+    "started_at": "2026-11-22T03:38:00Z",
+    "finished_at": "2026-11-22T03:45:00Z",
     "dispatch_ref": "dispatch/042-route-strategist.md",
     "inputs": [
       {
-        "path": "plan.json",
-        "sha256": "f343604e839c966d5699f2669a4cd6e2d7ef6456e16647f22fdfbcde7f5d5780"
-      },
-      {
-        "path": "risk.json",
-        "sha256": "74bbfca5c25eaba0f88aac5fddf412c2392bd7d7607cde0239ceaf3b5b701d12"
-      },
-      {
-        "path": "qa.json",
-        "sha256": "85490413f4708371589984a898ec05f1d45aded8b8cb53fdcdbcf730d460dbaf"
-      },
-      {
         "path": "facts.json",
-        "sha256": "70fcb7eed3ab243ba3a64501f766da075bc69de64e8cdbc9fe39ed53f456fa12"
+        "sha256": "81096ceb8f4ecb2b8eb72d9ef82ddacebae6cbe1f553791883184fee4f2098ec"
+      },
+      {
+        "path": "prices.json",
+        "sha256": "a3a7643f5c1c015c8f275bc7b9a9e11f1b53417496efe1660ef8d83e896254e5"
       },
       {
         "path": "brief.json",
         "sha256": "c27aa6bc9969f981aed9185637565c2792f58b80646cc531afa503e27f969389"
       },
       {
-        "path": "research/updates.json",
-        "sha256": "b600273a97297879bd2c38e663ed79bc8c55973cd793a7edf041690f2be988c5"
-      },
-      {
-        "path": "calc.json",
-        "sha256": "36391dcc75e537051ab5c6a4d69510cb54854d08ce05066a8a028c5cac817c76"
-      },
-      {
-        "path": "dispatch/042-route-strategist.md",
-        "sha256": "643dd0a0c9f4e4257dd613e94f2b2fe179c28c7f53ab9118fb266e532e587b82"
-      },
-      {
         "path": ".claude/agents/route-strategist.md",
-        "sha256": "51f5eb40f5312bd7f4908511efe239dbe2d2223bb56b76372058d587d37e3a56"
+        "sha256": "afdb0af9794438c09c4204b82f4fec639d4f4474915664f8e8f48965809b20e5"
       },
       {
         "path": "schemas/plan.schema.json",
-        "sha256": "83e1a59a823f5199657483230a5f39febf3b254350a6290224045b72211b3837"
+        "sha256": "69eb83be7dc9d5256e600dff3d3b96892734b45c2a8901690c34feb63c80a2a3"
       }
     ],
     "actions": [
@@ -1755,6 +1922,36 @@
         "detail": "python3 tools/validate.py agility-1-99-20261119 plan and ... calc",
         "target": "tools/validate.py",
         "outcome": "plan: 0 fail, 11 warn (10 steps not used by any route, as before; plan.json not sealed, expected). calc: 0 fail, 0 warn (safest 99 / 228.2 h, balanced 99 / 222.86 h)."
+      },
+      {
+        "kind": "verify",
+        "detail": "python3 tools/ledger.py verify agility-1-99-20261119",
+        "target": "ledger.jsonl",
+        "outcome": "OK"
+      },
+      {
+        "kind": "write",
+        "detail": "Added income_per_hour (marks of grace -> amylase crystals) to 8 rooftop train steps (S07-S11, S13, S14, S26), profit_note to every decision-point option, two profit assumptions",
+        "target": "plan.json",
+        "outcome": "ok"
+      },
+      {
+        "kind": "compute",
+        "detail": "python3 tools/xp.py simulate agility-1-99-20261119 --out calc-draft.json",
+        "target": "calc-draft.json",
+        "outcome": "no errors; safest net 18,006,836 gp (78,909 gp/h), balanced net 17,645,644 gp (79,177 gp/h)"
+      },
+      {
+        "kind": "compute",
+        "detail": "python3 tools/validate.py agility-1-99-20261119 plan",
+        "target": "plan.json",
+        "outcome": "0 fail"
+      },
+      {
+        "kind": "read",
+        "detail": "Read plan.json v4 (unsealed for this task, sha256 5a0296c74446ee83ad3266581aa39a11f9316ef8042fdf1866471c483658672a) as the base to edit",
+        "target": "plan.json",
+        "outcome": "ok"
       }
     ],
     "decisions": [
@@ -1792,6 +1989,15 @@
         "refs": [
           "ledger seq 165"
         ]
+      },
+      {
+        "decision": "Profit from rooftop marks of grace at the low end of each fact range, converted to amylase crystals",
+        "reason": "Owner feedback asks for profit in the advice; marks are the only verified income; low end matches the XP/h policy",
+        "alternatives_considered": [
+          "mid or high end of mark ranges",
+          "food/supply costs (skipped: no fact gives per-action quantity)",
+          "income for the Hallowed Sepulchre S25 (skipped: no marks fact)"
+        ]
       }
     ],
     "limitations": [
@@ -1799,7 +2005,8 @@
       "No web access by design. Quest durations are not in the facts, so the calculator counts 0 hours for quest steps and the balanced total understates its real time.",
       "Whether a teleport or escape crystal works inside the Koschei instance or the Troll arena is undocumented (risk.json S12-M6, S17-H3); the bank-it rule does not depend on it.",
       "S12's requirement text 'Fight Koschei with no armour, weapons or spells' was not edited (requirements frozen); it gives no crystal advice and does not contradict the card.",
-      "Open RFIs from earlier runs remain: Colossal Wyrm post-rework per-lap XP, Death to the Dorgeshuun requirements, secondary quest XP as numeric facts, quest durations, Thieving training for Death on the Isle, Sins of the Father fights."
+      "Open RFIs from earlier runs remain: Colossal Wyrm post-rework per-lap XP, Death to the Dorgeshuun requirements, secondary quest XP as numeric facts, quest durations, Thieving training for Death on the Isle, Sins of the Father fights.",
+      "Mark rates for Seers' use F-4020 low 11 (string range) and F-2618 (13.8, no failures) was not used; F-5901/F-5902 are main-game wiki flags with Hardcore Worlds mapping unchecked. Amylase crystal GE mid 548 gp; its high/low spread is 608/487. Profit assumes all crystals sell at the mid price. No XP numbers, routes, requirements or danger text changed."
     ]
   }
 }

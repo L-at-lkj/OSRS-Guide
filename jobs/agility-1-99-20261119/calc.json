@@ -1,6 +1,7 @@
 {
   "generated_by": "tools/xp.py",
-  "plan_numeric_sha256": "914ed7ab1569057c7607fe322773cb17abe0d18673ed63c1155d977778a7ff45",
+  "plan_numeric_sha256": "c7baf1e68e3a81dc5ceb5f571e8ff8dff342607e6e2cc65ed16ad1259b03e699",
+  "prices_sha256": "a3a7643f5c1c015c8f275bc7b9a9e11f1b53417496efe1660ef8d83e896254e5",
   "skill": "Agility",
   "routes": {
     "safest": {
@@ -42,6 +43,13 @@
           "hours": 2.096,
           "supplies": [],
           "secondary_xp": [],
+          "profit": {
+            "cost_gp": 0,
+            "income_gp": 111415,
+            "net_gp": 111415,
+            "gp_per_hour": 53156,
+            "unpriced": []
+          },
           "end_xp": 274161,
           "end_level": 60,
           "xp_gained": 57428,
@@ -56,6 +64,13 @@
           "hours": 11.587,
           "supplies": [],
           "secondary_xp": [],
+          "profit": {
+            "cost_gp": 0,
+            "income_gp": 698464,
+            "net_gp": 698464,
+            "gp_per_hour": 60280,
+            "unpriced": []
+          },
           "end_xp": 738141,
           "end_level": 70,
           "xp_gained": 463980,
@@ -70,6 +85,13 @@
           "hours": 26.552,
           "supplies": [],
           "secondary_xp": [],
+          "profit": {
+            "cost_gp": 0,
+            "income_gp": 1891564,
+            "net_gp": 1891564,
+            "gp_per_hour": 71240,
+            "unpriced": []
+          },
           "end_xp": 1986811,
           "end_level": 80,
           "xp_gained": 1248670,
@@ -84,6 +106,13 @@
           "hours": 71.479,
           "supplies": [],
           "secondary_xp": [],
+          "profit": {
+            "cost_gp": 0,
+            "income_gp": 5092164,
+            "net_gp": 5092164,
+            "gp_per_hour": 71240,
+            "unpriced": []
+          },
           "end_xp": 5346561,
           "end_level": 90,
           "xp_gained": 3359750,
@@ -98,6 +127,13 @@
           "hours": 116.483,
           "supplies": [],
           "secondary_xp": [],
+          "profit": {
+            "cost_gp": 0,
+            "income_gp": 10213229,
+            "net_gp": 10213229,
+            "gp_per_hour": 87680,
+            "unpriced": []
+          },
           "end_xp": 13034633,
           "end_level": 99,
           "xp_gained": 7688072,
@@ -552,6 +588,13 @@
           ]
         }
       },
+      "profit": {
+        "net_gp": 18006836,
+        "cost_gp": 0,
+        "income_gp": 18006836,
+        "gp_per_hour": 78909,
+        "unpriced": []
+      },
       "totals": {
         "xp_end": 13034633,
         "level_end": 99,
@@ -679,6 +722,13 @@
           "hours": 1.046,
           "supplies": [],
           "secondary_xp": [],
+          "profit": {
+            "cost_gp": 0,
+            "income_gp": 55601,
+            "net_gp": 55601,
+            "gp_per_hour": 53156,
+            "unpriced": []
+          },
           "end_xp": 274009,
           "end_level": 60,
           "xp_gained": 28714,
@@ -693,6 +743,13 @@
           "hours": 11.59,
           "supplies": [],
           "secondary_xp": [],
+          "profit": {
+            "cost_gp": 0,
+            "income_gp": 698645,
+            "net_gp": 698645,
+            "gp_per_hour": 60280,
+            "unpriced": []
+          },
           "end_xp": 737989,
           "end_level": 70,
           "xp_gained": 463980,
@@ -707,6 +764,13 @@
           "hours": 26.555,
           "supplies": [],
           "secondary_xp": [],
+          "profit": {
+            "cost_gp": 0,
+            "income_gp": 1891778,
+            "net_gp": 1891778,
+            "gp_per_hour": 71240,
+            "unpriced": []
+          },
           "end_xp": 1986659,
           "end_level": 80,
           "xp_gained": 1248670,
@@ -721,6 +785,13 @@
           "hours": 67.193,
           "supplies": [],
           "secondary_xp": [],
+          "profit": {
+            "cost_gp": 0,
+            "income_gp": 4786829,
+            "net_gp": 4786829,
+            "gp_per_hour": 71240,
+            "unpriced": []
+          },
           "end_xp": 5346899,
           "end_level": 90,
           "xp_gained": 3360240,
@@ -735,6 +806,13 @@
           "hours": 116.478,
           "supplies": [],
           "secondary_xp": [],
+          "profit": {
+            "cost_gp": 0,
+            "income_gp": 10212791,
+            "net_gp": 10212791,
+            "gp_per_hour": 87680,
+            "unpriced": []
+          },
           "end_xp": 13034971,
           "end_level": 99,
           "xp_gained": 7688072,
@@ -1223,6 +1301,13 @@
             }
           ]
         }
+      },
+      "profit": {
+        "net_gp": 17645644,
+        "cost_gp": 0,
+        "income_gp": 17645644,
+        "gp_per_hour": 79177,
+        "unpriced": []
       },
       "totals": {
         "xp_end": 13034971,
