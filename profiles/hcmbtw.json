@@ -21,7 +21,8 @@
     ],
     "lamp_policy": "never Defence",
     "confirmed": true,
-    "cap_note": "Owner 2026-11-22: 'i am fine with the total of 51 or 52 defence that is given from quests completion'. Cap raised 50 -> 52 to allow the fixed quest Defence rewards; choosable rewards still never go to Defence."
+    "cap_note": "Owner 2026-11-22: 'i am fine with the total of 51 or 52 defence that is given from quests completion'. Cap raised 50 -> 52 to allow the fixed quest Defence rewards; choosable rewards still never go to Defence. Owner 2026-11-22: 'i will not follow the guide for rewars that closely so disregard, i will likely have 51 [defence] at quest cape'. Owner picks choosable rewards; the tracker shows fixed rewards only.",
+    "quest_cape_defence_expected": 51
   },
   "danger_policy": {
     "appetite": "informed",

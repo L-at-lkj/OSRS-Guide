@@ -150,14 +150,12 @@ def status_lines(rsn: str, prof: dict, n: int = 5) -> list[str]:
         all_b, all_run = first_breach(True)
         fix_b, fix_run = first_breach(False)
         out.append(f"   Defence: {cur:,} XP, cap {cap} = {limit:,} XP, headroom {limit - cur:,}.")
-        out.append(f"   - taking every Defence reward the guide assigns: +{all_run - cur:,}"
-                   + (f" -> CAP PASSED at '{all_b}'" if all_b else " -> within cap"))
-        out.append(f"   - declining the choosable ones: +{fix_run - cur:,}"
-                   + (f" -> CAP PASSED at '{fix_b}' (needs a decision before then)" if fix_b else " -> within cap"))
-        ahead = [f"{r['row']} +{r['xp']['defence']:,}" + ("*" if r["defence_choice"] else "")
-                 for r in todo if r["xp"].get("defence")]
+        out.append(f"   - fixed quest Defence rewards ahead: +{fix_run - cur:,}"
+                   + (f" -> CAP PASSED at '{fix_b}'" if fix_b else f" -> Defence {xpmod.level_for(fix_run)} at the end, within cap"))
+        out.append("   - choosable rewards are the owner's pick (never Defence per build); the guide's own choices are ignored")
+        ahead = [f"{r['row']} +{r['xp']['defence']:,}" for r in todo if r["xp"].get("defence") and not r["defence_choice"]]
         if ahead:
-            out.append("   Defence rewards ahead (* = choosable per guide note): " + ", ".join(ahead))
+            out.append("   fixed Defence rewards ahead: " + ", ".join(ahead))
     out.append("   leads only: confirm rewards and recommended stats on each quest page")
     return out
 
