@@ -289,11 +289,13 @@ function tiles(){
     remaining = hrs(h);
   }
   $('#tiles').innerHTML = [
-    ['Route', esc(r.label)], ['Total time', hrs(t.hours)], ['Time left', remaining], ['Actions', fmt(t.actions)],
+    ['Route', esc(r.label)], ['Training hours', hrs(t.hours)], ['Training left', remaining], ['Actions', fmt(t.actions)],
     ['Worst danger', `<span class="ds ${r.worst_residual_tier}" style="padding:0 8px"><span class="num" style="font-size:16px">${r.worst_residual_ds}</span></span> ${esc(r.worst_residual_tier)}`],
     ['Above your cap', `<span style="color:${over.length ? 'var(--bad)' : 'var(--ok)'}">${over.length}</span> step${over.length === 1 ? '' : 's'}`],
     ['Progress', `${doneN}/${r.step_ids.length}`],
-    ...(r.profit ? [['Profit (HW GE)', `<span class="gp ${r.profit.net_gp < 0 ? 'neg' : 'pos'}">${fmt(r.profit.net_gp)}</span> <span class="small muted">${fmt(r.profit.gp_per_hour)}/h</span>`]] : []),
+    ...(r.profit ? [['Profit (HW GE, mid)', (() => { const P = G.prices || {}; const it = Object.values(P.items || {}).find(x => x.mid && r.profit.income_gp) || null;
+        const lo = it ? Math.round(r.profit.net_gp * it.low / it.mid) : null, hi = it ? Math.round(r.profit.net_gp * it.high / it.mid) : null;
+        return `<span class="gp ${r.profit.net_gp < 0 ? 'neg' : 'pos'}">${fmt(r.profit.net_gp)}</span> <span class="small muted">${fmt(r.profit.gp_per_hour)}/h${lo ? `<br>range ${fmt(lo)}–${fmt(hi)} · prices ${esc((P.retrieved || '').slice(0, 10))}` : ''}</span>`; })()]] : []),
   ].map(([k, v]) => `<div class="tile"><div class="k">${k}</div><div class="v">${v}</div></div>`).join('');
   // timeline
   const from = G.meta.from_level, to = G.meta.to_level, span = Math.max(1, XP[to] - XP[from]);
@@ -367,7 +369,7 @@ function stepCard(s, idx){
           <div><b>Stop immediately if</b><ul>${(pre.stop_conditions || []).map(i => `<li>${esc(i)}</li>`).join('') || '<li class="muted">—</li>'}</ul></div></div>
         <div class="warn"><b>Bail-out plan:</b> ${esc(risk.bailout)}</div>
       </div></details>
-      ${s.rationale ? `<div class="small muted"><b>Why this step:</b> ${esc(s.rationale)}${s.why_not_faster ? ' <b>Why not faster:</b> ' + esc(s.why_not_faster) : ''}</div>` : ''}
+      ${s.rationale ? `<details class="small muted"><summary><b>Why this step</b> (planner's reasoning)</summary><ul>${(s.rationale + (s.why_not_faster ? ' Why not faster: ' + s.why_not_faster : '')).split(/(?<=[.;])\s+(?=[A-Z])/).map(x => `<li>${esc(x)}</li>`).join('')}</ul></details>` : ''}
       <div class="small">${(s.facts || []).map(id => `<a class="factref" href="#${id}" data-fact="${id}">${id}</a>`).join('')}</div>
     </div></article>`;
 }

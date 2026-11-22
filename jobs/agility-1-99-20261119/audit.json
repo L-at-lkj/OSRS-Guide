@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T08:04:36+00:00",
+  "generated_at": "2026-11-22T03:56:31+00:00",
   "ledger": [
     {
       "seq": 0,
@@ -2375,6 +2375,479 @@
       "sha256": "965ca1bf833759a3087d5d555877919822782c69c6299c1911ee226ca05c7b1d",
       "decision": null,
       "note": "",
+      "ref": null
+    },
+    {
+      "seq": 216,
+      "ts": "2026-11-21T08:04:36+00:00",
+      "event": "seal",
+      "path": "audit.json",
+      "author": "system",
+      "sha256": "f99f05ce678df1ec970ab9cf6e0b18c409185fb99703115580e52cfda697990a",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 217,
+      "ts": "2026-11-21T08:04:36+00:00",
+      "event": "seal",
+      "path": "audit.html",
+      "author": "system",
+      "sha256": "076bd4debaad7613a0c46eedaba48b89d6e162ea5cd483698f11e2865b2e23d2",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 218,
+      "ts": "2026-11-22T03:39:23+00:00",
+      "event": "decision",
+      "path": null,
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "Owner feedback on released guide (verbatim): 'avoid large slabs of text avoid the arrogant tone, stick to point in tips unless a section is read out automatically dot points shoulkd be used. the high danger tasks should be much clearer (bright red for example). ensure profit is considered as part of the advice provided. use https://prices.runescape.wiki/osrs-hc for prices accurate to hardcore worlds. plan a more efficient approach to production...'. Revision v2 opened: prices + profit, dot-point style, bright-red danger; no red-team run (no danger change) per docs/10.",
+      "ref": ""
+    },
+    {
+      "seq": 219,
+      "ts": "2026-11-22T03:39:34+00:00",
+      "event": "seal",
+      "path": "prices.json",
+      "author": "system",
+      "sha256": "a3a7643f5c1c015c8f275bc7b9a9e11f1b53417496efe1660ef8d83e896254e5",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 220,
+      "ts": "2026-11-22T03:39:34+00:00",
+      "event": "seal",
+      "path": "dispatch/045-logistics-analyst.md",
+      "author": "director",
+      "sha256": "9be51a9c8762965098e4be2f1d97c59d1a3ae46f2da7fa7d8fe75ab11ee214ab",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 221,
+      "ts": "2026-11-22T03:39:34+00:00",
+      "event": "dispatch",
+      "path": null,
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "045: RFI-03 amylase pack contents (profit)",
+      "ref": "dispatch/045-logistics-analyst.md"
+    },
+    {
+      "seq": 222,
+      "ts": "2026-11-22T03:40:17+00:00",
+      "event": "return",
+      "path": null,
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "logistics RFI-03: 3 claims (pack = 100 crystals; crystals GE-tradeable; packs untradeable). HW tradeability confirmed mechanically: Amylase crystal (id 12640) is in the sealed HW price snapshot.",
+      "ref": ""
+    },
+    {
+      "seq": 223,
+      "ts": "2026-11-22T03:40:17+00:00",
+      "event": "seal",
+      "path": "research/claims-rfi-05.json",
+      "author": "logistics-analyst",
+      "sha256": "bd8bd16bb4e0d7f44ef02c6447d3119dfa354f6c00f3298a861ce8e46d910ba7",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 224,
+      "ts": "2026-11-22T03:40:17+00:00",
+      "event": "seal",
+      "path": "dispatch/046-fact-verifier.md",
+      "author": "director",
+      "sha256": "277be5238c2cf19232e6a797f34ef75f63102dccd04eaf3f9346730beb87bbae",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 225,
+      "ts": "2026-11-22T03:40:17+00:00",
+      "event": "dispatch",
+      "path": null,
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "046: verify RFI-03",
+      "ref": "dispatch/046-fact-verifier.md"
+    },
+    {
+      "seq": 226,
+      "ts": "2026-11-22T03:40:59+00:00",
+      "event": "return",
+      "path": null,
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "verifier RFI-03: F-5901..5903 VERIFIED_WITH_CAVEAT; its RFI (HW GE availability of item 12640) is answered by the sealed HW price snapshot (Amylase crystal mid 548, 24h volume 98,140).",
+      "ref": ""
+    },
+    {
+      "seq": 227,
+      "ts": "2026-11-22T03:40:59+00:00",
+      "event": "seal",
+      "path": "facts-parts/rfi-03.json",
+      "author": "fact-verifier",
+      "sha256": "b63af1a2b81aa27174fa09817a0bded916c6ef7390899b57e57e07c9f792a9d8",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 228,
+      "ts": "2026-11-22T03:40:59+00:00",
+      "event": "unseal",
+      "path": "facts.json",
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "merge RFI-03 profit facts (amylase pack contents/tradeability)",
+      "ref": null
+    },
+    {
+      "seq": 229,
+      "ts": "2026-11-22T03:40:59+00:00",
+      "event": "seal",
+      "path": "facts.json",
+      "author": "system",
+      "sha256": "81096ceb8f4ecb2b8eb72d9ef82ddacebae6cbe1f553791883184fee4f2098ec",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 230,
+      "ts": "2026-11-22T03:41:00+00:00",
+      "event": "unseal",
+      "path": "plan.json",
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "v2 owner feedback: add profit (income_per_hour, profit_note) from facts and the sealed HW price snapshot",
+      "ref": null
+    },
+    {
+      "seq": 231,
+      "ts": "2026-11-22T03:41:14+00:00",
+      "event": "seal",
+      "path": "dispatch/047-route-strategist.md",
+      "author": "director",
+      "sha256": "c84a520bd00e337030f099fd6a26172e3c8cbb30a6f3b939458a03cf39a73ce2",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 232,
+      "ts": "2026-11-22T03:41:14+00:00",
+      "event": "dispatch",
+      "path": null,
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "047: strategist adds profit (sonnet)",
+      "ref": "dispatch/047-route-strategist.md"
+    },
+    {
+      "seq": 233,
+      "ts": "2026-11-22T03:42:37+00:00",
+      "event": "return",
+      "path": null,
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "strategist 047 (sonnet): income_per_hour on 8 rooftop steps (low-end marks/h, marks->amylase via F-5901/F-4027); profit_note on all options; routes ~18.0M / 17.6M gp, ~79k gp/h at amylase mid 548.",
+      "ref": ""
+    },
+    {
+      "seq": 234,
+      "ts": "2026-11-22T03:42:37+00:00",
+      "event": "seal",
+      "path": "plan.json",
+      "author": "route-strategist",
+      "sha256": "bbbbe6e9e60a09ad7d25a790fa4dedf91e0ffb5946fbc04f7f29eb1ebf0b75ee",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 235,
+      "ts": "2026-11-22T03:42:37+00:00",
+      "event": "unseal",
+      "path": "calc.json",
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "plan v5 adds income (numeric) and prices; recompute",
+      "ref": null
+    },
+    {
+      "seq": 236,
+      "ts": "2026-11-22T03:42:37+00:00",
+      "event": "seal",
+      "path": "calc.json",
+      "author": "system",
+      "sha256": "b8d7b9c7b5e6951c027355e1bd9552abb472173c7db64a545b0da22e9b7a9909",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 237,
+      "ts": "2026-11-22T03:42:37+00:00",
+      "event": "unseal",
+      "path": "calc-review.json",
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "calc now includes profit; quant re-check",
+      "ref": null
+    },
+    {
+      "seq": 238,
+      "ts": "2026-11-22T03:42:37+00:00",
+      "event": "unseal",
+      "path": "prose.json",
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "owner feedback: dot points, no slabs, plain tone, profit, bright-red danger",
+      "ref": null
+    },
+    {
+      "seq": 239,
+      "ts": "2026-11-22T03:42:53+00:00",
+      "event": "seal",
+      "path": "dispatch/048-quant.md",
+      "author": "director",
+      "sha256": "79c588fa00b098e5b7940790843ef64e24e2569d7d53e6327290c2fd403ca58b",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 240,
+      "ts": "2026-11-22T03:42:53+00:00",
+      "event": "dispatch",
+      "path": null,
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "048-quant (sonnet)",
+      "ref": "dispatch/048-quant.md"
+    },
+    {
+      "seq": 241,
+      "ts": "2026-11-22T03:42:53+00:00",
+      "event": "seal",
+      "path": "dispatch/049-guide-author.md",
+      "author": "director",
+      "sha256": "08ac5c4b7613856cc4874e902f8da26c4d20c3ea34cf22654e287a727f9aa404",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 242,
+      "ts": "2026-11-22T03:42:53+00:00",
+      "event": "dispatch",
+      "path": null,
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "049-guide-author (sonnet)",
+      "ref": "dispatch/049-guide-author.md"
+    },
+    {
+      "seq": 243,
+      "ts": "2026-11-22T03:44:46+00:00",
+      "event": "return",
+      "path": null,
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "quant 048 (sonnet): PASS; profit recomputed by hand (3 steps exact). New disclosures Q-11 (mid price, +-11%), Q-13 (Graceful 260 marks ~1.42M not deducted), Q-14 (no GE tax applied). Director decision: disclose via an intro point (sent to author 049) rather than re-plan (efficiency).",
+      "ref": ""
+    },
+    {
+      "seq": 244,
+      "ts": "2026-11-22T03:44:46+00:00",
+      "event": "seal",
+      "path": "calc-review.json",
+      "author": "quant",
+      "sha256": "006290bc6b5541342f9322094a5eb7afa068fef0574aa2ec5196ad1e54faa8cd",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 245,
+      "ts": "2026-11-22T03:46:18+00:00",
+      "event": "return",
+      "path": null,
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "guide-author 049 (sonnet): prose rewritten to owner style (dot points, limits, plain tone, profit tips, Q-11/13/14 intro point via F-4004); flagged template bug (intro/outro tokens not resolved) -> Director fixed in template.",
+      "ref": ""
+    },
+    {
+      "seq": 246,
+      "ts": "2026-11-22T03:46:18+00:00",
+      "event": "seal",
+      "path": "prose.json",
+      "author": "guide-author",
+      "sha256": "06d70a89428d9cbea821decb473c17f1fd4ab2eaf8c0f5f3316799e5e10e256a",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 247,
+      "ts": "2026-11-22T03:46:18+00:00",
+      "event": "unseal",
+      "path": "content.json",
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "v2 re-assembly: plan v5 (profit), calc with profit, prose v2 (owner style), prices",
+      "ref": null
+    },
+    {
+      "seq": 248,
+      "ts": "2026-11-22T03:46:19+00:00",
+      "event": "seal",
+      "path": "content.json",
+      "author": "system",
+      "sha256": "475b8102652fee75e64166fdb38b903739e71838147033ca2fb623530970748b",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 249,
+      "ts": "2026-11-22T03:46:19+00:00",
+      "event": "unseal",
+      "path": "guide.html",
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "re-render v2",
+      "ref": null
+    },
+    {
+      "seq": 250,
+      "ts": "2026-11-22T03:47:21+00:00",
+      "event": "unseal",
+      "path": "qa.json",
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "v2 release audit (profit, owner style, bright-red danger)",
+      "ref": null
+    },
+    {
+      "seq": 251,
+      "ts": "2026-11-22T03:47:21+00:00",
+      "event": "seal",
+      "path": "dispatch/050-qa-auditor.md",
+      "author": "director",
+      "sha256": "a338ba6c02966d0cc41a87f66e4b88b95927cf9ac43d1f00a2b42f3ba0e717b9",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 252,
+      "ts": "2026-11-22T03:47:21+00:00",
+      "event": "dispatch",
+      "path": null,
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "050: QA v2 release audit",
+      "ref": "dispatch/050-qa-auditor.md"
+    },
+    {
+      "seq": 253,
+      "ts": "2026-11-22T03:55:44+00:00",
+      "event": "sign",
+      "path": "content.json",
+      "author": "qa-auditor",
+      "sha256": "475b8102652fee75e64166fdb38b903739e71838147033ca2fb623530970748b",
+      "decision": "approve",
+      "note": "APPROVE v2 content 475b8102: profit (plan v5, calc, HW snapshot) recomputed independently and live price unchanged (608/487, 0%); 12/12 v2 facts live-match (F-5901..5903, F-4027, F-1005, F-1012, F-4020..4023, F-4004, F-1121); all 149 mandatory mitigations/stop conditions render, S05 Iban gate, S12 bank crystal/no ring of life, S17 Protect from Melee/run window kept; headline>=45 cards bright red; Q-01/02/11/13/14 disclosed in intro; validate 0 fail; browser ALL PASS. Non-blocking: '260 marks of grace marks' typo, rationale slabs (S12 219 words), no Q-11 price band, tool/template edits lack a governance note.",
+      "ref": null
+    },
+    {
+      "seq": 254,
+      "ts": "2026-11-22T03:56:16+00:00",
+      "event": "note",
+      "path": null,
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "Governance record (QA 050 note): after the v1 approval the Director changed templates/guide.html (red danger, profit display, intro tokens, collapsible rationale, profit range tile, 'Training hours'), tools/assemble.py (prices, cited facts, level labels), tools/validate.py (style limits, income refs, prices binding, part/claims options), tools/ledger.py (seal rights for prices, carryover, brief), tools/xp.py (profit, numeric hash), tools/prices.py, tools/brief.py, tools/carryover.py; all under owner feedback 2026-11-22; QA confirmed content reproduces exactly. Stray nested draft dir removed.",
+      "ref": ""
+    },
+    {
+      "seq": 255,
+      "ts": "2026-11-22T03:56:16+00:00",
+      "event": "seal",
+      "path": "qa.json",
+      "author": "qa-auditor",
+      "sha256": "b5099abf68253384390127d25a528e8cf2e291f36d6716dd9a0fcc72d39fce09",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 256,
+      "ts": "2026-11-22T03:56:31+00:00",
+      "event": "seal",
+      "path": "guide.html",
+      "author": "system",
+      "sha256": "52f939a040288bdecf3b471e4f3721a29e91e226c038870423f68e8dfe9882a7",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 257,
+      "ts": "2026-11-22T03:56:31+00:00",
+      "event": "unseal",
+      "path": "audit.json",
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "re-export audit for v2 release",
+      "ref": null
+    },
+    {
+      "seq": 258,
+      "ts": "2026-11-22T03:56:31+00:00",
+      "event": "unseal",
+      "path": "audit.html",
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "re-export audit for v2 release",
       "ref": null
     }
   ],
@@ -4992,8 +5465,8 @@
     },
     "facts.json": {
       "agent": "fact-verifier",
-      "started_at": "2026-11-20T17:01:49+00:00",
-      "finished_at": "2026-11-20T17:01:49+00:00",
+      "started_at": "2026-11-22T03:40:59+00:00",
+      "finished_at": "2026-11-22T03:40:59+00:00",
       "inputs": [
         {
           "path": "brief.json",
@@ -5194,6 +5667,38 @@
         {
           "path": "facts-parts/rfi-02.json",
           "sha256": "8810fece1be77c5868d18cb5fd9df407a31d50025777ebe938bd1a5ebe536d09"
+        },
+        {
+          "path": "research/claims-rfi-05.json",
+          "sha256": "bd8bd16bb4e0d7f44ef02c6447d3119dfa354f6c00f3298a861ce8e46d910ba7"
+        },
+        {
+          "path": "brief.json",
+          "sha256": "c27aa6bc9969f981aed9185637565c2792f58b80646cc531afa503e27f969389"
+        },
+        {
+          "path": "dispatch/046-fact-verifier.md",
+          "sha256": "277be5238c2cf19232e6a797f34ef75f63102dccd04eaf3f9346730beb87bbae"
+        },
+        {
+          "path": ".claude/agents/fact-verifier.md",
+          "sha256": "61bff653ddf324af3fd3b78496c155a195e46cbf52e2ab087ceffacd1bdecf34"
+        },
+        {
+          "path": "schemas/facts.schema.json",
+          "sha256": "e098fdf95c8a68673eecb8880afcddbf608298a25d485bd3a83a80a75c8b7bb2"
+        },
+        {
+          "path": "tools/wiki.py",
+          "sha256": "d30b82d5ff286da0f957e4f478f7259dfb6a522311d9f758c28c7ede9e3d1526"
+        },
+        {
+          "path": "tools/validate.py",
+          "sha256": "3066039a6e6d870a9cb253440091d35019b681e2cfdda5156c296a96755bd923"
+        },
+        {
+          "path": "facts-parts/rfi-03.json",
+          "sha256": "b63af1a2b81aa27174fa09817a0bded916c6ef7390899b57e57e07c9f792a9d8"
         },
         {
           "path": "brief.json",
@@ -6300,6 +6805,43 @@
           "detail": "[rfi-02] python3 tools/validate.py agility-1-99-20261119 facts --part rfi-02 --claims C-RFI-101:C-RFI-328"
         },
         {
+          "kind": "verify",
+          "detail": "[rfi-03] python3 tools/ledger.py verify agility-1-99-20261119; claims-rfi-05.json sha256 matches seal seq 223",
+          "outcome": "OK"
+        },
+        {
+          "kind": "read",
+          "detail": "[rfi-03] Read research/claims-rfi-05.json (C-RFI-401..403) and charter"
+        },
+        {
+          "kind": "fetch",
+          "detail": "[rfi-03] wiki.py rev 15316439 (Amylase pack, researcher revision)",
+          "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15316439",
+          "outcome": "100 crystals, tradeable = No, 8 marks sale-back text all present"
+        },
+        {
+          "kind": "fetch",
+          "detail": "[rfi-03] wiki.py page 'Amylase pack' (current)",
+          "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15316439",
+          "outcome": "current revid is 15316439, unchanged"
+        },
+        {
+          "kind": "fetch",
+          "detail": "[rfi-03] wiki.py rev 15375340 (Amylase crystal, researcher revision)",
+          "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15375340",
+          "outcome": "tradeable = Yes, exchange = Yes, id = 12640, release 3 July 2014"
+        },
+        {
+          "kind": "fetch",
+          "detail": "[rfi-03] wiki.py page 'Amylase crystal' (current)",
+          "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15375340",
+          "outcome": "current revid is 15375340 (2026-10-18), unchanged"
+        },
+        {
+          "kind": "write",
+          "detail": "[rfi-03] wrote facts-parts/rfi-03.json"
+        },
+        {
           "kind": "read",
           "detail": "[threats] Read charter .claude/agents/fact-verifier.md (sha256 442e0f171fb8...), CLAUDE.md, dispatch 016, schemas/facts.schema.json, tools/wiki.py, tools/sentry.py (Bash rules) and tools/validate.py (facts gate)."
         },
@@ -6851,6 +7393,20 @@
           ]
         },
         {
+          "decision": "[rfi-03] All three VERIFIED_WITH_CAVEAT rather than VERIFIED",
+          "reason": "Values match exactly on the wiki, but the wiki flags are main-game and no Hardcore Worlds check was possible; the researcher flagged the same gap.",
+          "alternatives_considered": [
+            "VERIFIED"
+          ]
+        },
+        {
+          "decision": "[rfi-03] Corrected released date for C-RFI-402 to 2014-07-03, did not mark DISPUTED",
+          "reason": "The disputed field is metadata (researcher said 2014-07-10); the claimed value (tradeable on the GE, id 12640) is unchanged. Recorded in the caveat and researcher_value.",
+          "alternatives_considered": [
+            "DISPUTED"
+          ]
+        },
+        {
           "decision": "[threats] C-THR-063 (Vanstrom Klause, Sins of the Father) DISPUTED",
           "reason": "The infobox max hit 24 is labelled '(Standard)'. The quest page documents special attacks of 40+ and blood-orb or lightning hits of up to 40 that hit through prayers. The researcher's max_hit understates the per-hit danger for a 48 HP character.",
           "alternatives_considered": [
@@ -6989,6 +7545,9 @@
         "[rfi-02] The owner's house location (Rimmington), Tears of Guthix status and Slayer point balance are not in the sealed brief; facts that depend on them carry caveats and an RFI.",
         "[rfi-02] Only one wiki full-text search was run per 'no source' gap; a page that uses different wording could still exist.",
         "[rfi-02] Hardcore Worlds is 16 days old; T1 rules, the records page and the wiki HW page may change after 2026-11-20 12:26 UTC.",
+        "[rfi-03] No second independent source (no Jagex T1 post or price API) was fetched; all three facts rest on one T2 wiki page each.",
+        "[rfi-03] Hardcore Worlds item/GE mapping not checked.",
+        "[rfi-03] Dev blog cited by the wiki for the tradeable change was not fetched.",
         "[threats] INTERRUPTION: the session was halted by a usage limit after the Ape Atoll set (last fetch 2026-11-20T02:25:10Z) and resumed at about 07:02Z on the coordinator's instruction. Fetches from Brimhaven onwards are dated 07:02-07:08Z. No page fetched before the break was re-fetched after it. Revisions are pinned, so the evidence is unaffected, but pages fetched before 02:26Z could have changed in the gap.",
         "[threats] No independent T3 source was found for any max hit or damage formula. Monster stats rest on OSRS Wiki infoboxes, cross-checked where possible against the wiki's own quest walkthroughs, which are not fully independent. Jagex staff statements (Mod Ash) were read as quoted on wiki pages; the archived tweets themselves were not fetched.",
         "[threats] Early in the session I ran inspection commands that do not follow Sentry's single-command rule: 'cd ... &&' chains with ';', and a 'python3 -c' dump of the sealed claims file redirected into the scratchpad. They were read-only, wrote nothing in the project, and are disclosed here for the audit. All later commands were single python3 tools/wiki.py or validate.py calls.",
@@ -7006,49 +7565,29 @@
     },
     "plan.json": {
       "agent": "route-strategist",
-      "started_at": "2026-11-21T06:04:00Z",
-      "finished_at": "2026-11-21T06:15:00Z",
+      "started_at": "2026-11-22T03:38:00Z",
+      "finished_at": "2026-11-22T03:45:00Z",
       "dispatch_ref": "dispatch/042-route-strategist.md",
       "inputs": [
         {
-          "path": "plan.json",
-          "sha256": "f343604e839c966d5699f2669a4cd6e2d7ef6456e16647f22fdfbcde7f5d5780"
-        },
-        {
-          "path": "risk.json",
-          "sha256": "74bbfca5c25eaba0f88aac5fddf412c2392bd7d7607cde0239ceaf3b5b701d12"
-        },
-        {
-          "path": "qa.json",
-          "sha256": "85490413f4708371589984a898ec05f1d45aded8b8cb53fdcdbcf730d460dbaf"
-        },
-        {
           "path": "facts.json",
-          "sha256": "70fcb7eed3ab243ba3a64501f766da075bc69de64e8cdbc9fe39ed53f456fa12"
+          "sha256": "81096ceb8f4ecb2b8eb72d9ef82ddacebae6cbe1f553791883184fee4f2098ec"
+        },
+        {
+          "path": "prices.json",
+          "sha256": "a3a7643f5c1c015c8f275bc7b9a9e11f1b53417496efe1660ef8d83e896254e5"
         },
         {
           "path": "brief.json",
           "sha256": "c27aa6bc9969f981aed9185637565c2792f58b80646cc531afa503e27f969389"
         },
         {
-          "path": "research/updates.json",
-          "sha256": "b600273a97297879bd2c38e663ed79bc8c55973cd793a7edf041690f2be988c5"
-        },
-        {
-          "path": "calc.json",
-          "sha256": "36391dcc75e537051ab5c6a4d69510cb54854d08ce05066a8a028c5cac817c76"
-        },
-        {
-          "path": "dispatch/042-route-strategist.md",
-          "sha256": "643dd0a0c9f4e4257dd613e94f2b2fe179c28c7f53ab9118fb266e532e587b82"
-        },
-        {
           "path": ".claude/agents/route-strategist.md",
-          "sha256": "51f5eb40f5312bd7f4908511efe239dbe2d2223bb56b76372058d587d37e3a56"
+          "sha256": "afdb0af9794438c09c4204b82f4fec639d4f4474915664f8e8f48965809b20e5"
         },
         {
           "path": "schemas/plan.schema.json",
-          "sha256": "83e1a59a823f5199657483230a5f39febf3b254350a6290224045b72211b3837"
+          "sha256": "69eb83be7dc9d5256e600dff3d3b96892734b45c2a8901690c34feb63c80a2a3"
         }
       ],
       "actions": [
@@ -7093,6 +7632,36 @@
           "detail": "python3 tools/validate.py agility-1-99-20261119 plan and ... calc",
           "target": "tools/validate.py",
           "outcome": "plan: 0 fail, 11 warn (10 steps not used by any route, as before; plan.json not sealed, expected). calc: 0 fail, 0 warn (safest 99 / 228.2 h, balanced 99 / 222.86 h)."
+        },
+        {
+          "kind": "verify",
+          "detail": "python3 tools/ledger.py verify agility-1-99-20261119",
+          "target": "ledger.jsonl",
+          "outcome": "OK"
+        },
+        {
+          "kind": "write",
+          "detail": "Added income_per_hour (marks of grace -> amylase crystals) to 8 rooftop train steps (S07-S11, S13, S14, S26), profit_note to every decision-point option, two profit assumptions",
+          "target": "plan.json",
+          "outcome": "ok"
+        },
+        {
+          "kind": "compute",
+          "detail": "python3 tools/xp.py simulate agility-1-99-20261119 --out calc-draft.json",
+          "target": "calc-draft.json",
+          "outcome": "no errors; safest net 18,006,836 gp (78,909 gp/h), balanced net 17,645,644 gp (79,177 gp/h)"
+        },
+        {
+          "kind": "compute",
+          "detail": "python3 tools/validate.py agility-1-99-20261119 plan",
+          "target": "plan.json",
+          "outcome": "0 fail"
+        },
+        {
+          "kind": "read",
+          "detail": "Read plan.json v4 (unsealed for this task, sha256 5a0296c74446ee83ad3266581aa39a11f9316ef8042fdf1866471c483658672a) as the base to edit",
+          "target": "plan.json",
+          "outcome": "ok"
         }
       ],
       "decisions": [
@@ -7130,6 +7699,15 @@
           "refs": [
             "ledger seq 165"
           ]
+        },
+        {
+          "decision": "Profit from rooftop marks of grace at the low end of each fact range, converted to amylase crystals",
+          "reason": "Owner feedback asks for profit in the advice; marks are the only verified income; low end matches the XP/h policy",
+          "alternatives_considered": [
+            "mid or high end of mark ranges",
+            "food/supply costs (skipped: no fact gives per-action quantity)",
+            "income for the Hallowed Sepulchre S25 (skipped: no marks fact)"
+          ]
         }
       ],
       "limitations": [
@@ -7137,22 +7715,23 @@
         "No web access by design. Quest durations are not in the facts, so the calculator counts 0 hours for quest steps and the balanced total understates its real time.",
         "Whether a teleport or escape crystal works inside the Koschei instance or the Troll arena is undocumented (risk.json S12-M6, S17-H3); the bank-it rule does not depend on it.",
         "S12's requirement text 'Fight Koschei with no armour, weapons or spells' was not edited (requirements frozen); it gives no crystal advice and does not contradict the card.",
-        "Open RFIs from earlier runs remain: Colossal Wyrm post-rework per-lap XP, Death to the Dorgeshuun requirements, secondary quest XP as numeric facts, quest durations, Thieving training for Death on the Isle, Sins of the Father fights."
+        "Open RFIs from earlier runs remain: Colossal Wyrm post-rework per-lap XP, Death to the Dorgeshuun requirements, secondary quest XP as numeric facts, quest durations, Thieving training for Death on the Isle, Sins of the Father fights.",
+        "Mark rates for Seers' use F-4020 low 11 (string range) and F-2618 (13.8, no failures) was not used; F-5901/F-5902 are main-game wiki flags with Hardcore Worlds mapping unchecked. Amylase crystal GE mid 548 gp; its high/low spread is 608/487. Profit assumes all crystals sell at the mid price. No XP numbers, routes, requirements or danger text changed."
       ]
     },
     "calc-review.json": {
       "agent": "quant",
-      "started_at": "2026-11-21T03:21:40Z",
-      "finished_at": "2026-11-21T03:23:30Z",
-      "dispatch_ref": "dispatch/037-quant.md",
+      "started_at": "2026-11-22T04:00:00Z",
+      "finished_at": "2026-11-22T04:10:00Z",
+      "dispatch_ref": "dispatch/048-quant.md",
       "inputs": [
         {
           "path": ".claude/agents/quant.md",
           "sha256": "07e8b23ca6e1876f477824dc874acfa627047a778a129e7dba6bc11346358210"
         },
         {
-          "path": "dispatch/037-quant.md",
-          "sha256": "ea50a70a740be125d2866ae8516e765f3d90dbbb349ebcbe63c2fadab44ffb55"
+          "path": "dispatch/048-quant.md",
+          "sha256": "79c588fa00b098e5b7940790843ef64e24e2569d7d53e6327290c2fd403ca58b"
         },
         {
           "path": "brief.json",
@@ -7160,19 +7739,19 @@
         },
         {
           "path": "facts.json",
-          "sha256": "70fcb7eed3ab243ba3a64501f766da075bc69de64e8cdbc9fe39ed53f456fa12"
+          "sha256": "81096ceb8f4ecb2b8eb72d9ef82ddacebae6cbe1f553791883184fee4f2098ec"
         },
         {
           "path": "plan.json",
-          "sha256": "f343604e839c966d5699f2669a4cd6e2d7ef6456e16647f22fdfbcde7f5d5780"
+          "sha256": "bbbbe6e9e60a09ad7d25a790fa4dedf91e0ffb5946fbc04f7f29eb1ebf0b75ee"
         },
         {
           "path": "calc.json",
-          "sha256": "36391dcc75e537051ab5c6a4d69510cb54854d08ce05066a8a028c5cac817c76"
+          "sha256": "b8d7b9c7b5e6951c027355e1bd9552abb472173c7db64a545b0da22e9b7a9909"
         },
         {
-          "path": "calc-review.json",
-          "sha256": "a91c69279fb2c5bdbefb01d6f91349e9f07c9ac2e4b1017d163f682f0b750b99"
+          "path": "prices.json",
+          "sha256": "a3a7643f5c1c015c8f275bc7b9a9e11f1b53417496efe1660ef8d83e896254e5"
         },
         {
           "path": "schemas/calc-review.schema.json",
@@ -7180,78 +7759,68 @@
         },
         {
           "path": "tools/xp.py",
-          "sha256": "c54c4837d331ef2c4396115d82a56a6a93d4010b175c392d2120d8fb2647aceb"
+          "sha256": "a64be3ecf6f471568ecd4d231118c74fc704cbfc28e59ff6b6c0fffdd8493590"
         }
       ],
       "actions": [
         {
           "kind": "verify",
           "detail": "python3 tools/ledger.py verify agility-1-99-20261119",
-          "outcome": "OK: chain and seals intact (WARN: unsealed calc-draft.json, not used); seq 168 shows Director unsealed calc-review.json for this re-sign"
+          "outcome": "OK; WARN unsealed calc-draft.json (not used)"
         },
         {
           "kind": "read",
-          "detail": "Read charter (check 1 now plan_numeric_sha256), dispatch 037, previous calc-review.json, schema, tools/xp.py (plan_numeric_sha256, NUMERIC_KEYS, simulate_route), tools/validate.py g_calc, plan.json routed steps, calc.json"
+          "detail": "Charter, dispatch 048, previous calc-review.json, calc.json, plan.json income_per_hour steps, prices.json, facts F-1005/F-1012/F-4020-4023/F-5901/F-4027, tools/xp.py step_profit/_price"
         },
         {
           "kind": "compute",
-          "detail": "xp.plan_numeric_sha256(plan.json v3)",
-          "outcome": "914ed7ab1569... equals calc.json plan_numeric_sha256"
+          "detail": "xp.plan_numeric_sha256(plan v5) and sha256 of prices.json compared with calc.json",
+          "outcome": "both equal"
         },
         {
           "kind": "compute",
-          "detail": "Scratchpad recheck3.py: independent walk of both routes with own XP table (quest XP incl. lamps, ceil actions, hours, Defence) compared step by step with calc.json; plus in-process xp.simulate_route re-run compared for equality (no file written)",
-          "outcome": "No mismatches; re-run equals calc.json routes; totals identical to previous review"
-        },
-        {
-          "kind": "compute",
-          "detail": "python3 tools/xp.py xp 99, 17, 51; level 2812.4",
-          "outcome": "13,034,431; 3,115; 111,945; 16"
+          "detail": "Script: per-step income = fact-low marks/h x hours x 100/10 x 548, compared with calc.json; route sums, gp/h, crystal counts, 487/608 sensitivity",
+          "outcome": "0 difference on all steps; totals match"
         },
         {
           "kind": "verify",
-          "detail": "python3 tools/validate.py agility-1-99-20261119 plan",
-          "outcome": "0 fail, 10 warn"
-        },
-        {
-          "kind": "verify",
-          "detail": "python3 tools/validate.py agility-1-99-20261119 calc (before and after writing)",
-          "outcome": "before: 1 fail (review pointed at old calc); after: see report"
+          "detail": "python3 tools/validate.py agility-1-99-20261119 plan; python3 tools/xp.py xp 99",
+          "outcome": "0 fail, 10 warn; 13,034,431"
         },
         {
           "kind": "write",
-          "detail": "Rewrote calc-review.json for calc.json 36391dcc75e5",
+          "detail": "Rewrote calc-review.json for calc.json b8d7b9c7b5e6",
           "target": "jobs/agility-1-99-20261119/calc-review.json"
         }
       ],
       "decisions": [
         {
           "decision": "decision = pass",
-          "reason": "plan_numeric_sha256 matches the sealed plan v3; every number reproduces independently and is identical to the previous review; Defence 1 / 16 under cap 50. Q-01/Q-02 remain must-disclose.",
+          "reason": "Binding hashes match, profit reproduces exactly from facts, XP unchanged; the mid-price, Graceful and tax caveats are disclosures, not errors in the calculation.",
           "alternatives_considered": [
-            "fail pending quest durations: rejected, unchanged situation already carried as disclosures"
+            "fail until the Graceful marks are deducted: rejected, it is a labelling issue (Q-13) that does not make the calc wrong"
           ]
         },
         {
-          "decision": "Verified 'numbers byte-identical' by recomputation rather than accepting the strategist's/dispatch's claim",
-          "reason": "Minimal-trust rule; the v2 plan file is not on disk, so equality was established via outputs against previous-review figures.",
+          "decision": "Q-11 and Q-13 marked must_disclose",
+          "reason": "A bare GP total at mid would mislead: realisable value spans about 16.0-20.0M and about 1.4M may go to Graceful.",
           "alternatives_considered": [
-            "accept claim on hash match alone"
+            "minor severity: rejected"
           ]
         },
         {
-          "decision": "Added Q-10 (info) on prose labels outside the numeric hash",
-          "reason": "New binding format means calc.json method labels can go stale silently; not a current defect.",
+          "decision": "Did not re-walk XP with an independent table",
+          "reason": "Dispatch says XP unchanged; compared with the recorded previous figures and the hash binding instead.",
           "alternatives_considered": [
-            "omit: rejected, the format change is exactly what this review is about"
+            "full re-walk"
           ]
         }
       ],
       "limitations": [
-        "No web access by design; checks against facts.json, plan.json, brief.json and tools/xp.py only.",
+        "No web access; prices are the sealed snapshot of one moment (T2), volume is one 24h figure.",
         "Quest durations are not in the facts (Q-01/Q-02).",
-        "Plan v2 (1fd8d37ca65e) and calc 660fe306d6f2 are no longer on disk; 'unchanged' rests on recomputation versus figures recorded in the previous review.",
-        "Charter sha256 changed since the previous review (1122e57d0d7b -> 07e8b23ca6e1), consistent with the dispatch's note that check 1 changed; followed the current file.",
+        "No fact for a Hardcore Worlds GE tax; none applied or assumed (Q-14).",
+        "XP numbers not independently re-walked this run.",
         "Timestamps approximate."
       ]
     },
@@ -7940,9 +8509,9 @@
     },
     "prose.json": {
       "agent": "guide-author",
-      "started_at": "2026-11-21T03:28:30Z",
-      "finished_at": "2026-11-21T03:36:46Z",
-      "dispatch_ref": "dispatch/039-guide-author.md",
+      "started_at": "2026-11-22T00:00:00Z",
+      "finished_at": "2026-11-22T00:30:00Z",
+      "dispatch_ref": "dispatch/049-guide-author.md",
       "inputs": [
         {
           "path": "brief.json",
@@ -7950,39 +8519,39 @@
         },
         {
           "path": "plan.json",
-          "sha256": "f343604e839c966d5699f2669a4cd6e2d7ef6456e16647f22fdfbcde7f5d5780"
+          "sha256": "bbbbe6e9e60a09ad7d25a790fa4dedf91e0ffb5946fbc04f7f29eb1ebf0b75ee"
         },
         {
           "path": "calc.json",
-          "sha256": "36391dcc75e537051ab5c6a4d69510cb54854d08ce05066a8a028c5cac817c76"
+          "sha256": "b8d7b9c7b5e6951c027355e1bd9552abb472173c7db64a545b0da22e9b7a9909"
         },
         {
           "path": "calc-review.json",
-          "sha256": "92b02588de0064ff013ce0f1e77789e25040ff06311ccd511b8176593cbeaa1b"
+          "sha256": "006290bc6b5541342f9322094a5eb7afa068fef0574aa2ec5196ad1e54faa8cd"
         },
         {
           "path": "risk.json",
-          "sha256": "6302e5ce2c6b72e279f457e33937a2e171bd2670610d12d913e2e1a063b82eda"
+          "sha256": "74bbfca5c25eaba0f88aac5fddf412c2392bd7d7607cde0239ceaf3b5b701d12"
         },
         {
           "path": "redteam.json",
-          "sha256": "43a7dc9c7b0d3e35ce4ce54cb52fd4c49fb409b2833541939d5f65c34140fff3"
+          "sha256": "d0b23e5dd9ddfb3d22547248a12651601c8abdad304e35c46d126b7fcbbc1eb1"
         },
         {
           "path": "facts.json",
-          "sha256": "70fcb7eed3ab243ba3a64501f766da075bc69de64e8cdbc9fe39ed53f456fa12"
+          "sha256": "81096ceb8f4ecb2b8eb72d9ef82ddacebae6cbe1f553791883184fee4f2098ec"
         },
         {
-          "path": "dispatch/039-guide-author.md",
-          "sha256": "e9d3b03bd8141ea5bb78dc6f8b419cd2264374ac232a75020b5bbf16a1a4d7ae"
+          "path": "dispatch/049-guide-author.md",
+          "sha256": "08ac5c4b7613856cc4874e902f8da26c4d20c3ea34cf22654e287a727f9aa404"
         },
         {
           "path": ".claude/agents/guide-author.md",
-          "sha256": "db49fbd159e93832fd63d15af8eaa98edabbea06de2ce895fb67f5d1700f05f3"
+          "sha256": "aabbeabbae112b4b1c24b475876af53c276dbc638a332498011502440723d8e0"
         },
         {
           "path": "schemas/prose.schema.json",
-          "sha256": "9882ca3c7ed482b7d1b05a01b04fc5671af68a468639f39eb9c4b311f947c6a7"
+          "sha256": "9096ccddc0be7b11feb4f2d23082b6c1de0d77aac2d749e18ccd91805071af39"
         },
         {
           "path": "docs/05-danger-model.md",
@@ -7994,15 +8563,15 @@
         },
         {
           "path": "templates/guide.html",
-          "sha256": "4d3dc08e8d370e7e9479be472460ed12271434382b007b0a1603c72458820d4a"
+          "sha256": "1976ba203afebb112488c6fc8764307e9ebbd03102c60e605186bade60a9f33e"
         },
         {
           "path": "tools/validate.py",
-          "sha256": "3daca665c57209831c45eef81b344f951a90dc9a7411c8074930664a9eff5ee0"
+          "sha256": "3066039a6e6d870a9cb253440091d35019b681e2cfdda5156c296a96755bd923"
         },
         {
           "path": "tools/assemble.py",
-          "sha256": "e452212af65738f57b28d23c6f3f59829fbf2af189d029ea7be1f7bef3e15a01"
+          "sha256": "ae77cc7e53650f9c882ad7abf9f7d031437ca3727f7d64ef23bd0a3a01a05266"
         },
         {
           "path": "tools/danger.py",
@@ -8012,44 +8581,16 @@
       "actions": [
         {
           "kind": "read",
-          "detail": "Read charter .claude/agents/guide-author.md (sha256 db49fbd1...) and the main-session constitution CLAUDE.md (read only, not a job input)."
+          "detail": "Re-read charter .claude/agents/guide-author.md (sha256 aabbeabbae11...) with the owner STYLE rules; read previous prose.json, risk.json mitigations, plan.json, tools/validate.py g_prose and templates/guide.html (intro/outro render as bullet lists; tokens not resolved there)."
         },
         {
           "kind": "verify",
           "detail": "python3 tools/ledger.py verify agility-1-99-20261119",
-          "outcome": "OK: ledger chain and all seals intact; WARN unsealed calc-draft.json (not used)."
-        },
-        {
-          "kind": "verify",
-          "detail": "sha256sum of every sealed input; plan.json f343604e839c, calc.json 36391dcc75e5, risk.json 6302e5ce2c6b match the dispatch."
-        },
-        {
-          "kind": "read",
-          "detail": "Read schemas/prose.schema.json, tools/validate.py g_prose (bare-number scan, token grammar, fact usability), tools/assemble.py (which facts reach the guide) and templates/guide.html tokens()/stepCard()/pRoute() (how prose and tokens render)."
-        },
-        {
-          "kind": "read",
-          "detail": "Read plan.json: 23 steps, routes safest and balanced, 7 decision points, assumptions (long-term next steps 1 and 2, Graveyard, Wilderness premium)."
-        },
-        {
-          "kind": "read",
-          "detail": "Read risk.json v3: every entry's hazards, mandatory and optional mitigations, preconditions/stop conditions, bail-out, necessity, verdict; general_rules; route_verdicts. Scores read with tools/danger.py assess (headline/with-prep per step)."
-        },
-        {
-          "kind": "read",
-          "detail": "Read redteam.json v2 (RT-16 and RT-17 open; RT-05/07/15 accepted) and calc-review.json (Q-01, Q-02 must_disclose; Q-03 S09 hours)."
-        },
-        {
-          "kind": "read",
-          "detail": "Read calc.json routes (per-step actions, hours, levels, xp_gained) and brief.json (zerker xp_rules: no Defence-giving combat styles; attention semi)."
-        },
-        {
-          "kind": "compute",
-          "detail": "Computed the exact fact set assemble.py ships to the guide (plan step facts, requirement/rate facts, risk factor/mitigation/death-class facts, decision-point option facts: 255 IDs) so every {{fact:}} token resolves in the rendered guide."
+          "outcome": "OK: ledger chain and seals intact"
         },
         {
           "kind": "write",
-          "detail": "Generated prose.json with a local script (scratchpad build_prose.py) that also self-checks: no digits outside tokens/backticks, token grammar, fact usability and presence in the shipped fact set, no step tokens on off-route steps, no tokens in intro/outro.",
+          "detail": "Rewrote every step to dot-point style under the word limits (summary 25, instruction 30, tip 25, warning 35), intro and outro as short point arrays, plain tone with no Danger first preambles, and one Profit tip on each rooftop step. Safety content kept from risk.json (S05 Iban HP gate, S12 bank escape crystal and no ring of life, S17 Protect from Melee and unclosable run window).",
           "target": "jobs/agility-1-99-20261119/prose.json"
         },
         {
@@ -8059,168 +8600,58 @@
       ],
       "decisions": [
         {
-          "decision": "Intro and outro contain no tokens and no digits.",
-          "reason": "templates/guide.html renders intro/outro with esc() only (no token resolution), so a token there would print raw braces; the validator also bans digits there.",
+          "decision": "Owner feedback of 2026-11-22 applied: shorter bullets, neutral tone, profit tip on rooftop steps. Red danger banner is rendered by the template, so step text no longer opens with danger preambles.",
+          "reason": "Owner feedback and charter STYLE rules.",
           "alternatives_considered": [
-            "Put score tokens in the intro (would render as raw {{...}})"
+            "Keeping the briefing prose"
           ]
         },
         {
-          "decision": "The Fractured Archive anchor is described as 'the very top of the scale' instead of quoting its number.",
-          "reason": "No token carries the ladder anchor and a bare digit is banned; the guide's danger badge tooltip and Danger tab print 'The Fractured Archive = 100' from the template.",
+          "decision": "The Fractured Archive anchor is written \"one hundred\" in the intro.",
+          "reason": "Digits are banned outside tokens and backticks, and the intro renders backticks literally.",
           "alternatives_considered": [
-            "Spell the number out in words (would sidestep the no-bare-numbers rule)"
+            "Backticked 100 (would show backticks)",
+            "Omit the number"
           ]
         },
         {
-          "decision": "HP thresholds that have no token (eat lines, stop lines, re-rating limits, food reserves) are named by role and pointed to the card ('the card's eat line', 'Stop immediately if'); {{risk.min_hitpoints}} is used wherever the card's minimum HP equals the rule being stated.",
-          "reason": "Only {{risk.min_hitpoints}} exposes an HP number; the danger card printed directly below the prose shows every exact threshold from risk.json. Borrowing an unrelated fact whose value happens to match (e.g. a food heal) would mislabel the source.",
+          "decision": "Profit tips use {{step.hours}} on route steps and carry no gp numbers; off-route rooftop steps (S07, S26) use a token-free profit tip; S25 says no marks drop.",
+          "reason": "step.* tokens resolve only for steps in the selected route; the template shows gp in step stats.",
           "alternatives_considered": [
-            "Spelled-out numbers",
-            "Coincidentally-valued fact tokens"
+            "gp figures in prose (banned)"
           ]
         },
         {
-          "decision": "Small counts and ordinals copied from risk.json (two attackers, three monsters, the first three forms, the fourth form, both lamps) are written in words.",
-          "reason": "They label phases and counts stated in the sealed risk card, not quantities from calc or facts; digits are banned and no token exists for them.",
-          "alternatives_considered": [
-            "Omit them (would weaken stop conditions)"
-          ]
-        },
-        {
-          "decision": "{{step.*}} tokens only on route steps (S01-S06, S08-S14); off-route steps (S07, S15-S21, S25, S26) use fact tokens for rewards and levels.",
-          "reason": "tokens() resolves step.* against the selected route's calc; steps outside every route have no calc row and would print a dash.",
+          "decision": "S12 and S17 safety content condensed but each mandatory mitigation and stop condition kept as its own point; S12 follows RT-16 (bank crystal, no ring of life).",
+          "reason": "risk.json S12-M1, S12-M6, S17-M1 to S17-M5.",
           "alternatives_considered": []
         },
         {
-          "decision": "RT-16 handled in S12: bank the escape crystal before the duel, never wear a ring of life; the risk card's optional 'carry it in the inventory' line is superseded in the prose by the dispatch's instruction, with the reason stated.",
-          "reason": "Dispatch requires it; the crystal earns no credit in the duel and carrying it can reset the fight in the fourth form (F-3017/F-3018/F-5009/F-5011/F-0015).",
-          "refs": [
-            "RT-16",
-            "S12-M1",
-            "S12-M6"
-          ]
-        },
-        {
-          "decision": "S17 leads with 'THE RUN TO THE SAFESPOT CANNOT BE MADE FULLY SAFE' and paraphrases S17-M4 without numbers.",
-          "reason": "Dispatch and the Risk Officer's 'print it in the guide' instruction.",
-          "refs": [
-            "S17-M4"
-          ]
-        },
-        {
-          "decision": "Q-01 and Q-02 disclosed in the intro; Balanced is justified by lyre, Tirannwn and quest Defence, never by time.",
-          "reason": "calc-review must_disclose findings.",
-          "refs": [
-            "Q-01",
-            "Q-02"
-          ]
-        },
-        {
-          "decision": "Q-03 disclosed as an S09 tip ('may run a couple of hours longer').",
-          "reason": "Quant recommendation; exact figure has no token.",
-          "refs": [
-            "Q-03"
-          ]
-        },
-        {
-          "decision": "Decision-point IDs (e.g. `DP03`) are written in backticks.",
-          "reason": "They are identifiers that contain digits, like item names; the guide's Decisions tab and 'What next?' panel show the same IDs, so the reader can find them.",
-          "alternatives_considered": [
-            "Describe each decision point by its question only (harder to cross-reference)"
-          ]
-        },
-        {
-          "decision": "Every Ranged fight step tells the owner to use Rapid or Accurate, never Longrange.",
-          "reason": "brief.json build xp_rules forbid combat styles that give Defence XP.",
-          "refs": [
-            "brief.json profile.build"
-          ]
-        },
-        {
-          "decision": "Steps with a residual tier of Moderate or above (S01, S12, S16, S17, S25) open their summary with 'Danger first'.",
-          "reason": "Charter: begin such steps with their warning; the template prints warnings after the instructions, so the summary carries the lead.",
+          "decision": "Exact HP lines with no token stay referenced as the card lines.",
+          "reason": "Only risk.min_hitpoints exposes an HP number; the danger card shows the rest.",
           "alternatives_considered": []
         }
       ],
       "limitations": [
-        "Exact eat lines, stop lines, food reserves and re-rating limits are not repeated as numbers in the prose (no token exists); the reader must use the danger card printed under each step, which the template always renders from risk.json.",
-        "The ladder anchor value (The Fractured Archive = 100) is not stated as a number in the prose; it appears in the template's badge tooltip and Danger tab.",
-        "Prose for off-route steps (S07, S15-S21, S25, S26) is written and validated but the current template only renders prose for steps on the selected route.",
-        "RT-16 remains open in redteam.json; the prose tells the owner to bank the crystal, but the risk card's optional S12-M6 still says it may be carried in the inventory. The Risk Officer should align the card.",
-        "RT-17 (CLI/doc labelling of headline vs raw) is open; the prose uses 'headline' and 'with prep' per docs/05 and the policy.",
-        "Fact tokens with dictionary values render poorly, so only scalar or short-string facts are tokenised."
+        "Exact eat lines, stop lines and re-rating limits are not repeated as numbers in prose (no token); the danger card under each step shows them.",
+        "The Fractured Archive anchor is spelled in words in the intro.",
+        "Off-route steps (S07, S15-S21, S25, S26) are validated but render only if selected by the template.",
+        "Profit gp is shown by the template from calc/prices, not by this prose."
       ]
     },
     "qa.json": {
       "agent": "qa-auditor",
-      "started_at": "2026-11-21T06:08:30Z",
-      "finished_at": "2026-11-21T08:04:11Z",
-      "dispatch_ref": "dispatch/044-qa-auditor.md",
+      "started_at": "2026-11-22T03:47:30Z",
+      "finished_at": "2026-11-22T03:58:00Z",
+      "dispatch_ref": "dispatch/050-qa-auditor.md",
       "inputs": [
         {
           "path": ".claude/agents/qa-auditor.md",
           "sha256": "7a7a5782e6eaee1bb6f93e07520ae5edfb17c70c4be0221e052ca8d701854886"
         },
         {
-          "path": "dispatch/044-qa-auditor.md",
-          "sha256": "cc4bd517575d5d292006e2f741c18092b654ec8d65b87ed440a75e70f055f011"
-        },
-        {
-          "path": "dispatch/042-route-strategist.md",
-          "sha256": "643dd0a0c9f4e4257dd613e94f2b2fe179c28c7f53ab9118fb266e532e587b82"
-        },
-        {
-          "path": "dispatch/043-red-team.md",
-          "sha256": "ec691c70e869d33e3c175c90c1cb58c1a0abcdd773e3778db82aebb0c6cf83dc"
-        },
-        {
-          "path": "content.json",
-          "sha256": "261e7b11441b56f32676481f97047295a87c6d6f94e6a545b3c3073c2a00cf48"
-        },
-        {
-          "path": "guide.html",
-          "sha256": "508b2bc6e783904d25960295991c8780ac1efae20bc42c93c98c120255c16a3e"
-        },
-        {
-          "path": "plan.json",
-          "sha256": "5a0296c74446ee83ad3266581aa39a11f9316ef8042fdf1866471c483658672a"
-        },
-        {
-          "path": "redteam.json",
-          "sha256": "d0b23e5dd9ddfb3d22547248a12651601c8abdad304e35c46d126b7fcbbc1eb1"
-        },
-        {
-          "path": "risk.json",
-          "sha256": "74bbfca5c25eaba0f88aac5fddf412c2392bd7d7607cde0239ceaf3b5b701d12"
-        },
-        {
-          "path": "facts.json",
-          "sha256": "70fcb7eed3ab243ba3a64501f766da075bc69de64e8cdbc9fe39ed53f456fa12"
-        },
-        {
-          "path": "prose.json",
-          "sha256": "d86d39bb663df04dcb056607aa87c408f313b58fb5422f7dd29e753a99568028"
-        },
-        {
-          "path": "calc.json",
-          "sha256": "36391dcc75e537051ab5c6a4d69510cb54854d08ce05066a8a028c5cac817c76"
-        },
-        {
-          "path": "calc-review.json",
-          "sha256": "92b02588de0064ff013ce0f1e77789e25040ff06311ccd511b8176593cbeaa1b"
-        },
-        {
-          "path": "brief.json",
-          "sha256": "c27aa6bc9969f981aed9185637565c2792f58b80646cc531afa503e27f969389"
-        },
-        {
-          "path": "research/updates.json",
-          "sha256": "b600273a97297879bd2c38e663ed79bc8c55973cd793a7edf041690f2be988c5"
-        },
-        {
-          "path": "ledger.jsonl",
-          "sha256": "25243ce75de7a4d748a8362befe8d4f3189340cc6f19d3bca4d74b0fe5a24438"
+          "path": "docs/10-production-efficiency.md",
+          "sha256": "2e7175f317aef486b1a3e300c00a2349a0b9fddcc9aa4bdc6a5aad341bee44d7"
         },
         {
           "path": "schemas/qa.schema.json",
@@ -8228,15 +8659,31 @@
         },
         {
           "path": "templates/guide.html",
-          "sha256": "500e40ac55e4e4544a61ce5e6e1013dd6c3d27fe04bd6472ce6650fa7604dc7f"
+          "sha256": "44415e28c413be3dc0961866a7341d513b137b1bbf9761286bebf86e6b4ea6a4"
         },
         {
           "path": "tools/assemble.py",
-          "sha256": "7796e5fc4122b1a57cce63fa019717895762ada8d6db7a8b3363d3da9a9c1d91"
+          "sha256": "ae77cc7e53650f9c882ad7abf9f7d031437ca3727f7d64ef23bd0a3a01a05266"
         },
         {
-          "path": "tools/danger.py",
-          "sha256": "773d0185f241c5e0ebb8e692851429eb8affc4a66a09aa59e1fe8e3c052efe1e"
+          "path": "tools/render.py",
+          "sha256": "1988a15e9cb75b56b251af02db69193c0fcaaa18e906dd8ffc7eb78f84e5a89f"
+        },
+        {
+          "path": "tools/validate.py",
+          "sha256": "3066039a6e6d870a9cb253440091d35019b681e2cfdda5156c296a96755bd923"
+        },
+        {
+          "path": "tools/ledger.py",
+          "sha256": "a50e8df1fe192a5d5f7060d6b871a6539342bedd6235843e10e0bc1cb849077f"
+        },
+        {
+          "path": "tools/xp.py",
+          "sha256": "a64be3ecf6f471568ecd4d231118c74fc704cbfc28e59ff6b6c0fffdd8493590"
+        },
+        {
+          "path": "tools/prices.py",
+          "sha256": "d008668c70db9888789ffa0bf02fbf6387ae7f841f008168505000696d4a5e34"
         },
         {
           "path": "tools/wiki.py",
@@ -8247,72 +8694,89 @@
           "sha256": "ff7e17d4e21787e518380705e3f4dade289c606b6f08401be44dbe8915c68dc8"
         },
         {
-          "path": "tools/validate.py",
-          "sha256": "3daca665c57209831c45eef81b344f951a90dc9a7411c8074930664a9eff5ee0"
-        },
-        {
           "path": "tools/audit.py",
           "sha256": "623e1a8628c8cdbf602618baa6a6c687b13767ee0b20c2f64cdfd751912c3739"
         },
         {
-          "path": "tools/ledger.py",
-          "sha256": "06420ea24e40fb2fb78709b36710a9cbed97969efaafb4696f0988aba8e87442"
+          "path": "dispatch/050-qa-auditor.md",
+          "sha256": "a338ba6c02966d0cc41a87f66e4b88b95927cf9ac43d1f00a2b42f3ba0e717b9"
         },
         {
-          "path": "policy/danger-calibration.json",
-          "sha256": "15870680b0d7c5b918a4662fa4938dd147a368bd279358a49538ca26175037f2"
+          "path": "content.json",
+          "sha256": "475b8102652fee75e64166fdb38b903739e71838147033ca2fb623530970748b"
+        },
+        {
+          "path": "guide.html",
+          "sha256": "39b9fc1868fafc69139053d973f0c0f1b2ed10b114c8135fd1a7a7e379aad413"
+        },
+        {
+          "path": "plan.json",
+          "sha256": "bbbbe6e9e60a09ad7d25a790fa4dedf91e0ffb5946fbc04f7f29eb1ebf0b75ee"
+        },
+        {
+          "path": "calc.json",
+          "sha256": "b8d7b9c7b5e6951c027355e1bd9552abb472173c7db64a545b0da22e9b7a9909"
+        },
+        {
+          "path": "calc-review.json",
+          "sha256": "006290bc6b5541342f9322094a5eb7afa068fef0574aa2ec5196ad1e54faa8cd"
+        },
+        {
+          "path": "prices.json",
+          "sha256": "a3a7643f5c1c015c8f275bc7b9a9e11f1b53417496efe1660ef8d83e896254e5"
+        },
+        {
+          "path": "facts.json",
+          "sha256": "81096ceb8f4ecb2b8eb72d9ef82ddacebae6cbe1f553791883184fee4f2098ec"
+        },
+        {
+          "path": "prose.json",
+          "sha256": "06d70a89428d9cbea821decb473c17f1fd4ab2eaf8c0f5f3316799e5e10e256a"
+        },
+        {
+          "path": "risk.json",
+          "sha256": "74bbfca5c25eaba0f88aac5fddf412c2392bd7d7607cde0239ceaf3b5b701d12"
+        },
+        {
+          "path": "redteam.json",
+          "sha256": "d0b23e5dd9ddfb3d22547248a12651601c8abdad304e35c46d126b7fcbbc1eb1"
+        },
+        {
+          "path": "research/claims-rfi-05.json",
+          "sha256": "bd8bd16bb4e0d7f44ef02c6447d3119dfa354f6c00f3298a861ce8e46d910ba7"
+        },
+        {
+          "path": "facts-parts/rfi-03.json",
+          "sha256": "b63af1a2b81aa27174fa09817a0bded916c6ef7390899b57e57e07c9f792a9d8"
+        },
+        {
+          "path": "ledger.jsonl",
+          "sha256": "924d07c99e083385574f04f80ebe102887448262abc41bab0c2ae798bb71be67"
+        },
+        {
+          "path": "screens/desktop.png",
+          "sha256": "e8c15379c4b23f800c31919581a94d81571a7cfaa2d1fa3ea5ee418158a013fb"
+        },
+        {
+          "path": "screens/mobile.png",
+          "sha256": "90b86dddb6a5412021e5b3cc4afca1fefe9f19f3e74700196553963055174001"
         }
       ],
       "actions": [
         {
-          "kind": "read",
-          "detail": "Read QA charter (sha256 7a7a5782...), dispatch 044 (equals received prompt), previous qa.json (QA 041) and ledger seq 185-210."
-        },
-        {
           "kind": "verify",
           "detail": "python3 tools/ledger.py verify agility-1-99-20261119",
-          "outcome": "OK; WARN unsealed calc-draft.json, guide.html"
-        },
-        {
-          "kind": "compute",
-          "detail": "Compared every QA 041 input hash with current files",
-          "outcome": "changed: content.json, guide.html, plan.json, redteam.json, ledger.jsonl, tools/assemble.py; all other inputs unchanged (checks on them stand)"
-        },
-        {
-          "kind": "read",
-          "detail": "Read tools/assemble.py in full (7796e5fc...)",
-          "outcome": "only the facts collection changed"
-        },
-        {
-          "kind": "compute",
-          "detail": "Ran tools/assemble.py main() in memory with save_json patched (no file written) and compared with content.json",
-          "outcome": "identical except assembled_at; 23 steps, 2 routes, 314 facts"
-        },
-        {
-          "kind": "compute",
-          "detail": "Cited-but-missing: F-#### ids in content.json outside facts vs shipped facts; newly shipped = shipped minus the old assembler 'used' set",
-          "outcome": "0 missing; 59 newly shipped; 6 behind factor score >=4"
-        },
-        {
-          "kind": "fetch",
-          "detail": "tools/wiki.py _rev_query (latest revision, raw wikitext) for every source page of 25 sampled facts (F-1066, F-2091, F-2105, F-3064, F-3065, F-3067, F-0003, F-0010, F-0017, F-0052, F-1113, F-1115, F-2611, F-2614, F-2615, F-4001, F-4003, F-4060, F-2095, F-2552, F-3013, F-1070, F-3012, F-1068, F-0025); quote segments matched after whitespace normalisation; 2 residual misses checked by hand",
-          "target": "https://oldschool.runescape.wiki/api.php",
-          "outcome": "25/25 match"
-        },
-        {
-          "kind": "read",
-          "detail": "Walked content.json, plan.json and guide.html for every escape-crystal instruction (S12 rationale, card, prose, DP02-B, DP08-B, risk_rules[4], S06/S16/S17)",
-          "outcome": "consistent; old wording only in history text"
+          "outcome": "OK; 2 unsealed draft warnings"
         },
         {
           "kind": "verify",
           "detail": "python3 tools/validate.py agility-1-99-20261119 release",
-          "outcome": "0 fail, 60 warn"
+          "outcome": "0 fail, 62 warn"
         },
         {
           "kind": "verify",
           "detail": "python3 tools/audit.py crosscheck agility-1-99-20261119",
-          "outcome": "WARN only (no Sentry observations; unsealed drafts)"
+          "outcome": "warn only (unsealed draft; no Sentry observations)"
         },
         {
           "kind": "verify",
@@ -8321,62 +8785,95 @@
         },
         {
           "kind": "read",
-          "detail": "redteam.json statuses",
-          "outcome": "RT-05/07/15/17 open (medium/medium/low/low); RT-16 and all others fixed; no open critical/high"
+          "detail": "ledger seq 205-252, dispatch 050, calc-review.json findings Q-01..Q-15, plan income_per_hour, content intro/outro/assumptions/prices, risk S05/S12/S17, tools/ledger.py (seal/sign/verify/release_status), tools/render.py, template card/tile code"
         },
         {
-          "kind": "write",
-          "detail": "jobs/agility-1-99-20261119/qa.json (this file; not sealed)"
+          "kind": "fetch",
+          "detail": "tools/wiki.py page 'Amylase pack' and 'Amylase crystal'",
+          "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15316439 ; oldid=15375340",
+          "outcome": "live revisions unchanged; quotes present"
+        },
+        {
+          "kind": "fetch",
+          "detail": "tools/wiki.py page 'Rooftop Agility Courses', 'Mark of Grace', 'Agility training', 'Falador Rooftop Course', 'Canifis Rooftop Course', 'Graceful outfit'",
+          "target": "oldid 15337972, 15403415, 15369875, 15319531, 15374436, 15403851",
+          "outcome": "all live revisions unchanged; quotes present"
+        },
+        {
+          "kind": "fetch",
+          "detail": "tools/prices.py lookup 'Amylase crystal' and GET /api/v2/osrs-hc/latest?id=12640",
+          "target": "https://prices.runescape.wiki/api/v2/osrs-hc/latest?id=12640",
+          "outcome": "high 608 / low 487, same as snapshot (0% change)"
+        },
+        {
+          "kind": "fetch",
+          "detail": "GET main-game /api/v1/osrs/latest?id=12640 for comparison",
+          "target": "https://prices.runescape.wiki/api/v1/osrs/latest?id=12640",
+          "outcome": "high 403 / low 400: distinct economy from HW"
+        },
+        {
+          "kind": "fetch",
+          "detail": "tools/wiki.py new-pages --ns Update --since 2026-11-19; page 'Update:Gielinor Gazette - November 2026' grep agility/marks/graceful/amylase/hardcore",
+          "outcome": "nothing Agility-relevant"
+        },
+        {
+          "kind": "compute",
+          "detail": "Independent profit recompute from calc step hours x plan marks/h x 10 crystals/mark x 548",
+          "outcome": "18,006,837 / 17,645,645 vs calc 18,006,836 / 17,645,644"
+        },
+        {
+          "kind": "compute",
+          "detail": "In-memory run of tools/assemble.py main() with save_json captured; diff vs content.json",
+          "outcome": "identical except assembled_at"
+        },
+        {
+          "kind": "compute",
+          "detail": "guide.html vs templates/guide.html with data blobs removed",
+          "outcome": "only hash, title and release-state substitutions differ"
         },
         {
           "kind": "verify",
-          "detail": "python3 tools/ledger.py sign agility-1-99-20261119 --role qa --author qa-auditor --subject content.json --decision approve"
+          "detail": "Playwright scripts (scratchpad qa050/read.mjs, dom.mjs, mit.mjs, tiles.mjs): hot-card styles, unresolved tokens, mitigation/stop-condition coverage, tile values, screenshots",
+          "outcome": "hot cards red on all headline>=45 steps; 0 unresolved tokens; 149/149 mitigations and stop conditions render; tiles show profit"
+        },
+        {
+          "kind": "write",
+          "detail": "jobs/agility-1-99-20261119/qa.json"
+        },
+        {
+          "kind": "decide",
+          "detail": "approve; sign via tools/ledger.py sign --role qa"
         }
       ],
       "decisions": [
         {
-          "decision": "Do not repeat checks whose inputs did not change",
-          "reason": "Dispatch 044; risk.json, prose.json, facts.json, calc.json, brief, updates, danger.py and policy hashes equal QA 041's, so its 85 live checks, score reproduction and recency sweep stand. Score reproduction is re-covered anyway by the exact in-memory re-assembly.",
-          "alternatives": [
-            "full re-audit"
+          "decision": "Scope the live spot-checks to the 12 facts v2 introduced or newly relies on",
+          "reason": "Dispatch: audit only what v2 changed; risk.json and facts behind danger ratings unchanged, and 110 live checks from QA 041/044 stand.",
+          "alternatives_considered": [
+            "Re-sample 10% of all 323 shipped facts (unnecessary: their sources and ratings are unchanged)"
           ]
         },
         {
-          "decision": "Sample 25 of the 57 not-yet-checked newly shipped facts",
-          "reason": "Dispatch asks >=10 incl. every factor>=4 fact; charter also requires every new_content fact, so all 6 factor>=4 + all 11 new_content + 8 random (seed 20261121) were taken.",
-          "alternatives": [
-            "10 facts only"
+          "decision": "Treat W1-W5 as warnings, not failures",
+          "reason": "They are text/presentation defects with no safety effect: every safety warning and mandatory mitigation is present, red marking is correct, profit qualifiers (mid price, all marks sold, no GE tax, Graceful not deducted) are disclosed. A rejection would cost a full fix round for cosmetic items.",
+          "alternatives_considered": [
+            "Reject for the rationale slabs (owner style) and the missing Q-11 price band"
           ]
         },
         {
-          "decision": "Treat the unrendered prerequisite checklist as a note, not a fail",
-          "reason": "The assembler and template never shipped it (also before); the fix is present in plan.json and every rendered surface (S12 rationale, card, prose, DPs, general rule) agrees.",
-          "alternatives": [
-            "fail check 6"
-          ]
-        },
-        {
-          "decision": "Accept R2 as resolved without accept_risk entries",
-          "reason": "The owner chose to re-open, not accept; red team now shows the three findings as open, so nothing is claimed as accepted. The answer is recorded verbatim as a ledger decision (seq 194).",
-          "alternatives": [
-            "require accept_risk entries"
-          ]
-        },
-        {
-          "decision": "Approve",
-          "reason": "No check fails; open findings are medium/low calibration items the owner chose to keep open; dangerous content is disclosed (owner's informed danger policy).",
-          "alternatives": [
-            "reject"
+          "decision": "Accept the undocumented tool/template edits on functional evidence",
+          "reason": "Exact reproduction of content.json and guide.html from sealed inputs plus a read of ledger.py's trust checks; flagged for a governance note.",
+          "alternatives_considered": [
+            "Reject until a governance record exists"
           ]
         }
       ],
       "limitations": [
-        "This run was interrupted by a usage limit after the checks had started and before anything was written or signed (ledger note seq 210); it resumed at 08:02 UTC on 2026-11-21 and continued from the completed checks. validate, audit crosscheck and the browser check were run after the resume, on the same content.json (261e7b11441b) and guide.html (508b2bc6e783).",
-        "No Sentry observations exist for this job, so the tools/assemble.py edit and the other agents' self-reported work cannot be matched to observed tool calls; the exact in-memory re-assembly and the live re-fetches are the substitute evidence.",
-        "The owner's answer 'Re-open all three' is known only from the Director's ledger record (seq 194); QA cannot independently observe the owner's AskUserQuestion exchange.",
-        "Spot-checks confirm that the quoted source text is on the live page; they do not re-derive computed values.",
-        "32 of the 57 newly shipped, not-yet-checked facts were not live-checked (sample of 25); they are in the sealed, verified facts.json.",
-        "plan.json prerequisite_checklist is not rendered in the guide, so its corrected escape-crystal item was verified in plan.json only."
+        "No pre-v2 copy of prose.json exists, so 'every v1 warning kept' was checked against risk.json (unchanged) mandatory mitigations and stop conditions plus the three named warnings, not by a line-by-line diff of old and new prose.",
+        "No old copies of the changed tools/template exist; their changes were checked by output reproduction, not by diff.",
+        "No Sentry observations exist for this job, so self-reported agent actions could not be compared to observed tool calls.",
+        "The price check is one moment; the amylase price is a single 24h snapshot and will move.",
+        "Hardcore Worlds tradeability of amylase packs (F-5903, main-game wiki flag) was not independently confirmed for HW; it does not affect the profit, which sells crystals only."
       ]
     }
   },
@@ -8392,9 +8889,9 @@
   ],
   "release": {
     "released": true,
-    "content_sha256": "261e7b11441b56f32676481f97047295a87c6d6f94e6a545b3c3073c2a00cf48",
+    "content_sha256": "475b8102652fee75e64166fdb38b903739e71838147033ca2fb623530970748b",
     "reasons": [],
-    "approved_at": "2026-11-21T08:04:11+00:00"
+    "approved_at": "2026-11-22T03:55:44+00:00"
   },
   "audit_log_head": null,
   "timeline": [
@@ -9909,6 +10406,307 @@
       "who": "system",
       "what": "seal",
       "detail": "guide.html"
+    },
+    {
+      "ts": "2026-11-21T08:04:36+00:00",
+      "source": "ledger",
+      "who": "system",
+      "what": "seal",
+      "detail": "audit.json"
+    },
+    {
+      "ts": "2026-11-21T08:04:36+00:00",
+      "source": "ledger",
+      "who": "system",
+      "what": "seal",
+      "detail": "audit.html"
+    },
+    {
+      "ts": "2026-11-22T03:39:23+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "decision",
+      "detail": " Owner feedback on released guide (verbatim): 'avoid large slabs of text avoid the arrogant tone, stick to point in tips unless a section is read out automatically dot points shoulkd be used. the high danger tasks should be much clearer (bright red for example). ensure profit is considered as part of the advice provided. use https://prices.runescape.wiki/osrs-hc for prices accurate to hardcore worlds. plan a more efficient approach to production...'. Revision v2 opened: prices + profit, dot-point style, bright-red danger; no red-team run (no danger change) per docs/10."
+    },
+    {
+      "ts": "2026-11-22T03:39:34+00:00",
+      "source": "ledger",
+      "who": "system",
+      "what": "seal",
+      "detail": "prices.json"
+    },
+    {
+      "ts": "2026-11-22T03:39:34+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "seal",
+      "detail": "dispatch/045-logistics-analyst.md"
+    },
+    {
+      "ts": "2026-11-22T03:39:34+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "dispatch",
+      "detail": " 045: RFI-03 amylase pack contents (profit)"
+    },
+    {
+      "ts": "2026-11-22T03:40:17+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "return",
+      "detail": " logistics RFI-03: 3 claims (pack = 100 crystals; crystals GE-tradeable; packs untradeable). HW tradeability confirmed mechanically: Amylase crystal (id 12640) is in the sealed HW price snapshot."
+    },
+    {
+      "ts": "2026-11-22T03:40:17+00:00",
+      "source": "ledger",
+      "who": "logistics-analyst",
+      "what": "seal",
+      "detail": "research/claims-rfi-05.json"
+    },
+    {
+      "ts": "2026-11-22T03:40:17+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "seal",
+      "detail": "dispatch/046-fact-verifier.md"
+    },
+    {
+      "ts": "2026-11-22T03:40:17+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "dispatch",
+      "detail": " 046: verify RFI-03"
+    },
+    {
+      "ts": "2026-11-22T03:40:59+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "return",
+      "detail": " verifier RFI-03: F-5901..5903 VERIFIED_WITH_CAVEAT; its RFI (HW GE availability of item 12640) is answered by the sealed HW price snapshot (Amylase crystal mid 548, 24h volume 98,140)."
+    },
+    {
+      "ts": "2026-11-22T03:40:59+00:00",
+      "source": "ledger",
+      "who": "fact-verifier",
+      "what": "seal",
+      "detail": "facts-parts/rfi-03.json"
+    },
+    {
+      "ts": "2026-11-22T03:40:59+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "unseal",
+      "detail": "facts.json merge RFI-03 profit facts (amylase pack contents/tradeability)"
+    },
+    {
+      "ts": "2026-11-22T03:40:59+00:00",
+      "source": "ledger",
+      "who": "system",
+      "what": "seal",
+      "detail": "facts.json"
+    },
+    {
+      "ts": "2026-11-22T03:41:00+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "unseal",
+      "detail": "plan.json v2 owner feedback: add profit (income_per_hour, profit_note) from facts and the sealed HW price snapshot"
+    },
+    {
+      "ts": "2026-11-22T03:41:14+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "seal",
+      "detail": "dispatch/047-route-strategist.md"
+    },
+    {
+      "ts": "2026-11-22T03:41:14+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "dispatch",
+      "detail": " 047: strategist adds profit (sonnet)"
+    },
+    {
+      "ts": "2026-11-22T03:42:37+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "return",
+      "detail": " strategist 047 (sonnet): income_per_hour on 8 rooftop steps (low-end marks/h, marks->amylase via F-5901/F-4027); profit_note on all options; routes ~18.0M / 17.6M gp, ~79k gp/h at amylase mid 548."
+    },
+    {
+      "ts": "2026-11-22T03:42:37+00:00",
+      "source": "ledger",
+      "who": "route-strategist",
+      "what": "seal",
+      "detail": "plan.json"
+    },
+    {
+      "ts": "2026-11-22T03:42:37+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "unseal",
+      "detail": "calc.json plan v5 adds income (numeric) and prices; recompute"
+    },
+    {
+      "ts": "2026-11-22T03:42:37+00:00",
+      "source": "ledger",
+      "who": "system",
+      "what": "seal",
+      "detail": "calc.json"
+    },
+    {
+      "ts": "2026-11-22T03:42:37+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "unseal",
+      "detail": "calc-review.json calc now includes profit; quant re-check"
+    },
+    {
+      "ts": "2026-11-22T03:42:37+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "unseal",
+      "detail": "prose.json owner feedback: dot points, no slabs, plain tone, profit, bright-red danger"
+    },
+    {
+      "ts": "2026-11-22T03:42:53+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "seal",
+      "detail": "dispatch/048-quant.md"
+    },
+    {
+      "ts": "2026-11-22T03:42:53+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "dispatch",
+      "detail": " 048-quant (sonnet)"
+    },
+    {
+      "ts": "2026-11-22T03:42:53+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "seal",
+      "detail": "dispatch/049-guide-author.md"
+    },
+    {
+      "ts": "2026-11-22T03:42:53+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "dispatch",
+      "detail": " 049-guide-author (sonnet)"
+    },
+    {
+      "ts": "2026-11-22T03:44:46+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "return",
+      "detail": " quant 048 (sonnet): PASS; profit recomputed by hand (3 steps exact). New disclosures Q-11 (mid price, +-11%), Q-13 (Graceful 260 marks ~1.42M not deducted), Q-14 (no GE tax applied). Director decision: disclose via an intro point (sent to author 049) rather than re-plan (efficiency)."
+    },
+    {
+      "ts": "2026-11-22T03:44:46+00:00",
+      "source": "ledger",
+      "who": "quant",
+      "what": "seal",
+      "detail": "calc-review.json"
+    },
+    {
+      "ts": "2026-11-22T03:46:18+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "return",
+      "detail": " guide-author 049 (sonnet): prose rewritten to owner style (dot points, limits, plain tone, profit tips, Q-11/13/14 intro point via F-4004); flagged template bug (intro/outro tokens not resolved) -> Director fixed in template."
+    },
+    {
+      "ts": "2026-11-22T03:46:18+00:00",
+      "source": "ledger",
+      "who": "guide-author",
+      "what": "seal",
+      "detail": "prose.json"
+    },
+    {
+      "ts": "2026-11-22T03:46:18+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "unseal",
+      "detail": "content.json v2 re-assembly: plan v5 (profit), calc with profit, prose v2 (owner style), prices"
+    },
+    {
+      "ts": "2026-11-22T03:46:19+00:00",
+      "source": "ledger",
+      "who": "system",
+      "what": "seal",
+      "detail": "content.json"
+    },
+    {
+      "ts": "2026-11-22T03:46:19+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "unseal",
+      "detail": "guide.html re-render v2"
+    },
+    {
+      "ts": "2026-11-22T03:47:21+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "unseal",
+      "detail": "qa.json v2 release audit (profit, owner style, bright-red danger)"
+    },
+    {
+      "ts": "2026-11-22T03:47:21+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "seal",
+      "detail": "dispatch/050-qa-auditor.md"
+    },
+    {
+      "ts": "2026-11-22T03:47:21+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "dispatch",
+      "detail": " 050: QA v2 release audit"
+    },
+    {
+      "ts": "2026-11-22T03:55:44+00:00",
+      "source": "ledger",
+      "who": "qa-auditor",
+      "what": "sign",
+      "detail": "content.json APPROVE v2 content 475b8102: profit (plan v5, calc, HW snapshot) recomputed independently and live price unchanged (608/487, 0%); 12/12 v2 facts live-match (F-5901..5903, F-4027, F-1005, F-1012, F-4020..4023, F-4004, F-1121); all 149 mandatory mitigations/stop conditions render, S05 Iban gate, S12 bank crystal/no ring of life, S17 Protect from Melee/run window kept; headline>=45 cards bright red; Q-01/02/11/13/14 disclosed in intro; validate 0 fail; browser ALL PASS. Non-blocking: '260 marks of grace marks' typo, rationale slabs (S12 219 words), no Q-11 price band, tool/template edits lack a governance note."
+    },
+    {
+      "ts": "2026-11-22T03:56:16+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "note",
+      "detail": " Governance record (QA 050 note): after the v1 approval the Director changed templates/guide.html (red danger, profit display, intro tokens, collapsible rationale, profit range tile, 'Training hours'), tools/assemble.py (prices, cited facts, level labels), tools/validate.py (style limits, income refs, prices binding, part/claims options), tools/ledger.py (seal rights for prices, carryover, brief), tools/xp.py (profit, numeric hash), tools/prices.py, tools/brief.py, tools/carryover.py; all under owner feedback 2026-11-22; QA confirmed content reproduces exactly. Stray nested draft dir removed."
+    },
+    {
+      "ts": "2026-11-22T03:56:16+00:00",
+      "source": "ledger",
+      "who": "qa-auditor",
+      "what": "seal",
+      "detail": "qa.json"
+    },
+    {
+      "ts": "2026-11-22T03:56:31+00:00",
+      "source": "ledger",
+      "who": "system",
+      "what": "seal",
+      "detail": "guide.html"
+    },
+    {
+      "ts": "2026-11-22T03:56:31+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "unseal",
+      "detail": "audit.json re-export audit for v2 release"
+    },
+    {
+      "ts": "2026-11-22T03:56:31+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "unseal",
+      "detail": "audit.html re-export audit for v2 release"
     }
   ],
   "transcripts": []

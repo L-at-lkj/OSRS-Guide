@@ -1,1355 +1,203 @@
 {
- "content_sha256": "261e7b11441b56f32676481f97047295a87c6d6f94e6a545b3c3073c2a00cf48",
+ "content_sha256": "475b8102652fee75e64166fdb38b903739e71838147033ca2fb623530970748b",
  "job": "agility-1-99-20261119",
- "audited_at": "2026-11-21",
+ "audited_at": "2026-11-22T03:58:00Z",
  "checks": [
   {
    "check": "1. ledger verify",
    "result": "pass",
-   "detail": "OK: ledger chain and all seals intact (through seq 210). Unsealed: calc-draft.json (byte-identical to sealed calc.json) and guide.html (draft render; validate confirms it embeds the current content hash and identical data)."
+   "detail": "OK: ledger chain and all seals intact through seq 252. WARN only: unsealed calc-draft.json (byte-identical to sealed calc.json, b8d7b9c7...) and a stray nested copy jobs/agility-1-99-20261119/jobs/agility-1-99-20261119/calc-draft.json (housekeeping; not used by anything). qa.json unsealed for this audit (seq 250)."
   },
   {
    "check": "2. validate release",
    "result": "pass",
-   "detail": "0 FAIL, 60 WARN. New vs QA 041: RT-05/RT-07 (medium) and RT-15 (low) now WARN as open (owner re-opened them, decision seq 194); RT-16 no longer open; prose.json WARN that tools/assemble.py changed since the author read it (the Director's fact-coverage fix). Remaining WARNs are as reviewed in QA 041 (governance edits to company files, 10 off-route steps, 5 ladder ordering conflicts, vetoed S23/S24 removed, RT-17 open, unsealed draft files, no QA approval yet). Plan numeric hash still matches calc.json, so plan v4 changed text only."
+   "detail": "0 FAIL, 62 WARN. New vs QA 044: none of substance; the owner-style gate (word limits fail, lecturing-phrase warn) passes with no style warnings. Remaining WARNs as reviewed in QA 044 (company-file changes since agents read them, 10 off-route decision-point steps, 5 ladder conflicts, S23/S24 vetoed and removed, RT-05/07 medium and RT-15/17 low open by owner decision seq 194, unsealed draft, no QA approval yet). calc.json prices_sha256 equals sealed prices.json (a3a7643f...)."
   },
   {
    "check": "3. audit crosscheck",
    "result": "warn",
-   "detail": "python3 tools/audit.py crosscheck: only WARNs (unsealed draft files; no Sentry observations for this job, as in QA 041). Dispatches 042, 043 and 044 are sealed with matching dispatch events; dispatch/044 text equals the prompt QA received. tools/assemble.py changed (a5bb595d -> 7796e5fc) with no ledger entry for the edit; QA read the whole file: the only change is the facts line (sorted union of the old 'used' set and every F-#### id cited in plan, risk, prose and the decision points, filtered to facts.json), and re-running it in memory on the sealed inputs reproduces content.json exactly (all keys except assembled_at)."
+   "detail": "Only WARNs: unsealed draft files; no Sentry observations for this job (audit/actions.jsonl absent, as in QA 041/044). Company files changed since QA 044 with no ledger governance note: templates/guide.html (500e40ac -> 44415e28; seq 245 mentions the Director's intro-token fix), tools/assemble.py (7796e5fc -> ae77cc7e), tools/validate.py, tools/ledger.py, tools/xp.py. QA verified functionally: (a) importing the current assemble.py and running it in memory on the sealed inputs reproduces content.json exactly (every key except assembled_at); (b) guide.html equals the current template with only the hash, title, release state (draft) and data blobs substituted; (c) ledger.py verify/sign/release_status read in full: chain, tamper, separation-of-duties and veto checks intact. Recommend the Director log a governance note for these tool/template edits."
   },
   {
    "check": "4. live fact spot-checks",
    "result": "pass",
-   "detail": "Previous 85 live checks stand (their facts and sources unchanged: facts.json sha unchanged). New: of the 59 facts newly shipped, F-5010 and F-3016 were already live-checked in QA 041; 25 of the other 57 re-fetched live with tools/wiki.py on 2026-11-21: all 6 behind a factor rating >=4 (F-1066, F-2091, F-2105, F-3064, F-3065, F-3067; cited by risk entries), all 11 new_content facts, and 8 random (seed 20261121). 25/25 match, 0 mismatch, 0 unreachable. Every pinned revision is still live except 'Upcoming updates' (newer revision, quote still present)."
+   "detail": "Risk ratings and risk.json unchanged since QA 044 (risk.json sha 74bbfca5 unchanged), so earlier 110 live checks stand for danger-bearing facts. v2 scope: 12 facts live-checked with tools/wiki.py on 2026-11-22: the 3 new amylase facts F-5901..5903, every marks/h fact used for income (F-1005, F-1012, F-4020..F-4023), the conversion F-4027 and the Graceful cost F-4004/F-1121. 12/12 match, 0 mismatch, 0 unreachable; every pinned revision is still the live revision. No new_content facts in v2."
+  },
+  {
+   "check": "4b. HW price re-fetch",
+   "result": "pass",
+   "detail": "Live GET https://prices.runescape.wiki/api/v2/osrs-hc/latest?id=12640 at ~03:50Z: high 608 (2026-11-22 02:56:30Z), low 487 (02:56:38Z): identical to the sealed snapshot (mid 548), change 0% (<20% threshold). Main-game /api/v1/osrs/latest gives high 403 / low 400 gp, confirming the HW economy is a separate market. Independent recompute: sum(step hours x marks/h /10 x 100 x 548) = 18,006,837 safest / 17,645,645 balanced vs calc 18,006,836 / 17,645,644 (rounding)."
   },
   {
    "check": "5. browser check",
    "result": "pass",
-   "detail": "node tools/browser_check.mjs on the re-rendered guide.html (508b2bc6...): ALL PASS (desktop and mobile, all 9 tabs, both routes, level highlight, progress persistence, no horizontal scroll). Screens refreshed in jobs/agility-1-99-20261119/screens."
+   "detail": "node tools/browser_check.mjs on guide.html (39b9fc18...): ALL PASS (desktop + mobile, 9 tabs, both routes, level highlight, progress persistence, no horizontal scroll). Screens refreshed."
   },
   {
    "check": "6. read as the owner",
-   "result": "pass",
-   "detail": "R1 fixed. The S12 'Why this step' rationale now says 'BANK the escape crystal before the duel: do not take it into the instance, worn or carried ... Carry it only for the road, the Draugen and the citizens' (content.json steps[S12].rationale and rendered once in guide.html). DP02-B cons[1] and DP08-B cons[2] say 'bank the escape crystal before it: worn, it resets the fight; carried, it can fire if you stand still in the fourth form' (both in guide.html). This matches the S12 card (M6, required_items[3], stop_conditions[0], bailout, prose instructions[5] and warnings[1]) and the general escape-crystal rule's Koschei exception. The only remaining guidance that says to carry the crystal is on S06, S16 and S17, where it is not credited and is consistent. S12-M1 ('do NOT wear') is narrower but does not contradict 'bank it'. The old 'if carried, keep it in the inventory only' text survives only as quoted history in RT-16's resolution and plan provenance. Note: plan.json prerequisite_checklist[4] is fixed too, but the checklist is not shipped by the assembler nor rendered by the template, so the owner never sees it (verified in plan.json only). Other step content unchanged since QA 041 (risk.json and prose.json unchanged)."
+   "result": "warn",
+   "detail": "PASS items: (a) Safety warnings kept: S05 'Mandatory: Iban HP gate. Protect from Melee does nothing against the temple spikes...'; S12 'Mandatory: bank the escape crystal before the duel...' and 'Never wear a ring of life in the duel...'; S17 'The run window cannot be closed. With Protect from Melee on...' and 'Do: turn Protect from Melee on before you talk to Arrg'. Automated check: all 149 mandatory mitigations and stop conditions in risk.json render verbatim on their cards (route and decision tabs), 0 missing. (b) Bright red: every card with headline >=45 (balanced S03/S05/S06/S12; decision options S15/S16/S17/S25) has class hot: 3px #e10600 border and a red '⚠ High danger · N without prep · M with the prep card' banner; safest has no step >=45 and shows none; headline == inherent for all steps so the trigger is correct. (c) Disclosures in the intro (rendered on the route tab): Q-01 'Route hours exclude all quest time', Q-02 'Balanced is not faster than Safest...', Q-11/13/14 'Profit is at the Hardcore Worlds GE mid price, assuming every mark is sold, before any GE tax; the Graceful outfit (260 ...) is not deducted.' (d) Owner style: prose is dot points within limits, plain tone, no lecturing phrases; profit shown in step stats and a route tile; HW price table in Supplies with timestamp. WARN (non-blocking, text-level): W1 intro renders '260 marks of grace marks' (fact token already carries the unit). W2 the 'Why this step' rationales (plan.json, not prose) are still visible paragraph slabs: 13 steps over 60 words, S12 219 words, against the owner's 'avoid large slabs'. W3 Q-11 partly met: no 487-608 band (about 16.0-20.0M / 15.7-19.6M) next to the single to-the-gp profit tile; Q-12 (one-day snapshot, recheck) only implicit in the Supplies note. W4 Q-01 tile still says 'Total time' rather than 'training hours' (same as the v1 approval). W5 Supplies table shows Monkfish BUY 320 < SELL 509 (stale low price in the live data); not used in any profit figure."
   },
   {
-   "check": "7. red team",
+   "check": "7. red team / accepted risks",
    "result": "pass",
-   "detail": "No open critical or high finding (RT-01..RT-04 fixed). RT-16 fixed (re-test 043 against risk 74bbfca5c25e and plan v4 5a0296c74446), confirmed by QA in the shipped content (check 6). R2 resolved: RT-05, RT-07 (medium) and RT-15 (low) are now 'open', not 'accepted_by_user', following the owner's recorded answer 'Re-open all three' (ledger decision seq 194); no risk is claimed as accepted, so no accept_risk entry is needed for them. They are calibration-ladder items for a calibration revision; none affects a route step. RT-17 (low) open, non-blocking. Accepted step risks S05, S06, S12, S16, S17 keep their accept_risk entries (seq 123-126, 159, 160)."
+   "detail": "redteam.json and risk.json unchanged since QA 044 (no danger change, so no Red Team re-run is required under docs/10 rule 7). No open critical/high findings; RT-05/07/15 accepted by the owner (seq 194), RT-17 low open."
   },
   {
    "check": "8. recency",
    "result": "pass",
-   "detail": "Unchanged inputs (research/updates.json and facts.json seals unchanged); updates_as_of 2026-11-20T02:20Z is within 2 days of 2026-11-21. QA 041's live recency sweep stands; this run re-confirmed The Graveyard is still unreleased (page rev 15409628 live, F-1113/F-2611 match)."
-  },
-  {
-   "check": "extra: fact traceability in the rendered guide",
-   "result": "pass",
-   "detail": "content.json ships 314 facts; every F-#### id cited anywhere in content.json outside the facts list (294 ids) is shipped: 0 cited-but-missing (was 39). 20 shipped facts are cited only in risk entries of the vetoed steps S23/S24 or plan text not carried into content; harmless extras. Two shipped facts are DISPUTED (F-1048, F-3063) and carry that status; F-1048 is cited only in an assumption that says it is disputed and not used, F-3063 is not cited in the guide."
+   "detail": "updates_as_of 2026-11-20T02:20Z, within 2 days of today. Live new-pages scan of the Update namespace since 2026-11-19 shows only the Chosen Commander poll blog (in the sweep) and the Gielinor Gazette Nov 2026 (rev 15410302; no Agility, marks, Graceful or rule change). The Graveyard (25 Nov) stays excluded and explained in the outro."
   }
  ],
  "spot_checks": [
   {
-   "fact_id": "F-0001",
+   "fact_id": "F-5901",
    "result": "match",
-   "selected_because": "new_content",
+   "selected_because": "v2_new_fact (profit conversion)",
    "live_revisions_checked": [
-    "Update:Hardcore Worlds Are Coming On November 4th live unchanged",
-    "Update:Hardcore Worlds - OUT TODAY live unchanged",
-    "Hardcore Worlds live unchanged"
+    "Amylase pack 15316439 live unchanged"
    ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
+   "note": "Live: '|examine = A pack containing 100 crystals of amylase.' and DropsLineReward quantity=100 present.",
+   "checked_at": "2026-11-22"
   },
   {
-   "fact_id": "F-0004",
+   "fact_id": "F-5902",
    "result": "match",
-   "selected_because": "new_content",
+   "selected_because": "v2_new_fact (profit)",
    "live_revisions_checked": [
-    "Update:Hardcore Worlds - OUT TODAY live unchanged",
-    "Update:Hardcore Worlds Are Coming On November 4th live unchanged"
+    "Amylase crystal 15375340 live unchanged"
    ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
+   "note": "Live infobox: tradeable = Yes, exchange = Yes, id = 12640. HW tradeability also confirmed mechanically: live osrs-hc /latest returns trades for id 12640 (high 608, low 487, both 2026-11-22 02:56 UTC).",
+   "checked_at": "2026-11-22"
   },
   {
-   "fact_id": "F-0015",
+   "fact_id": "F-5903",
    "result": "match",
-   "selected_because": "factor>=4 new_content",
+   "selected_because": "v2_new_fact (profit)",
    "live_revisions_checked": [
-    "Update:Hardcore Worlds - OUT TODAY live unchanged",
-    "Hardcore Worlds live unchanged",
-    "Escape crystal live unchanged"
+    "Amylase pack 15316439 live unchanged"
    ],
-   "note": "Infobox fields / linked text found after markup normalisation: Escape crystal quote present with [[Wilderness#...|few items]] link markup",
-   "checked_at": "2026-11-21"
+   "note": "Live: '|tradeable = No' and 'can only be sold back to Grace's Graceful Clothing for 8 marks of grace'.",
+   "checked_at": "2026-11-22"
   },
   {
-   "fact_id": "F-0029",
+   "fact_id": "F-4027",
    "result": "match",
-   "selected_because": "new_content",
+   "selected_because": "income conversion (10 marks per pack)",
    "live_revisions_checked": [
-    "Update:Quest Month Kick Off, TFA Tweaks & More live unchanged",
-    "Troll Stronghold live changed"
+    "Amylase pack 15316439 live unchanged"
    ],
-   "note": "All quoted segments found in the live revision; live revision changed for Troll Stronghold (15395347 -> 15410562: reward-scroll image zoom markup only; quoted text unchanged)",
-   "checked_at": "2026-11-21"
+   "note": "Live: 'bought from Grace's Graceful Clothing for 10 marks of grace ...'.",
+   "checked_at": "2026-11-22"
   },
   {
-   "fact_id": "F-0032",
+   "fact_id": "F-1012",
    "result": "match",
-   "selected_because": "new_content",
+   "selected_because": "income marks/h (S08)",
    "live_revisions_checked": [
-    "Update:Quest Month Kick Off, TFA Tweaks & More live unchanged",
-    "The Writing's on the Wall live unchanged"
+    "Agility training 15369875 live unchanged",
+    "Rooftop Agility Courses 15337972 live unchanged",
+    "Falador Rooftop Course 15319531 live unchanged"
    ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
+   "note": "Live: Falador row 29,000-34,000 | 9.7-11.3 | 295; '10-12.1'; 'roughly once per 5-6 laps'. Plan uses 9.7 (low end).",
+   "checked_at": "2026-11-22"
   },
   {
-   "fact_id": "F-0033",
+   "fact_id": "F-4020",
    "result": "match",
-   "selected_because": "new_content",
+   "selected_because": "income marks/h (S09, S26)",
    "live_revisions_checked": [
-    "The Writing's on the Wall live unchanged",
-    "Update:Quest Month Kick Off, TFA Tweaks & More live unchanged"
+    "Rooftop Agility Courses 15337972 live unchanged",
+    "Mark of Grace 15403415 live unchanged"
    ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
+   "note": "Live: '11-13.8 (base)' on both pages. Plan uses 11.",
+   "checked_at": "2026-11-22"
   },
   {
-   "fact_id": "F-0034",
+   "fact_id": "F-4021",
    "result": "match",
-   "selected_because": "new_content",
+   "selected_because": "income marks/h (S10, S11)",
    "live_revisions_checked": [
-    "The Writing's on the Wall live unchanged"
+    "Rooftop Agility Courses 15337972 live unchanged",
+    "Mark of Grace 15403415 live unchanged"
    ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
+   "note": "Live: '13-14 (base)' on both pages. Plan uses 13. S11 ends at 90 = req 70 + 20, so the 20-level 20% penalty (live text on Rooftop Agility Courses) is never reached inside the band.",
+   "checked_at": "2026-11-22"
   },
   {
-   "fact_id": "F-1058",
+   "fact_id": "F-4022",
    "result": "match",
-   "selected_because": "factor>=4",
+   "selected_because": "income marks/h (S13)",
    "live_revisions_checked": [
-    "Agility training live unchanged",
-    "Hallowed Sepulchre live unchanged"
+    "Rooftop Agility Courses 15337972 live unchanged",
+    "Mark of Grace 15403415 live unchanged"
    ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
+   "note": "Live: '13-15.5 (base)'. Plan uses 13.",
+   "checked_at": "2026-11-22"
   },
   {
-   "fact_id": "F-2003",
+   "fact_id": "F-4023",
    "result": "match",
-   "selected_because": "new_content",
+   "selected_because": "income marks/h (S14)",
    "live_revisions_checked": [
-    "The Writing's on the Wall live unchanged",
-    "Update:Quest Month Kick Off, TFA Tweaks & More live unchanged"
+    "Rooftop Agility Courses 15337972 live unchanged",
+    "Mark of Grace 15403415 live unchanged"
    ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
+   "note": "Live: '16-18.1 (base)'. Plan uses 16.",
+   "checked_at": "2026-11-22"
   },
   {
-   "fact_id": "F-2004",
+   "fact_id": "F-1005",
    "result": "match",
-   "selected_because": "new_content",
+   "selected_because": "income marks/h (S07, decision option)",
    "live_revisions_checked": [
-    "The Writing's on the Wall live unchanged",
-    "Quest experience rewards live unchanged",
-    "Update:Quest Month Kick Off, TFA Tweaks & More live unchanged"
+    "Canifis Rooftop Course 15374436 live unchanged",
+    "Mark of Grace 15403415 live unchanged"
    ],
-   "note": "Infobox fields / linked text found after markup normalisation: Defence section of Quest experience rewards lists no row for The Writing's on the Wall (absence confirmed)",
-   "checked_at": "2026-11-21"
+   "note": "Live: 'roughly 16-18 marks per hour'; Mark of Grace '16-18' (rate constant). Plan uses 16.",
+   "checked_at": "2026-11-22"
   },
   {
-   "fact_id": "F-2005",
+   "fact_id": "F-4004",
    "result": "match",
-   "selected_because": "factor>=4 new_content",
+   "selected_because": "v2 intro token (Graceful cost, Q-13)",
    "live_revisions_checked": [
-    "The Writing's on the Wall live unchanged"
+    "Graceful outfit 15403851 live unchanged",
+    "Rooftop Agility Courses 15337972 live unchanged"
    ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
+   "note": "Live: 'Buying the entire set costs 260 marks.'",
+   "checked_at": "2026-11-22"
   },
   {
-   "fact_id": "F-2006",
+   "fact_id": "F-1121",
    "result": "match",
-   "selected_because": "factor>=4 new_content",
+   "selected_because": "Graceful cost (assumptions, Q-13)",
    "live_revisions_checked": [
-    "The Writing's on the Wall live unchanged",
-    "Quests/Release dates live unchanged",
-    "Update:Quest Month Kick Off, TFA Tweaks & More live unchanged"
+    "Graceful outfit 15403851 live unchanged"
    ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-2007",
-   "result": "match",
-   "selected_because": "factor>=4 new_content",
-   "live_revisions_checked": [
-    "The Writing's on the Wall live unchanged",
-    "Quest experience rewards live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-2015",
-   "result": "match",
-   "selected_because": "factor>=4 new_content",
-   "live_revisions_checked": [
-    "Black Knights' Fortress live unchanged",
-    "Update:Quest Month Kick Off, TFA Tweaks & More live unchanged",
-    "Module:SkillChoice live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-2016",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Druidic Ritual live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-2021",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Sand Snake live unchanged",
-    "The Depths of Despair live unchanged"
-   ],
-   "note": "Infobox fields / linked text found after markup normalisation",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-2022",
-   "result": "match",
-   "selected_because": "new_content",
-   "live_revisions_checked": [
-    "Troll Stronghold live changed",
-    "Update:Quest Month Kick Off, TFA Tweaks & More live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision; live revision changed for Troll Stronghold (15395347 -> 15410562: reward-scroll image zoom markup only; quoted text unchanged)",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-2029",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Troll general live unchanged",
-    "Troll Stronghold live changed"
-   ],
-   "note": "Infobox fields / linked text found after markup normalisation; live revision changed for Troll Stronghold (15395347 -> 15410562: reward-scroll image zoom markup only; quoted text unchanged)",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-2036",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Arrg live unchanged",
-    "Troll Romance live unchanged"
-   ],
-   "note": "Infobox fields / linked text found after markup normalisation",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-2041",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Koschei the deathless live unchanged",
-    "Koschei the deathless live unchanged",
-    "The Fremennik Trials live unchanged"
-   ],
-   "note": "Infobox fields / linked text found after markup normalisation",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-2064",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Icthlarin's Little Helper live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-2066",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Apparition live unchanged",
-    "Icthlarin's Little Helper live unchanged"
-   ],
-   "note": "Infobox fields / linked text found after markup normalisation",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-3018",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Escape crystal live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-3021",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Logout button live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-3022",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Logout button live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-3056",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Hallowed Sepulchre live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-3057",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Hallowed Sepulchre live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-3058",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Hallowed Sepulchre live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-3062",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Vyrewatch Sentinel live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-3086",
-   "result": "match",
-   "selected_because": "new_content",
-   "live_revisions_checked": [
-    "The Writing's on the Wall live unchanged",
-    "Quest experience rewards live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-3088",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Troll Stronghold live changed",
-    "Troll general live unchanged"
-   ],
-   "note": "Infobox fields / linked text found after markup normalisation: Troll Stronghold sentence present with [[troll generals]] link markup; live revision changed for Troll Stronghold (15395347 -> 15410562: reward-scroll image zoom markup only; quoted text unchanged)",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-3089",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Arrg live unchanged",
-    "Troll Romance live unchanged",
-    "Quest experience rewards live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-4047",
-   "result": "match",
-   "selected_because": "new_content",
-   "live_revisions_checked": [
-    "Hallowed Sepulchre live unchanged",
-    "Hardcore Worlds live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5001",
-   "result": "match",
-   "selected_because": "new_content",
-   "live_revisions_checked": [
-    "Update:Hardcore Worlds Are Coming On November 4th live unchanged",
-    "Update:Hardcore Worlds - OUT TODAY live unchanged",
-    "Koschei the deathless live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5002",
-   "result": "match",
-   "selected_because": "factor>=4 new_content",
-   "live_revisions_checked": [
-    "Update:Hardcore Worlds Are Coming On November 4th live unchanged",
-    "Update:Hardcore Worlds - OUT TODAY live unchanged",
-    "The Fremennik Trials live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5003",
-   "result": "match",
-   "selected_because": "new_content",
-   "live_revisions_checked": [
-    "Update:Hardcore Worlds Are Coming On November 4th live unchanged",
-    "Troll Romance live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5004",
-   "result": "match",
-   "selected_because": "new_content",
-   "live_revisions_checked": [
-    "Update:Hardcore Worlds Are Coming On November 4th live unchanged",
-    "Sir Leye live unchanged",
-    "Recruitment Drive live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5007",
-   "result": "match",
-   "selected_because": "new_content",
-   "live_revisions_checked": [
-    "Update:Hardcore Worlds Are Coming On November 4th live unchanged",
-    "Group Ironman Mode live unchanged",
-    "Hardcore Worlds live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5009",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Koschei the deathless live unchanged",
-    "Koschei the deathless live unchanged",
-    "The Fremennik Trials live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5011",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "The Fremennik Trials live unchanged",
-    "The Fremennik Trials live unchanged",
-    "Koschei the deathless live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5013",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "The Draugen live unchanged",
-    "The Fremennik Trials live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5014",
-   "result": "match",
-   "selected_because": "new_content",
-   "live_revisions_checked": [
-    "The Writing's on the Wall live unchanged",
-    "The Writing's on the Wall live unchanged",
-    "The Writing's on the Wall live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5015",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Sir Leye live unchanged",
-    "Recruitment Drive live unchanged",
-    "Recruitment Drive live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5016",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Sand Snake live unchanged",
-    "The Depths of Despair live unchanged",
-    "The Depths of Despair live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5017",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Dad live unchanged",
-    "Troll Stronghold live changed",
-    "Troll arena live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision; live revision changed for Troll Stronghold (15395347 -> 15410562: reward-scroll image zoom markup only; quoted text unchanged)",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5018",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Troll general live unchanged",
-    "Troll Stronghold live changed"
-   ],
-   "note": "All quoted segments found in the live revision; live revision changed for Troll Stronghold (15395347 -> 15410562: reward-scroll image zoom markup only; quoted text unchanged)",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5021",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Arrg live unchanged",
-    "Troll Romance live unchanged",
-    "Troll Romance live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5024",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Kalrag live unchanged",
-    "Blessed spider live unchanged",
-    "Underground Pass live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5026",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Underground Pass live unchanged",
-    "Underground Pass live unchanged",
-    "Bridge (Iban's Lair) live unchanged",
-    "Underground Pass live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5027",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Tyras guard live unchanged",
-    "Regicide live unchanged",
-    "Regicide live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5028",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Regicide live unchanged",
-    "Regicide live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5029",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Possessed Priest live unchanged",
-    "Icthlarin's Little Helper live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5030",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Icthlarin's Little Helper live unchanged",
-    "Icthlarin's Little Helper live unchanged",
-    "Apparition live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5037",
-   "result": "match",
-   "selected_because": "factor>=4 new_content",
-   "live_revisions_checked": [
-    "Death on the Isle live unchanged",
-    "Death on the Isle live unchanged",
-    "Update:Hardcore Worlds Are Coming On November 4th live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5343",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Fremennik Slayer Dungeon live unchanged",
-    "Log balance (Fremennik Province) live unchanged",
-    "Camelot teleport (tablet) live unchanged",
-    "Rellekka Rooftop Course live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5345",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Keldagrim live unchanged",
-    "The Giant Dwarf live unchanged",
-    "Keldagrim entrance mine live unchanged",
-    "Barbarian Outpost live unchanged",
-    "Lighthouse live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5360",
-   "result": "match",
-   "selected_because": "new_content",
-   "live_revisions_checked": [
-    "Update:Hardcore Worlds Are Coming On November 4th live unchanged",
-    "Update:Hardcore Worlds - OUT TODAY live unchanged",
-    "Hardcore Worlds live unchanged",
-    "Hallowed Sepulchre live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5362",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Naiatli live unchanged",
-    "Prop sword (Death on the Isle) live unchanged",
-    "Death on the Isle live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5366",
-   "result": "match",
-   "selected_because": "new_content",
-   "live_revisions_checked": [
-    "Update:The Reaper's Raffle - Hardcore Worlds live unchanged",
-    "Update:Hardcore Worlds Are Coming On November 4th live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5367",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Seers' Village Rooftop Course live unchanged",
-    "Gap (Seers' Village Rooftop Course) live unchanged",
-    "Tightrope (Seers' Village Rooftop Course) live unchanged",
-    "Agility live unchanged"
-   ],
-   "note": "Infobox fields / linked text found after markup normalisation: Seers' course text present; table 'Yes (until 79)' x2 confirmed",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5368",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Ardougne Rooftop Course live unchanged",
-    "Gap (Ardougne Rooftop Course) live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5369",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Gap (Canifis Rooftop Course) live unchanged",
-    "Canifis Rooftop Course live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5374",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Thrower Troll live unchanged",
-    "Death Plateau (location) live unchanged"
-   ],
-   "note": "Infobox fields / linked text found after markup normalisation",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5375",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Death Plateau live unchanged",
-    "Rock (Troll) live unchanged",
-    "Stick live unchanged",
-    "Pee Hat live unchanged",
-    "Kraka live unchanged"
-   ],
-   "note": "Infobox fields / linked text found after markup normalisation",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5379",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Rope swing (Underground Pass, north) live unchanged",
-    "Bridge (Iban's Lair) live unchanged",
-    "Underground Pass (dungeon) live unchanged",
-    "Ledge (Underground Pass) live unchanged",
-    "Swamp (Underground Pass) live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5380",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Underground Pass (dungeon) live unchanged",
-    "Blessed spider live unchanged",
-    "Giant bat live unchanged",
-    "Zombie live unchanged",
-    "Regicide live unchanged"
-   ],
-   "note": "Infobox fields / linked text found after markup normalisation: Blessed spider sentence present with [[aggressiveness|aggressive]] link markup",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5384",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "The Depths of Despair live unchanged",
-    "Stepping stone (Crabclaw Caves) live unchanged",
-    "Rocks (Crabclaw Caves) live unchanged"
-   ],
-   "note": "Infobox fields / linked text found after markup normalisation",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5386",
-   "result": "match",
-   "selected_because": "factor>=4",
-   "live_revisions_checked": [
-    "Escape crystal live unchanged",
-    "Escape crystal live unchanged",
-    "Update:Hardcore Worlds Are Coming On November 4th live unchanged",
-    "Hallowed Sepulchre live unchanged"
-   ],
-   "note": "Infobox fields / linked text found after markup normalisation: Hallowed Sepulchre page has no escape crystal line (absence confirmed by grep)",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-0019",
-   "result": "match",
-   "selected_because": "random",
-   "live_revisions_checked": [
-    "Update:Summer Sweep Up - Agility & Chambers of Xeric Changes live unchanged",
-    "Hallowed Sepulchre live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-1015",
-   "result": "match",
-   "selected_because": "random",
-   "live_revisions_checked": [
-    "Seers' Village Rooftop Course live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-1018",
-   "result": "match",
-   "selected_because": "random",
-   "live_revisions_checked": [
-    "Seers' Village Rooftop Course live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-1054",
-   "result": "match",
-   "selected_because": "random",
-   "live_revisions_checked": [
-    "Hallowed Sepulchre live unchanged",
-    "Agility training live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-1057",
-   "result": "match",
-   "selected_because": "random",
-   "live_revisions_checked": [
-    "Agility training live unchanged",
-    "Hallowed Sepulchre live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-1060",
-   "result": "match",
-   "selected_because": "random",
-   "live_revisions_checked": [
-    "Hallowed Sepulchre live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-2044",
-   "result": "match",
-   "selected_because": "random",
-   "live_revisions_checked": [
-    "Underground Pass live unchanged",
-    "Quest experience rewards live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-2061",
-   "result": "match",
-   "selected_because": "random",
-   "live_revisions_checked": [
-    "Icthlarin's Little Helper live unchanged",
-    "Quest experience rewards live unchanged"
-   ],
-   "note": "Infobox fields / linked text found after markup normalisation: Defence section of Quest experience rewards lists no row for Icthlarin's Little Helper (absence confirmed)",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-2067",
-   "result": "match",
-   "selected_because": "random",
-   "live_revisions_checked": [
-    "A Tail of Two Cats live unchanged",
-    "Module:SkillChoice live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-2071",
-   "result": "match",
-   "selected_because": "random",
-   "live_revisions_checked": [
-    "A Tail of Two Cats live unchanged"
-   ],
-   "note": "Infobox fields / linked text found after markup normalisation: A Tail of Two Cats has no |kills = field (absence confirmed)",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-4026",
-   "result": "match",
-   "selected_because": "random",
-   "live_revisions_checked": [
-    "Mark of Grace live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-4081",
-   "result": "match",
-   "selected_because": "random",
-   "live_revisions_checked": [
-    "Magic carpet live unchanged",
-    "Pollnivneach live unchanged"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5012",
-   "result": "match",
-   "selected_because": "S12 bailout (trap/regenerate, reset to form 1)",
-   "note": "Fremennik Trials 15396092 and Koschei 15387641 live, unchanged; quotes found",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-3017",
-   "result": "match",
-   "selected_because": "S12-M6 / S17-M6 crystal trigger",
-   "note": "Escape crystal 15409296 and HW announcement 15379410 live, unchanged; quotes found",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-4062",
-   "result": "match",
-   "selected_because": "monkfish heal used in every eat rule",
-   "note": "Monkfish 15183439 live, unchanged; quote found",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-5010",
-   "result": "match",
-   "selected_because": "cited by S12-H1 but NOT shipped in content.json facts",
-   "note": "Fremennik Trials 15396092 and Koschei 15387641 live, unchanged; quotes found (facts.json, sealed)",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-3016",
-   "result": "match",
-   "selected_because": "cited by risk_rules escape-crystal rule but NOT shipped",
-   "note": "HW OUT TODAY 15397724 and Escape crystal 15409296 live, unchanged; quotes found (external-link markup) (facts.json, sealed)",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-1066",
-   "result": "match",
-   "selected_because": "factor>=4 (newly shipped by the assembler fix)",
-   "live_revisions_checked": [
-    "Werewolf Agility Course: pinned 15315234 live 15315234 (unchanged)",
-    "Agility: pinned 15405162 live 15405162 (unchanged)"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-2091",
-   "result": "match",
-   "selected_because": "factor>=4 (newly shipped by the assembler fix)",
-   "live_revisions_checked": [
-    "Werewolf Agility Course: pinned 15315234 live 15315234 (unchanged)"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-2105",
-   "result": "match",
-   "selected_because": "factor>=4 (newly shipped by the assembler fix)",
-   "live_revisions_checked": [
-    "Sins of the Father: pinned 15380480 live 15380480 (unchanged)"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-3064",
-   "result": "match",
-   "selected_because": "factor>=4 (newly shipped by the assembler fix)",
-   "live_revisions_checked": [
-    "Damien Leucurte: pinned 15374322 live 15374322 (unchanged)",
-    "Sins of the Father: pinned 15380480 live 15380480 (unchanged)"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-3065",
-   "result": "match",
-   "selected_because": "factor>=4 (newly shipped by the assembler fix)",
-   "live_revisions_checked": [
-    "Kroy: pinned 15344384 live 15344384 (unchanged)",
-    "Sins of the Father: pinned 15380480 live 15380480 (unchanged)"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-3067",
-   "result": "match",
-   "selected_because": "factor>=4 (newly shipped by the assembler fix)",
-   "live_revisions_checked": [
-    "Werewolf Agility Course: pinned 15315234 live 15315234 (unchanged)",
-    "Zip line (Werewolf Agility Course): pinned 15333943 live 15333943 (unchanged)"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-0003",
-   "result": "match",
-   "selected_because": "new_content (newly shipped by the assembler fix)",
-   "live_revisions_checked": [
-    "Update:Hardcore Worlds - OUT TODAY: pinned 15397724 live 15397724 (unchanged)",
-    "Update:Hardcore Worlds Are Coming On November 4th: pinned 15379410 live 15379410 (unchanged)",
-    "Hardcore Worlds: pinned 15404671 live 15404671 (unchanged)"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-0010",
-   "result": "match",
-   "selected_because": "new_content (newly shipped by the assembler fix)",
-   "live_revisions_checked": [
-    "Update:Hardcore Worlds - OUT TODAY: pinned 15397724 live 15397724 (unchanged)",
-    "Hardcore Worlds: pinned 15404671 live 15404671 (unchanged)"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-0017",
-   "result": "match",
-   "selected_because": "new_content (newly shipped by the assembler fix)",
-   "live_revisions_checked": [
-    "Hardcore Worlds: pinned 15404671 live 15404671 (unchanged)",
-    "Update:Hardcore Worlds - OUT TODAY: pinned 15397724 live 15397724 (unchanged)"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-0052",
-   "result": "match",
-   "selected_because": "new_content (newly shipped by the assembler fix)",
-   "live_revisions_checked": [
-    "The Graveyard: pinned 15409628 live 15409628 (unchanged)",
-    "Upcoming updates: pinned 15409626 live 15410251 (NEWER)",
-    "Update:Quest Month Week 3 & TFA Practice Mode: pinned 15406871 live 15406871 (unchanged)"
-   ],
-   "note": "'Upcoming updates' has a newer live revision (15410251 vs pinned 15409626); the quoted text is still present.",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-1113",
-   "result": "match",
-   "selected_because": "new_content (newly shipped by the assembler fix)",
-   "live_revisions_checked": [
-    "The Graveyard: pinned 15409628 live 15409628 (unchanged)",
-    "Update:Quest Month Week 3 & TFA Practice Mode: pinned 15406871 live 15406871 (unchanged)"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-1115",
-   "result": "match",
-   "selected_because": "new_content (newly shipped by the assembler fix)",
-   "live_revisions_checked": [
-    "Update:The Graveyard - Rewards Blog: pinned 15363564 live 15363564 (unchanged)"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-2611",
-   "result": "match",
-   "selected_because": "new_content (newly shipped by the assembler fix)",
-   "live_revisions_checked": [
-    "The Graveyard: pinned 15409628 live 15409628 (unchanged)",
-    "Update:Quest Month Week 3 & TFA Practice Mode: pinned 15406871 live 15406871 (unchanged)"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-2614",
-   "result": "match",
-   "selected_because": "new_content (newly shipped by the assembler fix)",
-   "live_revisions_checked": [
-    "Update:Summer Campfire 2026: pinned 15220685 live 15220685 (unchanged)",
-    "Quest experience rewards: pinned 15408569 live 15408569 (unchanged)"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-2615",
-   "result": "match",
-   "selected_because": "new_content (newly shipped by the assembler fix)",
-   "live_revisions_checked": [
-    "Update:Summer Campfire 2026: pinned 15220685 live 15220685 (unchanged)",
-    "The Graveyard: pinned 15409628 live 15409628 (unchanged)"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-4001",
-   "result": "match",
-   "selected_because": "new_content (newly shipped by the assembler fix)",
-   "live_revisions_checked": [
-    "Update:Hardcore Worlds - OUT TODAY: pinned 15397724 live 15397724 (unchanged)",
-    "Hardcore Worlds: pinned 15404671 live 15404671 (unchanged)"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-4003",
-   "result": "match",
-   "selected_because": "new_content (newly shipped by the assembler fix)",
-   "live_revisions_checked": [
-    "Hardcore Worlds: pinned 15404671 live 15404671 (unchanged)",
-    "Hardcore Worlds: pinned 15404671 live 15404671 (unchanged)",
-    "Hardcore Worlds: pinned 15404671 live 15404671 (unchanged)",
-    "Hardcore Worlds: pinned 15404671 live 15404671 (unchanged)",
-    "Rogues' Den: pinned 15379507 live 15379507 (unchanged)"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-4060",
-   "result": "match",
-   "selected_because": "random(seed 20261121) (newly shipped by the assembler fix)",
-   "live_revisions_checked": [
-    "Lobster: pinned 15183358 live 15183358 (unchanged)"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-2095",
-   "result": "match",
-   "selected_because": "random(seed 20261121) (newly shipped by the assembler fix)",
-   "live_revisions_checked": [
-    "Creature of Fenkenstrain: pinned 15385731 live 15385731 (unchanged)",
-    "Quest experience rewards: pinned 15408569 live 15408569 (unchanged)"
-   ],
-   "note": "Quote 2 is the verifier's description, not text: checked by hand that the live Agility table on Quest experience rewards has 27 rows and no Creature of Fenkenstrain row (it appears only under Thieving), and that the quest page's rewards line is Thieving XP only.",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-2552",
-   "result": "match",
-   "selected_because": "random(seed 20261121) (newly shipped by the assembler fix)",
-   "live_revisions_checked": [
-    "Monkey Madness II: pinned 15374569 live 15374569 (unchanged)",
-    "Quest experience rewards: pinned 15408569 live 15408569 (unchanged)"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-3013",
-   "result": "match",
-   "selected_because": "random(seed 20261121) (newly shipped by the assembler fix)",
-   "live_revisions_checked": [
-    "Update:Hardcore Worlds Are Coming On November 4th: pinned 15379410 live 15379410 (unchanged)",
-    "Update:Hardcore Worlds - OUT TODAY: pinned 15397724 live 15397724 (unchanged)",
-    "Hardcore Worlds: pinned 15404671 live 15404671 (unchanged)"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-1070",
-   "result": "match",
-   "selected_because": "random(seed 20261121) (newly shipped by the assembler fix)",
-   "live_revisions_checked": [
-    "Wilderness Agility Course: pinned 15351989 live 15351989 (unchanged)",
-    "Agility training: pinned 15369875 live 15369875 (unchanged)"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-3012",
-   "result": "match",
-   "selected_because": "random(seed 20261121) (newly shipped by the assembler fix)",
-   "live_revisions_checked": [
-    "Update:Hardcore Worlds Are Coming On November 4th: pinned 15379410 live 15379410 (unchanged)",
-    "Update:Hardcore Worlds - OUT TODAY: pinned 15397724 live 15397724 (unchanged)",
-    "Hardcore Worlds: pinned 15404671 live 15404671 (unchanged)",
-    "Group Ironman Mode: pinned 15401984 live 15401984 (unchanged)"
-   ],
-   "note": "One segment differed only by wiki bold markup ('''UNSAFE'''); the live line reads the same.",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-1068",
-   "result": "match",
-   "selected_because": "random(seed 20261121) (newly shipped by the assembler fix)",
-   "live_revisions_checked": [
-    "Werewolf Agility Course: pinned 15315234 live 15315234 (unchanged)"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
-  },
-  {
-   "fact_id": "F-0025",
-   "result": "match",
-   "selected_because": "random(seed 20261121) (newly shipped by the assembler fix)",
-   "live_revisions_checked": [
-    "Colossal Wyrm Agility Course: pinned 15388138 live 15388138 (unchanged)"
-   ],
-   "note": "All quoted segments found in the live revision",
-   "checked_at": "2026-11-21"
+   "note": "Live: bought from Grace in the Rogues' Den beneath The Toad and Chicken, Burthorpe; 260 marks.",
+   "checked_at": "2026-11-22"
   }
  ],
  "decision": "approve",
  "reasons": [
-  "R1 fixed: the S12 rationale and DP02-B/DP08-B now say bank the escape crystal before the Koschei duel, matching the card and the general rule; RT-16 effectively resolved in the shipped guide.",
-  "R2 resolved: RT-05/07/15 re-opened per the owner's recorded answer 'Re-open all three' (seq 194); no unrecorded risk acceptance remains; no open critical/high findings.",
-  "Assembler now ships all cited facts (314, 0 cited-but-missing); content.json reproduces exactly from the sealed inputs; 25/25 new live spot-checks match (110 total with QA 041's 85).",
-  "validate release 0 FAIL; browser check ALL PASS; ledger intact.",
-  "Open, non-blocking: RT-05, RT-07, RT-15, RT-17 (calibration/labels); no Sentry observations for this job; plan prerequisite_checklist is not rendered in the guide."
+  "No check fails. v2 changes (profit, owner-style prose, bright-red danger template) verified; all 149 mandatory mitigations and stop conditions still render; the 12 v2-relevant facts match live; the HW amylase price is unchanged from the snapshot (0%).",
+  "Non-blocking follow-ups for the next text revision: W1 fix '260 marks of grace marks' in the intro (prose writes 'marks' after a token that already carries the unit); W2 shorten or collapse the plan rationales into dot points (13 over 60 words, S12 219); W3 show the 487-608 profit band (about 16.0-20.0M safest, 15.7-19.6M balanced) and the one-day-snapshot note by the profit tile; W4 label route totals 'training hours'; W5 Monkfish buy/sell inversion in the price table is source data.",
+  "Governance: the template and tools/assemble.py, validate.py, ledger.py and xp.py changed after QA 044 with no ledger governance note; QA confirmed the outputs functionally (exact reproduction of content.json, guide.html = current template + content, ledger checks intact). Director should record a governance note."
  ],
  "provenance": {
   "agent": "qa-auditor",
-  "started_at": "2026-11-21T06:08:30Z",
-  "finished_at": "2026-11-21T08:04:11Z",
-  "dispatch_ref": "dispatch/044-qa-auditor.md",
+  "started_at": "2026-11-22T03:47:30Z",
+  "finished_at": "2026-11-22T03:58:00Z",
+  "dispatch_ref": "dispatch/050-qa-auditor.md",
   "inputs": [
    {
     "path": ".claude/agents/qa-auditor.md",
     "sha256": "7a7a5782e6eaee1bb6f93e07520ae5edfb17c70c4be0221e052ca8d701854886"
    },
    {
-    "path": "dispatch/044-qa-auditor.md",
-    "sha256": "cc4bd517575d5d292006e2f741c18092b654ec8d65b87ed440a75e70f055f011"
-   },
-   {
-    "path": "dispatch/042-route-strategist.md",
-    "sha256": "643dd0a0c9f4e4257dd613e94f2b2fe179c28c7f53ab9118fb266e532e587b82"
-   },
-   {
-    "path": "dispatch/043-red-team.md",
-    "sha256": "ec691c70e869d33e3c175c90c1cb58c1a0abcdd773e3778db82aebb0c6cf83dc"
-   },
-   {
-    "path": "content.json",
-    "sha256": "261e7b11441b56f32676481f97047295a87c6d6f94e6a545b3c3073c2a00cf48"
-   },
-   {
-    "path": "guide.html",
-    "sha256": "508b2bc6e783904d25960295991c8780ac1efae20bc42c93c98c120255c16a3e"
-   },
-   {
-    "path": "plan.json",
-    "sha256": "5a0296c74446ee83ad3266581aa39a11f9316ef8042fdf1866471c483658672a"
-   },
-   {
-    "path": "redteam.json",
-    "sha256": "d0b23e5dd9ddfb3d22547248a12651601c8abdad304e35c46d126b7fcbbc1eb1"
-   },
-   {
-    "path": "risk.json",
-    "sha256": "74bbfca5c25eaba0f88aac5fddf412c2392bd7d7607cde0239ceaf3b5b701d12"
-   },
-   {
-    "path": "facts.json",
-    "sha256": "70fcb7eed3ab243ba3a64501f766da075bc69de64e8cdbc9fe39ed53f456fa12"
-   },
-   {
-    "path": "prose.json",
-    "sha256": "d86d39bb663df04dcb056607aa87c408f313b58fb5422f7dd29e753a99568028"
-   },
-   {
-    "path": "calc.json",
-    "sha256": "36391dcc75e537051ab5c6a4d69510cb54854d08ce05066a8a028c5cac817c76"
-   },
-   {
-    "path": "calc-review.json",
-    "sha256": "92b02588de0064ff013ce0f1e77789e25040ff06311ccd511b8176593cbeaa1b"
-   },
-   {
-    "path": "brief.json",
-    "sha256": "c27aa6bc9969f981aed9185637565c2792f58b80646cc531afa503e27f969389"
-   },
-   {
-    "path": "research/updates.json",
-    "sha256": "b600273a97297879bd2c38e663ed79bc8c55973cd793a7edf041690f2be988c5"
-   },
-   {
-    "path": "ledger.jsonl",
-    "sha256": "25243ce75de7a4d748a8362befe8d4f3189340cc6f19d3bca4d74b0fe5a24438"
+    "path": "docs/10-production-efficiency.md",
+    "sha256": "2e7175f317aef486b1a3e300c00a2349a0b9fddcc9aa4bdc6a5aad341bee44d7"
    },
    {
     "path": "schemas/qa.schema.json",
@@ -1357,15 +205,31 @@
    },
    {
     "path": "templates/guide.html",
-    "sha256": "500e40ac55e4e4544a61ce5e6e1013dd6c3d27fe04bd6472ce6650fa7604dc7f"
+    "sha256": "44415e28c413be3dc0961866a7341d513b137b1bbf9761286bebf86e6b4ea6a4"
    },
    {
     "path": "tools/assemble.py",
-    "sha256": "7796e5fc4122b1a57cce63fa019717895762ada8d6db7a8b3363d3da9a9c1d91"
+    "sha256": "ae77cc7e53650f9c882ad7abf9f7d031437ca3727f7d64ef23bd0a3a01a05266"
    },
    {
-    "path": "tools/danger.py",
-    "sha256": "773d0185f241c5e0ebb8e692851429eb8affc4a66a09aa59e1fe8e3c052efe1e"
+    "path": "tools/render.py",
+    "sha256": "1988a15e9cb75b56b251af02db69193c0fcaaa18e906dd8ffc7eb78f84e5a89f"
+   },
+   {
+    "path": "tools/validate.py",
+    "sha256": "3066039a6e6d870a9cb253440091d35019b681e2cfdda5156c296a96755bd923"
+   },
+   {
+    "path": "tools/ledger.py",
+    "sha256": "a50e8df1fe192a5d5f7060d6b871a6539342bedd6235843e10e0bc1cb849077f"
+   },
+   {
+    "path": "tools/xp.py",
+    "sha256": "a64be3ecf6f471568ecd4d231118c74fc704cbfc28e59ff6b6c0fffdd8493590"
+   },
+   {
+    "path": "tools/prices.py",
+    "sha256": "d008668c70db9888789ffa0bf02fbf6387ae7f841f008168505000696d4a5e34"
    },
    {
     "path": "tools/wiki.py",
@@ -1376,72 +240,89 @@
     "sha256": "ff7e17d4e21787e518380705e3f4dade289c606b6f08401be44dbe8915c68dc8"
    },
    {
-    "path": "tools/validate.py",
-    "sha256": "3daca665c57209831c45eef81b344f951a90dc9a7411c8074930664a9eff5ee0"
-   },
-   {
     "path": "tools/audit.py",
     "sha256": "623e1a8628c8cdbf602618baa6a6c687b13767ee0b20c2f64cdfd751912c3739"
    },
    {
-    "path": "tools/ledger.py",
-    "sha256": "06420ea24e40fb2fb78709b36710a9cbed97969efaafb4696f0988aba8e87442"
+    "path": "dispatch/050-qa-auditor.md",
+    "sha256": "a338ba6c02966d0cc41a87f66e4b88b95927cf9ac43d1f00a2b42f3ba0e717b9"
    },
    {
-    "path": "policy/danger-calibration.json",
-    "sha256": "15870680b0d7c5b918a4662fa4938dd147a368bd279358a49538ca26175037f2"
+    "path": "content.json",
+    "sha256": "475b8102652fee75e64166fdb38b903739e71838147033ca2fb623530970748b"
+   },
+   {
+    "path": "guide.html",
+    "sha256": "39b9fc1868fafc69139053d973f0c0f1b2ed10b114c8135fd1a7a7e379aad413"
+   },
+   {
+    "path": "plan.json",
+    "sha256": "bbbbe6e9e60a09ad7d25a790fa4dedf91e0ffb5946fbc04f7f29eb1ebf0b75ee"
+   },
+   {
+    "path": "calc.json",
+    "sha256": "b8d7b9c7b5e6951c027355e1bd9552abb472173c7db64a545b0da22e9b7a9909"
+   },
+   {
+    "path": "calc-review.json",
+    "sha256": "006290bc6b5541342f9322094a5eb7afa068fef0574aa2ec5196ad1e54faa8cd"
+   },
+   {
+    "path": "prices.json",
+    "sha256": "a3a7643f5c1c015c8f275bc7b9a9e11f1b53417496efe1660ef8d83e896254e5"
+   },
+   {
+    "path": "facts.json",
+    "sha256": "81096ceb8f4ecb2b8eb72d9ef82ddacebae6cbe1f553791883184fee4f2098ec"
+   },
+   {
+    "path": "prose.json",
+    "sha256": "06d70a89428d9cbea821decb473c17f1fd4ab2eaf8c0f5f3316799e5e10e256a"
+   },
+   {
+    "path": "risk.json",
+    "sha256": "74bbfca5c25eaba0f88aac5fddf412c2392bd7d7607cde0239ceaf3b5b701d12"
+   },
+   {
+    "path": "redteam.json",
+    "sha256": "d0b23e5dd9ddfb3d22547248a12651601c8abdad304e35c46d126b7fcbbc1eb1"
+   },
+   {
+    "path": "research/claims-rfi-05.json",
+    "sha256": "bd8bd16bb4e0d7f44ef02c6447d3119dfa354f6c00f3298a861ce8e46d910ba7"
+   },
+   {
+    "path": "facts-parts/rfi-03.json",
+    "sha256": "b63af1a2b81aa27174fa09817a0bded916c6ef7390899b57e57e07c9f792a9d8"
+   },
+   {
+    "path": "ledger.jsonl",
+    "sha256": "924d07c99e083385574f04f80ebe102887448262abc41bab0c2ae798bb71be67"
+   },
+   {
+    "path": "screens/desktop.png",
+    "sha256": "e8c15379c4b23f800c31919581a94d81571a7cfaa2d1fa3ea5ee418158a013fb"
+   },
+   {
+    "path": "screens/mobile.png",
+    "sha256": "90b86dddb6a5412021e5b3cc4afca1fefe9f19f3e74700196553963055174001"
    }
   ],
   "actions": [
    {
-    "kind": "read",
-    "detail": "Read QA charter (sha256 7a7a5782...), dispatch 044 (equals received prompt), previous qa.json (QA 041) and ledger seq 185-210."
-   },
-   {
     "kind": "verify",
     "detail": "python3 tools/ledger.py verify agility-1-99-20261119",
-    "outcome": "OK; WARN unsealed calc-draft.json, guide.html"
-   },
-   {
-    "kind": "compute",
-    "detail": "Compared every QA 041 input hash with current files",
-    "outcome": "changed: content.json, guide.html, plan.json, redteam.json, ledger.jsonl, tools/assemble.py; all other inputs unchanged (checks on them stand)"
-   },
-   {
-    "kind": "read",
-    "detail": "Read tools/assemble.py in full (7796e5fc...)",
-    "outcome": "only the facts collection changed"
-   },
-   {
-    "kind": "compute",
-    "detail": "Ran tools/assemble.py main() in memory with save_json patched (no file written) and compared with content.json",
-    "outcome": "identical except assembled_at; 23 steps, 2 routes, 314 facts"
-   },
-   {
-    "kind": "compute",
-    "detail": "Cited-but-missing: F-#### ids in content.json outside facts vs shipped facts; newly shipped = shipped minus the old assembler 'used' set",
-    "outcome": "0 missing; 59 newly shipped; 6 behind factor score >=4"
-   },
-   {
-    "kind": "fetch",
-    "detail": "tools/wiki.py _rev_query (latest revision, raw wikitext) for every source page of 25 sampled facts (F-1066, F-2091, F-2105, F-3064, F-3065, F-3067, F-0003, F-0010, F-0017, F-0052, F-1113, F-1115, F-2611, F-2614, F-2615, F-4001, F-4003, F-4060, F-2095, F-2552, F-3013, F-1070, F-3012, F-1068, F-0025); quote segments matched after whitespace normalisation; 2 residual misses checked by hand",
-    "target": "https://oldschool.runescape.wiki/api.php",
-    "outcome": "25/25 match"
-   },
-   {
-    "kind": "read",
-    "detail": "Walked content.json, plan.json and guide.html for every escape-crystal instruction (S12 rationale, card, prose, DP02-B, DP08-B, risk_rules[4], S06/S16/S17)",
-    "outcome": "consistent; old wording only in history text"
+    "outcome": "OK; 2 unsealed draft warnings"
    },
    {
     "kind": "verify",
     "detail": "python3 tools/validate.py agility-1-99-20261119 release",
-    "outcome": "0 fail, 60 warn"
+    "outcome": "0 fail, 62 warn"
    },
    {
     "kind": "verify",
     "detail": "python3 tools/audit.py crosscheck agility-1-99-20261119",
-    "outcome": "WARN only (no Sentry observations; unsealed drafts)"
+    "outcome": "warn only (unsealed draft; no Sentry observations)"
    },
    {
     "kind": "verify",
@@ -1450,62 +331,95 @@
    },
    {
     "kind": "read",
-    "detail": "redteam.json statuses",
-    "outcome": "RT-05/07/15/17 open (medium/medium/low/low); RT-16 and all others fixed; no open critical/high"
+    "detail": "ledger seq 205-252, dispatch 050, calc-review.json findings Q-01..Q-15, plan income_per_hour, content intro/outro/assumptions/prices, risk S05/S12/S17, tools/ledger.py (seal/sign/verify/release_status), tools/render.py, template card/tile code"
    },
    {
-    "kind": "write",
-    "detail": "jobs/agility-1-99-20261119/qa.json (this file; not sealed)"
+    "kind": "fetch",
+    "detail": "tools/wiki.py page 'Amylase pack' and 'Amylase crystal'",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15316439 ; oldid=15375340",
+    "outcome": "live revisions unchanged; quotes present"
+   },
+   {
+    "kind": "fetch",
+    "detail": "tools/wiki.py page 'Rooftop Agility Courses', 'Mark of Grace', 'Agility training', 'Falador Rooftop Course', 'Canifis Rooftop Course', 'Graceful outfit'",
+    "target": "oldid 15337972, 15403415, 15369875, 15319531, 15374436, 15403851",
+    "outcome": "all live revisions unchanged; quotes present"
+   },
+   {
+    "kind": "fetch",
+    "detail": "tools/prices.py lookup 'Amylase crystal' and GET /api/v2/osrs-hc/latest?id=12640",
+    "target": "https://prices.runescape.wiki/api/v2/osrs-hc/latest?id=12640",
+    "outcome": "high 608 / low 487, same as snapshot (0% change)"
+   },
+   {
+    "kind": "fetch",
+    "detail": "GET main-game /api/v1/osrs/latest?id=12640 for comparison",
+    "target": "https://prices.runescape.wiki/api/v1/osrs/latest?id=12640",
+    "outcome": "high 403 / low 400: distinct economy from HW"
+   },
+   {
+    "kind": "fetch",
+    "detail": "tools/wiki.py new-pages --ns Update --since 2026-11-19; page 'Update:Gielinor Gazette - November 2026' grep agility/marks/graceful/amylase/hardcore",
+    "outcome": "nothing Agility-relevant"
+   },
+   {
+    "kind": "compute",
+    "detail": "Independent profit recompute from calc step hours x plan marks/h x 10 crystals/mark x 548",
+    "outcome": "18,006,837 / 17,645,645 vs calc 18,006,836 / 17,645,644"
+   },
+   {
+    "kind": "compute",
+    "detail": "In-memory run of tools/assemble.py main() with save_json captured; diff vs content.json",
+    "outcome": "identical except assembled_at"
+   },
+   {
+    "kind": "compute",
+    "detail": "guide.html vs templates/guide.html with data blobs removed",
+    "outcome": "only hash, title and release-state substitutions differ"
    },
    {
     "kind": "verify",
-    "detail": "python3 tools/ledger.py sign agility-1-99-20261119 --role qa --author qa-auditor --subject content.json --decision approve"
+    "detail": "Playwright scripts (scratchpad qa050/read.mjs, dom.mjs, mit.mjs, tiles.mjs): hot-card styles, unresolved tokens, mitigation/stop-condition coverage, tile values, screenshots",
+    "outcome": "hot cards red on all headline>=45 steps; 0 unresolved tokens; 149/149 mitigations and stop conditions render; tiles show profit"
+   },
+   {
+    "kind": "write",
+    "detail": "jobs/agility-1-99-20261119/qa.json"
+   },
+   {
+    "kind": "decide",
+    "detail": "approve; sign via tools/ledger.py sign --role qa"
    }
   ],
   "decisions": [
    {
-    "decision": "Do not repeat checks whose inputs did not change",
-    "reason": "Dispatch 044; risk.json, prose.json, facts.json, calc.json, brief, updates, danger.py and policy hashes equal QA 041's, so its 85 live checks, score reproduction and recency sweep stand. Score reproduction is re-covered anyway by the exact in-memory re-assembly.",
-    "alternatives": [
-     "full re-audit"
+    "decision": "Scope the live spot-checks to the 12 facts v2 introduced or newly relies on",
+    "reason": "Dispatch: audit only what v2 changed; risk.json and facts behind danger ratings unchanged, and 110 live checks from QA 041/044 stand.",
+    "alternatives_considered": [
+     "Re-sample 10% of all 323 shipped facts (unnecessary: their sources and ratings are unchanged)"
     ]
    },
    {
-    "decision": "Sample 25 of the 57 not-yet-checked newly shipped facts",
-    "reason": "Dispatch asks >=10 incl. every factor>=4 fact; charter also requires every new_content fact, so all 6 factor>=4 + all 11 new_content + 8 random (seed 20261121) were taken.",
-    "alternatives": [
-     "10 facts only"
+    "decision": "Treat W1-W5 as warnings, not failures",
+    "reason": "They are text/presentation defects with no safety effect: every safety warning and mandatory mitigation is present, red marking is correct, profit qualifiers (mid price, all marks sold, no GE tax, Graceful not deducted) are disclosed. A rejection would cost a full fix round for cosmetic items.",
+    "alternatives_considered": [
+     "Reject for the rationale slabs (owner style) and the missing Q-11 price band"
     ]
    },
    {
-    "decision": "Treat the unrendered prerequisite checklist as a note, not a fail",
-    "reason": "The assembler and template never shipped it (also before); the fix is present in plan.json and every rendered surface (S12 rationale, card, prose, DPs, general rule) agrees.",
-    "alternatives": [
-     "fail check 6"
-    ]
-   },
-   {
-    "decision": "Accept R2 as resolved without accept_risk entries",
-    "reason": "The owner chose to re-open, not accept; red team now shows the three findings as open, so nothing is claimed as accepted. The answer is recorded verbatim as a ledger decision (seq 194).",
-    "alternatives": [
-     "require accept_risk entries"
-    ]
-   },
-   {
-    "decision": "Approve",
-    "reason": "No check fails; open findings are medium/low calibration items the owner chose to keep open; dangerous content is disclosed (owner's informed danger policy).",
-    "alternatives": [
-     "reject"
+    "decision": "Accept the undocumented tool/template edits on functional evidence",
+    "reason": "Exact reproduction of content.json and guide.html from sealed inputs plus a read of ledger.py's trust checks; flagged for a governance note.",
+    "alternatives_considered": [
+     "Reject until a governance record exists"
     ]
    }
   ],
   "limitations": [
-   "This run was interrupted by a usage limit after the checks had started and before anything was written or signed (ledger note seq 210); it resumed at 08:02 UTC on 2026-11-21 and continued from the completed checks. validate, audit crosscheck and the browser check were run after the resume, on the same content.json (261e7b11441b) and guide.html (508b2bc6e783).",
-   "No Sentry observations exist for this job, so the tools/assemble.py edit and the other agents' self-reported work cannot be matched to observed tool calls; the exact in-memory re-assembly and the live re-fetches are the substitute evidence.",
-   "The owner's answer 'Re-open all three' is known only from the Director's ledger record (seq 194); QA cannot independently observe the owner's AskUserQuestion exchange.",
-   "Spot-checks confirm that the quoted source text is on the live page; they do not re-derive computed values.",
-   "32 of the 57 newly shipped, not-yet-checked facts were not live-checked (sample of 25); they are in the sealed, verified facts.json.",
-   "plan.json prerequisite_checklist is not rendered in the guide, so its corrected escape-crystal item was verified in plan.json only."
+   "No pre-v2 copy of prose.json exists, so 'every v1 warning kept' was checked against risk.json (unchanged) mandatory mitigations and stop conditions plus the three named warnings, not by a line-by-line diff of old and new prose.",
+   "No old copies of the changed tools/template exist; their changes were checked by output reproduction, not by diff.",
+   "No Sentry observations exist for this job, so self-reported agent actions could not be compared to observed tool calls.",
+   "The price check is one moment; the amylase price is a single 24h snapshot and will move.",
+   "Hardcore Worlds tradeability of amylase packs (F-5903, main-game wiki flag) was not independently confirmed for HW; it does not affect the profit, which sells crystals only."
   ]
  }
 }
