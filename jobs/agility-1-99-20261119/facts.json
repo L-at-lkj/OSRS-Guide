@@ -29487,6 +29487,747 @@
       "verified_at": "2026-11-22T04:00:00Z",
       "independent": true,
       "released": "2014-07-03"
+    },
+    {
+      "fact_id": "F-5950",
+      "claim_id": "C-RFI-501",
+      "subject": "The Writing's on the Wall",
+      "attribute": "quest_difficulty",
+      "value": "Intermediate",
+      "unit": null,
+      "statement": "The official quest difficulty of The Writing's on the Wall is Intermediate.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "The Writing's on the Wall",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404622",
+          "revid": 15404622,
+          "retrieved": "2026-11-22",
+          "quote": "|difficulty = Intermediate",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5951",
+      "claim_id": "C-RFI-502",
+      "subject": "The Writing's on the Wall",
+      "attribute": "recommended_stats",
+      "value": {
+        "combat": null,
+        "stats": []
+      },
+      "unit": null,
+      "statement": "The Writing's on the Wall: The wiki lists no recommended combat level or skill levels; the recommended field is only inventory/teleport advice.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "The Writing's on the Wall",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404622",
+          "revid": 15404622,
+          "retrieved": "2026-11-22",
+          "quote": "|recommended = * Several empty inventory slots\n* Stamina or energy potions",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5952",
+      "claim_id": "C-RFI-503",
+      "subject": "The Depths of Despair",
+      "attribute": "quest_difficulty",
+      "value": "Intermediate",
+      "unit": null,
+      "statement": "The official quest difficulty of The Depths of Despair is Intermediate.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "The Depths of Despair",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15365598",
+          "revid": 15365598,
+          "retrieved": "2026-11-22",
+          "quote": "|difficulty = Intermediate",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5953",
+      "claim_id": "C-RFI-504",
+      "subject": "The Depths of Despair",
+      "attribute": "recommended_stats",
+      "value": {
+        "combat": 15,
+        "stats": []
+      },
+      "unit": null,
+      "statement": "The Depths of Despair: Recommended: Combat level 15.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "The Depths of Despair",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15365598",
+          "revid": 15365598,
+          "retrieved": "2026-11-22",
+          "quote": "|recommended = *{{SCP|Combat|15|link=yes}}",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5954",
+      "claim_id": "C-RFI-505",
+      "subject": "Icthlarin's Little Helper",
+      "attribute": "quest_difficulty",
+      "value": "Intermediate",
+      "unit": null,
+      "statement": "The official quest difficulty of Icthlarin's Little Helper is Intermediate.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Icthlarin's Little Helper",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15401465",
+          "revid": 15401465,
+          "retrieved": "2026-11-22",
+          "quote": "|difficulty = Intermediate",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5955",
+      "claim_id": "C-RFI-506",
+      "subject": "Icthlarin's Little Helper",
+      "attribute": "recommended_stats",
+      "value": {
+        "combat": 50,
+        "stats": [
+          "Agility 35"
+        ]
+      },
+      "unit": null,
+      "statement": "Icthlarin's Little Helper: Recommended: Combat level 50 and Agility 35.",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Icthlarin's Little Helper",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15401465",
+          "revid": 15401465,
+          "retrieved": "2026-11-22",
+          "quote": "|recommended = * {{SCP|Combat|50|link=yes}}\n* {{SCP|Agility|35}} [[Agility]] to jump over the pit in the pyramid",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null,
+      "caveat": "Combat 50 and Agility 35 both confirmed; the Agility 35 line is scoped 'to jump over the pit in the pyramid (higher agility helps even more)', so it is a minimum comfortable level for that obstacle only."
+    },
+    {
+      "fact_id": "F-5956",
+      "claim_id": "C-RFI-507",
+      "subject": "A Tail of Two Cats",
+      "attribute": "quest_difficulty",
+      "value": "Intermediate",
+      "unit": null,
+      "statement": "The official quest difficulty of A Tail of Two Cats is Intermediate.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "A Tail of Two Cats",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15394232",
+          "revid": 15394232,
+          "retrieved": "2026-11-22",
+          "quote": "|difficulty = Intermediate",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5957",
+      "claim_id": "C-RFI-508",
+      "subject": "A Tail of Two Cats",
+      "attribute": "recommended_stats",
+      "value": {
+        "combat": null,
+        "stats": []
+      },
+      "unit": null,
+      "statement": "A Tail of Two Cats: The wiki lists no recommended combat level or skill levels; only travel and desert-supply advice (a fairy ring route mentions 62 Agility as a requirement of that route, not a quest recommendation).",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "A Tail of Two Cats",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15394232",
+          "revid": 15394232,
+          "retrieved": "2026-11-22",
+          "quote": "|recommended = *Fast travel to Burthorpe ([[games necklace]] or [[Burthorpe Games Room]] [[minigame]] teleport)",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null,
+      "caveat": "Confirmed no combat or skill recommendation in the |recommended field. The only Agility mention (62, fairy ring route needing partial Beneath Cursed Sands) is a requirement of an optional travel route, not a quest recommendation."
+    },
+    {
+      "fact_id": "F-5958",
+      "claim_id": "C-RFI-509",
+      "subject": "Underground Pass",
+      "attribute": "quest_difficulty",
+      "value": "Experienced",
+      "unit": null,
+      "statement": "The official quest difficulty of Underground Pass is Experienced.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Underground Pass",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15392817",
+          "revid": 15392817,
+          "retrieved": "2026-11-22",
+          "quote": "|difficulty = Experienced",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5959",
+      "claim_id": "C-RFI-510",
+      "subject": "Underground Pass",
+      "attribute": "recommended_stats",
+      "value": {
+        "combat": 60,
+        "stats": [
+          "Agility 50+",
+          "Thieving 50",
+          "Prayer 43"
+        ]
+      },
+      "unit": null,
+      "statement": "Underground Pass: Recommended: Combat 60, Agility 50+, Thieving 50 (shortcut), Prayer 43 (Protect from Melee); combat 79 stops Blessed spiders being aggressive.",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Underground Pass",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15392817",
+          "revid": 15392817,
+          "retrieved": "2026-11-22",
+          "quote": "|recommended = * [[Plank]] (obtainable during quest)\n* {{SCP|Combat|60|link=yes}}\n* {{SCP|Agility|50+|link=yes}} to reduce the risk of failing obstacles.\n* {{SCP|Thieving|50|link=yes}} for a helpful shortcut.",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null,
+      "caveat": "All four stats confirmed in the |recommended field. Agility 50+ is a floor ('+' kept); Thieving 50 is for an optional shortcut; Prayer 43 is the alternative to armour for Protect from Melee. Combat 79 (stops Blessed spiders being aggressive) is a separate line and is not part of the stats value."
+    },
+    {
+      "fact_id": "F-5960",
+      "claim_id": "C-RFI-511",
+      "subject": "Regicide",
+      "attribute": "quest_difficulty",
+      "value": "Experienced",
+      "unit": null,
+      "statement": "The official quest difficulty of Regicide is Experienced.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Regicide",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396547",
+          "revid": 15396547,
+          "retrieved": "2026-11-22",
+          "quote": "|difficulty = Experienced",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5961",
+      "claim_id": "C-RFI-512",
+      "subject": "Regicide",
+      "attribute": "recommended_stats",
+      "value": {
+        "combat": 60,
+        "stats": []
+      },
+      "unit": null,
+      "statement": "Regicide: Recommended: Combat level 60.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Regicide",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396547",
+          "revid": 15396547,
+          "retrieved": "2026-11-22",
+          "quote": "|recommended = * {{SCP|Combat|60|link=yes}}",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5962",
+      "claim_id": "C-RFI-513",
+      "subject": "The Fremennik Trials",
+      "attribute": "quest_difficulty",
+      "value": "Intermediate",
+      "unit": null,
+      "statement": "The official quest difficulty of The Fremennik Trials is Intermediate.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "The Fremennik Trials",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15411210",
+          "revid": 15411210,
+          "retrieved": "2026-11-22",
+          "quote": "|difficulty = Intermediate",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5963",
+      "claim_id": "C-RFI-514",
+      "subject": "The Fremennik Trials",
+      "attribute": "recommended_stats",
+      "value": {
+        "combat": 40,
+        "stats": [
+          "Agility 48"
+        ]
+      },
+      "unit": null,
+      "statement": "The Fremennik Trials: Recommended: Combat level 40 and Agility 48 (when locating the Draugen).",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "The Fremennik Trials",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15411210",
+          "revid": 15411210,
+          "retrieved": "2026-11-22",
+          "quote": "|recommended = * {{SCP|Combat|40|link=yes}}\n* {{SCP|Agility|48|link=yes}} (when locating the [[Draugen]])",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5964",
+      "claim_id": "C-RFI-515",
+      "subject": "Death Plateau",
+      "attribute": "quest_difficulty",
+      "value": "Novice",
+      "unit": null,
+      "statement": "The official quest difficulty of Death Plateau is Novice.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Death Plateau",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15382205",
+          "revid": 15382205,
+          "retrieved": "2026-11-22",
+          "quote": "|difficulty = Novice",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5965",
+      "claim_id": "C-RFI-516",
+      "subject": "Death Plateau",
+      "attribute": "recommended_stats",
+      "value": {
+        "combat": null,
+        "stats": []
+      },
+      "unit": null,
+      "statement": "Death Plateau: The wiki lists no recommended combat level or skill levels; only items (Blurberry special, teleports, energy).",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Death Plateau",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15382205",
+          "revid": 15382205,
+          "retrieved": "2026-11-22",
+          "quote": "|recommended = *[[Premade blurb' sp.]] or [[Blurberry special]] (optional, but strongly recommended, as it trivialises the dice betting segment)",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5966",
+      "claim_id": "C-RFI-517",
+      "subject": "Troll Stronghold",
+      "attribute": "quest_difficulty",
+      "value": "Intermediate",
+      "unit": null,
+      "statement": "The official quest difficulty of Troll Stronghold is Intermediate.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Troll Stronghold",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15410562",
+          "revid": 15410562,
+          "retrieved": "2026-11-22",
+          "quote": "|difficulty = Intermediate",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5967",
+      "claim_id": "C-RFI-518",
+      "subject": "Troll Stronghold",
+      "attribute": "recommended_stats",
+      "value": {
+        "combat": 50,
+        "stats": [
+          "Prayer 43",
+          "Thieving 30",
+          "Agility 47"
+        ]
+      },
+      "unit": null,
+      "statement": "Troll Stronghold: Recommended: Combat 50, Prayer 43, Thieving 30 (boostable), and Agility 47 (requirement line says 47 is recommended; 15 required).",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Troll Stronghold",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15410562",
+          "revid": 15410562,
+          "retrieved": "2026-11-22",
+          "quote": "|recommended = * {{SCP|Combat|50|link=yes}}\n*{{SCP|Prayer|43|link=yes}} for [[Protect from Melee]] and [[Protect from Missiles]]\n*At least {{SCP|Thieving|30|link=yes}} {{Boostable|yes}} to prevent a fight with two level 71 guards",
+          "fetched_by": "fact-verifier"
+        },
+        {
+          "tier": "T2",
+          "title": "Troll Stronghold",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15410562",
+          "revid": 15410562,
+          "retrieved": "2026-11-22",
+          "quote": "* {{SCP|Agility|15|link=yes}} {{Boostable|yes}} {{Questreqstart|no}} (47 is recommended)",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null,
+      "caveat": "Combat 50, Prayer 43 and Thieving 30 are in the |recommended field. Agility 47 is NOT in that field: it comes from the |requirements line 'Agility 15 ... (47 is recommended)', so it is a recommendation stated in the requirements field. Thieving 30 is boostable."
+    },
+    {
+      "fact_id": "F-5968",
+      "claim_id": "C-RFI-519",
+      "subject": "Troll Romance",
+      "attribute": "quest_difficulty",
+      "value": "Intermediate",
+      "unit": null,
+      "statement": "The official quest difficulty of Troll Romance is Intermediate.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Troll Romance",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375194",
+          "revid": 15375194,
+          "retrieved": "2026-11-22",
+          "quote": "|difficulty = Intermediate",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5969",
+      "claim_id": "C-RFI-520",
+      "subject": "Troll Romance",
+      "attribute": "recommended_stats",
+      "value": {
+        "combat": 50,
+        "stats": []
+      },
+      "unit": null,
+      "statement": "Troll Romance: Recommended: Combat level 50.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Troll Romance",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375194",
+          "revid": 15375194,
+          "retrieved": "2026-11-22",
+          "quote": "|recommended = * {{SCP|Combat|50|link=yes}}",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5970",
+      "claim_id": "C-RFI-521",
+      "subject": "Druidic Ritual",
+      "attribute": "quest_difficulty",
+      "value": "Novice",
+      "unit": null,
+      "statement": "The official quest difficulty of Druidic Ritual is Novice.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Druidic Ritual",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15405943",
+          "revid": 15405943,
+          "retrieved": "2026-11-22",
+          "quote": "|difficulty = Novice",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5971",
+      "claim_id": "C-RFI-522",
+      "subject": "Druidic Ritual",
+      "attribute": "recommended_stats",
+      "value": {
+        "combat": 10,
+        "stats": []
+      },
+      "unit": null,
+      "statement": "Druidic Ritual: Recommended: Combat level 10.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Druidic Ritual",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15405943",
+          "revid": 15405943,
+          "retrieved": "2026-11-22",
+          "quote": "|recommended = \n*{{SCP|Combat|10|link=yes}}",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5972",
+      "claim_id": "C-RFI-523",
+      "subject": "Black Knights' Fortress",
+      "attribute": "quest_difficulty",
+      "value": "Intermediate",
+      "unit": null,
+      "statement": "The official quest difficulty of Black Knights' Fortress is Intermediate.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Black Knights' Fortress",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403019",
+          "revid": 15403019,
+          "retrieved": "2026-11-22",
+          "quote": "|difficulty = Intermediate",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5973",
+      "claim_id": "C-RFI-524",
+      "subject": "Black Knights' Fortress",
+      "attribute": "recommended_stats",
+      "value": {
+        "combat": 15,
+        "stats": []
+      },
+      "unit": null,
+      "statement": "Black Knights' Fortress: Recommended: Combat level 15.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Black Knights' Fortress",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403019",
+          "revid": 15403019,
+          "retrieved": "2026-11-22",
+          "quote": "|recommended = * {{SCP|Combat|15|link=yes}}",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5974",
+      "claim_id": "C-RFI-525",
+      "subject": "Recruitment Drive",
+      "attribute": "quest_difficulty",
+      "value": "Novice",
+      "unit": null,
+      "statement": "The official quest difficulty of Recruitment Drive is Novice.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Recruitment Drive",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15395322",
+          "revid": 15395322,
+          "retrieved": "2026-11-22",
+          "quote": "|difficulty = Novice",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5975",
+      "claim_id": "C-RFI-526",
+      "subject": "Recruitment Drive",
+      "attribute": "recommended_stats",
+      "value": {
+        "combat": 10,
+        "stats": [
+          "Strength 5"
+        ]
+      },
+      "unit": null,
+      "statement": "Recruitment Drive: Recommended: Combat level 10 and Strength 5.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Recruitment Drive",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15395322",
+          "revid": 15395322,
+          "retrieved": "2026-11-22",
+          "quote": "|recommended = *{{SCP|Combat|10|link=yes}}\n*{{SCP|Strength|5|link=yes}}",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5976",
+      "claim_id": "C-RFI-527",
+      "subject": "Death on the Isle",
+      "attribute": "quest_difficulty",
+      "value": "Intermediate",
+      "unit": null,
+      "statement": "The official quest difficulty of Death on the Isle is Intermediate.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Death on the Isle",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375163",
+          "revid": 15375163,
+          "retrieved": "2026-11-22",
+          "quote": "|difficulty = Intermediate",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
+    },
+    {
+      "fact_id": "F-5977",
+      "claim_id": "C-RFI-528",
+      "subject": "Death on the Isle",
+      "attribute": "recommended_stats",
+      "value": {
+        "combat": 40,
+        "stats": []
+      },
+      "unit": null,
+      "statement": "Death on the Isle: Recommended: Combat level 40.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Death on the Isle",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375163",
+          "revid": 15375163,
+          "retrieved": "2026-11-22",
+          "quote": "|recommended =*{{SCP|Combat|40}}",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:20:00Z",
+      "independent": true,
+      "released": null
     }
   ],
   "rfi": [
@@ -29783,6 +30524,26 @@
       ]
     },
     {
+      "question": "Hardcore Worlds mapping of these 14 quests (availability, and whether their combat/skill recommendations differ) is unchecked; all values are main-game wiki infobox data.",
+      "desk": "quest-archivist",
+      "refs": [
+        "C-RFI-501",
+        "C-RFI-503",
+        "C-RFI-505",
+        "C-RFI-507",
+        "C-RFI-509",
+        "C-RFI-511",
+        "C-RFI-513",
+        "C-RFI-515",
+        "C-RFI-517",
+        "C-RFI-519",
+        "C-RFI-521",
+        "C-RFI-523",
+        "C-RFI-525",
+        "C-RFI-527"
+      ]
+    },
+    {
       "desk": "threats",
       "question": "Death to the Dorgeshuun: what is Sigmund's (level 50) max hit and attack style? He must be killed with Melee or Magic, and the owner's Magic is 44 with Ranged unusable. Also, is the Lumbridge Swamp Caves route (Wall Beasts max 18, poisonous Cave Crawlers) required for this account, i.e. has Tears of Guthix been done?",
       "refs": [
@@ -29926,8 +30687,8 @@
   ],
   "provenance": {
     "agent": "fact-verifier",
-    "started_at": "2026-11-22T03:40:59+00:00",
-    "finished_at": "2026-11-22T03:40:59+00:00",
+    "started_at": "2026-11-22T04:03:09+00:00",
+    "finished_at": "2026-11-22T04:03:09+00:00",
     "inputs": [
       {
         "path": "brief.json",
@@ -30160,6 +30921,22 @@
       {
         "path": "facts-parts/rfi-03.json",
         "sha256": "b63af1a2b81aa27174fa09817a0bded916c6ef7390899b57e57e07c9f792a9d8"
+      },
+      {
+        "path": "research/claims-rfi-06.json",
+        "sha256": "ec0e766e20f57fda2e239f402e07dcf19213e234e26bf923bc8d5ca77d8534a1"
+      },
+      {
+        "path": ".claude/agents/fact-verifier.md",
+        "sha256": "61bff653ddf324af3fd3b78496c155a195e46cbf52e2ab087ceffacd1bdecf34"
+      },
+      {
+        "path": "schemas/facts.schema.json",
+        "sha256": "e098fdf95c8a68673eecb8880afcddbf608298a25d485bd3a83a80a75c8b7bb2"
+      },
+      {
+        "path": "facts-parts/rfi-04.json",
+        "sha256": "70ef20a7b6f8cc3fff6d9c7817276e66fcc261e5dfa93187dc7e778a7b1f731a"
       },
       {
         "path": "brief.json",
@@ -31303,6 +32080,104 @@
         "detail": "[rfi-03] wrote facts-parts/rfi-03.json"
       },
       {
+        "kind": "verify",
+        "detail": "[rfi-04] python3 tools/ledger.py verify agility-1-99-20261119",
+        "outcome": "OK: ledger chain and all seals intact"
+      },
+      {
+        "kind": "fetch",
+        "detail": "[rfi-04] wiki.py rev 15404622 (The Writing's on the Wall, researcher revision) and wiki.py page 'The Writing's on the Wall' (current)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15404622",
+        "outcome": "current revid is 15404622, unchanged; difficulty and |recommended block match the claims"
+      },
+      {
+        "kind": "fetch",
+        "detail": "[rfi-04] wiki.py rev 15365598 (The Depths of Despair, researcher revision) and wiki.py page 'The Depths of Despair' (current)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15365598",
+        "outcome": "current revid is 15365598, unchanged; difficulty and |recommended block match the claims"
+      },
+      {
+        "kind": "fetch",
+        "detail": "[rfi-04] wiki.py rev 15401465 (Icthlarin's Little Helper, researcher revision) and wiki.py page 'Icthlarin's Little Helper' (current)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15401465",
+        "outcome": "current revid is 15401465, unchanged; difficulty and |recommended block match the claims"
+      },
+      {
+        "kind": "fetch",
+        "detail": "[rfi-04] wiki.py rev 15394232 (A Tail of Two Cats, researcher revision) and wiki.py page 'A Tail of Two Cats' (current)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15394232",
+        "outcome": "current revid is 15394232, unchanged; difficulty and |recommended block match the claims"
+      },
+      {
+        "kind": "fetch",
+        "detail": "[rfi-04] wiki.py rev 15392817 (Underground Pass, researcher revision) and wiki.py page 'Underground Pass' (current)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15392817",
+        "outcome": "current revid is 15392817, unchanged; difficulty and |recommended block match the claims"
+      },
+      {
+        "kind": "fetch",
+        "detail": "[rfi-04] wiki.py rev 15396547 (Regicide, researcher revision) and wiki.py page 'Regicide' (current)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15396547",
+        "outcome": "current revid is 15396547, unchanged; difficulty and |recommended block match the claims"
+      },
+      {
+        "kind": "fetch",
+        "detail": "[rfi-04] wiki.py rev 15411210 (The Fremennik Trials, researcher revision) and wiki.py page 'The Fremennik Trials' (current)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15411210",
+        "outcome": "current revid is 15411210, unchanged; difficulty and |recommended block match the claims"
+      },
+      {
+        "kind": "fetch",
+        "detail": "[rfi-04] wiki.py rev 15382205 (Death Plateau, researcher revision) and wiki.py page 'Death Plateau' (current)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15382205",
+        "outcome": "current revid is 15382205, unchanged; difficulty and |recommended block match the claims"
+      },
+      {
+        "kind": "fetch",
+        "detail": "[rfi-04] wiki.py rev 15410562 (Troll Stronghold, researcher revision) and wiki.py page 'Troll Stronghold' (current)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15410562",
+        "outcome": "current revid is 15410562, unchanged; difficulty and |recommended block match the claims"
+      },
+      {
+        "kind": "fetch",
+        "detail": "[rfi-04] wiki.py rev 15375194 (Troll Romance, researcher revision) and wiki.py page 'Troll Romance' (current)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15375194",
+        "outcome": "current revid is 15375194, unchanged; difficulty and |recommended block match the claims"
+      },
+      {
+        "kind": "fetch",
+        "detail": "[rfi-04] wiki.py rev 15405943 (Druidic Ritual, researcher revision) and wiki.py page 'Druidic Ritual' (current)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15405943",
+        "outcome": "current revid is 15405943, unchanged; difficulty and |recommended block match the claims"
+      },
+      {
+        "kind": "fetch",
+        "detail": "[rfi-04] wiki.py rev 15403019 (Black Knights' Fortress, researcher revision) and wiki.py page 'Black Knights' Fortress' (current)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15403019",
+        "outcome": "current revid is 15403019, unchanged; difficulty and |recommended block match the claims"
+      },
+      {
+        "kind": "fetch",
+        "detail": "[rfi-04] wiki.py rev 15395322 (Recruitment Drive, researcher revision) and wiki.py page 'Recruitment Drive' (current)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15395322",
+        "outcome": "current revid is 15395322, unchanged; difficulty and |recommended block match the claims"
+      },
+      {
+        "kind": "fetch",
+        "detail": "[rfi-04] wiki.py rev 15375163 (Death on the Isle, researcher revision) and wiki.py page 'Death on the Isle' (current)",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15375163",
+        "outcome": "current revid is 15375163, unchanged; difficulty and |recommended block match the claims"
+      },
+      {
+        "kind": "read",
+        "detail": "[rfi-04] Read cached wikitext of Troll Stronghold @15410562 requirements line for Agility 47",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15410562"
+      },
+      {
+        "kind": "write",
+        "detail": "[rfi-04] wrote facts-parts/rfi-04.json (F-5950..F-5977)"
+      },
+      {
         "kind": "read",
         "detail": "[threats] Read charter .claude/agents/fact-verifier.md (sha256 442e0f171fb8...), CLAUDE.md, dispatch 016, schemas/facts.schema.json, tools/wiki.py, tools/sentry.py (Bash rules) and tools/validate.py (facts gate)."
       },
@@ -31868,6 +32743,18 @@
         ]
       },
       {
+        "decision": "[rfi-04] 24 claims VERIFIED, 4 (C-RFI-506, 508, 510, 518) VERIFIED_WITH_CAVEAT",
+        "reason": "Values match the wikitext exactly; the four caveats note scope of a skill line (route-only, floor, or sourced from the requirements field).",
+        "alternatives_considered": [
+          "caveat everything for single-source/main-game scope (rfi-03 precedent)"
+        ]
+      },
+      {
+        "decision": "[rfi-04] No claim marked STALE",
+        "reason": "Current revid of every page equals the researcher's cited revid on 2026-11-22.",
+        "alternatives_considered": []
+      },
+      {
         "decision": "[threats] C-THR-063 (Vanstrom Klause, Sins of the Father) DISPUTED",
         "reason": "The infobox max hit 24 is labelled '(Standard)'. The quest page documents special attacks of 40+ and blood-orb or lightning hits of up to 40 that hit through prayers. The researcher's max_hit understates the per-hit danger for a 48 HP character.",
         "alternatives_considered": [
@@ -32009,6 +32896,9 @@
       "[rfi-03] No second independent source (no Jagex T1 post or price API) was fetched; all three facts rest on one T2 wiki page each.",
       "[rfi-03] Hardcore Worlds item/GE mapping not checked.",
       "[rfi-03] Dev blog cited by the wiki for the tradeable change was not fetched.",
+      "[rfi-04] Single source type (OSRS Wiki infobox) for every claim; no T1 Jagex source exists for quest difficulty/recommended stats.",
+      "[rfi-04] Hardcore Worlds mapping not checked.",
+      "[rfi-04] Only the |difficulty and |recommended infobox fields (and the Troll Stronghold requirements line) were verified, not walkthrough prose.",
       "[threats] INTERRUPTION: the session was halted by a usage limit after the Ape Atoll set (last fetch 2026-11-20T02:25:10Z) and resumed at about 07:02Z on the coordinator's instruction. Fetches from Brimhaven onwards are dated 07:02-07:08Z. No page fetched before the break was re-fetched after it. Revisions are pinned, so the evidence is unaffected, but pages fetched before 02:26Z could have changed in the gap.",
       "[threats] No independent T3 source was found for any max hit or damage formula. Monster stats rest on OSRS Wiki infoboxes, cross-checked where possible against the wiki's own quest walkthroughs, which are not fully independent. Jagex staff statements (Mod Ash) were read as quoted on wiki pages; the archived tweets themselves were not fetched.",
       "[threats] Early in the session I ran inspection commands that do not follow Sentry's single-command rule: 'cd ... &&' chains with ';', and a 'python3 -c' dump of the sealed claims file redirected into the scratchpad. They were read-only, wrote nothing in the project, and are disclosed here for the audit. All later commands were single python3 tools/wiki.py or validate.py calls.",
