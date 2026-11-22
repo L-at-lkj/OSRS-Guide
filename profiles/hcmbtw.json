@@ -1,6 +1,6 @@
 {
   "rsn": "hcmbtw",
-  "updated": "2026-11-20",
+  "updated": "2026-11-22",
   "game_mode": {
     "world_type": "hardcore_worlds",
     "account_type": "standard",
@@ -27,34 +27,34 @@
     "note": "Owner is not risk-averse and wants awareness: game-relative Danger Index (The Fractured Archive = 100); nothing hidden; prep cards for 45+ (ledger agility-1-99-20261119 seq 131)."
   },
   "stats": {
-    "Attack": 44,
-    "Strength": 32,
-    "Defence": 1,
-    "Ranged": 56,
-    "Prayer": 44,
-    "Magic": 44,
+    "Attack": 45,
+    "Strength": 39,
+    "Defence": 39,
+    "Ranged": 60,
+    "Prayer": 46,
+    "Magic": 45,
     "Runecraft": 5,
-    "Construction": 23,
-    "Hitpoints": 48,
+    "Construction": 24,
+    "Hitpoints": 52,
     "Agility": 57,
-    "Herblore": 1,
-    "Thieving": 24,
-    "Crafting": 21,
-    "Fletching": 9,
-    "Slayer": 20,
-    "Hunter": 9,
+    "Herblore": 10,
+    "Thieving": 34,
+    "Crafting": 31,
+    "Fletching": 23,
+    "Slayer": 24,
+    "Hunter": 17,
     "Mining": 42,
-    "Smithing": 31,
-    "Fishing": 25,
-    "Cooking": 23,
-    "Firemaking": 30,
+    "Smithing": 47,
+    "Fishing": 42,
+    "Cooking": 42,
+    "Firemaking": 32,
     "Woodcutting": 40,
     "Farming": 5,
     "Sailing": 30
   },
   "skill_xp": {
-    "Agility": 212733,
-    "Defence": 0
+    "Agility": 216302,
+    "Defence": 36587
   },
   "quests_completed": [
     "Animal Magnetism",
@@ -113,5 +113,61 @@
   "active_guides": [
     "agility-1-99-20261119"
   ],
-  "snapshots": []
+  "snapshots": [
+    {
+      "date": "2026-11-22T03:50:46+00:00",
+      "stats": {
+        "Attack": 45,
+        "Defence": 39,
+        "Strength": 39,
+        "Hitpoints": 52,
+        "Ranged": 60,
+        "Prayer": 46,
+        "Magic": 45,
+        "Cooking": 42,
+        "Woodcutting": 40,
+        "Fletching": 23,
+        "Fishing": 42,
+        "Firemaking": 32,
+        "Crafting": 31,
+        "Smithing": 47,
+        "Mining": 42,
+        "Herblore": 10,
+        "Agility": 57,
+        "Thieving": 34,
+        "Slayer": 24,
+        "Farming": 5,
+        "Runecraft": 5,
+        "Hunter": 17,
+        "Construction": 24,
+        "Sailing": 30
+      },
+      "xp": {
+        "Attack": 64573,
+        "Defence": 36587,
+        "Strength": 37130,
+        "Hitpoints": 125803,
+        "Ranged": 284904,
+        "Prayer": 71731,
+        "Magic": 64363,
+        "Cooking": 47999,
+        "Woodcutting": 40820,
+        "Fletching": 6435,
+        "Fishing": 46666,
+        "Firemaking": 16680,
+        "Crafting": 15213,
+        "Smithing": 76357,
+        "Mining": 48710,
+        "Herblore": 1256,
+        "Agility": 216302,
+        "Thieving": 22062,
+        "Slayer": 7369,
+        "Farming": 500,
+        "Runecraft": 500,
+        "Hunter": 3296,
+        "Construction": 7777,
+        "Sailing": 13922
+      }
+    }
+  ]
 }
