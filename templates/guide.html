@@ -393,7 +393,7 @@ function nextPanel(){
     const opts = d.options.map(o => { const over = S.cap !== 'informed' && o.worst_residual_ds > cap;
       return `<div class="opt ${o.option_id === d.recommended ? 'rec' : ''}"><div class="top"><div><b>${esc(o.option_id)}. ${esc(o.title)}</b>
         ${o.option_id === d.recommended ? ' <span class="badge">Recommended</span>' : ''}${over ? ' <span class="badge over">Above your cap</span>' : ''}</div>
-        <span class="ds ${o.worst_headline_tier || o.worst_residual_tier}" style="min-width:0;padding:2px 8px" title="Worst step in this option: ${o.worst_headline_ds ?? ''} without prep, ${o.worst_residual_ds} with the full prep card"><span class="num" style="font-size:14px">${o.worst_headline_ds ?? o.worst_residual_ds}</span><span class="lbl">${o.worst_headline_tier || o.worst_residual_tier}</span><small>with prep ${o.worst_residual_ds}</small></span></div>
+        <span class="ds ${o.worst_headline_tier || o.worst_residual_tier}" style="min-width:0;padding:2px 8px" title="Worst step in this option: ${o.worst_residual_ds} with standard prep; ${o.worst_unprepared_ds ?? ''} if unprepared"><span class="num" style="font-size:14px">${o.worst_residual_ds}</span><span class="lbl">${o.worst_residual_tier}</span><small>unprepared ${o.worst_unprepared_ds ?? '–'}</small></span></div>
         <div class="small muted">≈ ${hrs(o.hours)}${o.best_for ? ' · best for: ' + esc(o.best_for) : ''}</div>
         <div>${esc(o.justification)}</div>
         ${o.pros.length ? `<div><b class="small">For</b><ul>${o.pros.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>` : ''}
@@ -406,7 +406,7 @@ function nextPanel(){
 function pDecisions(){
   const dps = G.decision_points || [];
   $('#p-decisions').innerHTML = dps.length ? dps.map(d => `<div class="card"><div class="hd"><div class="ttl"><h3>${esc(d.dp_id)} · from level ${d.at_level}${d.until_level ? ' to ' + d.until_level : ''}</h3><div class="sub">${esc(d.question)}</div></div></div>
-    <div class="bd"><div class="opts">${d.options.map(o => `<div class="opt ${o.option_id === d.recommended ? 'rec' : ''}"><div class="top"><b>${esc(o.option_id)}. ${esc(o.title)}</b>${dsBadge({residual_ds: o.worst_residual_ds, residual_tier: o.worst_residual_tier, inherent_ds: o.worst_headline_ds ?? ''}, false)}</div>
+    <div class="bd"><div class="opts">${d.options.map(o => `<div class="opt ${o.option_id === d.recommended ? 'rec' : ''}"><div class="top"><b>${esc(o.option_id)}. ${esc(o.title)}</b>${dsBadge({headline_ds: o.worst_residual_ds, headline_tier: o.worst_residual_tier, residual_ds: o.worst_residual_ds, residual_tier: o.worst_residual_tier, inherent_ds: o.worst_unprepared_ds ?? ''}, false)}</div>
       <div class="small muted">≈ ${hrs(o.hours)}</div><div>${esc(o.justification)}</div></div>`).join('')}</div>
     ${(() => { const off = [...new Set(d.options.flatMap(o => o.step_ids))].filter(id => !route().step_ids.includes(id) && stepById(id));
       return off.length ? `<details class="danger"><summary>Step cards for options not on the ${esc(route().label)} route (${off.length})</summary><div class="in">${off.map((id, i) => stepCard(stepById(id), i)).join('')}</div></details>` : ''; })()}
@@ -454,8 +454,12 @@ function pDanger(){
    <p class="small">${L.calibrated ? 'Scores are game-relative: the most dangerous content in the game (The Fractured Archive, hardest mode) is 100, and each reference activity is placed by the company\'s calibration board.' : '<b>Calibration pending.</b> The reference ladder below is a proposal. Until the calibration job rates and approves it, scores come straight from the danger model (marked *) and may sit higher than their final game-relative position.'}</p>
    <div class="ladder">${[...rungs, ...mine].sort((a, b) => b.position - a.position).map(r => `<div class="rung ${r.mine ? 'mine' : ''}"><span class="pos">${r.position}</span><span>${r.mine ? '▶ ' : ''}${esc(r.activity)}</span></div>`).join('')}</div>`;
   $('#p-danger').innerHTML = ladderHtml + `<h2>How danger is scored</h2>
-   <p class="small">The Risk Officer rates eight factors from 0 to 5 and cites a verified fact for each one. The company's danger engine turns the ratings into a 0–100 score, so a score can't be adjusted by hand.
-   <b>Raw</b> is the danger with no precautions. <b>Residual</b> is what remains after the mandatory mitigations, and can never fall below 30% of raw. Hazard flags such as Wilderness or one-shot potential set a minimum score.</p>
+   <ul class="small">
+     <li>The big number is the danger <b>with standard preparation</b>, on a whole-game scale: The Fractured Archive (solo/duo) = 100.</li>
+     <li>Quests are placed by official difficulty: Novice 5, Intermediate 10, Experienced 18, Master 26, Grandmaster 45. Below the recommended stats adds 5 and shows a warning.</li>
+     <li>Other activities: the Risk Officer rates eight factors with cited facts, and code turns them into the score. Wilderness adds +5 to +20 depending on depth.</li>
+     <li>"If unprepared" is shown in each danger card. Steps at 45 or more get a red banner and a full prep card.</li>
+   </ul>
    <div class="legend">${TIERS.map(([lo, n], i) => `<span class="ds ${n}"><span class="num">${lo}${TIERS[i + 1] ? '–' + (TIERS[i + 1][0] - 1) : '+'}</span><span class="lbl">${n}</span></span>`).join('')}</div>
    <p class="small">${S.cap === 'informed' ? 'Mode: <b>Informed</b>. Nothing is hidden or blocked; every step from ' + G.danger_model.prep_card_from + ' up carries a full prep card. ' : 'Your cap: <b>' + capVal() + '</b> (' + esc(S.cap) + '). '} ${S.cap === 'informed' ? '' : 'Steps above it are marked on every route. '}On Hardcore Worlds, almost every death ends the run, including in activities that are "safe" for a Hardcore Ironman.</p>
    ${G.risk_rules.length ? `<h3>Standing safety rules</h3><ul>${G.risk_rules.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}

@@ -1,425 +1,148 @@
 {
- "content_sha256": "475b8102652fee75e64166fdb38b903739e71838147033ca2fb623530970748b",
- "job": "agility-1-99-20261119",
- "audited_at": "2026-11-22T03:58:00Z",
- "checks": [
-  {
-   "check": "1. ledger verify",
-   "result": "pass",
-   "detail": "OK: ledger chain and all seals intact through seq 252. WARN only: unsealed calc-draft.json (byte-identical to sealed calc.json, b8d7b9c7...) and a stray nested copy jobs/agility-1-99-20261119/jobs/agility-1-99-20261119/calc-draft.json (housekeeping; not used by anything). qa.json unsealed for this audit (seq 250)."
-  },
-  {
-   "check": "2. validate release",
-   "result": "pass",
-   "detail": "0 FAIL, 62 WARN. New vs QA 044: none of substance; the owner-style gate (word limits fail, lecturing-phrase warn) passes with no style warnings. Remaining WARNs as reviewed in QA 044 (company-file changes since agents read them, 10 off-route decision-point steps, 5 ladder conflicts, S23/S24 vetoed and removed, RT-05/07 medium and RT-15/17 low open by owner decision seq 194, unsealed draft, no QA approval yet). calc.json prices_sha256 equals sealed prices.json (a3a7643f...)."
-  },
-  {
-   "check": "3. audit crosscheck",
-   "result": "warn",
-   "detail": "Only WARNs: unsealed draft files; no Sentry observations for this job (audit/actions.jsonl absent, as in QA 041/044). Company files changed since QA 044 with no ledger governance note: templates/guide.html (500e40ac -> 44415e28; seq 245 mentions the Director's intro-token fix), tools/assemble.py (7796e5fc -> ae77cc7e), tools/validate.py, tools/ledger.py, tools/xp.py. QA verified functionally: (a) importing the current assemble.py and running it in memory on the sealed inputs reproduces content.json exactly (every key except assembled_at); (b) guide.html equals the current template with only the hash, title, release state (draft) and data blobs substituted; (c) ledger.py verify/sign/release_status read in full: chain, tamper, separation-of-duties and veto checks intact. Recommend the Director log a governance note for these tool/template edits."
-  },
-  {
-   "check": "4. live fact spot-checks",
-   "result": "pass",
-   "detail": "Risk ratings and risk.json unchanged since QA 044 (risk.json sha 74bbfca5 unchanged), so earlier 110 live checks stand for danger-bearing facts. v2 scope: 12 facts live-checked with tools/wiki.py on 2026-11-22: the 3 new amylase facts F-5901..5903, every marks/h fact used for income (F-1005, F-1012, F-4020..F-4023), the conversion F-4027 and the Graceful cost F-4004/F-1121. 12/12 match, 0 mismatch, 0 unreachable; every pinned revision is still the live revision. No new_content facts in v2."
-  },
-  {
-   "check": "4b. HW price re-fetch",
-   "result": "pass",
-   "detail": "Live GET https://prices.runescape.wiki/api/v2/osrs-hc/latest?id=12640 at ~03:50Z: high 608 (2026-11-22 02:56:30Z), low 487 (02:56:38Z): identical to the sealed snapshot (mid 548), change 0% (<20% threshold). Main-game /api/v1/osrs/latest gives high 403 / low 400 gp, confirming the HW economy is a separate market. Independent recompute: sum(step hours x marks/h /10 x 100 x 548) = 18,006,837 safest / 17,645,645 balanced vs calc 18,006,836 / 17,645,644 (rounding)."
-  },
-  {
-   "check": "5. browser check",
-   "result": "pass",
-   "detail": "node tools/browser_check.mjs on guide.html (39b9fc18...): ALL PASS (desktop + mobile, 9 tabs, both routes, level highlight, progress persistence, no horizontal scroll). Screens refreshed."
-  },
-  {
-   "check": "6. read as the owner",
-   "result": "warn",
-   "detail": "PASS items: (a) Safety warnings kept: S05 'Mandatory: Iban HP gate. Protect from Melee does nothing against the temple spikes...'; S12 'Mandatory: bank the escape crystal before the duel...' and 'Never wear a ring of life in the duel...'; S17 'The run window cannot be closed. With Protect from Melee on...' and 'Do: turn Protect from Melee on before you talk to Arrg'. Automated check: all 149 mandatory mitigations and stop conditions in risk.json render verbatim on their cards (route and decision tabs), 0 missing. (b) Bright red: every card with headline >=45 (balanced S03/S05/S06/S12; decision options S15/S16/S17/S25) has class hot: 3px #e10600 border and a red '⚠ High danger · N without prep · M with the prep card' banner; safest has no step >=45 and shows none; headline == inherent for all steps so the trigger is correct. (c) Disclosures in the intro (rendered on the route tab): Q-01 'Route hours exclude all quest time', Q-02 'Balanced is not faster than Safest...', Q-11/13/14 'Profit is at the Hardcore Worlds GE mid price, assuming every mark is sold, before any GE tax; the Graceful outfit (260 ...) is not deducted.' (d) Owner style: prose is dot points within limits, plain tone, no lecturing phrases; profit shown in step stats and a route tile; HW price table in Supplies with timestamp. WARN (non-blocking, text-level): W1 intro renders '260 marks of grace marks' (fact token already carries the unit). W2 the 'Why this step' rationales (plan.json, not prose) are still visible paragraph slabs: 13 steps over 60 words, S12 219 words, against the owner's 'avoid large slabs'. W3 Q-11 partly met: no 487-608 band (about 16.0-20.0M / 15.7-19.6M) next to the single to-the-gp profit tile; Q-12 (one-day snapshot, recheck) only implicit in the Supplies note. W4 Q-01 tile still says 'Total time' rather than 'training hours' (same as the v1 approval). W5 Supplies table shows Monkfish BUY 320 < SELL 509 (stale low price in the live data); not used in any profit figure."
-  },
-  {
-   "check": "7. red team / accepted risks",
-   "result": "pass",
-   "detail": "redteam.json and risk.json unchanged since QA 044 (no danger change, so no Red Team re-run is required under docs/10 rule 7). No open critical/high findings; RT-05/07/15 accepted by the owner (seq 194), RT-17 low open."
-  },
-  {
-   "check": "8. recency",
-   "result": "pass",
-   "detail": "updates_as_of 2026-11-20T02:20Z, within 2 days of today. Live new-pages scan of the Update namespace since 2026-11-19 shows only the Chosen Commander poll blog (in the sweep) and the Gielinor Gazette Nov 2026 (rev 15410302; no Agility, marks, Graceful or rule change). The Graveyard (25 Nov) stays excluded and explained in the outro."
+  "content_sha256": "6aed9d02769b7c15a62092495e22a6ca11d855a1dcd89646db94ae9e6760e43e",
+  "job": "agility-1-99-20261119",
+  "audited_at": "2026-11-22T04:12:00Z",
+  "checks": [
+    {
+      "check": "1. ledger verify",
+      "result": "pass",
+      "detail": "OK: ledger chain and all seals intact through seq 288 (289 entries). The Director's guide.html overwrite (seq 284 note) is resolved: guide.html was properly unsealed at seq 285 and re-rendered; validate confirms it embeds the current content hash (6aed9d02...) and its embedded data is identical to content.json. guide.html (4645382d...) and qa.json are unsealed, awaiting the Director's post-QA seal. Only WARN: unsealed calc-draft.json (as in QA 050)."
+    },
+    {
+      "check": "2. validate.py release",
+      "result": "pass",
+      "detail": "0 FAIL, 69 WARN. New since QA 050: risk.json and redteam.json now warn that policy/danger-calibration.json, tools/danger.py, templates/guide.html and tools/validate.py changed after those agents read them (v3 policy r3). Other WARNs as reviewed in QA 044/050."
+    },
+    {
+      "check": "3. audit.py crosscheck",
+      "result": "warn",
+      "detail": "0 FAIL. WARN: no Sentry observations for this job (as in QA 041/044/050); unsealed calc-draft.json. Company files changed in v3 (templates/guide.html 44415e28 -> 8b9e90cc, tools/validate.py 3066039a -> 67af6a3e, tools/danger.py, policy/danger-calibration.json r3) are covered only by the general governance decision at seq 261, not itemised. Provenance anomaly: facts-parts/rfi-04.json records verified_at 2026-11-22T04:20:00Z for F-5950..F-5977, but the part was sealed at 04:03:09Z (seq 269); the timestamp is later than the seal."
+    },
+    {
+      "check": "4. spot-check facts (live)",
+      "result": "pass",
+      "detail": "7 quest pages fetched live with tools/wiki.py at 04:06-04:07Z, 14 v3 facts checked: Troll Romance (F-5968/F-5969), Underground Pass (F-5958/F-5959), Regicide (F-5960/F-5961), Troll Stronghold (F-5966/F-5967), The Fremennik Trials (F-5962/F-5963), Icthlarin's Little Helper (F-5954/F-5955), Death on the Isle (F-5976/F-5977). 14/14 match; every live revid equals the cited revid (pages unchanged). Owner stats behind below_recommended were also re-checked live on the Hardcore Worlds hiscores (04:09Z): combat computes to 57 (ranged 0.325*90 + 0.25*(39+52+23)), so the below/meets verdicts on all 14 quest steps are correct (only S05 and S06 below: recommended combat 60)."
+    },
+    {
+      "check": "5. browser_check",
+      "result": "pass",
+      "detail": "node tools/browser_check.mjs on guide.html (4645382d...): ALL PASS (desktop + mobile, 9 tabs, both routes, level highlight, progress persistence, no horizontal scroll). Screens refreshed in jobs/agility-1-99-20261119/screens."
+    },
+    {
+      "check": "6a. every quest step publishes its tier score",
+      "result": "pass",
+      "detail": "All 14 quest steps: headline = tier + 5 if below recommended. Expected and published match: S01 10, S02 10, S03 10, S04 10, S05 23, S06 23, S12 10, S15 5, S16 10, S17 Troll Romance 10, S18 5, S19 10, S20 5, S21 10. Step cards (route tab), quests tab and danger ladder show these as the big badge with 'if unprepared' secondary. The below-recommended ribbon and 'Your combat is below the recommended level' line render on S05 and S06 only."
+    },
+    {
+      "check": "6b. decision-point badges follow the v3 headline rule",
+      "result": "fail",
+      "detail": "Every decision-option badge (Decisions tab, and the decision cards shown inline in the Route tab) shows the UNPREPARED score as the big number and the with-prep score as the small 'with prep' line. Examples as rendered: DP02 option B (includes Underground Pass and Regicide) '33 MODERATE, with prep 23'; DP03 option C (includes Troll Romance) '20 LOW, with prep 10'; DP03 option B '20 LOW, with prep 10'; DP03 option A '28 MODERATE, with prep 16'. This inverts the owner rule (badge = with-prep headline), contradicts the step badges (23 and 10) and the guide's own intro line ('big number = danger with prep'), and is the same 'danger rating appears to have reverted' symptom the owner complained about. Cause: tools/assemble.py (decision options) sets worst_headline_ds = max(inherent_ds) under the pre-r3 meaning of 'headline'; templates/guide.html line 396 renders worst_headline_ds as the big number. Fix is mechanical: the option badge should show worst_residual_ds (= max headline_ds) big and the worst inherent_ds as 'if unprepared'."
+    },
+    {
+      "check": "6c. no prose line contradicts the new scores",
+      "result": "fail",
+      "detail": "One line: S01 tip[0] 'Held up by the new-content floor, not by known damage.' Under policy r3, S01's published 10 is its Intermediate tier (F-5950), and flag floors no longer lift quest scores (policy quest_tiers.rule); the guide-author's own provenance says this floor clause was meant to be kept only as risk.json basis, but it still renders. All other score clauses use the 'Danger X with prep; Y if unprepared' tokens and render correctly; no stale superlative remains in prose. WARN (not failing): the Danger tab's 'How danger is scored' explainer still says flag floors set a minimum score and does not mention that quests are placed by official difficulty; S18/S19 'the score is conservative' is now moot (tier-placed)."
+    },
+    {
+      "check": "6d. every v2 safety warning still present",
+      "result": "pass",
+      "detail": "All 149 mandatory mitigations and stop conditions in content.json (same count as QA 050) render verbatim in the guide. Spot-read: S05 Iban HP gate and bridge HP line; S12 bank the escape crystal, never wear a ring of life, stable-connection rule; S17 'The run window cannot be closed...', Protect from Melee before talking to Arrg, no bail-out during the run, random-event rule. Prep cards, hazards and bail-outs unchanged; the S17 stop condition (do not start unless you accept the run can kill a prepared player) still shows beside its 10 badge."
+    },
+    {
+      "check": "7. red team / accepted risks",
+      "result": "warn",
+      "detail": "redteam.json unchanged since QA 050: no open critical/high; RT-05/07/15 accepted by the owner (seq 194), RT-17 low open. v3 moves published scores by a tier or more on several steps (e.g. Troll Romance to 10), but by the owner's policy decision (seq 261), not by a fix, so docs/10 rule 7 does not clearly require a second Red Team run; Director to confirm. Accepted risks in the profile (S05, S06, S12, S16) are unchanged."
+    },
+    {
+      "check": "8. recency",
+      "result": "pass",
+      "detail": "updates_as_of 2026-11-20T02:20Z, within 2 days of today (2026-11-22) by date; QA 050's live Update-namespace scan at ~03:50Z today found nothing relevant. Not re-scanned in this focused audit."
+    },
+    {
+      "check": "9. owner-stat staleness (v2 text)",
+      "result": "warn",
+      "detail": "Live HW hiscores (04:09Z) show Defence 39 (36,587 XP), Hitpoints 52, Ranged 60, Thieving 34, while v2 text still says 'the owner's Defence 1', 'Quest Defence (Defence 16)', '48 Hitpoints', 'owner Ranged 56' and Death on the Isle 'blocked by Thieving 34 (owner 24)'; calc tracks the Defence cap from 0 XP. Safety impact: none found (HP/combat figures are conservative; real Defence after Fremennik Trials is about 40, still under the cap of 50). But a Defence 1 -> 39 jump since 2026-11-19 conflicts with the profile build note ('current Defence is 1; Defence XP from quests only'); the Director should confirm with the owner, and Death on the Isle is now reachable."
+    }
+  ],
+  "spot_checks": [
+    {"fact_id": "F-5968", "result": "match", "selected_because": "named in dispatch (Troll Romance tier)", "live_revisions_checked": ["Troll Romance 15375194 (live = cited)"], "note": "Live: '|difficulty = Intermediate'.", "checked_at": "2026-11-22"},
+    {"fact_id": "F-5969", "result": "match", "selected_because": "Troll Romance below-recommended basis", "live_revisions_checked": ["Troll Romance 15375194"], "note": "Live: '|recommended = * {{SCP|Combat|50|link=yes}}'.", "checked_at": "2026-11-22"},
+    {"fact_id": "F-5958", "result": "match", "selected_because": "named in dispatch (Underground Pass tier)", "live_revisions_checked": ["Underground Pass 15392817 (live = cited)"], "note": "Live: '|difficulty = Experienced'.", "checked_at": "2026-11-22"},
+    {"fact_id": "F-5959", "result": "match", "selected_because": "Underground Pass below-recommended basis", "live_revisions_checked": ["Underground Pass 15392817"], "note": "Live: Combat 60, Agility 50+, Thieving 50 'for a helpful shortcut'.", "checked_at": "2026-11-22"},
+    {"fact_id": "F-5960", "result": "match", "selected_because": "named in dispatch (Regicide tier)", "live_revisions_checked": ["Regicide 15396547 (live = cited)"], "note": "Live: '|difficulty = Experienced'.", "checked_at": "2026-11-22"},
+    {"fact_id": "F-5961", "result": "match", "selected_because": "Regicide below-recommended basis", "live_revisions_checked": ["Regicide 15396547"], "note": "Live: '|recommended = * {{SCP|Combat|60|link=yes}}'.", "checked_at": "2026-11-22"},
+    {"fact_id": "F-5966", "result": "match", "selected_because": "Troll Stronghold tier (page edited 2026-11-21)", "live_revisions_checked": ["Troll Stronghold 15410562 (live = cited)"], "note": "Live: '|difficulty = Intermediate'.", "checked_at": "2026-11-22"},
+    {"fact_id": "F-5967", "result": "match", "selected_because": "Troll Stronghold recommended stats", "live_revisions_checked": ["Troll Stronghold 15410562"], "note": "Live: Combat 50, Prayer 43; Agility '(47 is recommended)' on the requirement line.", "checked_at": "2026-11-22"},
+    {"fact_id": "F-5962", "result": "match", "selected_because": "Fremennik Trials tier (page edited 2026-11-21)", "live_revisions_checked": ["The Fremennik Trials 15411210 (live = cited)"], "note": "Live: '|difficulty = Intermediate'.", "checked_at": "2026-11-22"},
+    {"fact_id": "F-5963", "result": "match", "selected_because": "Fremennik Trials recommended stats", "live_revisions_checked": ["The Fremennik Trials 15411210"], "note": "Live: Combat 40, Agility 48 (Draugen).", "checked_at": "2026-11-22"},
+    {"fact_id": "F-5954", "result": "match", "selected_because": "Icthlarin's Little Helper tier", "live_revisions_checked": ["Icthlarin's Little Helper 15401465 (live = cited)"], "note": "Live: '|difficulty = Intermediate'.", "checked_at": "2026-11-22"},
+    {"fact_id": "F-5955", "result": "match", "selected_because": "ILH recommended stats (combat 50 near the owner's 57)", "live_revisions_checked": ["Icthlarin's Little Helper 15401465"], "note": "Live: Combat 50, Agility 35.", "checked_at": "2026-11-22"},
+    {"fact_id": "F-5976", "result": "match", "selected_because": "Death on the Isle tier", "live_revisions_checked": ["Death on the Isle 15375163 (live = cited)"], "note": "Live: '|difficulty = Intermediate'.", "checked_at": "2026-11-22"},
+    {"fact_id": "F-5977", "result": "match", "selected_because": "Death on the Isle recommended stats", "live_revisions_checked": ["Death on the Isle 15375163"], "note": "Live: '|recommended =*{{SCP|Combat|40}}'.", "checked_at": "2026-11-22"}
+  ],
+  "decision": "reject",
+  "reasons": [
+    "Decision-option danger badges show the unprepared score as the big number (e.g. DP02 B '33 MODERATE, with prep 23'; DP03 C with Troll Romance '20 LOW, with prep 10'), inverting the owner's v3 rule and contradicting the step badges and intro. Fix: tools/assemble.py decision options (worst_headline_ds = max inherent_ds) and templates/guide.html line 396; the big number should be the worst with-prep headline and the unprepared value secondary. Governance-mode change (Director with owner), then re-assemble and re-render.",
+    "Prose S01 tip[0] says the score is 'held up by the new-content floor'; under policy r3 S01 is placed at its Intermediate tier and floors do not lift quests. Guide Author to reword or drop that clause.",
+    "Not blocking, for the same fix round: update the Danger tab explainer to say quests are placed by official difficulty; Director to confirm the owner's Defence 39 (live hiscores) against the 'Defence 1, quests only' build note and refresh stale owner-stat text (Defence 1/16, 48 HP, Ranged 56, Thieving 24)."
+  ],
+  "provenance": {
+    "agent": "qa-auditor",
+    "started_at": "2026-11-22T04:06:30Z",
+    "finished_at": "2026-11-22T04:13:00Z",
+    "dispatch_ref": "dispatch/055-qa-auditor.md",
+    "inputs": [
+      {"path": ".claude/agents/qa-auditor.md", "sha256": "7a7a5782e6eaee1bb6f93e07520ae5edfb17c70c4be0221e052ca8d701854886"},
+      {"path": "schemas/qa.schema.json", "sha256": "c57c4dceb5a22a6bea51b03f79254d7e0a6981858b4568557810c580d1fa5e17"},
+      {"path": "policy/danger-calibration.json", "sha256": "d377d465fcad02bfe29c3daf2efe402989bd40f60db6ad552cb4d337b145e81b"},
+      {"path": "profiles/hcmbtw.json", "sha256": "81bc7c98f8da5844229f57b7183b40ffbb6b29bbab8be41fcab8a784200ee68b"},
+      {"path": "docs/10-production-efficiency.md", "sha256": "2e7175f317aef486b1a3e300c00a2349a0b9fddcc9aa4bdc6a5aad341bee44d7"},
+      {"path": "templates/guide.html", "sha256": "8b9e90cc7ffddc5b35bc39897bc901afd2807b1feb53b5eb67aea6c5e5704605"},
+      {"path": "tools/assemble.py", "sha256": "ae77cc7e53650f9c882ad7abf9f7d031437ca3727f7d64ef23bd0a3a01a05266"},
+      {"path": "tools/danger.py", "sha256": "b6b046c19be51fe8bfb0a39522131572484e163be7fd33877526bec62b4692a6"},
+      {"path": "tools/validate.py", "sha256": "67af6a3eb2b51e148d0a3d85da6018778096d5fc75a7a64e698120ba2ec43ed5"},
+      {"path": "tools/ledger.py", "sha256": "a50e8df1fe192a5d5f7060d6b871a6539342bedd6235843e10e0bc1cb849077f"},
+      {"path": "tools/wiki.py", "sha256": "d30b82d5ff286da0f957e4f478f7259dfb6a522311d9f758c28c7ede9e3d1526"},
+      {"path": "tools/hiscores.py", "sha256": "9b8780bdbc646049749a84d036ae3fc2db3e870b370c32baa789bf5ee2642591"},
+      {"path": "tools/browser_check.mjs", "sha256": "ff7e17d4e21787e518380705e3f4dade289c606b6f08401be44dbe8915c68dc8"},
+      {"path": "tools/audit.py", "sha256": "623e1a8628c8cdbf602618baa6a6c687b13767ee0b20c2f64cdfd751912c3739"},
+      {"path": "dispatch/055-qa-auditor.md", "sha256": "7d8feb41f827a5115daf5abe3d7c22420629617057bc65dbcb87997b4346d1f3"},
+      {"path": "dispatch/053-risk-officer.md", "sha256": "d54911d663c6aeb406b21fe3ec91cd09bd3aede1a30a70e1bc609df825ac0769"},
+      {"path": "content.json", "sha256": "6aed9d02769b7c15a62092495e22a6ca11d855a1dcd89646db94ae9e6760e43e"},
+      {"path": "guide.html", "sha256": "4645382d97f4f82e02a5c615cea7687f2620d8f6de21f6c3e97173d01c486124"},
+      {"path": "risk.json", "sha256": "aa1c62d493dfdaaffa207514bbea522ce469872a6cd0df67643bd5de8559efbd"},
+      {"path": "prose.json", "sha256": "7e8b1b257c2c88d62e2f5ac276c910751faa66602feaeba73b97d6a1f4d98e54"},
+      {"path": "facts.json", "sha256": "ee4e1728c0b9c2fe9d1078dd7fd9d8529680f4bb800ca2b0beb56a7c7059006c"},
+      {"path": "facts-parts/rfi-04.json", "sha256": "70ef20a7b6f8cc3fff6d9c7817276e66fcc261e5dfa93187dc7e778a7b1f731a"},
+      {"path": "plan.json", "sha256": "bbbbe6e9e60a09ad7d25a790fa4dedf91e0ffb5946fbc04f7f29eb1ebf0b75ee"},
+      {"path": "redteam.json", "sha256": "d0b23e5dd9ddfb3d22547248a12651601c8abdad304e35c46d126b7fcbbc1eb1"},
+      {"path": "brief.json", "sha256": "c27aa6bc9969f981aed9185637565c2792f58b80646cc531afa503e27f969389"},
+      {"path": "ledger.jsonl", "sha256": "4b32864a89eba3bc4ea08a8b5c52b77fd28dbcc568f1e72a38845e61a7d9bfb5"}
+    ],
+    "actions": [
+      {"kind": "verify", "detail": "python3 tools/ledger.py verify agility-1-99-20261119", "outcome": "OK; WARN unsealed calc-draft.json"},
+      {"kind": "read", "detail": "Ledger seq 249-288: v2 sign (253), owner decision (261), RFI-04, risk 053, prose 054, content seal 283, Director overwrite note 284, guide.html unseal 285; computed last seal/unseal state per path", "target": "ledger.jsonl"},
+      {"kind": "verify", "detail": "python3 tools/validate.py agility-1-99-20261119 release", "outcome": "0 fail, 69 warn"},
+      {"kind": "verify", "detail": "python3 tools/audit.py crosscheck agility-1-99-20261119", "outcome": "0 fail; no Sentry observations"},
+      {"kind": "fetch", "detail": "python3 tools/wiki.py page <title> --grep difficulty|recommended for Troll Romance, Underground Pass, Regicide, Troll Stronghold, The Fremennik Trials, Icthlarin's Little Helper, Death on the Isle (live revids 15375194, 15392817, 15396547, 15410562, 15411210, 15401465, 15375163)", "outcome": "14/14 facts match; revids unchanged"},
+      {"kind": "fetch", "detail": "python3 tools/hiscores.py lookup hcmbtw (board hardcore_worlds, secure.runescape.com m=hiscore_oldschool_hardcore_mains)", "outcome": "matches profile snapshot; Defence 39 (36,587 XP), HP 52, Ranged 60, Prayer 46"},
+      {"kind": "compute", "detail": "Combat level from live stats: 0.25*(39+52+floor(46/2)) + 0.325*floor(1.5*60) = 28.5 + 29.25 = 57.75 -> 57; expected tier scores from policy quest_tiers vs content.json headline_ds for all 14 quest steps", "outcome": "all 14 match"},
+      {"kind": "verify", "detail": "node tools/browser_check.mjs jobs/agility-1-99-20261119/guide.html --shots jobs/agility-1-99-20261119/screens", "outcome": "ALL PASS"},
+      {"kind": "compute", "detail": "Scratch playwright script (scratchpad qa/dump.mjs) dumped the rendered text of every tab, both routes, all <details> opened, plus badge/ribbon elements; checked 149 mandatory mitigations and stop conditions verbatim against the rendered text", "outcome": "149/149 render; 4 below-recommended ribbons (S05, S06); decision-option badges show the unprepared score big"},
+      {"kind": "read", "detail": "tools/assemble.py lines 60-100, tools/danger.py assess(), templates/guide.html lines 237, 343, 360, 396 to locate the decision-badge cause", "outcome": "worst_headline_ds = max inherent_ds in assemble.py; rendered as big number by template line 396"},
+      {"kind": "read", "detail": "prose.json scanned for score/tier/superlative statements; prose provenance actions/decisions", "outcome": "S01 tip[0] floor clause contradicts r3"},
+      {"kind": "write", "detail": "qa.json (this file)", "target": "jobs/agility-1-99-20261119/qa.json"}
+    ],
+    "decisions": [
+      {"decision": "Reject v3.", "reason": "Two checks fail: decision-option badges invert the owner's with-prep headline rule (the owner's own complaint, at the exact place where the Troll Romance choice is made), and one prose line misstates the basis of S01's new score. Both are cheap mechanical fixes; the facts, step scores and safety content are correct.", "alternatives_considered": ["Approve with a warn on the decision badges: rejected because the dispatch's v3 change is 'badge = headline' and the owner explicitly flagged this symptom", "Treat the S01 line as warn only: kept as fail because the dispatch asks for no prose line contradicting the new scores"]},
+      {"decision": "Treat stale owner stats (Defence 1/16, 48 HP) as warn, not fail.", "reason": "Every stale figure is conservative for safety and the Defence cap is not breached at the real 36,587 XP; it was present in approved v2 and is outside the v3 change set, but the Defence 39 vs 'quests only' discrepancy is the owner's to explain.", "alternatives_considered": ["Fail: rejected as out of v3 scope with no safety impact"]},
+      {"decision": "Spot-check 14 facts on 7 pages instead of 6 facts.", "reason": "Each page carries both the tier and the recommended-stats fact, and both drive the published score.", "alternatives_considered": []}
+    ],
+    "limitations": [
+      "Focused v3 audit: v2-approved content outside the v3 change set was not re-audited beyond the 149-item safety render check and the owner-stat observation.",
+      "No v2 copy of prose.json/content.json exists on disk, so 'every v2 warning still present' was checked by the unchanged 149 mandatory mitigations/stop conditions (same count as QA 050), the five key warnings QA 050 quoted, and prose provenance (only score clauses and superlatives changed), not by a full text diff.",
+      "Update namespace not re-scanned (QA 050 scanned it about 20 minutes earlier today).",
+      "No Sentry observations exist for this job, so self-reported agent actions cannot be compared with observed actions."
+    ]
   }
- ],
- "spot_checks": [
-  {
-   "fact_id": "F-5901",
-   "result": "match",
-   "selected_because": "v2_new_fact (profit conversion)",
-   "live_revisions_checked": [
-    "Amylase pack 15316439 live unchanged"
-   ],
-   "note": "Live: '|examine = A pack containing 100 crystals of amylase.' and DropsLineReward quantity=100 present.",
-   "checked_at": "2026-11-22"
-  },
-  {
-   "fact_id": "F-5902",
-   "result": "match",
-   "selected_because": "v2_new_fact (profit)",
-   "live_revisions_checked": [
-    "Amylase crystal 15375340 live unchanged"
-   ],
-   "note": "Live infobox: tradeable = Yes, exchange = Yes, id = 12640. HW tradeability also confirmed mechanically: live osrs-hc /latest returns trades for id 12640 (high 608, low 487, both 2026-11-22 02:56 UTC).",
-   "checked_at": "2026-11-22"
-  },
-  {
-   "fact_id": "F-5903",
-   "result": "match",
-   "selected_because": "v2_new_fact (profit)",
-   "live_revisions_checked": [
-    "Amylase pack 15316439 live unchanged"
-   ],
-   "note": "Live: '|tradeable = No' and 'can only be sold back to Grace's Graceful Clothing for 8 marks of grace'.",
-   "checked_at": "2026-11-22"
-  },
-  {
-   "fact_id": "F-4027",
-   "result": "match",
-   "selected_because": "income conversion (10 marks per pack)",
-   "live_revisions_checked": [
-    "Amylase pack 15316439 live unchanged"
-   ],
-   "note": "Live: 'bought from Grace's Graceful Clothing for 10 marks of grace ...'.",
-   "checked_at": "2026-11-22"
-  },
-  {
-   "fact_id": "F-1012",
-   "result": "match",
-   "selected_because": "income marks/h (S08)",
-   "live_revisions_checked": [
-    "Agility training 15369875 live unchanged",
-    "Rooftop Agility Courses 15337972 live unchanged",
-    "Falador Rooftop Course 15319531 live unchanged"
-   ],
-   "note": "Live: Falador row 29,000-34,000 | 9.7-11.3 | 295; '10-12.1'; 'roughly once per 5-6 laps'. Plan uses 9.7 (low end).",
-   "checked_at": "2026-11-22"
-  },
-  {
-   "fact_id": "F-4020",
-   "result": "match",
-   "selected_because": "income marks/h (S09, S26)",
-   "live_revisions_checked": [
-    "Rooftop Agility Courses 15337972 live unchanged",
-    "Mark of Grace 15403415 live unchanged"
-   ],
-   "note": "Live: '11-13.8 (base)' on both pages. Plan uses 11.",
-   "checked_at": "2026-11-22"
-  },
-  {
-   "fact_id": "F-4021",
-   "result": "match",
-   "selected_because": "income marks/h (S10, S11)",
-   "live_revisions_checked": [
-    "Rooftop Agility Courses 15337972 live unchanged",
-    "Mark of Grace 15403415 live unchanged"
-   ],
-   "note": "Live: '13-14 (base)' on both pages. Plan uses 13. S11 ends at 90 = req 70 + 20, so the 20-level 20% penalty (live text on Rooftop Agility Courses) is never reached inside the band.",
-   "checked_at": "2026-11-22"
-  },
-  {
-   "fact_id": "F-4022",
-   "result": "match",
-   "selected_because": "income marks/h (S13)",
-   "live_revisions_checked": [
-    "Rooftop Agility Courses 15337972 live unchanged",
-    "Mark of Grace 15403415 live unchanged"
-   ],
-   "note": "Live: '13-15.5 (base)'. Plan uses 13.",
-   "checked_at": "2026-11-22"
-  },
-  {
-   "fact_id": "F-4023",
-   "result": "match",
-   "selected_because": "income marks/h (S14)",
-   "live_revisions_checked": [
-    "Rooftop Agility Courses 15337972 live unchanged",
-    "Mark of Grace 15403415 live unchanged"
-   ],
-   "note": "Live: '16-18.1 (base)'. Plan uses 16.",
-   "checked_at": "2026-11-22"
-  },
-  {
-   "fact_id": "F-1005",
-   "result": "match",
-   "selected_because": "income marks/h (S07, decision option)",
-   "live_revisions_checked": [
-    "Canifis Rooftop Course 15374436 live unchanged",
-    "Mark of Grace 15403415 live unchanged"
-   ],
-   "note": "Live: 'roughly 16-18 marks per hour'; Mark of Grace '16-18' (rate constant). Plan uses 16.",
-   "checked_at": "2026-11-22"
-  },
-  {
-   "fact_id": "F-4004",
-   "result": "match",
-   "selected_because": "v2 intro token (Graceful cost, Q-13)",
-   "live_revisions_checked": [
-    "Graceful outfit 15403851 live unchanged",
-    "Rooftop Agility Courses 15337972 live unchanged"
-   ],
-   "note": "Live: 'Buying the entire set costs 260 marks.'",
-   "checked_at": "2026-11-22"
-  },
-  {
-   "fact_id": "F-1121",
-   "result": "match",
-   "selected_because": "Graceful cost (assumptions, Q-13)",
-   "live_revisions_checked": [
-    "Graceful outfit 15403851 live unchanged"
-   ],
-   "note": "Live: bought from Grace in the Rogues' Den beneath The Toad and Chicken, Burthorpe; 260 marks.",
-   "checked_at": "2026-11-22"
-  }
- ],
- "decision": "approve",
- "reasons": [
-  "No check fails. v2 changes (profit, owner-style prose, bright-red danger template) verified; all 149 mandatory mitigations and stop conditions still render; the 12 v2-relevant facts match live; the HW amylase price is unchanged from the snapshot (0%).",
-  "Non-blocking follow-ups for the next text revision: W1 fix '260 marks of grace marks' in the intro (prose writes 'marks' after a token that already carries the unit); W2 shorten or collapse the plan rationales into dot points (13 over 60 words, S12 219); W3 show the 487-608 profit band (about 16.0-20.0M safest, 15.7-19.6M balanced) and the one-day-snapshot note by the profit tile; W4 label route totals 'training hours'; W5 Monkfish buy/sell inversion in the price table is source data.",
-  "Governance: the template and tools/assemble.py, validate.py, ledger.py and xp.py changed after QA 044 with no ledger governance note; QA confirmed the outputs functionally (exact reproduction of content.json, guide.html = current template + content, ledger checks intact). Director should record a governance note."
- ],
- "provenance": {
-  "agent": "qa-auditor",
-  "started_at": "2026-11-22T03:47:30Z",
-  "finished_at": "2026-11-22T03:58:00Z",
-  "dispatch_ref": "dispatch/050-qa-auditor.md",
-  "inputs": [
-   {
-    "path": ".claude/agents/qa-auditor.md",
-    "sha256": "7a7a5782e6eaee1bb6f93e07520ae5edfb17c70c4be0221e052ca8d701854886"
-   },
-   {
-    "path": "docs/10-production-efficiency.md",
-    "sha256": "2e7175f317aef486b1a3e300c00a2349a0b9fddcc9aa4bdc6a5aad341bee44d7"
-   },
-   {
-    "path": "schemas/qa.schema.json",
-    "sha256": "c57c4dceb5a22a6bea51b03f79254d7e0a6981858b4568557810c580d1fa5e17"
-   },
-   {
-    "path": "templates/guide.html",
-    "sha256": "44415e28c413be3dc0961866a7341d513b137b1bbf9761286bebf86e6b4ea6a4"
-   },
-   {
-    "path": "tools/assemble.py",
-    "sha256": "ae77cc7e53650f9c882ad7abf9f7d031437ca3727f7d64ef23bd0a3a01a05266"
-   },
-   {
-    "path": "tools/render.py",
-    "sha256": "1988a15e9cb75b56b251af02db69193c0fcaaa18e906dd8ffc7eb78f84e5a89f"
-   },
-   {
-    "path": "tools/validate.py",
-    "sha256": "3066039a6e6d870a9cb253440091d35019b681e2cfdda5156c296a96755bd923"
-   },
-   {
-    "path": "tools/ledger.py",
-    "sha256": "a50e8df1fe192a5d5f7060d6b871a6539342bedd6235843e10e0bc1cb849077f"
-   },
-   {
-    "path": "tools/xp.py",
-    "sha256": "a64be3ecf6f471568ecd4d231118c74fc704cbfc28e59ff6b6c0fffdd8493590"
-   },
-   {
-    "path": "tools/prices.py",
-    "sha256": "d008668c70db9888789ffa0bf02fbf6387ae7f841f008168505000696d4a5e34"
-   },
-   {
-    "path": "tools/wiki.py",
-    "sha256": "d30b82d5ff286da0f957e4f478f7259dfb6a522311d9f758c28c7ede9e3d1526"
-   },
-   {
-    "path": "tools/browser_check.mjs",
-    "sha256": "ff7e17d4e21787e518380705e3f4dade289c606b6f08401be44dbe8915c68dc8"
-   },
-   {
-    "path": "tools/audit.py",
-    "sha256": "623e1a8628c8cdbf602618baa6a6c687b13767ee0b20c2f64cdfd751912c3739"
-   },
-   {
-    "path": "dispatch/050-qa-auditor.md",
-    "sha256": "a338ba6c02966d0cc41a87f66e4b88b95927cf9ac43d1f00a2b42f3ba0e717b9"
-   },
-   {
-    "path": "content.json",
-    "sha256": "475b8102652fee75e64166fdb38b903739e71838147033ca2fb623530970748b"
-   },
-   {
-    "path": "guide.html",
-    "sha256": "39b9fc1868fafc69139053d973f0c0f1b2ed10b114c8135fd1a7a7e379aad413"
-   },
-   {
-    "path": "plan.json",
-    "sha256": "bbbbe6e9e60a09ad7d25a790fa4dedf91e0ffb5946fbc04f7f29eb1ebf0b75ee"
-   },
-   {
-    "path": "calc.json",
-    "sha256": "b8d7b9c7b5e6951c027355e1bd9552abb472173c7db64a545b0da22e9b7a9909"
-   },
-   {
-    "path": "calc-review.json",
-    "sha256": "006290bc6b5541342f9322094a5eb7afa068fef0574aa2ec5196ad1e54faa8cd"
-   },
-   {
-    "path": "prices.json",
-    "sha256": "a3a7643f5c1c015c8f275bc7b9a9e11f1b53417496efe1660ef8d83e896254e5"
-   },
-   {
-    "path": "facts.json",
-    "sha256": "81096ceb8f4ecb2b8eb72d9ef82ddacebae6cbe1f553791883184fee4f2098ec"
-   },
-   {
-    "path": "prose.json",
-    "sha256": "06d70a89428d9cbea821decb473c17f1fd4ab2eaf8c0f5f3316799e5e10e256a"
-   },
-   {
-    "path": "risk.json",
-    "sha256": "74bbfca5c25eaba0f88aac5fddf412c2392bd7d7607cde0239ceaf3b5b701d12"
-   },
-   {
-    "path": "redteam.json",
-    "sha256": "d0b23e5dd9ddfb3d22547248a12651601c8abdad304e35c46d126b7fcbbc1eb1"
-   },
-   {
-    "path": "research/claims-rfi-05.json",
-    "sha256": "bd8bd16bb4e0d7f44ef02c6447d3119dfa354f6c00f3298a861ce8e46d910ba7"
-   },
-   {
-    "path": "facts-parts/rfi-03.json",
-    "sha256": "b63af1a2b81aa27174fa09817a0bded916c6ef7390899b57e57e07c9f792a9d8"
-   },
-   {
-    "path": "ledger.jsonl",
-    "sha256": "924d07c99e083385574f04f80ebe102887448262abc41bab0c2ae798bb71be67"
-   },
-   {
-    "path": "screens/desktop.png",
-    "sha256": "e8c15379c4b23f800c31919581a94d81571a7cfaa2d1fa3ea5ee418158a013fb"
-   },
-   {
-    "path": "screens/mobile.png",
-    "sha256": "90b86dddb6a5412021e5b3cc4afca1fefe9f19f3e74700196553963055174001"
-   }
-  ],
-  "actions": [
-   {
-    "kind": "verify",
-    "detail": "python3 tools/ledger.py verify agility-1-99-20261119",
-    "outcome": "OK; 2 unsealed draft warnings"
-   },
-   {
-    "kind": "verify",
-    "detail": "python3 tools/validate.py agility-1-99-20261119 release",
-    "outcome": "0 fail, 62 warn"
-   },
-   {
-    "kind": "verify",
-    "detail": "python3 tools/audit.py crosscheck agility-1-99-20261119",
-    "outcome": "warn only (unsealed draft; no Sentry observations)"
-   },
-   {
-    "kind": "verify",
-    "detail": "node tools/browser_check.mjs jobs/agility-1-99-20261119/guide.html --shots jobs/agility-1-99-20261119/screens",
-    "outcome": "ALL PASS"
-   },
-   {
-    "kind": "read",
-    "detail": "ledger seq 205-252, dispatch 050, calc-review.json findings Q-01..Q-15, plan income_per_hour, content intro/outro/assumptions/prices, risk S05/S12/S17, tools/ledger.py (seal/sign/verify/release_status), tools/render.py, template card/tile code"
-   },
-   {
-    "kind": "fetch",
-    "detail": "tools/wiki.py page 'Amylase pack' and 'Amylase crystal'",
-    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15316439 ; oldid=15375340",
-    "outcome": "live revisions unchanged; quotes present"
-   },
-   {
-    "kind": "fetch",
-    "detail": "tools/wiki.py page 'Rooftop Agility Courses', 'Mark of Grace', 'Agility training', 'Falador Rooftop Course', 'Canifis Rooftop Course', 'Graceful outfit'",
-    "target": "oldid 15337972, 15403415, 15369875, 15319531, 15374436, 15403851",
-    "outcome": "all live revisions unchanged; quotes present"
-   },
-   {
-    "kind": "fetch",
-    "detail": "tools/prices.py lookup 'Amylase crystal' and GET /api/v2/osrs-hc/latest?id=12640",
-    "target": "https://prices.runescape.wiki/api/v2/osrs-hc/latest?id=12640",
-    "outcome": "high 608 / low 487, same as snapshot (0% change)"
-   },
-   {
-    "kind": "fetch",
-    "detail": "GET main-game /api/v1/osrs/latest?id=12640 for comparison",
-    "target": "https://prices.runescape.wiki/api/v1/osrs/latest?id=12640",
-    "outcome": "high 403 / low 400: distinct economy from HW"
-   },
-   {
-    "kind": "fetch",
-    "detail": "tools/wiki.py new-pages --ns Update --since 2026-11-19; page 'Update:Gielinor Gazette - November 2026' grep agility/marks/graceful/amylase/hardcore",
-    "outcome": "nothing Agility-relevant"
-   },
-   {
-    "kind": "compute",
-    "detail": "Independent profit recompute from calc step hours x plan marks/h x 10 crystals/mark x 548",
-    "outcome": "18,006,837 / 17,645,645 vs calc 18,006,836 / 17,645,644"
-   },
-   {
-    "kind": "compute",
-    "detail": "In-memory run of tools/assemble.py main() with save_json captured; diff vs content.json",
-    "outcome": "identical except assembled_at"
-   },
-   {
-    "kind": "compute",
-    "detail": "guide.html vs templates/guide.html with data blobs removed",
-    "outcome": "only hash, title and release-state substitutions differ"
-   },
-   {
-    "kind": "verify",
-    "detail": "Playwright scripts (scratchpad qa050/read.mjs, dom.mjs, mit.mjs, tiles.mjs): hot-card styles, unresolved tokens, mitigation/stop-condition coverage, tile values, screenshots",
-    "outcome": "hot cards red on all headline>=45 steps; 0 unresolved tokens; 149/149 mitigations and stop conditions render; tiles show profit"
-   },
-   {
-    "kind": "write",
-    "detail": "jobs/agility-1-99-20261119/qa.json"
-   },
-   {
-    "kind": "decide",
-    "detail": "approve; sign via tools/ledger.py sign --role qa"
-   }
-  ],
-  "decisions": [
-   {
-    "decision": "Scope the live spot-checks to the 12 facts v2 introduced or newly relies on",
-    "reason": "Dispatch: audit only what v2 changed; risk.json and facts behind danger ratings unchanged, and 110 live checks from QA 041/044 stand.",
-    "alternatives_considered": [
-     "Re-sample 10% of all 323 shipped facts (unnecessary: their sources and ratings are unchanged)"
-    ]
-   },
-   {
-    "decision": "Treat W1-W5 as warnings, not failures",
-    "reason": "They are text/presentation defects with no safety effect: every safety warning and mandatory mitigation is present, red marking is correct, profit qualifiers (mid price, all marks sold, no GE tax, Graceful not deducted) are disclosed. A rejection would cost a full fix round for cosmetic items.",
-    "alternatives_considered": [
-     "Reject for the rationale slabs (owner style) and the missing Q-11 price band"
-    ]
-   },
-   {
-    "decision": "Accept the undocumented tool/template edits on functional evidence",
-    "reason": "Exact reproduction of content.json and guide.html from sealed inputs plus a read of ledger.py's trust checks; flagged for a governance note.",
-    "alternatives_considered": [
-     "Reject until a governance record exists"
-    ]
-   }
-  ],
-  "limitations": [
-   "No pre-v2 copy of prose.json exists, so 'every v1 warning kept' was checked against risk.json (unchanged) mandatory mitigations and stop conditions plus the three named warnings, not by a line-by-line diff of old and new prose.",
-   "No old copies of the changed tools/template exist; their changes were checked by output reproduction, not by diff.",
-   "No Sentry observations exist for this job, so self-reported agent actions could not be compared to observed tool calls.",
-   "The price check is one moment; the amylase price is a single 24h snapshot and will move.",
-   "Hardcore Worlds tradeability of amylase packs (F-5903, main-game wiki flag) was not independently confirmed for HW; it does not affect the profit, which sells crystals only."
-  ]
- }
 }

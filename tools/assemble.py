@@ -85,11 +85,13 @@ def main():
     for dp in plan.get("decision_points", []):
         opts = []
         for o in dp["options"]:
-            worst = max(danger.assess(ridx[s], lad)["residual_ds"] for s in o["step_ids"])
-            worst_h = max(danger.assess(ridx[s], lad)["inherent_ds"] for s in o["step_ids"])
+            worst = max(danger.assess(ridx[s], lad)["residual_ds"] for s in o["step_ids"])    # with prep = headline
+            worst_h = worst
+            worst_unprep = max(danger.assess(ridx[s], lad)["inherent_ds"] for s in o["step_ids"])
             used.update(o.get("facts", []))
             opts.append({**o, "worst_residual_ds": worst, "worst_residual_tier": danger.tier(worst),
                          "worst_headline_ds": worst_h, "worst_headline_tier": danger.tier(worst_h),
+                         "worst_unprepared_ds": worst_unprep,
                          "hours": round(sum(step_hours.get(s, 0) or 0 for s in o["step_ids"]), 2),
                          "over_cap": worst > cap})
         dps.append({**dp, "options": opts})

@@ -31,7 +31,7 @@
         "Any death here is official and run-ending; no Hardcore Worlds safe exception covers this quest."
       ],
       "tips": [
-        "Danger {{risk.residual_ds}} ({{risk.tier}}) with prep; {{risk.inherent_ds}} if unprepared. Held up by the new-content floor, not by known damage."
+        "Danger {{risk.residual_ds}} ({{risk.tier}}): an Intermediate quest. It is under a month old, so check the current walkthrough."
       ]
     },
     {
@@ -666,7 +666,7 @@
         "alternatives_considered": []
       },
       {
-        "decision": "Dropped 'highest' superlatives (S12, S14, S17) and the S01 floor clause kept only as risk.json basis; S15 northern-path warning kept as an avoid instruction.",
+        "decision": "Dropped 'highest' superlatives (S12, S14, S17) and the S01 new-content floor clause (S01 scores by its Intermediate quest difficulty); S15 northern-path warning kept as an avoid instruction.",
         "reason": "New scores (e.g. S23 86, S24 55 with prep) make them untrue.",
         "alternatives_considered": []
       }

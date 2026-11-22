@@ -1,7 +1,7 @@
 {
   "schema": "osrs-guide-content/1",
   "job": "agility-1-99-20261119",
-  "assembled_at": "2026-11-22T04:05:03+00:00",
+  "assembled_at": "2026-11-22T04:15:03+00:00",
   "inputs": {
     "brief.json": "c27aa6bc9969f981aed9185637565c2792f58b80646cc531afa503e27f969389",
     "research/updates.json": "b600273a97297879bd2c38e663ed79bc8c55973cd793a7edf041690f2be988c5",
@@ -11,7 +11,7 @@
     "calc-review.json": "006290bc6b5541342f9322094a5eb7afa068fef0574aa2ec5196ad1e54faa8cd",
     "risk.json": "aa1c62d493dfdaaffa207514bbea522ce469872a6cd0df67643bd5de8559efbd",
     "redteam.json": "d0b23e5dd9ddfb3d22547248a12651601c8abdad304e35c46d126b7fcbbc1eb1",
-    "prose.json": "7e8b1b257c2c88d62e2f5ac276c910751faa66602feaeba73b97d6a1f4d98e54"
+    "prose.json": "1d35372a2a544adf2223983b921c71dc5180f19a6825f3c1a580638460b183d8"
   },
   "meta": {
     "title": "Agility 57–99 · Hardcore Worlds edition",
@@ -1502,7 +1502,7 @@
           "Any death here is official and run-ending; no Hardcore Worlds safe exception covers this quest."
         ],
         "tips": [
-          "Danger {{risk.residual_ds}} ({{risk.tier}}) with prep; {{risk.inherent_ds}} if unprepared. Held up by the new-content floor, not by known damage."
+          "Danger {{risk.residual_ds}} ({{risk.tier}}): an Intermediate quest. It is under a month old, so check the current walkthrough."
         ]
       },
       "risk": {
@@ -8471,8 +8471,9 @@
           "profit_note": "Falador earns the fewest marks per hour (low end 9.7/h) but reaches Seers' sooner.",
           "worst_residual_ds": 12,
           "worst_residual_tier": "Low",
-          "worst_headline_ds": 17,
+          "worst_headline_ds": 12,
           "worst_headline_tier": "Low",
+          "worst_unprepared_ds": 17,
           "hours": 2.1,
           "over_cap": false
         },
@@ -8504,8 +8505,9 @@
           "profit_note": "Canifis earns more marks per hour (low end 16/h) but at about half the XP rate; marks sell as amylase crystals on the HW GE.",
           "worst_residual_ds": 16,
           "worst_residual_tier": "Low",
-          "worst_headline_ds": 21,
+          "worst_headline_ds": 16,
           "worst_headline_tier": "Low",
+          "worst_unprepared_ds": 21,
           "hours": 0,
           "over_cap": false
         }
@@ -8546,8 +8548,9 @@
           "profit_note": "No direct profit: quest steps carry none (marks come from the rooftop laps that follow).",
           "worst_residual_ds": 10,
           "worst_residual_tier": "Low",
-          "worst_headline_ds": 20,
+          "worst_headline_ds": 10,
           "worst_headline_tier": "Low",
+          "worst_unprepared_ds": 20,
           "hours": 0,
           "over_cap": false
         },
@@ -8585,8 +8588,9 @@
           "profit_note": "No direct profit: quest steps carry none (marks come from the rooftop laps that follow).",
           "worst_residual_ds": 23,
           "worst_residual_tier": "Low",
-          "worst_headline_ds": 33,
-          "worst_headline_tier": "Moderate",
+          "worst_headline_ds": 23,
+          "worst_headline_tier": "Low",
+          "worst_unprepared_ds": 33,
           "hours": 0,
           "over_cap": false
         },
@@ -8612,8 +8616,9 @@
           "profit_note": "Rooftop income at the low end of the mark range: Falador Rooftop Course 9.7 marks/h; marks are converted to amylase crystals and sold on the HW GE.",
           "worst_residual_ds": 12,
           "worst_residual_tier": "Low",
-          "worst_headline_ds": 17,
+          "worst_headline_ds": 12,
           "worst_headline_tier": "Low",
+          "worst_unprepared_ds": 17,
           "hours": 2.1,
           "over_cap": false
         }
@@ -8651,8 +8656,9 @@
           "profit_note": "Rooftop income at the low end of the mark range: Seers' Village Rooftop Course 11 marks/h; marks are converted to amylase crystals and sold on the HW GE.",
           "worst_residual_ds": 16,
           "worst_residual_tier": "Low",
-          "worst_headline_ds": 28,
-          "worst_headline_tier": "Moderate",
+          "worst_headline_ds": 16,
+          "worst_headline_tier": "Low",
+          "worst_unprepared_ds": 28,
           "hours": 11.59,
           "over_cap": false
         },
@@ -8683,8 +8689,9 @@
           "profit_note": "No direct profit: quest steps carry none (marks come from the rooftop laps that follow).",
           "worst_residual_ds": 10,
           "worst_residual_tier": "Low",
-          "worst_headline_ds": 20,
+          "worst_headline_ds": 10,
           "worst_headline_tier": "Low",
+          "worst_unprepared_ds": 20,
           "hours": 0,
           "over_cap": false
         },
@@ -8719,8 +8726,9 @@
           "profit_note": "No direct profit: quest steps carry none (marks come from the rooftop laps that follow).",
           "worst_residual_ds": 10,
           "worst_residual_tier": "Low",
-          "worst_headline_ds": 20,
+          "worst_headline_ds": 10,
           "worst_headline_tier": "Low",
+          "worst_unprepared_ds": 20,
           "hours": 0,
           "over_cap": false
         }
@@ -8756,8 +8764,9 @@
           "profit_note": "Rooftop income at the low end of the mark range: Falador Rooftop Course 9.7 marks/h; marks are converted to amylase crystals and sold on the HW GE.",
           "worst_residual_ds": 12,
           "worst_residual_tier": "Low",
-          "worst_headline_ds": 17,
+          "worst_headline_ds": 12,
           "worst_headline_tier": "Low",
+          "worst_unprepared_ds": 17,
           "hours": 2.1,
           "over_cap": false
         },
@@ -8789,8 +8798,9 @@
           "profit_note": "No direct profit: quest steps carry none (marks come from the rooftop laps that follow).",
           "worst_residual_ds": 10,
           "worst_residual_tier": "Low",
-          "worst_headline_ds": 20,
+          "worst_headline_ds": 10,
           "worst_headline_tier": "Low",
+          "worst_unprepared_ds": 20,
           "hours": 0,
           "over_cap": false
         },
@@ -8820,8 +8830,9 @@
           "profit_note": "No direct profit: quest steps carry none (marks come from the rooftop laps that follow).",
           "worst_residual_ds": 10,
           "worst_residual_tier": "Low",
-          "worst_headline_ds": 16,
+          "worst_headline_ds": 10,
           "worst_headline_tier": "Low",
+          "worst_unprepared_ds": 16,
           "hours": 0,
           "over_cap": false
         }
@@ -8863,8 +8874,9 @@
           "profit_note": "Rooftop income at the low end of the mark range: Pollnivneach Rooftop Course 13 marks/h; marks are converted to amylase crystals and sold on the HW GE.",
           "worst_residual_ds": 10,
           "worst_residual_tier": "Low",
-          "worst_headline_ds": 20,
+          "worst_headline_ds": 10,
           "worst_headline_tier": "Low",
+          "worst_unprepared_ds": 20,
           "hours": 26.55,
           "over_cap": false
         },
@@ -8892,8 +8904,9 @@
           "profit_note": "Rooftop income at the low end of the mark range: Seers' Village Rooftop Course 11 marks/h; marks are converted to amylase crystals and sold on the HW GE.",
           "worst_residual_ds": 16,
           "worst_residual_tier": "Low",
-          "worst_headline_ds": 28,
-          "worst_headline_tier": "Moderate",
+          "worst_headline_ds": 16,
+          "worst_headline_tier": "Low",
+          "worst_unprepared_ds": 28,
           "hours": 0,
           "over_cap": false
         }
@@ -8933,8 +8946,9 @@
           "profit_note": "Rooftop income at the low end of the mark range: Pollnivneach Rooftop Course 13 marks/h, Rellekka Rooftop Course 13 marks/h, Ardougne Rooftop Course 16 marks/h; marks are converted to amylase crystals and sold on the HW GE.",
           "worst_residual_ds": 17,
           "worst_residual_tier": "Low",
-          "worst_headline_ds": 32,
-          "worst_headline_tier": "Moderate",
+          "worst_headline_ds": 17,
+          "worst_headline_tier": "Low",
+          "worst_unprepared_ds": 32,
           "hours": 210.23,
           "over_cap": false
         },
@@ -8969,8 +8983,9 @@
           "profit_note": "Rooftop steps earn marks of grace, sold as amylase crystals on the HW GE (see each step's income); quest steps carry no profit.",
           "worst_residual_ds": 45,
           "worst_residual_tier": "High",
-          "worst_headline_ds": 79,
-          "worst_headline_tier": "Severe",
+          "worst_headline_ds": 45,
+          "worst_headline_tier": "High",
+          "worst_unprepared_ds": 79,
           "hours": 0,
           "over_cap": false
         }
@@ -9008,8 +9023,9 @@
           "profit_note": "Rooftop income at the low end of the mark range: Pollnivneach Rooftop Course 13 marks/h; marks are converted to amylase crystals and sold on the HW GE.",
           "worst_residual_ds": 10,
           "worst_residual_tier": "Low",
-          "worst_headline_ds": 20,
+          "worst_headline_ds": 10,
           "worst_headline_tier": "Low",
+          "worst_unprepared_ds": 20,
           "hours": 71.48,
           "over_cap": false
         },
@@ -9043,8 +9059,9 @@
           "profit_note": "Rooftop income at the low end of the mark range: Rellekka Rooftop Course 13 marks/h; marks are converted to amylase crystals and sold on the HW GE.",
           "worst_residual_ds": 10,
           "worst_residual_tier": "Low",
-          "worst_headline_ds": 28,
-          "worst_headline_tier": "Moderate",
+          "worst_headline_ds": 10,
+          "worst_headline_tier": "Low",
+          "worst_unprepared_ds": 28,
           "hours": 67.19,
           "over_cap": false
         }
