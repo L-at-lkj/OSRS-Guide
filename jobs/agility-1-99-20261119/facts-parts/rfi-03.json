@@ -1,0 +1,204 @@
+{
+ "as_of": "2026-11-22",
+ "facts": [
+  {
+   "fact_id": "F-5901",
+   "claim_id": "C-RFI-401",
+   "subject": "Amylase pack",
+   "attribute": "crystals_per_pack",
+   "value": 100,
+   "unit": "amylase crystals",
+   "statement": "Opening one amylase pack gives 100 amylase crystals (enough for 25 stamina potion(4)).",
+   "status": "VERIFIED_WITH_CAVEAT",
+   "caveat": "Wiki flags are main-game; Hardcore Worlds mapping was not checked. Both quotes come from the same wiki page, so this is one source, not two.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Amylase pack",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15316439",
+     "revid": 15316439,
+     "retrieved": "2026-11-22",
+     "quote": "|examine = A pack containing 100 crystals of amylase.",
+     "fetched_by": "fact-verifier"
+    },
+    {
+     "tier": "T2",
+     "title": "Amylase pack",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15316439",
+     "revid": 15316439,
+     "retrieved": "2026-11-22",
+     "quote": "{{DropsLineReward|name=Amylase crystal|quantity=100|rarity=Always}}",
+     "fetched_by": "fact-verifier"
+    }
+   ],
+   "verified_at": "2026-11-22T04:00:00Z",
+   "independent": true,
+   "released": "2014-07-03"
+  },
+  {
+   "fact_id": "F-5902",
+   "claim_id": "C-RFI-402",
+   "subject": "Amylase crystal",
+   "attribute": "ge_tradeable",
+   "value": true,
+   "unit": null,
+   "statement": "Amylase crystals are tradeable and exchangeable on the Grand Exchange (item id 12640).",
+   "status": "VERIFIED_WITH_CAVEAT",
+   "caveat": "Wiki flags are main-game; Hardcore Worlds mapping was not checked. The researcher gave released 2014-07-10; the wiki infobox says 3 July 2014, so released here is 2014-07-03 (does not affect the tradeable flag).",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Amylase crystal",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375340",
+     "revid": 15375340,
+     "retrieved": "2026-11-22",
+     "quote": "|release = [[3 July]] [[2014]] |tradeable = Yes |exchange = Yes |id = 12640",
+     "fetched_by": "fact-verifier"
+    }
+   ],
+   "verified_at": "2026-11-22T04:00:00Z",
+   "independent": true,
+   "released": "2014-07-03",
+   "researcher_value": true
+  },
+  {
+   "fact_id": "F-5903",
+   "claim_id": "C-RFI-403",
+   "subject": "Amylase pack",
+   "attribute": "ge_tradeable",
+   "value": false,
+   "unit": null,
+   "statement": "Amylase packs are untradeable, so not on the Grand Exchange. They can only be sold back to Grace's Graceful Clothing for 8 marks of grace.",
+   "status": "VERIFIED_WITH_CAVEAT",
+   "caveat": "Wiki flags are main-game; Hardcore Worlds mapping was not checked. Single wiki page; no second independent source found.",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Amylase pack",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15316439",
+     "revid": 15316439,
+     "retrieved": "2026-11-22",
+     "quote": "|tradeable = No",
+     "fetched_by": "fact-verifier"
+    },
+    {
+     "tier": "T2",
+     "title": "Amylase pack",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15316439",
+     "revid": 15316439,
+     "retrieved": "2026-11-22",
+     "quote": "Amylase packs can only be sold back to [[Grace's Graceful Clothing]] for 8 [[marks of grace]]",
+     "fetched_by": "fact-verifier"
+    }
+   ],
+   "verified_at": "2026-11-22T04:00:00Z",
+   "independent": true,
+   "released": "2014-07-03"
+  }
+ ],
+ "rfi": [
+  {
+   "question": "Hardcore Worlds Grand Exchange availability and price for amylase crystal (item 12640); wiki flags are main-game only.",
+   "desk": "logistics-analyst",
+   "refs": [
+    "C-RFI-402"
+   ]
+  }
+ ],
+ "provenance": {
+  "agent": "fact-verifier",
+  "started_at": "2026-11-22T03:55:00Z",
+  "finished_at": "2026-11-22T04:05:00Z",
+  "dispatch_ref": "dispatch/046-fact-verifier.md",
+  "inputs": [
+   {
+    "path": "research/claims-rfi-05.json",
+    "sha256": "bd8bd16bb4e0d7f44ef02c6447d3119dfa354f6c00f3298a861ce8e46d910ba7"
+   },
+   {
+    "path": "brief.json",
+    "sha256": "c27aa6bc9969f981aed9185637565c2792f58b80646cc531afa503e27f969389"
+   },
+   {
+    "path": "dispatch/046-fact-verifier.md",
+    "sha256": "277be5238c2cf19232e6a797f34ef75f63102dccd04eaf3f9346730beb87bbae"
+   },
+   {
+    "path": ".claude/agents/fact-verifier.md",
+    "sha256": "61bff653ddf324af3fd3b78496c155a195e46cbf52e2ab087ceffacd1bdecf34"
+   },
+   {
+    "path": "schemas/facts.schema.json",
+    "sha256": "e098fdf95c8a68673eecb8880afcddbf608298a25d485bd3a83a80a75c8b7bb2"
+   },
+   {
+    "path": "tools/wiki.py",
+    "sha256": "d30b82d5ff286da0f957e4f478f7259dfb6a522311d9f758c28c7ede9e3d1526"
+   },
+   {
+    "path": "tools/validate.py",
+    "sha256": "3066039a6e6d870a9cb253440091d35019b681e2cfdda5156c296a96755bd923"
+   }
+  ],
+  "actions": [
+   {
+    "kind": "verify",
+    "detail": "python3 tools/ledger.py verify agility-1-99-20261119; claims-rfi-05.json sha256 matches seal seq 223",
+    "outcome": "OK"
+   },
+   {
+    "kind": "read",
+    "detail": "Read research/claims-rfi-05.json (C-RFI-401..403) and charter"
+   },
+   {
+    "kind": "fetch",
+    "detail": "wiki.py rev 15316439 (Amylase pack, researcher revision)",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15316439",
+    "outcome": "100 crystals, tradeable = No, 8 marks sale-back text all present"
+   },
+   {
+    "kind": "fetch",
+    "detail": "wiki.py page 'Amylase pack' (current)",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15316439",
+    "outcome": "current revid is 15316439, unchanged"
+   },
+   {
+    "kind": "fetch",
+    "detail": "wiki.py rev 15375340 (Amylase crystal, researcher revision)",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15375340",
+    "outcome": "tradeable = Yes, exchange = Yes, id = 12640, release 3 July 2014"
+   },
+   {
+    "kind": "fetch",
+    "detail": "wiki.py page 'Amylase crystal' (current)",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15375340",
+    "outcome": "current revid is 15375340 (2026-10-18), unchanged"
+   },
+   {
+    "kind": "write",
+    "detail": "wrote facts-parts/rfi-03.json"
+   }
+  ],
+  "decisions": [
+   {
+    "decision": "All three VERIFIED_WITH_CAVEAT rather than VERIFIED",
+    "reason": "Values match exactly on the wiki, but the wiki flags are main-game and no Hardcore Worlds check was possible; the researcher flagged the same gap.",
+    "alternatives_considered": [
+     "VERIFIED"
+    ]
+   },
+   {
+    "decision": "Corrected released date for C-RFI-402 to 2014-07-03, did not mark DISPUTED",
+    "reason": "The disputed field is metadata (researcher said 2014-07-10); the claimed value (tradeable on the GE, id 12640) is unchanged. Recorded in the caveat and researcher_value.",
+    "alternatives_considered": [
+     "DISPUTED"
+    ]
+   }
+  ],
+  "limitations": [
+   "No second independent source (no Jagex T1 post or price API) was fetched; all three facts rest on one T2 wiki page each.",
+   "Hardcore Worlds item/GE mapping not checked.",
+   "Dev blog cited by the wiki for the tradeable change was not fetched."
+  ]
+ }
+}
