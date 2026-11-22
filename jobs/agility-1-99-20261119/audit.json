@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T03:56:31+00:00",
+  "generated_at": "2026-11-22T04:19:07+00:00",
   "ledger": [
     {
       "seq": 0,
@@ -2849,6 +2849,545 @@
       "decision": null,
       "note": "re-export audit for v2 release",
       "ref": null
+    },
+    {
+      "seq": 259,
+      "ts": "2026-11-22T03:56:31+00:00",
+      "event": "seal",
+      "path": "audit.json",
+      "author": "system",
+      "sha256": "e45014f1c09ba2981704f94e9ccdf1321ab8a9eb67562749d998acdbc88e01d6",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 260,
+      "ts": "2026-11-22T03:56:31+00:00",
+      "event": "seal",
+      "path": "audit.html",
+      "author": "system",
+      "sha256": "802961a82ee5c56197507ca5ad093a1cd13c296550831b0638fe5c51bd5ab6c3",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 261,
+      "ts": "2026-11-22T04:00:17+00:00",
+      "event": "decision",
+      "path": null,
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "Owner (verbatim): 'much better. only significant flaw is the danger rating appears to have reverted and does not reflect updated instructions. for example i would suggest troll romance would not be riskier than a 30. unless it is a grandfather quest it is likely only notable for a warnign that certain reccomended stats apply and the quest may be dangerous'. Governance: headline = with-prep game-relative score; quests publish at official difficulty tier (Novice 5, Intermediate 10, Experienced 18, Master 26, Grandmaster 45; +5 below recommended stats); policy r3.",
+      "ref": ""
+    },
+    {
+      "seq": 262,
+      "ts": "2026-11-22T04:00:17+00:00",
+      "event": "seal",
+      "path": "dispatch/051-quest-archivist.md",
+      "author": "director",
+      "sha256": "dcb521ff7e801b642639d7241721019c900967e7f0a3967aa4121fd7dff3410c",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 263,
+      "ts": "2026-11-22T04:00:18+00:00",
+      "event": "dispatch",
+      "path": null,
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "051: RFI-04 quest difficulty (sonnet)",
+      "ref": "dispatch/051-quest-archivist.md"
+    },
+    {
+      "seq": 264,
+      "ts": "2026-11-22T04:01:31+00:00",
+      "event": "return",
+      "path": null,
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "quest-archivist RFI-04 (sonnet): 28 claims, difficulty + recommended stats for 14 quests (Troll Romance = Intermediate, rec combat 50).",
+      "ref": ""
+    },
+    {
+      "seq": 265,
+      "ts": "2026-11-22T04:01:31+00:00",
+      "event": "seal",
+      "path": "research/claims-rfi-06.json",
+      "author": "quest-archivist",
+      "sha256": "ec0e766e20f57fda2e239f402e07dcf19213e234e26bf923bc8d5ca77d8534a1",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 266,
+      "ts": "2026-11-22T04:01:31+00:00",
+      "event": "seal",
+      "path": "dispatch/052-fact-verifier.md",
+      "author": "director",
+      "sha256": "2fa2d7c47ddef469b36bc429c2fce3e4f91054d5bf372871f933555955088a06",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 267,
+      "ts": "2026-11-22T04:01:31+00:00",
+      "event": "dispatch",
+      "path": null,
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "052: verify quest difficulty (sonnet)",
+      "ref": "dispatch/052-fact-verifier.md"
+    },
+    {
+      "seq": 268,
+      "ts": "2026-11-22T04:03:09+00:00",
+      "event": "return",
+      "path": null,
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "verifier RFI-04 (sonnet): 24 VERIFIED, 4 CAVEAT (F-5950..5977); all 14 quest pages unchanged.",
+      "ref": ""
+    },
+    {
+      "seq": 269,
+      "ts": "2026-11-22T04:03:09+00:00",
+      "event": "seal",
+      "path": "facts-parts/rfi-04.json",
+      "author": "fact-verifier",
+      "sha256": "70ef20a7b6f8cc3fff6d9c7817276e66fcc261e5dfa93187dc7e778a7b1f731a",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 270,
+      "ts": "2026-11-22T04:03:09+00:00",
+      "event": "unseal",
+      "path": "facts.json",
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "merge RFI-04 quest difficulty facts",
+      "ref": null
+    },
+    {
+      "seq": 271,
+      "ts": "2026-11-22T04:03:09+00:00",
+      "event": "seal",
+      "path": "facts.json",
+      "author": "system",
+      "sha256": "ee4e1728c0b9c2fe9d1078dd7fd9d8529680f4bb800ca2b0beb56a7c7059006c",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 272,
+      "ts": "2026-11-22T04:03:09+00:00",
+      "event": "unseal",
+      "path": "risk.json",
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "owner rule: tag quest steps with official difficulty and below_recommended (current stats)",
+      "ref": null
+    },
+    {
+      "seq": 273,
+      "ts": "2026-11-22T04:03:09+00:00",
+      "event": "seal",
+      "path": "dispatch/053-risk-officer.md",
+      "author": "director",
+      "sha256": "d54911d663c6aeb406b21fe3ec91cd09bd3aede1a30a70e1bc609df825ac0769",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 274,
+      "ts": "2026-11-22T04:03:09+00:00",
+      "event": "dispatch",
+      "path": null,
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "053: tag quest tiers (sonnet)",
+      "ref": "dispatch/053-risk-officer.md"
+    },
+    {
+      "seq": 275,
+      "ts": "2026-11-22T04:03:57+00:00",
+      "event": "return",
+      "path": null,
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "risk-officer 053 (sonnet): quest tiers on 14 steps (S05/S06 below recommended -> 23; all others 5-10; Troll Romance 10). Factor ratings unchanged.",
+      "ref": ""
+    },
+    {
+      "seq": 276,
+      "ts": "2026-11-22T04:03:57+00:00",
+      "event": "seal",
+      "path": "risk.json",
+      "author": "risk-officer",
+      "sha256": "aa1c62d493dfdaaffa207514bbea522ce469872a6cd0df67643bd5de8559efbd",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 277,
+      "ts": "2026-11-22T04:04:15+00:00",
+      "event": "unseal",
+      "path": "prose.json",
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "danger wording must match policy r3 (headline = with prep; quests by tier); fix QA 050 note 'marks of grace marks'",
+      "ref": null
+    },
+    {
+      "seq": 278,
+      "ts": "2026-11-22T04:04:15+00:00",
+      "event": "seal",
+      "path": "dispatch/054-guide-author.md",
+      "author": "director",
+      "sha256": "afe8e618ca11d62f0c19bfd5dc22f7636a54f5e20c07317d8863fb36833927e8",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 279,
+      "ts": "2026-11-22T04:04:15+00:00",
+      "event": "dispatch",
+      "path": null,
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "054: prose danger wording to r3 (sonnet)",
+      "ref": "dispatch/054-guide-author.md"
+    },
+    {
+      "seq": 280,
+      "ts": "2026-11-22T04:05:03+00:00",
+      "event": "return",
+      "path": null,
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "guide-author 054 (sonnet): 11 danger lines reworded to r3, stale superlatives removed, 'marks' duplication fixed; 0 FAIL.",
+      "ref": ""
+    },
+    {
+      "seq": 281,
+      "ts": "2026-11-22T04:05:03+00:00",
+      "event": "seal",
+      "path": "prose.json",
+      "author": "guide-author",
+      "sha256": "7e8b1b257c2c88d62e2f5ac276c910751faa66602feaeba73b97d6a1f4d98e54",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 282,
+      "ts": "2026-11-22T04:05:03+00:00",
+      "event": "unseal",
+      "path": "content.json",
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "v3 re-assembly: quest tiers (risk), prose r3 wording, facts with quest difficulty",
+      "ref": null
+    },
+    {
+      "seq": 283,
+      "ts": "2026-11-22T04:05:03+00:00",
+      "event": "seal",
+      "path": "content.json",
+      "author": "system",
+      "sha256": "6aed9d02769b7c15a62092495e22a6ca11d855a1dcd89646db94ae9e6760e43e",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 284,
+      "ts": "2026-11-22T04:05:52+00:00",
+      "event": "note",
+      "path": null,
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "Director error: an unseal of guide.html was refused (reason too short) but the chained render still overwrote the sealed guide.html; ledger verify flagged TAMPER as designed. Corrected by a proper unseal and re-render; no content impact (guide.html is regenerated from sealed content.json).",
+      "ref": ""
+    },
+    {
+      "seq": 285,
+      "ts": "2026-11-22T04:05:52+00:00",
+      "event": "unseal",
+      "path": "guide.html",
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "re-render for v3 (quest tiers and prose wording); previous overwrite flagged as tamper",
+      "ref": null
+    },
+    {
+      "seq": 286,
+      "ts": "2026-11-22T04:06:20+00:00",
+      "event": "unseal",
+      "path": "qa.json",
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "v3 release audit: quest tiers and with-prep headline (owner rule)",
+      "ref": null
+    },
+    {
+      "seq": 287,
+      "ts": "2026-11-22T04:06:20+00:00",
+      "event": "seal",
+      "path": "dispatch/055-qa-auditor.md",
+      "author": "director",
+      "sha256": "7d8feb41f827a5115daf5abe3d7c22420629617057bc65dbcb87997b4346d1f3",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 288,
+      "ts": "2026-11-22T04:06:20+00:00",
+      "event": "dispatch",
+      "path": null,
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "055: QA v3 focused audit",
+      "ref": "dispatch/055-qa-auditor.md"
+    },
+    {
+      "seq": 289,
+      "ts": "2026-11-22T04:12:17+00:00",
+      "event": "sign",
+      "path": "content.json",
+      "author": "qa-auditor",
+      "sha256": "6aed9d02769b7c15a62092495e22a6ca11d855a1dcd89646db94ae9e6760e43e",
+      "decision": "reject",
+      "note": "REJECT v3 content 6aed9d02: (1) decision-option badges show the unprepared score big and with-prep small (DP02 B '33 MODERATE, with prep 23'; DP03 C Troll Romance '20 LOW, with prep 10'), inverting the owner's v3 headline rule; cause tools/assemble.py worst_headline_ds = max inherent_ds + templates/guide.html line 396. (2) prose S01 tip 'held up by the new-content floor' contradicts r3 tier placement. Passing: ledger verify (overwrite incident resolved, guide.html embeds current hash), validate release 0 FAIL, browser ALL PASS, 14/14 quest-difficulty facts live-match on 7 pages (Troll Romance, Underground Pass, Regicide, Troll Stronghold, Fremennik Trials, ILH, Death on the Isle), all 14 quest steps publish tier scores (Troll Romance 10; S05/S06 23 with below-recommended ribbon; combat 57 confirmed live), 149/149 mandatory mitigations and stop conditions render. Warn: owner Defence 39 live vs 'Defence 1, quests only' build note; stale stat text; Danger-tab explainer omits quest tiers; RFI-04 verified_at later than its seal.",
+      "ref": null
+    },
+    {
+      "seq": 290,
+      "ts": "2026-11-22T04:13:00+00:00",
+      "event": "return",
+      "path": null,
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "qa-auditor 055: REJECT (seq 289): (1) decision-option badges showed unprepared as big number (Director's assembler/template bug) -> fixed; (2) S01 prose clause 'held up by the new-content floor' -> author. Warnings: Defence 39 vs profile build note (ask owner); Danger tab text updated by Director; no second red-team run: score moves come from owner policy, not risk fixes (docs/10 rule 7).",
+      "ref": ""
+    },
+    {
+      "seq": 291,
+      "ts": "2026-11-22T04:13:00+00:00",
+      "event": "seal",
+      "path": "qa.json",
+      "author": "qa-auditor",
+      "sha256": "f5856faf6f3980c4b927c0d3c62bdb243caf344cf4ccf09d76fbd7d44e6e70c2",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 292,
+      "ts": "2026-11-22T04:13:00+00:00",
+      "event": "unseal",
+      "path": "prose.json",
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "QA 055 R2: S01 tip still says score held up by new-content floor",
+      "ref": null
+    },
+    {
+      "seq": 293,
+      "ts": "2026-11-22T04:13:00+00:00",
+      "event": "seal",
+      "path": "dispatch/056-guide-author.md",
+      "author": "director",
+      "sha256": "9d32eb4f963b1dea20d1c0ead4750f862c073fa1e1ceedee440c66ec715650b9",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 294,
+      "ts": "2026-11-22T04:13:00+00:00",
+      "event": "dispatch",
+      "path": null,
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "056: S01 one-line fix (sonnet)",
+      "ref": "dispatch/056-guide-author.md"
+    },
+    {
+      "seq": 295,
+      "ts": "2026-11-22T04:15:03+00:00",
+      "event": "return",
+      "path": null,
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "guide-author 056: S01.tips[0] reworded to Intermediate-quest basis; stale provenance floor note reworded; prose gate 0 FAIL",
+      "ref": ""
+    },
+    {
+      "seq": 296,
+      "ts": "2026-11-22T04:15:03+00:00",
+      "event": "seal",
+      "path": "prose.json",
+      "author": "guide-author",
+      "sha256": "1d35372a2a544adf2223983b921c71dc5180f19a6825f3c1a580638460b183d8",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 297,
+      "ts": "2026-11-22T04:15:03+00:00",
+      "event": "unseal",
+      "path": "content.json",
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "re-assemble after QA 055 fixes (option badges, S01 tip)",
+      "ref": null
+    },
+    {
+      "seq": 298,
+      "ts": "2026-11-22T04:15:03+00:00",
+      "event": "seal",
+      "path": "content.json",
+      "author": "system",
+      "sha256": "65f6a25b6166fca69e4d0d5c24943548c29f2086cf502a5169e756858e7c2c39",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 299,
+      "ts": "2026-11-22T04:15:30+00:00",
+      "event": "unseal",
+      "path": "qa.json",
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "QA re-check of QA 055 rejection reasons after fixes",
+      "ref": null
+    },
+    {
+      "seq": 300,
+      "ts": "2026-11-22T04:15:30+00:00",
+      "event": "seal",
+      "path": "dispatch/057-qa-auditor.md",
+      "author": "director",
+      "sha256": "c127b6788a8677936a7c8c2f28c93c516674d12196248fea7aee03ffbca0ea77",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 301,
+      "ts": "2026-11-22T04:15:30+00:00",
+      "event": "dispatch",
+      "path": null,
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "057: QA re-check of 055 failures only",
+      "ref": "dispatch/057-qa-auditor.md"
+    },
+    {
+      "seq": 302,
+      "ts": "2026-11-22T04:18:46+00:00",
+      "event": "sign",
+      "path": "content.json",
+      "author": "qa-auditor",
+      "sha256": "65f6a25b6166fca69e4d0d5c24943548c29f2086cf502a5169e756858e7c2c39",
+      "decision": "approve",
+      "note": "APPROVE content 65f6a25b (QA 057 re-check of QA 055): R1 decision-option badges now show with-prep worst score big (17/17 = worst_residual_ds), unprepared small/tooltip; R2 S01 tip gives Intermediate-quest basis, no floor-raises-score line in prose; Danger tab bullets match policy r3. Warns: prose.json provenance lacks 056 action; S18/S19 'score is conservative' wording; no Sentry observations.",
+      "ref": null
+    },
+    {
+      "seq": 303,
+      "ts": "2026-11-22T04:19:06+00:00",
+      "event": "return",
+      "path": null,
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "qa-auditor 057: APPROVE (seq 302) content 65f6a25b; R1+R2 pass; warns: prose provenance lacks 056 entry (ledger seq 295 records it); S18/S19 'conservative' wording loose, off-route; no Sentry observations",
+      "ref": ""
+    },
+    {
+      "seq": 304,
+      "ts": "2026-11-22T04:19:06+00:00",
+      "event": "seal",
+      "path": "qa.json",
+      "author": "qa-auditor",
+      "sha256": "5200ff42c85807c1b807f90c3194c8967d170f54bb14de9b8f5eb64a87108b4e",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 305,
+      "ts": "2026-11-22T04:19:07+00:00",
+      "event": "seal",
+      "path": "guide.html",
+      "author": "system",
+      "sha256": "325877d053c1126d25d0b9aad8f112a1f91d95fb413a3fbf44f2bd68ec572fb6",
+      "decision": null,
+      "note": "",
+      "ref": null
+    },
+    {
+      "seq": 306,
+      "ts": "2026-11-22T04:19:07+00:00",
+      "event": "unseal",
+      "path": "audit.json",
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "re-export audit after v3 release",
+      "ref": null
+    },
+    {
+      "seq": 307,
+      "ts": "2026-11-22T04:19:07+00:00",
+      "event": "unseal",
+      "path": "audit.html",
+      "author": "director",
+      "sha256": null,
+      "decision": null,
+      "note": "re-export audit after v3 release",
+      "ref": null
     }
   ],
   "agents": {},
@@ -5465,8 +6004,8 @@
     },
     "facts.json": {
       "agent": "fact-verifier",
-      "started_at": "2026-11-22T03:40:59+00:00",
-      "finished_at": "2026-11-22T03:40:59+00:00",
+      "started_at": "2026-11-22T04:03:09+00:00",
+      "finished_at": "2026-11-22T04:03:09+00:00",
       "inputs": [
         {
           "path": "brief.json",
@@ -5699,6 +6238,22 @@
         {
           "path": "facts-parts/rfi-03.json",
           "sha256": "b63af1a2b81aa27174fa09817a0bded916c6ef7390899b57e57e07c9f792a9d8"
+        },
+        {
+          "path": "research/claims-rfi-06.json",
+          "sha256": "ec0e766e20f57fda2e239f402e07dcf19213e234e26bf923bc8d5ca77d8534a1"
+        },
+        {
+          "path": ".claude/agents/fact-verifier.md",
+          "sha256": "61bff653ddf324af3fd3b78496c155a195e46cbf52e2ab087ceffacd1bdecf34"
+        },
+        {
+          "path": "schemas/facts.schema.json",
+          "sha256": "e098fdf95c8a68673eecb8880afcddbf608298a25d485bd3a83a80a75c8b7bb2"
+        },
+        {
+          "path": "facts-parts/rfi-04.json",
+          "sha256": "70ef20a7b6f8cc3fff6d9c7817276e66fcc261e5dfa93187dc7e778a7b1f731a"
         },
         {
           "path": "brief.json",
@@ -6842,6 +7397,104 @@
           "detail": "[rfi-03] wrote facts-parts/rfi-03.json"
         },
         {
+          "kind": "verify",
+          "detail": "[rfi-04] python3 tools/ledger.py verify agility-1-99-20261119",
+          "outcome": "OK: ledger chain and all seals intact"
+        },
+        {
+          "kind": "fetch",
+          "detail": "[rfi-04] wiki.py rev 15404622 (The Writing's on the Wall, researcher revision) and wiki.py page 'The Writing's on the Wall' (current)",
+          "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15404622",
+          "outcome": "current revid is 15404622, unchanged; difficulty and |recommended block match the claims"
+        },
+        {
+          "kind": "fetch",
+          "detail": "[rfi-04] wiki.py rev 15365598 (The Depths of Despair, researcher revision) and wiki.py page 'The Depths of Despair' (current)",
+          "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15365598",
+          "outcome": "current revid is 15365598, unchanged; difficulty and |recommended block match the claims"
+        },
+        {
+          "kind": "fetch",
+          "detail": "[rfi-04] wiki.py rev 15401465 (Icthlarin's Little Helper, researcher revision) and wiki.py page 'Icthlarin's Little Helper' (current)",
+          "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15401465",
+          "outcome": "current revid is 15401465, unchanged; difficulty and |recommended block match the claims"
+        },
+        {
+          "kind": "fetch",
+          "detail": "[rfi-04] wiki.py rev 15394232 (A Tail of Two Cats, researcher revision) and wiki.py page 'A Tail of Two Cats' (current)",
+          "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15394232",
+          "outcome": "current revid is 15394232, unchanged; difficulty and |recommended block match the claims"
+        },
+        {
+          "kind": "fetch",
+          "detail": "[rfi-04] wiki.py rev 15392817 (Underground Pass, researcher revision) and wiki.py page 'Underground Pass' (current)",
+          "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15392817",
+          "outcome": "current revid is 15392817, unchanged; difficulty and |recommended block match the claims"
+        },
+        {
+          "kind": "fetch",
+          "detail": "[rfi-04] wiki.py rev 15396547 (Regicide, researcher revision) and wiki.py page 'Regicide' (current)",
+          "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15396547",
+          "outcome": "current revid is 15396547, unchanged; difficulty and |recommended block match the claims"
+        },
+        {
+          "kind": "fetch",
+          "detail": "[rfi-04] wiki.py rev 15411210 (The Fremennik Trials, researcher revision) and wiki.py page 'The Fremennik Trials' (current)",
+          "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15411210",
+          "outcome": "current revid is 15411210, unchanged; difficulty and |recommended block match the claims"
+        },
+        {
+          "kind": "fetch",
+          "detail": "[rfi-04] wiki.py rev 15382205 (Death Plateau, researcher revision) and wiki.py page 'Death Plateau' (current)",
+          "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15382205",
+          "outcome": "current revid is 15382205, unchanged; difficulty and |recommended block match the claims"
+        },
+        {
+          "kind": "fetch",
+          "detail": "[rfi-04] wiki.py rev 15410562 (Troll Stronghold, researcher revision) and wiki.py page 'Troll Stronghold' (current)",
+          "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15410562",
+          "outcome": "current revid is 15410562, unchanged; difficulty and |recommended block match the claims"
+        },
+        {
+          "kind": "fetch",
+          "detail": "[rfi-04] wiki.py rev 15375194 (Troll Romance, researcher revision) and wiki.py page 'Troll Romance' (current)",
+          "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15375194",
+          "outcome": "current revid is 15375194, unchanged; difficulty and |recommended block match the claims"
+        },
+        {
+          "kind": "fetch",
+          "detail": "[rfi-04] wiki.py rev 15405943 (Druidic Ritual, researcher revision) and wiki.py page 'Druidic Ritual' (current)",
+          "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15405943",
+          "outcome": "current revid is 15405943, unchanged; difficulty and |recommended block match the claims"
+        },
+        {
+          "kind": "fetch",
+          "detail": "[rfi-04] wiki.py rev 15403019 (Black Knights' Fortress, researcher revision) and wiki.py page 'Black Knights' Fortress' (current)",
+          "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15403019",
+          "outcome": "current revid is 15403019, unchanged; difficulty and |recommended block match the claims"
+        },
+        {
+          "kind": "fetch",
+          "detail": "[rfi-04] wiki.py rev 15395322 (Recruitment Drive, researcher revision) and wiki.py page 'Recruitment Drive' (current)",
+          "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15395322",
+          "outcome": "current revid is 15395322, unchanged; difficulty and |recommended block match the claims"
+        },
+        {
+          "kind": "fetch",
+          "detail": "[rfi-04] wiki.py rev 15375163 (Death on the Isle, researcher revision) and wiki.py page 'Death on the Isle' (current)",
+          "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15375163",
+          "outcome": "current revid is 15375163, unchanged; difficulty and |recommended block match the claims"
+        },
+        {
+          "kind": "read",
+          "detail": "[rfi-04] Read cached wikitext of Troll Stronghold @15410562 requirements line for Agility 47",
+          "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15410562"
+        },
+        {
+          "kind": "write",
+          "detail": "[rfi-04] wrote facts-parts/rfi-04.json (F-5950..F-5977)"
+        },
+        {
           "kind": "read",
           "detail": "[threats] Read charter .claude/agents/fact-verifier.md (sha256 442e0f171fb8...), CLAUDE.md, dispatch 016, schemas/facts.schema.json, tools/wiki.py, tools/sentry.py (Bash rules) and tools/validate.py (facts gate)."
         },
@@ -7407,6 +8060,18 @@
           ]
         },
         {
+          "decision": "[rfi-04] 24 claims VERIFIED, 4 (C-RFI-506, 508, 510, 518) VERIFIED_WITH_CAVEAT",
+          "reason": "Values match the wikitext exactly; the four caveats note scope of a skill line (route-only, floor, or sourced from the requirements field).",
+          "alternatives_considered": [
+            "caveat everything for single-source/main-game scope (rfi-03 precedent)"
+          ]
+        },
+        {
+          "decision": "[rfi-04] No claim marked STALE",
+          "reason": "Current revid of every page equals the researcher's cited revid on 2026-11-22.",
+          "alternatives_considered": []
+        },
+        {
           "decision": "[threats] C-THR-063 (Vanstrom Klause, Sins of the Father) DISPUTED",
           "reason": "The infobox max hit 24 is labelled '(Standard)'. The quest page documents special attacks of 40+ and blood-orb or lightning hits of up to 40 that hit through prayers. The researcher's max_hit understates the per-hit danger for a 48 HP character.",
           "alternatives_considered": [
@@ -7548,6 +8213,9 @@
         "[rfi-03] No second independent source (no Jagex T1 post or price API) was fetched; all three facts rest on one T2 wiki page each.",
         "[rfi-03] Hardcore Worlds item/GE mapping not checked.",
         "[rfi-03] Dev blog cited by the wiki for the tradeable change was not fetched.",
+        "[rfi-04] Single source type (OSRS Wiki infobox) for every claim; no T1 Jagex source exists for quest difficulty/recommended stats.",
+        "[rfi-04] Hardcore Worlds mapping not checked.",
+        "[rfi-04] Only the |difficulty and |recommended infobox fields (and the Troll Stronghold requirements line) were verified, not walkthrough prose.",
         "[threats] INTERRUPTION: the session was halted by a usage limit after the Ape Atoll set (last fetch 2026-11-20T02:25:10Z) and resumed at about 07:02Z on the coordinator's instruction. Fetches from Brimhaven onwards are dated 07:02-07:08Z. No page fetched before the break was re-fetched after it. Revisions are pinned, so the evidence is unaffected, but pages fetched before 02:26Z could have changed in the gap.",
         "[threats] No independent T3 source was found for any max hit or damage formula. Monster stats rest on OSRS Wiki infoboxes, cross-checked where possible against the wiki's own quest walkthroughs, which are not fully independent. Jagex staff statements (Mod Ash) were read as quoted on wiki pages; the archived tweets themselves were not fetched.",
         "[threats] Early in the session I ran inspection commands that do not follow Sentry's single-command rule: 'cd ... &&' chains with ';', and a 'python3 -c' dump of the sealed claims file redirected into the scratchpad. They were read-only, wrote nothing in the project, and are disclosed here for the audit. All later commands were single python3 tools/wiki.py or validate.py calls.",
@@ -8149,7 +8817,15 @@
         "[run 040] Scope: minimal RT-16 edit only. Plan and calc changed (seq 165/167) after the 035 run; only the S12 step was checked against them. Other steps were not re-read against the new plan/calc in this run.",
         "[run 040] Process deviation, disclosed: read-only python3 -c one-liners and cd-chained commands were used to inspect redteam.json, risk.json, facts.json, plan.json and the validator/schema, and a python script in the session scratchpad rewrote the provenance block of risk.json; both are outside the Sentry allowlist. No file other than risk.json (and the scratchpad script) was written.",
         "[run 040] RFI (3) on whether a carried crystal can reset the Koschei fight stays open; the bank-it rule makes the answer irrelevant to the card."
-      ]
+      ],
+      "quest_tier_revision": {
+        "date": "2026-11-22",
+        "agent": "risk-officer",
+        "charter_sha256": "7cf277720b6e79bede7891d2b9588d2ad4d3af8d03227abebfebc3c94a798677",
+        "change": "Added quest_difficulty, below_recommended, recommended_note to 14 quest steps (facts F-5950..F-5977); profile_basis current_stats_note. Factor ratings, prep cards, mitigations, warnings unchanged.",
+        "backup": "scratchpad risk.bak",
+        "sealed": false
+      }
     },
     "redteam.json": {
       "agent": "red-team",
@@ -8510,7 +9186,7 @@
     "prose.json": {
       "agent": "guide-author",
       "started_at": "2026-11-22T00:00:00Z",
-      "finished_at": "2026-11-22T00:30:00Z",
+      "finished_at": "2026-11-22T01:00:00Z",
       "dispatch_ref": "dispatch/049-guide-author.md",
       "inputs": [
         {
@@ -8596,6 +9272,11 @@
         {
           "kind": "verify",
           "detail": "python3 tools/validate.py agility-1-99-20261119 prose"
+        },
+        {
+          "kind": "write",
+          "detail": "Policy r3 danger display: rewrote intro[1], intro[5] (marks no longer repeated) and the score clauses in S01, S03, S05, S06, S12, S14, S15, S16, S17, S25 to the 'Danger X with prep; Y if unprepared' form; removed stale superlatives; added below-recommended-combat clause to S05 and S06.",
+          "target": "jobs/agility-1-99-20261119/prose.json"
         }
       ],
       "decisions": [
@@ -8630,6 +9311,11 @@
           "decision": "Exact HP lines with no token stay referenced as the card lines.",
           "reason": "Only risk.min_hitpoints exposes an HP number; the danger card shows the rest.",
           "alternatives_considered": []
+        },
+        {
+          "decision": "Dropped 'highest' superlatives (S12, S14, S17) and the S01 new-content floor clause (S01 scores by its Intermediate quest difficulty); S15 northern-path warning kept as an avoid instruction.",
+          "reason": "New scores (e.g. S23 86, S24 55 with prep) make them untrue.",
+          "alternatives_considered": []
         }
       ],
       "limitations": [
@@ -8641,49 +9327,49 @@
     },
     "qa.json": {
       "agent": "qa-auditor",
-      "started_at": "2026-11-22T03:47:30Z",
-      "finished_at": "2026-11-22T03:58:00Z",
-      "dispatch_ref": "dispatch/050-qa-auditor.md",
+      "started_at": "2026-11-22T04:16:00Z",
+      "finished_at": "2026-11-22T04:19:00Z",
+      "dispatch_ref": "dispatch/057-qa-auditor.md",
       "inputs": [
         {
           "path": ".claude/agents/qa-auditor.md",
           "sha256": "7a7a5782e6eaee1bb6f93e07520ae5edfb17c70c4be0221e052ca8d701854886"
         },
         {
-          "path": "docs/10-production-efficiency.md",
-          "sha256": "2e7175f317aef486b1a3e300c00a2349a0b9fddcc9aa4bdc6a5aad341bee44d7"
-        },
-        {
           "path": "schemas/qa.schema.json",
           "sha256": "c57c4dceb5a22a6bea51b03f79254d7e0a6981858b4568557810c580d1fa5e17"
         },
         {
+          "path": "policy/danger-calibration.json",
+          "sha256": "d377d465fcad02bfe29c3daf2efe402989bd40f60db6ad552cb4d337b145e81b"
+        },
+        {
+          "path": "profiles/hcmbtw.json",
+          "sha256": "81bc7c98f8da5844229f57b7183b40ffbb6b29bbab8be41fcab8a784200ee68b"
+        },
+        {
           "path": "templates/guide.html",
-          "sha256": "44415e28c413be3dc0961866a7341d513b137b1bbf9761286bebf86e6b4ea6a4"
+          "sha256": "fb80cb34de1c5c5c1b2659df76fa9ee0301292189cf711e568c0611d5f4c24ab"
         },
         {
           "path": "tools/assemble.py",
-          "sha256": "ae77cc7e53650f9c882ad7abf9f7d031437ca3727f7d64ef23bd0a3a01a05266"
+          "sha256": "4b75f89b51df510beb37d6ace8a3b126b9efb00e2db928d4489b5eddc5bae3de"
         },
         {
-          "path": "tools/render.py",
-          "sha256": "1988a15e9cb75b56b251af02db69193c0fcaaa18e906dd8ffc7eb78f84e5a89f"
+          "path": "tools/danger.py",
+          "sha256": "b6b046c19be51fe8bfb0a39522131572484e163be7fd33877526bec62b4692a6"
         },
         {
           "path": "tools/validate.py",
-          "sha256": "3066039a6e6d870a9cb253440091d35019b681e2cfdda5156c296a96755bd923"
+          "sha256": "67af6a3eb2b51e148d0a3d85da6018778096d5fc75a7a64e698120ba2ec43ed5"
         },
         {
           "path": "tools/ledger.py",
           "sha256": "a50e8df1fe192a5d5f7060d6b871a6539342bedd6235843e10e0bc1cb849077f"
         },
         {
-          "path": "tools/xp.py",
-          "sha256": "a64be3ecf6f471568ecd4d231118c74fc704cbfc28e59ff6b6c0fffdd8493590"
-        },
-        {
-          "path": "tools/prices.py",
-          "sha256": "d008668c70db9888789ffa0bf02fbf6387ae7f841f008168505000696d4a5e34"
+          "path": "tools/audit.py",
+          "sha256": "623e1a8628c8cdbf602618baa6a6c687b13767ee0b20c2f64cdfd751912c3739"
         },
         {
           "path": "tools/wiki.py",
@@ -8694,89 +9380,68 @@
           "sha256": "ff7e17d4e21787e518380705e3f4dade289c606b6f08401be44dbe8915c68dc8"
         },
         {
-          "path": "tools/audit.py",
-          "sha256": "623e1a8628c8cdbf602618baa6a6c687b13767ee0b20c2f64cdfd751912c3739"
+          "path": "dispatch/057-qa-auditor.md",
+          "sha256": "c127b6788a8677936a7c8c2f28c93c516674d12196248fea7aee03ffbca0ea77"
         },
         {
-          "path": "dispatch/050-qa-auditor.md",
-          "sha256": "a338ba6c02966d0cc41a87f66e4b88b95927cf9ac43d1f00a2b42f3ba0e717b9"
+          "path": "dispatch/056-guide-author.md",
+          "sha256": "9d32eb4f963b1dea20d1c0ead4750f862c073fa1e1ceedee440c66ec715650b9"
         },
         {
           "path": "content.json",
-          "sha256": "475b8102652fee75e64166fdb38b903739e71838147033ca2fb623530970748b"
+          "sha256": "65f6a25b6166fca69e4d0d5c24943548c29f2086cf502a5169e756858e7c2c39"
         },
         {
           "path": "guide.html",
-          "sha256": "39b9fc1868fafc69139053d973f0c0f1b2ed10b114c8135fd1a7a7e379aad413"
+          "sha256": "4ad8221484fe917d0bb6d358f04e56ecae03ead1f3807c47ec3c3f6f1707d9a2"
+        },
+        {
+          "path": "prose.json",
+          "sha256": "1d35372a2a544adf2223983b921c71dc5180f19a6825f3c1a580638460b183d8"
+        },
+        {
+          "path": "risk.json",
+          "sha256": "aa1c62d493dfdaaffa207514bbea522ce469872a6cd0df67643bd5de8559efbd"
+        },
+        {
+          "path": "facts.json",
+          "sha256": "ee4e1728c0b9c2fe9d1078dd7fd9d8529680f4bb800ca2b0beb56a7c7059006c"
         },
         {
           "path": "plan.json",
           "sha256": "bbbbe6e9e60a09ad7d25a790fa4dedf91e0ffb5946fbc04f7f29eb1ebf0b75ee"
-        },
-        {
-          "path": "calc.json",
-          "sha256": "b8d7b9c7b5e6951c027355e1bd9552abb472173c7db64a545b0da22e9b7a9909"
-        },
-        {
-          "path": "calc-review.json",
-          "sha256": "006290bc6b5541342f9322094a5eb7afa068fef0574aa2ec5196ad1e54faa8cd"
-        },
-        {
-          "path": "prices.json",
-          "sha256": "a3a7643f5c1c015c8f275bc7b9a9e11f1b53417496efe1660ef8d83e896254e5"
-        },
-        {
-          "path": "facts.json",
-          "sha256": "81096ceb8f4ecb2b8eb72d9ef82ddacebae6cbe1f553791883184fee4f2098ec"
-        },
-        {
-          "path": "prose.json",
-          "sha256": "06d70a89428d9cbea821decb473c17f1fd4ab2eaf8c0f5f3316799e5e10e256a"
-        },
-        {
-          "path": "risk.json",
-          "sha256": "74bbfca5c25eaba0f88aac5fddf412c2392bd7d7607cde0239ceaf3b5b701d12"
-        },
-        {
-          "path": "redteam.json",
-          "sha256": "d0b23e5dd9ddfb3d22547248a12651601c8abdad304e35c46d126b7fcbbc1eb1"
-        },
-        {
-          "path": "research/claims-rfi-05.json",
-          "sha256": "bd8bd16bb4e0d7f44ef02c6447d3119dfa354f6c00f3298a861ce8e46d910ba7"
-        },
-        {
-          "path": "facts-parts/rfi-03.json",
-          "sha256": "b63af1a2b81aa27174fa09817a0bded916c6ef7390899b57e57e07c9f792a9d8"
-        },
-        {
-          "path": "ledger.jsonl",
-          "sha256": "924d07c99e083385574f04f80ebe102887448262abc41bab0c2ae798bb71be67"
-        },
-        {
-          "path": "screens/desktop.png",
-          "sha256": "e8c15379c4b23f800c31919581a94d81571a7cfaa2d1fa3ea5ee418158a013fb"
-        },
-        {
-          "path": "screens/mobile.png",
-          "sha256": "90b86dddb6a5412021e5b3cc4afca1fefe9f19f3e74700196553963055174001"
         }
       ],
       "actions": [
         {
           "kind": "verify",
           "detail": "python3 tools/ledger.py verify agility-1-99-20261119",
-          "outcome": "OK; 2 unsealed draft warnings"
+          "outcome": "OK chain and seals intact; WARN unsealed calc-draft.json"
         },
         {
           "kind": "verify",
           "detail": "python3 tools/validate.py agility-1-99-20261119 release",
-          "outcome": "0 fail, 62 warn"
+          "outcome": "0 fail, 70 warn"
         },
         {
           "kind": "verify",
           "detail": "python3 tools/audit.py crosscheck agility-1-99-20261119",
-          "outcome": "warn only (unsealed draft; no Sentry observations)"
+          "outcome": "0 fail; WARN no Sentry observations, unsealed calc-draft.json"
+        },
+        {
+          "kind": "compute",
+          "detail": "sha256 of every QA 055 input vs now",
+          "outcome": "changed: templates/guide.html, tools/assemble.py, prose.json, content.json, guide.html, ledger.jsonl; rest identical"
+        },
+        {
+          "kind": "read",
+          "detail": "tools/assemble.py lines 65-100 (route and decision-option scoring); templates/guide.html lines 237-238, 340-342, 393-409, 450-466",
+          "outcome": "option badge = worst_residual_ds; Danger tab bullets read"
+        },
+        {
+          "kind": "compute",
+          "detail": "content.json: all decision options worst_headline_ds vs worst_residual_ds vs worst_unprepared_ds",
+          "outcome": "17/17 consistent"
         },
         {
           "kind": "verify",
@@ -8784,96 +9449,57 @@
           "outcome": "ALL PASS"
         },
         {
-          "kind": "read",
-          "detail": "ledger seq 205-252, dispatch 050, calc-review.json findings Q-01..Q-15, plan income_per_hour, content intro/outro/assumptions/prices, risk S05/S12/S17, tools/ledger.py (seal/sign/verify/release_status), tools/render.py, template card/tile code"
-        },
-        {
-          "kind": "fetch",
-          "detail": "tools/wiki.py page 'Amylase pack' and 'Amylase crystal'",
-          "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15316439 ; oldid=15375340",
-          "outcome": "live revisions unchanged; quotes present"
-        },
-        {
-          "kind": "fetch",
-          "detail": "tools/wiki.py page 'Rooftop Agility Courses', 'Mark of Grace', 'Agility training', 'Falador Rooftop Course', 'Canifis Rooftop Course', 'Graceful outfit'",
-          "target": "oldid 15337972, 15403415, 15369875, 15319531, 15374436, 15403851",
-          "outcome": "all live revisions unchanged; quotes present"
-        },
-        {
-          "kind": "fetch",
-          "detail": "tools/prices.py lookup 'Amylase crystal' and GET /api/v2/osrs-hc/latest?id=12640",
-          "target": "https://prices.runescape.wiki/api/v2/osrs-hc/latest?id=12640",
-          "outcome": "high 608 / low 487, same as snapshot (0% change)"
-        },
-        {
-          "kind": "fetch",
-          "detail": "GET main-game /api/v1/osrs/latest?id=12640 for comparison",
-          "target": "https://prices.runescape.wiki/api/v1/osrs/latest?id=12640",
-          "outcome": "high 403 / low 400: distinct economy from HW"
-        },
-        {
-          "kind": "fetch",
-          "detail": "tools/wiki.py new-pages --ns Update --since 2026-11-19; page 'Update:Gielinor Gazette - November 2026' grep agility/marks/graceful/amylase/hardcore",
-          "outcome": "nothing Agility-relevant"
-        },
-        {
-          "kind": "compute",
-          "detail": "Independent profit recompute from calc step hours x plan marks/h x 10 crystals/mark x 548",
-          "outcome": "18,006,837 / 17,645,645 vs calc 18,006,836 / 17,645,644"
-        },
-        {
-          "kind": "compute",
-          "detail": "In-memory run of tools/assemble.py main() with save_json captured; diff vs content.json",
-          "outcome": "identical except assembled_at"
-        },
-        {
-          "kind": "compute",
-          "detail": "guide.html vs templates/guide.html with data blobs removed",
-          "outcome": "only hash, title and release-state substitutions differ"
-        },
-        {
           "kind": "verify",
-          "detail": "Playwright scripts (scratchpad qa050/read.mjs, dom.mjs, mit.mjs, tiles.mjs): hot-card styles, unresolved tokens, mitigation/stop-condition coverage, tile values, screenshots",
-          "outcome": "hot cards red on all headline>=45 steps; 0 unresolved tokens; 149/149 mitigations and stop conditions render; tiles show profit"
+          "detail": "Own Playwright script (scratchpad): full-page Decisions-tab screenshot; option badge texts from DOM; Danger tab bullet text; Route/Decisions text of both routes with details expanded, filtered for floor/new-content/conservative",
+          "outcome": "badges 12,16,10,23,12,16,10,10,12,10,10,10,16,17,45,10,10 = worst_residual_ds; S01 tip renders 'Danger 10 (Low): an Intermediate quest...'; no floor-raises-score line"
+        },
+        {
+          "kind": "read",
+          "detail": "grep prose.json for floor/new-content/score claims; content.json walk for 'held/raise/lift ... floor'",
+          "outcome": "only S01 risk.verdict_reason (risk.json data, not rendered)"
+        },
+        {
+          "kind": "read",
+          "detail": "policy/danger-calibration.json publishing, quest_tiers, wilderness_premium, scale_ceiling; tools/danger.py TIERS and PREP_CARD_FROM",
+          "outcome": "Danger tab text matches"
+        },
+        {
+          "kind": "fetch",
+          "detail": "python3 tools/wiki.py page \"The Writing's on the Wall\" --grep difficulty|release|recommended",
+          "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15404622",
+          "outcome": "live revid 15404622 = cited; Intermediate; released 3 Nov 2026; no recommended stats"
         },
         {
           "kind": "write",
-          "detail": "jobs/agility-1-99-20261119/qa.json"
+          "detail": "jobs/agility-1-99-20261119/qa.json (decision approve)"
         },
         {
           "kind": "decide",
-          "detail": "approve; sign via tools/ledger.py sign --role qa"
+          "detail": "python3 tools/ledger.py sign agility-1-99-20261119 --role qa --author qa-auditor --subject content.json --decision approve"
         }
       ],
       "decisions": [
         {
-          "decision": "Scope the live spot-checks to the 12 facts v2 introduced or newly relies on",
-          "reason": "Dispatch: audit only what v2 changed; risk.json and facts behind danger ratings unchanged, and 110 live checks from QA 041/044 stand.",
+          "decision": "approve content.json 65f6a25b",
+          "reason": "Both QA 055 failures (R1 option badges, R2 S01 floor clause) are fixed and verified in content, template and rendered page; every other input is hash-identical to what QA 055 checked and passed; no check fails.",
           "alternatives_considered": [
-            "Re-sample 10% of all 323 shipped facts (unnecessary: their sources and ratings are unchanged)"
+            "reject over the prose.json provenance gap for dispatch 056: rejected because the edit is verified directly and the gap is an audit note, not a content error",
+            "reject over S18/S19 'score is conservative': rejected because it is not a floor claim and misstates no number"
           ]
         },
         {
-          "decision": "Treat W1-W5 as warnings, not failures",
-          "reason": "They are text/presentation defects with no safety effect: every safety warning and mandatory mitigation is present, red marking is correct, profit qualifiers (mid price, all marks sold, no GE tax, Graceful not deducted) are disclosed. A rejection would cost a full fix round for cosmetic items.",
+          "decision": "carry forward the 14 QA 055 live spot checks; re-fetch only the S01 tier facts",
+          "reason": "facts.json is unchanged and the dispatch limits this to a re-check; the only new factual wording is the S01 tip, so its basis facts were re-fetched live.",
           "alternatives_considered": [
-            "Reject for the rationale slabs (owner style) and the missing Q-11 price band"
-          ]
-        },
-        {
-          "decision": "Accept the undocumented tool/template edits on functional evidence",
-          "reason": "Exact reproduction of content.json and guide.html from sealed inputs plus a read of ledger.py's trust checks; flagged for a governance note.",
-          "alternatives_considered": [
-            "Reject until a governance record exists"
+            "re-fetch all 14 again"
           ]
         }
       ],
       "limitations": [
-        "No pre-v2 copy of prose.json exists, so 'every v1 warning kept' was checked against risk.json (unchanged) mandatory mitigations and stop conditions plus the three named warnings, not by a line-by-line diff of old and new prose.",
-        "No old copies of the changed tools/template exist; their changes were checked by output reproduction, not by diff.",
-        "No Sentry observations exist for this job, so self-reported agent actions could not be compared to observed tool calls.",
-        "The price check is one moment; the amylase price is a single 24h snapshot and will move.",
-        "Hardcore Worlds tradeability of amylase packs (F-5903, main-game wiki flag) was not independently confirmed for HW; it does not affect the profit, which sells crystals only."
+        "Re-check scope only (dispatch 057): items QA 055 passed were not re-run except validators, browser check and hash comparison.",
+        "No Sentry observations exist for this job, so the crosscheck cannot confirm agents' self-reported actions.",
+        "browser_check.mjs does not screenshot the Decisions tab; my own Decisions screenshot is in the scratchpad, not in screens/.",
+        "The 14 carried spot checks were fetched at 04:06-04:07Z, not re-fetched."
       ]
     }
   },
@@ -8889,9 +9515,9 @@
   ],
   "release": {
     "released": true,
-    "content_sha256": "475b8102652fee75e64166fdb38b903739e71838147033ca2fb623530970748b",
+    "content_sha256": "65f6a25b6166fca69e4d0d5c24943548c29f2086cf502a5169e756858e7c2c39",
     "reasons": [],
-    "approved_at": "2026-11-22T03:55:44+00:00"
+    "approved_at": "2026-11-22T04:18:46+00:00"
   },
   "audit_log_head": null,
   "timeline": [
@@ -10707,6 +11333,349 @@
       "who": "director",
       "what": "unseal",
       "detail": "audit.html re-export audit for v2 release"
+    },
+    {
+      "ts": "2026-11-22T03:56:31+00:00",
+      "source": "ledger",
+      "who": "system",
+      "what": "seal",
+      "detail": "audit.json"
+    },
+    {
+      "ts": "2026-11-22T03:56:31+00:00",
+      "source": "ledger",
+      "who": "system",
+      "what": "seal",
+      "detail": "audit.html"
+    },
+    {
+      "ts": "2026-11-22T04:00:17+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "decision",
+      "detail": " Owner (verbatim): 'much better. only significant flaw is the danger rating appears to have reverted and does not reflect updated instructions. for example i would suggest troll romance would not be riskier than a 30. unless it is a grandfather quest it is likely only notable for a warnign that certain reccomended stats apply and the quest may be dangerous'. Governance: headline = with-prep game-relative score; quests publish at official difficulty tier (Novice 5, Intermediate 10, Experienced 18, Master 26, Grandmaster 45; +5 below recommended stats); policy r3."
+    },
+    {
+      "ts": "2026-11-22T04:00:17+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "seal",
+      "detail": "dispatch/051-quest-archivist.md"
+    },
+    {
+      "ts": "2026-11-22T04:00:18+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "dispatch",
+      "detail": " 051: RFI-04 quest difficulty (sonnet)"
+    },
+    {
+      "ts": "2026-11-22T04:01:31+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "return",
+      "detail": " quest-archivist RFI-04 (sonnet): 28 claims, difficulty + recommended stats for 14 quests (Troll Romance = Intermediate, rec combat 50)."
+    },
+    {
+      "ts": "2026-11-22T04:01:31+00:00",
+      "source": "ledger",
+      "who": "quest-archivist",
+      "what": "seal",
+      "detail": "research/claims-rfi-06.json"
+    },
+    {
+      "ts": "2026-11-22T04:01:31+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "seal",
+      "detail": "dispatch/052-fact-verifier.md"
+    },
+    {
+      "ts": "2026-11-22T04:01:31+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "dispatch",
+      "detail": " 052: verify quest difficulty (sonnet)"
+    },
+    {
+      "ts": "2026-11-22T04:03:09+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "return",
+      "detail": " verifier RFI-04 (sonnet): 24 VERIFIED, 4 CAVEAT (F-5950..5977); all 14 quest pages unchanged."
+    },
+    {
+      "ts": "2026-11-22T04:03:09+00:00",
+      "source": "ledger",
+      "who": "fact-verifier",
+      "what": "seal",
+      "detail": "facts-parts/rfi-04.json"
+    },
+    {
+      "ts": "2026-11-22T04:03:09+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "unseal",
+      "detail": "facts.json merge RFI-04 quest difficulty facts"
+    },
+    {
+      "ts": "2026-11-22T04:03:09+00:00",
+      "source": "ledger",
+      "who": "system",
+      "what": "seal",
+      "detail": "facts.json"
+    },
+    {
+      "ts": "2026-11-22T04:03:09+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "unseal",
+      "detail": "risk.json owner rule: tag quest steps with official difficulty and below_recommended (current stats)"
+    },
+    {
+      "ts": "2026-11-22T04:03:09+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "seal",
+      "detail": "dispatch/053-risk-officer.md"
+    },
+    {
+      "ts": "2026-11-22T04:03:09+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "dispatch",
+      "detail": " 053: tag quest tiers (sonnet)"
+    },
+    {
+      "ts": "2026-11-22T04:03:57+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "return",
+      "detail": " risk-officer 053 (sonnet): quest tiers on 14 steps (S05/S06 below recommended -> 23; all others 5-10; Troll Romance 10). Factor ratings unchanged."
+    },
+    {
+      "ts": "2026-11-22T04:03:57+00:00",
+      "source": "ledger",
+      "who": "risk-officer",
+      "what": "seal",
+      "detail": "risk.json"
+    },
+    {
+      "ts": "2026-11-22T04:04:15+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "unseal",
+      "detail": "prose.json danger wording must match policy r3 (headline = with prep; quests by tier); fix QA 050 note 'marks of grace marks'"
+    },
+    {
+      "ts": "2026-11-22T04:04:15+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "seal",
+      "detail": "dispatch/054-guide-author.md"
+    },
+    {
+      "ts": "2026-11-22T04:04:15+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "dispatch",
+      "detail": " 054: prose danger wording to r3 (sonnet)"
+    },
+    {
+      "ts": "2026-11-22T04:05:03+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "return",
+      "detail": " guide-author 054 (sonnet): 11 danger lines reworded to r3, stale superlatives removed, 'marks' duplication fixed; 0 FAIL."
+    },
+    {
+      "ts": "2026-11-22T04:05:03+00:00",
+      "source": "ledger",
+      "who": "guide-author",
+      "what": "seal",
+      "detail": "prose.json"
+    },
+    {
+      "ts": "2026-11-22T04:05:03+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "unseal",
+      "detail": "content.json v3 re-assembly: quest tiers (risk), prose r3 wording, facts with quest difficulty"
+    },
+    {
+      "ts": "2026-11-22T04:05:03+00:00",
+      "source": "ledger",
+      "who": "system",
+      "what": "seal",
+      "detail": "content.json"
+    },
+    {
+      "ts": "2026-11-22T04:05:52+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "note",
+      "detail": " Director error: an unseal of guide.html was refused (reason too short) but the chained render still overwrote the sealed guide.html; ledger verify flagged TAMPER as designed. Corrected by a proper unseal and re-render; no content impact (guide.html is regenerated from sealed content.json)."
+    },
+    {
+      "ts": "2026-11-22T04:05:52+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "unseal",
+      "detail": "guide.html re-render for v3 (quest tiers and prose wording); previous overwrite flagged as tamper"
+    },
+    {
+      "ts": "2026-11-22T04:06:20+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "unseal",
+      "detail": "qa.json v3 release audit: quest tiers and with-prep headline (owner rule)"
+    },
+    {
+      "ts": "2026-11-22T04:06:20+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "seal",
+      "detail": "dispatch/055-qa-auditor.md"
+    },
+    {
+      "ts": "2026-11-22T04:06:20+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "dispatch",
+      "detail": " 055: QA v3 focused audit"
+    },
+    {
+      "ts": "2026-11-22T04:12:17+00:00",
+      "source": "ledger",
+      "who": "qa-auditor",
+      "what": "sign",
+      "detail": "content.json REJECT v3 content 6aed9d02: (1) decision-option badges show the unprepared score big and with-prep small (DP02 B '33 MODERATE, with prep 23'; DP03 C Troll Romance '20 LOW, with prep 10'), inverting the owner's v3 headline rule; cause tools/assemble.py worst_headline_ds = max inherent_ds + templates/guide.html line 396. (2) prose S01 tip 'held up by the new-content floor' contradicts r3 tier placement. Passing: ledger verify (overwrite incident resolved, guide.html embeds current hash), validate release 0 FAIL, browser ALL PASS, 14/14 quest-difficulty facts live-match on 7 pages (Troll Romance, Underground Pass, Regicide, Troll Stronghold, Fremennik Trials, ILH, Death on the Isle), all 14 quest steps publish tier scores (Troll Romance 10; S05/S06 23 with below-recommended ribbon; combat 57 confirmed live), 149/149 mandatory mitigations and stop conditions render. Warn: owner Defence 39 live vs 'Defence 1, quests only' build note; stale stat text; Danger-tab explainer omits quest tiers; RFI-04 verified_at later than its seal."
+    },
+    {
+      "ts": "2026-11-22T04:13:00+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "return",
+      "detail": " qa-auditor 055: REJECT (seq 289): (1) decision-option badges showed unprepared as big number (Director's assembler/template bug) -> fixed; (2) S01 prose clause 'held up by the new-content floor' -> author. Warnings: Defence 39 vs profile build note (ask owner); Danger tab text updated by Director; no second red-team run: score moves come from owner policy, not risk fixes (docs/10 rule 7)."
+    },
+    {
+      "ts": "2026-11-22T04:13:00+00:00",
+      "source": "ledger",
+      "who": "qa-auditor",
+      "what": "seal",
+      "detail": "qa.json"
+    },
+    {
+      "ts": "2026-11-22T04:13:00+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "unseal",
+      "detail": "prose.json QA 055 R2: S01 tip still says score held up by new-content floor"
+    },
+    {
+      "ts": "2026-11-22T04:13:00+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "seal",
+      "detail": "dispatch/056-guide-author.md"
+    },
+    {
+      "ts": "2026-11-22T04:13:00+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "dispatch",
+      "detail": " 056: S01 one-line fix (sonnet)"
+    },
+    {
+      "ts": "2026-11-22T04:15:03+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "return",
+      "detail": " guide-author 056: S01.tips[0] reworded to Intermediate-quest basis; stale provenance floor note reworded; prose gate 0 FAIL"
+    },
+    {
+      "ts": "2026-11-22T04:15:03+00:00",
+      "source": "ledger",
+      "who": "guide-author",
+      "what": "seal",
+      "detail": "prose.json"
+    },
+    {
+      "ts": "2026-11-22T04:15:03+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "unseal",
+      "detail": "content.json re-assemble after QA 055 fixes (option badges, S01 tip)"
+    },
+    {
+      "ts": "2026-11-22T04:15:03+00:00",
+      "source": "ledger",
+      "who": "system",
+      "what": "seal",
+      "detail": "content.json"
+    },
+    {
+      "ts": "2026-11-22T04:15:30+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "unseal",
+      "detail": "qa.json QA re-check of QA 055 rejection reasons after fixes"
+    },
+    {
+      "ts": "2026-11-22T04:15:30+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "seal",
+      "detail": "dispatch/057-qa-auditor.md"
+    },
+    {
+      "ts": "2026-11-22T04:15:30+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "dispatch",
+      "detail": " 057: QA re-check of 055 failures only"
+    },
+    {
+      "ts": "2026-11-22T04:18:46+00:00",
+      "source": "ledger",
+      "who": "qa-auditor",
+      "what": "sign",
+      "detail": "content.json APPROVE content 65f6a25b (QA 057 re-check of QA 055): R1 decision-option badges now show with-prep worst score big (17/17 = worst_residual_ds), unprepared small/tooltip; R2 S01 tip gives Intermediate-quest basis, no floor-raises-score line in prose; Danger tab bullets match policy r3. Warns: prose.json provenance lacks 056 action; S18/S19 'score is conservative' wording; no Sentry observations."
+    },
+    {
+      "ts": "2026-11-22T04:19:06+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "return",
+      "detail": " qa-auditor 057: APPROVE (seq 302) content 65f6a25b; R1+R2 pass; warns: prose provenance lacks 056 entry (ledger seq 295 records it); S18/S19 'conservative' wording loose, off-route; no Sentry observations"
+    },
+    {
+      "ts": "2026-11-22T04:19:06+00:00",
+      "source": "ledger",
+      "who": "qa-auditor",
+      "what": "seal",
+      "detail": "qa.json"
+    },
+    {
+      "ts": "2026-11-22T04:19:07+00:00",
+      "source": "ledger",
+      "who": "system",
+      "what": "seal",
+      "detail": "guide.html"
+    },
+    {
+      "ts": "2026-11-22T04:19:07+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "unseal",
+      "detail": "audit.json re-export audit after v3 release"
+    },
+    {
+      "ts": "2026-11-22T04:19:07+00:00",
+      "source": "ledger",
+      "who": "director",
+      "what": "unseal",
+      "detail": "audit.html re-export audit after v3 release"
     }
   ],
   "transcripts": []
