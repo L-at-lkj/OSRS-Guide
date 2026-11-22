@@ -22,7 +22,7 @@ from common import die, job_dir, load_json, now_iso, save_json, sha256_file, val
 import ledger  # noqa: E402
 
 RANGES = {"updates": (1, 999), "methods": (1000, 1999), "quests": (2000, 2999), "threats": (3000, 3999),
-          "logistics": (4000, 4999), "rfi": (5000, 5999)}
+          "logistics": (4000, 4999), "rfi": (5000, 5999), "carryover": (6000, 6999)}
 
 
 def main():

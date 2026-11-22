@@ -220,6 +220,17 @@ def g_facts(job, r, part=None, claim_range=None):
         if f["fact_id"] in ids:
             r.fail(f"duplicate fact id {f['fact_id']}")
         ids.add(f["fact_id"])
+        if f["claim_id"].startswith("carry:"):
+            _, src_job, src_fid = f["claim_id"].split(":", 2)
+            try:
+                origin = {x["fact_id"]: x for x in load_json(job_dir(src_job) / "facts.json")["facts"]}.get(src_fid)
+            except (OSError, ValueError):
+                origin = None
+            if not origin or origin["status"] not in GOOD:
+                r.fail(f"{f['fact_id']}: carried from {src_job}/{src_fid}, which is missing or not verified there")
+            elif json.dumps(origin["value"], sort_keys=True) != json.dumps(f["value"], sort_keys=True):
+                r.fail(f"{f['fact_id']}: carried value differs from origin {src_job}/{src_fid}")
+            continue
         c = claims.get(f["claim_id"])
         if c is None:
             r.fail(f"{f['fact_id']}: claim {f['claim_id']} not found in sealed research")

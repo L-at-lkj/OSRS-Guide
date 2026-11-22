@@ -47,6 +47,7 @@ SEAL_RIGHTS: list[tuple[str, set[str]]] = [
     ("research/claims-threats.json", {"threat-analyst"}),
     ("research/claims-logistics.json", {"logistics-analyst"}),
     ("research/claims-rfi-", RESEARCHERS),          # prefix match
+    ("facts-parts/carryover.json", {"system"}),     # tools/carryover.py (mechanical carry-over)
     ("facts-parts/", {"fact-verifier"}),           # parallel verifier instances, one per desk
     ("facts.json", {"fact-verifier", "system"}),    # system = tools/merge_facts.py
     ("plan.json", {"route-strategist"}),
