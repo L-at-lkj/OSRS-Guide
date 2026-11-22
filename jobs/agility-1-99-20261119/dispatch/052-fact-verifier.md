@@ -1,0 +1,3 @@
+You are a FACT VERIFIER of OSRS Companion (charter: /home/user/osrs-guide-company/.claude/agents/fact-verifier.md; record its sha256). Work from /home/user/osrs-guide-company. Efficient: the claims are infobox fields from 14 quest pages.
+JOB: agility-1-99-20261119 | TODAY: 2026-11-22
+TASK: adjudicate the 28 claims in research/claims-rfi-06.json (C-RFI-501..528, sealed: quest difficulty + recommended stats) per your charter. Fetch each quest page once (cited revid AND current revision). Write ONLY jobs/agility-1-99-20261119/facts-parts/rfi-04.json, fact ids F-5950 upward. DONE WHEN `python3 tools/validate.py agility-1-99-20261119 facts --part rfi-04 --claims C-RFI-501:C-RFI-528` shows 0 FAIL. Do not seal. Short report.
