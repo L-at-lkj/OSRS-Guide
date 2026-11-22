@@ -11,16 +11,17 @@
   "build": {
     "archetype": "zerker",
     "skill_caps": {
-      "Defence": 50
+      "Defence": 52
     },
     "xp_rules": [
       "Defence XP only from quest rewards (owner-confirmed 2026-11-22: Dragon Slayer I 18,650, Holy Grail 15,300, Nature Spirit 2,000, In Search of the Myreque 600 = 36,550; hiscores 36,587)",
       "Never train Defence directly or choose Defence for an XP lamp or other choosable XP reward",
       "Never use a combat style that gives Defence XP (e.g. defensive, or controlled/shared melee styles; longrange ranged or defensive-casting magic)",
-      "Total Defence XP from all quest rewards used must keep Defence at or below the cap (50); the XP engine tracks this on every route"
+      "Total Defence XP from all quest rewards used must keep Defence at or below the cap (52); the XP engine tracks this on every route"
     ],
     "lamp_policy": "never Defence",
-    "confirmed": true
+    "confirmed": true,
+    "cap_note": "Owner 2026-11-22: 'i am fine with the total of 51 or 52 defence that is given from quests completion'. Cap raised 50 -> 52 to allow the fixed quest Defence rewards; choosable rewards still never go to Defence."
   },
   "danger_policy": {
     "appetite": "informed",
