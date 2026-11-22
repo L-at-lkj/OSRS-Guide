@@ -224,17 +224,17 @@ const factVal = f => { if (!f) return '?'; const v = (f.value && typeof f.value 
   return (typeof v === 'number' ? fmt(v) : (typeof v === 'object' ? JSON.stringify(v) : v)) + (f.unit ? ' ' + f.unit : ''); };
 
 function tokens(text, step){
-  const c = route().calc[step.step_id] || {};
+  const c = step ? (route().calc[step.step_id] || {}) : {};
   return esc(text).replace(/\{\{\s*([^}]+?)\s*\}\}/g, (m, t) => {
     if (t.startsWith('step.')) { const k = t.slice(5); const v = c[k]; return k === 'hours' ? hrs(v) : fmt(v); }
     if (t.startsWith('fact:')) { const f = factById(t.slice(5)); return `<a class="factref" href="#${t.slice(5)}" data-fact="${t.slice(5)}">${esc(factVal(f))}</a>`; }
-    if (t.startsWith('risk.')) { const k = t.slice(5); const r = step.risk;
+    if (t.startsWith('risk.') && step) { const k = t.slice(5); const r = step.risk;
       if (k === 'min_hitpoints') return fmt(r.preconditions?.min_hitpoints);
       if (k === 'residual_ds') return r.score.residual_ds; if (k === 'inherent_ds') return r.score.inherent_ds; if (k === 'tier') return r.score.residual_tier; }
     return m;
   }).replace(/`([^`]+)`/g, '<code>$1</code>');
 }
-const dsBadge = (sc, big = true) => `<span class="ds ${sc.residual_tier}" title="Game-relative danger (The Fractured Archive = 100), compared like-for-like with the reference ladder (no precautions): ${sc.inherent_ds} (${sc.inherent_tier}). With the full prep card: ${sc.residual_ds}.${sc.comparable_to && sc.comparable_to.length ? ' Comparable to: ' + sc.comparable_to.join(' / ') : ''}${sc.calibrated === false ? ' [uncalibrated]' : ''}">
+const dsBadge = (sc, big = true) => `<span class="ds ${sc.inherent_tier || sc.residual_tier}" title="Game-relative danger (The Fractured Archive = 100), compared like-for-like with the reference ladder (no precautions): ${sc.inherent_ds} (${sc.inherent_tier}). With the full prep card: ${sc.residual_ds}.${sc.comparable_to && sc.comparable_to.length ? ' Comparable to: ' + sc.comparable_to.join(' / ') : ''}${sc.calibrated === false ? ' [uncalibrated]' : ''}">
   <span class="num">${sc.inherent_ds}</span><span class="lbl">${sc.inherent_tier}</span>${big ? `<small>with prep ${sc.residual_ds}${sc.calibrated === false ? '*' : ''}</small>` : ''}</span>`;
 const necBadge = n => n ? `<span class="nec ${esc(n.class)}" title="${esc(n.why)}">${esc(n.class)}</span>` : '';
 
@@ -354,7 +354,7 @@ function stepCard(s, idx){
       ${(pr.instructions || []).length ? `<div><b>Do this</b><ol class="steps">${pr.instructions.map(t => `<li>${tokens(t, s)}</li>`).join('')}</ol></div>` : ''}
       ${(pr.warnings || []).map(t => `<div class="warn">${tokens(t, s)}</div>`).join('')}
       ${(pr.tips || []).map(t => `<div class="tip">${tokens(t, s)}</div>`).join('')}
-      <details class="danger" ${over ? 'open' : ''}><summary>Danger assessment · ${sc.residual_ds} ${esc(sc.residual_tier)} <span class="muted small">(raw ${sc.inherent_ds}${sc.floor_by ? ', floor from ' + esc(sc.floor_by) : ''})</span></summary><div class="in">
+      <details class="danger" ${over ? 'open' : ''}><summary>Danger assessment · ${sc.inherent_ds} ${esc(sc.inherent_tier)} without prep · ${sc.residual_ds} with prep${sc.floor_by ? ` <span class="muted small">(minimum from ${esc(sc.floor_by)})</span>` : ''}</summary><div class="in">
         ${risk.necessity ? `<div><b>Why it's worth it:</b> ${necBadge(risk.necessity)} ${esc(risk.necessity.why)}${(risk.necessity.unlocks || []).length ? ' <span class="muted">Unlocks: ' + risk.necessity.unlocks.map(esc).join(', ') + '</span>' : ''}${(risk.necessity.safer_alternatives || []).length ? '<div class="small muted">Safer alternatives: ' + risk.necessity.safer_alternatives.map(esc).join('; ') + '</div>' : ''}</div>` : ''}
         <div>Hardcore Worlds death rule: <span class="hwc ${risk.hw_death_classification.status}">${esc(risk.hw_death_classification.status.replace(/_/g, ' '))}</span> — ${esc(risk.hw_death_classification.note)}</div>
         ${sc.wilderness_premium ? `<div class="warn">Includes the +${sc.wilderness_premium} Wilderness premium (+5 below level 14, +10 from 14, +15 from 20, +20 from 30): player killers, teleblock and no-escape zones can't be fully mitigated.</div>` : ''}
@@ -412,7 +412,7 @@ function pDecisions(){
 
 function pRoute(){
   const r = route();
-  const bl = v => Array.isArray(v) ? `<ul>${v.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : (v ? `<p>${esc(v)}</p>` : '');
+  const bl = v => Array.isArray(v) ? `<ul>${v.map(x => `<li>${tokens(x, null)}</li>`).join('')}</ul>` : (v ? `<p>${tokens(v, null)}</p>` : '');
   $('#p-route').innerHTML = nextPanel() + bl(G.intro) + `<p class="muted small">${esc(r.intent)}</p>` +
     r.step_ids.map((id, i) => stepCard(stepById(id), i)).join('') + bl(G.outro);
 }

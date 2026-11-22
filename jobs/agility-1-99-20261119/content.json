@@ -1,17 +1,17 @@
 {
   "schema": "osrs-guide-content/1",
   "job": "agility-1-99-20261119",
-  "assembled_at": "2026-11-21T06:07:52+00:00",
+  "assembled_at": "2026-11-22T03:46:19+00:00",
   "inputs": {
     "brief.json": "c27aa6bc9969f981aed9185637565c2792f58b80646cc531afa503e27f969389",
     "research/updates.json": "b600273a97297879bd2c38e663ed79bc8c55973cd793a7edf041690f2be988c5",
-    "facts.json": "70fcb7eed3ab243ba3a64501f766da075bc69de64e8cdbc9fe39ed53f456fa12",
-    "plan.json": "5a0296c74446ee83ad3266581aa39a11f9316ef8042fdf1866471c483658672a",
-    "calc.json": "36391dcc75e537051ab5c6a4d69510cb54854d08ce05066a8a028c5cac817c76",
-    "calc-review.json": "92b02588de0064ff013ce0f1e77789e25040ff06311ccd511b8176593cbeaa1b",
+    "facts.json": "81096ceb8f4ecb2b8eb72d9ef82ddacebae6cbe1f553791883184fee4f2098ec",
+    "plan.json": "bbbbe6e9e60a09ad7d25a790fa4dedf91e0ffb5946fbc04f7f29eb1ebf0b75ee",
+    "calc.json": "b8d7b9c7b5e6951c027355e1bd9552abb472173c7db64a545b0da22e9b7a9909",
+    "calc-review.json": "006290bc6b5541342f9322094a5eb7afa068fef0574aa2ec5196ad1e54faa8cd",
     "risk.json": "74bbfca5c25eaba0f88aac5fddf412c2392bd7d7607cde0239ceaf3b5b701d12",
     "redteam.json": "d0b23e5dd9ddfb3d22547248a12651601c8abdad304e35c46d126b7fcbbc1eb1",
-    "prose.json": "d86d39bb663df04dcb056607aa87c408f313b58fb5422f7dd29e753a99568028"
+    "prose.json": "06d70a89428d9cbea821decb473c17f1fd4ab2eaf8c0f5f3316799e5e10e256a"
   },
   "meta": {
     "title": "Agility 57–99 · Hardcore Worlds edition",
@@ -19,7 +19,7 @@
     "skill": "Agility",
     "from_level": 57,
     "to_level": 99,
-    "facts_as_of": "2026-11-20T07:10:00Z",
+    "facts_as_of": "2026-11-22",
     "updates_as_of": "2026-11-20T02:20:00Z",
     "recency_window": {
       "from": "2025-11-19",
@@ -132,8 +132,20 @@
     "risk_appetite": "informed",
     "risk_cap": 100
   },
-  "intro": "Welcome to the rooftops, adventurer. This guide takes your Hardcore Worlds character from where your Agility stands today to the cape at the top, and it is written as an expedition briefing, not a lecture. You have one life, and on Hardcore Worlds almost every death counts, including many that are safe for a Hardcore Ironman. So every step tells you plainly what can kill you, why the step is still worth doing, and exactly how to prepare. You asked to be informed, not shielded: nothing here is hidden because it is dangerous, and every choice stays yours.\n\nReading the danger badge: the big number is the headline score, the danger with no precautions at all. It sits on the same game-wide ladder as every other activity, with The Fractured Archive at the very top of the scale, so a quest fight here can be compared like for like with a boss or a raid. The small 'with prep' number is what the step's prep card buys you when you follow every mandatory line of it. From a High headline upward, the full prep card is printed with the step: mitigations, minimum Hitpoints, stop conditions, bail-out plan and why the step is worth it. The ladder also carries a tiered Wilderness premium that grows with depth, but no step in this guide sets foot in the Wilderness, so it adds nothing here.\n\nTwo routes. Safest uses only the low-danger quests and the rooftops (Falador, Seers', Pollnivneach, Ardougne). Balanced adds the quest block you can reach today (Icthlarin's Little Helper, A Tail of Two Cats, Underground Pass, Regicide, The Fremennik Trials) and swaps Pollnivneach for Rellekka before Ardougne. Two honest notes from the Quant. First, route totals are training hours only: they exclude all quest time, because no verified source gives quest durations. Second, do not read Balanced as faster than Safest. Most of the gap between their totals comes from training on Rellekka instead of Pollnivneach, and the quests are counted as taking no time at all; if the quest block takes longer than the little Falador training it replaces, it costs time rather than saving it. Choose Balanced for what its quests give you (the lyre to Rellekka, Tirannwn, and the quest Defence your zerker plan wants), not for speed.\n\nStanding rules for every step: Defence comes only from quests, never from a lamp, a tome or a combat style; on Ranged use Rapid or Accurate, never Longrange. Dismiss every random event (a death inside one is official), never go AFK on a course, never use a player-owned house, Nightmare Zone or the Rogues' Den maze, never drink a poison chalice for a boost, and never step into the Wilderness. Where a decision point offers a choice, the options, their danger and the recommendation travel with you in the 'What next?' panel.",
-  "outro": "When the last Ardougne lap lands, you will have earned that cape the hard way, one life and all.\n\nTwo longer roads stay on the map, and neither is closed because it is too dangerous. Both are blocked by missing facts, and each one says what lifts it.\n\nWerewolf Agility Course (with Creature of Fenkenstrain, which only unlocks it): blocked because the deathslide's maximum fall damage is unpublished. A fall can hit very hard, does not scale with Hitpoints and can exceed your current HP, so nobody can tell you at what HP a fall is survivable. It lifts when EITHER your Agility and Strength both pass the deathslide's published never-fail point while you carry almost nothing (the Risk Officer sets the bar just above that point), OR a source publishes the deathslide maximum and the Risk Officer re-rates the course with a minimum-HP rule above it. Then both steps return and the calculator re-runs.\n\nSins of the Father, and through it the Hallowed Sepulchre: blocked because the quest's fights were never researched for max hits and teleport or instance rules, and the final boss's maximum is disputed, so no bail-out can be written from verified facts. It lifts when, as you near its skill and quest requirements, a research request covers those fights and the Risk Officer completes its prep card and re-rates it at your stats at that time. Its tome can then go straight into Agility. The Sepulchre also wants far more Hitpoints than you have today, and the chain's forced Defence still fits under your cap. The exact requirements are listed with the plan's assumptions.\n\nThe Graveyard and its new course are announced but not released, so they are not in this guide; if you ever take its lamps, never choose Defence. Until next time: carpets, not legs; prayer up before the fight, not during it; and when the card says stop, stop. Safe running, adventurer.",
+  "intro": [
+    "Hardcore Worlds: almost every death ends the run, including many that are safe for a Hardcore Ironman. Each step lists what can kill you and how to prepare.",
+    "Danger badge: the big number is the score without prep; 'with prep' is what the prep card buys. The Fractured Archive = one hundred, the top of the scale.",
+    "Route hours exclude all quest time; no verified source gives quest durations.",
+    "Balanced is not faster than Safest. Choose it for its quests (lyre to Rellekka, Tirannwn, quest Defence), not for speed.",
+    "Standing rules: Defence only from quests; Ranged on Rapid or Accurate; dismiss every random event; no AFK, player-owned house, Nightmare Zone, Rogues' Den maze, poison chalice or Wilderness.",
+    "Profit is at the Hardcore Worlds GE mid price, assuming every mark is sold, before any GE tax; the Graceful outfit ({{fact:F-4004}} marks) is not deducted."
+  ],
+  "outro": [
+    "Werewolf Agility Course is blocked: the deathslide's maximum fall damage is unpublished. It lifts when Agility and Strength pass the never-fail point, or a source publishes the maximum.",
+    "Sins of the Father and the Hallowed Sepulchre are blocked: the quest's fights were never researched. It lifts after a research request and a Risk Officer re-rating at your stats.",
+    "The Graveyard and its new course are announced but not released, so they are not in this guide. Never choose Defence on its lamps.",
+    "Prayer up before the fight, not during it. When the card says stop, stop."
+  ],
   "routes": [
     {
       "route_id": "safest",
@@ -587,6 +599,13 @@
           "cum_hours_at_next": 228.196
         }
       ],
+      "profit": {
+        "net_gp": 18006836,
+        "cost_gp": 0,
+        "income_gp": 18006836,
+        "gp_per_hour": 78909,
+        "unpriced": []
+      },
       "calc": {
         "S01": {
           "step_id": "S01",
@@ -625,6 +644,13 @@
           "hours": 2.096,
           "supplies": [],
           "secondary_xp": [],
+          "profit": {
+            "cost_gp": 0,
+            "income_gp": 111415,
+            "net_gp": 111415,
+            "gp_per_hour": 53156,
+            "unpriced": []
+          },
           "end_xp": 274161,
           "end_level": 60,
           "xp_gained": 57428,
@@ -639,6 +665,13 @@
           "hours": 11.587,
           "supplies": [],
           "secondary_xp": [],
+          "profit": {
+            "cost_gp": 0,
+            "income_gp": 698464,
+            "net_gp": 698464,
+            "gp_per_hour": 60280,
+            "unpriced": []
+          },
           "end_xp": 738141,
           "end_level": 70,
           "xp_gained": 463980,
@@ -653,6 +686,13 @@
           "hours": 26.552,
           "supplies": [],
           "secondary_xp": [],
+          "profit": {
+            "cost_gp": 0,
+            "income_gp": 1891564,
+            "net_gp": 1891564,
+            "gp_per_hour": 71240,
+            "unpriced": []
+          },
           "end_xp": 1986811,
           "end_level": 80,
           "xp_gained": 1248670,
@@ -667,6 +707,13 @@
           "hours": 71.479,
           "supplies": [],
           "secondary_xp": [],
+          "profit": {
+            "cost_gp": 0,
+            "income_gp": 5092164,
+            "net_gp": 5092164,
+            "gp_per_hour": 71240,
+            "unpriced": []
+          },
           "end_xp": 5346561,
           "end_level": 90,
           "xp_gained": 3359750,
@@ -681,6 +728,13 @@
           "hours": 116.483,
           "supplies": [],
           "secondary_xp": [],
+          "profit": {
+            "cost_gp": 0,
+            "income_gp": 10213229,
+            "net_gp": 10213229,
+            "gp_per_hour": 87680,
+            "unpriced": []
+          },
           "end_xp": 13034633,
           "end_level": 99,
           "xp_gained": 7688072,
@@ -1148,6 +1202,13 @@
           "cum_hours_at_next": 222.862
         }
       ],
+      "profit": {
+        "net_gp": 17645644,
+        "cost_gp": 0,
+        "income_gp": 17645644,
+        "gp_per_hour": 79177,
+        "unpriced": []
+      },
       "calc": {
         "S01": {
           "step_id": "S01",
@@ -1256,6 +1317,13 @@
           "hours": 1.046,
           "supplies": [],
           "secondary_xp": [],
+          "profit": {
+            "cost_gp": 0,
+            "income_gp": 55601,
+            "net_gp": 55601,
+            "gp_per_hour": 53156,
+            "unpriced": []
+          },
           "end_xp": 274009,
           "end_level": 60,
           "xp_gained": 28714,
@@ -1270,6 +1338,13 @@
           "hours": 11.59,
           "supplies": [],
           "secondary_xp": [],
+          "profit": {
+            "cost_gp": 0,
+            "income_gp": 698645,
+            "net_gp": 698645,
+            "gp_per_hour": 60280,
+            "unpriced": []
+          },
           "end_xp": 737989,
           "end_level": 70,
           "xp_gained": 463980,
@@ -1284,6 +1359,13 @@
           "hours": 26.555,
           "supplies": [],
           "secondary_xp": [],
+          "profit": {
+            "cost_gp": 0,
+            "income_gp": 1891778,
+            "net_gp": 1891778,
+            "gp_per_hour": 71240,
+            "unpriced": []
+          },
           "end_xp": 1986659,
           "end_level": 80,
           "xp_gained": 1248670,
@@ -1298,6 +1380,13 @@
           "hours": 67.193,
           "supplies": [],
           "secondary_xp": [],
+          "profit": {
+            "cost_gp": 0,
+            "income_gp": 4786829,
+            "net_gp": 4786829,
+            "gp_per_hour": 71240,
+            "unpriced": []
+          },
           "end_xp": 5346899,
           "end_level": 90,
           "xp_gained": 3360240,
@@ -1312,6 +1401,13 @@
           "hours": 116.478,
           "supplies": [],
           "secondary_xp": [],
+          "profit": {
+            "cost_gp": 0,
+            "income_gp": 10212791,
+            "net_gp": 10212791,
+            "gp_per_hour": 87680,
+            "unpriced": []
+          },
           "end_xp": 13034971,
           "end_level": 99,
           "xp_gained": 7688072,
@@ -1387,26 +1483,26 @@
       ],
       "prose": {
         "step_id": "S01",
-        "summary": "Danger first: this quest is under a month old and its prison cell blocks teleports, so read today's walkthrough before you start. In return it gives {{step.xp_gained}} fixed Agility XP, no required kills and no Defence XP.",
+        "summary": "New quest (under a month old) with a teleport-blocked prison cell. Gives {{step.xp_gained}} fixed Agility XP, no required kills and no Defence XP.",
         "instructions": [
-          "Before anything else, open the current wiki walkthrough and read it end to end. If it now lists any fight, aggressive monster or damage source not described on this card, stop and ask for a re-rating.",
-          "Bank: withdraw the mid-heal food listed on the card and one teleport you can use outside the prison cell.",
-          "Gear: your normal non-Defence setup; the quest needs no combat.",
+          "Read the current wiki walkthrough end to end. If it lists any fight, aggressive monster or damage source not on this card, stop and ask for a re-rating.",
+          "Bank: mid-heal food from the card and one teleport usable outside the prison cell.",
+          "Gear: normal non-Defence setup; the quest needs no combat.",
           "Travel: start with Betty at Land's End, at full HP.",
           "Do: follow the quest. The ambush is a scripted knock-out cutscene, not a fight.",
-          "Do: in the Port Piscarilius prison cell, do not try to teleport. Remove the plank, climb out through the gap in the north wall and walk clear of the guards before you teleport.",
-          "Stop: when the quest completes. The Thieving reward also moves you toward Death on the Isle's Thieving requirement."
+          "Do: in the Port Piscarilius prison cell, do not teleport. Remove the plank, climb through the north-wall gap and walk clear of the guards first.",
+          "Stop: when the quest completes. The Thieving reward moves you toward Death on the Isle's requirement."
         ],
         "warnings": [
-          "Mandatory: re-read the walkthrough on the day you start. This is new content, the page is still being edited and its two dungeons were not reviewed for aggressive monsters. Anything new on the page means stop and get a re-rating first.",
-          "Mandatory: start at full HP with the card's food and a teleport, and never enter the prison area below {{risk.min_hitpoints}} HP.",
-          "The prison cell is teleport-blocked and a guard who catches you sends you back into it. The only way out is the plank and the north-wall gap.",
-          "Stop condition: if you are losing HP in a dungeon and cannot see why, leave the dungeon at once (the exact HP line is in 'Stop immediately if').",
-          "Stop condition: dismiss every random event here and never accept one. A death inside a random event is an official death on Hardcore Worlds.",
-          "Any death here is official and run-ending: no Hardcore Worlds safe exception covers this quest."
+          "Mandatory: re-read the walkthrough on the day you start. This is new content and its two dungeons were not reviewed. Anything new on the page means stop and get a re-rating.",
+          "Mandatory: start at full HP with the card's food and a teleport. Never enter the prison area below {{risk.min_hitpoints}} HP.",
+          "The prison cell blocks teleports. A guard who catches you sends you back in; the plank and north-wall gap are the only way out.",
+          "Stop condition: if you lose HP in a dungeon and cannot see why, leave at once (exact line in 'Stop immediately if').",
+          "Stop condition: dismiss every random event. A death inside one is official on Hardcore Worlds.",
+          "Any death here is official and run-ending; no Hardcore Worlds safe exception covers this quest."
         ],
         "tips": [
-          "Headline {{risk.inherent_ds}}, with prep {{risk.residual_ds}} ({{risk.tier}}): the score is held up by the new-content floor, not by any known damage. The walkthrough re-read is what the card asks of you."
+          "Headline {{risk.inherent_ds}}, with prep {{risk.residual_ds}} ({{risk.tier}}). Held up by the new-content floor, not by known damage."
         ]
       },
       "risk": {
@@ -1663,23 +1759,23 @@
       "why_not_faster": "Skipping it saves the quest's travel time, but the 1,500 XP comes from a fight with a max hit of 3, so it adds almost no danger to the safest route.",
       "prose": {
         "step_id": "S02",
-        "summary": "A short Kourend quest for {{step.xp_gained}} fixed Agility XP; the only kill is a weak Sand Snake you can safespot.",
+        "summary": "Short Kourend quest for {{step.xp_gained}} fixed Agility XP. The only kill is a weak Sand Snake you can safespot.",
         "instructions": [
-          "Bank: a bow and arrows for the safespot, the few mid-heal food listed on the card, and a teleport.",
-          "Gear: Ranged on Rapid or Accurate, never Longrange: Longrange (like any defensive style) gives Defence XP and breaks your zerker rule of quest-only Defence.",
+          "Bank: bow and arrows for the safespot, the few mid-heal food on the card, and a teleport.",
+          "Gear: Ranged on Rapid or Accurate, never Longrange; Longrange gives Defence XP.",
           "Travel: Great Kourend. The Crabclaw Caves section is an instance.",
-          "Do: be at full HP before every stepping stone and rock, and eat back to full after any fall.",
-          "Do: fight the Sand Snake only from the west-wall safespot: go north or south along the west wall, then hug it back to the centre entrance.",
-          "Stop: when the quest completes. To leave the caves early, walk out the way you came and teleport once you are outside the instance."
+          "Do: be at full HP before every stepping stone and rock; eat back to full after any fall.",
+          "Do: fight the Sand Snake only from the west-wall safespot. Go north or south along the west wall, then hug it back to the centre entrance.",
+          "Stop: when the quest completes. To leave the caves early, walk out and teleport once outside the instance."
         ],
         "warnings": [
-          "Mandatory: fight the snake only from the west-wall safespot with Ranged. Stop condition: if the safespot does not hold and the snake reaches you, leave the cave.",
-          "Mandatory: full HP with food before crossing the stepping stones and rocks; their fall damage is not published.",
+          "Mandatory: fight the snake only from the west-wall safespot with Ranged. Stop condition: if the safespot fails and the snake reaches you, leave the cave.",
+          "Mandatory: full HP with food before the stepping stones and rocks; their fall damage is unpublished.",
           "Stop condition: stop and eat if HP falls to the card's eat line.",
-          "Do not count on a teleport inside the cave: whether it works there is not stated. Walk out first."
+          "Do not rely on a teleport inside the cave; whether it works there is not stated. Walk out first."
         ],
         "tips": [
-          "Its prerequisites are already done, and fixed XP is worth most here, where training is slowest."
+          "Prerequisites are already done; fixed XP is worth the most where training is slowest."
         ]
       },
       "risk": {
@@ -1922,26 +2018,27 @@
       "update_refs": [],
       "prose": {
         "step_id": "S03",
-        "summary": "{{step.xp_gained}} fixed Agility XP and the key to A Tail of Two Cats' lamps. What can kill you is a fight inside a teleport-blocked flashback; the right protection prayer, held throughout, is what makes it safe to do.",
+        "summary": "{{step.xp_gained}} fixed Agility XP and the key to A Tail of Two Cats' lamps. Danger: teleport-blocked flashback fights; the right protection prayer makes them safe.",
         "instructions": [
           "Bank: the card's food, full waterskins, an antipoison, prayer restores, your cat or kitten, and Ranged gear.",
-          "Gear: Ranged on Rapid or Accurate, never Longrange: Longrange (like any defensive style) gives Defence XP and breaks your zerker rule of quest-only Defence.",
-          "Travel: magic carpet across the desert with full waterskins. Never walk the River Elid banks or the area north of Sophanem.",
-          "Do: examine the canopic jar before the pit jump; it sets which guardian you will face.",
-          "Do: turn on the right prayer before each fight and hold it to the end, starting with full prayer: Protect from Magic for the Possessed Priest and for Apmeken, Protect from Melee for Het or Scabaras.",
-          "Do: in Klenter's Pyramid, cure scarab poison at once with your antipoison.",
-          "Stop: when the quest completes, then go straight on to A Tail of Two Cats while the cat and desert travel are fresh."
+          "Gear: Ranged on Rapid or Accurate, never Longrange; Longrange gives Defence XP.",
+          "Travel: magic carpet across the desert with full waterskins. Never walk the River Elid banks or north of Sophanem.",
+          "Do: examine the canopic jar before the pit jump; it sets which guardian you face.",
+          "Do: start each fight with full prayer and hold it to the end: Protect from Magic for the Possessed Priest and Apmeken, Protect from Melee for Het or Scabaras.",
+          "Do: in Klenter's Pyramid, cure scarab poison at once with antipoison.",
+          "Stop: when the quest completes, then go on to A Tail of Two Cats."
         ],
         "warnings": [
-          "Headline {{risk.inherent_ds}}, with prep {{risk.residual_ds}} ({{risk.tier}}). Once a flashback starts you cannot teleport until it ends; a disconnect in there with no prayer up is what kills. The guardian facts say the correct protection prayer protects fully, and that is the whole prep card in one line.",
-          "Mandatory: enter each flashback at full HP and full prayer with food. If prayer or HP falls to the card's lines, walk back toward the entrance, or log out once you have gone long enough without being hit.",
-          "Stop conditions: do not start a flashback with prayer under the card's line; leave the flashback if HP falls to the card's line; never start the pit jump without having examined the jar.",
-          "Mandatory: desert travel only by carpet with waterskins. The River Elid and the area north of Sophanem mean heat and aggressive crocodiles.",
-          "Stop condition: dismiss every random event here and never accept one. A death inside a random event is an official death on Hardcore Worlds.",
-          "A death here is official on Hardcore Worlds, and it also loses your cat."
+          "Headline {{risk.inherent_ds}}, with prep {{risk.residual_ds}} ({{risk.tier}}). No teleport works during a flashback. A disconnect with no prayer up is what kills; the correct protection prayer fully protects.",
+          "Mandatory: enter each flashback at full HP and full prayer with food. If prayer or HP falls to the card's lines, walk back toward the entrance, or log out once unhit long enough.",
+          "Stop conditions: do not start a flashback with prayer under the card's line; leave if HP falls to the card's line; never start the pit jump before examining the jar.",
+          "Mandatory: desert travel by carpet with waterskins only. The River Elid and the area north of Sophanem mean heat and aggressive crocodiles.",
+          "Stop condition: dismiss every random event. A death inside one is official on Hardcore Worlds.",
+          "A death here is official on Hardcore Worlds and also loses your cat."
         ],
         "tips": [
-          "Why it is worth it: the Agility XP plus the gate to A Tail of Two Cats and its two lamps. Safer choice: decision point `DP02` option A skips this whole block."
+          "Worth it for the Agility XP and the gate to A Tail of Two Cats and its two lamps.",
+          "Safer choice: decision point `DP02` option A skips this block."
         ]
       },
       "risk": {
@@ -2247,19 +2344,19 @@
       "rationale": "Two 2,500 XP lamps for any skill at 30+, both spent on Agility (5,000 XP); never Defence (the build forbids it, and the owner's Defence 1 is below 30 anyway). No required kills (F-2071). Done straight after Icthlarin's Little Helper while the cat and desert travel are fresh. Items: 5 death runes, a chocolate cake (buy it to avoid the Cooking 50 route) and a cat (F-2069).",
       "prose": {
         "step_id": "S04",
-        "summary": "No required kills: rub both lamps into Agility for {{step.xp_gained}} XP.",
+        "summary": "No required kills. Rub both lamps into Agility for {{step.xp_gained}} XP.",
         "instructions": [
-          "Bank: death runes, a chocolate cake (buy it rather than cooking it), your cat or kitten, a few food and full waterskins (exact counts on the card).",
+          "Bank: death runes, a chocolate cake (buy it), your cat or kitten, a few food and full waterskins (counts on the card).",
           "Gear: light travel gear; no fight is required.",
           "Travel: magic carpet across the desert. Never walk the river banks or north of Sophanem.",
           "Do: follow the quest; the dragon scenes are cutscenes.",
-          "Do: rub both lamps and choose Agility. Never Defence.",
+          "Do: rub both lamps and choose Agility, never Defence.",
           "Stop: when both lamps are spent and the quest is complete."
         ],
         "warnings": [
           "Mandatory: both lamps go into Agility (or another non-Defence skill). Never click Defence.",
           "Mandatory: carpet-only desert travel with full waterskins. Stop condition: leave the desert if your waterskins run out.",
-          "Stop condition: if any part of the quest asks for a fight not described here, stop and ask for a re-rating."
+          "Stop condition: if the quest asks for a fight not described here, stop and ask for a re-rating."
         ],
         "tips": []
       },
@@ -2511,28 +2608,28 @@
       "rationale": "Fixed 3,000 Agility XP and no Defence XP (F-2045 also lists 3,000 Attack, not carried as a number). Its real value is the gate to Regicide (S06, 13,750 Agility XP). All required fights are safespottable from Ranged (owner Ranged 56): demons max hit 9, paladins 8, Kalrag 9 and blocked by Protect from Melee. The hazards are traps (up to 24 on a failed bridge jump, F-5026/F-5379) and blessed spiders that pile on after Kalrag dies (F-5024); plan full HP before bridges and Kalrag. Placed in the 57 block so Regicide's large fixed XP lands before the slow 57-60 training.",
       "prose": {
         "step_id": "S05",
-        "summary": "{{step.xp_gained}} fixed Agility XP and the only door to Regicide. What can kill you: failed bridge jumps that drop you among aggressive Soulless, spider pile-ups after Kalrag, and Iban's temple spikes that ignore prayer. Every required fight can be safespotted.",
+        "summary": "{{step.xp_gained}} fixed Agility XP and the only door to Regicide. Dangers: failed bridge jumps, spiders after Kalrag, Iban's temple spikes. Required fights can be safespotted.",
         "instructions": [
-          "Bank: a large stack of food (the card gives the minimum; there is no bank beyond the Pass), prayer restores, an instant teleport, a bow with the non-poisoned metal-tipped arrows the quest needs, and Ranged ammunition.",
-          "Gear: Ranged on Rapid or Accurate, never Longrange: Longrange (like any defensive style) gives Defence XP and breaks your zerker rule of quest-only Defence.",
-          "Travel: West Ardougne to the Pass entrance. The whole quest is an instance, and any instant teleport gets you out.",
-          "Do: be at {{risk.min_hitpoints}} HP or more before every Iban's Lair bridge jump, the rope swing and the Kalrag fight, and eat as soon as you reach the card's eat line.",
+          "Bank: a large stack of food (minimum on the card; no bank beyond the Pass), prayer restores, an instant teleport, a bow with non-poisoned metal-tipped arrows, and Ranged ammunition.",
+          "Gear: Ranged on Rapid or Accurate, never Longrange; Longrange gives Defence XP.",
+          "Travel: West Ardougne to the Pass entrance. The quest is an instance; any instant teleport exits.",
+          "Do: be at {{risk.min_hitpoints}} HP or more before every Iban's Lair bridge jump, the rope swing and the Kalrag fight. Eat at the card's eat line.",
           "Do: safespot the demons from the narrow pathways and the paladins by attacking and running west, with Ranged. Keep Protect from Melee on for Kalrag.",
-          "Do: use the plank on wall traps and never stand in front of an armed trap. When Kalrag dies you are briefly stunned; then leave the spider corridor at once.",
-          "Do: enter Iban's temple only at full HP and run in without stopping. If the spikes stun you back to the entrance, step back, eat to full, and only then try again.",
-          "Stop: when the quest completes, or teleport out the moment a stop condition below is met."
+          "Do: use the plank on wall traps and never stand in front of an armed trap. After Kalrag dies you are briefly stunned; leave the spider corridor at once.",
+          "Do: enter Iban's temple at full HP and run in without stopping. After a spike stun, step back, eat to full, then retry.",
+          "Stop: when the quest completes, or teleport out when a stop condition below is met."
         ],
         "warnings": [
-          "Headline {{risk.inherent_ds}}, with prep {{risk.residual_ds}} ({{risk.tier}}). Why it is still worth it: it is the gate to Regicide, the largest Agility reward you can reach today, and much later to the elf chain toward Prifddinas.",
-          "Mandatory: never jump a bridge or take the rope swing below {{risk.min_hitpoints}} HP. A failed jump hits hard against your HP and lands you among aggressive Soulless.",
-          "Mandatory: Protect from Melee does NOTHING against the spikes at Iban's temple. Enter only at full HP and never retry hurt: after any spike stun, eat back to full first.",
-          "Stop condition: if the spikes stun you back to the entrance twice in a row, or your food is below the card's temple reserve, teleport out and restock.",
-          "Stop conditions: teleport out if HP falls to the card's line with no food left, or if more than three monsters are attacking you at once. If stunned among spiders after Kalrag, eat first, then teleport.",
-          "Never stand in front of an armed wall trap: the wiki warns it can hit repeatedly and fast enough to kill.",
-          "Stop condition: dismiss every random event here and never accept one. A death inside a random event is an official death on Hardcore Worlds."
+          "Headline {{risk.inherent_ds}}, with prep {{risk.residual_ds}} ({{risk.tier}}). Worth it as the gate to Regicide, the largest Agility reward available today, and later the elf chain toward Prifddinas.",
+          "Mandatory: never jump a bridge or take the rope swing below {{risk.min_hitpoints}} HP. A failed jump hits hard and lands you among aggressive Soulless.",
+          "Mandatory: Iban HP gate. Protect from Melee does nothing against the temple spikes. Enter only at full HP and never retry hurt; after any spike stun, eat to full first.",
+          "Stop condition: if the spikes stun you back to the entrance twice in a row, or food is below the card's temple reserve, teleport out and restock.",
+          "Stop conditions: teleport out if HP is at the card's line with no food, or more than three monsters attack at once. If stunned among spiders, eat first, then teleport.",
+          "Never stand in front of an armed wall trap; it can hit repeatedly and fast enough to kill.",
+          "Stop condition: dismiss every random event. A death inside one is official on Hardcore Worlds."
         ],
         "tips": [
-          "The owner accepted this step's earlier card on the record; under the informed policy no new acceptance is needed, but read the current card before you go."
+          "Read the current card before you go; the earlier owner acceptance of this card is on record."
         ]
       },
       "risk": {
@@ -2881,26 +2978,26 @@
       "update_refs": [],
       "prose": {
         "step_id": "S06",
-        "summary": "The largest Agility reward you can reach today, {{step.xp_gained}} fixed XP, and the key to Tirannwn. The danger is the Tyras guard ambush in the forest and a second trip through the Underground Pass with no bank beyond it.",
+        "summary": "The largest Agility reward available, {{step.xp_gained}} fixed XP, and the key to Tirannwn. Dangers: the Tyras guard ambush and a second Underground Pass trip.",
         "instructions": [
           "Bank: the card's food, an antipoison, prayer restores, an instant teleport, and Ranged weapon and ammunition.",
-          "Gear: Ranged on Rapid or Accurate, never Longrange: Longrange (like any defensive style) gives Defence XP and breaks your zerker rule of quest-only Defence.",
-          "Travel: back through the Underground Pass, under every Underground Pass rule: bridges and the rope swing only at the card's HP line or above.",
-          "Do: turn Protect from Melee on before climbing through the dense forest. Keep it on until you are in the mushroom safespot or the guard is dead, then finish him from the safespot with Ranged.",
-          "Do: watch for Isafdar trap tiles and step around them; cure tripwire poison at once.",
-          "Do: once you hold the Big Book of Bangs, the coal tar and the sulphur, leave Isafdar by teleport rather than on foot.",
+          "Gear: Ranged on Rapid or Accurate, never Longrange; Longrange gives Defence XP.",
+          "Travel: back through the Underground Pass under the same rules: bridges and the rope swing only at the card's HP line or above.",
+          "Do: turn Protect from Melee on before the dense forest. Keep it on until you reach the mushroom safespot or the guard is dead, then finish him with Ranged.",
+          "Do: step around Isafdar trap tiles; cure tripwire poison at once.",
+          "Do: once you hold the Big Book of Bangs, coal tar and sulphur, leave Isafdar by teleport.",
           "Stop: when the quest completes."
         ],
         "warnings": [
-          "Headline {{risk.inherent_ds}}, with prep {{risk.residual_ds}} ({{risk.tier}}). A disconnect as the Tyras guard engages is the killer; Protect from Melee, documented to stop this guard, is what removes it.",
+          "Headline {{risk.inherent_ds}}, with prep {{risk.residual_ds}} ({{risk.tier}}). A disconnect as the Tyras guard engages is the killer; Protect from Melee, documented to stop this guard, removes it.",
           "Mandatory: never climb through the dense forest with prayer under the card's line.",
-          "Mandatory: never jump a Pass bridge below the card's HP line. Stop condition: teleport out if HP falls to the card's line and your food is gone.",
+          "Mandatory: never jump a Pass bridge below the card's HP line. Stop condition: teleport out if HP is at the card's line and food is gone.",
           "Bail-out: if the guard is hitting you, keep Protect from Melee on and walk to the mushroom safespot; if prayer runs low, teleport immediately.",
-          "Escape crystal: you may carry it set to a short inactivity timer, but nothing here credits it. Its behaviour in open-world Isafdar is undocumented and it never fires while you move. Never lower any other precaution because of it.",
-          "Stop condition: dismiss every random event here and never accept one. A death inside a random event is an official death on Hardcore Worlds."
+          "Escape crystal: optional and not credited. Its behaviour in open-world Isafdar is undocumented and it never fires while you move. Never lower another precaution for it.",
+          "Stop condition: dismiss every random event. A death inside one is official on Hardcore Worlds."
         ],
         "tips": [
-          "Tirannwn is the first link of the long Song of the Elves chain toward Prifddinas, out of reach today but worth keeping in mind.",
+          "Tirannwn is the first link of the Song of the Elves chain toward Prifddinas.",
           "Safer choice: decision point `DP02` option A, at the cost of this reward and the Tirannwn gate."
         ]
       },
@@ -3217,24 +3314,46 @@
         "F-4093"
       ],
       "rationale": "Alternative first course (DP01 option B). One failable gap until 64 (damage undocumented, F-3071); the best mark rate of the low courses (16-18/h, never penalised, F-4024) for an early Graceful start; free Ectophial teleport nearby (F-4093). About half Falador's XP rate, so it is not on any route.",
+      "income_per_hour": [
+        {
+          "item": "Mark of grace",
+          "qty": {
+            "value": 16,
+            "fact": "F-1005"
+          },
+          "convert": {
+            "to_item": "Amylase crystal",
+            "per_unit": {
+              "value": 100,
+              "fact": "F-5901"
+            },
+            "divide_by": {
+              "value": 10,
+              "fact": "F-4027"
+            }
+          },
+          "note": "marks -> amylase packs (10 marks each) -> 100 crystals each, sold on the HW GE"
+        }
+      ],
       "prose": {
         "step_id": "S07",
-        "summary": "Alternative for the last levels before Seers' (decision point `DP01`, option B): the best marks of grace of the low courses ({{fact:F-4024}}), at about half Falador's XP rate.",
+        "summary": "Alternative before Seers' (decision point `DP01`, option B): the best marks of grace of the low courses ({{fact:F-4024}}), at about half Falador's XP rate.",
         "instructions": [
-          "Bank: Canifis bank, right beside the start of the course; take the card's food.",
+          "Bank: Canifis bank, beside the course start; take the card's food.",
           "Gear: light clothing; no combat gear.",
           "Travel: the Ectophial is a free teleport nearby if you need to leave.",
           "Do: run laps. The only failable obstacle is the third gap, which stops failing at {{fact:F-4073}}.",
           "Do: eat whenever HP is {{risk.min_hitpoints}} or lower.",
-          "Stop: when you reach {{fact:F-1015}} and Seers' opens, or at any stop condition below."
+          "Stop: at {{fact:F-1015}} when Seers' opens, or at any stop condition below."
         ],
         "warnings": [
-          "Fail damage here is not published, so the card uses a conservative rule (not a sourced bound): eat whenever HP is {{risk.min_hitpoints}} or lower, never attempt a failable obstacle below the card's stop line, and stop and ask for a re-rating after any single fail bigger than the card's limit. The exact lines are in 'Stop immediately if' on this step's danger card.",
-          "Never use the Attack option on a Canifis citizen: a misclick turns them into high-level werewolves. Stay out of the ghoul grounds north of town.",
-          "Dismiss every random event and never accept one mid-lap: a death inside one is official on Hardcore Worlds. Never go AFK; break sessions into blocks of an hour or less."
+          "Fail damage is unpublished; this rule is conservative, not sourced. Eat at {{risk.min_hitpoints}} HP or lower, stop below the card's stop line, re-rate after any fail above the card's limit.",
+          "Never use the Attack option on a Canifis citizen; a misclick turns them into high-level werewolves. Stay out of the ghoul grounds north of town.",
+          "Dismiss every random event and never go AFK; a death inside a random event is official. Take a break every hour."
         ],
         "tips": [
-          "Pick Falador instead if speed matters more than an early Graceful start."
+          "Pick Falador instead if speed matters more than an early Graceful start.",
+          "Profit: marks of grace sell as amylase crystals on the Hardcore Worlds GE; see the step stats."
         ]
       },
       "risk": {
@@ -3474,12 +3593,33 @@
       ],
       "rationale": "Best open course for 57-60: the next course up (Seers') needs 60. Failure damage is known and small (Hand Holds, 3-8, until 66, F-1011/F-4072) against 48 Hitpoints; city location, no aggressive monsters noted. Rate set at the low end of the fact range (fails still happen below 66).",
       "why_not_faster": "Seers' can be entered from 55 with a summer-pie boost (F-4052), but boosted laps fail more (caveat on F-4052) and need a pie supply; Wilderness Agility Course (52+) is faster with tickets but is deep-Wilderness PvP on Hardcore Worlds (F-5366, F-1070), so it is never routed.",
+      "income_per_hour": [
+        {
+          "item": "Mark of grace",
+          "qty": {
+            "value": 9.7,
+            "fact": "F-1012"
+          },
+          "convert": {
+            "to_item": "Amylase crystal",
+            "per_unit": {
+              "value": 100,
+              "fact": "F-5901"
+            },
+            "divide_by": {
+              "value": 10,
+              "fact": "F-4027"
+            }
+          },
+          "note": "marks -> amylase packs (10 marks each) -> 100 crystals each, sold on the HW GE"
+        }
+      ],
       "prose": {
         "step_id": "S08",
         "summary": "{{step.actions}} laps, about {{step.hours}}, take you from {{step.start_level}} to {{step.end_level}} on the fastest open course before Seers'.",
         "instructions": [
           "Bank: Falador bank; take the card's food.",
-          "Gear: Graceful if you have it, otherwise light clothing; no combat gear.",
+          "Gear: Graceful if owned, otherwise light clothing; no combat gear.",
           "Travel: East Falador, the wall of the house east of the Mining Guild.",
           "Do: run laps. Only the Hand Holds can fail ({{fact:F-4072}}).",
           "Do: eat when HP reaches {{risk.min_hitpoints}}.",
@@ -3487,11 +3627,12 @@
         ],
         "warnings": [
           "Mandatory: keep HP at {{risk.min_hitpoints}} or more and eat there; stop laps below the card's stop line.",
-          "Stop condition: if a single fail hits harder than the documented Hand Holds range, stop and ask for a re-rating.",
-          "Dismiss every random event and never accept one mid-lap: a death inside one is official on Hardcore Worlds. Never go AFK; break sessions into blocks of an hour or less."
+          "Stop condition: if one fail hits harder than the documented Hand Holds range, stop and ask for a re-rating.",
+          "Dismiss every random event and never go AFK; a death inside a random event is official. Take a break every hour."
         ],
         "tips": [
-          "Nothing pursues you here: if anything goes wrong, climb down, bank in Falador and eat to full."
+          "Nothing pursues you here: if something goes wrong, climb down, bank in Falador and eat to full.",
+          "Profit: about {{step.hours}} of laps; marks sell as amylase crystals on the Hardcore Worlds GE."
         ]
       },
       "risk": {
@@ -3726,24 +3867,47 @@
       ],
       "rationale": "Standard 60-70 course: bank at the start (F-4075), two failable obstacles until 79 with undocumented damage (F-3074), Rapid Heal and the church altar at the end for HP (F-5355). Planned at the no-teleport rate because the hard Kandarin diary is impossible for this zerker (Piety task needs Defence 70, F-1021/F-2621), so the Seers' bank teleport never applies; Camelot tablets land at Camelot (F-5347). Marks here buy Graceful (a full set is roughly 18.8-23.6 hours of Seers' laps, F-4025).",
       "why_not_faster": "The Werewolf Agility Course (after Creature of Fenkenstrain) gives 50,000+ XP/h, but it is not in this plan: the Risk Officer keeps its veto on an unverifiable mechanic, not on danger. The deathslide fall can hit over 30, does not scale with Hitpoints and can exceed current HP (F-2091/F-3067), and its maximum is unpublished, so no safe-HP rule can be written. It returns when the veto lifts (see assumptions). The Hallowed Sepulchre needs Sins of the Father, which the owner cannot start (F-2100), and opens only at 77.",
+      "income_per_hour": [
+        {
+          "item": "Mark of grace",
+          "qty": {
+            "value": 11,
+            "fact": "F-4020"
+          },
+          "convert": {
+            "to_item": "Amylase crystal",
+            "per_unit": {
+              "value": 100,
+              "fact": "F-5901"
+            },
+            "divide_by": {
+              "value": 10,
+              "fact": "F-4027"
+            }
+          },
+          "note": "marks -> amylase packs (10 marks each) -> 100 crystals each, sold on the HW GE"
+        }
+      ],
       "prose": {
         "step_id": "S09",
         "summary": "{{step.actions}} laps, about {{step.hours}}, from {{step.start_level}} to {{step.end_level}}: the standard course for this band, with the bank at the start.",
         "instructions": [
-          "Bank: Seers' Village bank at the start of the course; take the card's food, or buy meat pies or stew at the Forester's Arms.",
+          "Bank: Seers' Village bank at the course start; take the card's food or buy meat pies or stew at the Forester's Arms.",
           "Gear: Graceful or light clothing.",
-          "Travel: Camelot tablets land at Camelot, not at the bank (the hard Kandarin diary is not possible on this build), so walk the short way to the bank.",
-          "Do: run laps and run back from the church. Keep Rapid Heal on and recharge prayer at the church altar at the end of the course.",
+          "Travel: Camelot tablets land at Camelot, not the bank, so walk the short way.",
+          "Do: run laps and run back from the church. Keep Rapid Heal on and recharge prayer at the church altar after the course.",
           "Do: eat whenever HP is {{risk.min_hitpoints}} or lower.",
           "Stop: at {{step.end_level}}, then take decision point `DP06`."
         ],
         "warnings": [
-          "Fail damage here is not published, so the card uses a conservative rule (not a sourced bound): eat whenever HP is {{risk.min_hitpoints}} or lower, never attempt a failable obstacle below the card's stop line, and stop and ask for a re-rating after any single fail bigger than the card's limit. The exact lines are in 'Stop immediately if' on this step's danger card. The failable obstacles are the first gap and the tightrope.",
-          "Dismiss every random event and never accept one mid-lap: a death inside one is official on Hardcore Worlds. Never go AFK; break sessions into blocks of an hour or less."
+          "Fail damage is unpublished; this rule is conservative, not sourced. Eat at {{risk.min_hitpoints}} HP or lower, stop below the card's stop line, re-rate after any fail above the card's limit.",
+          "Failable obstacles: the first gap and the tightrope.",
+          "Dismiss every random event and never go AFK; a death inside a random event is official. Take a break every hour."
         ],
         "tips": [
-          "The calculator uses the low end of the published rate; while you are still failing laps, the Quant notes this step may run a couple of hours longer than {{step.hours}}.",
-          "Marks here go toward Graceful ({{fact:F-4025}} of Seers' laps for a full set). Buy it from Grace without entering the Rogues' Den maze, which is an unsafe death on Hardcore Worlds."
+          "The calculator uses the low end of the published rate; while you still fail laps, this step may run hours longer than {{step.hours}}.",
+          "Marks go toward Graceful ({{fact:F-4025}} of Seers' laps for a full set). Buy it from Grace; never enter the Rogues' Den maze.",
+          "Profit: about {{step.hours}} of laps; marks sell as amylase crystals on the Hardcore Worlds GE."
         ]
       },
       "risk": {
@@ -3987,9 +4151,30 @@
       ],
       "rationale": "Fastest open rooftop at 70. Only the market stall can be failed (floor(HP/17+2) = 4 at 48 HP, F-3075) and nothing fails from 85 (F-4069). No desert heat in town (F-3076); town NPCs are not aggressive to combat 45 (jackals only to 42 or below, F-3077). Reach it by Ali Morrisane's carpet from Shantay Pass (F-1032); never walk south of town (aggressive level-63 crocodiles, F-4084). The redirected Pollnivneach tablet needs a Nightmare Zone scroll (F-4079/F-4080), and NMZ is unsafe on Hardcore Worlds, so do not use it.",
       "why_not_faster": "Werewolf (50,000+ XP/h) is vetoed until its deathslide maximum is published or the never-fail stats are reached (see assumptions); Dorgesh-Kaan (50,000-63,000) fails even at 99 for about 10 damage and its quest requirements are not in the verified facts; Seers' is slower (40,000).",
+      "income_per_hour": [
+        {
+          "item": "Mark of grace",
+          "qty": {
+            "value": 13,
+            "fact": "F-4021"
+          },
+          "convert": {
+            "to_item": "Amylase crystal",
+            "per_unit": {
+              "value": 100,
+              "fact": "F-5901"
+            },
+            "divide_by": {
+              "value": 10,
+              "fact": "F-4027"
+            }
+          },
+          "note": "marks -> amylase packs (10 marks each) -> 100 crystals each, sold on the HW GE"
+        }
+      ],
       "prose": {
         "step_id": "S10",
-        "summary": "{{step.actions}} laps, about {{step.hours}}, from {{step.start_level}} to {{step.end_level}}; only the market stall can fail, for small, known damage.",
+        "summary": "{{step.actions}} laps, about {{step.hours}}, from {{step.start_level}} to {{step.end_level}}. Only the market stall can fail, for small, known damage.",
         "instructions": [
           "Bank: the Shantay Pass chest; take the card's food and coins for the carpet.",
           "Gear: Graceful or light clothing.",
@@ -3999,13 +4184,14 @@
         ],
         "warnings": [
           "Mandatory: carpet only. Never walk south of town (aggressive crocodiles) and never use the fairy-ring desert walk.",
-          "Mandatory: never attempt the market stall at or below the card's stop line: its fall formula becomes lethal at very low HP. Eat at {{risk.min_hitpoints}}.",
-          "Mandatory: no Pollnivneach teleport tablets and no Nightmare Zone reward route. The tablets need a Nightmare Zone scroll, and Nightmare Zone is an unsafe death on Hardcore Worlds.",
+          "Mandatory: never attempt the market stall at or below the card's stop line; its fall formula becomes lethal at very low HP. Eat at {{risk.min_hitpoints}}.",
+          "Mandatory: no Pollnivneach teleport tablets and no Nightmare Zone reward route. Nightmare Zone is an unsafe death on Hardcore Worlds.",
           "Stop condition: if anything attacks you in town, leave and ask for a re-rating.",
-          "Dismiss every random event and never accept one mid-lap: a death inside one is official on Hardcore Worlds. Never go AFK; break sessions into blocks of an hour or less."
+          "Dismiss every random event and never go AFK; a death inside a random event is official. Take a break every hour."
         ],
         "tips": [
-          "There is no desert heat inside town; if you need to stop, climb down in town and carpet back to Shantay Pass."
+          "No desert heat inside town; to stop, climb down in town and carpet back to Shantay Pass.",
+          "Profit: about {{step.hours}} of laps; marks sell as amylase crystals on the Hardcore Worlds GE."
         ]
       },
       "risk": {
@@ -4280,11 +4466,32 @@
       ],
       "rationale": "Safest course for 80-90: from 85 no Pollnivneach obstacle can fail (F-4069/F-5370), so the course itself has no damage source for the last five levels before Ardougne. Mark rate falls to 20% at 90 (F-4018), when the route moves on anyway.",
       "why_not_faster": "Rellekka (80+) is slightly faster (50,000-55,052 XP/h vs 47,000-51,000) but its tightrope fails until 85, it has no bank, and the run there is not fully researched (F-5345); the difference does not justify extra uncertainty on the safest route.",
+      "income_per_hour": [
+        {
+          "item": "Mark of grace",
+          "qty": {
+            "value": 13,
+            "fact": "F-4021"
+          },
+          "convert": {
+            "to_item": "Amylase crystal",
+            "per_unit": {
+              "value": 100,
+              "fact": "F-5901"
+            },
+            "divide_by": {
+              "value": 10,
+              "fact": "F-4027"
+            }
+          },
+          "note": "marks -> amylase packs (10 marks each) -> 100 crystals each, sold on the HW GE"
+        }
+      ],
       "prose": {
         "step_id": "S11",
-        "summary": "{{step.actions}} laps, about {{step.hours}}, from {{step.start_level}} to {{step.end_level}}; from {{fact:F-4069}} nothing on this course can fail.",
+        "summary": "{{step.actions}} laps, about {{step.hours}}, from {{step.start_level}} to {{step.end_level}}. From {{fact:F-4069}} nothing on this course can fail.",
         "instructions": [
-          "Bank: the Shantay Pass chest; take the card's food (none is needed on the course once nothing can fail) and coins for carpets.",
+          "Bank: the Shantay Pass chest; take the card's food (none needed once nothing can fail) and coins for carpets.",
           "Gear: Graceful or light clothing.",
           "Travel: carpet from Shantay Pass, and back the same way.",
           "Do: run laps; eat when HP reaches {{risk.min_hitpoints}}.",
@@ -4294,10 +4501,11 @@
           "Mandatory: carpet-only travel; never south of town; bank at Shantay Pass.",
           "Mandatory: until {{fact:F-4069}}, never attempt the stall at or below the card's stop line; eat at {{risk.min_hitpoints}}.",
           "Mandatory: no Pollnivneach tablets and no Nightmare Zone rewards.",
-          "Dismiss every random event and never accept one mid-lap: a death inside one is official on Hardcore Worlds. Never go AFK; break sessions into blocks of an hour or less."
+          "Dismiss every random event and never go AFK; a death inside a random event is official. Take a break every hour."
         ],
         "tips": [
-          "Marks of grace drop sharply once you are far above the course's requirement; the route moves on to Ardougne at {{step.end_level}} anyway."
+          "Marks of grace drop sharply far above the course's requirement; the route moves to Ardougne at {{step.end_level}} anyway.",
+          "Profit: about {{step.hours}} of laps; marks sell as amylase crystals on the Hardcore Worlds GE."
         ]
       },
       "risk": {
@@ -4578,33 +4786,33 @@
       "rationale": "2,812.4 Agility XP plus 2,812.4 Defence XP that cannot be declined (F-2038): this is exactly the quest-sourced Defence the owner's zerker plan wants, taking Defence from 1 to 16 (tools/xp.py), far under the 50 cap. No hard skill requirements if the lyre is taken as a drop from the level 48 citizens (max hit 6, non-aggressive, F-5383). Fights: Draugen (max 7) and Koschei (max 3/5/7, then 1); only Koschei's 4th form is a safe death on Hardcore Worlds (F-0004/F-3014), forms 1-3 are run-ending. Placed in the 57 quest block so its Agility XP lands during the slowest training, and so the enchanted lyre (Rellekka teleport, F-4086) is ready when Rellekka opens at 80. Duel prep (risk.json S12): no ring of life at Koschei (it sends you to your respawn point and restarts the fight at form 1, so worn into form 4 it resets the fight every time; F-5011), and BANK the escape crystal before the duel: do not take it into the instance, worn or carried (worn, it resets the fight the same way; carried, it can fire if you stand still in the fourth form and restart the fight at form 1; risk.json S12-M6). Carry it only for the road, the Draugen and the citizens. Neither the ring nor the crystal is an exit from forms 1-3.",
       "prose": {
         "step_id": "S12",
-        "summary": "Danger first: Koschei's first three forms are run-ending on Hardcore Worlds and have no documented exit; only his fourth form is a safe death. In return you get {{step.xp_gained}} Agility XP, the quest Defence your zerker plan wants, and the enchanted lyre that makes Rellekka practical.",
+        "summary": "Koschei's first three forms are run-ending with no documented exit; only the fourth is a safe death. Gives {{step.xp_gained}} Agility XP, quest Defence, the lyre.",
         "instructions": [
           "Bank for the road trips: food, Camelot teleport tablets (at least two per trip), and Ranged weapon and ammunition.",
-          "Gear: Ranged on Rapid or Accurate, never Longrange: Longrange (like any defensive style) gives Defence XP and breaks your zerker rule of quest-only Defence.",
-          "Travel before you have the lyre: Camelot tablet, then the road north, keeping left at the first fork. Stay on the road, do not attempt the log balance north of Sinclair Mansion, and do not fight anything on the road.",
-          "Do: farm the lyre from the non-aggressive citizens, using the fire safespots with Ranged.",
+          "Gear: Ranged on Rapid or Accurate, never Longrange; Longrange gives Defence XP.",
+          "Before the lyre: Camelot tablet, then the road north, left at the first fork. Stay on the road, skip the log balance north of Sinclair Mansion, fight nothing.",
+          "Do: farm the lyre from the non-aggressive citizens using the fire safespots with Ranged.",
           "Do: fight the Draugen only during the hunt, at full HP with food.",
-          "Bank before the Koschei duel: BANK your escape crystal, take off and bank any ring of life, withdraw a full inventory of the best food you can buy (monkfish, {{fact:F-4062}} each, is the largest verified heal) and an antipoison. Leave weapons, armour and runes behind: they are not allowed in the duel.",
+          "Before the duel, bank your escape crystal and any ring of life. Take a full inventory of monkfish ({{fact:F-4062}} each) and an antipoison; no weapons, armour or runes.",
           "Before the duel: cure any poison, check your connection is stable, and be at full HP ({{risk.min_hitpoints}}).",
-          "Do, first three forms: start every form at full HP, eat at the card's eat line, and trap Koschei across the floor hole or by the fire pillars to eat and regenerate.",
-          "Do, fourth form: do not resist. Let him wear you down until the fight ends on its own; this form is the safe phase.",
+          "Do, first three forms: start each form at full HP, eat at the card's eat line, and trap Koschei across the floor hole or by the fire pillars to eat.",
+          "Do, fourth form: do not resist. Let him wear you down until the fight ends; this form is the safe phase.",
           "Stop: when the quest completes. Keep the enchanted lyre charged for Rellekka."
         ],
         "warnings": [
-          "Headline {{risk.inherent_ds}}, with prep {{risk.residual_ds}} ({{risk.tier}}): the highest with-prep score on the Balanced route. In the first three forms there is no documented exit and a death is run-ending; a disconnect in the second or third form is likely fatal, and no verified mitigation covers it. Your only controls are food, full HP before each form, trapping him, and a stable connection.",
-          "BANK THE ESCAPE CRYSTAL before the Koschei duel. Worn, it acts like a ring of life and resets the fight to the first form. Carried in your inventory, it can fire if you stand still in the fourth form while he hits you, which also throws you out and resets the fight. Either way you are sent back through the run-ending first three forms, and nothing in the duel credits the crystal, so leave it in the bank.",
-          "NEVER wear a ring of life in the Koschei duel. It sends you to your respawn point and restarts the fight at the first form; worn into the fourth form it would reset the fight every time, so the quest could never be finished. It is not an exit.",
-          "Mandatory: start every form at full HP ({{risk.min_hitpoints}}), eat at the card's eat line, and trap Koschei across the floor hole or by the fire pillars whenever you need to eat and regenerate.",
-          "Stop condition: in the first three forms, if your food falls to the card's reserve line, trap Koschei and stall. After long enough in one phase he disappears and the fight restarts at the first form: a time cost, not a death. Then leave between fights the normal way and restock. Try walking or teleporting out only as a last resort; neither is documented.",
-          "Mandatory: start the duel only on a stable connection and never below full HP. A disconnect leaves you in combat for up to a minute. Stop on any unstable connection before the duel.",
-          "Camelot road, first trips before the lyre: travel at full HP with food and your Camelot tablets. Never fight on the road: walk on through chip damage, but teleport away at once if HP falls to the card's road line or two attackers engage, and report what attacked you. The road's monsters and the log balance's fail damage are unresearched.",
-          "If the Draugen engages outside the hunt (it is aggressive and roams the province), teleport away rather than fight it unprepared. Stop condition: leave Rellekka if HP falls to the card's Draugen line during the fight.",
-          "Stop condition: dismiss every random event during the quest; never accept one on the road or in the province.",
-          "This card has changed since you first accepted this step: the ring of life is gone from it, there is no exit in the first three forms, and the early trips use an unresearched road. Read it again before you take decision point `DP08` option B."
+          "Headline {{risk.inherent_ds}}, with prep {{risk.residual_ds}} ({{risk.tier}}). Highest with-prep score on the Balanced route. The first three forms have no documented exit, and a disconnect in the second or third is likely fatal.",
+          "Mandatory: bank the escape crystal before the duel. Worn, it acts like a ring of life and resets the fight to the first form; carried, it can fire if you stand still in the fourth.",
+          "Never wear a ring of life in the duel. It sends you to your respawn point and restarts the fight at the first form; it is not an exit.",
+          "Mandatory: start every form at full HP ({{risk.min_hitpoints}}), eat at the card's eat line, and trap Koschei whenever you need to eat and regenerate.",
+          "Stop condition: in the first three forms, if food falls to the card's reserve line, trap Koschei and stall. He eventually vanishes and the fight restarts: a time cost, not a death.",
+          "Mandatory: start the duel only on a stable connection and never below full HP. A disconnect leaves you in combat for up to a minute.",
+          "Camelot road before the lyre: travel at full HP with food and tablets. Walk on through chip damage; teleport at once at the card's road line or if two attackers engage.",
+          "If the Draugen engages outside the hunt, teleport away. Stop condition: leave Rellekka if HP falls to the card's Draugen line during the fight.",
+          "Stop condition: dismiss every random event. A death inside one is official on Hardcore Worlds.",
+          "This card changed since you first accepted it: no ring of life, no exit in the first three forms, and an unresearched road. Read it again before decision point `DP08` option B."
         ],
         "tips": [
-          "Why it is worth it: Agility XP, quest Defence that stays far under your cap (watch the cap bar on the Balanced route), and the lyre teleport that removes the long Camelot road from Rellekka.",
+          "Worth it for Agility XP, quest Defence far under your cap (watch the cap bar), and the lyre teleport that skips the long Camelot road.",
           "Safer alternative: decision point `DP08` option A, staying on Pollnivneach with no Fremennik Trials."
         ]
       },
@@ -4980,24 +5188,46 @@
         "F-5345"
       ],
       "rationale": "Fastest open course for 80-90 on the balanced route. Only the first tightrope fails, until 85, for floor(HP x 0.10) = 4 at 48 HP (F-3079/F-4070). Rellekka has no bank (F-4087); bring what you need. With The Fremennik Trials done (S12) the enchanted lyre teleports here (F-4086); otherwise a Camelot tablet and a long run north (F-5343).",
+      "income_per_hour": [
+        {
+          "item": "Mark of grace",
+          "qty": {
+            "value": 13,
+            "fact": "F-4022"
+          },
+          "convert": {
+            "to_item": "Amylase crystal",
+            "per_unit": {
+              "value": 100,
+              "fact": "F-5901"
+            },
+            "divide_by": {
+              "value": 10,
+              "fact": "F-4027"
+            }
+          },
+          "note": "marks -> amylase packs (10 marks each) -> 100 crystals each, sold on the HW GE"
+        }
+      ],
       "prose": {
         "step_id": "S13",
-        "summary": "{{step.actions}} laps, about {{step.hours}}, from {{step.start_level}} to {{step.end_level}}; only the first tightrope fails, for small, known damage, until {{fact:F-4070}}.",
+        "summary": "{{step.actions}} laps, about {{step.hours}}, from {{step.start_level}} to {{step.end_level}}. Only the first tightrope fails, for small, known damage, until {{fact:F-4070}}.",
         "instructions": [
-          "Bank: Rellekka has no bank. Bank at Seers' Village before you go and bring the card's food.",
+          "Bank: Rellekka has no bank. Bank at Seers' Village first and bring the card's food.",
           "Gear: Graceful, plus your charged enchanted lyre.",
           "Travel: enchanted lyre to Rellekka. Do not use the Camelot road.",
           "Do: run laps; eat when HP reaches {{risk.min_hitpoints}}.",
           "Stop: at {{step.end_level}}, then move to Ardougne."
         ],
         "warnings": [
-          "Mandatory: travel only by enchanted lyre. If you do not have it, follow The Fremennik Trials' road rules or ask for a re-rating before using the Camelot road.",
+          "Mandatory: travel only by enchanted lyre. Without it, follow The Fremennik Trials' road rules or ask for a re-rating before using the Camelot road.",
           "Mandatory: eat at {{risk.min_hitpoints}}; stop if HP falls to the card's stop line.",
-          "Dismiss every random event and never accept one mid-lap: a death inside one is official on Hardcore Worlds. Never go AFK; break sessions into blocks of an hour or less."
+          "Dismiss every random event and never go AFK; a death inside a random event is official. Take a break every hour."
         ],
         "tips": [
-          "The tightrope fall scales with your current HP and deals nothing at very low HP; it is the only damage on the course.",
-          "If you need to leave, climb down and use the lyre or a Camelot tablet; bank at Seers' Village."
+          "The tightrope fall scales with current HP and deals nothing at very low HP; it is the only damage here.",
+          "To leave, climb down and use the lyre or a Camelot tablet; bank at Seers' Village.",
+          "Profit: about {{step.hours}} of laps; marks sell as amylase crystals on the Hardcore Worlds GE."
         ]
       },
       "risk": {
@@ -5256,6 +5486,27 @@
       ],
       "rationale": "The best rooftop course and the finish for every route. Gaps 1 and 2 fail until 95 (damage undocumented, F-3080); church altar for Rapid Heal and market food nearby (F-5357). Marks stack on one tile (F-4026), so missed marks are not lost. Do not touch the Wilderness lever in East Ardougne (F-4091).",
       "why_not_faster": "The Hallowed Sepulchre floors 4-5 (73,000-98,500 XP/h) need Sins of the Father, which is out of reach and pending research (DP07 option B is the long-term goal); Werewolf's 80+ ceiling (68,600) barely beats Ardougne and the course stays vetoed until its deathslide maximum is published or the never-fail stats are reached.",
+      "income_per_hour": [
+        {
+          "item": "Mark of grace",
+          "qty": {
+            "value": 16,
+            "fact": "F-4023"
+          },
+          "convert": {
+            "to_item": "Amylase crystal",
+            "per_unit": {
+              "value": 100,
+              "fact": "F-5901"
+            },
+            "divide_by": {
+              "value": 10,
+              "fact": "F-4027"
+            }
+          },
+          "note": "marks -> amylase packs (10 marks each) -> 100 crystals each, sold on the HW GE"
+        }
+      ],
       "prose": {
         "step_id": "S14",
         "summary": "{{step.actions}} laps, about {{step.hours}}, from {{step.start_level}} to {{step.end_level}}: the finish of every route and the longest stretch of the guide.",
@@ -5263,18 +5514,20 @@
           "Bank: East Ardougne; take the card's food and Ardougne teleport tablets.",
           "Gear: Graceful.",
           "Travel: Ardougne tablet to the market. The course starts at the beams by the gem stall.",
-          "Do: run laps. Use Rapid Heal and recharge prayer at the East Ardougne church altar; buy food at the market bakery stall.",
+          "Do: run laps. Use Rapid Heal, recharge prayer at the East Ardougne church altar, and buy food at the market bakery stall.",
           "Do: eat whenever HP is {{risk.min_hitpoints}} or lower.",
           "Do: collect marks when convenient; they stack on one tile, so stopping loses nothing.",
           "Stop: at {{step.end_level}}. The cape is yours."
         ],
         "warnings": [
-          "Fail damage here is not published, so the card uses a conservative rule (not a sourced bound): eat whenever HP is {{risk.min_hitpoints}} or lower, never attempt a failable obstacle below the card's stop line, and stop and ask for a re-rating after any single fail bigger than the card's limit. The exact lines are in 'Stop immediately if' on this step's danger card. The failable obstacles are the first two gaps, which stop failing at {{fact:F-4071}}.",
-          "Mandatory: never touch the lever near the West Ardougne gate. It teleports you into deep Wilderness, where PvP is live on Hardcore Worlds and a player kill is an official death.",
-          "This is the longest exposure in the guide. Dismiss every random event and never accept one mid-lap: a death inside one is official on Hardcore Worlds. Never go AFK; break sessions into blocks of an hour or less."
+          "Fail damage is unpublished; this rule is conservative, not sourced. Eat at {{risk.min_hitpoints}} HP or lower, stop below the card's stop line, re-rate after any fail above the card's limit.",
+          "Failable obstacles: the first two gaps, which stop failing at {{fact:F-4071}}.",
+          "Mandatory: never touch the lever near the West Ardougne gate. It teleports you into deep Wilderness, where PvP is live and a player kill is an official death.",
+          "Longest exposure in the guide. Dismiss every random event and never go AFK; take a break every hour."
         ],
         "tips": [
-          "Headline {{risk.inherent_ds}} is the highest on the Safest route because of unpublished fail damage over the most hours, not because anything here hits hard."
+          "Headline {{risk.inherent_ds}} is the highest on the Safest route from unpublished fail damage over the most hours, not from anything that hits hard.",
+          "Profit: about {{step.hours}} of laps; marks sell as amylase crystals on the Hardcore Worlds GE."
         ]
       },
       "risk": {
@@ -5535,9 +5788,9 @@
       "rationale": "No Agility XP itself (3,000 Attack only); it exists in this plan only as the gate to Troll Stronghold (DP03). Use the secret path from Tenzing's house: the normal path is multi-combat with thrower trolls whose attacks always hit (F-5374); the plateau holds aggressive named trolls hitting 23-30 (F-5375).",
       "prose": {
         "step_id": "S15",
-        "summary": "No Agility XP ({{fact:F-5301}}): only the gate to Troll Stronghold, and safe only by the secret path.",
+        "summary": "No Agility XP ({{fact:F-5301}}). It is only the gate to Troll Stronghold, and is safe only by the secret path.",
         "instructions": [
-          "Bank: the quest items listed on the card (coins, bread, trout, an iron bar, an Asgarnian ale), a few food and a games necklace.",
+          "Bank: the quest items on the card (coins, bread, trout, an iron bar, an Asgarnian ale), a few food and a games necklace.",
           "Gear: light gear; no fight is required.",
           "Travel: Burthorpe, then Tenzing's house.",
           "Do: use only the secret path from Tenzing's house.",
@@ -5545,10 +5798,11 @@
           "Stop: at quest completion; leave by games necklace."
         ],
         "warnings": [
-          "Headline {{risk.inherent_ds}}: the normal northern path is multi-combat with thrower trolls whose attacks always hit, and a disconnect there is likely fatal. On the secret path, with prep, it is {{risk.residual_ds}} ({{risk.tier}}).",
+          "Headline {{risk.inherent_ds}}: the northern path is multi-combat with thrower trolls whose attacks always hit, and a disconnect there is likely fatal. On the secret path with prep it is {{risk.residual_ds}} ({{risk.tier}}).",
+          "Mandatory: use only the secret path from Tenzing's house.",
           "Mandatory: if any thrower troll engages, turn on Protect from Missiles and leave.",
           "Stop conditions: turn back if you see a warning sign (you are on the normal path); leave if two or more trolls engage.",
-          "Stop condition: dismiss every random event here and never accept one. A death inside a random event is an official death on Hardcore Worlds.",
+          "Stop condition: dismiss every random event. A death inside one is official on Hardcore Worlds.",
           "Bail-out: Protect from Missiles on, walk back down the secret path, games necklace to Burthorpe."
         ],
         "tips": [
@@ -5828,10 +6082,10 @@
       ],
       "prose": {
         "step_id": "S16",
-        "summary": "Danger first: several aggressive Troll generals hit hard enough that two hits kill you from full HP, and once you are low a single hit can. The prep card brings it down to {{risk.tier}}, for {{fact:F-2022}} and the gate to Troll Romance.",
+        "summary": "Aggressive Troll generals can kill from full HP in two hits. Prep brings it to {{risk.tier}}. Reward: {{fact:F-2022}} and the gate to Troll Romance.",
         "instructions": [
-          "Bank: a full inventory of monkfish ({{fact:F-4062}} each, the largest verified heal), prayer potions, a games necklace, and Ranged weapon and ammunition.",
-          "Gear: Ranged on Rapid or Accurate, never Longrange: Longrange (like any defensive style) gives Defence XP and breaks your zerker rule of quest-only Defence.",
+          "Bank: a full inventory of monkfish ({{fact:F-4062}} each), prayer potions, a games necklace, and Ranged weapon and ammunition.",
+          "Gear: Ranged on Rapid or Accurate, never Longrange; Longrange gives Defence XP.",
           "Travel: Trollheim by the rock shortcuts, which avoid the thrower trolls on the mountain path.",
           "Do: fight Dad only from the western-gate safespot, with Ranged.",
           "Do: turn Protect from Melee on before entering the generals' room, then kill only the southern-most general from the desk safespot with Ranged.",
@@ -5840,16 +6094,16 @@
           "Stop: at quest completion, or at any stop condition below."
         ],
         "warnings": [
-          "Headline {{risk.inherent_ds}} (Extreme, with the very top of the game ladder), with prep {{risk.residual_ds}} ({{risk.tier}}). Why you might still do it: a quest completion and the gate to Troll Romance. For Agility alone it is optional; decision point `DP03` option A skips it.",
+          "Headline {{risk.inherent_ds}}, with prep {{risk.residual_ds}} ({{risk.tier}}). Optional for Agility alone; decision point `DP03` option A skips it. Worth it for the quest and the gate to Troll Romance.",
           "Mandatory: never enter the generals' room without Protect from Melee on, full prayer and full HP ({{risk.min_hitpoints}}).",
-          "Mandatory: in the generals' room, eat whenever your HP is at or below a general's maximum hit (the card's eat line). Below it, one hit can kill you.",
-          "Stop conditions: leave if two generals are attacking; leave the room and teleport if food or prayer falls to the card's lines.",
+          "Mandatory: in the generals' room, eat whenever HP is at or below a general's maximum hit (the card's eat line). Below it, one hit can kill.",
+          "Stop conditions: leave if two generals attack; leave the room and teleport if food or prayer falls to the card's lines.",
           "Never fight a general in melee range. Bail-out: keep Protect from Melee on, back away to the desk safespot or out of the room, and teleport.",
-          "Escape crystal: optional and not credited. Its scope here is undocumented and it does not fire while you move; never lower another precaution because of it.",
-          "Stop condition: dismiss every random event here and never accept one. A death inside a random event is an official death on Hardcore Worlds."
+          "Escape crystal: optional and not credited; its scope here is undocumented and it does not fire while you move. Never lower another precaution for it.",
+          "Stop condition: dismiss every random event. A death inside one is official on Hardcore Worlds."
         ],
         "tips": [
-          "If you also plan Troll Romance (`DP03` option C), do this first: it tests whether you can hold a protection prayer and eat under fire before Arrg."
+          "If you plan Troll Romance (`DP03` option C), do this first: it tests holding a protection prayer and eating under fire before Arrg."
         ]
       },
       "risk": {
@@ -6179,28 +6433,29 @@
       "rationale": "8,000 Agility XP (F-2032 also lists 4,000 Strength, not carried as a number). The required Arrg fight is the problem: level 113, 38 melee / 30 accurate ranged, occasionally through protection prayers, attacks the moment you arrive, and the wiki says it is not a safe death even for Hardcore Ironmen (F-2036/F-5021); on Hardcore Worlds it is run-ending (F-5003). Decision-point option only; not recommended at 48 Hitpoints. Prep card (risk.json S17): Protect from Melee on before talking to Arrg and during the run to the safespot (his primary attack is the 38 melee, F-5021/F-3089), Protect from Missiles only once at the safespot; the run to the safespot cannot be made fully safe (two hits can kill at 48 HP; it partly depends on hit RNG).",
       "prose": {
         "step_id": "S17",
-        "summary": "Danger first: Arrg attacks the moment you arrive, and the run to the safespot cannot be made fully safe, even with perfect preparation. The reward is an Agility reward of {{fact:F-2031}}, which saves almost no training time.",
+        "summary": "Arrg attacks on arrival and the run to the safespot cannot be made fully safe. Reward: {{fact:F-2031}} of Agility, saving almost no training time.",
         "instructions": [
           "Bank: a full inventory of monkfish ({{fact:F-4062}} each), leaving room for prayer potions; Ranged weapon and ammunition.",
-          "Gear: Ranged on Rapid or Accurate, never Longrange: Longrange (like any defensive style) gives Defence XP and breaks your zerker rule of quest-only Defence.",
+          "Gear: Ranged on Rapid or Accurate, never Longrange; Longrange gives Defence XP.",
           "Travel: Trollheim to the troll arena at full HP and full prayer, on a stable connection.",
           "Do: turn Protect from Melee on before you talk to Arrg.",
-          "Do: run straight to the north-west wall / west-gate safespot without stopping to fight. Eat one piece at once whenever HP reaches the card's run eat line (that is, after almost any hit) and keep moving.",
-          "Do: at the safespot, switch to Protect from Missiles and fight with Ranged. Eat at the card's safespot eat line and keep prayer topped up with prayer potions.",
+          "Do: run straight to the north-west wall or west-gate safespot without fighting. Eat one piece whenever HP reaches the card's run eat line and keep moving.",
+          "Do: at the safespot, switch to Protect from Missiles and fight with Ranged. Eat at the card's safespot line and keep prayer topped up.",
           "Stop: when Arrg dies, or hold the safespot until he despawns if a stop condition is met."
         ],
         "warnings": [
-          "THE RUN TO THE SAFESPOT CANNOT BE MADE FULLY SAFE. This is the honest limit of the card: with Protect from Melee on, two maximum ranged hits with one monkfish between them leave you almost dead from full HP, and a third hit before the safespot, or any melee hit that slips through the prayer after the first, kills you. No verified food heals more, no combo-eating is verified, and the run's length is not documented. Surviving it depends on Arrg's hit rolls.",
-          "Headline {{risk.inherent_ds}}, with prep {{risk.residual_ds}} ({{risk.tier}}): the highest with-prep score of any step in this plan. A death here is run-ending; the wiki says it is not a safe death even for Hardcore Ironmen.",
-          "Stop conditions before you start: do not start unless you accept that the run can kill a correctly prepared player, and do not start if Troll Stronghold showed you cannot hold a protection prayer and eat under fire.",
-          "Mandatory: talk to Arrg only at full HP ({{risk.min_hitpoints}}), full prayer, Protect from Melee already on and a full inventory of monkfish-class food.",
-          "Mandatory: start only on a stable connection. A disconnect leaves you in combat for up to a minute, and the run is the phase where both of his attacks can reach you.",
-          "Stop condition: if food or prayer falls to the card's lines at the safespot, stop attacking and hold the safespot under Protect from Missiles until Arrg despawns; then leave and come back fully stocked.",
-          "During the run there is no bail-out: keep moving and eat. Whether a teleport works in the arena is undocumented, so try one only as a last resort; logging out is not an exit under fire, and the escape crystal cannot cover the run because it never fires while you move.",
-          "Stop condition: dismiss every random event here and never accept one. A death inside a random event is an official death on Hardcore Worlds."
+          "The run window cannot be closed. With Protect from Melee on, two maximum ranged hits and one monkfish leave you almost dead from full HP; a third hit, or melee through the prayer, kills.",
+          "No verified food heals more, no combo-eating is verified, and the run's length is undocumented.",
+          "Headline {{risk.inherent_ds}}, with prep {{risk.residual_ds}} ({{risk.tier}}). Highest with-prep score in this plan. A death here is run-ending and not a safe death even for Hardcore Ironmen.",
+          "Stop condition before starting: do not start unless you accept that the run can kill a prepared player, or if Troll Stronghold showed you cannot hold a protection prayer and eat under fire.",
+          "Mandatory: talk to Arrg at full HP ({{risk.min_hitpoints}}), full prayer, Protect from Melee already on and a full inventory of monkfish-class food.",
+          "Mandatory: start only on a stable connection. A disconnect leaves you in combat for up to a minute, and during the run both his attacks can reach you.",
+          "Stop condition: if food or prayer falls to the card's lines at the safespot, stop attacking and hold it under Protect from Missiles until Arrg despawns; restock and return.",
+          "No bail-out during the run: keep moving and eat. Teleport in the arena is undocumented (last resort only), logging out is not an exit, and the escape crystal never fires while you move.",
+          "Stop condition: dismiss every random event. A death inside one is official on Hardcore Worlds."
         ],
         "tips": [
-          "Why you might still do it: the Strength XP and the quest completion. For the Agility goal it is optional, and decision point `DP03` option A skips it."
+          "Reason to do it: Strength XP and quest completion. Optional for Agility; decision point `DP03` option A skips it."
         ]
       },
       "risk": {
@@ -6499,7 +6754,7 @@
       "rationale": "Gate to Recruitment Drive (DP04 option B). Only an avoidable level 19 suit of armour; the dungeon route passes level 22/25 skeletons (F-2016). Unlocks Herblore.",
       "prose": {
         "step_id": "S18",
-        "summary": "No Agility XP: unlocks Herblore and leads to Recruitment Drive (decision point `DP04`, option B).",
+        "summary": "No Agility XP. Unlocks Herblore and leads to Recruitment Drive (decision point `DP04`, option B).",
         "instructions": [
           "Bank: the raw meats for the cauldron, the card's food and a teleport.",
           "Gear: light gear; you are running, not fighting.",
@@ -6508,10 +6763,10 @@
           "Stop: at quest completion; teleport out of the dungeon."
         ],
         "warnings": [
-          "Mandatory: enter Taverley Dungeon at full HP with food, run past the skeletons and suits without fighting, and teleport out if HP falls to the card's line.",
+          "Mandatory: enter Taverley Dungeon at full HP with food, run past the skeletons and suits, and teleport out if HP falls to the card's line.",
           "Stop condition: stop if more than two monsters follow you.",
-          "The dungeon monsters' max hits were not researched; the score is conservative for that reason.",
-          "Stop condition: dismiss every random event here and never accept one. A death inside a random event is an official death on Hardcore Worlds."
+          "The dungeon monsters' max hits were not researched, so the score is conservative.",
+          "Stop condition: dismiss every random event. A death inside one is official on Hardcore Worlds."
         ],
         "tips": []
       },
@@ -6746,7 +7001,7 @@
       ],
       "prose": {
         "step_id": "S19",
-        "summary": "No Agility XP: a Recruitment Drive prerequisite with two combat lamps, and Defence must never be chosen on either.",
+        "summary": "No Agility XP. Recruitment Drive prerequisite with two combat lamps; never choose Defence on either.",
         "instructions": [
           "Bank: the quest disguise items, the card's food and a teleport.",
           "Gear: the disguise; no fight is required.",
@@ -6758,7 +7013,7 @@
         "warnings": [
           "NEVER click Defence on either lamp. It is offered as a valid choice, and on your zerker build it is a trap.",
           "Mandatory: evade the knights at full HP with food; leave and teleport if more than one engages or HP falls to the card's line.",
-          "The knights' max hit was not researched; the score is conservative for that reason."
+          "The knights' max hit was not researched, so the score is conservative."
         ],
         "tips": []
       },
@@ -7001,19 +7256,19 @@
       "rationale": "1,000.5 Agility XP (F-2010 also lists Prayer and Herblore 1,000.5, not carried as numbers). Sir Leye (level 20, max hit 3) is fought with no armour or food and is not a safe death (F-5004/F-5015); the yellow portal at each test room's start is the documented exit. Three quests for 1,000.5 Agility XP, so it is a decision-point option only.",
       "prose": {
         "step_id": "S20",
-        "summary": "An Agility reward of {{fact:F-2009}} after two prerequisite quests; the fight is against Sir Leye with no armour or food allowed.",
+        "summary": "Agility reward of {{fact:F-2009}} after two prerequisite quests. The fight is against Sir Leye, with no armour or food allowed.",
         "instructions": [
-          "Bank: nothing to bring; the tests do not allow armour, food or potions.",
+          "Bank: nothing to bring; the tests allow no armour, food or potions.",
           "Travel: the Temple Knight testing grounds in Falador.",
           "Do: work through the tests; fight Sir Leye at full HP ({{risk.min_hitpoints}}).",
           "Stop: at quest completion, or by the yellow portal at any stop condition below."
         ],
         "warnings": [
-          "Mandatory: leave by the yellow portal at the start of the room if HP falls to the card's line or Sir Leye is healing faster than you damage him.",
-          "This fight is not a safe death, even for Hardcore Ironmen; on Hardcore Worlds it is official."
+          "Mandatory: leave by the yellow portal at the room start if HP falls to the card's line or Sir Leye heals faster than you damage him.",
+          "This fight is not a safe death even for Hardcore Ironmen; on Hardcore Worlds it is official."
         ],
         "tips": [
-          "Three quests for a small Agility reward: only worth it if you are clearing quests for their own sake."
+          "Three quests for a small Agility reward: only worth it if you clear quests for their own sake."
         ]
       },
       "risk": {
@@ -7250,9 +7505,9 @@
       "rationale": "7,500 Agility XP, no Defence (F-2502 also lists Thieving 10,000 and Crafting 5,000). Blocked by Thieving 34 (owner 24; at least 26 after The Writing's on the Wall). The Thieving training is the owner's choice and is not sized here (no verified Thieving-rate facts in this job). Its two fights are scripted to stop before death per the wiki (Adala max hit 4), but you enter with no food or teleports (F-5363) and there is no Hardcore Worlds safe exception (F-5037).",
       "prose": {
         "step_id": "S21",
-        "summary": "An Agility reward of {{fact:F-2501}}, but blocked by its Thieving requirement; its fights are scripted to stop before death.",
+        "summary": "Agility reward of {{fact:F-2501}}, blocked by its Thieving requirement. Its fights are scripted to stop before death.",
         "instructions": [
-          "First: train Thieving to the requirement shown on this step. That training is your choice and has not been danger-rated; ask for a rating before you pick a method.",
+          "First: train Thieving to the requirement on this step. That training has not been danger-rated; ask for a rating before picking a method.",
           "Bank: nothing can be carried into the villa; the Head Butler holds your items.",
           "Travel: Varlamore, Villa Lucens.",
           "Do: enter the villa at full HP ({{risk.min_hitpoints}}) and fight the two scripted fights.",
@@ -7261,10 +7516,10 @@
         "warnings": [
           "Mandatory: enter the villa at full HP. You go in with no food, equipment, escape crystal or teleports.",
           "Stop condition: if Naiatli deals real damage beyond chip, stop and ask for a re-rating.",
-          "No Hardcore Worlds safe exception covers this quest: the wiki says the fights cannot kill, but any death that did happen would be official."
+          "No Hardcore Worlds safe exception covers this quest. The wiki says the fights cannot kill, but any death would be official."
         ],
         "tips": [
-          "Never drink a poison chalice for a Thieving boost: it can deal more damage than your whole HP."
+          "Never drink a poison chalice for a Thieving boost; it can deal more damage than your whole HP."
         ]
       },
       "risk": {
@@ -7506,29 +7761,30 @@
       ],
       "prose": {
         "step_id": "S25",
-        "summary": "Long-term goal only: locked behind Sins of the Father and a Hitpoints level well above yours. Danger first: trap damage is undocumented and a death here is ordinary and official.",
+        "summary": "Long-term goal: locked behind Sins of the Father and a Hitpoints level well above yours. Trap damage is undocumented; a death is official.",
         "instructions": [
-          "Before you can start: complete Sins of the Father (its veto lifts only after its fights are researched and its prep card is written) and train Hitpoints to the wiki's recommendation ({{fact:F-3056}}).",
+          "Before starting: complete Sins of the Father (its veto lifts after its fights are researched and its prep card is written) and train Hitpoints to the wiki's recommendation ({{fact:F-3056}}).",
           "Bank: food until you own the hallowed ring, antipoison, stamina potions and a Saradomin item.",
-          "Gear: the hallowed ring as soon as you can afford it, and a Saradomin item so the obelisks restore your run energy.",
+          "Gear: the hallowed ring as soon as you can afford it, and a Saradomin item so obelisks restore run energy.",
           "Travel: a hallowed crystal shard straight to the lobby, or vyre noble robes for Darkmeyer.",
           "Do: practise the first three floors before the fourth ({{fact:F-0018}}).",
           "Do: after a trap hit, stop on a tile clear of traps, eat to full, then move on.",
-          "Stop: at the card's floor HP line. The exit plan is 'stop, eat, then move', never 'teleport'."
+          "Stop: at the card's floor HP line. The exit plan is stop, eat, then move; never teleport."
         ],
         "warnings": [
-          "Headline {{risk.inherent_ds}}, with prep {{risk.residual_ds}} ({{risk.tier}}), rated at your current Hitpoints. It will be re-rated at your stats when it becomes reachable.",
-          "Mandatory: do not enter below {{risk.min_hitpoints}} Hitpoints, the wiki's recommendation and the only verified guidance on trap damage. You must train Hitpoints first.",
-          "Mandatory: buy the hallowed ring first and wear it on every run; it negates trap damage (not portal-frame or grapple failures).",
-          "Mandatory: never cross Darkmeyer without vyre noble robes unless you arrive by crystal shard; the Vyrewatch Sentinels are aggressive otherwise.",
-          "Mandatory: carry antipoison for failed coffin loot, and carry stamina potions and wear a Saradomin item so you never stand still mid-floor without run energy.",
-          "Stop conditions: stop running floors if HP falls to the card's line and eat to full on a clear tile; stop and ask for a re-rating if a single trap hit deals more than the card's limit.",
-          "Defence cap: the Sins of the Father chain forces some Defence XP on you; with The Fremennik Trials it still stays under your cap. Put no lamp or tome from the chain into Defence.",
+          "Headline {{risk.inherent_ds}}, with prep {{risk.residual_ds}} ({{risk.tier}}). Rated at your current Hitpoints and re-rated when it becomes reachable.",
+          "Mandatory: do not enter below {{risk.min_hitpoints}} Hitpoints, the wiki's recommendation and the only verified trap-damage guidance. Train Hitpoints first.",
+          "Mandatory: buy the hallowed ring first and wear it every run. It negates trap damage, not portal-frame or grapple failures.",
+          "Mandatory: never cross Darkmeyer without vyre noble robes unless you arrive by crystal shard; the Vyrewatch Sentinels are aggressive.",
+          "Mandatory: carry antipoison for failed coffin loot, plus stamina potions and a Saradomin item so you never stand still mid-floor without run energy.",
+          "Stop conditions: stop if HP falls to the card's line and eat to full on a clear tile; stop and ask for a re-rating if one trap hit exceeds the card's limit.",
+          "Defence cap: the Sins of the Father chain forces some Defence XP; with The Fremennik Trials it stays under your cap. Put no lamp or tome from the chain into Defence.",
           "The escape crystal's behaviour inside the Sepulchre is undocumented; never plan around it.",
-          "Stop condition: dismiss every random event here and never accept one. A death inside a random event is an official death on Hardcore Worlds."
+          "Stop condition: dismiss every random event. A death inside one is official on Hardcore Worlds."
         ],
         "tips": [
-          "There are no marks of grace here ({{fact:F-1061}}); get your Graceful on the rooftops first."
+          "No marks of grace here ({{fact:F-1061}}); get Graceful on the rooftops first.",
+          "Profit: no marks drop here; see the step stats for what the course earns."
         ]
       },
       "risk": {
@@ -7865,11 +8121,32 @@
         "F-4018"
       ],
       "rationale": "DP06 option B: keep the familiar course with the bank at the start instead of travelling to the desert. Fails stop at 79 (F-1018) and marks drop to 20% at 80 (F-4018). Planned at the same 40,000 XP/h as 60-70 (the fact's range is for 60-70; later laps are faster once fails stop, so this is conservative).",
+      "income_per_hour": [
+        {
+          "item": "Mark of grace",
+          "qty": {
+            "value": 11,
+            "fact": "F-4020"
+          },
+          "convert": {
+            "to_item": "Amylase crystal",
+            "per_unit": {
+              "value": 100,
+              "fact": "F-5901"
+            },
+            "divide_by": {
+              "value": 10,
+              "fact": "F-4027"
+            }
+          },
+          "note": "marks -> amylase packs (10 marks each) -> 100 crystals each, sold on the HW GE"
+        }
+      ],
       "prose": {
         "step_id": "S26",
-        "summary": "Stay-on-Seers' option for the next band (decision point `DP06`, option B): a familiar course with the bank at the start, but slower than Pollnivneach and failing until {{fact:F-1018}}.",
+        "summary": "Stay-on-Seers' option (decision point `DP06`, option B): bank at the start, but slower than Pollnivneach and failing until {{fact:F-1018}}.",
         "instructions": [
-          "Bank: Seers' Village bank at the start; take the card's food (you need less once fails stop).",
+          "Bank: Seers' Village bank at the start; take the card's food (less once fails stop).",
           "Gear: Graceful or light clothing.",
           "Travel: walk from the bank; Camelot tablets land at Camelot.",
           "Do: run laps with Rapid Heal on; recharge at the church altar; buy food at the Forester's Arms.",
@@ -7877,11 +8154,13 @@
           "Stop: at {{fact:F-1033}}, when Rellekka opens."
         ],
         "warnings": [
-          "Fail damage here is not published, so the card uses a conservative rule (not a sourced bound): eat whenever HP is {{risk.min_hitpoints}} or lower, never attempt a failable obstacle below the card's stop line, and stop and ask for a re-rating after any single fail bigger than the card's limit. The exact lines are in 'Stop immediately if' on this step's danger card. The failable obstacles are the first gap and the tightrope.",
-          "Dismiss every random event and never accept one mid-lap: a death inside one is official on Hardcore Worlds. Never go AFK; break sessions into blocks of an hour or less."
+          "Fail damage is unpublished; this rule is conservative, not sourced. Eat at {{risk.min_hitpoints}} HP or lower, stop below the card's stop line, re-rate after any fail above the card's limit.",
+          "Failable obstacles: the first gap and the tightrope.",
+          "Dismiss every random event and never go AFK; a death inside a random event is official. Take a break every hour."
         ],
         "tips": [
-          "Pollnivneach (the recommended option) is faster and its fail damage is small and known."
+          "Pollnivneach (recommended) is faster and its fail damage is small and known.",
+          "Profit: marks of grace sell as amylase crystals on the Hardcore Worlds GE; see the step stats."
         ]
       },
       "risk": {
@@ -8101,6 +8380,7 @@
             "F-1011",
             "F-1012"
           ],
+          "profit_note": "Falador earns the fewest marks per hour (low end 9.7/h) but reaches Seers' sooner.",
           "worst_residual_ds": 12,
           "worst_residual_tier": "Low",
           "worst_headline_ds": 17,
@@ -8133,6 +8413,7 @@
             "F-4019",
             "F-4093"
           ],
+          "profit_note": "Canifis earns more marks per hour (low end 16/h) but at about half the XP rate; marks sell as amylase crystals on the HW GE.",
           "worst_residual_ds": 16,
           "worst_residual_tier": "Low",
           "worst_headline_ds": 21,
@@ -8174,6 +8455,7 @@
             "F-2017",
             "F-5016"
           ],
+          "profit_note": "No direct profit: quest steps carry none (marks come from the rooftop laps that follow).",
           "worst_residual_ds": 25,
           "worst_residual_tier": "Moderate",
           "worst_headline_ds": 25,
@@ -8212,6 +8494,7 @@
             "F-2038",
             "F-3014"
           ],
+          "profit_note": "No direct profit: quest steps carry none (marks come from the rooftop laps that follow).",
           "worst_residual_ds": 45,
           "worst_residual_tier": "High",
           "worst_headline_ds": 55,
@@ -8238,6 +8521,7 @@
           "facts": [
             "F-1010"
           ],
+          "profit_note": "Rooftop income at the low end of the mark range: Falador Rooftop Course 9.7 marks/h; marks are converted to amylase crystals and sold on the HW GE.",
           "worst_residual_ds": 12,
           "worst_residual_tier": "Low",
           "worst_headline_ds": 17,
@@ -8276,6 +8560,7 @@
             "F-5021",
             "F-1017"
           ],
+          "profit_note": "Rooftop income at the low end of the mark range: Seers' Village Rooftop Course 11 marks/h; marks are converted to amylase crystals and sold on the HW GE.",
           "worst_residual_ds": 16,
           "worst_residual_tier": "Low",
           "worst_headline_ds": 28,
@@ -8307,6 +8592,7 @@
             "F-5019",
             "F-5376"
           ],
+          "profit_note": "No direct profit: quest steps carry none (marks come from the rooftop laps that follow).",
           "worst_residual_ds": 33,
           "worst_residual_tier": "Moderate",
           "worst_headline_ds": 94,
@@ -8342,6 +8628,7 @@
             "F-5021",
             "F-2032"
           ],
+          "profit_note": "No direct profit: quest steps carry none (marks come from the rooftop laps that follow).",
           "worst_residual_ds": 55,
           "worst_residual_tier": "High",
           "worst_headline_ds": 94,
@@ -8378,6 +8665,7 @@
             "F-2012",
             "F-2503"
           ],
+          "profit_note": "Rooftop income at the low end of the mark range: Falador Rooftop Course 9.7 marks/h; marks are converted to amylase crystals and sold on the HW GE.",
           "worst_residual_ds": 12,
           "worst_residual_tier": "Low",
           "worst_headline_ds": 17,
@@ -8410,6 +8698,7 @@
             "F-5004",
             "F-5015"
           ],
+          "profit_note": "No direct profit: quest steps carry none (marks come from the rooftop laps that follow).",
           "worst_residual_ds": 16,
           "worst_residual_tier": "Low",
           "worst_headline_ds": 20,
@@ -8440,6 +8729,7 @@
             "F-5361",
             "F-5363"
           ],
+          "profit_note": "No direct profit: quest steps carry none (marks come from the rooftop laps that follow).",
           "worst_residual_ds": 9,
           "worst_residual_tier": "Safe",
           "worst_headline_ds": 16,
@@ -8482,6 +8772,7 @@
             "F-1032",
             "F-4084"
           ],
+          "profit_note": "Rooftop income at the low end of the mark range: Pollnivneach Rooftop Course 13 marks/h; marks are converted to amylase crystals and sold on the HW GE.",
           "worst_residual_ds": 10,
           "worst_residual_tier": "Low",
           "worst_headline_ds": 20,
@@ -8510,6 +8801,7 @@
             "F-1018",
             "F-4018"
           ],
+          "profit_note": "Rooftop income at the low end of the mark range: Seers' Village Rooftop Course 11 marks/h; marks are converted to amylase crystals and sold on the HW GE.",
           "worst_residual_ds": 16,
           "worst_residual_tier": "Low",
           "worst_headline_ds": 28,
@@ -8550,6 +8842,7 @@
             "F-1035",
             "F-1041"
           ],
+          "profit_note": "Rooftop income at the low end of the mark range: Pollnivneach Rooftop Course 13 marks/h, Rellekka Rooftop Course 13 marks/h, Ardougne Rooftop Course 16 marks/h; marks are converted to amylase crystals and sold on the HW GE.",
           "worst_residual_ds": 17,
           "worst_residual_tier": "Low",
           "worst_headline_ds": 32,
@@ -8585,6 +8878,7 @@
             "F-1054",
             "F-2102"
           ],
+          "profit_note": "Rooftop steps earn marks of grace, sold as amylase crystals on the HW GE (see each step's income); quest steps carry no profit.",
           "worst_residual_ds": 45,
           "worst_residual_tier": "High",
           "worst_headline_ds": 79,
@@ -8623,6 +8917,7 @@
             "F-5370",
             "F-1028"
           ],
+          "profit_note": "Rooftop income at the low end of the mark range: Pollnivneach Rooftop Course 13 marks/h; marks are converted to amylase crystals and sold on the HW GE.",
           "worst_residual_ds": 10,
           "worst_residual_tier": "Low",
           "worst_headline_ds": 20,
@@ -8657,6 +8952,7 @@
             "F-2038",
             "F-5345"
           ],
+          "profit_note": "Rooftop income at the low end of the mark range: Rellekka Rooftop Course 13 marks/h; marks are converted to amylase crystals and sold on the HW GE.",
           "worst_residual_ds": 45,
           "worst_residual_tier": "High",
           "worst_headline_ds": 55,
@@ -8751,6 +9047,87 @@
             "level": 16
           }
         ]
+      }
+    }
+  },
+  "prices": {
+    "source": "https://prices.runescape.wiki/api/v2/osrs-hc/latest (+/mapping, /volumes)",
+    "economy": "Hardcore Worlds (osrs-hc)",
+    "retrieved": "2026-11-22T03:39:34+00:00",
+    "tier": "T2",
+    "thin_volume_threshold": 500,
+    "items": {
+      "Amylase crystal": {
+        "id": 12640,
+        "high": 608,
+        "high_time": 1795316190,
+        "low": 487,
+        "low_time": 1795316198,
+        "mid": 548,
+        "volume_24h": 98140,
+        "thin_market": false,
+        "limit": 11000,
+        "tradeable_on_ge": true
+      },
+      "Monkfish": {
+        "id": 7946,
+        "high": 320,
+        "high_time": 1795315500,
+        "low": 509,
+        "low_time": 1795287810,
+        "mid": 414,
+        "volume_24h": 3007,
+        "thin_market": false,
+        "limit": 13000,
+        "tradeable_on_ge": true
+      },
+      "Summer pie": {
+        "id": 7218,
+        "high": 5554,
+        "high_time": 1795318243,
+        "low": 5553,
+        "low_time": 1795316133,
+        "mid": 5554,
+        "volume_24h": 1987,
+        "thin_market": false,
+        "limit": 10000,
+        "tradeable_on_ge": true
+      },
+      "Stamina potion(4)": {
+        "id": 12625,
+        "high": 6900,
+        "high_time": 1795318725,
+        "low": 6751,
+        "low_time": 1795318543,
+        "mid": 6826,
+        "volume_24h": 23093,
+        "thin_market": false,
+        "limit": 2000,
+        "tradeable_on_ge": true
+      },
+      "Camelot teleport (tablet)": {
+        "id": 8010,
+        "high": 844,
+        "high_time": 1795318647,
+        "low": 796,
+        "low_time": 1795318464,
+        "mid": 820,
+        "volume_24h": 4519,
+        "thin_market": false,
+        "limit": 15000,
+        "tradeable_on_ge": true
+      },
+      "Ardougne teleport (tablet)": {
+        "id": 8011,
+        "high": 1088,
+        "high_time": 1795318738,
+        "low": 1088,
+        "low_time": 1795318497,
+        "mid": 1088,
+        "volume_24h": 2360,
+        "thin_market": false,
+        "limit": 10000,
+        "tradeable_on_ge": true
       }
     }
   },
@@ -14304,6 +14681,37 @@
       "new_content": true
     },
     {
+      "fact_id": "F-2618",
+      "claim_id": "C-QST-253",
+      "subject": "Seers' Village Rooftop Course",
+      "attribute": "marks_per_hour_by_diary",
+      "value": {
+        "none": 13.8,
+        "easy": 14.4,
+        "medium": 15.0,
+        "hard": 16.6
+      },
+      "unit": null,
+      "statement": "The wiki's 'Marks per hour (no failures)' table for the Seers' rooftop gives 13.8 (no diary), 14.4 (easy), 15.0 (medium) and 16.6 (hard).",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "caveat": "The table does not say the hard figure includes the Camelot-to-Seers'-bank teleport; that is the researcher's inference from the paragraph above it. The figures assume no failures, and the obstacles keep failing until Agility 79. The hard tier is unreachable for this zerker (see the Kandarin Piety fact).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Seers' Village Rooftop Course",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15356820",
+          "revid": 15356820,
+          "retrieved": "2026-11-20",
+          "quote": "|+Marks per hour (no failures)\n!Diary\n!Marks\n|-\n|None\n|13.8\n|-\n|Easy\n|14.4\n|-\n|Medium\n|15.0\n|-\n|Hard\n|16.6",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-20T07:10:01Z",
+      "independent": true,
+      "released": null,
+      "new_content": false
+    },
+    {
       "fact_id": "F-2619",
       "claim_id": "C-QST-254",
       "subject": "Seers' Village Rooftop Course",
@@ -16120,6 +16528,41 @@
       "caveat": "Hardcore Worlds launched 4 Nov 2026 (16 days before today): new content, wiki pages change daily; re-check before release. Second confirmation for the maze: the Rogues' Den page says maze death is unsafe for Hardcore Group Ironmen, whose ruleset Hardcore Worlds uses. Hazard rating belongs to the Threat desk. Cited revision re-fetched and the current revision fetched the same day: the current revision is the cited one (no change)."
     },
     {
+      "fact_id": "F-4004",
+      "claim_id": "C-LOG-004",
+      "subject": "Graceful outfit",
+      "attribute": "total_mark_cost",
+      "value": 260,
+      "unit": "marks of grace",
+      "statement": "A full (uncoloured) graceful outfit costs 260 marks of grace.",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Graceful outfit",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403851",
+          "revid": 15403851,
+          "retrieved": "2026-11-20T02:22:59Z",
+          "quote": "Buying the entire set costs 260 marks.",
+          "fetched_by": "fact-verifier (logistics instance, dispatch 017)"
+        },
+        {
+          "tier": "T2",
+          "title": "Rooftop Agility Courses",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15337972",
+          "revid": 15337972,
+          "retrieved": "2026-11-20T02:23:19Z",
+          "quote": "Buying the full [[graceful outfit]] costs 260 marks of grace.",
+          "fetched_by": "fact-verifier (logistics instance, dispatch 017)"
+        }
+      ],
+      "verified_at": "2026-11-20T02:25:30Z",
+      "independent": true,
+      "released": null,
+      "new_content": false,
+      "caveat": "Per-piece costs (35+55+60+30+40+40) re-summed by the verifier = 260. Cited revision re-fetched and the current revision fetched the same day: the current revision is the cited one (no change)."
+    },
+    {
       "fact_id": "F-4016",
       "claim_id": "C-LOG-016",
       "subject": "Rogues' Den",
@@ -16293,6 +16736,111 @@
       "caveat": "Base rate, no diary; assumes the player is not 20+ levels over the requirement. The Mark of Grace table carries the editor note 'lower bounds are kind of guesses because we don't know the failure rates yet'. Same figure on the Mark of Grace page (same wiki, not independent). Seers' requires 60 (owner 57). Cited revision re-fetched and the current revision fetched the same day: the current revision is the cited one (no change)."
     },
     {
+      "fact_id": "F-4021",
+      "claim_id": "C-LOG-021",
+      "subject": "Pollnivneach Rooftop Course",
+      "attribute": "marks_of_grace_per_hour",
+      "value": "13-14",
+      "unit": "marks/hour",
+      "statement": "Pollnivneach Rooftop Course: about 13-14 marks of grace per hour at the base rate (no achievement diary).",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Rooftop Agility Courses",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15337972",
+          "revid": 15337972,
+          "retrieved": "2026-11-20T02:23:19Z",
+          "quote": "|13-14 (base)",
+          "fetched_by": "fact-verifier (logistics instance, dispatch 017)"
+        },
+        {
+          "tier": "T2",
+          "title": "Mark of Grace",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403415",
+          "revid": 15403415,
+          "retrieved": "2026-11-20T02:23:11Z",
+          "quote": "|13-14 (base)",
+          "fetched_by": "fact-verifier (logistics instance, dispatch 017)"
+        }
+      ],
+      "verified_at": "2026-11-20T02:25:30Z",
+      "independent": true,
+      "released": null,
+      "new_content": false,
+      "caveat": "Base rate, no diary; assumes the player is not 20+ levels over the requirement. The Mark of Grace table carries the editor note 'lower bounds are kind of guesses because we don't know the failure rates yet'. Same figure on the Mark of Grace page (same wiki, not independent). Cited revision re-fetched and the current revision fetched the same day: the current revision is the cited one (no change)."
+    },
+    {
+      "fact_id": "F-4022",
+      "claim_id": "C-LOG-022",
+      "subject": "Rellekka Rooftop Course",
+      "attribute": "marks_of_grace_per_hour",
+      "value": "13–15.5",
+      "unit": "marks/hour",
+      "statement": "Rellekka Rooftop Course: about 13–15.5 marks of grace per hour at the base rate (no achievement diary).",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Rooftop Agility Courses",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15337972",
+          "revid": 15337972,
+          "retrieved": "2026-11-20T02:23:19Z",
+          "quote": "|13–15.5 (base)",
+          "fetched_by": "fact-verifier (logistics instance, dispatch 017)"
+        },
+        {
+          "tier": "T2",
+          "title": "Mark of Grace",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403415",
+          "revid": 15403415,
+          "retrieved": "2026-11-20T02:23:11Z",
+          "quote": "|13-15.5 (base)",
+          "fetched_by": "fact-verifier (logistics instance, dispatch 017)"
+        }
+      ],
+      "verified_at": "2026-11-20T02:25:30Z",
+      "independent": true,
+      "released": null,
+      "new_content": false,
+      "caveat": "Base rate, no diary; assumes the player is not 20+ levels over the requirement. The Mark of Grace table carries the editor note 'lower bounds are kind of guesses because we don't know the failure rates yet'. Same figure on the Mark of Grace page (same wiki, not independent). Cited revision re-fetched and the current revision fetched the same day: the current revision is the cited one (no change)."
+    },
+    {
+      "fact_id": "F-4023",
+      "claim_id": "C-LOG-023",
+      "subject": "Ardougne Rooftop Course",
+      "attribute": "marks_of_grace_per_hour",
+      "value": "16–18.1",
+      "unit": "marks/hour",
+      "statement": "Ardougne Rooftop Course: about 16–18.1 marks of grace per hour at the base rate (no achievement diary).",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Rooftop Agility Courses",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15337972",
+          "revid": 15337972,
+          "retrieved": "2026-11-20T02:23:19Z",
+          "quote": "|16–18.1 (base)",
+          "fetched_by": "fact-verifier (logistics instance, dispatch 017)"
+        },
+        {
+          "tier": "T2",
+          "title": "Mark of Grace",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403415",
+          "revid": 15403415,
+          "retrieved": "2026-11-20T02:23:11Z",
+          "quote": "|16-18.1 (base)",
+          "fetched_by": "fact-verifier (logistics instance, dispatch 017)"
+        }
+      ],
+      "verified_at": "2026-11-20T02:25:30Z",
+      "independent": true,
+      "released": null,
+      "new_content": false,
+      "caveat": "Base rate, no diary; assumes the player is not 20+ levels over the requirement. The Mark of Grace table carries the editor note 'lower bounds are kind of guesses because we don't know the failure rates yet'. Same figure on the Mark of Grace page (same wiki, not independent). Cited revision re-fetched and the current revision fetched the same day: the current revision is the cited one (no change)."
+    },
+    {
       "fact_id": "F-4024",
       "claim_id": "C-LOG-024",
       "subject": "Canifis Rooftop Course",
@@ -16379,6 +16927,35 @@
           "revid": 15403415,
           "retrieved": "2026-11-20T02:23:11Z",
           "quote": "Ardougne is an exception, as the marks can only spawn on one tile, and each new mark refreshes the 10 minute timer.",
+          "fetched_by": "fact-verifier (logistics instance, dispatch 017)"
+        }
+      ],
+      "verified_at": "2026-11-20T02:25:30Z",
+      "independent": true,
+      "released": null,
+      "new_content": false
+    },
+    {
+      "fact_id": "F-4027",
+      "claim_id": "C-LOG-027",
+      "subject": "Amylase pack",
+      "attribute": "item_source",
+      "value": {
+        "Grace": "10 marks",
+        "Agility Arena Store": "60 Brimhaven vouchers",
+        "Worm Tongue's Wares": "100 termites"
+      },
+      "unit": null,
+      "statement": "Amylase packs cost 10 marks from Grace, 60 Brimhaven vouchers from the Agility Arena store, or 100 termites from Worm Tongue (Colossal Wyrm course).",
+      "status": "VERIFIED",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Amylase pack",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15316439",
+          "revid": 15316439,
+          "retrieved": "2026-11-20T02:23:31Z",
+          "quote": "These packs can be bought from [[Grace's Graceful Clothing]] for 10 [[marks of grace]], from the [[Agility Arena Store]] for 60 [[Brimhaven voucher]]s, or from [[Worm Tongue's Wares]] for 100 [[Termites]].",
           "fetched_by": "fact-verifier (logistics instance, dispatch 017)"
         }
       ],
@@ -20607,6 +21184,100 @@
       "verified_at": "2026-11-20T12:21:46Z",
       "independent": true,
       "released": null
+    },
+    {
+      "fact_id": "F-5901",
+      "claim_id": "C-RFI-401",
+      "subject": "Amylase pack",
+      "attribute": "crystals_per_pack",
+      "value": 100,
+      "unit": "amylase crystals",
+      "statement": "Opening one amylase pack gives 100 amylase crystals (enough for 25 stamina potion(4)).",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "caveat": "Wiki flags are main-game; Hardcore Worlds mapping was not checked. Both quotes come from the same wiki page, so this is one source, not two.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Amylase pack",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15316439",
+          "revid": 15316439,
+          "retrieved": "2026-11-22",
+          "quote": "|examine = A pack containing 100 crystals of amylase.",
+          "fetched_by": "fact-verifier"
+        },
+        {
+          "tier": "T2",
+          "title": "Amylase pack",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15316439",
+          "revid": 15316439,
+          "retrieved": "2026-11-22",
+          "quote": "{{DropsLineReward|name=Amylase crystal|quantity=100|rarity=Always}}",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:00:00Z",
+      "independent": true,
+      "released": "2014-07-03"
+    },
+    {
+      "fact_id": "F-5902",
+      "claim_id": "C-RFI-402",
+      "subject": "Amylase crystal",
+      "attribute": "ge_tradeable",
+      "value": true,
+      "unit": null,
+      "statement": "Amylase crystals are tradeable and exchangeable on the Grand Exchange (item id 12640).",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "caveat": "Wiki flags are main-game; Hardcore Worlds mapping was not checked. The researcher gave released 2014-07-10; the wiki infobox says 3 July 2014, so released here is 2014-07-03 (does not affect the tradeable flag).",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Amylase crystal",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375340",
+          "revid": 15375340,
+          "retrieved": "2026-11-22",
+          "quote": "|release = [[3 July]] [[2014]] |tradeable = Yes |exchange = Yes |id = 12640",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:00:00Z",
+      "independent": true,
+      "released": "2014-07-03",
+      "researcher_value": true
+    },
+    {
+      "fact_id": "F-5903",
+      "claim_id": "C-RFI-403",
+      "subject": "Amylase pack",
+      "attribute": "ge_tradeable",
+      "value": false,
+      "unit": null,
+      "statement": "Amylase packs are untradeable, so not on the Grand Exchange. They can only be sold back to Grace's Graceful Clothing for 8 marks of grace.",
+      "status": "VERIFIED_WITH_CAVEAT",
+      "caveat": "Wiki flags are main-game; Hardcore Worlds mapping was not checked. Single wiki page; no second independent source found.",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Amylase pack",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15316439",
+          "revid": 15316439,
+          "retrieved": "2026-11-22",
+          "quote": "|tradeable = No",
+          "fetched_by": "fact-verifier"
+        },
+        {
+          "tier": "T2",
+          "title": "Amylase pack",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15316439",
+          "revid": 15316439,
+          "retrieved": "2026-11-22",
+          "quote": "Amylase packs can only be sold back to [[Grace's Graceful Clothing]] for 8 [[marks of grace]]",
+          "fetched_by": "fact-verifier"
+        }
+      ],
+      "verified_at": "2026-11-22T04:00:00Z",
+      "independent": true,
+      "released": "2014-07-03"
     }
   ],
   "updates": [
@@ -21382,6 +22053,8 @@
     "Long-term next step 1 (vetoed, removed from steps): Werewolf Agility Course, 60-90 (former S23; 50,000-65,000 XP/h at lower levels, F-1065), with Creature of Fenkenstrain (former S22), which gives no Agility XP (F-2095) and only unlocks the course (Ring of Charos, F-1063/F-2092). Veto basis: unverifiable_mechanic, not danger. The deathslide fall's maximum damage is unpublished: it can hit over 30, does not scale with Hitpoints and can exceed current HP (F-2091, F-3067), so the guide cannot say at what HP a fall is survivable. The veto lifts when EITHER (A) the owner has Agility 81+, Strength 81+ and carries under 2 kg (the Risk Officer's lift condition; F-3068 gives the never-fail point as Agility 80, Strength 80, 2 kg or less; owner Strength 32), OR (B) a source publishes the deathslide maximum and the Risk Officer re-rates the step with a minimum-HP rule above it. Then re-add both steps and re-run the calculator.",
     "Long-term next step 2 (vetoed, removed from steps): Sins of the Father (former S24), the only way into the Hallowed Sepulchre (F-1054; S25, DP07 option B) and the source of a 6 x 15,000 XP tome that can all go to Agility (F-2102). Veto basis: insufficient_facts_for_prep, not danger. Its fights (F-2105) were not researched for max hits and teleport/instance rules, and the final boss's maximum is disputed, so no bail-out can be written from verified facts. It needs Woodcutting 62, Fletching 60, Crafting 56, Agility 52, Attack 50, Slayer 50 and Magic 49, none boostable (F-2100), plus A Taste of Hope and its prerequisite quests (F-2101). The veto lifts when, as the owner nears those requirements, an RFI researches its fights and the Risk Officer completes its prep card and re-rates it at the owner's stats then. The Sepulchre also needs 70+ Hitpoints (recommended, F-3056).",
     "Danger scores are game-relative (The Fractured Archive = 100; Wilderness premium by deepest level reached: +20 at level 30+, +15 at 20-29, +10 at 14-19, +5 below 14; scores capped at 99). The owner replaced the earlier flat Wilderness +25 with these tiers on 2026-11-20 (docs/05-danger-model.md, policy/danger-calibration.json). No step in this plan enters the Wilderness.",
+    "Profit uses live Hardcore Worlds GE prices (prices.runescape.wiki/osrs-hc), snapshot 2026-11-22; marks are converted to amylase crystals; quest steps carry no profit.",
+    "Marks of grace per hour use the LOW end of each course's fact range (as for XP/h): Canifis 16 (F-1005), Falador 9.7 (F-1012), Seers' 11 (F-4020), Pollnivneach 13 (F-4021), Rellekka 13 (F-4022), Ardougne 16 (F-4023). Amylase pack = 10 marks (F-4027), 100 crystals (F-5901). F-5901 and F-5902 are main-game wiki flags; Hardcore Worlds mapping unchecked. Packs are untradeable (F-5903), so only crystals are sold. The Hallowed Sepulchre (S25) has no marks-of-grace fact, so it carries no income; no food or supply costs are modelled because no fact gives a per-action quantity.",
     "Account type is standard (trading and the Hardcore Worlds GE allowed) on Hardcore Worlds, membership: member. Owner stated: \"Standard (trades/GE)\" on Hardcore Worlds; member.",
     "Risk appetite is standard with a Danger Score cap of 44. Owner stated: \"Standard, cap 44\".",
     "Death rules follow the Hardcore Worlds ruleset (Hardcore Group Ironman death ruleset), which is stricter than HCIM; deaths normally considered safe for HCIM may end the run.",
