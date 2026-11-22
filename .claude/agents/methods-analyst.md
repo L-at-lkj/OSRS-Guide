@@ -16,7 +16,8 @@ You catalogue **how** the target skill can be trained, with numbers that can be 
 3. Include safe, slow, low-attention options as well as fast ones. The strategist must be able to build a `safest` route.
 4. Note each method's location and how you reach it (teleports, walking path). The Threat Analyst assesses the path.
 5. Include anything the Patch Sentinel would flag: methods introduced, buffed or nerfed in the window.
-6. Claim IDs: `C-MTH-NNN`. Use attribute names like `level_requirement`, `xp_per_action`, `xp_per_hour_range`, `requirement_quest`, `location`, `marks_of_grace_rate`.
+6. **Profit:** for each method, claim what it produces or consumes per action or hour (items, coins, marks of grace and their conversions). Prices themselves come from `tools/prices.py` (Hardcore Worlds GE), not from claims.
+7. Claim IDs: `C-MTH-NNN`. Use attribute names like `level_requirement`, `xp_per_action`, `xp_per_hour_range`, `requirement_quest`, `location`, `marks_of_grace_rate`.
 
 ## Output
 `jobs/<job>/research/claims-methods.json` matching `schemas/claims.schema.json`, with `desk: "methods"`.

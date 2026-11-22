@@ -34,7 +34,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import canonical_json, die, job_dir, load_json, save_json, sha256_bytes, sha256_file  # noqa: E402
 
 NUMERIC_KEYS = ("step_id", "kind", "until_level", "min_level", "xp_per_action", "xp_per_hour", "est_hours",
-                "supplies_per_action", "secondary_xp_per_action", "xp_rewards", "lamp_rewards", "requirements")
+                "supplies_per_action", "secondary_xp_per_action", "xp_rewards", "lamp_rewards", "requirements",
+                "income_per_hour", "income_per_action")
 
 
 def plan_numeric_sha256(plan: dict) -> str:
@@ -83,7 +84,36 @@ def _num(v):
     return v
 
 
-def simulate_route(plan: dict, route: dict, brief: dict | None = None) -> dict:
+def _price(prices: dict | None, item: str) -> int | None:
+    it = (prices or {}).get("items", {}).get(item)
+    return it.get("mid") if it else None
+
+
+def step_profit(step: dict, actions: int, hours: float, prices: dict | None) -> dict:
+    """Supply cost and income for a step, from the sealed Hardcore Worlds price snapshot."""
+    cost, income, missing = 0, 0, []
+    for sup in step.get("supplies_per_action", []):
+        pr = _price(prices, sup["item"])
+        if pr is None: missing.append(sup["item"]); continue
+        cost += math.ceil(_num(sup["qty"]) * actions) * pr
+    for inc in step.get("income_per_hour", []):
+        qty = _num(inc["qty"]) * hours
+        item = inc["item"]
+        if inc.get("convert"):
+            qty, item = qty * _num(inc["convert"]["per_unit"]), inc["convert"]["to_item"]
+        pr = _price(prices, item)
+        if pr is None: missing.append(item); continue
+        income += qty * pr
+    for inc in step.get("income_per_action", []):
+        each = _num(inc["gp_each"]) if inc.get("gp_each") else _price(prices, inc["item"])
+        if each is None: missing.append(inc["item"]); continue
+        income += _num(inc["qty"]) * actions * each
+    net = round(income - cost)
+    return {"cost_gp": round(cost), "income_gp": round(income), "net_gp": net,
+            "gp_per_hour": round(net / hours) if hours else None, "unpriced": sorted(set(missing))}
+
+
+def simulate_route(plan: dict, route: dict, brief: dict | None = None, prices: dict | None = None) -> dict:
     skill = plan["target"]["skill"]
     profile = (brief or {}).get("profile", {})
     caps = (profile.get("build") or {}).get("skill_caps", {})
@@ -185,6 +215,8 @@ def simulate_route(plan: dict, route: dict, brief: dict | None = None) -> dict:
         for sk, cap in caps.items():
             if level_for(capped_xp[sk]) > cap:
                 errors.append(f"{sid}: pushes {sk} to level {level_for(capped_xp[sk])}, above the build cap {cap}")
+        if prices is not None and step["kind"] == "train":
+            rec["profit"] = step_profit(step, rec["actions"], rec["hours"], prices)
         rec.update(end_xp=round(xp), end_level=level_for(xp), xp_gained=round(xp - start_xp),
                    cum_hours=round(cum_hours, 3))
         out_steps.append(rec)
@@ -200,7 +232,13 @@ def simulate_route(plan: dict, route: dict, brief: dict | None = None) -> dict:
     capped = {sk: {"cap": cap, "end_xp": round(capped_xp[sk]), "end_level": level_for(capped_xp[sk]),
                    "headroom_xp": xp_for(cap + 1) - 1 - round(capped_xp[sk]), "events": [e for e in cap_log if e["skill"] == sk]}
               for sk, cap in caps.items()}
+    prof = [s["profit"] for s in out_steps if s.get("profit")]
+    profit_tot = ({"net_gp": sum(p["net_gp"] for p in prof), "cost_gp": sum(p["cost_gp"] for p in prof),
+                   "income_gp": sum(p["income_gp"] for p in prof),
+                   "gp_per_hour": round(sum(p["net_gp"] for p in prof) / cum_hours) if cum_hours else None,
+                   "unpriced": sorted({u for p in prof for u in p["unpriced"]})} if prof else None)
     return {"steps": out_steps, "levels": levels, "errors": errors, "warnings": warnings, "capped_skills": capped,
+            "profit": profit_tot,
             "totals": {"xp_end": round(xp), "level_end": level_for(xp), "hours": round(cum_hours, 2),
                        "actions": sum(s["actions"] for s in out_steps),
                        "supplies": [{"item": k, "qty": v} for k, v in sorted(supplies_total.items())],
@@ -212,11 +250,13 @@ def cmd_simulate(a):
     plan_path = d / "plan.json"
     plan = load_json(plan_path)
     brief = load_json(d / "brief.json") if (d / "brief.json").exists() else None
+    prices = load_json(d / "prices.json") if (d / "prices.json").exists() else None
     result = {"generated_by": "tools/xp.py", "plan_numeric_sha256": plan_numeric_sha256(plan),
+              "prices_sha256": sha256_file(d / "prices.json") if (d / "prices.json").exists() else None,
               "skill": plan["target"]["skill"], "routes": {}}
     n_err = 0
     for route in plan["routes"]:
-        r = simulate_route(plan, route, brief)
+        r = simulate_route(plan, route, brief, prices)
         result["routes"][route["route_id"]] = r
         n_err += len(r["errors"])
         status = "OK" if not r["errors"] else f"{len(r['errors'])} error(s)"

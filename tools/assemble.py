@@ -72,7 +72,7 @@ def main():
         pidx_steps = {st["step_id"]: st for st in plan["steps"]}
         levels = [{**L, "method": pidx_steps[L["step_id"]].get("method") or pidx_steps[L["step_id"]]["title"]}
                   for L in c["levels"]]
-        routes.append({**rt, "totals": c["totals"], "levels": levels,
+        routes.append({**rt, "totals": c["totals"], "levels": levels, "profit": c.get("profit"),
                        "calc": {s["step_id"]: s for s in c["steps"]},
                        "worst_residual_ds": worst, "worst_residual_tier": danger.tier(worst),
                        "steps_over_cap": [s for s in rt["step_ids"] if danger.assess(ridx[s])["residual_ds"] > cap]})
@@ -113,6 +113,7 @@ def main():
         "decision_points": dps,
         "capped_skills": {rid: calc["routes"][rid].get("capped_skills", {}) for rid in calc["routes"]},
         # every fact id cited anywhere in the shipped artifacts (QA finding: 39 cited facts were missing)
+        "prices": load_json(d / "prices.json") if (d / "prices.json").exists() else None,
         "facts": [fidx[f] for f in sorted(used | set(re.findall(r"F-\d{4}", json.dumps([plan, risk, prose, dps]))))
                   if f in fidx],
         "updates": upd_items,

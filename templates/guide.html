@@ -14,6 +14,7 @@
   --gold:#9a7425; --gold-soft:#e9d7a3; --accent:#7b2d12; --shadow:0 1px 2px rgba(60,40,10,.12),0 4px 14px rgba(60,40,10,.08);
   --t-safe:#2e7d32; --t-low:#5f8f1e; --t-mod:#a87400; --t-high:#c25400; --t-sev:#b3261e; --t-crit:#5b1b78;
   --chip:#efe3c2; --ok:#2e7d32; --bad:#b3261e; --warnbg:#fff1d6; --badbg:#fde4e1;
+  --danger:#e10600; --danger-soft:#ffd9d6;
 }
 :root:not([data-theme="light"]){color-scheme:light}
 @media (prefers-color-scheme: dark){
@@ -22,6 +23,7 @@
     --gold:#d6b25e; --gold-soft:#4a3d22; --accent:#e58f6a; --shadow:0 1px 2px rgba(0,0,0,.5),0 6px 18px rgba(0,0,0,.35);
     --t-safe:#6fcf73; --t-low:#b5d65a; --t-mod:#f0c040; --t-high:#ff9a4d; --t-sev:#ff6f61; --t-crit:#c99bff;
     --chip:#2d261c; --ok:#6fcf73; --bad:#ff6f61; --warnbg:#3a2e14; --badbg:#3d1d1a; color-scheme:dark;
+    --danger:#ff2d20; --danger-soft:#4a1210;
   }
 }
 :root[data-theme="dark"]{
@@ -29,6 +31,7 @@
   --gold:#d6b25e; --gold-soft:#4a3d22; --accent:#e58f6a; --shadow:0 1px 2px rgba(0,0,0,.5),0 6px 18px rgba(0,0,0,.35);
   --t-safe:#6fcf73; --t-low:#b5d65a; --t-mod:#f0c040; --t-high:#ff9a4d; --t-sev:#ff6f61; --t-crit:#c99bff;
   --chip:#2d261c; --ok:#6fcf73; --bad:#ff6f61; --warnbg:#3a2e14; --badbg:#3d1d1a; color-scheme:dark;
+  --danger:#ff2d20; --danger-soft:#4a1210;
 }
 *{box-sizing:border-box}
 html,body{margin:0;background:var(--bg);color:var(--ink)}
@@ -86,7 +89,13 @@ section.panel{padding:14px 0 40px}
 .ds .lbl{font-size:11px;text-transform:uppercase;letter-spacing:.06em}
 .ds small{font-size:10.5px;opacity:.9}
 .Safe{background:var(--t-safe)} .Low{background:var(--t-low)} .Moderate{background:var(--t-mod)}
-.High{background:var(--t-high)} .Severe{background:var(--t-sev)} .Critical{background:var(--t-crit)}
+.High,.Severe,.Extreme,.Critical{background:var(--danger)!important;color:#fff!important}
+.Extreme,.Critical{box-shadow:0 0 0 3px var(--danger-soft)}
+.card.hot{border:3px solid var(--danger)}
+.card.hot .hd{background:var(--danger-soft)}
+.hotbar{background:var(--danger);color:#fff;font-weight:800;letter-spacing:.04em;padding:8px 14px;text-transform:uppercase;font-size:13px}
+.gp{font-variant-numeric:tabular-nums} .gp.neg{color:var(--bad)} .gp.pos{color:var(--ok)}
+.thin{font-size:11px;border:1px solid var(--t-mod);color:var(--t-mod);border-radius:4px;padding:0 5px;margin-left:4px}
 :root[data-theme="dark"] .ds, :root:not([data-theme="light"]) .ds{color:#fff}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .ds{color:#120f0a}}
 :root[data-theme="dark"] .ds{color:#120f0a}
@@ -284,6 +293,7 @@ function tiles(){
     ['Worst danger', `<span class="ds ${r.worst_residual_tier}" style="padding:0 8px"><span class="num" style="font-size:16px">${r.worst_residual_ds}</span></span> ${esc(r.worst_residual_tier)}`],
     ['Above your cap', `<span style="color:${over.length ? 'var(--bad)' : 'var(--ok)'}">${over.length}</span> step${over.length === 1 ? '' : 's'}`],
     ['Progress', `${doneN}/${r.step_ids.length}`],
+    ...(r.profit ? [['Profit (HW GE)', `<span class="gp ${r.profit.net_gp < 0 ? 'neg' : 'pos'}">${fmt(r.profit.net_gp)}</span> <span class="small muted">${fmt(r.profit.gp_per_hour)}/h</span>`]] : []),
   ].map(([k, v]) => `<div class="tile"><div class="k">${k}</div><div class="v">${v}</div></div>`).join('');
   // timeline
   const from = G.meta.from_level, to = G.meta.to_level, span = Math.max(1, XP[to] - XP[from]);
@@ -320,11 +330,14 @@ function stepCard(s, idx){
   }
   if (c.xp_gained) stats.push(`<span class="stat">${esc(G.meta.skill)} XP <b>+${fmt(c.xp_gained)}</b></span>`);
   (c.supplies || []).forEach(x => stats.push(`<span class="stat">${esc(x.item)} <b>×${fmt(x.qty)}</b></span>`));
+  if (c.profit) stats.push(`<span class="stat">Profit ≈ <b class="gp ${c.profit.net_gp < 0 ? 'neg' : 'pos'}">${fmt(c.profit.net_gp)} gp</b> (${fmt(c.profit.gp_per_hour)} gp/h)</span>`);
   (c.secondary_xp || []).forEach(x => stats.push(`<span class="stat">${esc(x.skill)} XP <b>+${fmt(x.xp)}</b></span>`));
   (s.xp_rewards || []).filter(x => x.skill !== G.meta.skill).forEach(x => stats.push(`<span class="stat">${esc(x.skill)} XP <b>+${fmt(x.xp.value)}</b></span>`));
   const reqs = (s.requirements || []).map(q => { const m = reqMet(q, s); return `<li class="${m === true ? 'met' : m === false ? 'unmet' : ''}">${reqText(q)} <a class="factref" href="#${q.fact}" data-fact="${q.fact}">${q.fact}</a></li>`; }).join('');
   const pre = risk.preconditions || {};
-  return `<article class="card ${done ? 'done' : ''} ${over ? 'over' : ''}" id="card-${s.step_id}" ${here ? 'style="outline:3px solid var(--gold)"' : ''}>
+  const hot = sc.inherent_ds >= (G.danger_model.prep_card_from || 45);
+  return `<article class="card ${done ? 'done' : ''} ${over ? 'over' : ''} ${hot ? 'hot' : ''}" id="card-${s.step_id}" ${here ? 'style="outline:3px solid var(--gold)"' : ''}>
+    ${hot ? `<div class="hotbar">⚠ High danger · ${sc.inherent_ds} without prep · ${sc.residual_ds} with the prep card · read the danger card before starting</div>` : ''}
     ${over ? `<div class="ribbon">Above your danger cap (${cap}). ${r.route_id !== 'safest' ? 'The Safest route avoids or replaces this step.' : 'There is no safer alternative: read the prep card, and only go ahead if you accept this risk knowingly.'}</div>` : ''}
     ${newU.length ? `<div class="ribbon new">New in the last 12 months: ${newU.map(u => esc(u.title) + ' (' + esc(u.date) + ')').join(', ')}</div>` : ''}
     <div class="hd"><div class="n">${idx + 1}</div>
@@ -399,8 +412,9 @@ function pDecisions(){
 
 function pRoute(){
   const r = route();
-  $('#p-route').innerHTML = nextPanel() + `<p>${esc(G.intro)}</p><p class="muted small">${esc(r.intent)}</p>` +
-    r.step_ids.map((id, i) => stepCard(stepById(id), i)).join('') + (G.outro ? `<p>${esc(G.outro)}</p>` : '');
+  const bl = v => Array.isArray(v) ? `<ul>${v.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : (v ? `<p>${esc(v)}</p>` : '');
+  $('#p-route').innerHTML = nextPanel() + bl(G.intro) + `<p class="muted small">${esc(r.intent)}</p>` +
+    r.step_ids.map((id, i) => stepCard(stepById(id), i)).join('') + bl(G.outro);
 }
 
 function pLevels(){
@@ -459,7 +473,10 @@ function pNew(){
 
 function pSupplies(){
   const r = route();
-  $('#p-supplies').innerHTML = `<h2>Supplies for the ${esc(r.label)} route</h2>` +
+  const P = G.prices || null;
+  const priceTable = P ? `<h2>Hardcore Worlds prices used</h2><p class="small muted">Live GE data from prices.runescape.wiki/osrs-hc, ${esc(P.retrieved)}. Thin markets (low daily volume) are flagged; check in game before buying in bulk.</p>
+    <div class="scroll"><table class="t"><thead><tr><th>Item</th><th>Buy</th><th>Sell</th><th>Mid</th><th>24h volume</th></tr></thead><tbody>${Object.entries(P.items).map(([n, x]) => `<tr><td>${esc(n)}${x.thin_market ? '<span class="thin">thin</span>' : ''}</td><td class="num">${fmt(x.high)}</td><td class="num">${fmt(x.low)}</td><td class="num">${fmt(x.mid)}</td><td class="num">${fmt(x.volume_24h)}</td></tr>`).join('')}</tbody></table></div>` : '';
+  $('#p-supplies').innerHTML = priceTable + `<h2>Supplies for the ${esc(r.label)} route</h2>` +
     (r.totals.supplies.length ? `<div class="scroll"><table class="t"><thead><tr><th>Item</th><th>Quantity</th></tr></thead><tbody>${r.totals.supplies.map(x => `<tr><td>${esc(x.item)}</td><td class="num">${fmt(x.qty)}</td></tr>`).join('')}</tbody></table></div>` : '<p>No consumables tracked for this route.</p>') +
     (r.totals.secondary_xp.length ? `<h2>Bonus XP in other skills</h2><ul>${r.totals.secondary_xp.map(x => `<li>${esc(x.skill)}: +${fmt(x.xp)}</li>`).join('')}</ul>` : '') +
     (G.assumptions.length ? `<h2>Assumptions</h2><ul>${G.assumptions.map(a => `<li>${esc(a)}</li>`).join('')}</ul>` : '');

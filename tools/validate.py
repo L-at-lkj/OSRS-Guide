@@ -117,7 +117,7 @@ def g_brief(job, r):
     if not b:
         return
     _sealed(job, "brief.json", r, required=False)
-    check_provenance(job, "brief.json", b, r, "intake-officer")
+    check_provenance(job, "brief.json", b, r, (b.get("provenance") or {}).get("agent") if (b.get("provenance") or {}).get("agent") in ("intake-officer", "system") else "intake-officer")
     gm = b["game_mode"]
     if gm["world_type"] == "hardcore_worlds" and gm["death_ruleset"] != "hardcore_worlds":
         r.fail("brief: Hardcore Worlds accounts must use the hardcore_worlds death ruleset")
@@ -351,7 +351,12 @@ def g_calc(job, r):
     cur = _xp.plan_numeric_sha256(load_json(_d(job) / "plan.json"))
     if calc.get("plan_numeric_sha256", calc.get("plan_sha256")) not in (cur, sha256_file(_d(job) / "plan.json")):
         r.fail("calc.json was computed from different plan numbers; rerun tools/xp.py simulate")
+    pp = _d(job) / "prices.json"
+    if pp.exists() and calc.get("prices_sha256") != sha256_file(pp):
+        r.fail("calc.json was computed with a different prices.json; rerun tools/xp.py simulate")
     for rid, rt in calc["routes"].items():
+        if rt.get("profit") and rt["profit"].get("unpriced"):
+            r.warn(f"calc[{rid}]: items without a Hardcore Worlds price: {rt['profit']['unpriced']}")
         for e in rt["errors"]:
             r.fail(f"calc[{rid}]: {e}")
         for w in rt["warnings"]:
@@ -495,15 +500,35 @@ def g_prose(job, r):
             if m and (m.group(1) not in facts or facts[m.group(1)]["status"] not in GOOD):
                 r.fail(f"prose {where}: token cites unusable fact {m.group(1)}")
 
+    LIMITS = {"summary": 25, "instructions": 30, "tips": 25, "warnings": 35, "intro": 30, "outro": 30}
+    PREACHY = re.compile(r"\b(obviously|simply|of course|you should know|needless to say|clearly|remember that you)\b", re.I)
+
+    def style(text, where, kind):
+        n = len(re.sub(r"\{\{[^}]*\}\}", "x", text).split())
+        if n > LIMITS[kind]:
+            r.fail(f"prose {where}: {n} words, limit {LIMITS[kind]} (owner style: short dot points, no slabs)")
+        if PREACHY.search(text):
+            r.warn(f"prose {where}: lecturing phrase '{PREACHY.search(text).group(0)}' (owner asked for a plain, non-arrogant tone)")
+
     for key in ("intro", "outro"):
-        if pr.get(key):
-            scan(pr[key], key)
+        val = pr.get(key)
+        if not val:
+            continue
+        items = val if isinstance(val, list) else [val]
+        if isinstance(val, str) and len(val.split()) > LIMITS[key]:
+            r.fail(f"prose {key}: a single block of {len(val.split())} words; write it as dot points")
+        for i, txt in enumerate(items):
+            scan(txt, f"{key}[{i}]")
+            if isinstance(val, list):
+                style(txt, f"{key}[{i}]", key)
     for s in pr["steps"]:
         for k in ("summary",):
             scan(s[k], f"{s['step_id']}.{k}")
+            style(s[k], f"{s['step_id']}.{k}", "summary")
         for k in ("instructions", "tips", "warnings"):
-            for i, t in enumerate(s.get(k, [])):
-                scan(t, f"{s['step_id']}.{k}[{i}]")
+            for i, txt in enumerate(s.get(k, [])):
+                scan(txt, f"{s['step_id']}.{k}[{i}]")
+                style(txt, f"{s['step_id']}.{k}[{i}]", k)
 
 
 def g_content(job, r):

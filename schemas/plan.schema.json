@@ -222,6 +222,63 @@
           "items": {
             "type": "string"
           }
+        },
+        "income_per_hour": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "item",
+              "qty"
+            ],
+            "properties": {
+              "item": {
+                "type": "string"
+              },
+              "qty": {
+                "$ref": "#/definitions/ref"
+              },
+              "note": {
+                "type": "string"
+              },
+              "convert": {
+                "type": "object",
+                "required": [
+                  "to_item",
+                  "per_unit"
+                ],
+                "properties": {
+                  "to_item": {
+                    "type": "string"
+                  },
+                  "per_unit": {
+                    "$ref": "#/definitions/ref"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "income_per_action": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "item",
+              "qty"
+            ],
+            "properties": {
+              "item": {
+                "type": "string"
+              },
+              "qty": {
+                "$ref": "#/definitions/ref"
+              },
+              "gp_each": {
+                "$ref": "#/definitions/ref"
+              }
+            }
+          }
         }
       }
     },
@@ -388,6 +445,9 @@
             "type": "string",
             "pattern": "^F-\\d{4}$"
           }
+        },
+        "profit_note": {
+          "type": "string"
         }
       }
     }

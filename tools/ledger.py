@@ -40,7 +40,7 @@ RESEARCHERS = {"patch-sentinel", "methods-analyst", "quest-archivist", "threat-a
 
 # Separation of duties: which role may seal which artifact.
 SEAL_RIGHTS: list[tuple[str, set[str]]] = [
-    ("brief.json", {"intake-officer"}),
+    ("brief.json", {"intake-officer", "system"}),  # system = tools/brief.py (from saved profile)
     ("research/updates.json", {"patch-sentinel"}),
     ("research/claims-methods.json", {"methods-analyst"}),
     ("research/claims-quests.json", {"quest-archivist"}),
@@ -51,6 +51,7 @@ SEAL_RIGHTS: list[tuple[str, set[str]]] = [
     ("facts-parts/", {"fact-verifier"}),           # parallel verifier instances, one per desk
     ("facts.json", {"fact-verifier", "system"}),    # system = tools/merge_facts.py
     ("plan.json", {"route-strategist"}),
+    ("prices.json", {"system"}),                    # tools/prices.py (Hardcore Worlds GE snapshot)
     ("calc.json", {"system"}),                      # produced by tools/xp.py only
     ("calc-review.json", {"quant"}),
     ("risk.json", {"risk-officer"}),

@@ -1,0 +1,183 @@
+{
+  "job_id": "thieving-1-99-20261122",
+  "request": "provide a 1-99 thieving guide",
+  "guide_type": "skill_training",
+  "scope": {
+    "skill": "Thieving",
+    "from_level": 1,
+    "to_level": 99,
+    "notes": "Owner's current Thieving level: 34 (20999 XP). Guide covers 1-99."
+  },
+  "game_mode": {
+    "world_type": "hardcore_worlds",
+    "account_type": "standard",
+    "membership": "member",
+    "death_ruleset": "hardcore_worlds"
+  },
+  "profile": {
+    "stats": {
+      "Attack": 45,
+      "Strength": 39,
+      "Defence": 39,
+      "Ranged": 60,
+      "Prayer": 46,
+      "Magic": 45,
+      "Runecraft": 5,
+      "Construction": 24,
+      "Hitpoints": 52,
+      "Agility": 57,
+      "Herblore": 10,
+      "Thieving": 34,
+      "Crafting": 31,
+      "Fletching": 23,
+      "Slayer": 24,
+      "Hunter": 17,
+      "Mining": 42,
+      "Smithing": 47,
+      "Fishing": 42,
+      "Cooking": 42,
+      "Firemaking": 32,
+      "Woodcutting": 40,
+      "Farming": 5,
+      "Sailing": 30
+    },
+    "stats_source": "hiscores",
+    "stats_verified_at": "2026-11-22T03:38:41+00:00",
+    "skill_xp": {
+      "Agility": 216302,
+      "Defence": 36587,
+      "Attack": 64573,
+      "Strength": 37130,
+      "Hitpoints": 125803,
+      "Ranged": 284904,
+      "Prayer": 71731,
+      "Magic": 64328,
+      "Cooking": 47999,
+      "Woodcutting": 40820,
+      "Fletching": 6435,
+      "Fishing": 46666,
+      "Firemaking": 16680,
+      "Crafting": 15208,
+      "Smithing": 76357,
+      "Mining": 48710,
+      "Herblore": 1254,
+      "Thieving": 20999,
+      "Slayer": 7369,
+      "Farming": 500,
+      "Runecraft": 500,
+      "Hunter": 3296,
+      "Construction": 7777,
+      "Sailing": 13922
+    },
+    "quests_completed": [
+      "Animal Magnetism",
+      "Biohazard",
+      "Children of the Sun",
+      "Client of Kourend",
+      "Cook's Assistant",
+      "Current Affairs",
+      "Daddy's Home",
+      "Ernest the Chicken",
+      "Fight Arena",
+      "Gertrude's Cat",
+      "Ghosts Ahoy",
+      "Goblin Diplomacy",
+      "The Grand Tree",
+      "Hazeel Cult",
+      "The Ides of Milk",
+      "The Knight's Sword",
+      "Learning the Ropes",
+      "The Lost Tribe",
+      "Misthalin Mystery",
+      "Monk's Friend",
+      "Mudfoot's Big Adventure",
+      "Observatory Quest",
+      "Pandemonium",
+      "Plague City",
+      "A Porcine of Interest",
+      "Priest in Peril",
+      "Prying Times",
+      "The Restless Ghost",
+      "Rune Mysteries",
+      "Sea Slug",
+      "Sheep Shearer",
+      "Tree Gnome Village",
+      "Vampyre Slayer",
+      "Waterfall Quest",
+      "Witch's House",
+      "X Marks the Spot"
+    ],
+    "build": {
+      "archetype": "zerker",
+      "skill_caps": {
+        "Defence": 50
+      },
+      "xp_rules": [
+        "Defence XP only from quest rewards at this stage (current Defence is 1; all Defence XP at this stage comes from quests)",
+        "Never train Defence directly or choose Defence for an XP lamp or other choosable XP reward",
+        "Never use a combat style that gives Defence XP (e.g. defensive, or controlled/shared melee styles; longrange ranged or defensive-casting magic)",
+        "Total Defence XP from all quest rewards used must keep Defence at or below the cap (50); the XP engine tracks this on every route"
+      ],
+      "lamp_policy": "never Defence",
+      "confirmed": true
+    },
+    "diaries": [],
+    "unlocks": [],
+    "bank_notes": "House portal: Rimmington; set house teleports to land Outside (POH death is run-ending on HW).; Completed-quest XP lamps already used (Ernest the Chicken, Mudfoot's Big Adventure).; Combat level 45 (2026-11-20)."
+  },
+  "preferences": {
+    "risk_appetite": "informed",
+    "optimise_for": "balanced",
+    "attention": "semi",
+    "exclusions": []
+  },
+  "assumptions": [
+    {
+      "text": "Profile hcmbtw (updated 2026-11-20) is current for quests, build and house.",
+      "confirmed": true
+    },
+    {
+      "text": "Profit uses live Hardcore Worlds GE prices (prices.runescape.wiki/osrs-hc) at guide time.",
+      "confirmed": true
+    }
+  ],
+  "open_questions": [],
+  "acceptance_criteria": [
+    "every level 1-98 has a method",
+    "every step has a game-relative danger score",
+    "every quest released in the last 12 months that gives this skill XP is evaluated",
+    "no route breaks the build caps",
+    "profit per step and route is shown with Hardcore Worlds prices",
+    "decision points offer 2+ justified options"
+  ],
+  "recency_window": {
+    "from": "2025-11-22",
+    "to": "2026-11-22"
+  },
+  "provenance": {
+    "agent": "system",
+    "started_at": "2026-11-22T03:38:41+00:00",
+    "finished_at": "2026-11-22T03:38:41+00:00",
+    "inputs": [
+      {
+        "path": "profiles/hcmbtw.json",
+        "sha256": "afaba37c1285692cca4547edf9927f6d748d61caf665799c4bdf8c1263d4bc77"
+      }
+    ],
+    "actions": [
+      {
+        "kind": "fetch",
+        "detail": "Hardcore Worlds hiscores lookup",
+        "target": "https://secure.runescape.com/m=hiscore_oldschool_hardcore_mains/index_lite.json",
+        "outcome": "ok"
+      }
+    ],
+    "decisions": [
+      {
+        "decision": "brief built from saved profile",
+        "reason": "efficiency: no intake agent needed"
+      }
+    ],
+    "limitations": []
+  }
+}

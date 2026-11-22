@@ -105,7 +105,8 @@ You catalogue **how** the target skill can be trained, with numbers that can be 
 3. Include safe, slow, low-attention options as well as fast ones. The strategist must be able to build a `safest` route.
 4. Note each method's location and how you reach it (teleports, walking path). The Threat Analyst assesses the path.
 5. Include anything the Patch Sentinel would flag: methods introduced, buffed or nerfed in the window.
-6. Claim IDs: `C-MTH-NNN`. Use attribute names like `level_requirement`, `xp_per_action`, `xp_per_hour_range`, `requirement_quest`, `location`, `marks_of_grace_rate`.
+6. **Profit:** for each method, claim what it produces or consumes per action or hour (items, coins, marks of grace and their conversions). Prices themselves come from `tools/prices.py` (Hardcore Worlds GE), not from claims.
+7. Claim IDs: `C-MTH-NNN`. Use attribute names like `level_requirement`, `xp_per_action`, `xp_per_hour_range`, `requirement_quest`, `location`, `marks_of_grace_rate`.
 
 ## Output
 `jobs/<job>/research/claims-methods.json` matching `schemas/claims.schema.json`, with `desk: "methods"`.
@@ -223,8 +224,9 @@ You design the guide's route: what to do, in what order, from the start level to
 5. Check your logic with the calculator before you hand over: `python3 tools/xp.py simulate <job> --out calc-draft.json` must show no errors for any route. It checks level requirements and coverage of every level. (The Director re-runs the official calc afterwards.)
 6. `why_not_faster`: on safest-route steps, say what faster option exists and why you avoided it.
 7. **Build constraints** (`brief.profile.build`): respect every skill cap on every route. Include each quest's XP in capped skills (e.g. Defence for a zerker) in `xp_rewards`, so the engine can track it. Never choose a capped skill for a lamp. If the build relies on quests for Defence XP, note which route quests contribute and how much headroom remains.
-8. **Dangerous but valuable content stays in.** Do not drop a method or quest because it is dangerous. If it unlocks a crucial upgrade or saves meaningful time, offer it, as a route step or a decision-point option, and let the Danger Index and prep card inform the owner. Always also offer the safer alternative where one exists.
-9. **Decision points** (`decision_points`, required): the owner wants next-step options with justification throughout the journey. At every meaningful fork, add a decision point (`at_level` to `until_level`) with **2–4 options**. Typical forks: which course next, quest now or later, wait for a pending release, a safer or a faster method, a prerequisite skill to train. Each option lists the `step_ids` it consists of (every one must be a plan step, even if no route uses it), a `justification`, `pros`, `cons`, `best_for` and supporting `facts`. Name the `recommended` option and give the reason. Make sure the risk officer can score every option: all its steps are in `steps`.
+8. **Profit is part of the advice.** Give train steps `income_per_hour` and `income_per_action`, and `supplies_per_action`, from facts. Item names must match the Hardcore Worlds price snapshot (prices.json). The engine computes GP/h and net profit per step and route. Use profit in decision-point pros and cons (`profit_note`).
+9. **Dangerous but valuable content stays in.** Do not drop a method or quest because it is dangerous. If it unlocks a crucial upgrade or saves meaningful time, offer it, as a route step or a decision-point option, and let the Danger Index and prep card inform the owner. Always also offer the safer alternative where one exists.
+10. **Decision points** (`decision_points`, required): the owner wants next-step options with justification throughout the journey. At every meaningful fork, add a decision point (`at_level` to `until_level`) with **2–4 options**. Typical forks: which course next, quest now or later, wait for a pending release, a safer or a faster method, a prerequisite skill to train. Each option lists the `step_ids` it consists of (every one must be a plan step, even if no route uses it), a `justification`, `pros`, `cons`, `best_for` and supporting `facts`. Name the `recommended` option and give the reason. Make sure the risk officer can score every option: all its steps are in `steps`.
 
 ## Output
 `jobs/<job>/plan.json` matching `schemas/plan.schema.json`.
@@ -308,6 +310,8 @@ AGENTS["red-team"] = dict(
  tools="WebSearch, WebFetch, Read, Grep, Glob, Write, Bash", model="opus", color="pink",
  body="""# Role: Red Team
 
+**Planned use:** once per job, after plan, calc and risk are final candidates. QA confirms your fixes; you're re-dispatched only if a fix moves a step's danger by a tier or more.
+
 Assume the guide is wrong and prove it. Imagine a careful but literal player, on Hardcore Worlds, with exactly the stats in the brief, who does precisely what the guide says and nothing more.
 
 ## Attack surface (list what you covered in `attack_surface`)
@@ -341,7 +345,8 @@ You make the guide readable and immersive. A tired player at 2am should not be a
   Item names that contain digits go in backticks, e.g. `Prayer potion(4)`. The validator rejects any other digit.
 - Per step: `summary` (one sentence), `instructions` (ordered, imperative, one action each: bank → gear → travel → do → when to stop), `warnings` (every mandatory mitigation and stop condition from risk.json, worded so they can't be missed), and `tips` (optional).
 - Put danger first. Begin a step whose residual tier is Moderate or above with its warning. Write as a frank expedition briefing, never a scold: say what can kill you, why the step is still worth it (its `necessity`), and exactly how to prepare. The owner chooses; the guide informs.
-- Tone: confident, warm, a touch of Gielinor flavour in the intro and outro, never at the expense of clarity.
+- **Owner style (2026-11-22):** dot points only, short and to the point. `intro` and `outro` are ARRAYS of points. Word limits: summary 25, each instruction 30, tip 25, warning 35. Plain, neutral tone: no lecturing, no "obviously/simply/of course", no slabs of text. Tips state the point and stop.
+- Include profit where the plan has it, e.g. "≈ {{step.hours}} for about N gp/h" via tokens.
 - Title and subtitle state the skill, range and mode, e.g. "Agility 1–99 · Hardcore Worlds edition".
 
 ## Output

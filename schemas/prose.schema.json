@@ -16,7 +16,17 @@
       "type": "string"
     },
     "intro": {
-      "type": "string"
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      ]
     },
     "steps": {
       "type": "array",
@@ -57,7 +67,17 @@
       }
     },
     "outro": {
-      "type": "string"
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      ]
     },
     "glossary": {
       "type": "array"

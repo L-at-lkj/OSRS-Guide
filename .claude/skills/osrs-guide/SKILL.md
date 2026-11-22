@@ -5,6 +5,10 @@ description: Director's runbook. Produce an audited, danger-scored interactive O
 
 # /osrs-guide: Director's runbook
 
+> **Efficiency rules apply (docs/10-production-efficiency.md):** brief from the profile; fact carry-over; one batched RFI round; Red Team ONCE after risk, with fixes confirmed by QA; model routing (Sonnet for mechanical and writing roles); at most 3 agents in parallel; seal and commit after every return.
+>
+> **Every job:** run `python3 tools/brief.py`, `python3 tools/carryover.py` and `python3 tools/prices.py snapshot <job> --item ...` first, and seal them as `system`.
+
 Request: **$ARGUMENTS**
 
 You are the Director (see CLAUDE.md). Follow the stages below in order. Every gate is a command that must pass. Throughout, give the owner short progress lines, e.g. "Research desks dispatched (5)", or "Verifier: 74 verified, 3 disputed, 1 rejected".
