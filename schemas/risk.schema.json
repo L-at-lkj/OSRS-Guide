@@ -272,6 +272,22 @@
           ],
           "minimum": 1,
           "maximum": 60
+        },
+        "quest_difficulty": {
+          "enum": [
+            "Novice",
+            "Intermediate",
+            "Experienced",
+            "Master",
+            "Grandmaster",
+            "Special"
+          ]
+        },
+        "below_recommended": {
+          "type": "boolean"
+        },
+        "recommended_note": {
+          "type": "string"
         }
       }
     },

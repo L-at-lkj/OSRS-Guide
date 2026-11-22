@@ -445,7 +445,10 @@ def g_risk(job, r):
             r.fail(f"risk {e['step_id']}: residual {s['residual_tier']} ({s['residual_ds']}) needs the user's explicit acceptance")
         if any(f in ("WILDERNESS", "DEEP_WILDERNESS", "PVP_HOTSPOT") for f in e["flags"]) and not e.get("wilderness_level"):
             r.fail(f"risk {e['step_id']}: Wilderness step without wilderness_level (needed for the owner's tiered premium)")
-        if s["inherent_ds"] >= danger.PREP_CARD_FROM:
+        st_kind = next((st["kind"] for st in plan["steps"] if st["step_id"] == e["step_id"]), None)
+        if st_kind in ("quest", "unlock") and lad["calibrated"] and not e.get("quest_difficulty"):
+            r.fail(f"risk {e['step_id']}: quest step without quest_difficulty (owner rule: quests publish at their difficulty tier)")
+        if s["headline_ds"] >= danger.PREP_CARD_FROM or s["inherent_ds"] >= danger.PREP_CARD_FROM:
             pre = e.get("preconditions", {})
             missing = [k for k, ok in (("mitigations", e["mitigations"]), ("stop_conditions", pre.get("stop_conditions")),
                                        ("min_hitpoints", pre.get("min_hitpoints")), ("bailout", e.get("bailout")),

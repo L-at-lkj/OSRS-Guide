@@ -88,7 +88,7 @@ FLAG_FLOORS = {
 TIERS = [(0, "Safe"), (10, "Low"), (25, "Moderate"), (45, "High"), (65, "Severe"), (85, "Extreme")]
 # informed = awareness only: no cap gates content; high-danger steps must carry a full prep card instead.
 APPETITE_CAPS = {"cautious": 24, "standard": 44, "bold": 64, "informed": 100}
-PREP_CARD_FROM = 45   # game-relative score from which a complete prep card is mandatory
+PREP_CARD_FROM = 45   # headline (with prep) score from which a complete prep card + red banner apply
 MIN_ANCHORS = 6
 CALIBRATION = Path(__file__).resolve().parent.parent / "policy" / "danger-calibration.json"
 
@@ -259,12 +259,23 @@ def assess(entry: dict, lad: dict | None = None) -> dict:
         g_inh, g_res = min(g_inh, 99), min(g_res, 99)
         g_res = min(g_res, g_inh)
         near = near_inh
+    qt = (cal or {}).get("quest_tiers") if lad["calibrated"] else None
+    quest_note = None
+    if qt and entry.get("quest_difficulty"):
+        base = qt["tiers"].get(entry["quest_difficulty"])
+        if base is not None:
+            bonus = qt.get("below_recommended_bonus", 5) if entry.get("below_recommended") else 0
+            g_res = base + bonus
+            g_inh = max(g_res, min(g_inh, base + bonus + 10))  # unprepared: at most one tier above
+            near = [f"{entry['quest_difficulty']} quest"]
+            quest_note = ("below the quest's recommended stats" if bonus else "meets recommended stats")
     return {"step_id": entry["step_id"],
+            "headline_ds": g_res, "headline_tier": tier(g_res), "quest_tier": entry.get("quest_difficulty"),
+            "quest_note": quest_note,
             # published (game-relative) scores
             "inherent_ds": g_inh, "inherent_tier": tier(g_inh), "residual_ds": g_res, "residual_tier": tier(g_res),
             "comparable_to": near, "calibrated": lad["calibrated"], "calibration_version": lad.get("version"),
             "wilderness_premium": p_inh if lad["calibrated"] else 0,
-            "headline_ds": g_inh, "headline_tier": tier(g_inh),
             # model internals, kept for audit
             "model_inherent": inherent, "model_residual": residual,
             "floor_by": floor_by, "residual_floor_by": rfloor_by, "factors": v, "residual_factors": rv,
@@ -304,7 +315,7 @@ def main():
         over = f"  ABOVE {a.appetite.upper()} CAP {cap}" if cap is not None and r["residual_ds"] > cap else ""
         fl = f" floor:{r['floor_by']}" if r["floor_by"] else ""
         near = f"  ~ {', '.join(r['comparable_to'])}" if r["comparable_to"] else ""
-        print(f"{r['step_id']:8s} headline {r['inherent_ds']:3d} {r['inherent_tier']:9s} -> with prep "
+        print(f"{r['step_id']:8s} unprepared {r['inherent_ds']:3d} {r['inherent_tier']:9s} -> HEADLINE (with prep) "
               f"{r['residual_ds']:3d} {r['residual_tier']:9s}{fl}{over}{near}"
               f"{'' if r['calibrated'] else '  [uncalibrated]'}")
 

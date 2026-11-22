@@ -234,8 +234,8 @@ function tokens(text, step){
     return m;
   }).replace(/`([^`]+)`/g, '<code>$1</code>');
 }
-const dsBadge = (sc, big = true) => `<span class="ds ${sc.inherent_tier || sc.residual_tier}" title="Game-relative danger (The Fractured Archive = 100), compared like-for-like with the reference ladder (no precautions): ${sc.inherent_ds} (${sc.inherent_tier}). With the full prep card: ${sc.residual_ds}.${sc.comparable_to && sc.comparable_to.length ? ' Comparable to: ' + sc.comparable_to.join(' / ') : ''}${sc.calibrated === false ? ' [uncalibrated]' : ''}">
-  <span class="num">${sc.inherent_ds}</span><span class="lbl">${sc.inherent_tier}</span>${big ? `<small>with prep ${sc.residual_ds}${sc.calibrated === false ? '*' : ''}</small>` : ''}</span>`;
+const dsBadge = (sc, big = true) => `<span class="ds ${sc.headline_tier || sc.residual_tier}" title="Game-relative danger with standard preparation (The Fractured Archive = 100): ${sc.headline_ds ?? sc.residual_ds}.${sc.quest_tier ? ' Placed by official quest difficulty (' + sc.quest_tier + (sc.quest_note ? ', ' + sc.quest_note : '') + ').' : ''} If unprepared: ${sc.inherent_ds}.${sc.comparable_to && sc.comparable_to.length ? ' Comparable to: ' + sc.comparable_to.join(' / ') : ''}${sc.calibrated === false ? ' [uncalibrated]' : ''}">
+  <span class="num">${sc.headline_ds ?? sc.residual_ds}</span><span class="lbl">${sc.headline_tier || sc.residual_tier}</span>${big ? `<small>${sc.quest_tier ? esc(sc.quest_tier) + ' quest' : 'unprepared ' + sc.inherent_ds}</small>` : ''}</span>`;
 const necBadge = n => n ? `<span class="nec ${esc(n.class)}" title="${esc(n.why)}">${esc(n.class)}</span>` : '';
 
 function reqMet(req, step){
@@ -337,9 +337,10 @@ function stepCard(s, idx){
   (s.xp_rewards || []).filter(x => x.skill !== G.meta.skill).forEach(x => stats.push(`<span class="stat">${esc(x.skill)} XP <b>+${fmt(x.xp.value)}</b></span>`));
   const reqs = (s.requirements || []).map(q => { const m = reqMet(q, s); return `<li class="${m === true ? 'met' : m === false ? 'unmet' : ''}">${reqText(q)} <a class="factref" href="#${q.fact}" data-fact="${q.fact}">${q.fact}</a></li>`; }).join('');
   const pre = risk.preconditions || {};
-  const hot = sc.inherent_ds >= (G.danger_model.prep_card_from || 45);
+  const hot = (sc.headline_ds ?? sc.residual_ds) >= (G.danger_model.prep_card_from || 45);
   return `<article class="card ${done ? 'done' : ''} ${over ? 'over' : ''} ${hot ? 'hot' : ''}" id="card-${s.step_id}" ${here ? 'style="outline:3px solid var(--gold)"' : ''}>
-    ${hot ? `<div class="hotbar">⚠ High danger · ${sc.inherent_ds} without prep · ${sc.residual_ds} with the prep card · read the danger card before starting</div>` : ''}
+    ${hot ? `<div class="hotbar">⚠ High danger · ${sc.headline_ds ?? sc.residual_ds} · read the danger card before starting</div>` : ''}
+    ${sc.quest_note === "below the quest's recommended stats" ? `<div class="ribbon">Below this quest's recommended stats: check the danger card before starting.</div>` : ''}
     ${over ? `<div class="ribbon">Above your danger cap (${cap}). ${r.route_id !== 'safest' ? 'The Safest route avoids or replaces this step.' : 'There is no safer alternative: read the prep card, and only go ahead if you accept this risk knowingly.'}</div>` : ''}
     ${newU.length ? `<div class="ribbon new">New in the last 12 months: ${newU.map(u => esc(u.title) + ' (' + esc(u.date) + ')').join(', ')}</div>` : ''}
     <div class="hd"><div class="n">${idx + 1}</div>
@@ -356,7 +357,7 @@ function stepCard(s, idx){
       ${(pr.instructions || []).length ? `<div><b>Do this</b><ol class="steps">${pr.instructions.map(t => `<li>${tokens(t, s)}</li>`).join('')}</ol></div>` : ''}
       ${(pr.warnings || []).map(t => `<div class="warn">${tokens(t, s)}</div>`).join('')}
       ${(pr.tips || []).map(t => `<div class="tip">${tokens(t, s)}</div>`).join('')}
-      <details class="danger" ${over ? 'open' : ''}><summary>Danger assessment · ${sc.inherent_ds} ${esc(sc.inherent_tier)} without prep · ${sc.residual_ds} with prep${sc.floor_by ? ` <span class="muted small">(minimum from ${esc(sc.floor_by)})</span>` : ''}</summary><div class="in">
+      <details class="danger" ${over ? 'open' : ''}><summary>Danger assessment · ${sc.headline_ds ?? sc.residual_ds} ${esc(sc.headline_tier || sc.residual_tier)} with prep · ${sc.inherent_ds} if unprepared${sc.floor_by ? ` <span class="muted small">(minimum from ${esc(sc.floor_by)})</span>` : ''}</summary><div class="in">
         ${risk.necessity ? `<div><b>Why it's worth it:</b> ${necBadge(risk.necessity)} ${esc(risk.necessity.why)}${(risk.necessity.unlocks || []).length ? ' <span class="muted">Unlocks: ' + risk.necessity.unlocks.map(esc).join(', ') + '</span>' : ''}${(risk.necessity.safer_alternatives || []).length ? '<div class="small muted">Safer alternatives: ' + risk.necessity.safer_alternatives.map(esc).join('; ') + '</div>' : ''}</div>` : ''}
         <div>Hardcore Worlds death rule: <span class="hwc ${risk.hw_death_classification.status}">${esc(risk.hw_death_classification.status.replace(/_/g, ' '))}</span> — ${esc(risk.hw_death_classification.note)}</div>
         ${sc.wilderness_premium ? `<div class="warn">Includes the +${sc.wilderness_premium} Wilderness premium (+5 below level 14, +10 from 14, +15 from 20, +20 from 30): player killers, teleblock and no-escape zones can't be fully mitigated.</div>` : ''}
