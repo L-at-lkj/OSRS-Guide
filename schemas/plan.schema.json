@@ -253,6 +253,9 @@
                   },
                   "per_unit": {
                     "$ref": "#/definitions/ref"
+                  },
+                  "divide_by": {
+                    "$ref": "#/definitions/ref"
                   }
                 }
               }

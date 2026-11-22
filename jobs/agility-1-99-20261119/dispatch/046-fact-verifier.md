@@ -1,0 +1,3 @@
+You are a FACT VERIFIER of OSRS Companion (charter: /home/user/osrs-guide-company/.claude/agents/fact-verifier.md; record its sha256). Work from /home/user/osrs-guide-company. Brief job.
+JOB: agility-1-99-20261119 | TODAY: 2026-11-22
+TASK: adjudicate the 3 claims in research/claims-rfi-05.json (C-RFI-401..403, sealed) per your charter (re-fetch the cited revision and the current one). Write ONLY jobs/agility-1-99-20261119/facts-parts/rfi-03.json (schema: schemas/facts.schema.json), fact ids F-5901 upward. DONE WHEN `python3 tools/validate.py agility-1-99-20261119 facts --part rfi-03 --claims C-RFI-401:C-RFI-403` shows 0 FAIL. Do not seal. One-line report.

@@ -100,7 +100,8 @@ def step_profit(step: dict, actions: int, hours: float, prices: dict | None) -> 
         qty = _num(inc["qty"]) * hours
         item = inc["item"]
         if inc.get("convert"):
-            qty, item = qty * _num(inc["convert"]["per_unit"]), inc["convert"]["to_item"]
+            cv = inc["convert"]
+            qty, item = qty * _num(cv["per_unit"]) / (_num(cv["divide_by"]) if cv.get("divide_by") else 1), cv["to_item"]
         pr = _price(prices, item)
         if pr is None: missing.append(item); continue
         income += qty * pr

@@ -267,6 +267,14 @@ def _refs(step):
         yield f"secondary[{i}].xp", s["xp"]
     for i, s in enumerate(step.get("xp_rewards", [])):
         yield f"xp_rewards[{i}]", s["xp"]
+    for i, s in enumerate(step.get("income_per_hour", [])):
+        yield f"income[{i}].qty", s["qty"]
+        if s.get("convert"):
+            yield f"income[{i}].per_unit", s["convert"]["per_unit"]
+            if s["convert"].get("divide_by"):
+                yield f"income[{i}].divide_by", s["convert"]["divide_by"]
+    for i, s in enumerate(step.get("income_per_action", [])):
+        yield f"income_action[{i}].qty", s["qty"]
     for i, s in enumerate(step.get("lamp_rewards", [])):
         for k in ("xp", "xp_per_level"):
             if k in s:

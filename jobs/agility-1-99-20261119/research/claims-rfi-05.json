@@ -1,0 +1,137 @@
+{
+ "desk": "rfi",
+ "as_of": "2026-11-22",
+ "claims": [
+  {
+   "claim_id": "C-RFI-401",
+   "subject": "Amylase pack",
+   "attribute": "crystals_per_pack",
+   "value": 100,
+   "unit": "amylase crystals",
+   "statement": "Opening one amylase pack gives 100 amylase crystals.",
+   "scope": {
+    "world_type": "main_game_wiki_proxy",
+    "note": "Wiki states main-game flags; Hardcore Worlds mapping not checked"
+   },
+   "released": null,
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Amylase pack",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15316439",
+     "revid": 15316439,
+     "retrieved": "2026-11-22",
+     "quote": "|examine = A pack containing 100 crystals of amylase."
+    },
+    {
+     "tier": "T2",
+     "title": "Amylase pack",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15316439",
+     "revid": 15316439,
+     "retrieved": "2026-11-22",
+     "quote": "'''Amylase pack''' is an [[item pack]] containing 100 [[amylase crystal]]s used in making [[stamina potion]]s."
+    }
+   ],
+   "confidence": "high"
+  },
+  {
+   "claim_id": "C-RFI-402",
+   "subject": "Amylase crystal",
+   "attribute": "ge_tradeable",
+   "value": true,
+   "unit": null,
+   "statement": "Amylase crystals are tradeable and exchangeable on the Grand Exchange (item id 12640).",
+   "scope": {
+    "world_type": "main_game_wiki_proxy",
+    "note": "Wiki states main-game flags; Hardcore Worlds mapping not checked"
+   },
+   "released": "2014-07-10",
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Amylase crystal",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15375340",
+     "revid": 15375340,
+     "retrieved": "2026-11-22",
+     "quote": "|tradeable = Yes ... |exchange = Yes |id = 12640"
+    }
+   ],
+   "confidence": "high",
+   "notes": "Hardcore Worlds price mapping not independently checked; wiki flags are main-game."
+  },
+  {
+   "claim_id": "C-RFI-403",
+   "subject": "Amylase pack",
+   "attribute": "ge_tradeable",
+   "value": false,
+   "unit": null,
+   "statement": "Amylase packs are untradeable, so not on the Grand Exchange. They can only be sold back to Grace's Graceful Clothing for 8 marks of grace.",
+   "scope": {
+    "world_type": "main_game_wiki_proxy",
+    "note": "Wiki states main-game flags; Hardcore Worlds mapping not checked"
+   },
+   "released": null,
+   "sources": [
+    {
+     "tier": "T2",
+     "title": "Amylase pack",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15316439",
+     "revid": 15316439,
+     "retrieved": "2026-11-22",
+     "quote": "|tradeable = No"
+    },
+    {
+     "tier": "T2",
+     "title": "Amylase pack",
+     "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15316439",
+     "revid": 15316439,
+     "retrieved": "2026-11-22",
+     "quote": "Amylase packs can only be sold back to [[Grace's Graceful Clothing]] for 8 [[marks of grace]]"
+    }
+   ],
+   "confidence": "high"
+  }
+ ],
+ "gaps": [
+  "Hardcore Worlds GE mapping not queried for item 12640; wiki flags are main-game."
+ ],
+ "provenance": {
+  "agent": "logistics-analyst",
+  "started_at": "2026-11-22T03:39:00Z",
+  "finished_at": "2026-11-22T03:45:00Z",
+  "inputs": [
+   {
+    "path": ".claude/agents/logistics-analyst.md",
+    "sha256": "610d4bad3feaecd12a7462096506a17ada93049dedaec7fe1c93a9dfaeae4d62"
+   }
+  ],
+  "actions": [
+   {
+    "kind": "fetch",
+    "detail": "wiki.py page 'Amylase pack' --grep",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15316439",
+    "outcome": "revid 15316439"
+   },
+   {
+    "kind": "fetch",
+    "detail": "wiki.py page 'Amylase crystal' --grep",
+    "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15375340",
+    "outcome": "revid 15375340"
+   },
+   {
+    "kind": "write",
+    "detail": "wrote claims-rfi-05.json"
+   }
+  ],
+  "decisions": [
+   {
+    "decision": "Cited main-game wiki flags only",
+    "reason": "Dispatch asked for pinned wiki sources"
+   }
+  ],
+  "limitations": [
+   "Hardcore Worlds mapping not checked",
+   "Page revisions may be newer than pinned"
+  ]
+ }
+}
