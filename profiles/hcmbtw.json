@@ -14,7 +14,7 @@
       "Defence": 50
     },
     "xp_rules": [
-      "Defence XP only from quest rewards (owner-confirmed 2026-11-22: Dragon Slayer I, Nature Spirit, In Aid of the Myreque, Holy Grail)",
+      "Defence XP only from quest rewards (owner-confirmed 2026-11-22: Dragon Slayer I 18,650, Holy Grail 15,300, Nature Spirit 2,000, In Search of the Myreque 600 = 36,550; hiscores 36,587)",
       "Never train Defence directly or choose Defence for an XP lamp or other choosable XP reward",
       "Never use a combat style that gives Defence XP (e.g. defensive, or controlled/shared melee styles; longrange ranged or defensive-casting magic)",
       "Total Defence XP from all quest rewards used must keep Defence at or below the cap (50); the XP engine tracks this on every route"
@@ -95,15 +95,14 @@
     "X Marks the Spot",
     "Dragon Slayer I",
     "Nature Spirit",
-    "In Aid of the Myreque",
-    "Holy Grail"
+    "Holy Grail",
+    "In Search of the Myreque"
   ],
   "facts_about_owner": [
     "House portal: Rimmington; set house teleports to land Outside (POH death is run-ending on HW).",
     "Completed-quest XP lamps already used (Ernest the Chicken, Mudfoot's Big Adventure).",
     "Combat level 45 (2026-11-20).",
-    "2026-11-22: owner confirmed Defence 39 (36,587 XP) came from quest rewards: Dragon Slayer I, Nature Spirit, In Aid of the Myreque",
-    "2026-11-22: owner confirmed Holy Grail done. Wiki guide quest Defence XP sums to 37,950 vs hiscores 36,587 (gap 1,363): unresolved, likely hiscores lag; cap check uses hiscores XP"
+    "2026-11-22: Defence 39 (36,587 XP) is from quests: Dragon Slayer I, Holy Grail, Nature Spirit, In Search of the Myreque (36,550 per wiki guide; 37 XP remainder). In Aid of the Myreque NOT done (owner correction)."
   ],
   "accepted_risks": [
     {
