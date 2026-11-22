@@ -6,7 +6,7 @@
     "skill": "Thieving",
     "from_level": 1,
     "to_level": 99,
-    "notes": "Owner's current Thieving level: 34 (20999 XP). Guide covers 1-99."
+    "notes": "Owner's current Thieving level: 35 (24071 XP). Guide covers 1-99."
   },
   "game_mode": {
     "world_type": "hardcore_worlds",
@@ -27,7 +27,7 @@
       "Hitpoints": 52,
       "Agility": 57,
       "Herblore": 10,
-      "Thieving": 34,
+      "Thieving": 35,
       "Crafting": 31,
       "Fletching": 23,
       "Slayer": 24,
@@ -42,26 +42,26 @@
       "Sailing": 30
     },
     "stats_source": "hiscores",
-    "stats_verified_at": "2026-11-22T03:38:41+00:00",
+    "stats_verified_at": "2026-11-22T04:38:52+00:00",
     "skill_xp": {
-      "Agility": 216302,
+      "Agility": 216305,
       "Defence": 36587,
-      "Attack": 64573,
+      "Attack": 64817,
       "Strength": 37130,
-      "Hitpoints": 125803,
-      "Ranged": 284904,
+      "Hitpoints": 126011,
+      "Ranged": 286904,
       "Prayer": 71731,
-      "Magic": 64328,
+      "Magic": 65128,
       "Cooking": 47999,
       "Woodcutting": 40820,
       "Fletching": 6435,
       "Fishing": 46666,
       "Firemaking": 16680,
-      "Crafting": 15208,
+      "Crafting": 15213,
       "Smithing": 76357,
       "Mining": 48710,
-      "Herblore": 1254,
-      "Thieving": 20999,
+      "Herblore": 1256,
+      "Thieving": 24071,
       "Slayer": 7369,
       "Farming": 500,
       "Runecraft": 500,
@@ -105,25 +105,60 @@
       "Vampyre Slayer",
       "Waterfall Quest",
       "Witch's House",
-      "X Marks the Spot"
+      "X Marks the Spot",
+      "Dragon Slayer I",
+      "Nature Spirit",
+      "Holy Grail",
+      "In Search of the Myreque",
+      "Prince Ali Rescue",
+      "Imp Catcher",
+      "Witch's Potion",
+      "Natural history quiz",
+      "Dwarf Cannon",
+      "Doric's Quest",
+      "Below Ice Mountain",
+      "The Birds and the Wasps",
+      "Romeo & Juliet",
+      "Demon Slayer",
+      "Black Knights' Fortress",
+      "The Tourist Trap",
+      "Druidic Ritual",
+      "Recruitment Drive",
+      "Sleeping Giants",
+      "Sheep Herder",
+      "Tower of Life",
+      "Tribal Totem",
+      "Death Plateau",
+      "Merlin's Crystal",
+      "Murder Mystery",
+      "The Writing's on the Wall",
+      "A Ruff Situation",
+      "Rag and Bone Man I",
+      "Pirate's Treasure",
+      "Making History",
+      "The Corsair Curse",
+      "Clock Tower",
+      "Death to the Dorgeshuun"
     ],
     "build": {
       "archetype": "zerker",
       "skill_caps": {
-        "Defence": 50
+        "Defence": 52
       },
       "xp_rules": [
-        "Defence XP only from quest rewards at this stage (current Defence is 1; all Defence XP at this stage comes from quests)",
+        "Defence XP only from quest rewards (owner-confirmed 2026-11-22: Dragon Slayer I 18,650, Holy Grail 15,300, Nature Spirit 2,000, In Search of the Myreque 600 = 36,550; hiscores 36,587)",
         "Never train Defence directly or choose Defence for an XP lamp or other choosable XP reward",
         "Never use a combat style that gives Defence XP (e.g. defensive, or controlled/shared melee styles; longrange ranged or defensive-casting magic)",
-        "Total Defence XP from all quest rewards used must keep Defence at or below the cap (50); the XP engine tracks this on every route"
+        "Total Defence XP from all quest rewards used must keep Defence at or below the cap (52); the XP engine tracks this on every route"
       ],
       "lamp_policy": "never Defence",
-      "confirmed": true
+      "confirmed": true,
+      "cap_note": "Owner 2026-11-22: 'i am fine with the total of 51 or 52 defence that is given from quests completion'. Cap raised 50 -> 52 to allow the fixed quest Defence rewards; choosable rewards still never go to Defence. Owner 2026-11-22: 'i will not follow the guide for rewars that closely so disregard, i will likely have 51 [defence] at quest cape'. Owner picks choosable rewards; the tracker shows fixed rewards only.",
+      "quest_cape_defence_expected": 51
     },
     "diaries": [],
     "unlocks": [],
-    "bank_notes": "House portal: Rimmington; set house teleports to land Outside (POH death is run-ending on HW).; Completed-quest XP lamps already used (Ernest the Chicken, Mudfoot's Big Adventure).; Combat level 45 (2026-11-20)."
+    "bank_notes": "House portal: Rimmington; set house teleports to land Outside (POH death is run-ending on HW).; Completed-quest XP lamps already used (Ernest the Chicken, Mudfoot's Big Adventure).; Combat level 45 (2026-11-20).; 2026-11-22: Defence 39 (36,587 XP) is from quests: Dragon Slayer I, Holy Grail, Nature Spirit, In Search of the Myreque (36,550 per wiki guide; 37 XP remainder). In Aid of the Myreque NOT done (owner correction)."
   },
   "preferences": {
     "risk_appetite": "informed",
@@ -133,7 +168,7 @@
   },
   "assumptions": [
     {
-      "text": "Profile hcmbtw (updated 2026-11-20) is current for quests, build and house.",
+      "text": "Profile hcmbtw (updated 2026-11-22) is current for quests, build and house.",
       "confirmed": true
     },
     {
@@ -156,12 +191,12 @@
   },
   "provenance": {
     "agent": "system",
-    "started_at": "2026-11-22T03:38:41+00:00",
-    "finished_at": "2026-11-22T03:38:41+00:00",
+    "started_at": "2026-11-22T04:38:52+00:00",
+    "finished_at": "2026-11-22T04:38:52+00:00",
     "inputs": [
       {
         "path": "profiles/hcmbtw.json",
-        "sha256": "afaba37c1285692cca4547edf9927f6d748d61caf665799c4bdf8c1263d4bc77"
+        "sha256": "508b5e3d96a2d8445d9a81fc650e70d7529de14f6bd4193e73c7e03417efb89c"
       }
     ],
     "actions": [

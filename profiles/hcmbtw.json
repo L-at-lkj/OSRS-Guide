@@ -98,7 +98,36 @@
     "Dragon Slayer I",
     "Nature Spirit",
     "Holy Grail",
-    "In Search of the Myreque"
+    "In Search of the Myreque",
+    "Prince Ali Rescue",
+    "Imp Catcher",
+    "Witch's Potion",
+    "Natural history quiz",
+    "Dwarf Cannon",
+    "Doric's Quest",
+    "Below Ice Mountain",
+    "The Birds and the Wasps",
+    "Romeo & Juliet",
+    "Demon Slayer",
+    "Black Knights' Fortress",
+    "The Tourist Trap",
+    "Druidic Ritual",
+    "Recruitment Drive",
+    "Sleeping Giants",
+    "Sheep Herder",
+    "Tower of Life",
+    "Tribal Totem",
+    "Death Plateau",
+    "Merlin's Crystal",
+    "Murder Mystery",
+    "The Writing's on the Wall",
+    "A Ruff Situation",
+    "Rag and Bone Man I",
+    "Pirate's Treasure",
+    "Making History",
+    "The Corsair Curse",
+    "Clock Tower",
+    "Death to the Dorgeshuun"
   ],
   "facts_about_owner": [
     "House portal: Rimmington; set house teleports to land Outside (POH death is run-ending on HW).",
@@ -183,5 +212,8 @@
     "done": [],
     "marked": "2026-11-22",
     "source": "owner"
-  }
+  },
+  "quests_completed_note": [
+    "2026-11-22: 29 added from owner's statement 'all prior quests completed' up to Elemental Workshop I (Optimal quest guide rows 1-60, wiki rev 15411475)"
+  ]
 }
