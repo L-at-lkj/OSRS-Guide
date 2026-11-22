@@ -23,7 +23,8 @@
     "cap": null,
     "appetite_note": "Owner policy (agility ledger seq 131): informed awareness, not avoidance. No cap gates content. Scores are published on the calibrated game-relative Danger Index (calibration 2026-11-20-approved-r2; The Fractured Archive = 100). The HEADLINE score is the UNMITIGATED game-relative score, like-for-like with the ladder anchors (which are rated without precautions); 'with prep' is the residual after the mandatory mitigations on the same mapping. Hazard-flag floors apply to the published scores after calibration. Every step carries a necessity label, and every step whose headline is 45 or more carries a complete prep card. A veto needs a veto_basis; danger alone never vetoes. Earlier acceptances (S05, S06, S12, S16; ledger seq 123-126) stay on record, but S12's card has changed materially since its acceptance (see S12).",
     "food_basis": "The largest single heal in the verified facts is 16 (monkfish, F-4062); swordfish 14, lobster and cake 12, tuna 10 (F-4061, F-4060, F-4065, F-4063). No verified fact covers combo foods (e.g. karambwan), food over 16, or eating speed, so no prep card relies on them. Hardcore Worlds characters can buy food on the Hardcore Worlds Grand Exchange (F-0010, F-4001); Hardcore Worlds prices are unverified.",
-    "source": "brief.json profile (Hardcore Worlds hiscores 2026-11-19T22:01:42Z) and calc.json levels"
+    "source": "brief.json profile (Hardcore Worlds hiscores 2026-11-19T22:01:42Z) and calc.json levels",
+    "current_stats_note": "Current stats (Hardcore Worlds hiscores 2026-11-22, profiles/hcmbtw.json): combat 57, Agility 57, Thieving 34, Prayer 46, Strength 39, Defence 39, Hitpoints 52, Ranged 60. These are higher than the original rating basis above (Defence 39 vs 1, Hitpoints 52 vs 48, combat 57 vs 45), so the 'if unprepared' scores are conservative. Quest steps now publish at official difficulty tier (+5 if below recommended; policy quest_tiers r3); the headline is the with-prep score."
   },
   "risk_appetite": "informed",
   "entries": [
@@ -170,7 +171,11 @@
         ]
       },
       "verdict": "approve_with_conditions",
-      "verdict_reason": "Held at the NEW_CONTENT floor: no documented damage, but the quest is under 30 days old, so the re-read of the walkthrough before starting is mandatory."
+      "verdict_reason": "Held at the NEW_CONTENT floor: no documented damage, but the quest is under 30 days old, so the re-read of the walkthrough before starting is mandatory.",
+      "quest_difficulty": "Intermediate",
+      "quest_difficulty_fact": "F-5950",
+      "below_recommended": false,
+      "recommended_note": "No recommended combat or stats listed (F-5951); nothing to be below."
     },
     {
       "step_id": "S02",
@@ -309,7 +314,11 @@
         ]
       },
       "verdict": "approve",
-      "verdict_reason": "Low danger with a documented safespot; the snake's damage is small and the only unknown is obstacle fall damage, covered by the full-HP rule."
+      "verdict_reason": "Low danger with a documented safespot; the snake's damage is small and the only unknown is obstacle fall damage, covered by the full-HP rule.",
+      "quest_difficulty": "Intermediate",
+      "quest_difficulty_fact": "F-5952",
+      "below_recommended": false,
+      "recommended_note": "Recommended combat 15 (F-5953); owner combat 57 meets it."
     },
     {
       "step_id": "S03",
@@ -501,7 +510,11 @@
         ]
       },
       "verdict": "approve_with_conditions",
-      "verdict_reason": "High unmitigated because a disconnect inside a teleport-blocked flashback without prayer is likely fatal; with the correct protection prayer held through each fight (which the guardian facts say gives full protection) it drops to Low. Full prep card applies."
+      "verdict_reason": "High unmitigated because a disconnect inside a teleport-blocked flashback without prayer is likely fatal; with the correct protection prayer held through each fight (which the guardian facts say gives full protection) it drops to Low. Full prep card applies.",
+      "quest_difficulty": "Intermediate",
+      "quest_difficulty_fact": "F-5954",
+      "below_recommended": false,
+      "recommended_note": "Recommended combat 50 and Agility 35 (F-5955); owner combat 57, Agility 57 meets both."
     },
     {
       "step_id": "S04",
@@ -630,7 +643,11 @@
         ]
       },
       "verdict": "approve",
-      "verdict_reason": "Low: no required fights; the only damage is desert travel, removed by carpet travel with waterskins."
+      "verdict_reason": "Low: no required fights; the only damage is desert travel, removed by carpet travel with waterskins.",
+      "quest_difficulty": "Intermediate",
+      "quest_difficulty_fact": "F-5956",
+      "below_recommended": false,
+      "recommended_note": "No recommended combat or stats listed (F-5957); nothing to be below."
     },
     {
       "step_id": "S05",
@@ -849,7 +866,11 @@
         ]
       },
       "verdict": "approve_with_conditions",
-      "verdict_reason": "High unmitigated: bridge falls up to 24 against 48 HP, spider pile-ups and Iban's through-prayer spikes keep lethality at 'up to 50% HP' even with prep, so the full prep card (now with the Iban's temple full-HP gate) applies. The owner accepted it under the previous capped policy (ledger seq 123); under the informed policy no acceptance is needed and the record stands. It is the gate to Regicide and the elf chain. Safer alternative in the plan: DP02 option A (skip)."
+      "verdict_reason": "High unmitigated: bridge falls up to 24 against 48 HP, spider pile-ups and Iban's through-prayer spikes keep lethality at 'up to 50% HP' even with prep, so the full prep card (now with the Iban's temple full-HP gate) applies. The owner accepted it under the previous capped policy (ledger seq 123); under the informed policy no acceptance is needed and the record stands. It is the gate to Regicide and the elf chain. Safer alternative in the plan: DP02 option A (skip).",
+      "quest_difficulty": "Experienced",
+      "quest_difficulty_fact": "F-5958",
+      "below_recommended": true,
+      "recommended_note": "Recommended combat 60, Agility 50+, Prayer 43 (F-5959); owner combat 57 is BELOW 60 (Agility 57, Prayer 46 meet theirs). Thieving 50 is for an optional shortcut and is ignored."
     },
     {
       "step_id": "S06",
@@ -1046,7 +1067,11 @@
         ]
       },
       "verdict": "approve_with_conditions",
-      "verdict_reason": "High unmitigated: a disconnect as the Tyras guard engages is likely fatal and the Pass traversal and traps keep lethality at 'up to 50% HP'; Protect from Melee (documented for this guard) is what removes the disconnect floor. Full prep card applies. The owner accepted it under the previous capped policy (ledger seq 124); under the informed policy no acceptance is needed and the record stands. DP02 option A is the safer alternative."
+      "verdict_reason": "High unmitigated: a disconnect as the Tyras guard engages is likely fatal and the Pass traversal and traps keep lethality at 'up to 50% HP'; Protect from Melee (documented for this guard) is what removes the disconnect floor. Full prep card applies. The owner accepted it under the previous capped policy (ledger seq 124); under the informed policy no acceptance is needed and the record stands. DP02 option A is the safer alternative.",
+      "quest_difficulty": "Experienced",
+      "quest_difficulty_fact": "F-5960",
+      "below_recommended": true,
+      "recommended_note": "Recommended combat 60 (F-5961); owner combat 57 is BELOW it."
     },
     {
       "step_id": "S07",
@@ -2035,7 +2060,11 @@
         ]
       },
       "verdict": "approve_with_conditions",
-      "verdict_reason": "Card CHANGED MATERIALLY since the owner's acceptance (ledger seq 125): the ring of life is removed (the cited wiki says it resets Koschei to form 1, so the quest could never be finished, and every retry repeats the run-ending forms 1-3), its escape credit is gone, escape is now rated as a locked fight with no exit, and lethality is raised for the unresearched Camelot road. The honest card: in forms 1-3 there is no exit, a death is run-ending, and the only control is food, full HP before each form, trapping Koschei and a stable connection; a disconnect in forms 2-3 is likely fatal and no verified mitigation covers it, so the DISCONNECT_FATAL floor holds the score with prep. Under the informed policy no acceptance is required, but the Director should show the owner the corrected card. Safer alternative in the plan: DP08 option A (Pollnivneach to 90, S11)."
+      "verdict_reason": "Card CHANGED MATERIALLY since the owner's acceptance (ledger seq 125): the ring of life is removed (the cited wiki says it resets Koschei to form 1, so the quest could never be finished, and every retry repeats the run-ending forms 1-3), its escape credit is gone, escape is now rated as a locked fight with no exit, and lethality is raised for the unresearched Camelot road. The honest card: in forms 1-3 there is no exit, a death is run-ending, and the only control is food, full HP before each form, trapping Koschei and a stable connection; a disconnect in forms 2-3 is likely fatal and no verified mitigation covers it, so the DISCONNECT_FATAL floor holds the score with prep. Under the informed policy no acceptance is required, but the Director should show the owner the corrected card. Safer alternative in the plan: DP08 option A (Pollnivneach to 90, S11).",
+      "quest_difficulty": "Intermediate",
+      "quest_difficulty_fact": "F-5962",
+      "below_recommended": false,
+      "recommended_note": "Recommended combat 40 and Agility 48 (F-5963); owner combat 57, Agility 57 meets both."
     },
     {
       "step_id": "S13",
@@ -2488,7 +2517,11 @@
         ]
       },
       "verdict": "approve_with_conditions",
-      "verdict_reason": "High unmitigated (multi-combat always-hitting trolls on the normal path); Low with prep, but only on the secret path. Its only purpose here is the gate to S16/S17, which carry higher scores (shown on those steps)."
+      "verdict_reason": "High unmitigated (multi-combat always-hitting trolls on the normal path); Low with prep, but only on the secret path. Its only purpose here is the gate to S16/S17, which carry higher scores (shown on those steps).",
+      "quest_difficulty": "Novice",
+      "quest_difficulty_fact": "F-5964",
+      "below_recommended": false,
+      "recommended_note": "No recommended combat or stats listed (F-5965); nothing to be below."
     },
     {
       "step_id": "S16",
@@ -2702,7 +2735,11 @@
         ]
       },
       "verdict": "approve_with_conditions",
-      "verdict_reason": "Extreme unmitigated for 2,000 Agility XP: the generals' 38 max hits against 48 HP at Defence 1, several aggressive attackers and a likely-fatal disconnect. The prep card (safespots, Protect from Melee, eat at 38, leave on two attackers) is what brings it down to Moderate with prep. The old 'teleport out below 30 HP' rule was corrected to 'eat at 38', because one 38 kills at 38 or less. The owner accepted it under the previous capped policy (ledger seq 126); under the informed policy no acceptance is needed and the record stands. For the Agility goal alone it is optional (DP03 option A skips it)."
+      "verdict_reason": "Extreme unmitigated for 2,000 Agility XP: the generals' 38 max hits against 48 HP at Defence 1, several aggressive attackers and a likely-fatal disconnect. The prep card (safespots, Protect from Melee, eat at 38, leave on two attackers) is what brings it down to Moderate with prep. The old 'teleport out below 30 HP' rule was corrected to 'eat at 38', because one 38 kills at 38 or less. The owner accepted it under the previous capped policy (ledger seq 126); under the informed policy no acceptance is needed and the record stands. For the Agility goal alone it is optional (DP03 option A skips it).",
+      "quest_difficulty": "Intermediate",
+      "quest_difficulty_fact": "F-5966",
+      "below_recommended": false,
+      "recommended_note": "Recommended combat 50, Prayer 43, Thieving 30, Agility 47 (F-5967); owner 57, 46, 34, 57 meets all."
     },
     {
       "step_id": "S17",
@@ -2906,7 +2943,11 @@
         ]
       },
       "verdict": "approve_with_conditions",
-      "verdict_reason": "Approved with conditions under the informed policy; no veto basis applies (the fight is documented, a prep card is written from verified facts, no hard constraint is broken, and it is not dominated: 4,000 Strength XP and a quest). Corrected card: Protect from Melee for the run (his primary 38 melee), Protect from Missiles only at the safespot; eat at 38 during the run and at 34 at the safespot; 16-heal food minimum. Stated plainly: the run window CANNOT be closed with verified facts. Two ranged max hits with one eat leave 4 HP, and any through-prayer 38 after the first hit kills; there is no verified combo-eat. Whether the run is survived depends on hit RNG. Extreme unmitigated and still High with prep, the highest with-prep score of any plan step. RFIs: run length, arena teleport, escape crystal in the arena."
+      "verdict_reason": "Approved with conditions under the informed policy; no veto basis applies (the fight is documented, a prep card is written from verified facts, no hard constraint is broken, and it is not dominated: 4,000 Strength XP and a quest). Corrected card: Protect from Melee for the run (his primary 38 melee), Protect from Missiles only at the safespot; eat at 38 during the run and at 34 at the safespot; 16-heal food minimum. Stated plainly: the run window CANNOT be closed with verified facts. Two ranged max hits with one eat leave 4 HP, and any through-prayer 38 after the first hit kills; there is no verified combo-eat. Whether the run is survived depends on hit RNG. Extreme unmitigated and still High with prep, the highest with-prep score of any plan step. RFIs: run length, arena teleport, escape crystal in the arena.",
+      "quest_difficulty": "Intermediate",
+      "quest_difficulty_fact": "F-5968",
+      "below_recommended": false,
+      "recommended_note": "Recommended combat 50 (F-5969); owner combat 57 meets it."
     },
     {
       "step_id": "S18",
@@ -3026,7 +3067,11 @@
         ]
       },
       "verdict": "approve_with_conditions",
-      "verdict_reason": "Low: unknown max hits on the dungeon route, rated conservatively. DP04 option B only; poor Agility value."
+      "verdict_reason": "Low: unknown max hits on the dungeon route, rated conservatively. DP04 option B only; poor Agility value.",
+      "quest_difficulty": "Novice",
+      "quest_difficulty_fact": "F-5970",
+      "below_recommended": false,
+      "recommended_note": "Recommended combat 10 (F-5971); owner combat 57 meets it."
     },
     {
       "step_id": "S19",
@@ -3158,7 +3203,11 @@
         ]
       },
       "verdict": "approve_with_conditions",
-      "verdict_reason": "Low: unknown knight max hits, rated conservatively. DP04 option B only. The lamps' Defence option is a build trap and must be shown as 'never'."
+      "verdict_reason": "Low: unknown knight max hits, rated conservatively. DP04 option B only. The lamps' Defence option is a build trap and must be shown as 'never'.",
+      "quest_difficulty": "Intermediate",
+      "quest_difficulty_fact": "F-5972",
+      "below_recommended": false,
+      "recommended_note": "Recommended combat 15 (F-5973); owner combat 57 meets it."
     },
     {
       "step_id": "S20",
@@ -3277,7 +3326,11 @@
         ]
       },
       "verdict": "approve_with_conditions",
-      "verdict_reason": "Low: max hit 3 with a portal exit; the risk is the no-food rule. DP04 option B only."
+      "verdict_reason": "Low: max hit 3 with a portal exit; the risk is the no-food rule. DP04 option B only.",
+      "quest_difficulty": "Novice",
+      "quest_difficulty_fact": "F-5974",
+      "below_recommended": false,
+      "recommended_note": "Recommended combat 10 and Strength 5 (F-5975); owner combat 57, Strength 39 meets both."
     },
     {
       "step_id": "S21",
@@ -3399,7 +3452,11 @@
         ]
       },
       "verdict": "approve_with_conditions",
-      "verdict_reason": "Low for the quest itself (scripted fights, small max hit). Reaching Thieving 34 is a separate activity that this register has not rated; it needs its own rating before it is suggested."
+      "verdict_reason": "Low for the quest itself (scripted fights, small max hit). Reaching Thieving 34 is a separate activity that this register has not rated; it needs its own rating before it is suggested.",
+      "quest_difficulty": "Intermediate",
+      "quest_difficulty_fact": "F-5976",
+      "below_recommended": false,
+      "recommended_note": "Recommended combat 40 (F-5977); owner combat 57 meets it."
     },
     {
       "step_id": "S23",
@@ -4464,6 +4521,14 @@
       "[run 040] Scope: minimal RT-16 edit only. Plan and calc changed (seq 165/167) after the 035 run; only the S12 step was checked against them. Other steps were not re-read against the new plan/calc in this run.",
       "[run 040] Process deviation, disclosed: read-only python3 -c one-liners and cd-chained commands were used to inspect redteam.json, risk.json, facts.json, plan.json and the validator/schema, and a python script in the session scratchpad rewrote the provenance block of risk.json; both are outside the Sentry allowlist. No file other than risk.json (and the scratchpad script) was written.",
       "[run 040] RFI (3) on whether a carried crystal can reset the Koschei fight stays open; the bank-it rule makes the answer irrelevant to the card."
-    ]
+    ],
+    "quest_tier_revision": {
+      "date": "2026-11-22",
+      "agent": "risk-officer",
+      "charter_sha256": "7cf277720b6e79bede7891d2b9588d2ad4d3af8d03227abebfebc3c94a798677",
+      "change": "Added quest_difficulty, below_recommended, recommended_note to 14 quest steps (facts F-5950..F-5977); profile_basis current_stats_note. Factor ratings, prep cards, mitigations, warnings unchanged.",
+      "backup": "scratchpad risk.bak",
+      "sealed": false
+    }
   }
 }
