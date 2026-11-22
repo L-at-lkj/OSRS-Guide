@@ -1,5 +1,5 @@
 {
-  "calc_sha256": "36391dcc75e537051ab5c6a4d69510cb54854d08ce05066a8a028c5cac817c76",
+  "calc_sha256": "b8d7b9c7b5e6951c027355e1bd9552abb472173c7db64a545b0da22e9b7a9909",
   "findings": [
     {
       "finding_id": "Q-01",
@@ -73,7 +73,7 @@
     {
       "finding_id": "Q-08",
       "severity": "info",
-      "issue": "Carried forward: start XP 212,733 is from hiscores that refresh on logout (totals may be slightly overstated, conservative). jobs/agility-1-99-20261119/calc-draft.json is an unsealed file with the same sha256 as calc.json (36391dcc75e5); it was not used.",
+      "issue": "Carried forward: start XP 212,733 is from hiscores that refresh on logout (totals may be slightly overstated, conservative). calc-draft.json is an unsealed file; ledger verify WARNs about it; it was not used.",
       "refs": [
         "brief.json profile.skill_xp",
         "ledger verify WARN"
@@ -92,19 +92,76 @@
       "finding_id": "Q-10",
       "severity": "info",
       "owner": "director (tooling)",
-      "issue": "plan_numeric_sha256 covers only step numeric keys, route step lists, target and start_xp. calc.json also copies prose from the plan (levels[].method = step method/title). A future prose-only plan edit to a method/title would leave those labels stale in calc.json without changing the numeric hash or failing validate. Today they match: an in-process re-run of tools/xp.py simulate_route on plan v3 reproduces calc.json routes exactly, labels included.",
+      "issue": "plan_numeric_sha256 covers only step numeric keys, route step lists, target and start_xp. calc.json also copies prose from the plan (levels[].method = step method/title). A future prose-only plan edit to a method/title would leave those labels stale in calc.json without changing the numeric hash or failing validate. Today they match: an in-process re-run of tools/xp.py simulate_route on plan v5 reproduces calc.json routes exactly, labels included.",
       "recommendation": "Writer should take step titles/methods from plan.json, not from calc.json levels rows; or re-emit calc after any method/title edit.",
       "refs": [
         "tools/xp.py plan_numeric_sha256 / NUMERIC_KEYS",
         "calc.json routes.*.levels[].method"
       ]
+    },
+    {
+      "finding_id": "Q-11",
+      "severity": "major",
+      "must_disclose": true,
+      "owner": "writer/editor",
+      "issue": "Profit is valued at the Amylase crystal MID price 548 (snapshot 2026-11-22T03:39Z, high 608, low 487). Mid is not a price anyone gets: selling instantly at the low (487) gives 16.00M (safest) / 15.68M (balanced) instead of 18.01M / 17.65M (-11.1%); a patient sell at the high (608) gives 19.98M / 19.58M (+10.9%). gp/h is 78.9k / 79.2k at mid, about 70.2k at 487 and 87.5k at 608. xp.py uses mid for every item by design (_price).",
+      "recommendation": "The guide must say every profit figure is 'at mid price (548 gp per crystal), snapshot date 2026-11-22' and show the 487-608 band (about 16.0-20.0M safest, 15.7-19.6M balanced). Do not present a single GP total as achievable.",
+      "refs": [
+        "prices.json Amylase crystal",
+        "calc.json routes.*.profit"
+      ]
+    },
+    {
+      "finding_id": "Q-12",
+      "severity": "minor",
+      "must_disclose": true,
+      "owner": "writer/editor",
+      "issue": "Market depth is ample. Selling needs 97-160 crystals/h (about 9.7-16 marks/h x 10), against 24h volume 98,140 (about 4,089/h): 2.4%-3.9% of hourly volume. Whole route is about 32,859 (safest) / 32,200 (balanced) crystals, roughly one third of one day's volume spread over 223-228 h, and well under the 11,000 per 4 h buy limit when sold in daily batches. Not thin (threshold 500). Volume is a single 24h figure; no fact gives the longer-term trend.",
+      "recommendation": "State that depth is not a constraint for one player, but that the price is a one-day snapshot and amylase is tied to stamina-potion demand; recheck before relying on it.",
+      "refs": [
+        "prices.json volume_24h 98140",
+        "calc.json routes.*.profit.income_gp"
+      ]
+    },
+    {
+      "finding_id": "Q-13",
+      "severity": "major",
+      "must_disclose": true,
+      "owner": "writer/editor (strategist to confirm)",
+      "issue": "Income assumes every mark of grace is converted to amylase and sold, but the plan also says marks buy Graceful (S09 note; 260 marks, F-1121; assumption says Graceful is not modelled). Marks spent on Graceful are not sold: 260 marks = 26 packs = 2,600 crystals = about 1.42M gp at mid (about 8% of the 18.0M) that would not be earned. calc.json does not deduct it.",
+      "recommendation": "Label the profit as 'if all marks are sold' and either subtract about 1.42M gp when the player buys Graceful or state it as an opportunity cost.",
+      "refs": [
+        "F-1121",
+        "F-4025",
+        "S09",
+        "plan.json assumptions"
+      ]
+    },
+    {
+      "finding_id": "Q-14",
+      "severity": "info",
+      "owner": "writer/editor",
+      "issue": "Profit is not net of the Grand Exchange tax or any selling fee: no fact in facts.json gives a Hardcore Worlds GE tax, and prices.json does not either, so none was applied. If a tax exists, real proceeds are lower. Profit also counts training hours only (Q-01), and mark rates are the LOW end of each fact's range and the base rate without diaries (conservative); Q-03 means S09 may run longer and yield slightly more marks.",
+      "recommendation": "Say 'before any GE tax' unless a verified fact is added.",
+      "refs": [
+        "prices.json",
+        "F-4020",
+        "F-4021",
+        "F-4022",
+        "F-4023"
+      ]
+    },
+    {
+      "finding_id": "Q-15",
+      "severity": "info",
+      "issue": "Profit is income only: cost_gp is 0 on every step (no supplies; rooftops need no stamina potions, F-4033), unpriced is empty on all routes. The other 5 priced items in prices.json (monkfish, summer pie, stamina, tablets) are not used by any step."
     }
   ],
   "sanity_checks": [
     {
       "check": "1. calc.plan_numeric_sha256 equals tools/xp.py numeric hash of sealed plan.json",
       "result": "pass",
-      "detail": "914ed7ab1569057c7607fe322773cb17abe0d18673ed63c1155d977778a7ff45 in calc.json and recomputed by xp.plan_numeric_sha256 on sealed plan v3 (f343604e839c); ledger verify OK (plan sealed seq 165, calc seq 167)."
+      "detail": "c7baf1e68e3a81dc5ceb5f571e8ff8dff342607e6e2cc65ed16ad1259b03e699 in calc.json and from xp.plan_numeric_sha256 on plan v5 (bbbbe6e9e60a); ledger verify OK (only WARN: unsealed calc-draft.json)."
     },
     {
       "check": "2. No route errors; every level covered",
@@ -117,14 +174,14 @@
       "detail": "End XP 13,034,633 / 13,034,971 vs 13,034,431 (tools/xp.py xp 99): overshoot 202 / 540, below one Ardougne lap (889)."
     },
     {
-      "check": "Routes and totals identical to previous review (calc 660fe306d6f2)",
+      "check": "XP numbers unchanged from previous review (calc 36391dcc75e5)",
       "result": "pass",
-      "detail": "Independent re-walk (own XP table, scratchpad recheck3.py) of plan v3: every step's start/end XP, actions and hours matches calc.json; and an in-process simulate_route re-run equals calc.json routes exactly. Totals safest 228.2 h (228.196) / 14,738 actions, balanced 222.86 h (222.862) / 15,222; step values S08 98 / 2.096 h and 49 / 1.046 h, S11 71.479 h, S13 4,308 / 67.193 h, S14 8,648 actions: identical to the figures recorded in the previous review. Confirms the strategist's 'numbers byte-identical' claim at the level of outputs (the v2 plan file is no longer on disk to diff)."
+      "detail": "Per-step actions, hours and XP in calc.json b8d7b9c7b5e6 equal the figures recorded in the previous review: safest 228.2 h / 14,738 actions, balanced 222.86 h / 15,222; S08 98 and 49 actions, S11 71.479 h, S13 4,308 actions / 67.193 h, S14 8,648 actions; XP end 13,034,633 / 13,034,971 vs 13,034,431 (xp.py xp 99). Not re-walked with an independent XP table this run (dispatch: XP unchanged); equality is by comparison with recorded figures."
     },
     {
       "check": "4. Plausibility: XP/h inside fact ranges; hours per step",
       "result": "pass",
-      "detail": "Rates unchanged: S08 27,200 (F-1010), S09 40,000 (F-1017), S10/S11 47,000 (F-1028), S13 50,000 (F-1035), S14 66,000 (F-1041); facts.json hash unchanged (70fcb7eed3ab). Train steps 1.046-116.483 h. Caveat downside in Q-03."
+      "detail": "Rates unchanged: S08 27,200 (F-1010), S09 40,000 (F-1017), S10/S11 47,000 (F-1028), S13 50,000 (F-1035), S14 66,000 (F-1041); facts.json now 81096ceb8f4e. Train steps 1.046-116.483 h. Caveat downside in Q-03."
     },
     {
       "check": "5. Quest XP placement and lamps",
@@ -150,22 +207,47 @@
       "check": "7. Plan numbers match facts",
       "result": "pass",
       "detail": "python3 tools/validate.py agility-1-99-20261119 plan: 0 fail, 10 warn (unused option steps)."
+    },
+    {
+      "check": "8. prices_sha256 binding",
+      "result": "pass",
+      "detail": "calc.json prices_sha256 a3a7643f5c1c015c8f275bc7b9a9e11f1b53417496efe1660ef8d83e896254e5 equals sha256sum of prices.json. Snapshot: osrs-hc, tier T2, retrieved 2026-11-22T03:39:34+00:00; Amylase crystal id 12640 high 608 low 487 mid 548 (mid = (608+487)/2 rounded up), volume_24h 98,140, thin_market false."
+    },
+    {
+      "check": "9. Profit hand recompute (marks/h x hours x 100 / 10 x 548)",
+      "result": "pass",
+      "detail": "All 10 priced step-instances recomputed with a script reading plan and facts, and 3 by hand: safest S08 9.7 x 2.096 = 20.33 marks -> 203.3 crystals x 548 = 111,415 (calc 111,415); safest S11 13 x 71.479 = 929.2 marks -> 9,292 crystals x 548 = 5,092,164 (calc 5,092,164); safest S14 16 x 116.483 = 1,863.7 marks -> 18,637 crystals x 548 = 10,213,229 (calc 10,213,229). Balanced S13 13 x 67.193 -> 4,786,829 and S09/S10/S14 also exact; difference 0 on every step."
+    },
+    {
+      "check": "10. Route profit totals",
+      "result": "pass",
+      "detail": "Safest 111,415 + 698,464 + 1,891,564 + 5,092,164 + 10,213,229 = 18,006,836 = calc income_gp = net_gp (cost 0); 18,006,836 / 228.2 h = 78,909 gp/h. Balanced 55,601 + 698,645 + 1,891,778 + 4,786,829 + 10,212,791 = 17,645,644; / 222.86 h = 79,177 gp/h. Matches calc.json profit. Balanced is 361,192 gp lower than safest (not a like-for-like comparison, Q-02)."
+    },
+    {
+      "check": "11. Every income qty equals its fact (low end of range)",
+      "result": "pass",
+      "detail": "S08 9.7 = F-1012 low 9.7; S09 11 = F-4020 low of '11-13.8'; S10/S11/S13: 13 = F-4021 low '13-14', balanced S13 uses F-4022 low 13 of '13-15.5'; S14 16 = F-4023 low of '16-18.1'. Conversion 100 = F-5901 (100 crystals per pack); divide_by 10 = F-4027 (10 marks per pack at Grace). validate plan: 0 fail. No value above a range low."
+    },
+    {
+      "check": "12. Price plausibility (depth, spread)",
+      "result": "pass (with disclosures)",
+      "detail": "See Q-11 (mid vs 487/608 band), Q-12 (depth), Q-13 (Graceful marks), Q-14 (no GE tax fact)."
     }
   ],
   "decision": "pass",
   "provenance": {
     "agent": "quant",
-    "started_at": "2026-11-21T03:21:40Z",
-    "finished_at": "2026-11-21T03:23:30Z",
-    "dispatch_ref": "dispatch/037-quant.md",
+    "started_at": "2026-11-22T04:00:00Z",
+    "finished_at": "2026-11-22T04:10:00Z",
+    "dispatch_ref": "dispatch/048-quant.md",
     "inputs": [
       {
         "path": ".claude/agents/quant.md",
         "sha256": "07e8b23ca6e1876f477824dc874acfa627047a778a129e7dba6bc11346358210"
       },
       {
-        "path": "dispatch/037-quant.md",
-        "sha256": "ea50a70a740be125d2866ae8516e765f3d90dbbb349ebcbe63c2fadab44ffb55"
+        "path": "dispatch/048-quant.md",
+        "sha256": "79c588fa00b098e5b7940790843ef64e24e2569d7d53e6327290c2fd403ca58b"
       },
       {
         "path": "brief.json",
@@ -173,19 +255,19 @@
       },
       {
         "path": "facts.json",
-        "sha256": "70fcb7eed3ab243ba3a64501f766da075bc69de64e8cdbc9fe39ed53f456fa12"
+        "sha256": "81096ceb8f4ecb2b8eb72d9ef82ddacebae6cbe1f553791883184fee4f2098ec"
       },
       {
         "path": "plan.json",
-        "sha256": "f343604e839c966d5699f2669a4cd6e2d7ef6456e16647f22fdfbcde7f5d5780"
+        "sha256": "bbbbe6e9e60a09ad7d25a790fa4dedf91e0ffb5946fbc04f7f29eb1ebf0b75ee"
       },
       {
         "path": "calc.json",
-        "sha256": "36391dcc75e537051ab5c6a4d69510cb54854d08ce05066a8a028c5cac817c76"
+        "sha256": "b8d7b9c7b5e6951c027355e1bd9552abb472173c7db64a545b0da22e9b7a9909"
       },
       {
-        "path": "calc-review.json",
-        "sha256": "a91c69279fb2c5bdbefb01d6f91349e9f07c9ac2e4b1017d163f682f0b750b99"
+        "path": "prices.json",
+        "sha256": "a3a7643f5c1c015c8f275bc7b9a9e11f1b53417496efe1660ef8d83e896254e5"
       },
       {
         "path": "schemas/calc-review.schema.json",
@@ -193,78 +275,68 @@
       },
       {
         "path": "tools/xp.py",
-        "sha256": "c54c4837d331ef2c4396115d82a56a6a93d4010b175c392d2120d8fb2647aceb"
+        "sha256": "a64be3ecf6f471568ecd4d231118c74fc704cbfc28e59ff6b6c0fffdd8493590"
       }
     ],
     "actions": [
       {
         "kind": "verify",
         "detail": "python3 tools/ledger.py verify agility-1-99-20261119",
-        "outcome": "OK: chain and seals intact (WARN: unsealed calc-draft.json, not used); seq 168 shows Director unsealed calc-review.json for this re-sign"
+        "outcome": "OK; WARN unsealed calc-draft.json (not used)"
       },
       {
         "kind": "read",
-        "detail": "Read charter (check 1 now plan_numeric_sha256), dispatch 037, previous calc-review.json, schema, tools/xp.py (plan_numeric_sha256, NUMERIC_KEYS, simulate_route), tools/validate.py g_calc, plan.json routed steps, calc.json"
+        "detail": "Charter, dispatch 048, previous calc-review.json, calc.json, plan.json income_per_hour steps, prices.json, facts F-1005/F-1012/F-4020-4023/F-5901/F-4027, tools/xp.py step_profit/_price"
       },
       {
         "kind": "compute",
-        "detail": "xp.plan_numeric_sha256(plan.json v3)",
-        "outcome": "914ed7ab1569... equals calc.json plan_numeric_sha256"
+        "detail": "xp.plan_numeric_sha256(plan v5) and sha256 of prices.json compared with calc.json",
+        "outcome": "both equal"
       },
       {
         "kind": "compute",
-        "detail": "Scratchpad recheck3.py: independent walk of both routes with own XP table (quest XP incl. lamps, ceil actions, hours, Defence) compared step by step with calc.json; plus in-process xp.simulate_route re-run compared for equality (no file written)",
-        "outcome": "No mismatches; re-run equals calc.json routes; totals identical to previous review"
-      },
-      {
-        "kind": "compute",
-        "detail": "python3 tools/xp.py xp 99, 17, 51; level 2812.4",
-        "outcome": "13,034,431; 3,115; 111,945; 16"
+        "detail": "Script: per-step income = fact-low marks/h x hours x 100/10 x 548, compared with calc.json; route sums, gp/h, crystal counts, 487/608 sensitivity",
+        "outcome": "0 difference on all steps; totals match"
       },
       {
         "kind": "verify",
-        "detail": "python3 tools/validate.py agility-1-99-20261119 plan",
-        "outcome": "0 fail, 10 warn"
-      },
-      {
-        "kind": "verify",
-        "detail": "python3 tools/validate.py agility-1-99-20261119 calc (before and after writing)",
-        "outcome": "before: 1 fail (review pointed at old calc); after: see report"
+        "detail": "python3 tools/validate.py agility-1-99-20261119 plan; python3 tools/xp.py xp 99",
+        "outcome": "0 fail, 10 warn; 13,034,431"
       },
       {
         "kind": "write",
-        "detail": "Rewrote calc-review.json for calc.json 36391dcc75e5",
+        "detail": "Rewrote calc-review.json for calc.json b8d7b9c7b5e6",
         "target": "jobs/agility-1-99-20261119/calc-review.json"
       }
     ],
     "decisions": [
       {
         "decision": "decision = pass",
-        "reason": "plan_numeric_sha256 matches the sealed plan v3; every number reproduces independently and is identical to the previous review; Defence 1 / 16 under cap 50. Q-01/Q-02 remain must-disclose.",
+        "reason": "Binding hashes match, profit reproduces exactly from facts, XP unchanged; the mid-price, Graceful and tax caveats are disclosures, not errors in the calculation.",
         "alternatives_considered": [
-          "fail pending quest durations: rejected, unchanged situation already carried as disclosures"
+          "fail until the Graceful marks are deducted: rejected, it is a labelling issue (Q-13) that does not make the calc wrong"
         ]
       },
       {
-        "decision": "Verified 'numbers byte-identical' by recomputation rather than accepting the strategist's/dispatch's claim",
-        "reason": "Minimal-trust rule; the v2 plan file is not on disk, so equality was established via outputs against previous-review figures.",
+        "decision": "Q-11 and Q-13 marked must_disclose",
+        "reason": "A bare GP total at mid would mislead: realisable value spans about 16.0-20.0M and about 1.4M may go to Graceful.",
         "alternatives_considered": [
-          "accept claim on hash match alone"
+          "minor severity: rejected"
         ]
       },
       {
-        "decision": "Added Q-10 (info) on prose labels outside the numeric hash",
-        "reason": "New binding format means calc.json method labels can go stale silently; not a current defect.",
+        "decision": "Did not re-walk XP with an independent table",
+        "reason": "Dispatch says XP unchanged; compared with the recorded previous figures and the hash binding instead.",
         "alternatives_considered": [
-          "omit: rejected, the format change is exactly what this review is about"
+          "full re-walk"
         ]
       }
     ],
     "limitations": [
-      "No web access by design; checks against facts.json, plan.json, brief.json and tools/xp.py only.",
+      "No web access; prices are the sealed snapshot of one moment (T2), volume is one 24h figure.",
       "Quest durations are not in the facts (Q-01/Q-02).",
-      "Plan v2 (1fd8d37ca65e) and calc 660fe306d6f2 are no longer on disk; 'unchanged' rests on recomputation versus figures recorded in the previous review.",
-      "Charter sha256 changed since the previous review (1122e57d0d7b -> 07e8b23ca6e1), consistent with the dispatch's note that check 1 changed; followed the current file.",
+      "No fact for a Hardcore Worlds GE tax; none applied or assumed (Q-14).",
+      "XP numbers not independently re-walked this run.",
       "Timestamps approximate."
     ]
   }
