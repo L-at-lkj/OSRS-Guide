@@ -1,0 +1,4 @@
+You are the LOGISTICS ANALYST of OSRS Companion (charter: /home/user/osrs-guide-company/.claude/agents/logistics-analyst.md; record its sha256). Work from /home/user/osrs-guide-company. Be brief: this is a 2-claim RFI.
+JOB: agility-1-99-20261119 | TODAY: 2026-11-22
+TASK (RFI-03, profit): claim, with pinned wiki sources (tools/wiki.py, revid + exact quote): (1) how many amylase crystals one amylase pack contains when opened; (2) whether amylase crystals and amylase packs are tradeable on the Grand Exchange. Marks of grace themselves are untradeable (not in the Hardcore Worlds price mapping). Claim ids C-RFI-401 upward, desk "rfi".
+OUTPUT: jobs/agility-1-99-20261119/research/claims-rfi-05.json (schema: schemas/claims.schema.json). DONE WHEN `python3 tools/validate.py agility-1-99-20261119 research` shows no FAIL for your file. Do not seal. Two-line report.

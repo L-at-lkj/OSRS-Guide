@@ -1,0 +1,81 @@
+{
+  "source": "https://prices.runescape.wiki/api/v2/osrs-hc/latest (+/mapping, /volumes)",
+  "economy": "Hardcore Worlds (osrs-hc)",
+  "retrieved": "2026-11-22T03:39:34+00:00",
+  "tier": "T2",
+  "thin_volume_threshold": 500,
+  "items": {
+    "Amylase crystal": {
+      "id": 12640,
+      "high": 608,
+      "high_time": 1795316190,
+      "low": 487,
+      "low_time": 1795316198,
+      "mid": 548,
+      "volume_24h": 98140,
+      "thin_market": false,
+      "limit": 11000,
+      "tradeable_on_ge": true
+    },
+    "Monkfish": {
+      "id": 7946,
+      "high": 320,
+      "high_time": 1795315500,
+      "low": 509,
+      "low_time": 1795287810,
+      "mid": 414,
+      "volume_24h": 3007,
+      "thin_market": false,
+      "limit": 13000,
+      "tradeable_on_ge": true
+    },
+    "Summer pie": {
+      "id": 7218,
+      "high": 5554,
+      "high_time": 1795318243,
+      "low": 5553,
+      "low_time": 1795316133,
+      "mid": 5554,
+      "volume_24h": 1987,
+      "thin_market": false,
+      "limit": 10000,
+      "tradeable_on_ge": true
+    },
+    "Stamina potion(4)": {
+      "id": 12625,
+      "high": 6900,
+      "high_time": 1795318725,
+      "low": 6751,
+      "low_time": 1795318543,
+      "mid": 6826,
+      "volume_24h": 23093,
+      "thin_market": false,
+      "limit": 2000,
+      "tradeable_on_ge": true
+    },
+    "Camelot teleport (tablet)": {
+      "id": 8010,
+      "high": 844,
+      "high_time": 1795318647,
+      "low": 796,
+      "low_time": 1795318464,
+      "mid": 820,
+      "volume_24h": 4519,
+      "thin_market": false,
+      "limit": 15000,
+      "tradeable_on_ge": true
+    },
+    "Ardougne teleport (tablet)": {
+      "id": 8011,
+      "high": 1088,
+      "high_time": 1795318738,
+      "low": 1088,
+      "low_time": 1795318497,
+      "mid": 1088,
+      "volume_24h": 2360,
+      "thin_market": false,
+      "limit": 10000,
+      "tradeable_on_ge": true
+    }
+  }
+}
