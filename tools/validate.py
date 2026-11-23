@@ -149,13 +149,30 @@ def all_claims(job, r):
     return claims
 
 
+def skipped_desks(job) -> set[str]:
+    """Research files the Director skipped on the record (docs/10 rules 3-4):
+    a ledger `decision` whose note starts 'SKIP_DESK <research/file.json>: <reason>'."""
+    p = _d(job) / "ledger.jsonl"
+    out = set()
+    for line in (p.read_text().splitlines() if p.exists() else []):
+        e = json.loads(line)
+        m = re.match(r"SKIP_DESK (research/[\w.-]+\.json): .{10,}", e.get("note", ""))
+        if e.get("event") == "decision" and e.get("author") == "director" and m:
+            out.add(m.group(1))
+    return out
+
+
 def g_research(job, r):
+    skip = skipped_desks(job)
     expected = {"research/updates.json": ("updates", "patch-sentinel"),
                 "research/claims-methods.json": ("claims", "methods-analyst"),
                 "research/claims-quests.json": ("claims", "quest-archivist"),
                 "research/claims-threats.json": ("claims", "threat-analyst"),
                 "research/claims-logistics.json": ("claims", "logistics-analyst")}
     for rel, (schema, agent) in expected.items():
+        if rel in skip and not (_d(job) / rel).exists():
+            r.warn(f"{rel} skipped on the record (ledger SKIP_DESK decision)")
+            continue
         data = _load(job, rel, r, schema)
         if data is None:
             continue
