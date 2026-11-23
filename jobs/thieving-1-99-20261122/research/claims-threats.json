@@ -1,0 +1,4623 @@
+{
+  "desk": "threats",
+  "as_of": "2026-11-23",
+  "claims": [
+    {
+      "claim_id": "C-THR-001",
+      "subject": "Pickpocketing (all NPCs)",
+      "attribute": "failure_stun_duration",
+      "value": {
+        "no_movement_ticks": 9,
+        "no_pickpocket_ticks": 8,
+        "seconds": 5.4
+      },
+      "unit": "ticks",
+      "statement": "A failed pickpocket stuns the player: they cannot move for 9 ticks (5.4 s) and cannot pickpocket again for 8 ticks (4.8 s); the NPC also damages them.",
+      "scope": {
+        "slug": "threats:pickpocket-stun-duration"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403913",
+          "revid": 15403913,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "Being stunned prevents the player from moving for nine ticks (5.4 seconds), and from further pickpocketing for eight ticks (4.8s).",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403913",
+          "revid": 15403913,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "Failing a pickpocket will make the NPC damage the player and [[Stun (status)|stun]] them for several seconds.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-002",
+      "subject": "Pickpocketing: Man / Woman / Citizen",
+      "attribute": "failure_damage",
+      "value": 1,
+      "unit": "hitpoints per failure",
+      "statement": "Each failed pickpocket on a Man / Woman / Citizen (Thieving 1) deals 1 damage to the player, in addition to the stun.",
+      "scope": {
+        "slug": "threats:stun-damage-man-woman",
+        "thieving_level": 1
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403913",
+          "revid": 15403913,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|{{plinkt|Man|pic=Thief Man}}/[[Woman]]/[[Citizen (Civitas illa Fortis)|Citizen]]\n| 1 || 8 || 85 || 1",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Damage is per failure; how often you fail depends on Thieving level, diary and gear (methods desk). The table's columns are: level, XP, 100% success level, stun damage."
+    },
+    {
+      "claim_id": "C-THR-003",
+      "subject": "Pickpocketing: Farmer",
+      "attribute": "failure_damage",
+      "value": 1,
+      "unit": "hitpoints per failure",
+      "statement": "Each failed pickpocket on a Farmer (Thieving 10) deals 1 damage to the player, in addition to the stun.",
+      "scope": {
+        "slug": "threats:stun-damage-farmer",
+        "thieving_level": 10
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403913",
+          "revid": 15403913,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|{{plinkt|Farmer|pic=Thief Farmer}}\n|10 || 14.5 || 90 || 1",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Damage is per failure; how often you fail depends on Thieving level, diary and gear (methods desk). The table's columns are: level, XP, 100% success level, stun damage."
+    },
+    {
+      "claim_id": "C-THR-004",
+      "subject": "Pickpocketing: H.A.M. Member",
+      "attribute": "failure_damage",
+      "value": "1-3",
+      "unit": "hitpoints per failure",
+      "statement": "Each failed pickpocket on a H.A.M. Member (Thieving 15) deals 1-3 damage to the player, in addition to the stun.",
+      "scope": {
+        "slug": "threats:stun-damage-ham-member",
+        "thieving_level": 15
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403913",
+          "revid": 15403913,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|{{plinkt|H.A.M. Member|pic=Thief Ham (Woman)}}\n|15 || 22.2 || 91 || 1-3",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Damage is per failure; how often you fail depends on Thieving level, diary and gear (methods desk). The table's columns are: level, XP, 100% success level, stun damage."
+    },
+    {
+      "claim_id": "C-THR-005",
+      "subject": "Pickpocketing: Warrior / Al Kharid warrior",
+      "attribute": "failure_damage",
+      "value": 2,
+      "unit": "hitpoints per failure",
+      "statement": "Each failed pickpocket on a Warrior / Al Kharid warrior (Thieving 25) deals 2 damage to the player, in addition to the stun.",
+      "scope": {
+        "slug": "threats:stun-damage-warrior",
+        "thieving_level": 25
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403913",
+          "revid": 15403913,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|{{plinkt|Warrior (Thieving)|pic=Thief Warrior|txt=Warrior}}/[[Al Kharid warrior]]\n|25 || 26 || 93 || 2",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Damage is per failure; how often you fail depends on Thieving level, diary and gear (methods desk). The table's columns are: level, XP, 100% success level, stun damage."
+    },
+    {
+      "claim_id": "C-THR-006",
+      "subject": "Pickpocketing: Villager (Pollnivneach)",
+      "attribute": "failure_damage",
+      "value": 2,
+      "unit": "hitpoints per failure",
+      "statement": "Each failed pickpocket on a Villager (Pollnivneach) (Thieving 30) deals 2 damage to the player, in addition to the stun.",
+      "scope": {
+        "slug": "threats:stun-damage-villager",
+        "thieving_level": 30
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403913",
+          "revid": 15403913,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|{{plinkt|Villager|pic=Thief Villager}}\n|30 || 8 || ''Unknown'' || 2",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Damage is per failure; how often you fail depends on Thieving level, diary and gear (methods desk). The table's columns are: level, XP, 100% success level, stun damage."
+    },
+    {
+      "claim_id": "C-THR-007",
+      "subject": "Pickpocketing: Rogue (Wilderness)",
+      "attribute": "failure_damage",
+      "value": 2,
+      "unit": "hitpoints per failure",
+      "statement": "Each failed pickpocket on a Rogue (Wilderness) (Thieving 32) deals 2 damage to the player, in addition to the stun.",
+      "scope": {
+        "slug": "threats:stun-damage-rogue",
+        "thieving_level": 32
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403913",
+          "revid": 15403913,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|{{plinkt|Rogue|pic=Thief Rogue}}\n|32 || 36.5 || 94 || 2",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Damage is per failure; how often you fail depends on Thieving level, diary and gear (methods desk). The table's columns are: level, XP, 100% success level, stun damage."
+    },
+    {
+      "claim_id": "C-THR-008",
+      "subject": "Pickpocketing: Cave goblin (Dorgesh-Kaan)",
+      "attribute": "failure_damage",
+      "value": 1,
+      "unit": "hitpoints per failure",
+      "statement": "Each failed pickpocket on a Cave goblin (Dorgesh-Kaan) (Thieving 36) deals 1 damage to the player, in addition to the stun.",
+      "scope": {
+        "slug": "threats:stun-damage-cave-goblin",
+        "thieving_level": 36
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403913",
+          "revid": 15403913,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|{{plinkt|Cave goblin (Dorgesh-Kaan)|pic=Thief Cave goblin|txt=Cave goblin}}\n|36 || 40 || ''Unknown'' || 1",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Damage is per failure; how often you fail depends on Thieving level, diary and gear (methods desk). The table's columns are: level, XP, 100% success level, stun damage."
+    },
+    {
+      "claim_id": "C-THR-009",
+      "subject": "Pickpocketing: Master Farmer",
+      "attribute": "failure_damage",
+      "value": 3,
+      "unit": "hitpoints per failure",
+      "statement": "Each failed pickpocket on a Master Farmer (Thieving 38) deals 3 damage to the player, in addition to the stun.",
+      "scope": {
+        "slug": "threats:stun-damage-master-farmer",
+        "thieving_level": 38
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403913",
+          "revid": 15403913,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|{{plinkt|Master Farmer|pic=Thief Master farmer}}\n|38 || 43 || 94 || 3",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Damage is per failure; how often you fail depends on Thieving level, diary and gear (methods desk). The table's columns are: level, XP, 100% success level, stun damage."
+    },
+    {
+      "claim_id": "C-THR-010",
+      "subject": "Pickpocketing: Guard",
+      "attribute": "failure_damage",
+      "value": 2,
+      "unit": "hitpoints per failure",
+      "statement": "Each failed pickpocket on a Guard (Thieving 40) deals 2 damage to the player, in addition to the stun.",
+      "scope": {
+        "slug": "threats:stun-damage-guard",
+        "thieving_level": 40
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403913",
+          "revid": 15403913,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|{{plinkt|Guard|pic=Thief Guard}}\n|40 || 46.8 || 95 || 2",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Damage is per failure; how often you fail depends on Thieving level, diary and gear (methods desk). The table's columns are: level, XP, 100% success level, stun damage."
+    },
+    {
+      "claim_id": "C-THR-011",
+      "subject": "Pickpocketing: Fremennik Citizen",
+      "attribute": "failure_damage",
+      "value": 2,
+      "unit": "hitpoints per failure",
+      "statement": "Each failed pickpocket on a Fremennik Citizen (Thieving 45) deals 2 damage to the player, in addition to the stun.",
+      "scope": {
+        "slug": "threats:stun-damage-fremennik-citizen",
+        "thieving_level": 45
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403913",
+          "revid": 15403913,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|{{plinkt|Fremennik Citizen|pic=Thief Fremennik}}\n|45 || 65 || ''Unknown'' || 2",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Damage is per failure; how often you fail depends on Thieving level, diary and gear (methods desk). The table's columns are: level, XP, 100% success level, stun damage."
+    },
+    {
+      "claim_id": "C-THR-012",
+      "subject": "Pickpocketing: Bearded Pollnivnian Bandit",
+      "attribute": "failure_damage",
+      "value": 5,
+      "unit": "hitpoints per failure",
+      "statement": "Each failed pickpocket on a Bearded Pollnivnian Bandit (Thieving 45) deals 5 damage to the player, in addition to the stun.",
+      "scope": {
+        "slug": "threats:stun-damage-bearded-bandit",
+        "thieving_level": 45
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403913",
+          "revid": 15403913,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|{{plinkt|Bearded Pollnivnian Bandit|pic=Thief Pollnivnian bandit}}\n|45 || 65 || ''Unknown'' || 5",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Damage is per failure; how often you fail depends on Thieving level, diary and gear (methods desk). The table's columns are: level, XP, 100% success level, stun damage."
+    },
+    {
+      "claim_id": "C-THR-013",
+      "subject": "Pickpocketing: Wealthy citizen (Civitas illa Fortis)",
+      "attribute": "failure_damage",
+      "value": 3,
+      "unit": "hitpoints per failure",
+      "statement": "Each failed pickpocket on a Wealthy citizen (Civitas illa Fortis) (Thieving 50) deals 3 damage to the player, in addition to the stun.",
+      "scope": {
+        "slug": "threats:stun-damage-wealthy-citizen",
+        "thieving_level": 50
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403913",
+          "revid": 15403913,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|{{plinkt|Wealthy citizen|pic=Thief Wealthy citizen|txt=Wealthy citizen}}\n|50 || 96 || {{NA}} || 3",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Damage is per failure; how often you fail depends on Thieving level, diary and gear (methods desk). The table's columns are: level, XP, 100% success level, stun damage."
+    },
+    {
+      "claim_id": "C-THR-014",
+      "subject": "Pickpocketing: Desert Bandit (Bandit Camp)",
+      "attribute": "failure_damage",
+      "value": 3,
+      "unit": "hitpoints per failure",
+      "statement": "Each failed pickpocket on a Desert Bandit (Bandit Camp) (Thieving 53) deals 3 damage to the player, in addition to the stun.",
+      "scope": {
+        "slug": "threats:stun-damage-desert-bandit",
+        "thieving_level": 53
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403913",
+          "revid": 15403913,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|{{plinkt|Bandit (Bandit Camp)|pic=Thief Desert bandit|txt=Desert Bandit}}\n|53 || 79.4 || 95 || 3",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Damage is per failure; how often you fail depends on Thieving level, diary and gear (methods desk). The table's columns are: level, XP, 100% success level, stun damage."
+    },
+    {
+      "claim_id": "C-THR-015",
+      "subject": "Pickpocketing: Knight of Ardougne / Knight of Varlamore",
+      "attribute": "failure_damage",
+      "value": 3,
+      "unit": "hitpoints per failure",
+      "statement": "Each failed pickpocket on a Knight of Ardougne / Knight of Varlamore (Thieving 55) deals 3 damage to the player, in addition to the stun.",
+      "scope": {
+        "slug": "threats:stun-damage-knight",
+        "thieving_level": 55
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403913",
+          "revid": 15403913,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|{{plinkt|Knight of Ardougne|pic=Thief Knight}}/[[Knight of Varlamore]]\n|55 || 84.3 || 95 || 3",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Damage is per failure; how often you fail depends on Thieving level, diary and gear (methods desk). The table's columns are: level, XP, 100% success level, stun damage."
+    },
+    {
+      "claim_id": "C-THR-016",
+      "subject": "Pickpocketing: Pollnivnian Bandit",
+      "attribute": "failure_damage",
+      "value": 5,
+      "unit": "hitpoints per failure",
+      "statement": "Each failed pickpocket on a Pollnivnian Bandit (Thieving 55) deals 5 damage to the player, in addition to the stun.",
+      "scope": {
+        "slug": "threats:stun-damage-pollnivnian-bandit",
+        "thieving_level": 55
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403913",
+          "revid": 15403913,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|{{plinkt|Bandit (Pollnivneach)|pic=Thief Pollnivnian bandit|txt=Pollnivnian Bandit}}\n|55 || 84.3 || ''Unknown'' || 5",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Damage is per failure; how often you fail depends on Thieving level, diary and gear (methods desk). The table's columns are: level, XP, 100% success level, stun damage."
+    },
+    {
+      "claim_id": "C-THR-017",
+      "subject": "Pickpocketing: Pirate",
+      "attribute": "failure_damage",
+      "value": 3,
+      "unit": "hitpoints per failure",
+      "statement": "Each failed pickpocket on a Pirate (Thieving 60) deals 3 damage to the player, in addition to the stun.",
+      "scope": {
+        "slug": "threats:stun-damage-pirate",
+        "thieving_level": 60
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403913",
+          "revid": 15403913,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|{{plinkt|Pirate (Thieving)|pic=Thief Pirate|txt=Pirate}}\n|60 || 72 || {{NA}} || 3",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Damage is per failure; how often you fail depends on Thieving level, diary and gear (methods desk). The table's columns are: level, XP, 100% success level, stun damage."
+    },
+    {
+      "claim_id": "C-THR-018",
+      "subject": "Pickpocketing: Yanille Watchman",
+      "attribute": "failure_damage",
+      "value": 3,
+      "unit": "hitpoints per failure",
+      "statement": "Each failed pickpocket on a Yanille Watchman (Thieving 65) deals 3 damage to the player, in addition to the stun.",
+      "scope": {
+        "slug": "threats:stun-damage-yanille-watchman",
+        "thieving_level": 65
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403913",
+          "revid": 15403913,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|{{plinkt|Watchman (Yanille)|pic=Thief Watchman|txt=Yanille Watchman}}\n|65 || 137.5 || {{NA}} || 3",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Damage is per failure; how often you fail depends on Thieving level, diary and gear (methods desk). The table's columns are: level, XP, 100% success level, stun damage."
+    },
+    {
+      "claim_id": "C-THR-019",
+      "subject": "Pickpocketing: Menaphite Thug",
+      "attribute": "failure_damage",
+      "value": 5,
+      "unit": "hitpoints per failure",
+      "statement": "Each failed pickpocket on a Menaphite Thug (Thieving 65) deals 5 damage to the player, in addition to the stun.",
+      "scope": {
+        "slug": "threats:stun-damage-menaphite-thug",
+        "thieving_level": 65
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403913",
+          "revid": 15403913,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|{{plinkt|Menaphite Thug|pic=Thief Menaphite thug}}\n|65 || 137.5 || {{NA}} || 5",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Damage is per failure; how often you fail depends on Thieving level, diary and gear (methods desk). The table's columns are: level, XP, 100% success level, stun damage."
+    },
+    {
+      "claim_id": "C-THR-020",
+      "subject": "Pickpocketing: Paladin",
+      "attribute": "failure_damage",
+      "value": 3,
+      "unit": "hitpoints per failure",
+      "statement": "Each failed pickpocket on a Paladin (Thieving 70) deals 3 damage to the player, in addition to the stun.",
+      "scope": {
+        "slug": "threats:stun-damage-paladin",
+        "thieving_level": 70
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403913",
+          "revid": 15403913,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|{{plinkt|Paladin|pic=Thief Paladin}}\n|70 || 131.8 || {{NA}} || 3",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Damage is per failure; how often you fail depends on Thieving level, diary and gear (methods desk). The table's columns are: level, XP, 100% success level, stun damage."
+    },
+    {
+      "claim_id": "C-THR-021",
+      "subject": "Pickpocketing: Gnome",
+      "attribute": "failure_damage",
+      "value": 1,
+      "unit": "hitpoints per failure",
+      "statement": "Each failed pickpocket on a Gnome (Thieving 75) deals 1 damage to the player, in addition to the stun.",
+      "scope": {
+        "slug": "threats:stun-damage-gnome",
+        "thieving_level": 75
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403913",
+          "revid": 15403913,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|{{plinkt|Gnome|pic=Thief Gnome}}\n|75 || 133.3 || {{NA}} || 1",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Damage is per failure; how often you fail depends on Thieving level, diary and gear (methods desk). The table's columns are: level, XP, 100% success level, stun damage."
+    },
+    {
+      "claim_id": "C-THR-022",
+      "subject": "Pickpocketing: Hero",
+      "attribute": "failure_damage",
+      "value": 3,
+      "unit": "hitpoints per failure",
+      "statement": "Each failed pickpocket on a Hero (Thieving 80) deals 3 damage to the player, in addition to the stun.",
+      "scope": {
+        "slug": "threats:stun-damage-hero",
+        "thieving_level": 80
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403913",
+          "revid": 15403913,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|{{plinkt|Hero|pic=Thief Hero}}\n|80 || 163.3 || {{NA}} || 3",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Damage is per failure; how often you fail depends on Thieving level, diary and gear (methods desk). The table's columns are: level, XP, 100% success level, stun damage."
+    },
+    {
+      "claim_id": "C-THR-023",
+      "subject": "Pickpocketing: Vyre (Darkmeyer)",
+      "attribute": "failure_damage",
+      "value": 5,
+      "unit": "hitpoints per failure",
+      "statement": "Each failed pickpocket on a Vyre (Darkmeyer) (Thieving 82) deals 5 damage to the player, in addition to the stun.",
+      "scope": {
+        "slug": "threats:stun-damage-vyre",
+        "thieving_level": 82
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403913",
+          "revid": 15403913,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|{{plinkt|Vyre (Thieving)|pic=Vyre icon|txt=Vyre}}\n|82 || 306.9 || {{NA}} || 5",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Damage is per failure; how often you fail depends on Thieving level, diary and gear (methods desk). The table's columns are: level, XP, 100% success level, stun damage."
+    },
+    {
+      "claim_id": "C-THR-024",
+      "subject": "Pickpocketing: Elf (Lletya / Prifddinas)",
+      "attribute": "failure_damage",
+      "value": 5,
+      "unit": "hitpoints per failure",
+      "statement": "Each failed pickpocket on a Elf (Lletya / Prifddinas) (Thieving 85) deals 5 damage to the player, in addition to the stun.",
+      "scope": {
+        "slug": "threats:stun-damage-elf",
+        "thieving_level": 85
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403913",
+          "revid": 15403913,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|{{plinkt|Elf (Thieving)|pic=Thief Elf|txt=Elf}}\n|85 || 353.3 || {{NA}} || 5",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Damage is per failure; how often you fail depends on Thieving level, diary and gear (methods desk). The table's columns are: level, XP, 100% success level, stun damage."
+    },
+    {
+      "claim_id": "C-THR-025",
+      "subject": "Pickpocketing: TzHaar-Hur",
+      "attribute": "failure_damage",
+      "value": 4,
+      "unit": "hitpoints per failure",
+      "statement": "Each failed pickpocket on a TzHaar-Hur (Thieving 90) deals 4 damage to the player, in addition to the stun.",
+      "scope": {
+        "slug": "threats:stun-damage-tzhaar-hur",
+        "thieving_level": 90
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403913",
+          "revid": 15403913,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|{{plinkt|TzHaar-Hur|pic=Thief TzHaar-Hur}}\n|90 || 103.4 || {{NA}} || 4",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Damage is per failure; how often you fail depends on Thieving level, diary and gear (methods desk). The table's columns are: level, XP, 100% success level, stun damage."
+    },
+    {
+      "claim_id": "C-THR-026",
+      "subject": "Pickpocketing: Vyre",
+      "attribute": "failure_damage",
+      "value": 5,
+      "unit": "hitpoints per failure",
+      "statement": "Vyres deal a flat 5 damage on each failed pickpocket (the wiki suggests Redemption activated at 6+ HP as an alternative to food).",
+      "scope": {
+        "slug": "threats:stun-damage-vyre-flat"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Thieving training",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15400774",
+          "revid": 15400774,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "As the vyres inflict a flat 5 health points worth of damage, the prayer should be activated by at least 6 health points.",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Vyre",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15339731",
+          "revid": 15339731,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "|damage = 5",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-027",
+      "subject": "Pickpocketing: Elf",
+      "attribute": "failure_damage",
+      "value": 5,
+      "unit": "hitpoints per failure",
+      "statement": "The elf pickpocket infobox gives 5 stun damage per failure; elves are pickpocketable in Lletya (after starting Mourning's End Part I) and Prifddinas (after Song of the Elves).",
+      "scope": {
+        "slug": "threats:stun-damage-elf-page"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Elf (Thieving)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15360673",
+          "revid": 15360673,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "|damage = 5",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Elf (Thieving)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15360673",
+          "revid": 15360673,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "A player can only access the [[Lletya]] elves after starting [[Mourning's End Part I]] and the [[Prifddinas]] elves after completing [[Song of the Elves]].",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-028",
+      "subject": "Pickpocketing: TzHaar-Hur",
+      "attribute": "failure_damage",
+      "value": {
+        "without_ice_gloves": "4 damage on every attempt, success or failure",
+        "with_ice_gloves": "4 damage on failure only"
+      },
+      "unit": null,
+      "statement": "Pickpocketing TzHaar-Hur deals 4 damage on every attempt unless ice gloves are worn; with ice gloves the 4 damage happens only on failure.",
+      "scope": {
+        "slug": "threats:tzhaar-hur-damage-every-attempt"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "TzHaar-Hur",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15394911",
+          "revid": 15394911,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "If [[ice gloves]] are not worn when pickpocketing the player will take 4 damage, regardless of success; if ice gloves are worn, the player will only take 4 damage upon failure.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-029",
+      "subject": "Pickpocketing: TzHaar-Hur (access)",
+      "attribute": "prerequisite_hazard",
+      "value": "Fire cape (TzHaar Fight Cave completion) required; Fight Cave death is run-ending on Hardcore Worlds",
+      "unit": null,
+      "statement": "TzHaar-Hur pickpocketing (Thieving 90) needs a fire cape to enter inner Mor Ul Rek. Earning one means completing the TzHaar Fight Cave, which Jagex lists as UNSAFE on Hardcore Worlds (only the Karamja Elite diary resurrection is safe).",
+      "scope": {
+        "slug": "threats:tzhaar-hur-fire-cape-prerequisite"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "TzHaar-Hur",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15394911",
+          "revid": 15394911,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "requiring 90 [[Thieving]] and a fire or fire max cape to access the inner area",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds - OUT TODAY",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+          "revid": 15397724,
+          "retrieved": "2026-11-23",
+          "published": "2026-11-04",
+          "quote": "* TzHaar Fight Cave\n* Within the Player-owned House ''(PoH)''",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "* [[TzHaar Fight Cave]] (the elite diary resurrection is safe)",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Carryover F-6002 already lists the Fight Cave as unsafe; the new fact is that this Thieving method depends on it."
+    },
+    {
+      "claim_id": "C-THR-030",
+      "subject": "TzHaar-Hur",
+      "attribute": "max_hit",
+      "value": {
+        "combat": 74,
+        "max_hit": 7,
+        "aggressive": false,
+        "style": "Crush"
+      },
+      "unit": null,
+      "statement": "TzHaar-Hur are level 74, max hit 7 (Crush) and not aggressive.",
+      "scope": {
+        "slug": "threats:tzhaar-hur-npc"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "TzHaar-Hur",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15394911",
+          "revid": 15394911,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "|combat = 74",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "TzHaar-Hur",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15394911",
+          "revid": 15394911,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "|max hit = 7",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "TzHaar-Hur",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15394911",
+          "revid": 15394911,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "|aggressive = No",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-031",
+      "subject": "Pickpocketing stun mitigation",
+      "attribute": "failure_damage_avoidance",
+      "value": {
+        "dodgy_necklace": 0.25,
+        "shadow_veil": 0.15,
+        "combined": 0.3625
+      },
+      "unit": null,
+      "statement": "A dodgy necklace gives a 25% chance to avoid both the stun and the damage on a failed pickpocket; Shadow Veil gives 15%; together 36.25% (multiplicative).",
+      "scope": {
+        "slug": "threats:dodgy-shadow-veil"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Stun (status)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15356952",
+          "revid": 15356952,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "Wearing a [[Dodgy necklace]] gives the player a 25% chance to avoid being stunned upon failure. This stacks multiplicatively with the [[Shadow Veil]] spell, where Shadow Veil will attempt to avoid the stun first for a total of 36.25% chance to avoid the stun.",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403913",
+          "revid": 15403913,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "*[[Dodgy necklace]] provides a 25% chance to avoid being stunned and taking damage when failing a pickpocket. Each necklace has 10 charges.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Shadow Veil needs Magic 47 and A Kingdom Divided (owner Magic 45)."
+    },
+    {
+      "claim_id": "C-THR-032",
+      "subject": "Logging out (all activities)",
+      "attribute": "disconnect_behaviour",
+      "value": {
+        "logout_blocked_after_hit_ticks": 16,
+        "seconds": 9.6
+      },
+      "unit": null,
+      "statement": "A player in combat cannot log out until 16 ticks (9.6 s) after they last received a hit.",
+      "scope": {
+        "slug": "threats:logout-combat-delay"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Logout button",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15034464",
+          "revid": 15034464,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "players in [[combat]] cannot log out until 16 game [[Game tick|ticks]], or 9.6 seconds, after they have last received a hit.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-033",
+      "subject": "Disconnecting (all activities)",
+      "attribute": "disconnect_behaviour",
+      "value": "character stays logged in up to 60 seconds after an unexpected disconnect during combat",
+      "unit": null,
+      "statement": "After an unexpected disconnection during combat, the character stays in the game for up to 60 seconds before being forcibly logged out, and can keep taking hits in that time.",
+      "scope": {
+        "slug": "threats:disconnect-60s-in-combat"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Logout button",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15034464",
+          "revid": 15034464,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "This works because of a 60 second timer before the game forcibly logs you out after an unexpected disconnection during combat. To use this effectively, you need to survive 60 seconds of combat while disconnected.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Relevant where a Thieving failure starts combat: stall guards, blackjack retaliation, Rogues' Castle rogues (multi-combat), Pyramid Plunder mummies and scarab swarms, Vyrewatch Sentinels. No source says whether a plain pickpocket stun (no NPC attack follows) counts as combat for this timer; see gaps."
+    },
+    {
+      "claim_id": "C-THR-034",
+      "subject": "Stalls (general)",
+      "attribute": "caught_consequence",
+      "value": "nearby guard attacks until it dies, you fail to pickpocket it, or you leave the area",
+      "unit": null,
+      "statement": "If a stall owner or guard sees you steal, a guard attacks you and keeps attacking until it dies, you unsuccessfully pickpocket it, or you leave the area.",
+      "scope": {
+        "slug": "threats:stall-guard-behaviour"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Stall",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15160715",
+          "revid": 15160715,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "Stealing from a stall may alert a nearby [[guard]] who will attack until they die, you unsuccessfully pickpocket them, or the area is left.",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403913",
+          "revid": 15403913,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "If you are, the stall owner will call over a guard who will begin to attack you.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-035",
+      "subject": "East Ardougne market stalls",
+      "attribute": "caught_consequence",
+      "value": {
+        "responders": [
+          "Guard (20)",
+          "Knight of Ardougne (46)",
+          "Paladin (62)",
+          "Hero (69)"
+        ],
+        "selection": "depends on the player's combat level and the nearest guard"
+      },
+      "unit": null,
+      "statement": "In the Ardougne market a caught thief is attacked by a guard, knight, paladin or hero, chosen by the player's combat level and which is nearest; the four types are levels 20, 46, 62 and 69.",
+      "scope": {
+        "slug": "threats:ardougne-market-guard-types"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Ardougne Market",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15342851",
+          "revid": 15342851,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "This may be a [[guard]], [[Knight of Ardougne|knight]], [[paladin]], or [[hero]], depending on the player's [[Combat level]] and which guard is nearest to the player.",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Ardougne Market",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15342851",
+          "revid": 15342851,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "*[[Hero]] (level 69)\n*[[Knight of Ardougne]] (level 46)\n*[[Paladin]] (level 62)\n*[[Guard]] (level 20)",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-036",
+      "subject": "Guard (Ardougne)",
+      "attribute": "max_hit",
+      "value": {
+        "combat": 20,
+        "max_hit": 3,
+        "aggressive": false
+      },
+      "unit": null,
+      "statement": "Ardougne guards are level 20 with max hit 3 and are not aggressive.",
+      "scope": {
+        "slug": "threats:ardougne-guard"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Guard",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15395768",
+          "revid": 15395768,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "|version1 = Ardougne 1",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Guard",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15395768",
+          "revid": 15395768,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "|combat = 20\n",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Guard",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15395768",
+          "revid": 15395768,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "|max hit = 3\n|aggressive = No",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "The Guard page has many versions; the level 20 / max hit 3 block follows the Ardougne version headers. Infobox field order checked in the cached wikitext."
+    },
+    {
+      "claim_id": "C-THR-037",
+      "subject": "Knight of Ardougne",
+      "attribute": "max_hit",
+      "value": {
+        "combat": 46,
+        "max_hit_melee": 6,
+        "max_hit_pickpocket_fail": 3,
+        "aggressive": false,
+        "hitpoints": 52
+      },
+      "unit": null,
+      "statement": "Knights of Ardougne are level 46, max hit 6 in combat (3 on a failed pickpocket), slash, not aggressive, 52 Hitpoints.",
+      "scope": {
+        "slug": "threats:knight-of-ardougne"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Knight of Ardougne",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15323390",
+          "revid": 15323390,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|max hit = 6 (regular hit), 3 (pickpocket failure)",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Knight of Ardougne",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15323390",
+          "revid": 15323390,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|combat = 46",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Knight of Ardougne",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15323390",
+          "revid": 15323390,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|aggressive = No",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-038",
+      "subject": "Paladin (Ardougne)",
+      "attribute": "max_hit",
+      "value": {
+        "combat": 62,
+        "max_hit": 8,
+        "aggressive": "only if caught at silver, spice or gem stall"
+      },
+      "unit": null,
+      "statement": "Paladins are level 62 with max hit 8 (slash); they become aggressive only if you are caught stealing from a silver, spice or gem stall.",
+      "scope": {
+        "slug": "threats:paladin"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Paladin",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15392082",
+          "revid": 15392082,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|max hit = 8",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Paladin",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15392082",
+          "revid": 15392082,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|aggressive = No, unless caught stealing from a silver, spice or gem stall",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Paladin",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15392082",
+          "revid": 15392082,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|combat = 62",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-039",
+      "subject": "Hero (Ardougne)",
+      "attribute": "max_hit",
+      "value": {
+        "combat": 69,
+        "max_hit": 9,
+        "aggressive": "only if caught at the gem stall",
+        "hitpoints": 82
+      },
+      "unit": null,
+      "statement": "Heroes are level 69 with max hit 9 (slash) and 82 Hitpoints; they become aggressive only if you are caught stealing from the gem stall.",
+      "scope": {
+        "slug": "threats:hero"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Hero",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15305857",
+          "revid": 15305857,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|max hit = 9",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Hero",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15305857",
+          "revid": 15305857,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|aggressive = No, unless caught stealing from the gem stall",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Hero",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15305857",
+          "revid": 15305857,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|combat = 69",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-040",
+      "subject": "Hosidius fruit stalls: guard dogs",
+      "attribute": "aggressive",
+      "value": {
+        "combat": 44,
+        "max_hit": 5,
+        "style": "Crush",
+        "trigger": "seeing the player steal"
+      },
+      "unit": null,
+      "statement": "The Hosidius market fruit stalls are guarded by level 44 guard dogs (max hit 5) that attack a player they see stealing; the two stalls in the building east of the market are unguarded.",
+      "scope": {
+        "slug": "threats:hosidius-guard-dogs"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Fruit Stall",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15333733",
+          "revid": 15333733,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "The fruit stalls found in the main square are guarded by level 44 [[guard dog]]s, who will attack the player should they see the player attempting to steal from the stall.",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Fruit Stall",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15333733",
+          "revid": 15333733,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "There are two more stalls found in a building to the east, just north of the two Magic Trees, which are not guarded at all",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Guard dog",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15354591",
+          "revid": 15354591,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|max hit = 5",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-041",
+      "subject": "Port Roberts stalls",
+      "attribute": "caught_consequence",
+      "value": "sent to jail (escape by bribe, picking the lock, or teleport); no damage stated",
+      "unit": null,
+      "statement": "In Port Roberts, stealing while a market guard checks the stall sends the player to jail; they escape by bribing the jail guard (500 coins), picking the lock, or teleporting. No damage is described. The method needs Sailing 50.",
+      "scope": {
+        "slug": "threats:port-roberts-jail"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Market Guard (Port Roberts)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15197565",
+          "revid": 15197565,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "If the player thieves from a stall at the same time the guard is checking the stall, they will be caught and sent to the jail, where they must either bribe the [[Jail Guard]], pick the lock on the door, or teleport out to escape.",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Thieving training",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15400774",
+          "revid": 15400774,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "With 50 [[Sailing]], players can steal from the stalls in [[Port Roberts]].",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Owner Sailing 30: not yet available."
+    },
+    {
+      "claim_id": "C-THR-042",
+      "subject": "H.A.M. Members (H.A.M. Hideout)",
+      "attribute": "caught_consequence",
+      "value": "after repeated failures may be beaten unconscious and jailed or thrown out",
+      "unit": null,
+      "statement": "Being caught pickpocketing H.A.M. members several times can get the player beaten unconscious and either jailed with Jimmy the Chisel or thrown out of the hideout.",
+      "scope": {
+        "slug": "threats:ham-jail"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "H.A.M. Member",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15267288",
+          "revid": 15267288,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "If you are caught pickpocketing multiple times there is a chance you may be beaten unconscious and are taken outside of the main area.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "No damage figure for the 'beaten unconscious' event is given; stun damage is 1-3."
+    },
+    {
+      "claim_id": "C-THR-043",
+      "subject": "Desert bandits (Bandit Camp)",
+      "attribute": "aggressive",
+      "value": {
+        "combat": [
+          57,
+          74
+        ],
+        "max_hit": [
+          6,
+          7
+        ],
+        "aggressive_when": "wearing a Saradomin or Zamorak item, or after talking to/attacking other bandits"
+      },
+      "unit": null,
+      "statement": "Bandit Camp bandits (levels 57 and 74, max hits 6 and 7) attack a player wearing any Saradomin or Zamorak item, and the whole camp turns aggressive if you attack or talk to other bandits.",
+      "scope": {
+        "slug": "threats:bandit-camp-bandits"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Bandit (Bandit Camp)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15336619",
+          "revid": 15336619,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "|aggressive = Only when wearing an item associated with Saradomin or Zamorak.",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Bandit (Bandit Camp)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15336619",
+          "revid": 15336619,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "|max hit1 = 6\n|max hit2 = 7",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Bandit (Bandit Camp)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15336619",
+          "revid": 15336619,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "In addition, if a player talks to or attacks other bandits, the bandits will exclaim",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Bandit Camp is in the Kharidian Desert: desert heat applies outside town boundaries (carryover F-6183)."
+    },
+    {
+      "claim_id": "C-THR-044",
+      "subject": "Blackjacking (Pollnivneach)",
+      "attribute": "failure_damage",
+      "value": "a failed knock-out can make the NPC attack; it can be interrupted before its second hit",
+      "unit": null,
+      "statement": "If a knock-out fails, the bandit or thug may attack; its attack can be interrupted before the second hit by a pickpocket attempt or a successful knock-out, or by climbing a nearby ladder.",
+      "scope": {
+        "slug": "threats:blackjack-retaliation"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Blackjack",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15291965",
+          "revid": 15291965,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "*If you fail to knock the NPC out, it may attack you. The attacking NPC '''can be interrupted before its second hit''' by doing either 'Pickpocket' (successfully or not!) or a successful 'Knock-Out'. Alternatively, you can briefly climb a nearby ladder if your HP is low, or if you fail to interrupt the NPC before his second hit.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Retaliating NPC max hits: Menaphite Thug 7, Pollnivneach bandits 7/9 (carryover F-6192). Accidental pickpocket of a conscious bandit/thug: stun damage 5 (claims above)."
+    },
+    {
+      "claim_id": "C-THR-045",
+      "subject": "Blackjacking",
+      "attribute": "failure_rate",
+      "value": {
+        "level_1": 0.31,
+        "level_99": 0.94,
+        "scaling": "linear in Thieving level"
+      },
+      "unit": null,
+      "statement": "Knock-out success is 31% at level 1 rising linearly to 94% at 99, regardless of blackjack type or NPC, so knock-out failures (and possible retaliation) are frequent at the 45-65 entry levels.",
+      "scope": {
+        "slug": "threats:blackjack-knockout-rate"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Blackjack",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15291965",
+          "revid": 15291965,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "The success rate at level 99 Thieving is 94%",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Blackjack",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15291965",
+          "revid": 15291965,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "increasing linearly from 31% at level 1 (disregarding the actual requirement).",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-046",
+      "subject": "Blackjacking Menaphite Thugs",
+      "attribute": "mitigation_limit",
+      "value": "dodgy necklace, gloves of silence and Shadow Veil have no effect when blackjacking thugs",
+      "unit": null,
+      "statement": "Gloves of silence, the dodgy necklace and Shadow Veil have no effect when blackjacking Menaphite Thugs.",
+      "scope": {
+        "slug": "threats:blackjack-no-dodgy-on-thugs"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Menaphite Thug",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15267417",
+          "revid": 15267417,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "*[[Gloves of silence]], [[dodgy necklace]], and the [[Arceuus spell]] [[Shadow Veil]] have no effect when blackjacking Menaphite Thugs.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-047",
+      "subject": "Blackjacking (Pollnivneach)",
+      "attribute": "retaliation_lock",
+      "value": "a bandit already in combat cannot be knocked out or pickpocketed",
+      "unit": null,
+      "statement": "Once a bandit is attacking, it cannot be knocked out or pickpocketed during combat; the wiki's escape is unequipping/switching the blackjack and attempting a knock-out to stop the attack.",
+      "scope": {
+        "slug": "threats:blackjack-combat-lock"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Thieving training",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15400774",
+          "revid": 15400774,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "If the bandit starts attacking the player, the bandit cannot be pickpocketed or knocked out while in combat.",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Bandit (Pollnivneach)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15388202",
+          "revid": 15388202,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "{{mes|You can't knock-out the bandit during combat.}}",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-048",
+      "subject": "The Feud: Tough Guy",
+      "attribute": "quest_fight_max_hit",
+      "value": {
+        "combat": 75,
+        "max_hit": 7,
+        "style": "Crush",
+        "aggressive": true,
+        "hitpoints": 75,
+        "safespot": "behind the table in the Menaphite tent"
+      },
+      "unit": null,
+      "statement": "The Feud requires killing the Tough Guy: level 75, max hit 7 (Crush), aggressive, 75 Hitpoints; he can be safespotted behind the table in the Menaphite tent.",
+      "scope": {
+        "slug": "threats:feud-tough-guy"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Tough Guy",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15380569",
+          "revid": 15380569,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "|combat = 75",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Tough Guy",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15380569",
+          "revid": 15380569,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "|max hit = 7",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Tough Guy",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15380569",
+          "revid": 15380569,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "|hitpoints = 75",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "The Feud",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15376145",
+          "revid": 15376145,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "You can [[safespot]] him behind the table inside the Menaphite Tent.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-049",
+      "subject": "The Feud: Bandit champion",
+      "attribute": "quest_fight_max_hit",
+      "value": {
+        "combat": 70,
+        "max_hit": 10,
+        "style": "Slash",
+        "aggressive": true,
+        "hitpoints": 50,
+        "safespot": "house directly east, behind table and chair"
+      },
+      "unit": null,
+      "statement": "The Feud requires killing the bandit champion: level 70, max hit 10 (Slash), aggressive, 50 Hitpoints; a safespot exists in the house directly east.",
+      "scope": {
+        "slug": "threats:feud-bandit-champion"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Bandit champion",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402304",
+          "revid": 15402304,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "|combat = 70",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Bandit champion",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402304",
+          "revid": 15402304,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "|max hit = 10",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Bandit champion",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402304",
+          "revid": 15402304,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "|hitpoints = 50",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "The Feud",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15376145",
+          "revid": 15376145,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "There is a safespot in the house directly east;",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-050",
+      "subject": "The Feud: desert snake (snake charm step)",
+      "attribute": "max_hit",
+      "value": {
+        "combat": 5,
+        "max_hit": 1,
+        "poisonous": false
+      },
+      "unit": null,
+      "statement": "A failed snake charm in The Feud makes the desert snake attack; desert snakes are level 5, max hit 1, not poisonous.",
+      "scope": {
+        "slug": "threats:feud-desert-snake"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "The Feud",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15376145",
+          "revid": 15376145,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "You may fail to charm the snake causing it to attack you, simply kill it and then try again on another snake.",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Snake (desert)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406487",
+          "revid": 15406487,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "|max hit = 1",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Snake (desert)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15406487",
+          "revid": 15406487,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "Unlike [[bush snakes]], desert snakes are not poisonous.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-051",
+      "subject": "The Feud (quest fights)",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "A death to the Tough Guy or bandit champion in The Feud is an official, run-ending death on Hardcore Worlds: the quest is not on Jagex's safe list.",
+      "scope": {
+        "slug": "threats:feud-hw-classification"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds - OUT TODAY",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+          "revid": 15397724,
+          "retrieved": "2026-11-23",
+          "published": "2026-11-04",
+          "quote": "That doesn't mean there aren't exceptions though as the following minigames are safe:\n* Castle Wars\n* Clan Wars\n* Soul Wars",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Carryover F-6001/F-6004/F-6163/F-6240 already verify the HCGIM ruleset and the seven-item T1 safe list; this claim only applies them to this activity."
+    },
+    {
+      "claim_id": "C-THR-052",
+      "subject": "Pyramid Plunder: entrance door",
+      "attribute": "failure_damage",
+      "value": "1-4",
+      "unit": "hitpoints",
+      "statement": "Failing to enter the Pyramid Plunder door stuns the player and deals 1-4 damage.",
+      "scope": {
+        "slug": "threats:pp-door-fail"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Pyramid Plunder",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15392928",
+          "revid": 15392928,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "On a failed attempt, the player will be stunned and take 1-4 damage.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-053",
+      "subject": "Pyramid Plunder: spear trap",
+      "attribute": "failure_damage",
+      "value": "1-4",
+      "unit": "hitpoints",
+      "statement": "Each room's spear trap deals 1-4 damage on a failed disarm attempt.",
+      "scope": {
+        "slug": "threats:pp-spear-trap"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Pyramid Plunder",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15392928",
+          "revid": 15392928,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "In each room, the player will first need to disarm a spear trap, which deals 1-4 damage on a failed attempt.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-054",
+      "subject": "Pyramid Plunder: urns (snakes)",
+      "attribute": "poison",
+      "value": {
+        "bite_damage": "1-4",
+        "poison_damage": "same as bite"
+      },
+      "unit": null,
+      "statement": "Searching an urn can release a snake that bites for 1-4 damage and poisons the player for the same amount.",
+      "scope": {
+        "slug": "threats:pp-urn-snake"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Pyramid Plunder",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15392928",
+          "revid": 15392928,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "Searching it might cause a snake inside the urn to bite the player for 1-4 damage and [[poison]] the player for the same amount.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-055",
+      "subject": "Pyramid Plunder: grand gold chest",
+      "attribute": "failure_damage",
+      "value": {
+        "trap_damage": "1-4",
+        "spawns": "level 98 scarab swarm"
+      },
+      "unit": null,
+      "statement": "Opening a golden chest can set off a trap (chance by Thieving level): 1-4 damage plus a level 98 scarab swarm (25 HP) that hits up to 1 every 0.6 s and can poison.",
+      "scope": {
+        "slug": "threats:pp-gold-chest-trap"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Pyramid Plunder",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15392928",
+          "revid": 15392928,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "However, based on the player's [[Thieving]] level, there is a chance to set off a trap and take 1-4 damage. This also causes a level 98 [[scarab swarm]] to appear, which has 25 [[Hitpoints]] and will rapidly deal up to one damage every 0.6 seconds. Its attacks can poison, and it will only try to attack the player who set off the trap.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-056",
+      "subject": "Scarab Swarm (Pyramid Plunder)",
+      "attribute": "max_hit",
+      "value": {
+        "combat": 98,
+        "max_hit": 1,
+        "attack_speed_ticks": 1,
+        "poison": 3,
+        "aggressive": "only to the player who spawned it"
+      },
+      "unit": null,
+      "statement": "Scarab swarms are level 98, max hit 1 every tick (Slash), poisonous (3), and aggressive only to the player who spawned them; Protect from Melee prevents their normal attacks but not the spawn hit.",
+      "scope": {
+        "slug": "threats:pp-scarab-swarm"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Scarab Swarm",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15376011",
+          "revid": 15376011,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|max hit = 1",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Scarab Swarm",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15376011",
+          "revid": 15376011,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|poisonous = Yes (3)",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Scarab Swarm",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15376011",
+          "revid": 15376011,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|attack speed = 1",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Scarab Swarm",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15376011",
+          "revid": 15376011,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "When spawning in Pyramid Plunder, the player will take an unavoidable instance of damage from failing the chest; subsequent normal attack damage from the scarab is preventable with Protect from Melee.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-057",
+      "subject": "Mummy (Pyramid Plunder)",
+      "attribute": "max_hit",
+      "value": {
+        "combat": 84,
+        "max_hit": 6,
+        "style": "Crush",
+        "hitpoints": 90,
+        "aggressive": "only to the player who opened the sarcophagus",
+        "poisonous": false
+      },
+      "unit": null,
+      "statement": "A sarcophagus can release a level 84 mummy (max hit 6, Crush, 90 HP, not poisonous) that attacks only the player who opened it; it is more frequent in later rooms.",
+      "scope": {
+        "slug": "threats:pp-mummy"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Mummy (Pyramid Plunder)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15372073",
+          "revid": 15372073,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|max hit = 6",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Mummy (Pyramid Plunder)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15372073",
+          "revid": 15372073,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|hitpoints = 90",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Pyramid Plunder",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15392928",
+          "revid": 15392928,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "The chance for this event is based on the room, occurring more frequently in later rooms. The mummy is only aggressive to the player who opened the sarcophagus, hitting up to 6 damage.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-058",
+      "subject": "Pyramid Plunder",
+      "attribute": "mitigation",
+      "value": "Protect from Melee (Prayer 43) fully negates mummy and scarab swarm attack damage",
+      "unit": null,
+      "statement": "With Prayer 43 for Protect from Melee, mummy and scarab swarm damage is fully negated (owner Prayer 46).",
+      "scope": {
+        "slug": "threats:pp-protect-melee"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Pyramid Plunder",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15392928",
+          "revid": 15392928,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "*With at least 43 [[Prayer]] for [[Protect from Melee]], damage from [[Mummy (Pyramid Plunder)|mummies]] and [[scarab swarm]]s will be fully negated.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Trap, urn and chest-spawn hits (1-4) and poison ticks are not stopped by the prayer."
+    },
+    {
+      "claim_id": "C-THR-059",
+      "subject": "Pyramid Plunder",
+      "attribute": "teleport_restriction",
+      "value": "none: exit door or any teleport works",
+      "unit": null,
+      "statement": "Players can leave Pyramid Plunder early by the exit door or any teleport.",
+      "scope": {
+        "slug": "threats:pp-exit-teleport"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Pyramid Plunder",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15392928",
+          "revid": 15392928,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "Players can leave the game earlier via an exit door or any teleport.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-060",
+      "subject": "Pyramid Plunder",
+      "attribute": "death_item_handling",
+      "value": "gravestone at the death tile inside the pyramid",
+      "unit": null,
+      "statement": "A player who dies in Pyramid Plunder gets a gravestone exactly where they died and must traverse the pyramid again to reach it.",
+      "scope": {
+        "slug": "threats:pp-death-gravestone"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Pyramid Plunder",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15392928",
+          "revid": 15392928,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "Players who die inside the Pyramid will have their gravestone located exactly where they died, and will be required to traverse the pyramid again to access it",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "On Hardcore Worlds the gravestone matters only after Transfer; the death itself ends the run (next claim)."
+    },
+    {
+      "claim_id": "C-THR-061",
+      "subject": "Pyramid Plunder",
+      "attribute": "traps_listed",
+      "value": [
+        "spear trap (1-4)",
+        "urn snakes (1-4 + poison)",
+        "gold chest trap (1-4 + scarab swarm)",
+        "sarcophagus mummy (max 6)",
+        "door failure (1-4)"
+      ],
+      "unit": null,
+      "statement": "The current Pyramid Plunder page lists these hazards: door failure, spear traps, urn snakes, gold-chest traps with scarab swarms, and sarcophagus mummies. It mentions no poison darts.",
+      "scope": {
+        "slug": "threats:pp-poison-darts-absent"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Pyramid Plunder",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15392928",
+          "revid": 15392928,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "In each room, the player will first need to disarm a spear trap",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Pyramid Plunder",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15392928",
+          "revid": 15392928,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "Occasionally, a level 84 [[Mummy (Pyramid Plunder)|mummy]] will arise from the sarcophagus.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Absence finding: the dispatch mentioned 'poison darts'; a full-text search of revision 15392928 found no 'dart'."
+    },
+    {
+      "claim_id": "C-THR-062",
+      "subject": "Pyramid Plunder (travel)",
+      "attribute": "access_requirement",
+      "value": "started Icthlarin's Little Helper; Thieving 21 unboostable",
+      "unit": null,
+      "statement": "Pyramid Plunder needs Thieving 21 (unboostable) and a started Icthlarin's Little Helper for Sophanem access.",
+      "scope": {
+        "slug": "threats:pp-access-ilh"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Pyramid Plunder",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15392928",
+          "revid": 15392928,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "*Players must have started [[Icthlarin's Little Helper]] for access to [[Sophanem]].",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "ILH's fights are in carryover F-6081-F-6083, F-6242, F-6243 (no-teleport flashbacks; Possessed Priest 91 max 6; apparitions max 6-9)."
+    },
+    {
+      "claim_id": "C-THR-063",
+      "subject": "Travel to Sophanem by magic carpet",
+      "attribute": "environmental_damage",
+      "value": "the Sophanem carpet arrival tile is where the most desert-heat hits are recorded (timer runs during the flight)",
+      "unit": null,
+      "statement": "Desert heat (1-10 damage per interval, not inside town boundaries) keeps ticking during the carpet ride, and the Sophanem carpet arrival tile is the single tile with the most recorded desert-heat hits.",
+      "scope": {
+        "slug": "threats:sophanem-carpet-heat"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Desert heat",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15292841",
+          "revid": 15292841,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "the Sophanem carpet arrival spot is the single tile on which the most instances of desert heat damage has been taken by players, due to the timer still decrementing as players fly, and then being triggered only upon arrival.",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Desert heat",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15292841",
+          "revid": 15292841,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "Players are not affected by desert heat while they are within the boundaries of towns or while a dialogue box is open.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Desert heat mechanics: carryover F-6183. Waterskins prevent the hit."
+    },
+    {
+      "claim_id": "C-THR-064",
+      "subject": "Pyramid Plunder",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "A death in Pyramid Plunder is an official, run-ending death on Hardcore Worlds: Pyramid Plunder is not on Jagex's safe list.",
+      "scope": {
+        "slug": "threats:pp-hw-classification"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds - OUT TODAY",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+          "revid": 15397724,
+          "retrieved": "2026-11-23",
+          "published": "2026-11-04",
+          "quote": "That doesn't mean there aren't exceptions though as the following minigames are safe:\n* Castle Wars\n* Clan Wars\n* Soul Wars",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Carryover F-6001/F-6004/F-6163/F-6240 already verify the HCGIM ruleset and the seven-item T1 safe list; this claim only applies them to this activity."
+    },
+    {
+      "claim_id": "C-THR-065",
+      "subject": "Rogues' Den maze",
+      "attribute": "failure_damage",
+      "value": 0,
+      "unit": null,
+      "statement": "Maze traps and obstacles never deal damage; they drain Thieving/Agility and eject you to the lobby. The wiki says death there is safe for everyone except Hardcore Group Ironmen.",
+      "scope": {
+        "slug": "threats:rogues-den-maze-no-damage"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Rogues' Den",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379507",
+          "revid": 15379507,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "No damage is taken from traps or obstacles under any circumstances, and death is safe for all players except for [[Group Ironman Mode#Hardcore Group Ironman|Hardcore Group Ironmen]].",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-066",
+      "subject": "Rogues' Den maze",
+      "attribute": "escape",
+      "value": "no items can be brought; Prayer set to 0; a mystic jewel teleports back to the lobby",
+      "unit": null,
+      "statement": "No items can be brought or worn in the maze (so no food or escape crystal), Prayer is set to zero, and the mystic jewel given on entry teleports the player back to the lobby at any time.",
+      "scope": {
+        "slug": "threats:rogues-den-maze-no-items"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Rogues' Den",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379507",
+          "revid": 15379507,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "and no items can be brought or worn inside.",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Rogues' Den",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15379507",
+          "revid": 15379507,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "Upon entering the maze, [[Prayer]] is reduced to zero, and [[Thieving]] and [[Agility]] are set to their normal levels. A [[mystic jewel]] is placed in the inventory, which allows players to teleport back to the lobby at any time.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-067",
+      "subject": "Rogues' Den (maze)",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "Jagex lists Rogues' Den as an activity where death counts on Hardcore Worlds; the wiki page specifies the maze.",
+      "scope": {
+        "slug": "threats:rogues-den-hw"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds - OUT TODAY",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+          "revid": 15397724,
+          "retrieved": "2026-11-23",
+          "published": "2026-11-04",
+          "quote": "* Random Events\n* Rogues' Den",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "* [[Rogues' Den]] (maze)",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Already carryover F-6002/F-6201; restated here because it is a candidate Thieving method. No damage source exists inside the maze per the claim above."
+    },
+    {
+      "claim_id": "C-THR-068",
+      "subject": "Rogues' Den lobby wall safes",
+      "attribute": "failure_damage",
+      "value": "2-6",
+      "unit": "hitpoints",
+      "statement": "Failing to crack a Rogues' Den lobby wall safe can trigger a trap dealing 2-6 damage; failed attempts repeat automatically every 4 ticks until success or a trap.",
+      "scope": {
+        "slug": "threats:rogues-den-wall-safes"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Wall safe (lobby)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15355454",
+          "revid": 15355454,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "Failure to crack a safe can trigger a trap, dealing between 2 and 6 damage.",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Wall safe (lobby)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15355454",
+          "revid": 15355454,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "the player will automatically make another attempt to crack the safe every 4 ticks (2.4 seconds) until they either crack the safe or trigger a trap.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-069",
+      "subject": "Rogues' Den lobby (wall safes)",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "A death at the lobby wall safes is an ordinary death; Rogues' Den is on Jagex's Hardcore Worlds unsafe list and nothing there is on the safe list.",
+      "scope": {
+        "slug": "threats:rogues-den-lobby-hw"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds - OUT TODAY",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+          "revid": 15397724,
+          "retrieved": "2026-11-23",
+          "published": "2026-11-04",
+          "quote": "* Random Events\n* Rogues' Den",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Carryover F-6001/F-6004/F-6163/F-6240 already verify the HCGIM ruleset and the seven-item T1 safe list; this claim only applies them to this activity."
+    },
+    {
+      "claim_id": "C-THR-070",
+      "subject": "Trapped chests (general)",
+      "attribute": "failure_damage",
+      "value": "opening without 'Search for traps' deals damage that scales with current health down to a minimum",
+      "unit": null,
+      "statement": "On trapped chests, choosing Open instead of 'Search for traps' damages the player; the damage scales with current health down to a minimum.",
+      "scope": {
+        "slug": "threats:chest-trap-general"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403913",
+          "revid": 15403913,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "If \"Search for traps\" is not selected when attempting to open a trapped chest, the player will attempt to open the chest and take damage; this damage scales off of your current health down to a minimum.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-071",
+      "subject": "Nature rune chest (Ardougne, Rellekka, Pirates' Hideout)",
+      "attribute": "failure_damage",
+      "value": {
+        "formula": "floor(current_hp * 12/100) + 3",
+        "at_52_hp": 9
+      },
+      "unit": "hitpoints",
+      "statement": "Opening a nature rune chest without searching for traps deals floor(current HP x 12/100) + 3; at 52 HP that is 9.",
+      "scope": {
+        "slug": "threats:chest-nature-rune-trap"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Chest (nature runes)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15236858",
+          "revid": 15236858,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "failure to do so results in the player taking <math>\\lfloor CurrentHitpoints \\times \\frac{12}{100} \\rfloor + 3</math> [[Hitpoints|damage]].",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "9 computed: floor(52 x 0.12) + 3 = 6 + 3. One of the three locations (Pirates' Hideout) is in level 54 Wilderness."
+    },
+    {
+      "claim_id": "C-THR-072",
+      "subject": "50 coin chest (Ardougne, Mourner Tunnels, Pirates' Hideout)",
+      "attribute": "failure_damage",
+      "value": "'substantial damage' (no number given)",
+      "unit": null,
+      "statement": "Opening a 50 coin chest without searching for traps deals 'substantial damage'; the page gives no number.",
+      "scope": {
+        "slug": "threats:chest-50-coin-trap"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Chest (50 coins)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15326268",
+          "revid": 15326268,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "attempting to open these chests without doing so results in the player taking substantial damage.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim_id": "C-THR-073",
+      "subject": "Blood rune chest (Chaos Druid Tower dungeon)",
+      "attribute": "failure_damage",
+      "value": {
+        "formula": "(9 x Hitpoints + 225) / 50",
+        "at_52_hp": 13,
+        "max_at_99": 22,
+        "lethal_at_or_below_hp": 6
+      },
+      "unit": null,
+      "statement": "Opening the Chaos Druid Tower chest without searching for traps deals (9 x HP + 225)/50 damage (13 at 52 HP, up to 22), and can kill a player with 6 or fewer Hitpoints. Looting it teleports the player to East Ardougne.",
+      "scope": {
+        "slug": "threats:chest-blood-rune-trap"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Chest (Chaos Druid Tower)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15354848",
+          "revid": 15354848,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "or else they will take up to 22 damage (boosting above 99 Hitpoints will further increase this damage).",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Chest (Chaos Druid Tower)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15354848",
+          "revid": 15354848,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "<math>Damage={(9*Hitpoints)+225 \\over 50}</math>",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Chest (Chaos Druid Tower)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15354848",
+          "revid": 15354848,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "The chest is capable of killing the player if they attempt to open it while having 6 or less hitpoints.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "13 computed: (9 x 52 + 225)/50 = 13.86, rounded down (the page's 'up to 22' at 99 HP implies rounding down: 22.32 -> 22)."
+    },
+    {
+      "claim_id": "C-THR-074",
+      "subject": "Ardougne Castle chest",
+      "attribute": "failure_damage",
+      "value": "'high damage' if opened without searching (no number); looting teleports to Witchaven",
+      "unit": null,
+      "statement": "Opening the Ardougne Castle chest (Thieving 72) without searching for traps deals 'high damage' (no number given); a successful loot sets off a second trap that teleports you to Witchaven.",
+      "scope": {
+        "slug": "threats:chest-ardougne-castle-trap"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Chest (Ardougne Castle)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15343566",
+          "revid": 15343566,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "The chest must first be searched for traps, upon succeeding the player will trigger a second trap and be teleported to [[Witchaven]]. If the player does not search for traps and instead clicks open they will be dealt high damage.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim_id": "C-THR-075",
+      "subject": "Rogues' Castle chest",
+      "attribute": "failure_damage",
+      "value": "16-43",
+      "unit": "hitpoints",
+      "statement": "Opening a Rogues' Castle chest instead of searching for traps hits for 16 to 43 damage (owner has 52 Hitpoints).",
+      "scope": {
+        "slug": "threats:chest-rogues-castle-trap"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Rogues' Castle",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15370756",
+          "revid": 15370756,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "the open option will cause the player to be hit for severe damage, anywhere from 16 to 43.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-076",
+      "subject": "Rogues' Castle",
+      "attribute": "wilderness_level",
+      "value": "52-56",
+      "unit": null,
+      "statement": "Rogues' Castle is in level 52-56 Wilderness.",
+      "scope": {
+        "slug": "threats:rogues-castle-wilderness-level"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Rogues' Castle",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15370756",
+          "revid": 15370756,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "|wilderness = 52-56",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-077",
+      "subject": "Rogues (level 135) at Rogues' Castle",
+      "attribute": "aggressive",
+      "value": {
+        "combat": 135,
+        "max_hit": 15,
+        "style": "Crush",
+        "trigger": "looting a chest"
+      },
+      "unit": null,
+      "statement": "Level 135 rogues (max hit 15, Crush) are non-aggressive until a chest is looted; then all of them attack. Protect from Melee blocks their damage completely.",
+      "scope": {
+        "slug": "threats:rogues-castle-rogues"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Rogue",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374723",
+          "revid": 15374723,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "|aggressive2 = No, unless caught stealing from the chests",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Rogue",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374723",
+          "revid": 15374723,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "|max hit2 = 15",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Chest (Rogues' Castle)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15359476",
+          "revid": 15359476,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "The rogues are moderately accurate and have a max hit of 15, but their damage can be completely blocked by [[Protect from Melee]].",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-078",
+      "subject": "Rogues' Castle chests",
+      "attribute": "multi_combat",
+      "value": true,
+      "unit": null,
+      "statement": "The Rogues' Castle chests are in a multi-combat zone in deep Wilderness.",
+      "scope": {
+        "slug": "threats:rogues-castle-multicombat"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Thieving training",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15400774",
+          "revid": 15400774,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "Because the chests are located in the deep Wilderness in a multi-combat zone, it is recommended to minimise the risk to [[player killing|player killers]].",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-079",
+      "subject": "Chaos Elemental (near Rogues' Castle)",
+      "attribute": "max_hit",
+      "value": {
+        "max_hit": 28,
+        "ignores_protection_prayers": true,
+        "aggressive": true
+      },
+      "unit": null,
+      "statement": "The aggressive Chaos Elemental roams to Rogues' Castle; its very accurate attack hits up to 28 and ignores protection prayers, and it can bind and unequip players.",
+      "scope": {
+        "slug": "threats:rogues-castle-chaos-elemental"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Chest (Rogues' Castle)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15359476",
+          "revid": 15359476,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "the [[Chaos Elemental]], which has a very accurate attack which ignores protection prayers and hits up to 28, may wander to the entrance of the Rogues' Castle.",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Rogues' Castle",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15370756",
+          "revid": 15370756,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "has the nearby Chaos Elemental, who can bind and unequip players, cutting off possible escape routes.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-080",
+      "subject": "Rogues' Castle chests",
+      "attribute": "pvp_exposure",
+      "value": "player killers 'extremely common', world-hopping into the courtyard",
+      "unit": null,
+      "statement": "The wiki calls player killers extremely common at Rogues' Castle; they world-hop looking for victims, often in the courtyard or the shed east of the chests.",
+      "scope": {
+        "slug": "threats:rogues-castle-pkers"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Chest (Rogues' Castle)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15359476",
+          "revid": 15359476,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "Player-killers are extremely common at the rogue's castle, and frequently [[world hop]] looking for victims, often in the courtyard itself or the shed just east of the chests.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Hardcore Worlds keeps Wilderness PvP (carryover F-6287)."
+    },
+    {
+      "claim_id": "C-THR-081",
+      "subject": "Rogues' Castle chests",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "The standard wiki tactic at Rogues' Castle is to die deliberately to the rogues or a self-damage item when a PKer appears. On Hardcore Worlds any death there, PvM or PvP, is an official death, so that tactic ends the run. The wiki also says a death almost always counts as PvP once a PKer has landed any hit, including a 0.",
+      "scope": {
+        "slug": "threats:rogues-castle-pvm-death-strategy"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Chest (Rogues' Castle)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15359476",
+          "revid": 15359476,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "Immediately on spotting a player-killer, the player should then use an [[Araxyte venom sac]], which deals 4 damage and will kill the player if they've kept their hitpoints below that.",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Chest (Rogues' Castle)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15359476",
+          "revid": 15359476,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "Note that if a player-killer manages to cast a spell, shoot an arrow, or attacks with melee, a self-inflicted or monster death will almost certainly count as a [[Pvp death|PvP death]] even if the spell, projectile, or weapon deals a zero hitsplat.",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds - OUT TODAY",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+          "revid": 15397724,
+          "retrieved": "2026-11-23",
+          "published": "2026-11-04",
+          "quote": "That doesn't mean there aren't exceptions though as the following minigames are safe:\n* Castle Wars\n* Clan Wars\n* Soul Wars",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "The HW consequence is an application of T1 rules (no Wilderness exception). The deliberate-death tactics in the Thieving training and chest pages must never be presented as a strategy on HW. Carryover F-6001/F-6004/F-6163/F-6240 already verify the HCGIM ruleset and the seven-item T1 safe list; this claim only applies them to this activity."
+    },
+    {
+      "claim_id": "C-THR-082",
+      "subject": "Rogues' Castle chests",
+      "attribute": "escape",
+      "value": "while unlocking a chest no other action (including self-damage or prayer switches) can be taken",
+      "unit": null,
+      "statement": "While the chest is being unlocked (several ticks), no other action can be started; prayer switches only happen after the loot, so reacting to a PKer is delayed.",
+      "scope": {
+        "slug": "threats:rogues-castle-chest-lock"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Chest (Rogues' Castle)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15359476",
+          "revid": 15359476,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "While the player is unlocking the chest, which takes at least a few ticks, no other action can be initiated including self-damage.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-083",
+      "subject": "Rogues' Castle chests",
+      "attribute": "access_requirement",
+      "value": "Medium Wilderness Diary needed for loot",
+      "unit": null,
+      "statement": "Rogues' Castle chests give loot only to players with the Medium Wilderness Diary (the XP is given regardless).",
+      "scope": {
+        "slug": "threats:rogues-castle-diary-loot"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Chest (Rogues' Castle)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15359476",
+          "revid": 15359476,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "Completion of the [[Medium Wilderness Diary]] allows loot to be obtained from the chests.",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Chest (Rogues' Castle)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15359476",
+          "revid": 15359476,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "Upon successfully unlocking a chest, the player is granted 701.7 Thieving [[experience]].",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "The XP-without-diary reading is from the two quoted lines; the page does not say it explicitly."
+    },
+    {
+      "claim_id": "C-THR-084",
+      "subject": "Travel to Rogues' Castle",
+      "attribute": "teleport_restriction",
+      "value": {
+        "routes": [
+          "Wilderness Obelisk to level 50",
+          "Annakarl Teleport (Demonic Ruins)",
+          "Fountain of Rune (Wilderness sword 3/4)",
+          "Edgeville/Ardougne lever then run through a web"
+        ],
+        "teleport_out": "most teleports fail above level 20 Wilderness; escape crystal only to 30"
+      },
+      "unit": null,
+      "statement": "Routes in are a Wilderness obelisk, Annakarl Teleport, the Wilderness sword's Fountain of Rune teleport, or the Edgeville/Ardougne lever plus running past a web (more Chaos Elemental risk). At level 52-56 most teleports do not work (limit level 20; escape crystal 30), so you must walk or obelisk out.",
+      "scope": {
+        "slug": "threats:rogues-castle-travel"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Chest (Rogues' Castle)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15359476",
+          "revid": 15359476,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "* Teleporting to Level-50 Wilderness using a [[Wilderness Obelisk]] is the fastest method to get there.",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Chest (Rogues' Castle)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15359476",
+          "revid": 15359476,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "this route requires passing through a [[Web]] and has a higher chance of encountering the Chaos Elemental.",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Rogues' Castle",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15370756",
+          "revid": 15370756,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "There is a [[Wilderness Obelisk]] nearby which can be used to escape the immediate vicinity, though it is not a surefire way to reach safety.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Teleport level limits: carryover F-6180 (escape crystal to level 30; most teleports to 20)."
+    },
+    {
+      "claim_id": "C-THR-085",
+      "subject": "Rogues' Castle chests (Thieving 84+)",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "Any death at Rogues' Castle (rogues, Chaos Elemental, chest trap, PKer) is an official, run-ending death on Hardcore Worlds.",
+      "scope": {
+        "slug": "threats:rogues-castle-hw"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds - OUT TODAY",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+          "revid": 15397724,
+          "retrieved": "2026-11-23",
+          "published": "2026-11-04",
+          "quote": "That doesn't mean there aren't exceptions though as the following minigames are safe:\n* Castle Wars\n* Clan Wars\n* Soul Wars",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Hardcore Worlds",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+          "revid": 15404671,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "As for [[PvP]] deaths, all of the usual rules within the [[Wilderness]] apply.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Carryover F-6001/F-6004/F-6163/F-6240 already verify the HCGIM ruleset and the seven-item T1 safe list; this claim only applies them to this activity. PvP: F-6287."
+    },
+    {
+      "claim_id": "C-THR-086",
+      "subject": "Pickpocketing rogues (Thieving 32)",
+      "attribute": "wilderness_level",
+      "value": "deep Wilderness only (south-west of the Mage Arena, or Rogues' Castle)",
+      "unit": null,
+      "statement": "Rogues are the only pickpocket target found exclusively in the Wilderness: deep Wilderness south-west of the Mage Arena or at Rogues' Castle (52-56).",
+      "scope": {
+        "slug": "threats:rogue-pickpocket-wilderness"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Rogue",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374723",
+          "revid": 15374723,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "It is the only pickpocketing target found exclusively in the [[Wilderness]].",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403913",
+          "revid": 15403913,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|Found deep in [[Wilderness]] south-west of [[Mage Arena]] or in far north-east wilderness at [[Rogues' Castle]].",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-087",
+      "subject": "Pirates' Hideout and Magic axe hut (chests/doors)",
+      "attribute": "wilderness_level",
+      "value": 54,
+      "unit": null,
+      "statement": "The Pirates' Hideout and Magic axe hut thieving doors (and their 10-coin, nature-rune and 50-coin chests) are in level 54 Wilderness.",
+      "scope": {
+        "slug": "threats:wilderness-thieving-doors"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403913",
+          "revid": 15403913,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|[[Door (Magic axe hut)|Magic Axe Hut Door]]||23||22.5||Yes||Level 54 [[Wilderness]]; north-east of the [[Ardougne lever]]",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403913",
+          "revid": 15403913,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "|[[Door (Pirates' Hideout)|Pirates' Hideout Door]]||39||35||Yes||Level 54 [[Wilderness]]; west of the [[Mage Arena]]",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-088",
+      "subject": "Aldarin Villas chests (Thieving 36)",
+      "attribute": "caught_consequence",
+      "value": "failure can teleport the player to a nearby well (about 1 in 5 failures at 36); no damage stated",
+      "unit": null,
+      "statement": "A failed Aldarin Villas chest can teleport the player to a nearby well (about 1 in 5 failures at level 36, 1 in 14 at 99). The page mentions no damage, trap or guard.",
+      "scope": {
+        "slug": "threats:aldarin-chest"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Chest (Aldarin Villas)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15353326",
+          "revid": 15353326,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "Failure to unlock the chest carries a chance of [[Teleportation|teleporting]] the player to a nearby well.",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Chest (Aldarin Villas)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15353326",
+          "revid": 15353326,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "ranging from roughly 1 in every 5 '''failures''' at level 36, to 1 in 14 failures at level 99.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "'No damage' is an absence finding on revision 15353326."
+    },
+    {
+      "claim_id": "C-THR-089",
+      "subject": "Dorgesh-Kaan rich chests (Thieving 78)",
+      "attribute": "failure_damage",
+      "value": "none documented",
+      "unit": null,
+      "statement": "The Dorgesh-Kaan rich chest page lists only a lockpick requirement, 650 XP and a 300 s respawn; it describes no trap or damage.",
+      "scope": {
+        "slug": "threats:dorgesh-kaan-rich-chest"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Chest (Dorgesh-Kaan Rich)",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15360773",
+          "revid": 15360773,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "[[Dorgesh-Kaan]] rich '''Chests''' require 78 [[Thieving]] and a [[lockpick]] to loot.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "low",
+      "notes": "Absence finding. Travel via the Lumbridge Swamp Caves: carryover F-6294 (wall beast max 18, cave crawler poison)."
+    },
+    {
+      "claim_id": "C-THR-090",
+      "subject": "Stone chests (Lizardman Temple, Thieving 64)",
+      "attribute": "caught_consequence",
+      "value": "1/8 chance per failure to be teleported out of the temple (works through teleblock)",
+      "unit": null,
+      "statement": "Failing a Lizardman Temple stone chest has a 1 in 8 chance to teleport the player out of the temple.",
+      "scope": {
+        "slug": "threats:stone-chest-teleport"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Stone chest",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15285691",
+          "revid": 15285691,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "to get teleported out of the Lizardman Temple.  The effects of Teleblock do not prevent this teleport from occurring.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-091",
+      "subject": "Lizardman Temple",
+      "attribute": "escape",
+      "value": "entrances are one-way; the only walking exit is the strange hole in the south-west",
+      "unit": null,
+      "statement": "The Lizardman Temple entrances are one-way; the only way out besides teleporting is the strange hole in the south-west corner. Lizardmen near the entrance can poison.",
+      "scope": {
+        "slug": "threats:lizardman-temple-access"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Lizardman Temple",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15229068",
+          "revid": 15229068,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "The [[lizard dwelling|entrances]] leading to the temple are a one-way trip, but players can leave via the [[strange hole (Lizardman Temple)|strange hole]] in the south-west corner of the temple",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Stone chest",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15285691",
+          "revid": 15285691,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "Some poison protection is recommended, since lizardmen near the entrance can poison you.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-092",
+      "subject": "Lizardman shaman (Lizardman Temple)",
+      "attribute": "max_hit",
+      "value": {
+        "combat": 150,
+        "max_hit_melee": 31,
+        "max_hit_ranged": 21,
+        "aggressive": true,
+        "poison": 10,
+        "jump_typeless": "20-25",
+        "acid": "25-30"
+      },
+      "unit": null,
+      "statement": "The six Lizardman Temple shamans (beyond the mystic barrier) are level 150, aggressive, max hit 31 melee / 21 ranged, poison starting at 10, with a 20-25 typeless jump and 25-30 acid special. Crossing the barrier repeatedly deals 10 and then 20 damage per crossing.",
+      "scope": {
+        "slug": "threats:lizardman-shaman"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Lizardman shaman",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408837",
+          "revid": 15408837,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "|max hit = 31 ([[Melee]]), 21 ([[Ranged]])",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Lizardman shaman",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15408837",
+          "revid": 15408837,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "|poisonous = Yes (10)",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Lizardman Temple",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15229068",
+          "revid": 15229068,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "Six [[Lizardman Shaman|shamans]] can be found in the area beyond the mystic barrier, with two in each chamber.",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Lizardman Temple",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15229068",
+          "revid": 15229068,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "Crossing the barrier three times will result in the barriers turning orange and dealing 10 damage per passing. Doing so another three times will result in the barriers turning red, dealing 20 damage per passage.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Whether the stone chests by the Shayzien Infiltrator are within shaman reach is not stated; see gaps."
+    },
+    {
+      "claim_id": "C-THR-093",
+      "subject": "Rusty pirate chests (Thieving 33)",
+      "attribute": "access_requirement",
+      "value": {
+        "sailing_to_moor": {
+          "Dognose Island": 40,
+          "Vatrachos Island": 46
+        },
+        "failure": "chance to be teleported across the island",
+        "damage": "none stated"
+      },
+      "unit": null,
+      "statement": "Rusty pirate chests need Sailing 40 (Dognose Island) or 46 (Vatrachos Island) to moor; a failed picklock can teleport you across the island. No damage is described.",
+      "scope": {
+        "slug": "threats:rusty-pirate-chest"
+      },
+      "released": "2025-11-19",
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Rusty chest",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396874",
+          "revid": 15396874,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "requiring level 40 and 46 [[Sailing]] respectively to [[Mooring point|moor]] at.",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Rusty chest",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15396874",
+          "revid": 15396874,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "Upon failing to pick the lock, there is a chance to be teleported away from the chest.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Owner Sailing 30: unavailable. Sea-travel hazards were not researched (out of reach)."
+    },
+    {
+      "claim_id": "C-THR-094",
+      "subject": "Stealing valuables (Civitas illa Fortis houses)",
+      "attribute": "caught_consequence",
+      "value": "homeowner throws the player out; about 90% of that house's valuables lost; no damage described",
+      "unit": null,
+      "statement": "If the homeowner returns and catches the player inside, they are thrown out and lose about 90% of the valuables stolen from that house; logging out also removes you from the house. No damage or guard attack is described.",
+      "scope": {
+        "slug": "threats:stealing-valuables-caught"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Stealing valuables",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402037",
+          "revid": 15402037,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "If the player hasn't left the house in time, the homeowner will spot and throw out the player, causing them to lose around 90% of the valuables stolen from that house.",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Stealing valuables",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15402037",
+          "revid": 15402037,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "it is possible to avoid the penalty by either dropping the valuables or logging out and in to automatically leave the home.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Key source: Wealthy citizen pickpocketing (stun damage 3). No damage is an absence finding on revision 15402037."
+    },
+    {
+      "claim_id": "C-THR-095",
+      "subject": "Stealing artefacts (Port Piscarilius)",
+      "attribute": "caught_consequence",
+      "value": "artefact confiscated and player relocated near the general store; teleport or logout loses the artefact",
+      "unit": null,
+      "statement": "If a patrol guard catches a player carrying a stolen artefact, it is confiscated and the player is moved near the general store. Any teleport, including a random event, or logging out also removes the artefact. No damage is described.",
+      "scope": {
+        "slug": "threats:stealing-artefacts-caught"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Stealing artefacts",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15413136",
+          "revid": 15413136,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "If players are caught with a stolen artefact, the artefact will be confiscated and the player will be relocated to near the [[Leenz's General Supplies|general store]] on the south side of the city and will need to get a new task.",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Stealing artefacts",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15413136",
+          "revid": 15413136,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "Players must travel back to Captain Khaled on foot because any teleportation, including random events or logging out, removes the artefact.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Revision 15413136 was edited 2026-11-23 01:30 UTC; an earlier cached revision 15401723 exists. Random events are unsafe on HW (carryover F-6003)."
+    },
+    {
+      "claim_id": "C-THR-096",
+      "subject": "Vyrewatch Sentinel (Darkmeyer)",
+      "attribute": "aggressive",
+      "value": {
+        "combat": 151,
+        "max_hit": 17,
+        "style": "Slash",
+        "aggressive": "yes without vyre noble clothing, until The Blood Moon Rises is completed"
+      },
+      "unit": null,
+      "statement": "Vyrewatch Sentinels (level 151, max hit 17, Slash) patrol Darkmeyer's middle and upper tiers and are aggressive to anyone not wearing vyre noble clothing until The Blood Moon Rises is completed; only Ivandis/Blisterwood flails can harm them.",
+      "scope": {
+        "slug": "threats:vyrewatch-sentinel"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Vyrewatch Sentinel",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15367082",
+          "revid": 15367082,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "|max hit = 17",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Vyrewatch Sentinel",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15367082",
+          "revid": 15367082,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "|aggressive = Yes (without [[Vyre_noble_clothing|vyre noble robes]])",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Vyrewatch Sentinel",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15367082",
+          "revid": 15367082,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "Before the completion of the quest [[The Blood Moon Rises]], Vyrewatch Sentinels are not [[Tolerance|tolerant]] of the player unless the player is wearing [[vyre noble clothing]].",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Vyrewatch Sentinel",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15367082",
+          "revid": 15367082,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "|change = Vyrewatch Sentinels are once again only able to be harmed by the [[ivandis flail]] or [[blisterwood flail]].",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-097",
+      "subject": "Pickpocketing vyres (Darkmeyer)",
+      "attribute": "gear_conflict",
+      "value": "full rogue outfit conflicts with vyre noble clothing (needed to stop sentinel aggression) unless The Blood Moon Rises is done",
+      "unit": null,
+      "statement": "Without The Blood Moon Rises, wearing full rogue equipment means not wearing vyre noble clothing, which makes Vyrewatch Sentinels aggressive and blocks the bank.",
+      "scope": {
+        "slug": "threats:vyre-rogue-outfit-conflict"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Vyre",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15339731",
+          "revid": 15339731,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "if the player has not completed [[The Blood Moon Rises]], a full set of [[vyre noble clothing]] is also required, as not wearing the noble clothing causes [[Vyrewatch Sentinel]]s to become aggressive and the bank cannot be used without it.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-098",
+      "subject": "Darkmeyer (vyre pickpocketing)",
+      "attribute": "access_requirement",
+      "value": "Sins of the Father",
+      "unit": null,
+      "statement": "Darkmeyer's features need Sins of the Father completed and vyre noble clothing (no longer needed after part of The Blood Moon Rises).",
+      "scope": {
+        "slug": "threats:darkmeyer-access"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Darkmeyer",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15315679",
+          "revid": 15315679,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "The city can be entered with partial completion of the quest [[Sins of the Father]], but completion of the quest and wearing a set of [[vyre noble clothing]] is required to access most of its features.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-099",
+      "subject": "Sorceress's Garden",
+      "attribute": "caught_consequence",
+      "value": "elementals teleport the player out; no damage described; random events disabled inside",
+      "unit": null,
+      "statement": "Garden elementals that see a player within two squares teleport them out of the garden; no damage is described. Random events cannot occur while dodging elementals.",
+      "scope": {
+        "slug": "threats:sorceress-garden-caught"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Sorceress's Garden",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397456",
+          "revid": 15397456,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "*The elementals can only 'see' and teleport the player when there are two or fewer squares between them and the player.",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Sorceress's Garden",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397456",
+          "revid": 15397456,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "|change = Random events are no longer permitted to bother you while you're dodging elementals in the Sorceress's Garden.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "'No damage' is an absence finding on revision 15397456. Travel is via Al Kharid (Shantay Pass apprentice); desert heat starts south of Shantay Pass (F-6183)."
+    },
+    {
+      "claim_id": "C-THR-100",
+      "subject": "Underwater Agility and Thieving (Fossil Island)",
+      "attribute": "failure_damage",
+      "value": "drowning at 0% oxygen is not a death and deals no damage; it loses 10-20 mermaid's tears",
+      "unit": null,
+      "statement": "Running out of oxygen underwater does no direct harm and does not count as a death: the player is moved to the island above and loses 10-20 mermaid's tears from the inventory.",
+      "scope": {
+        "slug": "threats:underwater-drowning"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Underwater Agility and Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15394949",
+          "revid": 15394949,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "While drowning does not cause any direct harm to the player (nor does it count as a death), it will take them to the small island above and a random amount of [[mermaid's tear]]s between 10 and 20 will be lost if they had any in their inventory.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-101",
+      "subject": "Underwater Agility and Thieving",
+      "attribute": "aggressive_npcs",
+      "value": {
+        "npc": "Lobstrosity",
+        "max_hit": 9,
+        "combat_zone": "single"
+      },
+      "unit": null,
+      "statement": "Lobstrosities near the south-east chest hit up to 9 in a single-combat area; the wiki recommends Protect from Melee or food, and low-level players may skip that chest.",
+      "scope": {
+        "slug": "threats:underwater-lobstrosities"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Underwater Agility and Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15394949",
+          "revid": 15394949,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "* [[Protect from Melee]], or sufficient food to survive passing by [[Lobstrosities]] in a single combat area with a max hit of 9",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Underwater Agility and Thieving",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15394949",
+          "revid": 15394949,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "* Low level players may wish to skip the chest in the south-east corner to avoid taking damage from [[Lobstrosities]].",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Lobstrosity level and aggression not fetched; max hit is from the activity page only."
+    },
+    {
+      "claim_id": "C-THR-102",
+      "subject": "Chambers of Xeric thieving room (levels 1-45)",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "The Thieving training guide's Chambers of Xeric thieving-room method takes place inside a raid that Jagex lists as UNSAFE on Hardcore Worlds.",
+      "scope": {
+        "slug": "threats:cox-thieving-room-hw"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Thieving training",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15400774",
+          "revid": 15400774,
+          "retrieved": "2026-11-22",
+          "published": null,
+          "quote": "From level 1 to 45, you can train Thieving in the [[Chambers of Xeric]] raid atop [[Mount Quidamortem]] in the [[Kebos Lowlands]].",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds - OUT TODAY",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+          "revid": 15397724,
+          "retrieved": "2026-11-23",
+          "published": "2026-11-04",
+          "quote": "* Camelot Training Room\n* Chambers of Xeric",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Already carryover F-6002; restated because this is a candidate Thieving method."
+    },
+    {
+      "claim_id": "C-THR-103",
+      "subject": "Pickpocketing (all NPCs, incl. Ardougne knights, Master Farmers, vyres, elves, TzHaar-Hur)",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "Pickpocketing (all NPCs, incl. Ardougne knights, Master Farmers, vyres, elves, TzHaar-Hur): a death here is an official, run-ending death on Hardcore Worlds. The activity is not on Jagex's seven-item safe list, and the Hardcore Worlds default is that deaths count.",
+      "scope": {
+        "slug": "threats:hw-pickpocketing"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds - OUT TODAY",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+          "revid": 15397724,
+          "retrieved": "2026-11-23",
+          "published": "2026-11-04",
+          "quote": "That doesn't mean there aren't exceptions though as the following minigames are safe:\n* Castle Wars\n* Clan Wars\n* Soul Wars",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Carryover F-6001/F-6004/F-6163/F-6240 already verify the HCGIM ruleset and the seven-item T1 safe list; this claim only applies them to this activity. No activity in this job qualifies as SAFE_DEATH; none is classed NO_DEATH_POSSIBLE because every location has some damage source (trap, NPC, guard, other monsters, PvP) or no source proving otherwise."
+    },
+    {
+      "claim_id": "C-THR-104",
+      "subject": "Stall thieving (Ardougne, Hosidius, Civitas illa Fortis, Port Roberts)",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "Stall thieving (Ardougne, Hosidius, Civitas illa Fortis, Port Roberts): a death here is an official, run-ending death on Hardcore Worlds. The activity is not on Jagex's seven-item safe list, and the Hardcore Worlds default is that deaths count.",
+      "scope": {
+        "slug": "threats:hw-stalls"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds - OUT TODAY",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+          "revid": 15397724,
+          "retrieved": "2026-11-23",
+          "published": "2026-11-04",
+          "quote": "That doesn't mean there aren't exceptions though as the following minigames are safe:\n* Castle Wars\n* Clan Wars\n* Soul Wars",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Carryover F-6001/F-6004/F-6163/F-6240 already verify the HCGIM ruleset and the seven-item T1 safe list; this claim only applies them to this activity. No activity in this job qualifies as SAFE_DEATH; none is classed NO_DEATH_POSSIBLE because every location has some damage source (trap, NPC, guard, other monsters, PvP) or no source proving otherwise."
+    },
+    {
+      "claim_id": "C-THR-105",
+      "subject": "Blackjacking (Pollnivneach)",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "Blackjacking (Pollnivneach): a death here is an official, run-ending death on Hardcore Worlds. The activity is not on Jagex's seven-item safe list, and the Hardcore Worlds default is that deaths count.",
+      "scope": {
+        "slug": "threats:hw-blackjacking"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds - OUT TODAY",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+          "revid": 15397724,
+          "retrieved": "2026-11-23",
+          "published": "2026-11-04",
+          "quote": "That doesn't mean there aren't exceptions though as the following minigames are safe:\n* Castle Wars\n* Clan Wars\n* Soul Wars",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Carryover F-6001/F-6004/F-6163/F-6240 already verify the HCGIM ruleset and the seven-item T1 safe list; this claim only applies them to this activity. No activity in this job qualifies as SAFE_DEATH; none is classed NO_DEATH_POSSIBLE because every location has some damage source (trap, NPC, guard, other monsters, PvP) or no source proving otherwise."
+    },
+    {
+      "claim_id": "C-THR-106",
+      "subject": "Chests outside the Wilderness (Ardougne, Chaos Druid Tower, Aldarin, Dorgesh-Kaan, Lizardman Temple, pirate chests)",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "Chests outside the Wilderness (Ardougne, Chaos Druid Tower, Aldarin, Dorgesh-Kaan, Lizardman Temple, pirate chests): a death here is an official, run-ending death on Hardcore Worlds. The activity is not on Jagex's seven-item safe list, and the Hardcore Worlds default is that deaths count.",
+      "scope": {
+        "slug": "threats:hw-non-wilderness-chests"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds - OUT TODAY",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+          "revid": 15397724,
+          "retrieved": "2026-11-23",
+          "published": "2026-11-04",
+          "quote": "That doesn't mean there aren't exceptions though as the following minigames are safe:\n* Castle Wars\n* Clan Wars\n* Soul Wars",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Carryover F-6001/F-6004/F-6163/F-6240 already verify the HCGIM ruleset and the seven-item T1 safe list; this claim only applies them to this activity. No activity in this job qualifies as SAFE_DEATH; none is classed NO_DEATH_POSSIBLE because every location has some damage source (trap, NPC, guard, other monsters, PvP) or no source proving otherwise."
+    },
+    {
+      "claim_id": "C-THR-107",
+      "subject": "Stealing valuables (Varlamore houses)",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "Stealing valuables (Varlamore houses): a death here is an official, run-ending death on Hardcore Worlds. The activity is not on Jagex's seven-item safe list, and the Hardcore Worlds default is that deaths count.",
+      "scope": {
+        "slug": "threats:hw-stealing-valuables"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds - OUT TODAY",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+          "revid": 15397724,
+          "retrieved": "2026-11-23",
+          "published": "2026-11-04",
+          "quote": "That doesn't mean there aren't exceptions though as the following minigames are safe:\n* Castle Wars\n* Clan Wars\n* Soul Wars",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Carryover F-6001/F-6004/F-6163/F-6240 already verify the HCGIM ruleset and the seven-item T1 safe list; this claim only applies them to this activity. No activity in this job qualifies as SAFE_DEATH; none is classed NO_DEATH_POSSIBLE because every location has some damage source (trap, NPC, guard, other monsters, PvP) or no source proving otherwise."
+    },
+    {
+      "claim_id": "C-THR-108",
+      "subject": "Stealing artefacts (Port Piscarilius)",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "Stealing artefacts (Port Piscarilius): a death here is an official, run-ending death on Hardcore Worlds. The activity is not on Jagex's seven-item safe list, and the Hardcore Worlds default is that deaths count.",
+      "scope": {
+        "slug": "threats:hw-stealing-artefacts"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds - OUT TODAY",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+          "revid": 15397724,
+          "retrieved": "2026-11-23",
+          "published": "2026-11-04",
+          "quote": "That doesn't mean there aren't exceptions though as the following minigames are safe:\n* Castle Wars\n* Clan Wars\n* Soul Wars",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Carryover F-6001/F-6004/F-6163/F-6240 already verify the HCGIM ruleset and the seven-item T1 safe list; this claim only applies them to this activity. No activity in this job qualifies as SAFE_DEATH; none is classed NO_DEATH_POSSIBLE because every location has some damage source (trap, NPC, guard, other monsters, PvP) or no source proving otherwise."
+    },
+    {
+      "claim_id": "C-THR-109",
+      "subject": "Sorceress's Garden",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "Sorceress's Garden: a death here is an official, run-ending death on Hardcore Worlds. The activity is not on Jagex's seven-item safe list, and the Hardcore Worlds default is that deaths count.",
+      "scope": {
+        "slug": "threats:hw-sorceress-garden"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds - OUT TODAY",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+          "revid": 15397724,
+          "retrieved": "2026-11-23",
+          "published": "2026-11-04",
+          "quote": "That doesn't mean there aren't exceptions though as the following minigames are safe:\n* Castle Wars\n* Clan Wars\n* Soul Wars",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Carryover F-6001/F-6004/F-6163/F-6240 already verify the HCGIM ruleset and the seven-item T1 safe list; this claim only applies them to this activity. No activity in this job qualifies as SAFE_DEATH; none is classed NO_DEATH_POSSIBLE because every location has some damage source (trap, NPC, guard, other monsters, PvP) or no source proving otherwise."
+    },
+    {
+      "claim_id": "C-THR-110",
+      "subject": "Underwater Agility and Thieving (death from lobstrosities; drowning is not a death)",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "Underwater Agility and Thieving (death from lobstrosities; drowning is not a death): a death here is an official, run-ending death on Hardcore Worlds. The activity is not on Jagex's seven-item safe list, and the Hardcore Worlds default is that deaths count.",
+      "scope": {
+        "slug": "threats:hw-underwater"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds - OUT TODAY",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+          "revid": 15397724,
+          "retrieved": "2026-11-23",
+          "published": "2026-11-04",
+          "quote": "That doesn't mean there aren't exceptions though as the following minigames are safe:\n* Castle Wars\n* Clan Wars\n* Soul Wars",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Carryover F-6001/F-6004/F-6163/F-6240 already verify the HCGIM ruleset and the seven-item T1 safe list; this claim only applies them to this activity. No activity in this job qualifies as SAFE_DEATH; none is classed NO_DEATH_POSSIBLE because every location has some damage source (trap, NPC, guard, other monsters, PvP) or no source proving otherwise."
+    },
+    {
+      "claim_id": "C-THR-111",
+      "subject": "Door pick-locking (East Ardougne)",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "Door pick-locking (East Ardougne): a death here is an official, run-ending death on Hardcore Worlds. The activity is not on Jagex's seven-item safe list, and the Hardcore Worlds default is that deaths count.",
+      "scope": {
+        "slug": "threats:hw-door-picklocking"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds - OUT TODAY",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+          "revid": 15397724,
+          "retrieved": "2026-11-23",
+          "published": "2026-11-04",
+          "quote": "That doesn't mean there aren't exceptions though as the following minigames are safe:\n* Castle Wars\n* Clan Wars\n* Soul Wars",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Carryover F-6001/F-6004/F-6163/F-6240 already verify the HCGIM ruleset and the seven-item T1 safe list; this claim only applies them to this activity. No activity in this job qualifies as SAFE_DEATH; none is classed NO_DEATH_POSSIBLE because every location has some damage source (trap, NPC, guard, other monsters, PvP) or no source proving otherwise."
+    },
+    {
+      "claim_id": "C-THR-112",
+      "subject": "Sins of the Father",
+      "attribute": "combat_encounters_roster",
+      "value": [
+        "Kroy (133)",
+        "Nail beast (143 and 67 twice)",
+        "Vampyre Juvinate (119) twice",
+        "Mutated Bloodveld (123)",
+        "Damien Leucurte (204)",
+        "Vanstrom Klause (459)"
+      ],
+      "unit": null,
+      "statement": "Sins of the Father requires killing Kroy (133), nail beasts (143 and 67 x2), two Vampyre Juvinates (119), a Mutated Bloodveld (123), Damien Leucurte (204) and Vanstrom Klause (459).",
+      "scope": {
+        "slug": "threats:sotf-kills"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Sins of the Father",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15380480",
+          "revid": 15380480,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "|kills = *[[Kroy]] (level 133)\n*[[Nail beast]] (level 143 & 67 twice)\n*[[Vampyre Juvinate#Level 119|Vampyre Juvinate]] (level 119) twice\n*[[Mutated Bloodveld]] (level 123)\n*[[Damien Leucurte]] (level 204)\n*[[Vanstrom Klause]] (level 459)",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Prerequisites (A Taste of Hope etc., 4,600 fixed Defence XP): carryover F-6098."
+    },
+    {
+      "claim_id": "C-THR-113",
+      "subject": "Sins of the Father: Kroy",
+      "attribute": "quest_fight_max_hit",
+      "value": {
+        "combat": 133,
+        "max_hit": 15,
+        "styles": [
+          "Magic",
+          "Melee"
+        ],
+        "aggressive": true
+      },
+      "unit": null,
+      "statement": "Kroy is level 133, max hit 15 (Magic and Melee), aggressive; the wiki recommends Protect from Magic and safespotting with ranged from behind the northern tables.",
+      "scope": {
+        "slug": "threats:sotf-kroy"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Kroy",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15344384",
+          "revid": 15344384,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "|max hit = 15",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Kroy",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15344384",
+          "revid": 15344384,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "|combat = 133",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Sins of the Father",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15380480",
+          "revid": 15380480,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "Kroy can be harmed by weapons other than the [[Ivandis flail]], so it's recommended to take advantage of this by using [[ranged]] and [[safe-spotting]] from behind the northern tables.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-114",
+      "subject": "Sins of the Father: Damien Leucurte",
+      "attribute": "quest_fight_max_hit",
+      "value": {
+        "combat": 204,
+        "max_hit": 20,
+        "styles": [
+          "Ranged",
+          "Magic"
+        ],
+        "poisonous": true
+      },
+      "unit": null,
+      "statement": "Damien Leucurte is level 204, max hit 20 (Ranged and Magic), poisonous; only the Ivandis flail harms him, and fires he spreads must be stamped out or he grows more resistant.",
+      "scope": {
+        "slug": "threats:sotf-damien"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Damien Leucurte",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374322",
+          "revid": 15374322,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "|max hit = 20",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Damien Leucurte",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15374322",
+          "revid": 15374322,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "|poisonous = Yes",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Sins of the Father",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15380480",
+          "revid": 15380480,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "'''You must stamp out the fires or he will become increasingly resistant to your attacks.''' He can also [[poison]] you during the fight.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-115",
+      "subject": "Sins of the Father: Vanstrom Klause (final fight)",
+      "attribute": "quest_fight_max_hit",
+      "value": {
+        "combat": 459,
+        "max_hit_standard": 24,
+        "specials": {
+          "acidic bloodveld explosion": "35-50",
+          "Stare into darkness": "40+",
+          "blood orb area": "up to 40"
+        },
+        "enrage_phase": "regular attack unaffected by protection prayers, 100% accuracy"
+      },
+      "unit": null,
+      "statement": "Vanstrom Klause (level 459) has a standard max hit of 24 (Magic); his specials hit 35-50 (exploding bloodveld), 40+ (darkness, avoided by a precisely timed step) and up to 40 (stepping into the blood orb). In the second phase his attacks ignore protection prayers and always hit. The wiki calls it far beyond normal master difficulty.",
+      "scope": {
+        "slug": "threats:sotf-vanstrom"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Vanstrom Klause",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15403542",
+          "revid": 15403542,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "|max hit = 24 (Standard)",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Sins of the Father",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15380480",
+          "revid": 15380480,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "or it will explode when it reaches you and hit you for 35-50 damage.",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Sins of the Father",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15380480",
+          "revid": 15380480,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "Vanstrom will turn your screen dark and you will be hit upwards of 40+ damage.",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Sins of the Father",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15380480",
+          "revid": 15380480,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "'''{{Colour|Red|Warning}}: If the player steps into the 3x3 area of the blood orb they will take up to 40 damage and the orb will dissipate'''",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Sins of the Father",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15380480",
+          "revid": 15380480,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "his regular attack will now be '''unaffected''' by protection prayers, hitting with 100% accuracy.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Several single hits (35-50, 40+) are close to or above the owner's 52 Hitpoints."
+    },
+    {
+      "claim_id": "C-THR-116",
+      "subject": "Sins of the Father: Vanstrom fight",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "The quest lets you reclaim items from Veliaf for 50,000 coins after dying to Vanstrom, but that is ordinary item recovery, not a safe death. Sins of the Father is not on Jagex's Hardcore Worlds safe list, so every death in it ends the run.",
+      "scope": {
+        "slug": "threats:sotf-death-handling"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Sins of the Father",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15380480",
+          "revid": 15380480,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "Should you die during the fight, lost items can be retrieved from Veliaf at the Icyene Graveyard for 50,000 coins",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds - OUT TODAY",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+          "revid": 15397724,
+          "retrieved": "2026-11-23",
+          "published": "2026-11-04",
+          "quote": "That doesn't mean there aren't exceptions though as the following minigames are safe:\n* Castle Wars\n* Clan Wars\n* Soul Wars",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Carryover F-6001/F-6004/F-6163/F-6240 already verify the HCGIM ruleset and the seven-item T1 safe list; this claim only applies them to this activity."
+    },
+    {
+      "claim_id": "C-THR-117",
+      "subject": "Song of the Elves: Arianwyn",
+      "attribute": "quest_fight_max_hit",
+      "value": "arrows 'consistently in the 30s', observed 45",
+      "unit": null,
+      "statement": "Arianwyn (level 212) fires arrows that consistently hit in the 30s and have been seen to hit 45; Protect from Missiles is advised from the moment you enter.",
+      "scope": {
+        "slug": "threats:sote-arianwyn"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Song of the Elves",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15386173",
+          "revid": 15386173,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "His arrows consistently hit in the 30s, and have been observed to hit for 45.",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Song of the Elves",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15386173",
+          "revid": 15386173,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "The moment you enter the [[instance]], use [[Protect from Missiles]] prayer.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "medium",
+      "notes": "Max hit from walkthrough prose, not an infobox. Roster: carryover F-6101."
+    },
+    {
+      "claim_id": "C-THR-118",
+      "subject": "Song of the Elves: Fragment of Seren",
+      "attribute": "quest_fight_max_hit",
+      "value": {
+        "combat": 494,
+        "standard": "12+12",
+        "with_protect_from_missiles": "3+3",
+        "special": "max HP minus 1"
+      },
+      "unit": null,
+      "statement": "The Fragment of Seren (level 494) hits 12+12 normally (3+3 under Protect from Missiles) and has a special that deals the player's maximum Hitpoints minus 1.",
+      "scope": {
+        "slug": "threats:sote-fragment"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Fragment of Seren",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15411389",
+          "revid": 15411389,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "|max hit = 12+12 (standard), 3+3 ([[Protect from Missiles]]), Max HP minus 1 (special)",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-119",
+      "subject": "Song of the Elves: final boss deaths",
+      "attribute": "death_item_handling",
+      "value": "80,000 coins to reclaim from the rebel scout; dying again before reclaiming loses the items permanently",
+      "unit": null,
+      "statement": "After dying in the Fragment of Seren section, items are reclaimed from the rebel scout for 80,000 coins; dying again before collecting them loses them permanently. (On Hardcore Worlds the first death already ends the run.)",
+      "scope": {
+        "slug": "threats:sote-item-loss"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Song of the Elves",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15386173",
+          "revid": 15386173,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "If you die during this part, you can pay 80,000 coins to collect your items from the [[rebel scout]] at the southern wall on the upper floor of the [[Underground Pass (dungeon)|Underground Pass]].",
+          "fetched_by": "threat-analyst"
+        },
+        {
+          "tier": "T2",
+          "title": "Song of the Elves",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15386173",
+          "revid": 15386173,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "If you die before collecting your items, '''all your items will be permanently lost.'''",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-120",
+      "subject": "Song of the Elves: Abyss shortcut",
+      "attribute": "pvp_exposure",
+      "value": "the Abyss route to the Death Altar exposes the player to PKers near the Mage of Zamorak and drains Prayer to 0",
+      "unit": null,
+      "statement": "The fast route to the Underground Pass dwarven camp via the Abyss risks player killers near the Mage of Zamorak, and Prayer is fully drained on entering the Abyss.",
+      "scope": {
+        "slug": "threats:sote-abyss-pk"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T2",
+          "title": "Song of the Elves",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15386173",
+          "revid": 15386173,
+          "retrieved": "2026-11-23",
+          "published": null,
+          "quote": "though players doing so should be wary of the potential of player killers near the Mage of Zamorak, and their prayer will be fully drained upon entering the Abyss.",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim_id": "C-THR-121",
+      "subject": "Song of the Elves (all fights)",
+      "attribute": "hw_death_classification",
+      "value": "UNSAFE_DEATH",
+      "unit": null,
+      "statement": "Every Song of the Elves fight (mourners, paladins, Arianwyn, Essyllt, Fragment of Seren) is an official, run-ending death on Hardcore Worlds; the quest's own item-recovery mechanics do not make a death safe.",
+      "scope": {
+        "slug": "threats:sote-hw"
+      },
+      "released": null,
+      "sources": [
+        {
+          "tier": "T1",
+          "title": "Update:Hardcore Worlds - OUT TODAY",
+          "url": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+          "revid": 15397724,
+          "retrieved": "2026-11-23",
+          "published": "2026-11-04",
+          "quote": "That doesn't mean there aren't exceptions though as the following minigames are safe:\n* Castle Wars\n* Clan Wars\n* Soul Wars",
+          "fetched_by": "threat-analyst"
+        }
+      ],
+      "confidence": "high",
+      "notes": "Carryover F-6001/F-6004/F-6163/F-6240 already verify the HCGIM ruleset and the seven-item T1 safe list; this claim only applies them to this activity."
+    }
+  ],
+  "gaps": [
+    "Disconnect while stunned: no source says whether a pickpocket stun on its own (no NPC attack follows) counts as 'combat' for the 60-second disconnect timer or the 9.6 s logout lock. Stun damage is at most 5 per failure, and an NPC that stunned you does not keep attacking unless combat started (blackjack retaliation, stall guards, Rogues' Castle rogues).",
+    "Failure frequency (how often each stun or trap fires at each level) was not computed; it depends on level, Ardougne diary, gloves of silence and dodgy necklaces, which belong to the methods desk's success-rate data. Only damage per event is claimed.",
+    "Prifddinas: no guard or caught-consequence mechanic for pickpocketing elves was found; the only hazard documented is 5 stun damage.",
+    "Civitas illa Fortis gem stall and Varlamore stalls: what happens when caught (which guard, max hit) was not found on the Gem stall page.",
+    "Ardougne Castle chest and 50 coin chest trap damage: only 'high' or 'substantial' is given, with no number or formula.",
+    "Lizardman Temple: not established whether the stone chests by the Shayzien Infiltrator are within reach of the aggressive shamans, or which 'lizardmen near the entrance' poison (level and max hit not fetched).",
+    "Chaos Druid Tower dungeon monsters, Dorgesh-Kaan and Hallowed Sepulchre coffin traps were not re-researched (Sepulchre: carryover F-6164, F-6184, F-6185; Lumbridge Swamp Caves route: F-6294).",
+    "Pyramid Plunder 'poison darts' (named in the dispatch): absent from the current Pyramid Plunder page (rev 15392928); not researched elsewhere (e.g. Sophanem Dungeon traps, which are not a Thieving method).",
+    "Sins of the Father: max hits of nail beasts, Vampyre Juvinates (119) and the Mutated Bloodveld (123) not fetched; Song of the Elves: Essyllt max hit and mourner/paladin max hits not fetched (out of reach for the owner).",
+    "Hardcore Worlds is new (launched 2026-11-04): the safe/unsafe lists could change; re-check at release QA.",
+    "No Hardcore Worlds-specific incidents (notable deaths) at Thieving activities were searched for; no T4 leads used."
+  ],
+  "leads_not_used": [],
+  "provenance": {
+    "agent": "threat-analyst",
+    "started_at": "2026-11-22T04:40:00Z",
+    "finished_at": "2026-11-23T06:45:00Z",
+    "dispatch_ref": "dispatch/003-threat-analyst.md",
+    "inputs": [
+      {
+        "path": "brief.json",
+        "sha256": "8358ccfd9aa458a1b6cb6236b9b96dcb356b56a6647359d901af11318982b0aa"
+      },
+      {
+        "path": "facts-parts/carryover.json",
+        "sha256": "029fc9c57a133997f081b90ebc78d9e655d0dfcf89c700dfc90b87139d4c29f8"
+      },
+      {
+        "path": "dispatch/003-threat-analyst.md",
+        "sha256": "fb5a571b4700799ca8db710d49a7ff5b83dd970c4d636e2352045176bd6c2f01"
+      },
+      {
+        "path": ".claude/agents/threat-analyst.md",
+        "sha256": "99dcc00b765263a943937c25ec2f8638355041e52100de01f6621fbc53b099f1"
+      },
+      {
+        "path": "docs/06-sourcing-policy.md",
+        "sha256": "f883176c3b9c0f10ad8c06027eebb8436f1989068c72fffdc9df51878c618bf8"
+      },
+      {
+        "path": "docs/07-hardcore-worlds-baseline.md",
+        "sha256": "8108c4460dbecdbdac501880220d2ad6ab93ed6ed611a99bb9532debb5e72c01"
+      },
+      {
+        "path": "schemas/claims.schema.json",
+        "sha256": "bbbf6e22121f89057e87db49e0bdd800eaf94bc53de1fba7b2413f5c894072a8"
+      }
+    ],
+    "actions": [
+      {
+        "kind": "verify",
+        "detail": "python3 tools/ledger.py verify thieving-1-99-20261122",
+        "outcome": "OK: ledger chain and all seals intact"
+      },
+      {
+        "kind": "read",
+        "detail": "Read charter, CLAUDE.md, dispatch 003, brief.json, carryover.json (297 facts), docs/06, docs/07, claims schema, tools/validate.py research gate",
+        "outcome": "input hashes recorded"
+      },
+      {
+        "kind": "read",
+        "detail": "Listed carryover facts; reused F-6001/6002/6004/6163/6201/6240 (HW rules), F-6081-6083/6242/6243 (Icthlarin's Little Helper fights), F-6098/F-6101/F-6110 (SotF prereqs, SotE roster, Darkness of Hallowvale), F-6178-6182 (escape crystal, tolerance), F-6183 (desert heat), F-6184/6185/6164 (Hallowed Sepulchre), F-6192/6193/6225 (Pollnivneach NPCs), F-6229 (Ardougne lever), F-6245/6283-6285 (Death on the Isle), F-6277 (poison chalice), F-6278 (Ferox), F-6287 (HW Wilderness PvP), F-6294 (Lumbridge Swamp Caves)",
+        "outcome": "not re-researched"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Thieving\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15403913",
+        "outcome": "revid 15403913 retrieved 2026-11-22"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Thieving training\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15400774",
+        "outcome": "revid 15400774 retrieved 2026-11-22"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Stun (status)\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15356952",
+        "outcome": "revid 15356952 retrieved 2026-11-22"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Logout button\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15034464",
+        "outcome": "revid 15034464 retrieved 2026-11-22"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Pyramid Plunder\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15392928",
+        "outcome": "revid 15392928 retrieved 2026-11-22"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Mummy (Pyramid Plunder)\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15372073",
+        "outcome": "revid 15372073 retrieved 2026-11-22"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Scarab Swarm\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15376011",
+        "outcome": "revid 15376011 retrieved 2026-11-22"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Rogues' Den\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15379507",
+        "outcome": "revid 15379507 retrieved 2026-11-22"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Wall safe (lobby)\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15355454",
+        "outcome": "revid 15355454 retrieved 2026-11-22"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Menaphite Thug\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15267417",
+        "outcome": "revid 15267417 retrieved 2026-11-22"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Bandit (Pollnivneach)\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15388202",
+        "outcome": "revid 15388202 retrieved 2026-11-22"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Blackjack\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15291965",
+        "outcome": "revid 15291965 retrieved 2026-11-22"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Ardougne Market\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15342851",
+        "outcome": "revid 15342851 retrieved 2026-11-22"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Stall\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15160715",
+        "outcome": "revid 15160715 retrieved 2026-11-22"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Knight of Ardougne\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15323390",
+        "outcome": "revid 15323390 retrieved 2026-11-22"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Paladin\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15392082",
+        "outcome": "revid 15392082 retrieved 2026-11-22"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Hero\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15305857",
+        "outcome": "revid 15305857 retrieved 2026-11-22"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Guard dog\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15354591",
+        "outcome": "revid 15354591 retrieved 2026-11-22"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Guard\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15395768",
+        "outcome": "revid 15395768 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Stealing valuables\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15402037",
+        "outcome": "revid 15402037 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Chest (Rogues' Castle)\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15359476",
+        "outcome": "revid 15359476 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Vyre\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15339731",
+        "outcome": "revid 15339731 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Darkmeyer\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15315679",
+        "outcome": "revid 15315679 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Elf (Thieving)\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15360673",
+        "outcome": "revid 15360673 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Vyrewatch Sentinel\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15367082",
+        "outcome": "revid 15367082 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Rogue\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15374723",
+        "outcome": "revid 15374723 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Rogues' Castle\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15370756",
+        "outcome": "revid 15370756 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Chest (Aldarin Villas)\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15353326",
+        "outcome": "revid 15353326 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Stealing artefacts\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15413136",
+        "outcome": "revid 15413136 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Chest (Dorgesh-Kaan Rich)\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15360773",
+        "outcome": "revid 15360773 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Sorceress's Garden\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15397456",
+        "outcome": "revid 15397456 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Market Guard (Port Roberts)\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15197565",
+        "outcome": "revid 15197565 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"TzHaar-Hur\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15394911",
+        "outcome": "revid 15394911 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Wealthy citizen\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15286220",
+        "outcome": "revid 15286220 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Underwater Agility and Thieving\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15394949",
+        "outcome": "revid 15394949 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Fruit Stall\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15333733",
+        "outcome": "revid 15333733 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Hardcore Worlds\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15404671",
+        "outcome": "revid 15404671 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Update:Hardcore Worlds - OUT TODAY\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15397724",
+        "outcome": "revid 15397724 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"The Feud\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15376145",
+        "outcome": "revid 15376145 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Tough Guy\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15380569",
+        "outcome": "revid 15380569 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Bandit champion\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15402304",
+        "outcome": "revid 15402304 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Snake (desert)\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15406487",
+        "outcome": "revid 15406487 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Sins of the Father\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15380480",
+        "outcome": "revid 15380480 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Vanstrom Klause\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15403542",
+        "outcome": "revid 15403542 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Damien Leucurte\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15374322",
+        "outcome": "revid 15374322 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Kroy\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15344384",
+        "outcome": "revid 15344384 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Fragment of Seren\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15411389",
+        "outcome": "revid 15411389 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Song of the Elves\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15386173",
+        "outcome": "revid 15386173 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Chest (Chaos Druid Tower)\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15354848",
+        "outcome": "revid 15354848 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Chest (Ardougne Castle)\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15343566",
+        "outcome": "revid 15343566 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Stone chest\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15285691",
+        "outcome": "revid 15285691 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Chest (50 coins)\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15326268",
+        "outcome": "revid 15326268 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Lizardman Temple\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15229068",
+        "outcome": "revid 15229068 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Lizardman shaman\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15408837",
+        "outcome": "revid 15408837 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Rusty chest\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15396874",
+        "outcome": "revid 15396874 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Desert heat\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15292841",
+        "outcome": "revid 15292841 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Bandit (Bandit Camp)\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15336619",
+        "outcome": "revid 15336619 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"H.A.M. Member\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15267288",
+        "outcome": "revid 15267288 retrieved 2026-11-23"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Chest (nature runes)\" --grep ...",
+        "target": "https://oldschool.runescape.wiki/w/index.php?oldid=15236858",
+        "outcome": "revid 15236858 retrieved 2026-11-23"
+      },
+      {
+        "kind": "search",
+        "detail": "python3 tools/wiki.py search \"Logout disconnect combat timer\"",
+        "outcome": "no direct hit; used 'Logout button' page"
+      },
+      {
+        "kind": "fetch",
+        "detail": "python3 tools/wiki.py page \"Guard (Ardougne)\"",
+        "outcome": "page not found; used 'Guard' (Ardougne versions)"
+      },
+      {
+        "kind": "compute",
+        "detail": "Nature rune chest trap at 52 HP: floor(52*12/100)+3 = 9",
+        "outcome": "9"
+      },
+      {
+        "kind": "compute",
+        "detail": "Chaos Druid Tower chest trap at 52 HP: (9*52+225)/50 = 13.86 -> 13 (floor, consistent with page's 22 at 99 HP: 22.32 -> 22)",
+        "outcome": "13"
+      },
+      {
+        "kind": "verify",
+        "detail": "Generator script asserts every quote is an exact substring of the cached pinned wikitext (cache/wiki/<Title>@<revid>.wikitext) and <=600 chars",
+        "outcome": "all quotes found"
+      },
+      {
+        "kind": "write",
+        "detail": "Wrote research/claims-threats.json via scratchpad generator build_threats.py",
+        "target": "jobs/thieving-1-99-20261122/research/claims-threats.json"
+      }
+    ],
+    "decisions": [
+      {
+        "decision": "Claim ids use C-THR-NNN with the dispatch's 'threats:<slug>' slug stored in scope.slug",
+        "reason": "schemas/claims.schema.json requires ^C-[A-Z]{3,5}-\\d{3,4}$ and validate.py FAILs a threats claim not prefixed C-THR-; the charter also specifies C-THR-NNN. The dispatch's slug convention is kept as data so nothing is lost.",
+        "alternatives_considered": [
+          "Use threats:<slug> ids as the dispatch says (fails schema and validator gate)"
+        ]
+      },
+      {
+        "decision": "Every Thieving activity and quest fight is classed UNSAFE_DEATH; none SAFE_DEATH or NO_DEATH_POSSIBLE",
+        "reason": "Jagex's T1 safe list (7 items) contains no Thieving activity or the named quests; the charter default without a T1 exception is UNSAFE. NO_DEATH_POSSIBLE was not used even for damage-free mechanics (maze, Sorceress's Garden, door picklock, drowning) because the locations still contain other damage sources or none is proven absent.",
+        "alternatives_considered": [
+          "NO_DEATH_POSSIBLE for door picklocking / Sorceress's Garden (rejected: never round danger down)"
+        ]
+      },
+      {
+        "decision": "Did not re-research items already in carryover (HW rule lists, ILH fights, Pollnivneach NPC stats, escape crystal, desert heat, Hallowed Sepulchre, Death on the Isle, Creature of Fenkenstrain); cited F-ids in notes instead",
+        "reason": "Dispatch instruction; carryover wiki revisions unchanged (Hardcore Worlds rev 15404671 re-fetched and still current).",
+        "alternatives_considered": [
+          "Duplicate claims (rejected: dispatch forbids)"
+        ]
+      },
+      {
+        "decision": "Candidate method list taken from the wiki Thieving training guide (rev 15400774) plus the Thieving page tables, not from other desks",
+        "reason": "Dispatch: coordinate only via facts, not with other desks.",
+        "alternatives_considered": [
+          "Read methods/quests desks' outputs or dispatches (rejected)"
+        ]
+      },
+      {
+        "decision": "Flagged the wiki's Rogues' Castle 'die to the rogues instead of the PKer' tactic as run-ending on HW",
+        "reason": "Both the Thieving training guide and the chest page recommend deliberate deaths; on Hardcore Worlds any death outside the T1 safe list is official.",
+        "alternatives_considered": []
+      }
+    ],
+    "limitations": [
+      "Wiki (T2) is the source for all mechanics; the only T1 source is the Hardcore Worlds launch post (wiki Update: copy).",
+      "Failure frequencies were not modelled; only per-event damage.",
+      "The pages were fetched with --grep, so infobox fields were read by field name; multi-version infoboxes (Guard, Paladin, Hero, Bandit) were matched to versions by position in the wikitext.",
+      "Fetches span 2026-11-22 and 2026-11-23 (the work was resumed after a usage-limit pause); retrieved dates are per source.",
+      "Hardcore Worlds content is under 30 days old (launched 2026-11-04): volatile."
+    ]
+  }
+}
